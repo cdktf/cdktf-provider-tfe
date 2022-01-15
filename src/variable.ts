@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/variable.html
+// https://www.terraform.io/docs/providers/tfe/r/variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface VariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#category Variable#category}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#category Variable#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#description Variable#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#description Variable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#hcl Variable#hcl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#hcl Variable#hcl}
   */
   readonly hcl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#key Variable#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#key Variable#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#sensitive Variable#sensitive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#sensitive Variable#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#value Variable#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#value Variable#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#workspace_id Variable#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/variable.html tfe_variable}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/variable tfe_variable}
 */
 export class Variable extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class Variable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/variable.html tfe_variable} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/variable tfe_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

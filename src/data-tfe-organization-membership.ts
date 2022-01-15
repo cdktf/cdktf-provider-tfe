@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/organization_membership.html
+// https://www.terraform.io/docs/providers/tfe/d/organization_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeOrganizationMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html#email DataTfeOrganizationMembership#email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#email DataTfeOrganizationMembership#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html#organization DataTfeOrganizationMembership#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#organization DataTfeOrganizationMembership#organization}
   */
   readonly organization: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html tfe_organization_membership}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership tfe_organization_membership}
 */
 export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html tfe_organization_membership} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership tfe_organization_membership} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

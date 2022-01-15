@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html
+// https://www.terraform.io/docs/providers/tfe/r/notification_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,45 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#destination_type NotificationConfiguration#destination_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#destination_type NotificationConfiguration#destination_type}
   */
   readonly destinationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#email_addresses NotificationConfiguration#email_addresses}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#email_user_ids NotificationConfiguration#email_user_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
   */
   readonly emailUserIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#enabled NotificationConfiguration#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#enabled NotificationConfiguration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#name NotificationConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#name NotificationConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#token NotificationConfiguration#token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#token NotificationConfiguration#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#triggers NotificationConfiguration#triggers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#triggers NotificationConfiguration#triggers}
   */
   readonly triggers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#url NotificationConfiguration#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#url NotificationConfiguration#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#workspace_id NotificationConfiguration#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html tfe_notification_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration tfe_notification_configuration}
 */
 export class NotificationConfiguration extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html tfe_notification_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration tfe_notification_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

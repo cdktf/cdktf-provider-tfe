@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/workspace.html
+// https://www.terraform.io/docs/providers/tfe/d/workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#name DataTfeWorkspace#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#name DataTfeWorkspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#organization DataTfeWorkspace#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#organization DataTfeWorkspace#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#tag_names DataTfeWorkspace#tag_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#tag_names DataTfeWorkspace#tag_names}
   */
   readonly tagNames?: string[];
 }
@@ -44,7 +44,7 @@ export class DataTfeWorkspaceVcsRepo extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html tfe_workspace}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace tfe_workspace}
 */
 export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
@@ -58,7 +58,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html tfe_workspace} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/workspace tfe_workspace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

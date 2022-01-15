@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/agent_token.html
+// https://www.terraform.io/docs/providers/tfe/r/agent_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface AgentTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html#agent_pool_id AgentToken#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#agent_pool_id AgentToken#agent_pool_id}
   */
   readonly agentPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html#description AgentToken#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#description AgentToken#description}
   */
   readonly description: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html tfe_agent_token}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_token tfe_agent_token}
 */
 export class AgentToken extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class AgentToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html tfe_agent_token} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/agent_token tfe_agent_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

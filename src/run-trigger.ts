@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/run_trigger.html
+// https://www.terraform.io/docs/providers/tfe/r/run_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface RunTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html#sourceable_id RunTrigger#sourceable_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#sourceable_id RunTrigger#sourceable_id}
   */
   readonly sourceableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html#workspace_id RunTrigger#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#workspace_id RunTrigger#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html tfe_run_trigger}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger tfe_run_trigger}
 */
 export class RunTrigger extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class RunTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html tfe_run_trigger} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger tfe_run_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

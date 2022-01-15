@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/team_access.html
+// https://www.terraform.io/docs/providers/tfe/d/team_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeTeamAccessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html#team_id DataTfeTeamAccess#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#team_id DataTfeTeamAccess#team_id}
   */
   readonly teamId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html#workspace_id DataTfeTeamAccess#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#workspace_id DataTfeTeamAccess#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -45,7 +45,7 @@ export class DataTfeTeamAccessPermissions extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html tfe_team_access}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team_access tfe_team_access}
 */
 export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
 
@@ -59,7 +59,7 @@ export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html tfe_team_access} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/team_access tfe_team_access} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

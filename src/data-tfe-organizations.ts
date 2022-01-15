@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/organizations.html
+// https://www.terraform.io/docs/providers/tfe/d/organizations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeOrganizationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations.html#admin DataTfeOrganizations#admin}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations#admin DataTfeOrganizations#admin}
   */
   readonly admin?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organizations.html tfe_organizations}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organizations tfe_organizations}
 */
 export class DataTfeOrganizations extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataTfeOrganizations extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/organizations.html tfe_organizations} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/organizations tfe_organizations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

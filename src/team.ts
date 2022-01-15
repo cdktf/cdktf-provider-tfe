@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/team.html
+// https://www.terraform.io/docs/providers/tfe/r/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#name Team#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#name Team#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#organization Team#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization Team#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#visibility Team#visibility}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#visibility Team#visibility}
   */
   readonly visibility?: string;
   /**
   * organization_access block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#organization_access Team#organization_access}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization_access Team#organization_access}
   */
   readonly organizationAccess?: TeamOrganizationAccess;
 }
 export interface TeamOrganizationAccess {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_policies Team#manage_policies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policies Team#manage_policies}
   */
   readonly managePolicies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_policy_overrides Team#manage_policy_overrides}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policy_overrides Team#manage_policy_overrides}
   */
   readonly managePolicyOverrides?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_vcs_settings Team#manage_vcs_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_vcs_settings Team#manage_vcs_settings}
   */
   readonly manageVcsSettings?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_workspaces Team#manage_workspaces}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}
   */
   readonly manageWorkspaces?: boolean | cdktf.IResolvable;
 }
@@ -175,7 +175,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team.html tfe_team}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team tfe_team}
 */
 export class Team extends cdktf.TerraformResource {
 
@@ -189,7 +189,7 @@ export class Team extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team.html tfe_team} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team tfe_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

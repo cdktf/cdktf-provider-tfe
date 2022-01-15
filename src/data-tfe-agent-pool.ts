@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/agent_pool.html
+// https://www.terraform.io/docs/providers/tfe/d/agent_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeAgentPoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html#name DataTfeAgentPool#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#name DataTfeAgentPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html#organization DataTfeAgentPool#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#organization DataTfeAgentPool#organization}
   */
   readonly organization: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html tfe_agent_pool}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool tfe_agent_pool}
 */
 export class DataTfeAgentPool extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataTfeAgentPool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html tfe_agent_pool} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool tfe_agent_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

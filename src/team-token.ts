@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/team_token.html
+// https://www.terraform.io/docs/providers/tfe/r/team_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface TeamTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html#force_regenerate TeamToken#force_regenerate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#force_regenerate TeamToken#force_regenerate}
   */
   readonly forceRegenerate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html#team_id TeamToken#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#team_id TeamToken#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html tfe_team_token}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_token tfe_team_token}
 */
 export class TeamToken extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class TeamToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html tfe_team_token} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_token tfe_team_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
