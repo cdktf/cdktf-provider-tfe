@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/team.html
+// https://www.terraform.io/docs/providers/tfe/d/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeTeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team.html#name DataTfeTeam#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#name DataTfeTeam#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team.html#organization DataTfeTeam#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#organization DataTfeTeam#organization}
   */
   readonly organization: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team.html tfe_team}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team tfe_team}
 */
 export class DataTfeTeam extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataTfeTeam extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/team.html tfe_team} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/team tfe_team} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

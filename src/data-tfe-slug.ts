@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/slug.html
+// https://www.terraform.io/docs/providers/tfe/d/slug
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeSlugConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug.html#source_path DataTfeSlug#source_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#source_path DataTfeSlug#source_path}
   */
   readonly sourcePath: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/slug.html tfe_slug}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/slug tfe_slug}
 */
 export class DataTfeSlug extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataTfeSlug extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/slug.html tfe_slug} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/slug tfe_slug} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

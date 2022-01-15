@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/oauth_client.html
+// https://www.terraform.io/docs/providers/tfe/r/oauth_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface OauthClientConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#api_url OauthClient#api_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}
   */
   readonly apiUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#http_url OauthClient#http_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}
   */
   readonly httpUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#oauth_token OauthClient#oauth_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}
   */
   readonly oauthToken: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#organization OauthClient#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#private_key OauthClient#private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#service_provider OauthClient#service_provider}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}
   */
   readonly serviceProvider: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html tfe_oauth_client}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client tfe_oauth_client}
 */
 export class OauthClient extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class OauthClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html tfe_oauth_client} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client tfe_oauth_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

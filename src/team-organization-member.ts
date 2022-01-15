@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html
+// https://www.terraform.io/docs/providers/tfe/r/team_organization_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface TeamOrganizationMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html#organization_membership_id TeamOrganizationMember#organization_membership_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}
   */
   readonly organizationMembershipId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html#team_id TeamOrganizationMember#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#team_id TeamOrganizationMember#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html tfe_team_organization_member}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member tfe_team_organization_member}
 */
 export class TeamOrganizationMember extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class TeamOrganizationMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html tfe_team_organization_member} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member tfe_team_organization_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

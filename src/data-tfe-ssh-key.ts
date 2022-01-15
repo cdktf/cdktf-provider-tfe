@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/ssh_key.html
+// https://www.terraform.io/docs/providers/tfe/d/ssh_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeSshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html#name DataTfeSshKey#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#name DataTfeSshKey#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html#organization DataTfeSshKey#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#organization DataTfeSshKey#organization}
   */
   readonly organization: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html tfe_ssh_key}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key tfe_ssh_key}
 */
 export class DataTfeSshKey extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataTfeSshKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html tfe_ssh_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key tfe_ssh_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

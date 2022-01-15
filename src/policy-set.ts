@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/policy_set.html
+// https://www.terraform.io/docs/providers/tfe/r/policy_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 
 export interface PolicySetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#description PolicySet#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#description PolicySet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#global PolicySet#global}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#global PolicySet#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#name PolicySet#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#name PolicySet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#organization PolicySet#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#organization PolicySet#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#policies_path PolicySet#policies_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policies_path PolicySet#policies_path}
   */
   readonly policiesPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#policy_ids PolicySet#policy_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policy_ids PolicySet#policy_ids}
   */
   readonly policyIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#slug PolicySet#slug}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}
   */
   readonly slug?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#workspace_ids PolicySet#workspace_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#workspace_ids PolicySet#workspace_ids}
   */
   readonly workspaceIds?: string[];
   /**
   * vcs_repo block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#vcs_repo PolicySet#vcs_repo}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#vcs_repo PolicySet#vcs_repo}
   */
   readonly vcsRepo?: PolicySetVcsRepo;
 }
 export interface PolicySetVcsRepo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#branch PolicySet#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#branch PolicySet#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#identifier PolicySet#identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#identifier PolicySet#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#ingress_submodules PolicySet#ingress_submodules}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#ingress_submodules PolicySet#ingress_submodules}
   */
   readonly ingressSubmodules?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#oauth_token_id PolicySet#oauth_token_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#oauth_token_id PolicySet#oauth_token_id}
   */
   readonly oauthTokenId: string;
 }
@@ -189,7 +189,7 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html tfe_policy_set}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set tfe_policy_set}
 */
 export class PolicySet extends cdktf.TerraformResource {
 
@@ -203,7 +203,7 @@ export class PolicySet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html tfe_policy_set} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/policy_set tfe_policy_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

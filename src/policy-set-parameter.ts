@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html
+// https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface PolicySetParameterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#key PolicySetParameter#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#key PolicySetParameter#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#policy_set_id PolicySetParameter#policy_set_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
   */
   readonly policySetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#sensitive PolicySetParameter#sensitive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#sensitive PolicySetParameter#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#value PolicySetParameter#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#value PolicySetParameter#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html tfe_policy_set_parameter}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter tfe_policy_set_parameter}
 */
 export class PolicySetParameter extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html tfe_policy_set_parameter} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter tfe_policy_set_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

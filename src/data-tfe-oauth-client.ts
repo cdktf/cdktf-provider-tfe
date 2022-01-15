@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/oauth_client.html
+// https://www.terraform.io/docs/providers/tfe/d/oauth_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeOauthClientConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client.html#oauth_client_id DataTfeOauthClient#oauth_client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}
   */
   readonly oauthClientId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client.html tfe_oauth_client}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client tfe_oauth_client}
 */
 export class DataTfeOauthClient extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataTfeOauthClient extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client.html tfe_oauth_client} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client tfe_oauth_client} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

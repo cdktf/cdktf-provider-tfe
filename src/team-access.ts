@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/team_access.html
+// https://www.terraform.io/docs/providers/tfe/r/team_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface TeamAccessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#access TeamAccess#access}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#access TeamAccess#access}
   */
   readonly access?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#team_id TeamAccess#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#team_id TeamAccess#team_id}
   */
   readonly teamId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#workspace_id TeamAccess#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_id TeamAccess#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * permissions block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#permissions TeamAccess#permissions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#permissions TeamAccess#permissions}
   */
   readonly permissions?: TeamAccessPermissions[];
 }
 export interface TeamAccessPermissions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#runs TeamAccess#runs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#runs TeamAccess#runs}
   */
   readonly runs: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#sentinel_mocks TeamAccess#sentinel_mocks}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#sentinel_mocks TeamAccess#sentinel_mocks}
   */
   readonly sentinelMocks: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#state_versions TeamAccess#state_versions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#state_versions TeamAccess#state_versions}
   */
   readonly stateVersions: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#variables TeamAccess#variables}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#variables TeamAccess#variables}
   */
   readonly variables: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#workspace_locking TeamAccess#workspace_locking}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_locking TeamAccess#workspace_locking}
   */
   readonly workspaceLocking: boolean | cdktf.IResolvable;
 }
@@ -65,7 +65,7 @@ export function teamAccessPermissionsToTerraform(struct?: TeamAccessPermissions)
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html tfe_team_access}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_access tfe_team_access}
 */
 export class TeamAccess extends cdktf.TerraformResource {
 
@@ -79,7 +79,7 @@ export class TeamAccess extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html tfe_team_access} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_access tfe_team_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

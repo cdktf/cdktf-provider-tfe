@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/team_members.html
+// https://www.terraform.io/docs/providers/tfe/r/team_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface TeamMembersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html#team_id TeamMembers#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#team_id TeamMembers#team_id}
   */
   readonly teamId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html#usernames TeamMembers#usernames}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#usernames TeamMembers#usernames}
   */
   readonly usernames: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html tfe_team_members}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_members tfe_team_members}
 */
 export class TeamMembers extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class TeamMembers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html tfe_team_members} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/team_members tfe_team_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/organization.html
+// https://www.terraform.io/docs/providers/tfe/r/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#collaborator_auth_policy Organization#collaborator_auth_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}
   */
   readonly collaboratorAuthPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#cost_estimation_enabled Organization#cost_estimation_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}
   */
   readonly costEstimationEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#email Organization#email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#name Organization#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#owners_team_saml_role_id Organization#owners_team_saml_role_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}
   */
   readonly ownersTeamSamlRoleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#session_remember_minutes Organization#session_remember_minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}
   */
   readonly sessionRememberMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#session_timeout_minutes Organization#session_timeout_minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}
   */
   readonly sessionTimeoutMinutes?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization.html tfe_organization}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization tfe_organization}
 */
 export class Organization extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class Organization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/organization.html tfe_organization} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/organization tfe_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

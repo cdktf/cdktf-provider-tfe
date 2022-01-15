@@ -4,7 +4,7 @@
 
 ### AgentPool <a name="@cdktf/provider-tfe.AgentPool" id="cdktfprovidertfeagentpool"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool.html tfe_agent_pool}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool tfe_agent_pool}.
 
 #### Initializers <a name="@cdktf/provider-tfe.AgentPool.Initializer" id="cdktfprovidertfeagentpoolinitializer"></a>
 
@@ -126,7 +126,7 @@ public readonly organization: string;
 
 ### AgentToken <a name="@cdktf/provider-tfe.AgentToken" id="cdktfprovidertfeagenttoken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html tfe_agent_token}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_token tfe_agent_token}.
 
 #### Initializers <a name="@cdktf/provider-tfe.AgentToken.Initializer" id="cdktfprovidertfeagenttokeninitializer"></a>
 
@@ -259,7 +259,7 @@ public readonly description: string;
 
 ### DataTfeAgentPool <a name="@cdktf/provider-tfe.DataTfeAgentPool" id="cdktfprovidertfedatatfeagentpool"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html tfe_agent_pool}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool tfe_agent_pool}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeAgentPool.Initializer" id="cdktfprovidertfedatatfeagentpoolinitializer"></a>
 
@@ -381,7 +381,7 @@ public readonly organization: string;
 
 ### DataTfeIpRanges <a name="@cdktf/provider-tfe.DataTfeIpRanges" id="cdktfprovidertfedatatfeipranges"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/ip_ranges.html tfe_ip_ranges}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/ip_ranges tfe_ip_ranges}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeIpRanges.Initializer" id="cdktfprovidertfedatatfeiprangesinitializer"></a>
 
@@ -503,7 +503,7 @@ public readonly vcs: string[];
 
 ### DataTfeOauthClient <a name="@cdktf/provider-tfe.DataTfeOauthClient" id="cdktfprovidertfedatatfeoauthclient"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client.html tfe_oauth_client}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client tfe_oauth_client}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeOauthClient.Initializer" id="cdktfprovidertfedatatfeoauthclientinitializer"></a>
 
@@ -636,7 +636,7 @@ public readonly oauthClientId: string;
 
 ### DataTfeOrganization <a name="@cdktf/provider-tfe.DataTfeOrganization" id="cdktfprovidertfedatatfeorganization"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization.html tfe_organization}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization tfe_organization}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeOrganization.Initializer" id="cdktfprovidertfedatatfeorganizationinitializer"></a>
 
@@ -802,7 +802,7 @@ public readonly name: string;
 
 ### DataTfeOrganizationMembership <a name="@cdktf/provider-tfe.DataTfeOrganizationMembership" id="cdktfprovidertfedatatfeorganizationmembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html tfe_organization_membership}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership tfe_organization_membership}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeOrganizationMembership.Initializer" id="cdktfprovidertfedatatfeorganizationmembershipinitializer"></a>
 
@@ -935,7 +935,7 @@ public readonly organization: string;
 
 ### DataTfeOrganizations <a name="@cdktf/provider-tfe.DataTfeOrganizations" id="cdktfprovidertfedatatfeorganizations"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organizations.html tfe_organizations}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organizations tfe_organizations}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeOrganizations.Initializer" id="cdktfprovidertfedatatfeorganizationsinitializer"></a>
 
@@ -1072,7 +1072,7 @@ public readonly admin: boolean | IResolvable;
 
 ### DataTfeOutputs <a name="@cdktf/provider-tfe.DataTfeOutputs" id="cdktfprovidertfedatatfeoutputs"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html tfe_outputs}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/outputs tfe_outputs}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeOutputs.Initializer" id="cdktfprovidertfedatatfeoutputsinitializer"></a>
 
@@ -1229,7 +1229,7 @@ public readonly workspace: string;
 
 ### DataTfeSlug <a name="@cdktf/provider-tfe.DataTfeSlug" id="cdktfprovidertfedatatfeslug"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/slug.html tfe_slug}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/slug tfe_slug}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeSlug.Initializer" id="cdktfprovidertfedatatfesluginitializer"></a>
 
@@ -1329,7 +1329,7 @@ public readonly sourcePath: string;
 
 ### DataTfeSshKey <a name="@cdktf/provider-tfe.DataTfeSshKey" id="cdktfprovidertfedatatfesshkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html tfe_ssh_key}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeSshKey.Initializer" id="cdktfprovidertfedatatfesshkeyinitializer"></a>
 
@@ -1451,7 +1451,7 @@ public readonly organization: string;
 
 ### DataTfeTeam <a name="@cdktf/provider-tfe.DataTfeTeam" id="cdktfprovidertfedatatfeteam"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team.html tfe_team}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team tfe_team}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeTeam.Initializer" id="cdktfprovidertfedatatfeteaminitializer"></a>
 
@@ -1573,7 +1573,7 @@ public readonly organization: string;
 
 ### DataTfeTeamAccess <a name="@cdktf/provider-tfe.DataTfeTeamAccess" id="cdktfprovidertfedatatfeteamaccess"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html tfe_team_access}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team_access tfe_team_access}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeTeamAccess.Initializer" id="cdktfprovidertfedatatfeteamaccessinitializer"></a>
 
@@ -1725,7 +1725,7 @@ public readonly workspaceId: string;
 
 ### DataTfeWorkspace <a name="@cdktf/provider-tfe.DataTfeWorkspace" id="cdktfprovidertfedatatfeworkspace"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html tfe_workspace}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace tfe_workspace}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeWorkspace.Initializer" id="cdktfprovidertfedatatfeworkspaceinitializer"></a>
 
@@ -2093,7 +2093,7 @@ public readonly tagNames: string[];
 
 ### DataTfeWorkspaceIds <a name="@cdktf/provider-tfe.DataTfeWorkspaceIds" id="cdktfprovidertfedatatfeworkspaceids"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html tfe_workspace_ids}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids tfe_workspace_ids}.
 
 #### Initializers <a name="@cdktf/provider-tfe.DataTfeWorkspaceIds.Initializer" id="cdktfprovidertfedatatfeworkspaceidsinitializer"></a>
 
@@ -2283,7 +2283,7 @@ public readonly tagNames: string[];
 
 ### NotificationConfiguration <a name="@cdktf/provider-tfe.NotificationConfiguration" id="cdktfprovidertfenotificationconfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html tfe_notification_configuration}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration tfe_notification_configuration}.
 
 #### Initializers <a name="@cdktf/provider-tfe.NotificationConfiguration.Initializer" id="cdktfprovidertfenotificationconfigurationinitializer"></a>
 
@@ -2607,7 +2607,7 @@ public readonly workspaceId: string;
 
 ### OauthClient <a name="@cdktf/provider-tfe.OauthClient" id="cdktfprovidertfeoauthclient"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html tfe_oauth_client}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client tfe_oauth_client}.
 
 #### Initializers <a name="@cdktf/provider-tfe.OauthClient.Initializer" id="cdktfprovidertfeoauthclientinitializer"></a>
 
@@ -2841,7 +2841,7 @@ public readonly serviceProvider: string;
 
 ### Organization <a name="@cdktf/provider-tfe.Organization" id="cdktfprovidertfeorganization"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization.html tfe_organization}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization tfe_organization}.
 
 #### Initializers <a name="@cdktf/provider-tfe.Organization.Initializer" id="cdktfprovidertfeorganizationinitializer"></a>
 
@@ -3114,7 +3114,7 @@ public readonly sessionTimeoutMinutes: number;
 
 ### OrganizationMembership <a name="@cdktf/provider-tfe.OrganizationMembership" id="cdktfprovidertfeorganizationmembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership.html tfe_organization_membership}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership tfe_organization_membership}.
 
 #### Initializers <a name="@cdktf/provider-tfe.OrganizationMembership.Initializer" id="cdktfprovidertfeorganizationmembershipinitializer"></a>
 
@@ -3247,7 +3247,7 @@ public readonly organization: string;
 
 ### OrganizationToken <a name="@cdktf/provider-tfe.OrganizationToken" id="cdktfprovidertfeorganizationtoken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_token.html tfe_organization_token}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_token tfe_organization_token}.
 
 #### Initializers <a name="@cdktf/provider-tfe.OrganizationToken.Initializer" id="cdktfprovidertfeorganizationtokeninitializer"></a>
 
@@ -3393,7 +3393,7 @@ public readonly organization: string;
 
 ### PolicySet <a name="@cdktf/provider-tfe.PolicySet" id="cdktfprovidertfepolicyset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html tfe_policy_set}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set tfe_policy_set}.
 
 #### Initializers <a name="@cdktf/provider-tfe.PolicySet.Initializer" id="cdktfprovidertfepolicysetinitializer"></a>
 
@@ -3737,7 +3737,7 @@ public readonly workspaceIds: string[];
 
 ### PolicySetParameter <a name="@cdktf/provider-tfe.PolicySetParameter" id="cdktfprovidertfepolicysetparameter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html tfe_policy_set_parameter}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter tfe_policy_set_parameter}.
 
 #### Initializers <a name="@cdktf/provider-tfe.PolicySetParameter.Initializer" id="cdktfprovidertfepolicysetparameterinitializer"></a>
 
@@ -3923,7 +3923,7 @@ public readonly value: string;
 
 ### RegistryModule <a name="@cdktf/provider-tfe.RegistryModule" id="cdktfprovidertferegistrymodule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html tfe_registry_module}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/registry_module tfe_registry_module}.
 
 #### Initializers <a name="@cdktf/provider-tfe.RegistryModule.Initializer" id="cdktfprovidertferegistrymoduleinitializer"></a>
 
@@ -4075,7 +4075,7 @@ public readonly vcsRepoInput: RegistryModuleVcsRepo;
 
 ### RunTrigger <a name="@cdktf/provider-tfe.RunTrigger" id="cdktfprovidertferuntrigger"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html tfe_run_trigger}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger tfe_run_trigger}.
 
 #### Initializers <a name="@cdktf/provider-tfe.RunTrigger.Initializer" id="cdktfprovidertferuntriggerinitializer"></a>
 
@@ -4197,7 +4197,7 @@ public readonly workspaceId: string;
 
 ### SentinelPolicy <a name="@cdktf/provider-tfe.SentinelPolicy" id="cdktfprovidertfesentinelpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html tfe_sentinel_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy tfe_sentinel_policy}.
 
 #### Initializers <a name="@cdktf/provider-tfe.SentinelPolicy.Initializer" id="cdktfprovidertfesentinelpolicyinitializer"></a>
 
@@ -4405,7 +4405,7 @@ public readonly policy: string;
 
 ### SshKey <a name="@cdktf/provider-tfe.SshKey" id="cdktfprovidertfesshkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html tfe_ssh_key}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="@cdktf/provider-tfe.SshKey.Initializer" id="cdktfprovidertfesshkeyinitializer"></a>
 
@@ -4549,7 +4549,7 @@ public readonly organization: string;
 
 ### Team <a name="@cdktf/provider-tfe.Team" id="cdktfprovidertfeteam"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team.html tfe_team}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team tfe_team}.
 
 #### Initializers <a name="@cdktf/provider-tfe.Team.Initializer" id="cdktfprovidertfeteaminitializer"></a>
 
@@ -4748,7 +4748,7 @@ public readonly visibility: string;
 
 ### TeamAccess <a name="@cdktf/provider-tfe.TeamAccess" id="cdktfprovidertfeteamaccess"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html tfe_team_access}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_access tfe_team_access}.
 
 #### Initializers <a name="@cdktf/provider-tfe.TeamAccess.Initializer" id="cdktfprovidertfeteamaccessinitializer"></a>
 
@@ -4934,7 +4934,7 @@ public readonly workspaceId: string;
 
 ### TeamMember <a name="@cdktf/provider-tfe.TeamMember" id="cdktfprovidertfeteammember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_member.html tfe_team_member}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_member tfe_team_member}.
 
 #### Initializers <a name="@cdktf/provider-tfe.TeamMember.Initializer" id="cdktfprovidertfeteammemberinitializer"></a>
 
@@ -5056,7 +5056,7 @@ public readonly username: string;
 
 ### TeamMembers <a name="@cdktf/provider-tfe.TeamMembers" id="cdktfprovidertfeteammembers"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html tfe_team_members}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_members tfe_team_members}.
 
 #### Initializers <a name="@cdktf/provider-tfe.TeamMembers.Initializer" id="cdktfprovidertfeteammembersinitializer"></a>
 
@@ -5178,7 +5178,7 @@ public readonly usernames: string[];
 
 ### TeamOrganizationMember <a name="@cdktf/provider-tfe.TeamOrganizationMember" id="cdktfprovidertfeteamorganizationmember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html tfe_team_organization_member}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member tfe_team_organization_member}.
 
 #### Initializers <a name="@cdktf/provider-tfe.TeamOrganizationMember.Initializer" id="cdktfprovidertfeteamorganizationmemberinitializer"></a>
 
@@ -5300,7 +5300,7 @@ public readonly teamId: string;
 
 ### TeamToken <a name="@cdktf/provider-tfe.TeamToken" id="cdktfprovidertfeteamtoken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html tfe_team_token}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_token tfe_team_token}.
 
 #### Initializers <a name="@cdktf/provider-tfe.TeamToken.Initializer" id="cdktfprovidertfeteamtokeninitializer"></a>
 
@@ -5635,7 +5635,7 @@ public readonly token: string;
 
 ### Variable <a name="@cdktf/provider-tfe.Variable" id="cdktfprovidertfevariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/variable.html tfe_variable}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/variable tfe_variable}.
 
 #### Initializers <a name="@cdktf/provider-tfe.Variable.Initializer" id="cdktfprovidertfevariableinitializer"></a>
 
@@ -5901,7 +5901,7 @@ public readonly workspaceId: string;
 
 ### Workspace <a name="@cdktf/provider-tfe.Workspace" id="cdktfprovidertfeworkspace"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html tfe_workspace}.
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace tfe_workspace}.
 
 #### Initializers <a name="@cdktf/provider-tfe.Workspace.Initializer" id="cdktfprovidertfeworkspaceinitializer"></a>
 
@@ -6582,8 +6582,8 @@ const agentPoolConfig: AgentPoolConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeagentpoolconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeagentpoolconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeagentpoolconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfeagentpoolconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool.html#name AgentPool#name}. |
-| [`organization`](#cdktfprovidertfeagentpoolconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool.html#organization AgentPool#organization}. |
+| [`name`](#cdktfprovidertfeagentpoolconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#name AgentPool#name}. |
+| [`organization`](#cdktfprovidertfeagentpoolconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#organization AgentPool#organization}. |
 
 ---
 
@@ -6635,7 +6635,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool.html#name AgentPool#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#name AgentPool#name}.
 
 ---
 
@@ -6647,7 +6647,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool.html#organization AgentPool#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#organization AgentPool#organization}.
 
 ---
 
@@ -6669,8 +6669,8 @@ const agentTokenConfig: AgentTokenConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeagenttokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeagenttokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeagenttokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`agentPoolId`](#cdktfprovidertfeagenttokenconfigpropertyagentpoolid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html#agent_pool_id AgentToken#agent_pool_id}. |
-| [`description`](#cdktfprovidertfeagenttokenconfigpropertydescription)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html#description AgentToken#description}. |
+| [`agentPoolId`](#cdktfprovidertfeagenttokenconfigpropertyagentpoolid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#agent_pool_id AgentToken#agent_pool_id}. |
+| [`description`](#cdktfprovidertfeagenttokenconfigpropertydescription)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#description AgentToken#description}. |
 
 ---
 
@@ -6722,7 +6722,7 @@ public readonly agentPoolId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html#agent_pool_id AgentToken#agent_pool_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#agent_pool_id AgentToken#agent_pool_id}.
 
 ---
 
@@ -6734,7 +6734,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token.html#description AgentToken#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#description AgentToken#description}.
 
 ---
 
@@ -6756,8 +6756,8 @@ const dataTfeAgentPoolConfig: DataTfeAgentPoolConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeagentpoolconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeagentpoolconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeagentpoolconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfedatatfeagentpoolconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html#name DataTfeAgentPool#name}. |
-| [`organization`](#cdktfprovidertfedatatfeagentpoolconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html#organization DataTfeAgentPool#organization}. |
+| [`name`](#cdktfprovidertfedatatfeagentpoolconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#name DataTfeAgentPool#name}. |
+| [`organization`](#cdktfprovidertfedatatfeagentpoolconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#organization DataTfeAgentPool#organization}. |
 
 ---
 
@@ -6809,7 +6809,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html#name DataTfeAgentPool#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#name DataTfeAgentPool#name}.
 
 ---
 
@@ -6821,7 +6821,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool.html#organization DataTfeAgentPool#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#organization DataTfeAgentPool#organization}.
 
 ---
 
@@ -6904,7 +6904,7 @@ const dataTfeOauthClientConfig: DataTfeOauthClientConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeoauthclientconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeoauthclientconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeoauthclientconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`oauthClientId`](#cdktfprovidertfedatatfeoauthclientconfigpropertyoauthclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client.html#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
+| [`oauthClientId`](#cdktfprovidertfedatatfeoauthclientconfigpropertyoauthclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
 
 ---
 
@@ -6956,7 +6956,7 @@ public readonly oauthClientId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client.html#oauth_client_id DataTfeOauthClient#oauth_client_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}.
 
 ---
 
@@ -6978,7 +6978,7 @@ const dataTfeOrganizationConfig: DataTfeOrganizationConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfedatatfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization.html#name DataTfeOrganization#name}. |
+| [`name`](#cdktfprovidertfedatatfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization#name DataTfeOrganization#name}. |
 
 ---
 
@@ -7030,7 +7030,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization.html#name DataTfeOrganization#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization#name DataTfeOrganization#name}.
 
 ---
 
@@ -7052,8 +7052,8 @@ const dataTfeOrganizationMembershipConfig: DataTfeOrganizationMembershipConfig =
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`email`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html#email DataTfeOrganizationMembership#email}. |
-| [`organization`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html#organization DataTfeOrganizationMembership#organization}. |
+| [`email`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#email DataTfeOrganizationMembership#email}. |
+| [`organization`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#organization DataTfeOrganizationMembership#organization}. |
 
 ---
 
@@ -7105,7 +7105,7 @@ public readonly email: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html#email DataTfeOrganizationMembership#email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#email DataTfeOrganizationMembership#email}.
 
 ---
 
@@ -7117,7 +7117,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership.html#organization DataTfeOrganizationMembership#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#organization DataTfeOrganizationMembership#organization}.
 
 ---
 
@@ -7139,7 +7139,7 @@ const dataTfeOrganizationsConfig: DataTfeOrganizationsConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`admin`](#cdktfprovidertfedatatfeorganizationsconfigpropertyadmin) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations.html#admin DataTfeOrganizations#admin}. |
+| [`admin`](#cdktfprovidertfedatatfeorganizationsconfigpropertyadmin) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations#admin DataTfeOrganizations#admin}. |
 
 ---
 
@@ -7191,7 +7191,7 @@ public readonly admin: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations.html#admin DataTfeOrganizations#admin}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations#admin DataTfeOrganizations#admin}.
 
 ---
 
@@ -7215,7 +7215,7 @@ const dataTfeOutputsConfig: DataTfeOutputsConfig = { ... }
 | [`provider`](#cdktfprovidertfedatatfeoutputsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeoutputsconfigpropertyorganization)<span title="Required">*</span> | `string` | The organization to fetch the remote state from. |
 | [`workspace`](#cdktfprovidertfedatatfeoutputsconfigpropertyworkspace)<span title="Required">*</span> | `string` | The workspace to fetch the remote state from. |
-| [`values`](#cdktfprovidertfedatatfeoutputsconfigpropertyvalues) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `any`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#values DataTfeOutputs#values}. |
+| [`values`](#cdktfprovidertfedatatfeoutputsconfigpropertyvalues) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `any`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -7269,7 +7269,7 @@ public readonly organization: string;
 
 The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#organization DataTfeOutputs#organization}
 
 ---
 
@@ -7283,7 +7283,7 @@ public readonly workspace: string;
 
 The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -7295,7 +7295,7 @@ public readonly values: IResolvable | {[ key: string ]: any};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `any`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}.
 
 ---
 
@@ -7317,7 +7317,7 @@ const dataTfeSlugConfig: DataTfeSlugConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeslugconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeslugconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeslugconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`sourcePath`](#cdktfprovidertfedatatfeslugconfigpropertysourcepath)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug.html#source_path DataTfeSlug#source_path}. |
+| [`sourcePath`](#cdktfprovidertfedatatfeslugconfigpropertysourcepath)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#source_path DataTfeSlug#source_path}. |
 
 ---
 
@@ -7369,7 +7369,7 @@ public readonly sourcePath: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug.html#source_path DataTfeSlug#source_path}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#source_path DataTfeSlug#source_path}.
 
 ---
 
@@ -7391,8 +7391,8 @@ const dataTfeSshKeyConfig: DataTfeSshKeyConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfesshkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfesshkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfesshkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfedatatfesshkeyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html#name DataTfeSshKey#name}. |
-| [`organization`](#cdktfprovidertfedatatfesshkeyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html#organization DataTfeSshKey#organization}. |
+| [`name`](#cdktfprovidertfedatatfesshkeyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#name DataTfeSshKey#name}. |
+| [`organization`](#cdktfprovidertfedatatfesshkeyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#organization DataTfeSshKey#organization}. |
 
 ---
 
@@ -7444,7 +7444,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html#name DataTfeSshKey#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#name DataTfeSshKey#name}.
 
 ---
 
@@ -7456,7 +7456,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key.html#organization DataTfeSshKey#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#organization DataTfeSshKey#organization}.
 
 ---
 
@@ -7478,8 +7478,8 @@ const dataTfeTeamAccessConfig: DataTfeTeamAccessConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeteamaccessconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeteamaccessconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeteamaccessconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`teamId`](#cdktfprovidertfedatatfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html#team_id DataTfeTeamAccess#team_id}. |
-| [`workspaceId`](#cdktfprovidertfedatatfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html#workspace_id DataTfeTeamAccess#workspace_id}. |
+| [`teamId`](#cdktfprovidertfedatatfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#team_id DataTfeTeamAccess#team_id}. |
+| [`workspaceId`](#cdktfprovidertfedatatfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#workspace_id DataTfeTeamAccess#workspace_id}. |
 
 ---
 
@@ -7531,7 +7531,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html#team_id DataTfeTeamAccess#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#team_id DataTfeTeamAccess#team_id}.
 
 ---
 
@@ -7543,7 +7543,7 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access.html#workspace_id DataTfeTeamAccess#workspace_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#workspace_id DataTfeTeamAccess#workspace_id}.
 
 ---
 
@@ -7565,8 +7565,8 @@ const dataTfeTeamConfig: DataTfeTeamConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeteamconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeteamconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeteamconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfedatatfeteamconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team.html#name DataTfeTeam#name}. |
-| [`organization`](#cdktfprovidertfedatatfeteamconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team.html#organization DataTfeTeam#organization}. |
+| [`name`](#cdktfprovidertfedatatfeteamconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#name DataTfeTeam#name}. |
+| [`organization`](#cdktfprovidertfedatatfeteamconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#organization DataTfeTeam#organization}. |
 
 ---
 
@@ -7618,7 +7618,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team.html#name DataTfeTeam#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#name DataTfeTeam#name}.
 
 ---
 
@@ -7630,7 +7630,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team.html#organization DataTfeTeam#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#organization DataTfeTeam#organization}.
 
 ---
 
@@ -7652,9 +7652,9 @@ const dataTfeWorkspaceConfig: DataTfeWorkspaceConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfedatatfeworkspaceconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#name DataTfeWorkspace#name}. |
-| [`organization`](#cdktfprovidertfedatatfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#organization DataTfeWorkspace#organization}. |
-| [`tagNames`](#cdktfprovidertfedatatfeworkspaceconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#tag_names DataTfeWorkspace#tag_names}. |
+| [`name`](#cdktfprovidertfedatatfeworkspaceconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#name DataTfeWorkspace#name}. |
+| [`organization`](#cdktfprovidertfedatatfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#organization DataTfeWorkspace#organization}. |
+| [`tagNames`](#cdktfprovidertfedatatfeworkspaceconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#tag_names DataTfeWorkspace#tag_names}. |
 
 ---
 
@@ -7706,7 +7706,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#name DataTfeWorkspace#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#name DataTfeWorkspace#name}.
 
 ---
 
@@ -7718,7 +7718,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#organization DataTfeWorkspace#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#organization DataTfeWorkspace#organization}.
 
 ---
 
@@ -7730,7 +7730,7 @@ public readonly tagNames: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace.html#tag_names DataTfeWorkspace#tag_names}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#tag_names DataTfeWorkspace#tag_names}.
 
 ---
 
@@ -7752,9 +7752,9 @@ const dataTfeWorkspaceIdsConfig: DataTfeWorkspaceIdsConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`organization`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html#organization DataTfeWorkspaceIds#organization}. |
-| [`names`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertynames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html#names DataTfeWorkspaceIds#names}. |
-| [`tagNames`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html#tag_names DataTfeWorkspaceIds#tag_names}. |
+| [`organization`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#organization DataTfeWorkspaceIds#organization}. |
+| [`names`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertynames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#names DataTfeWorkspaceIds#names}. |
+| [`tagNames`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}. |
 
 ---
 
@@ -7806,7 +7806,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html#organization DataTfeWorkspaceIds#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#organization DataTfeWorkspaceIds#organization}.
 
 ---
 
@@ -7818,7 +7818,7 @@ public readonly names: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html#names DataTfeWorkspaceIds#names}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#names DataTfeWorkspaceIds#names}.
 
 ---
 
@@ -7830,7 +7830,7 @@ public readonly tagNames: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids.html#tag_names DataTfeWorkspaceIds#tag_names}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}.
 
 ---
 
@@ -7852,15 +7852,15 @@ const notificationConfigurationConfig: NotificationConfigurationConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfenotificationconfigurationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfenotificationconfigurationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfenotificationconfigurationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`destinationType`](#cdktfprovidertfenotificationconfigurationconfigpropertydestinationtype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#destination_type NotificationConfiguration#destination_type}. |
-| [`name`](#cdktfprovidertfenotificationconfigurationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#name NotificationConfiguration#name}. |
-| [`workspaceId`](#cdktfprovidertfenotificationconfigurationconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#workspace_id NotificationConfiguration#workspace_id}. |
-| [`emailAddresses`](#cdktfprovidertfenotificationconfigurationconfigpropertyemailaddresses) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#email_addresses NotificationConfiguration#email_addresses}. |
-| [`emailUserIds`](#cdktfprovidertfenotificationconfigurationconfigpropertyemailuserids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#email_user_ids NotificationConfiguration#email_user_ids}. |
-| [`enabled`](#cdktfprovidertfenotificationconfigurationconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#enabled NotificationConfiguration#enabled}. |
-| [`token`](#cdktfprovidertfenotificationconfigurationconfigpropertytoken) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#token NotificationConfiguration#token}. |
-| [`triggers`](#cdktfprovidertfenotificationconfigurationconfigpropertytriggers) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#triggers NotificationConfiguration#triggers}. |
-| [`url`](#cdktfprovidertfenotificationconfigurationconfigpropertyurl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#url NotificationConfiguration#url}. |
+| [`destinationType`](#cdktfprovidertfenotificationconfigurationconfigpropertydestinationtype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#destination_type NotificationConfiguration#destination_type}. |
+| [`name`](#cdktfprovidertfenotificationconfigurationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#name NotificationConfiguration#name}. |
+| [`workspaceId`](#cdktfprovidertfenotificationconfigurationconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#workspace_id NotificationConfiguration#workspace_id}. |
+| [`emailAddresses`](#cdktfprovidertfenotificationconfigurationconfigpropertyemailaddresses) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#email_addresses NotificationConfiguration#email_addresses}. |
+| [`emailUserIds`](#cdktfprovidertfenotificationconfigurationconfigpropertyemailuserids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}. |
+| [`enabled`](#cdktfprovidertfenotificationconfigurationconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#enabled NotificationConfiguration#enabled}. |
+| [`token`](#cdktfprovidertfenotificationconfigurationconfigpropertytoken) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#token NotificationConfiguration#token}. |
+| [`triggers`](#cdktfprovidertfenotificationconfigurationconfigpropertytriggers) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#triggers NotificationConfiguration#triggers}. |
+| [`url`](#cdktfprovidertfenotificationconfigurationconfigpropertyurl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#url NotificationConfiguration#url}. |
 
 ---
 
@@ -7912,7 +7912,7 @@ public readonly destinationType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#destination_type NotificationConfiguration#destination_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#destination_type NotificationConfiguration#destination_type}.
 
 ---
 
@@ -7924,7 +7924,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#name NotificationConfiguration#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#name NotificationConfiguration#name}.
 
 ---
 
@@ -7936,7 +7936,7 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#workspace_id NotificationConfiguration#workspace_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#workspace_id NotificationConfiguration#workspace_id}.
 
 ---
 
@@ -7948,7 +7948,7 @@ public readonly emailAddresses: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#email_addresses NotificationConfiguration#email_addresses}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#email_addresses NotificationConfiguration#email_addresses}.
 
 ---
 
@@ -7960,7 +7960,7 @@ public readonly emailUserIds: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#email_user_ids NotificationConfiguration#email_user_ids}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}.
 
 ---
 
@@ -7972,7 +7972,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#enabled NotificationConfiguration#enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#enabled NotificationConfiguration#enabled}.
 
 ---
 
@@ -7984,7 +7984,7 @@ public readonly token: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#token NotificationConfiguration#token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#token NotificationConfiguration#token}.
 
 ---
 
@@ -7996,7 +7996,7 @@ public readonly triggers: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#triggers NotificationConfiguration#triggers}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#triggers NotificationConfiguration#triggers}.
 
 ---
 
@@ -8008,7 +8008,7 @@ public readonly url: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration.html#url NotificationConfiguration#url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#url NotificationConfiguration#url}.
 
 ---
 
@@ -8030,12 +8030,12 @@ const oauthClientConfig: OauthClientConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeoauthclientconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeoauthclientconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeoauthclientconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`apiUrl`](#cdktfprovidertfeoauthclientconfigpropertyapiurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#api_url OauthClient#api_url}. |
-| [`httpUrl`](#cdktfprovidertfeoauthclientconfigpropertyhttpurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#http_url OauthClient#http_url}. |
-| [`oauthToken`](#cdktfprovidertfeoauthclientconfigpropertyoauthtoken)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#oauth_token OauthClient#oauth_token}. |
-| [`organization`](#cdktfprovidertfeoauthclientconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#organization OauthClient#organization}. |
-| [`serviceProvider`](#cdktfprovidertfeoauthclientconfigpropertyserviceprovider)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#service_provider OauthClient#service_provider}. |
-| [`privateKey`](#cdktfprovidertfeoauthclientconfigpropertyprivatekey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#private_key OauthClient#private_key}. |
+| [`apiUrl`](#cdktfprovidertfeoauthclientconfigpropertyapiurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}. |
+| [`httpUrl`](#cdktfprovidertfeoauthclientconfigpropertyhttpurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}. |
+| [`oauthToken`](#cdktfprovidertfeoauthclientconfigpropertyoauthtoken)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}. |
+| [`organization`](#cdktfprovidertfeoauthclientconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}. |
+| [`serviceProvider`](#cdktfprovidertfeoauthclientconfigpropertyserviceprovider)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}. |
+| [`privateKey`](#cdktfprovidertfeoauthclientconfigpropertyprivatekey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}. |
 
 ---
 
@@ -8087,7 +8087,7 @@ public readonly apiUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#api_url OauthClient#api_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}.
 
 ---
 
@@ -8099,7 +8099,7 @@ public readonly httpUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#http_url OauthClient#http_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}.
 
 ---
 
@@ -8111,7 +8111,7 @@ public readonly oauthToken: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#oauth_token OauthClient#oauth_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}.
 
 ---
 
@@ -8123,7 +8123,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#organization OauthClient#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}.
 
 ---
 
@@ -8135,7 +8135,7 @@ public readonly serviceProvider: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#service_provider OauthClient#service_provider}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}.
 
 ---
 
@@ -8147,7 +8147,7 @@ public readonly privateKey: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client.html#private_key OauthClient#private_key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}.
 
 ---
 
@@ -8169,13 +8169,13 @@ const organizationConfig: OrganizationConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeorganizationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`email`](#cdktfprovidertfeorganizationconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#email Organization#email}. |
-| [`name`](#cdktfprovidertfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#name Organization#name}. |
-| [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationconfigpropertycollaboratorauthpolicy) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| [`costEstimationEnabled`](#cdktfprovidertfeorganizationconfigpropertycostestimationenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#cost_estimation_enabled Organization#cost_estimation_enabled}. |
-| [`ownersTeamSamlRoleId`](#cdktfprovidertfeorganizationconfigpropertyownersteamsamlroleid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| [`sessionRememberMinutes`](#cdktfprovidertfeorganizationconfigpropertysessionrememberminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#session_remember_minutes Organization#session_remember_minutes}. |
-| [`sessionTimeoutMinutes`](#cdktfprovidertfeorganizationconfigpropertysessiontimeoutminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#session_timeout_minutes Organization#session_timeout_minutes}. |
+| [`email`](#cdktfprovidertfeorganizationconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}. |
+| [`name`](#cdktfprovidertfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}. |
+| [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationconfigpropertycollaboratorauthpolicy) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
+| [`costEstimationEnabled`](#cdktfprovidertfeorganizationconfigpropertycostestimationenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| [`ownersTeamSamlRoleId`](#cdktfprovidertfeorganizationconfigpropertyownersteamsamlroleid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
+| [`sessionRememberMinutes`](#cdktfprovidertfeorganizationconfigpropertysessionrememberminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}. |
+| [`sessionTimeoutMinutes`](#cdktfprovidertfeorganizationconfigpropertysessiontimeoutminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
 
 ---
 
@@ -8227,7 +8227,7 @@ public readonly email: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#email Organization#email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}.
 
 ---
 
@@ -8239,7 +8239,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#name Organization#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}.
 
 ---
 
@@ -8251,7 +8251,7 @@ public readonly collaboratorAuthPolicy: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#collaborator_auth_policy Organization#collaborator_auth_policy}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}.
 
 ---
 
@@ -8263,7 +8263,7 @@ public readonly costEstimationEnabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#cost_estimation_enabled Organization#cost_estimation_enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
 ---
 
@@ -8275,7 +8275,7 @@ public readonly ownersTeamSamlRoleId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#owners_team_saml_role_id Organization#owners_team_saml_role_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}.
 
 ---
 
@@ -8287,7 +8287,7 @@ public readonly sessionRememberMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#session_remember_minutes Organization#session_remember_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}.
 
 ---
 
@@ -8299,7 +8299,7 @@ public readonly sessionTimeoutMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization.html#session_timeout_minutes Organization#session_timeout_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}.
 
 ---
 
@@ -8321,8 +8321,8 @@ const organizationMembershipConfig: OrganizationMembershipConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeorganizationmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`email`](#cdktfprovidertfeorganizationmembershipconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership.html#email OrganizationMembership#email}. |
-| [`organization`](#cdktfprovidertfeorganizationmembershipconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership.html#organization OrganizationMembership#organization}. |
+| [`email`](#cdktfprovidertfeorganizationmembershipconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#email OrganizationMembership#email}. |
+| [`organization`](#cdktfprovidertfeorganizationmembershipconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#organization OrganizationMembership#organization}. |
 
 ---
 
@@ -8374,7 +8374,7 @@ public readonly email: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership.html#email OrganizationMembership#email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#email OrganizationMembership#email}.
 
 ---
 
@@ -8386,7 +8386,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership.html#organization OrganizationMembership#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#organization OrganizationMembership#organization}.
 
 ---
 
@@ -8408,8 +8408,8 @@ const organizationTokenConfig: OrganizationTokenConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeorganizationtokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationtokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationtokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`organization`](#cdktfprovidertfeorganizationtokenconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token.html#organization OrganizationToken#organization}. |
-| [`forceRegenerate`](#cdktfprovidertfeorganizationtokenconfigpropertyforceregenerate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token.html#force_regenerate OrganizationToken#force_regenerate}. |
+| [`organization`](#cdktfprovidertfeorganizationtokenconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#organization OrganizationToken#organization}. |
+| [`forceRegenerate`](#cdktfprovidertfeorganizationtokenconfigpropertyforceregenerate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#force_regenerate OrganizationToken#force_regenerate}. |
 
 ---
 
@@ -8461,7 +8461,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token.html#organization OrganizationToken#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#organization OrganizationToken#organization}.
 
 ---
 
@@ -8473,7 +8473,7 @@ public readonly forceRegenerate: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token.html#force_regenerate OrganizationToken#force_regenerate}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#force_regenerate OrganizationToken#force_regenerate}.
 
 ---
 
@@ -8495,15 +8495,15 @@ const policySetConfig: PolicySetConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfepolicysetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfepolicysetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfepolicysetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfepolicysetconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#name PolicySet#name}. |
-| [`organization`](#cdktfprovidertfepolicysetconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#organization PolicySet#organization}. |
-| [`description`](#cdktfprovidertfepolicysetconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#description PolicySet#description}. |
-| [`global`](#cdktfprovidertfepolicysetconfigpropertyglobal) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#global PolicySet#global}. |
-| [`policiesPath`](#cdktfprovidertfepolicysetconfigpropertypoliciespath) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#policies_path PolicySet#policies_path}. |
-| [`policyIds`](#cdktfprovidertfepolicysetconfigpropertypolicyids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#policy_ids PolicySet#policy_ids}. |
-| [`slug`](#cdktfprovidertfepolicysetconfigpropertyslug) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#slug PolicySet#slug}. |
+| [`name`](#cdktfprovidertfepolicysetconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#name PolicySet#name}. |
+| [`organization`](#cdktfprovidertfepolicysetconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#organization PolicySet#organization}. |
+| [`description`](#cdktfprovidertfepolicysetconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#description PolicySet#description}. |
+| [`global`](#cdktfprovidertfepolicysetconfigpropertyglobal) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#global PolicySet#global}. |
+| [`policiesPath`](#cdktfprovidertfepolicysetconfigpropertypoliciespath) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policies_path PolicySet#policies_path}. |
+| [`policyIds`](#cdktfprovidertfepolicysetconfigpropertypolicyids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policy_ids PolicySet#policy_ids}. |
+| [`slug`](#cdktfprovidertfepolicysetconfigpropertyslug) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}. |
 | [`vcsRepo`](#cdktfprovidertfepolicysetconfigpropertyvcsrepo) | [`@cdktf/provider-tfe.PolicySetVcsRepo`](#@cdktf/provider-tfe.PolicySetVcsRepo) | vcs_repo block. |
-| [`workspaceIds`](#cdktfprovidertfepolicysetconfigpropertyworkspaceids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#workspace_ids PolicySet#workspace_ids}. |
+| [`workspaceIds`](#cdktfprovidertfepolicysetconfigpropertyworkspaceids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#workspace_ids PolicySet#workspace_ids}. |
 
 ---
 
@@ -8555,7 +8555,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#name PolicySet#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#name PolicySet#name}.
 
 ---
 
@@ -8567,7 +8567,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#organization PolicySet#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#organization PolicySet#organization}.
 
 ---
 
@@ -8579,7 +8579,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#description PolicySet#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#description PolicySet#description}.
 
 ---
 
@@ -8591,7 +8591,7 @@ public readonly global: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#global PolicySet#global}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#global PolicySet#global}.
 
 ---
 
@@ -8603,7 +8603,7 @@ public readonly policiesPath: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#policies_path PolicySet#policies_path}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policies_path PolicySet#policies_path}.
 
 ---
 
@@ -8615,7 +8615,7 @@ public readonly policyIds: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#policy_ids PolicySet#policy_ids}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policy_ids PolicySet#policy_ids}.
 
 ---
 
@@ -8627,7 +8627,7 @@ public readonly slug: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#slug PolicySet#slug}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}.
 
 ---
 
@@ -8641,7 +8641,7 @@ public readonly vcsRepo: PolicySetVcsRepo;
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#vcs_repo PolicySet#vcs_repo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#vcs_repo PolicySet#vcs_repo}
 
 ---
 
@@ -8653,7 +8653,7 @@ public readonly workspaceIds: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#workspace_ids PolicySet#workspace_ids}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#workspace_ids PolicySet#workspace_ids}.
 
 ---
 
@@ -8675,10 +8675,10 @@ const policySetParameterConfig: PolicySetParameterConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfepolicysetparameterconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfepolicysetparameterconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfepolicysetparameterconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`key`](#cdktfprovidertfepolicysetparameterconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#key PolicySetParameter#key}. |
-| [`policySetId`](#cdktfprovidertfepolicysetparameterconfigpropertypolicysetid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#policy_set_id PolicySetParameter#policy_set_id}. |
-| [`sensitive`](#cdktfprovidertfepolicysetparameterconfigpropertysensitive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#sensitive PolicySetParameter#sensitive}. |
-| [`value`](#cdktfprovidertfepolicysetparameterconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#value PolicySetParameter#value}. |
+| [`key`](#cdktfprovidertfepolicysetparameterconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#key PolicySetParameter#key}. |
+| [`policySetId`](#cdktfprovidertfepolicysetparameterconfigpropertypolicysetid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}. |
+| [`sensitive`](#cdktfprovidertfepolicysetparameterconfigpropertysensitive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#sensitive PolicySetParameter#sensitive}. |
+| [`value`](#cdktfprovidertfepolicysetparameterconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#value PolicySetParameter#value}. |
 
 ---
 
@@ -8730,7 +8730,7 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#key PolicySetParameter#key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#key PolicySetParameter#key}.
 
 ---
 
@@ -8742,7 +8742,7 @@ public readonly policySetId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#policy_set_id PolicySetParameter#policy_set_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}.
 
 ---
 
@@ -8754,7 +8754,7 @@ public readonly sensitive: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#sensitive PolicySetParameter#sensitive}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#sensitive PolicySetParameter#sensitive}.
 
 ---
 
@@ -8766,7 +8766,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter.html#value PolicySetParameter#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#value PolicySetParameter#value}.
 
 ---
 
@@ -8784,10 +8784,10 @@ const policySetVcsRepo: PolicySetVcsRepo = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`identifier`](#cdktfprovidertfepolicysetvcsrepopropertyidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#identifier PolicySet#identifier}. |
-| [`oauthTokenId`](#cdktfprovidertfepolicysetvcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#oauth_token_id PolicySet#oauth_token_id}. |
-| [`branch`](#cdktfprovidertfepolicysetvcsrepopropertybranch) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#branch PolicySet#branch}. |
-| [`ingressSubmodules`](#cdktfprovidertfepolicysetvcsrepopropertyingresssubmodules) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#ingress_submodules PolicySet#ingress_submodules}. |
+| [`identifier`](#cdktfprovidertfepolicysetvcsrepopropertyidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#identifier PolicySet#identifier}. |
+| [`oauthTokenId`](#cdktfprovidertfepolicysetvcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#oauth_token_id PolicySet#oauth_token_id}. |
+| [`branch`](#cdktfprovidertfepolicysetvcsrepopropertybranch) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#branch PolicySet#branch}. |
+| [`ingressSubmodules`](#cdktfprovidertfepolicysetvcsrepopropertyingresssubmodules) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#ingress_submodules PolicySet#ingress_submodules}. |
 
 ---
 
@@ -8799,7 +8799,7 @@ public readonly identifier: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#identifier PolicySet#identifier}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#identifier PolicySet#identifier}.
 
 ---
 
@@ -8811,7 +8811,7 @@ public readonly oauthTokenId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#oauth_token_id PolicySet#oauth_token_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#oauth_token_id PolicySet#oauth_token_id}.
 
 ---
 
@@ -8823,7 +8823,7 @@ public readonly branch: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#branch PolicySet#branch}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#branch PolicySet#branch}.
 
 ---
 
@@ -8835,7 +8835,7 @@ public readonly ingressSubmodules: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set.html#ingress_submodules PolicySet#ingress_submodules}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#ingress_submodules PolicySet#ingress_submodules}.
 
 ---
 
@@ -8911,7 +8911,7 @@ public readonly vcsRepo: RegistryModuleVcsRepo;
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#vcs_repo RegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#vcs_repo RegistryModule#vcs_repo}
 
 ---
 
@@ -8929,9 +8929,9 @@ const registryModuleVcsRepo: RegistryModuleVcsRepo = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`displayIdentifier`](#cdktfprovidertferegistrymodulevcsrepopropertydisplayidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#display_identifier RegistryModule#display_identifier}. |
-| [`identifier`](#cdktfprovidertferegistrymodulevcsrepopropertyidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#identifier RegistryModule#identifier}. |
-| [`oauthTokenId`](#cdktfprovidertferegistrymodulevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#oauth_token_id RegistryModule#oauth_token_id}. |
+| [`displayIdentifier`](#cdktfprovidertferegistrymodulevcsrepopropertydisplayidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#display_identifier RegistryModule#display_identifier}. |
+| [`identifier`](#cdktfprovidertferegistrymodulevcsrepopropertyidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#identifier RegistryModule#identifier}. |
+| [`oauthTokenId`](#cdktfprovidertferegistrymodulevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#oauth_token_id RegistryModule#oauth_token_id}. |
 
 ---
 
@@ -8943,7 +8943,7 @@ public readonly displayIdentifier: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#display_identifier RegistryModule#display_identifier}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#display_identifier RegistryModule#display_identifier}.
 
 ---
 
@@ -8955,7 +8955,7 @@ public readonly identifier: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#identifier RegistryModule#identifier}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#identifier RegistryModule#identifier}.
 
 ---
 
@@ -8967,7 +8967,7 @@ public readonly oauthTokenId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module.html#oauth_token_id RegistryModule#oauth_token_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
 
 ---
 
@@ -8989,8 +8989,8 @@ const runTriggerConfig: RunTriggerConfig = { ... }
 | [`dependsOn`](#cdktfprovidertferuntriggerconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertferuntriggerconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertferuntriggerconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`sourceableId`](#cdktfprovidertferuntriggerconfigpropertysourceableid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html#sourceable_id RunTrigger#sourceable_id}. |
-| [`workspaceId`](#cdktfprovidertferuntriggerconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html#workspace_id RunTrigger#workspace_id}. |
+| [`sourceableId`](#cdktfprovidertferuntriggerconfigpropertysourceableid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#sourceable_id RunTrigger#sourceable_id}. |
+| [`workspaceId`](#cdktfprovidertferuntriggerconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#workspace_id RunTrigger#workspace_id}. |
 
 ---
 
@@ -9042,7 +9042,7 @@ public readonly sourceableId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html#sourceable_id RunTrigger#sourceable_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#sourceable_id RunTrigger#sourceable_id}.
 
 ---
 
@@ -9054,7 +9054,7 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger.html#workspace_id RunTrigger#workspace_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#workspace_id RunTrigger#workspace_id}.
 
 ---
 
@@ -9076,11 +9076,11 @@ const sentinelPolicyConfig: SentinelPolicyConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfesentinelpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfesentinelpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfesentinelpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfesentinelpolicyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#name SentinelPolicy#name}. |
-| [`organization`](#cdktfprovidertfesentinelpolicyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#organization SentinelPolicy#organization}. |
-| [`policy`](#cdktfprovidertfesentinelpolicyconfigpropertypolicy)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#policy SentinelPolicy#policy}. |
-| [`description`](#cdktfprovidertfesentinelpolicyconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#description SentinelPolicy#description}. |
-| [`enforceMode`](#cdktfprovidertfesentinelpolicyconfigpropertyenforcemode) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#enforce_mode SentinelPolicy#enforce_mode}. |
+| [`name`](#cdktfprovidertfesentinelpolicyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#name SentinelPolicy#name}. |
+| [`organization`](#cdktfprovidertfesentinelpolicyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#organization SentinelPolicy#organization}. |
+| [`policy`](#cdktfprovidertfesentinelpolicyconfigpropertypolicy)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#policy SentinelPolicy#policy}. |
+| [`description`](#cdktfprovidertfesentinelpolicyconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#description SentinelPolicy#description}. |
+| [`enforceMode`](#cdktfprovidertfesentinelpolicyconfigpropertyenforcemode) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}. |
 
 ---
 
@@ -9132,7 +9132,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#name SentinelPolicy#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#name SentinelPolicy#name}.
 
 ---
 
@@ -9144,7 +9144,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#organization SentinelPolicy#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#organization SentinelPolicy#organization}.
 
 ---
 
@@ -9156,7 +9156,7 @@ public readonly policy: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#policy SentinelPolicy#policy}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#policy SentinelPolicy#policy}.
 
 ---
 
@@ -9168,7 +9168,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#description SentinelPolicy#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#description SentinelPolicy#description}.
 
 ---
 
@@ -9180,7 +9180,7 @@ public readonly enforceMode: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy.html#enforce_mode SentinelPolicy#enforce_mode}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}.
 
 ---
 
@@ -9202,9 +9202,9 @@ const sshKeyConfig: SshKeyConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfesshkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfesshkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfesshkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`key`](#cdktfprovidertfesshkeyconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html#key SshKey#key}. |
-| [`name`](#cdktfprovidertfesshkeyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html#name SshKey#name}. |
-| [`organization`](#cdktfprovidertfesshkeyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html#organization SshKey#organization}. |
+| [`key`](#cdktfprovidertfesshkeyconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#key SshKey#key}. |
+| [`name`](#cdktfprovidertfesshkeyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#name SshKey#name}. |
+| [`organization`](#cdktfprovidertfesshkeyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#organization SshKey#organization}. |
 
 ---
 
@@ -9256,7 +9256,7 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html#key SshKey#key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#key SshKey#key}.
 
 ---
 
@@ -9268,7 +9268,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html#name SshKey#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#name SshKey#name}.
 
 ---
 
@@ -9280,7 +9280,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key.html#organization SshKey#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#organization SshKey#organization}.
 
 ---
 
@@ -9302,9 +9302,9 @@ const teamAccessConfig: TeamAccessConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeteamaccessconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamaccessconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamaccessconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`teamId`](#cdktfprovidertfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#team_id TeamAccess#team_id}. |
-| [`workspaceId`](#cdktfprovidertfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#workspace_id TeamAccess#workspace_id}. |
-| [`access`](#cdktfprovidertfeteamaccessconfigpropertyaccess) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#access TeamAccess#access}. |
+| [`teamId`](#cdktfprovidertfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#team_id TeamAccess#team_id}. |
+| [`workspaceId`](#cdktfprovidertfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_id TeamAccess#workspace_id}. |
+| [`access`](#cdktfprovidertfeteamaccessconfigpropertyaccess) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#access TeamAccess#access}. |
 | [`permissions`](#cdktfprovidertfeteamaccessconfigpropertypermissions) | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | permissions block. |
 
 ---
@@ -9357,7 +9357,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#team_id TeamAccess#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#team_id TeamAccess#team_id}.
 
 ---
 
@@ -9369,7 +9369,7 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#workspace_id TeamAccess#workspace_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_id TeamAccess#workspace_id}.
 
 ---
 
@@ -9381,7 +9381,7 @@ public readonly access: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#access TeamAccess#access}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#access TeamAccess#access}.
 
 ---
 
@@ -9395,7 +9395,7 @@ public readonly permissions: TeamAccessPermissions[];
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#permissions TeamAccess#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#permissions TeamAccess#permissions}
 
 ---
 
@@ -9413,11 +9413,11 @@ const teamAccessPermissions: TeamAccessPermissions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`runs`](#cdktfprovidertfeteamaccesspermissionspropertyruns)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#runs TeamAccess#runs}. |
-| [`sentinelMocks`](#cdktfprovidertfeteamaccesspermissionspropertysentinelmocks)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#sentinel_mocks TeamAccess#sentinel_mocks}. |
-| [`stateVersions`](#cdktfprovidertfeteamaccesspermissionspropertystateversions)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#state_versions TeamAccess#state_versions}. |
-| [`variables`](#cdktfprovidertfeteamaccesspermissionspropertyvariables)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#variables TeamAccess#variables}. |
-| [`workspaceLocking`](#cdktfprovidertfeteamaccesspermissionspropertyworkspacelocking)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#workspace_locking TeamAccess#workspace_locking}. |
+| [`runs`](#cdktfprovidertfeteamaccesspermissionspropertyruns)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#runs TeamAccess#runs}. |
+| [`sentinelMocks`](#cdktfprovidertfeteamaccesspermissionspropertysentinelmocks)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#sentinel_mocks TeamAccess#sentinel_mocks}. |
+| [`stateVersions`](#cdktfprovidertfeteamaccesspermissionspropertystateversions)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#state_versions TeamAccess#state_versions}. |
+| [`variables`](#cdktfprovidertfeteamaccesspermissionspropertyvariables)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#variables TeamAccess#variables}. |
+| [`workspaceLocking`](#cdktfprovidertfeteamaccesspermissionspropertyworkspacelocking)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_locking TeamAccess#workspace_locking}. |
 
 ---
 
@@ -9429,7 +9429,7 @@ public readonly runs: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#runs TeamAccess#runs}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#runs TeamAccess#runs}.
 
 ---
 
@@ -9441,7 +9441,7 @@ public readonly sentinelMocks: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#sentinel_mocks TeamAccess#sentinel_mocks}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#sentinel_mocks TeamAccess#sentinel_mocks}.
 
 ---
 
@@ -9453,7 +9453,7 @@ public readonly stateVersions: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#state_versions TeamAccess#state_versions}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#state_versions TeamAccess#state_versions}.
 
 ---
 
@@ -9465,7 +9465,7 @@ public readonly variables: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#variables TeamAccess#variables}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#variables TeamAccess#variables}.
 
 ---
 
@@ -9477,7 +9477,7 @@ public readonly workspaceLocking: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access.html#workspace_locking TeamAccess#workspace_locking}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_locking TeamAccess#workspace_locking}.
 
 ---
 
@@ -9499,10 +9499,10 @@ const teamConfig: TeamConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeteamconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfeteamconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#name Team#name}. |
-| [`organization`](#cdktfprovidertfeteamconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#organization Team#organization}. |
+| [`name`](#cdktfprovidertfeteamconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#name Team#name}. |
+| [`organization`](#cdktfprovidertfeteamconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization Team#organization}. |
 | [`organizationAccess`](#cdktfprovidertfeteamconfigpropertyorganizationaccess) | [`@cdktf/provider-tfe.TeamOrganizationAccess`](#@cdktf/provider-tfe.TeamOrganizationAccess) | organization_access block. |
-| [`visibility`](#cdktfprovidertfeteamconfigpropertyvisibility) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#visibility Team#visibility}. |
+| [`visibility`](#cdktfprovidertfeteamconfigpropertyvisibility) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#visibility Team#visibility}. |
 
 ---
 
@@ -9554,7 +9554,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#name Team#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#name Team#name}.
 
 ---
 
@@ -9566,7 +9566,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#organization Team#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization Team#organization}.
 
 ---
 
@@ -9580,7 +9580,7 @@ public readonly organizationAccess: TeamOrganizationAccess;
 
 organization_access block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#organization_access Team#organization_access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization_access Team#organization_access}
 
 ---
 
@@ -9592,7 +9592,7 @@ public readonly visibility: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#visibility Team#visibility}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#visibility Team#visibility}.
 
 ---
 
@@ -9614,8 +9614,8 @@ const teamMemberConfig: TeamMemberConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeteammemberconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteammemberconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteammemberconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`teamId`](#cdktfprovidertfeteammemberconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member.html#team_id TeamMember#team_id}. |
-| [`username`](#cdktfprovidertfeteammemberconfigpropertyusername)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member.html#username TeamMember#username}. |
+| [`teamId`](#cdktfprovidertfeteammemberconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}. |
+| [`username`](#cdktfprovidertfeteammemberconfigpropertyusername)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}. |
 
 ---
 
@@ -9667,7 +9667,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member.html#team_id TeamMember#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}.
 
 ---
 
@@ -9679,7 +9679,7 @@ public readonly username: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member.html#username TeamMember#username}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}.
 
 ---
 
@@ -9701,8 +9701,8 @@ const teamMembersConfig: TeamMembersConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeteammembersconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteammembersconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteammembersconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`teamId`](#cdktfprovidertfeteammembersconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html#team_id TeamMembers#team_id}. |
-| [`usernames`](#cdktfprovidertfeteammembersconfigpropertyusernames)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html#usernames TeamMembers#usernames}. |
+| [`teamId`](#cdktfprovidertfeteammembersconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#team_id TeamMembers#team_id}. |
+| [`usernames`](#cdktfprovidertfeteammembersconfigpropertyusernames)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#usernames TeamMembers#usernames}. |
 
 ---
 
@@ -9754,7 +9754,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html#team_id TeamMembers#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#team_id TeamMembers#team_id}.
 
 ---
 
@@ -9766,7 +9766,7 @@ public readonly usernames: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members.html#usernames TeamMembers#usernames}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#usernames TeamMembers#usernames}.
 
 ---
 
@@ -9784,10 +9784,10 @@ const teamOrganizationAccess: TeamOrganizationAccess = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`managePolicies`](#cdktfprovidertfeteamorganizationaccesspropertymanagepolicies) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_policies Team#manage_policies}. |
-| [`managePolicyOverrides`](#cdktfprovidertfeteamorganizationaccesspropertymanagepolicyoverrides) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_policy_overrides Team#manage_policy_overrides}. |
-| [`manageVcsSettings`](#cdktfprovidertfeteamorganizationaccesspropertymanagevcssettings) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_vcs_settings Team#manage_vcs_settings}. |
-| [`manageWorkspaces`](#cdktfprovidertfeteamorganizationaccesspropertymanageworkspaces) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_workspaces Team#manage_workspaces}. |
+| [`managePolicies`](#cdktfprovidertfeteamorganizationaccesspropertymanagepolicies) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policies Team#manage_policies}. |
+| [`managePolicyOverrides`](#cdktfprovidertfeteamorganizationaccesspropertymanagepolicyoverrides) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policy_overrides Team#manage_policy_overrides}. |
+| [`manageVcsSettings`](#cdktfprovidertfeteamorganizationaccesspropertymanagevcssettings) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_vcs_settings Team#manage_vcs_settings}. |
+| [`manageWorkspaces`](#cdktfprovidertfeteamorganizationaccesspropertymanageworkspaces) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}. |
 
 ---
 
@@ -9799,7 +9799,7 @@ public readonly managePolicies: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_policies Team#manage_policies}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policies Team#manage_policies}.
 
 ---
 
@@ -9811,7 +9811,7 @@ public readonly managePolicyOverrides: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_policy_overrides Team#manage_policy_overrides}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policy_overrides Team#manage_policy_overrides}.
 
 ---
 
@@ -9823,7 +9823,7 @@ public readonly manageVcsSettings: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_vcs_settings Team#manage_vcs_settings}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_vcs_settings Team#manage_vcs_settings}.
 
 ---
 
@@ -9835,7 +9835,7 @@ public readonly manageWorkspaces: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team.html#manage_workspaces Team#manage_workspaces}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}.
 
 ---
 
@@ -9857,8 +9857,8 @@ const teamOrganizationMemberConfig: TeamOrganizationMemberConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeteamorganizationmemberconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamorganizationmemberconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamorganizationmemberconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`organizationMembershipId`](#cdktfprovidertfeteamorganizationmemberconfigpropertyorganizationmembershipid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html#organization_membership_id TeamOrganizationMember#organization_membership_id}. |
-| [`teamId`](#cdktfprovidertfeteamorganizationmemberconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html#team_id TeamOrganizationMember#team_id}. |
+| [`organizationMembershipId`](#cdktfprovidertfeteamorganizationmemberconfigpropertyorganizationmembershipid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}. |
+| [`teamId`](#cdktfprovidertfeteamorganizationmemberconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#team_id TeamOrganizationMember#team_id}. |
 
 ---
 
@@ -9910,7 +9910,7 @@ public readonly organizationMembershipId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html#organization_membership_id TeamOrganizationMember#organization_membership_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}.
 
 ---
 
@@ -9922,7 +9922,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member.html#team_id TeamOrganizationMember#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#team_id TeamOrganizationMember#team_id}.
 
 ---
 
@@ -9944,8 +9944,8 @@ const teamTokenConfig: TeamTokenConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeteamtokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamtokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamtokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`teamId`](#cdktfprovidertfeteamtokenconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html#team_id TeamToken#team_id}. |
-| [`forceRegenerate`](#cdktfprovidertfeteamtokenconfigpropertyforceregenerate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html#force_regenerate TeamToken#force_regenerate}. |
+| [`teamId`](#cdktfprovidertfeteamtokenconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#team_id TeamToken#team_id}. |
+| [`forceRegenerate`](#cdktfprovidertfeteamtokenconfigpropertyforceregenerate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#force_regenerate TeamToken#force_regenerate}. |
 
 ---
 
@@ -9997,7 +9997,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html#team_id TeamToken#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#team_id TeamToken#team_id}.
 
 ---
 
@@ -10009,7 +10009,7 @@ public readonly forceRegenerate: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token.html#force_regenerate TeamToken#force_regenerate}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#force_regenerate TeamToken#force_regenerate}.
 
 ---
 
@@ -10108,13 +10108,13 @@ const variableConfig: VariableConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfevariableconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfevariableconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfevariableconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`category`](#cdktfprovidertfevariableconfigpropertycategory)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#category Variable#category}. |
-| [`key`](#cdktfprovidertfevariableconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#key Variable#key}. |
-| [`workspaceId`](#cdktfprovidertfevariableconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#workspace_id Variable#workspace_id}. |
-| [`description`](#cdktfprovidertfevariableconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#description Variable#description}. |
-| [`hcl`](#cdktfprovidertfevariableconfigpropertyhcl) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#hcl Variable#hcl}. |
-| [`sensitive`](#cdktfprovidertfevariableconfigpropertysensitive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#sensitive Variable#sensitive}. |
-| [`value`](#cdktfprovidertfevariableconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#value Variable#value}. |
+| [`category`](#cdktfprovidertfevariableconfigpropertycategory)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#category Variable#category}. |
+| [`key`](#cdktfprovidertfevariableconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#key Variable#key}. |
+| [`workspaceId`](#cdktfprovidertfevariableconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}. |
+| [`description`](#cdktfprovidertfevariableconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#description Variable#description}. |
+| [`hcl`](#cdktfprovidertfevariableconfigpropertyhcl) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#hcl Variable#hcl}. |
+| [`sensitive`](#cdktfprovidertfevariableconfigpropertysensitive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#sensitive Variable#sensitive}. |
+| [`value`](#cdktfprovidertfevariableconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#value Variable#value}. |
 
 ---
 
@@ -10166,7 +10166,7 @@ public readonly category: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#category Variable#category}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#category Variable#category}.
 
 ---
 
@@ -10178,7 +10178,7 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#key Variable#key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#key Variable#key}.
 
 ---
 
@@ -10190,7 +10190,7 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#workspace_id Variable#workspace_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}.
 
 ---
 
@@ -10202,7 +10202,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#description Variable#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#description Variable#description}.
 
 ---
 
@@ -10214,7 +10214,7 @@ public readonly hcl: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#hcl Variable#hcl}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#hcl Variable#hcl}.
 
 ---
 
@@ -10226,7 +10226,7 @@ public readonly sensitive: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#sensitive Variable#sensitive}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#sensitive Variable#sensitive}.
 
 ---
 
@@ -10238,7 +10238,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable.html#value Variable#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#value Variable#value}.
 
 ---
 
@@ -10260,26 +10260,26 @@ const workspaceConfig: WorkspaceConfig = { ... }
 | [`dependsOn`](#cdktfprovidertfeworkspaceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeworkspaceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeworkspaceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovidertfeworkspaceconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#name Workspace#name}. |
-| [`organization`](#cdktfprovidertfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#organization Workspace#organization}. |
-| [`agentPoolId`](#cdktfprovidertfeworkspaceconfigpropertyagentpoolid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#agent_pool_id Workspace#agent_pool_id}. |
-| [`allowDestroyPlan`](#cdktfprovidertfeworkspaceconfigpropertyallowdestroyplan) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| [`autoApply`](#cdktfprovidertfeworkspaceconfigpropertyautoapply) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#auto_apply Workspace#auto_apply}. |
-| [`description`](#cdktfprovidertfeworkspaceconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#description Workspace#description}. |
-| [`executionMode`](#cdktfprovidertfeworkspaceconfigpropertyexecutionmode) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#execution_mode Workspace#execution_mode}. |
-| [`fileTriggersEnabled`](#cdktfprovidertfeworkspaceconfigpropertyfiletriggersenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| [`globalRemoteState`](#cdktfprovidertfeworkspaceconfigpropertyglobalremotestate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#global_remote_state Workspace#global_remote_state}. |
-| [`operations`](#cdktfprovidertfeworkspaceconfigpropertyoperations) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#operations Workspace#operations}. |
-| [`queueAllRuns`](#cdktfprovidertfeworkspaceconfigpropertyqueueallruns) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#queue_all_runs Workspace#queue_all_runs}. |
-| [`remoteStateConsumerIds`](#cdktfprovidertfeworkspaceconfigpropertyremotestateconsumerids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
-| [`speculativeEnabled`](#cdktfprovidertfeworkspaceconfigpropertyspeculativeenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#speculative_enabled Workspace#speculative_enabled}. |
-| [`sshKeyId`](#cdktfprovidertfeworkspaceconfigpropertysshkeyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#ssh_key_id Workspace#ssh_key_id}. |
-| [`structuredRunOutputEnabled`](#cdktfprovidertfeworkspaceconfigpropertystructuredrunoutputenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
-| [`tagNames`](#cdktfprovidertfeworkspaceconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#tag_names Workspace#tag_names}. |
-| [`terraformVersion`](#cdktfprovidertfeworkspaceconfigpropertyterraformversion) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#terraform_version Workspace#terraform_version}. |
-| [`triggerPrefixes`](#cdktfprovidertfeworkspaceconfigpropertytriggerprefixes) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#trigger_prefixes Workspace#trigger_prefixes}. |
+| [`name`](#cdktfprovidertfeworkspaceconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#name Workspace#name}. |
+| [`organization`](#cdktfprovidertfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#organization Workspace#organization}. |
+| [`agentPoolId`](#cdktfprovidertfeworkspaceconfigpropertyagentpoolid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#agent_pool_id Workspace#agent_pool_id}. |
+| [`allowDestroyPlan`](#cdktfprovidertfeworkspaceconfigpropertyallowdestroyplan) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| [`autoApply`](#cdktfprovidertfeworkspaceconfigpropertyautoapply) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#auto_apply Workspace#auto_apply}. |
+| [`description`](#cdktfprovidertfeworkspaceconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#description Workspace#description}. |
+| [`executionMode`](#cdktfprovidertfeworkspaceconfigpropertyexecutionmode) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#execution_mode Workspace#execution_mode}. |
+| [`fileTriggersEnabled`](#cdktfprovidertfeworkspaceconfigpropertyfiletriggersenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| [`globalRemoteState`](#cdktfprovidertfeworkspaceconfigpropertyglobalremotestate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#global_remote_state Workspace#global_remote_state}. |
+| [`operations`](#cdktfprovidertfeworkspaceconfigpropertyoperations) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#operations Workspace#operations}. |
+| [`queueAllRuns`](#cdktfprovidertfeworkspaceconfigpropertyqueueallruns) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| [`remoteStateConsumerIds`](#cdktfprovidertfeworkspaceconfigpropertyremotestateconsumerids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
+| [`speculativeEnabled`](#cdktfprovidertfeworkspaceconfigpropertyspeculativeenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| [`sshKeyId`](#cdktfprovidertfeworkspaceconfigpropertysshkeyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ssh_key_id Workspace#ssh_key_id}. |
+| [`structuredRunOutputEnabled`](#cdktfprovidertfeworkspaceconfigpropertystructuredrunoutputenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| [`tagNames`](#cdktfprovidertfeworkspaceconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tag_names Workspace#tag_names}. |
+| [`terraformVersion`](#cdktfprovidertfeworkspaceconfigpropertyterraformversion) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#terraform_version Workspace#terraform_version}. |
+| [`triggerPrefixes`](#cdktfprovidertfeworkspaceconfigpropertytriggerprefixes) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_prefixes Workspace#trigger_prefixes}. |
 | [`vcsRepo`](#cdktfprovidertfeworkspaceconfigpropertyvcsrepo) | [`@cdktf/provider-tfe.WorkspaceVcsRepo`](#@cdktf/provider-tfe.WorkspaceVcsRepo) | vcs_repo block. |
-| [`workingDirectory`](#cdktfprovidertfeworkspaceconfigpropertyworkingdirectory) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#working_directory Workspace#working_directory}. |
+| [`workingDirectory`](#cdktfprovidertfeworkspaceconfigpropertyworkingdirectory) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#working_directory Workspace#working_directory}. |
 
 ---
 
@@ -10331,7 +10331,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#name Workspace#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#name Workspace#name}.
 
 ---
 
@@ -10343,7 +10343,7 @@ public readonly organization: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#organization Workspace#organization}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#organization Workspace#organization}.
 
 ---
 
@@ -10355,7 +10355,7 @@ public readonly agentPoolId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#agent_pool_id Workspace#agent_pool_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#agent_pool_id Workspace#agent_pool_id}.
 
 ---
 
@@ -10367,7 +10367,7 @@ public readonly allowDestroyPlan: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#allow_destroy_plan Workspace#allow_destroy_plan}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
 ---
 
@@ -10379,7 +10379,7 @@ public readonly autoApply: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#auto_apply Workspace#auto_apply}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#auto_apply Workspace#auto_apply}.
 
 ---
 
@@ -10391,7 +10391,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#description Workspace#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#description Workspace#description}.
 
 ---
 
@@ -10403,7 +10403,7 @@ public readonly executionMode: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#execution_mode Workspace#execution_mode}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#execution_mode Workspace#execution_mode}.
 
 ---
 
@@ -10415,7 +10415,7 @@ public readonly fileTriggersEnabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#file_triggers_enabled Workspace#file_triggers_enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
 ---
 
@@ -10427,7 +10427,7 @@ public readonly globalRemoteState: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#global_remote_state Workspace#global_remote_state}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#global_remote_state Workspace#global_remote_state}.
 
 ---
 
@@ -10439,7 +10439,7 @@ public readonly operations: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#operations Workspace#operations}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#operations Workspace#operations}.
 
 ---
 
@@ -10451,7 +10451,7 @@ public readonly queueAllRuns: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#queue_all_runs Workspace#queue_all_runs}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#queue_all_runs Workspace#queue_all_runs}.
 
 ---
 
@@ -10463,7 +10463,7 @@ public readonly remoteStateConsumerIds: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#remote_state_consumer_ids Workspace#remote_state_consumer_ids}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}.
 
 ---
 
@@ -10475,7 +10475,7 @@ public readonly speculativeEnabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#speculative_enabled Workspace#speculative_enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#speculative_enabled Workspace#speculative_enabled}.
 
 ---
 
@@ -10487,7 +10487,7 @@ public readonly sshKeyId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#ssh_key_id Workspace#ssh_key_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ssh_key_id Workspace#ssh_key_id}.
 
 ---
 
@@ -10499,7 +10499,7 @@ public readonly structuredRunOutputEnabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#structured_run_output_enabled Workspace#structured_run_output_enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
 ---
 
@@ -10511,7 +10511,7 @@ public readonly tagNames: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#tag_names Workspace#tag_names}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tag_names Workspace#tag_names}.
 
 ---
 
@@ -10523,7 +10523,7 @@ public readonly terraformVersion: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#terraform_version Workspace#terraform_version}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#terraform_version Workspace#terraform_version}.
 
 ---
 
@@ -10535,7 +10535,7 @@ public readonly triggerPrefixes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#trigger_prefixes Workspace#trigger_prefixes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_prefixes Workspace#trigger_prefixes}.
 
 ---
 
@@ -10549,7 +10549,7 @@ public readonly vcsRepo: WorkspaceVcsRepo;
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#vcs_repo Workspace#vcs_repo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#vcs_repo Workspace#vcs_repo}
 
 ---
 
@@ -10561,7 +10561,7 @@ public readonly workingDirectory: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#working_directory Workspace#working_directory}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#working_directory Workspace#working_directory}.
 
 ---
 
@@ -10579,10 +10579,10 @@ const workspaceVcsRepo: WorkspaceVcsRepo = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`identifier`](#cdktfprovidertfeworkspacevcsrepopropertyidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#identifier Workspace#identifier}. |
-| [`oauthTokenId`](#cdktfprovidertfeworkspacevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#oauth_token_id Workspace#oauth_token_id}. |
-| [`branch`](#cdktfprovidertfeworkspacevcsrepopropertybranch) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#branch Workspace#branch}. |
-| [`ingressSubmodules`](#cdktfprovidertfeworkspacevcsrepopropertyingresssubmodules) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#ingress_submodules Workspace#ingress_submodules}. |
+| [`identifier`](#cdktfprovidertfeworkspacevcsrepopropertyidentifier)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#identifier Workspace#identifier}. |
+| [`oauthTokenId`](#cdktfprovidertfeworkspacevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}. |
+| [`branch`](#cdktfprovidertfeworkspacevcsrepopropertybranch) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#branch Workspace#branch}. |
+| [`ingressSubmodules`](#cdktfprovidertfeworkspacevcsrepopropertyingresssubmodules) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ingress_submodules Workspace#ingress_submodules}. |
 
 ---
 
@@ -10594,7 +10594,7 @@ public readonly identifier: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#identifier Workspace#identifier}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#identifier Workspace#identifier}.
 
 ---
 
@@ -10606,7 +10606,7 @@ public readonly oauthTokenId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#oauth_token_id Workspace#oauth_token_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}.
 
 ---
 
@@ -10618,7 +10618,7 @@ public readonly branch: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#branch Workspace#branch}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#branch Workspace#branch}.
 
 ---
 
@@ -10630,7 +10630,7 @@ public readonly ingressSubmodules: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace.html#ingress_submodules Workspace#ingress_submodules}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ingress_submodules Workspace#ingress_submodules}.
 
 ---
 

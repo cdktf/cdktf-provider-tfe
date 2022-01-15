@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/d/outputs.html
+// https://www.terraform.io/docs/providers/tfe/d/outputs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface DataTfeOutputsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The organization to fetch the remote state from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#organization DataTfeOutputs#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#organization DataTfeOutputs#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#values DataTfeOutputs#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}
   */
   readonly values?: { [key: string]: any } | cdktf.IResolvable;
   /**
   * The workspace to fetch the remote state from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html#workspace DataTfeOutputs#workspace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#workspace DataTfeOutputs#workspace}
   */
   readonly workspace: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html tfe_outputs}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/d/outputs tfe_outputs}
 */
 export class DataTfeOutputs extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/outputs.html tfe_outputs} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/d/outputs tfe_outputs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
