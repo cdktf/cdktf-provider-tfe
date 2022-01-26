@@ -34,7 +34,7 @@ export interface PolicySetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}
   */
-  readonly slug?: { [key: string]: string } | cdktf.IResolvable;
+  readonly slug?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#workspace_ids PolicySet#workspace_ids}
   */
@@ -66,7 +66,7 @@ export interface PolicySetVcsRepo {
 }
 
 export function policySetVcsRepoToTerraform(struct?: PolicySetVcsRepoOutputReference | PolicySetVcsRepo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -86,7 +86,7 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -161,7 +161,7 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
   // ingress_submodules - computed: false, optional: true, required: false
   private _ingressSubmodules?: boolean | cdktf.IResolvable; 
   public get ingressSubmodules() {
-    return this.getBooleanAttribute('ingress_submodules') as any;
+    return this.getBooleanAttribute('ingress_submodules');
   }
   public set ingressSubmodules(value: boolean | cdktf.IResolvable) {
     this._ingressSubmodules = value;
@@ -254,7 +254,7 @@ export class PolicySet extends cdktf.TerraformResource {
   // global - computed: false, optional: true, required: false
   private _global?: boolean | cdktf.IResolvable; 
   public get global() {
-    return this.getBooleanAttribute('global') as any;
+    return this.getBooleanAttribute('global');
   }
   public set global(value: boolean | cdktf.IResolvable) {
     this._global = value;
@@ -317,7 +317,7 @@ export class PolicySet extends cdktf.TerraformResource {
   // policy_ids - computed: false, optional: true, required: false
   private _policyIds?: string[]; 
   public get policyIds() {
-    return this.getListAttribute('policy_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('policy_ids'));
   }
   public set policyIds(value: string[]) {
     this._policyIds = value;
@@ -331,12 +331,11 @@ export class PolicySet extends cdktf.TerraformResource {
   }
 
   // slug - computed: false, optional: true, required: false
-  private _slug?: { [key: string]: string } | cdktf.IResolvable; 
+  private _slug?: { [key: string]: string }; 
   public get slug() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('slug') as any;
+    return this.getStringMapAttribute('slug');
   }
-  public set slug(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set slug(value: { [key: string]: string }) {
     this._slug = value;
   }
   public resetSlug() {
@@ -350,7 +349,7 @@ export class PolicySet extends cdktf.TerraformResource {
   // workspace_ids - computed: false, optional: true, required: false
   private _workspaceIds?: string[]; 
   public get workspaceIds() {
-    return this.getListAttribute('workspace_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('workspace_ids'));
   }
   public set workspaceIds(value: string[]) {
     this._workspaceIds = value;
@@ -364,7 +363,7 @@ export class PolicySet extends cdktf.TerraformResource {
   }
 
   // vcs_repo - computed: false, optional: true, required: false
-  private _vcsRepo = new PolicySetVcsRepoOutputReference(this as any, "vcs_repo", true);
+  private _vcsRepo = new PolicySetVcsRepoOutputReference(this, "vcs_repo", true);
   public get vcsRepo() {
     return this._vcsRepo;
   }
@@ -391,7 +390,7 @@ export class PolicySet extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
       policies_path: cdktf.stringToTerraform(this._policiesPath),
       policy_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._policyIds),
-      slug: cdktf.hashMapper(cdktf.anyToTerraform)(this._slug),
+      slug: cdktf.hashMapper(cdktf.stringToTerraform)(this._slug),
       workspace_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._workspaceIds),
       vcs_repo: policySetVcsRepoToTerraform(this._vcsRepo.internalValue),
     };

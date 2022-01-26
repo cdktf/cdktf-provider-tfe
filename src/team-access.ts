@@ -24,7 +24,7 @@ export interface TeamAccessConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#permissions TeamAccess#permissions}
   */
-  readonly permissions?: TeamAccessPermissions[];
+  readonly permissions?: TeamAccessPermissions[] | cdktf.IResolvable;
 }
 export interface TeamAccessPermissions {
   /**
@@ -49,8 +49,8 @@ export interface TeamAccessPermissions {
   readonly workspaceLocking: boolean | cdktf.IResolvable;
 }
 
-export function teamAccessPermissionsToTerraform(struct?: TeamAccessPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function teamAccessPermissionsToTerraform(struct?: TeamAccessPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -154,12 +154,12 @@ export class TeamAccess extends cdktf.TerraformResource {
   }
 
   // permissions - computed: false, optional: true, required: false
-  private _permissions?: TeamAccessPermissions[]; 
+  private _permissions?: TeamAccessPermissions[] | cdktf.IResolvable; 
   public get permissions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('permissions') as any;
+    return this.interpolationForAttribute('permissions');
   }
-  public set permissions(value: TeamAccessPermissions[]) {
+  public set permissions(value: TeamAccessPermissions[] | cdktf.IResolvable) {
     this._permissions = value;
   }
   public resetPermissions() {

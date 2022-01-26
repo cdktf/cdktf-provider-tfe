@@ -60,7 +60,7 @@ export class TeamToken extends cdktf.TerraformResource {
   // force_regenerate - computed: false, optional: true, required: false
   private _forceRegenerate?: boolean | cdktf.IResolvable; 
   public get forceRegenerate() {
-    return this.getBooleanAttribute('force_regenerate') as any;
+    return this.getBooleanAttribute('force_regenerate');
   }
   public set forceRegenerate(value: boolean | cdktf.IResolvable) {
     this._forceRegenerate = value;

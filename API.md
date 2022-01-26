@@ -685,12 +685,12 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfedatatfeorganizationpropertycollaboratorauthpolicy)<span title="Required">*</span> | `string` | *No description.* |
-| [`costEstimationEnabled`](#cdktfprovidertfedatatfeorganizationpropertycostestimationenabled)<span title="Required">*</span> | `any` | *No description.* |
+| [`costEstimationEnabled`](#cdktfprovidertfedatatfeorganizationpropertycostestimationenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`email`](#cdktfprovidertfedatatfeorganizationpropertyemail)<span title="Required">*</span> | `string` | *No description.* |
 | [`externalId`](#cdktfprovidertfedatatfeorganizationpropertyexternalid)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeorganizationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`ownersTeamSamlRoleId`](#cdktfprovidertfedatatfeorganizationpropertyownersteamsamlroleid)<span title="Required">*</span> | `string` | *No description.* |
-| [`twoFactorConformant`](#cdktfprovidertfedatatfeorganizationpropertytwofactorconformant)<span title="Required">*</span> | `any` | *No description.* |
+| [`twoFactorConformant`](#cdktfprovidertfedatatfeorganizationpropertytwofactorconformant)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nameInput`](#cdktfprovidertfedatatfeorganizationpropertynameinput) | `string` | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeorganizationpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -709,10 +709,10 @@ public readonly collaboratorAuthPolicy: string;
 ##### `costEstimationEnabled`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeOrganization.property.costEstimationEnabled" id="cdktfprovidertfedatatfeorganizationpropertycostestimationenabled"></a>
 
 ```typescript
-public readonly costEstimationEnabled: any;
+public readonly costEstimationEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -759,10 +759,10 @@ public readonly ownersTeamSamlRoleId: string;
 ##### `twoFactorConformant`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeOrganization.property.twoFactorConformant" id="cdktfprovidertfedatatfeorganizationpropertytwofactorconformant"></a>
 
 ```typescript
-public readonly twoFactorConformant: any;
+public readonly twoFactorConformant: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1135,10 +1135,10 @@ public resetValues()
 | --- | --- | --- |
 | [`id`](#cdktfprovidertfedatatfeoutputspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`organizationInput`](#cdktfprovidertfedatatfeoutputspropertyorganizationinput) | `string` | *No description.* |
-| [`valuesInput`](#cdktfprovidertfedatatfeoutputspropertyvaluesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `any`} | *No description.* |
+| [`valuesInput`](#cdktfprovidertfedatatfeoutputspropertyvaluesinput) | {[ key: string ]: `any`} | *No description.* |
 | [`workspaceInput`](#cdktfprovidertfedatatfeoutputspropertyworkspaceinput) | `string` | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeoutputspropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
-| [`values`](#cdktfprovidertfedatatfeoutputspropertyvalues)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `any`} | *No description.* |
+| [`values`](#cdktfprovidertfedatatfeoutputspropertyvalues)<span title="Required">*</span> | {[ key: string ]: `any`} | *No description.* |
 | [`workspace`](#cdktfprovidertfedatatfeoutputspropertyworkspace)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -1166,10 +1166,10 @@ public readonly organizationInput: string;
 ##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputs.property.valuesInput" id="cdktfprovidertfedatatfeoutputspropertyvaluesinput"></a>
 
 ```typescript
-public readonly valuesInput: IResolvable | {[ key: string ]: any};
+public readonly valuesInput: {[ key: string ]: any};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `any`}
+- *Type:* {[ key: string ]: `any`}
 
 ---
 
@@ -1196,10 +1196,10 @@ public readonly organization: string;
 ##### `values`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeOutputs.property.values" id="cdktfprovidertfedatatfeoutputspropertyvalues"></a>
 
 ```typescript
-public readonly values: IResolvable | {[ key: string ]: any};
+public readonly values: {[ key: string ]: any};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `any`}
+- *Type:* {[ key: string ]: `any`}
 
 ---
 
@@ -1799,22 +1799,22 @@ public vcsRepo(index: string)
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`allowDestroyPlan`](#cdktfprovidertfedatatfeworkspacepropertyallowdestroyplan)<span title="Required">*</span> | `any` | *No description.* |
-| [`autoApply`](#cdktfprovidertfedatatfeworkspacepropertyautoapply)<span title="Required">*</span> | `any` | *No description.* |
+| [`allowDestroyPlan`](#cdktfprovidertfedatatfeworkspacepropertyallowdestroyplan)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`autoApply`](#cdktfprovidertfedatatfeworkspacepropertyautoapply)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`description`](#cdktfprovidertfedatatfeworkspacepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`fileTriggersEnabled`](#cdktfprovidertfedatatfeworkspacepropertyfiletriggersenabled)<span title="Required">*</span> | `any` | *No description.* |
-| [`globalRemoteState`](#cdktfprovidertfedatatfeworkspacepropertyglobalremotestate)<span title="Required">*</span> | `any` | *No description.* |
+| [`fileTriggersEnabled`](#cdktfprovidertfedatatfeworkspacepropertyfiletriggersenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`globalRemoteState`](#cdktfprovidertfedatatfeworkspacepropertyglobalremotestate)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeworkspacepropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`operations`](#cdktfprovidertfedatatfeworkspacepropertyoperations)<span title="Required">*</span> | `any` | *No description.* |
+| [`operations`](#cdktfprovidertfedatatfeworkspacepropertyoperations)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`policyCheckFailures`](#cdktfprovidertfedatatfeworkspacepropertypolicycheckfailures)<span title="Required">*</span> | `number` | *No description.* |
-| [`queueAllRuns`](#cdktfprovidertfedatatfeworkspacepropertyqueueallruns)<span title="Required">*</span> | `any` | *No description.* |
+| [`queueAllRuns`](#cdktfprovidertfedatatfeworkspacepropertyqueueallruns)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`remoteStateConsumerIds`](#cdktfprovidertfedatatfeworkspacepropertyremotestateconsumerids)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`resourceCount`](#cdktfprovidertfedatatfeworkspacepropertyresourcecount)<span title="Required">*</span> | `number` | *No description.* |
 | [`runFailures`](#cdktfprovidertfedatatfeworkspacepropertyrunfailures)<span title="Required">*</span> | `number` | *No description.* |
 | [`runsCount`](#cdktfprovidertfedatatfeworkspacepropertyrunscount)<span title="Required">*</span> | `number` | *No description.* |
-| [`speculativeEnabled`](#cdktfprovidertfedatatfeworkspacepropertyspeculativeenabled)<span title="Required">*</span> | `any` | *No description.* |
+| [`speculativeEnabled`](#cdktfprovidertfedatatfeworkspacepropertyspeculativeenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`sshKeyId`](#cdktfprovidertfedatatfeworkspacepropertysshkeyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`structuredRunOutputEnabled`](#cdktfprovidertfedatatfeworkspacepropertystructuredrunoutputenabled)<span title="Required">*</span> | `any` | *No description.* |
+| [`structuredRunOutputEnabled`](#cdktfprovidertfedatatfeworkspacepropertystructuredrunoutputenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`terraformVersion`](#cdktfprovidertfedatatfeworkspacepropertyterraformversion)<span title="Required">*</span> | `string` | *No description.* |
 | [`triggerPrefixes`](#cdktfprovidertfedatatfeworkspacepropertytriggerprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`workingDirectory`](#cdktfprovidertfedatatfeworkspacepropertyworkingdirectory)<span title="Required">*</span> | `string` | *No description.* |
@@ -1830,20 +1830,20 @@ public vcsRepo(index: string)
 ##### `allowDestroyPlan`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.allowDestroyPlan" id="cdktfprovidertfedatatfeworkspacepropertyallowdestroyplan"></a>
 
 ```typescript
-public readonly allowDestroyPlan: any;
+public readonly allowDestroyPlan: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `autoApply`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.autoApply" id="cdktfprovidertfedatatfeworkspacepropertyautoapply"></a>
 
 ```typescript
-public readonly autoApply: any;
+public readonly autoApply: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1860,20 +1860,20 @@ public readonly description: string;
 ##### `fileTriggersEnabled`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.fileTriggersEnabled" id="cdktfprovidertfedatatfeworkspacepropertyfiletriggersenabled"></a>
 
 ```typescript
-public readonly fileTriggersEnabled: any;
+public readonly fileTriggersEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `globalRemoteState`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.globalRemoteState" id="cdktfprovidertfedatatfeworkspacepropertyglobalremotestate"></a>
 
 ```typescript
-public readonly globalRemoteState: any;
+public readonly globalRemoteState: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1890,10 +1890,10 @@ public readonly id: string;
 ##### `operations`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.operations" id="cdktfprovidertfedatatfeworkspacepropertyoperations"></a>
 
 ```typescript
-public readonly operations: any;
+public readonly operations: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1910,10 +1910,10 @@ public readonly policyCheckFailures: number;
 ##### `queueAllRuns`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.queueAllRuns" id="cdktfprovidertfedatatfeworkspacepropertyqueueallruns"></a>
 
 ```typescript
-public readonly queueAllRuns: any;
+public readonly queueAllRuns: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1960,10 +1960,10 @@ public readonly runsCount: number;
 ##### `speculativeEnabled`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.speculativeEnabled" id="cdktfprovidertfedatatfeworkspacepropertyspeculativeenabled"></a>
 
 ```typescript
-public readonly speculativeEnabled: any;
+public readonly speculativeEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1980,10 +1980,10 @@ public readonly sshKeyId: string;
 ##### `structuredRunOutputEnabled`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.structuredRunOutputEnabled" id="cdktfprovidertfedatatfeworkspacepropertystructuredrunoutputenabled"></a>
 
 ```typescript
-public readonly structuredRunOutputEnabled: any;
+public readonly structuredRunOutputEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3517,7 +3517,7 @@ public resetWorkspaceIds()
 | [`organizationInput`](#cdktfprovidertfepolicysetpropertyorganizationinput) | `string` | *No description.* |
 | [`policiesPathInput`](#cdktfprovidertfepolicysetpropertypoliciespathinput) | `string` | *No description.* |
 | [`policyIdsInput`](#cdktfprovidertfepolicysetpropertypolicyidsinput) | `string`[] | *No description.* |
-| [`slugInput`](#cdktfprovidertfepolicysetpropertysluginput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`slugInput`](#cdktfprovidertfepolicysetpropertysluginput) | {[ key: string ]: `string`} | *No description.* |
 | [`vcsRepoInput`](#cdktfprovidertfepolicysetpropertyvcsrepoinput) | [`@cdktf/provider-tfe.PolicySetVcsRepo`](#@cdktf/provider-tfe.PolicySetVcsRepo) | *No description.* |
 | [`workspaceIdsInput`](#cdktfprovidertfepolicysetpropertyworkspaceidsinput) | `string`[] | *No description.* |
 | [`description`](#cdktfprovidertfepolicysetpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
@@ -3526,7 +3526,7 @@ public resetWorkspaceIds()
 | [`organization`](#cdktfprovidertfepolicysetpropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
 | [`policiesPath`](#cdktfprovidertfepolicysetpropertypoliciespath)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyIds`](#cdktfprovidertfepolicysetpropertypolicyids)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`slug`](#cdktfprovidertfepolicysetpropertyslug)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`slug`](#cdktfprovidertfepolicysetpropertyslug)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`workspaceIds`](#cdktfprovidertfepolicysetpropertyworkspaceids)<span title="Required">*</span> | `string`[] | *No description.* |
 
 ---
@@ -3614,10 +3614,10 @@ public readonly policyIdsInput: string[];
 ##### `slugInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySet.property.slugInput" id="cdktfprovidertfepolicysetpropertysluginput"></a>
 
 ```typescript
-public readonly slugInput: IResolvable | {[ key: string ]: string};
+public readonly slugInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3704,10 +3704,10 @@ public readonly policyIds: string[];
 ##### `slug`<sup>Required</sup> <a name="@cdktf/provider-tfe.PolicySet.property.slug" id="cdktfprovidertfepolicysetpropertyslug"></a>
 
 ```typescript
-public readonly slug: IResolvable | {[ key: string ]: string};
+public readonly slug: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4818,11 +4818,11 @@ public resetPermissions()
 | --- | --- | --- |
 | [`id`](#cdktfprovidertfeteamaccesspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessInput`](#cdktfprovidertfeteamaccesspropertyaccessinput) | `string` | *No description.* |
-| [`permissionsInput`](#cdktfprovidertfeteamaccesspropertypermissionsinput) | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | *No description.* |
+| [`permissionsInput`](#cdktfprovidertfeteamaccesspropertypermissionsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | *No description.* |
 | [`teamIdInput`](#cdktfprovidertfeteamaccesspropertyteamidinput) | `string` | *No description.* |
 | [`workspaceIdInput`](#cdktfprovidertfeteamaccesspropertyworkspaceidinput) | `string` | *No description.* |
 | [`access`](#cdktfprovidertfeteamaccesspropertyaccess)<span title="Required">*</span> | `string` | *No description.* |
-| [`permissions`](#cdktfprovidertfeteamaccesspropertypermissions)<span title="Required">*</span> | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | *No description.* |
+| [`permissions`](#cdktfprovidertfeteamaccesspropertypermissions)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | *No description.* |
 | [`teamId`](#cdktfprovidertfeteamaccesspropertyteamid)<span title="Required">*</span> | `string` | *No description.* |
 | [`workspaceId`](#cdktfprovidertfeteamaccesspropertyworkspaceid)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -4851,10 +4851,10 @@ public readonly accessInput: string;
 ##### `permissionsInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccess.property.permissionsInput" id="cdktfprovidertfeteamaccesspropertypermissionsinput"></a>
 
 ```typescript
-public readonly permissionsInput: TeamAccessPermissions[];
+public readonly permissionsInput: IResolvable | TeamAccessPermissions[];
 ```
 
-- *Type:* [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[]
 
 ---
 
@@ -4891,10 +4891,10 @@ public readonly access: string;
 ##### `permissions`<sup>Required</sup> <a name="@cdktf/provider-tfe.TeamAccess.property.permissions" id="cdktfprovidertfeteamaccesspropertypermissions"></a>
 
 ```typescript
-public readonly permissions: TeamAccessPermissions[];
+public readonly permissions: IResolvable | TeamAccessPermissions[];
 ```
 
-- *Type:* [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[]
 
 ---
 
@@ -6578,7 +6578,7 @@ const agentPoolConfig: AgentPoolConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeagentpoolconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeagentpoolconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeagentpoolconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeagentpoolconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeagentpoolconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -6590,10 +6590,10 @@ const agentPoolConfig: AgentPoolConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentPoolConfig.property.count" id="cdktfprovidertfeagentpoolconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6665,7 +6665,7 @@ const agentTokenConfig: AgentTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeagenttokenconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeagenttokenconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeagenttokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeagenttokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeagenttokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -6677,10 +6677,10 @@ const agentTokenConfig: AgentTokenConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentTokenConfig.property.count" id="cdktfprovidertfeagenttokenconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6752,7 +6752,7 @@ const dataTfeAgentPoolConfig: DataTfeAgentPoolConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeagentpoolconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeagentpoolconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeagentpoolconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeagentpoolconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeagentpoolconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -6764,10 +6764,10 @@ const dataTfeAgentPoolConfig: DataTfeAgentPoolConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeAgentPoolConfig.property.count" id="cdktfprovidertfedatatfeagentpoolconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6839,7 +6839,7 @@ const dataTfeIpRangesConfig: DataTfeIpRangesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeiprangesconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeiprangesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeiprangesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeiprangesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeiprangesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -6849,10 +6849,10 @@ const dataTfeIpRangesConfig: DataTfeIpRangesConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeIpRangesConfig.property.count" id="cdktfprovidertfedatatfeiprangesconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6900,7 +6900,7 @@ const dataTfeOauthClientConfig: DataTfeOauthClientConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeoauthclientconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeoauthclientconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeoauthclientconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeoauthclientconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeoauthclientconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -6911,10 +6911,10 @@ const dataTfeOauthClientConfig: DataTfeOauthClientConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOauthClientConfig.property.count" id="cdktfprovidertfedatatfeoauthclientconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6974,7 +6974,7 @@ const dataTfeOrganizationConfig: DataTfeOrganizationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeorganizationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeorganizationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -6985,10 +6985,10 @@ const dataTfeOrganizationConfig: DataTfeOrganizationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationConfig.property.count" id="cdktfprovidertfedatatfeorganizationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7048,7 +7048,7 @@ const dataTfeOrganizationMembershipConfig: DataTfeOrganizationMembershipConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7060,10 +7060,10 @@ const dataTfeOrganizationMembershipConfig: DataTfeOrganizationMembershipConfig =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationMembershipConfig.property.count" id="cdktfprovidertfedatatfeorganizationmembershipconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7135,7 +7135,7 @@ const dataTfeOrganizationsConfig: DataTfeOrganizationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeorganizationsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeorganizationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7146,10 +7146,10 @@ const dataTfeOrganizationsConfig: DataTfeOrganizationsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationsConfig.property.count" id="cdktfprovidertfedatatfeorganizationsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7209,23 +7209,23 @@ const dataTfeOutputsConfig: DataTfeOutputsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeoutputsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeoutputsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeoutputsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeoutputsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeoutputsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeoutputsconfigpropertyorganization)<span title="Required">*</span> | `string` | The organization to fetch the remote state from. |
 | [`workspace`](#cdktfprovidertfedatatfeoutputsconfigpropertyworkspace)<span title="Required">*</span> | `string` | The workspace to fetch the remote state from. |
-| [`values`](#cdktfprovidertfedatatfeoutputsconfigpropertyvalues) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `any`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
+| [`values`](#cdktfprovidertfedatatfeoutputsconfigpropertyvalues) | {[ key: string ]: `any`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputsConfig.property.count" id="cdktfprovidertfedatatfeoutputsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7290,10 +7290,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 ##### `values`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputsConfig.property.values" id="cdktfprovidertfedatatfeoutputsconfigpropertyvalues"></a>
 
 ```typescript
-public readonly values: IResolvable | {[ key: string ]: any};
+public readonly values: {[ key: string ]: any};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `any`}
+- *Type:* {[ key: string ]: `any`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}.
 
@@ -7313,7 +7313,7 @@ const dataTfeSlugConfig: DataTfeSlugConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeslugconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeslugconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeslugconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeslugconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeslugconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7324,10 +7324,10 @@ const dataTfeSlugConfig: DataTfeSlugConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSlugConfig.property.count" id="cdktfprovidertfedatatfeslugconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7387,7 +7387,7 @@ const dataTfeSshKeyConfig: DataTfeSshKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfesshkeyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfesshkeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfesshkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfesshkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfesshkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7399,10 +7399,10 @@ const dataTfeSshKeyConfig: DataTfeSshKeyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSshKeyConfig.property.count" id="cdktfprovidertfedatatfesshkeyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7474,7 +7474,7 @@ const dataTfeTeamAccessConfig: DataTfeTeamAccessConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeteamaccessconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeteamaccessconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeteamaccessconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeteamaccessconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeteamaccessconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7486,10 +7486,10 @@ const dataTfeTeamAccessConfig: DataTfeTeamAccessConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessConfig.property.count" id="cdktfprovidertfedatatfeteamaccessconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7561,7 +7561,7 @@ const dataTfeTeamConfig: DataTfeTeamConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeteamconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeteamconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeteamconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeteamconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeteamconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7573,10 +7573,10 @@ const dataTfeTeamConfig: DataTfeTeamConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamConfig.property.count" id="cdktfprovidertfedatatfeteamconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7648,7 +7648,7 @@ const dataTfeWorkspaceConfig: DataTfeWorkspaceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeworkspaceconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeworkspaceconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7661,10 +7661,10 @@ const dataTfeWorkspaceConfig: DataTfeWorkspaceConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceConfig.property.count" id="cdktfprovidertfedatatfeworkspaceconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7748,7 +7748,7 @@ const dataTfeWorkspaceIdsConfig: DataTfeWorkspaceIdsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7761,10 +7761,10 @@ const dataTfeWorkspaceIdsConfig: DataTfeWorkspaceIdsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIdsConfig.property.count" id="cdktfprovidertfedatatfeworkspaceidsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7848,7 +7848,7 @@ const notificationConfigurationConfig: NotificationConfigurationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfenotificationconfigurationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfenotificationconfigurationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfenotificationconfigurationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfenotificationconfigurationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfenotificationconfigurationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -7867,10 +7867,10 @@ const notificationConfigurationConfig: NotificationConfigurationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.NotificationConfigurationConfig.property.count" id="cdktfprovidertfenotificationconfigurationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8026,7 +8026,7 @@ const oauthClientConfig: OauthClientConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeoauthclientconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeoauthclientconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeoauthclientconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeoauthclientconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeoauthclientconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8042,10 +8042,10 @@ const oauthClientConfig: OauthClientConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OauthClientConfig.property.count" id="cdktfprovidertfeoauthclientconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8165,7 +8165,7 @@ const organizationConfig: OrganizationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeorganizationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeorganizationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8182,10 +8182,10 @@ const organizationConfig: OrganizationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.count" id="cdktfprovidertfeorganizationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8317,7 +8317,7 @@ const organizationMembershipConfig: OrganizationMembershipConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeorganizationmembershipconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeorganizationmembershipconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8329,10 +8329,10 @@ const organizationMembershipConfig: OrganizationMembershipConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationMembershipConfig.property.count" id="cdktfprovidertfeorganizationmembershipconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8404,7 +8404,7 @@ const organizationTokenConfig: OrganizationTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeorganizationtokenconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeorganizationtokenconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationtokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationtokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationtokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8416,10 +8416,10 @@ const organizationTokenConfig: OrganizationTokenConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationTokenConfig.property.count" id="cdktfprovidertfeorganizationtokenconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8491,7 +8491,7 @@ const policySetConfig: PolicySetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfepolicysetconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfepolicysetconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfepolicysetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfepolicysetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfepolicysetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8501,7 +8501,7 @@ const policySetConfig: PolicySetConfig = { ... }
 | [`global`](#cdktfprovidertfepolicysetconfigpropertyglobal) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#global PolicySet#global}. |
 | [`policiesPath`](#cdktfprovidertfepolicysetconfigpropertypoliciespath) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policies_path PolicySet#policies_path}. |
 | [`policyIds`](#cdktfprovidertfepolicysetconfigpropertypolicyids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#policy_ids PolicySet#policy_ids}. |
-| [`slug`](#cdktfprovidertfepolicysetconfigpropertyslug) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}. |
+| [`slug`](#cdktfprovidertfepolicysetconfigpropertyslug) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}. |
 | [`vcsRepo`](#cdktfprovidertfepolicysetconfigpropertyvcsrepo) | [`@cdktf/provider-tfe.PolicySetVcsRepo`](#@cdktf/provider-tfe.PolicySetVcsRepo) | vcs_repo block. |
 | [`workspaceIds`](#cdktfprovidertfepolicysetconfigpropertyworkspaceids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#workspace_ids PolicySet#workspace_ids}. |
 
@@ -8510,10 +8510,10 @@ const policySetConfig: PolicySetConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetConfig.property.count" id="cdktfprovidertfepolicysetconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8622,10 +8622,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 ##### `slug`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetConfig.property.slug" id="cdktfprovidertfepolicysetconfigpropertyslug"></a>
 
 ```typescript
-public readonly slug: IResolvable | {[ key: string ]: string};
+public readonly slug: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}.
 
@@ -8671,7 +8671,7 @@ const policySetParameterConfig: PolicySetParameterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfepolicysetparameterconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfepolicysetparameterconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfepolicysetparameterconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfepolicysetparameterconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfepolicysetparameterconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8685,10 +8685,10 @@ const policySetParameterConfig: PolicySetParameterConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetParameterConfig.property.count" id="cdktfprovidertfepolicysetparameterconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8853,7 +8853,7 @@ const registryModuleConfig: RegistryModuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertferegistrymoduleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertferegistrymoduleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertferegistrymoduleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertferegistrymoduleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertferegistrymoduleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8864,10 +8864,10 @@ const registryModuleConfig: RegistryModuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.count" id="cdktfprovidertferegistrymoduleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8985,7 +8985,7 @@ const runTriggerConfig: RunTriggerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertferuntriggerconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertferuntriggerconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertferuntriggerconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertferuntriggerconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertferuntriggerconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -8997,10 +8997,10 @@ const runTriggerConfig: RunTriggerConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RunTriggerConfig.property.count" id="cdktfprovidertferuntriggerconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9072,7 +9072,7 @@ const sentinelPolicyConfig: SentinelPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfesentinelpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfesentinelpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfesentinelpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfesentinelpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfesentinelpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9087,10 +9087,10 @@ const sentinelPolicyConfig: SentinelPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SentinelPolicyConfig.property.count" id="cdktfprovidertfesentinelpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9198,7 +9198,7 @@ const sshKeyConfig: SshKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfesshkeyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfesshkeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfesshkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfesshkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfesshkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9211,10 +9211,10 @@ const sshKeyConfig: SshKeyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SshKeyConfig.property.count" id="cdktfprovidertfesshkeyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9298,24 +9298,24 @@ const teamAccessConfig: TeamAccessConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeteamaccessconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeteamaccessconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamaccessconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamaccessconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamaccessconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`teamId`](#cdktfprovidertfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#team_id TeamAccess#team_id}. |
 | [`workspaceId`](#cdktfprovidertfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_id TeamAccess#workspace_id}. |
 | [`access`](#cdktfprovidertfeteamaccessconfigpropertyaccess) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#access TeamAccess#access}. |
-| [`permissions`](#cdktfprovidertfeteamaccessconfigpropertypermissions) | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | permissions block. |
+| [`permissions`](#cdktfprovidertfeteamaccessconfigpropertypermissions) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | permissions block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccessConfig.property.count" id="cdktfprovidertfeteamaccessconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9388,10 +9388,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 ##### `permissions`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccessConfig.property.permissions" id="cdktfprovidertfeteamaccessconfigpropertypermissions"></a>
 
 ```typescript
-public readonly permissions: TeamAccessPermissions[];
+public readonly permissions: IResolvable | TeamAccessPermissions[];
 ```
 
-- *Type:* [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[]
 
 permissions block.
 
@@ -9495,7 +9495,7 @@ const teamConfig: TeamConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeteamconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeteamconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9509,10 +9509,10 @@ const teamConfig: TeamConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamConfig.property.count" id="cdktfprovidertfeteamconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9610,7 +9610,7 @@ const teamMemberConfig: TeamMemberConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeteammemberconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeteammemberconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteammemberconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteammemberconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteammemberconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9622,10 +9622,10 @@ const teamMemberConfig: TeamMemberConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMemberConfig.property.count" id="cdktfprovidertfeteammemberconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9697,7 +9697,7 @@ const teamMembersConfig: TeamMembersConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeteammembersconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeteammembersconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteammembersconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteammembersconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteammembersconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9709,10 +9709,10 @@ const teamMembersConfig: TeamMembersConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMembersConfig.property.count" id="cdktfprovidertfeteammembersconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9853,7 +9853,7 @@ const teamOrganizationMemberConfig: TeamOrganizationMemberConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeteamorganizationmemberconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeteamorganizationmemberconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamorganizationmemberconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamorganizationmemberconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamorganizationmemberconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9865,10 +9865,10 @@ const teamOrganizationMemberConfig: TeamOrganizationMemberConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamOrganizationMemberConfig.property.count" id="cdktfprovidertfeteamorganizationmemberconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9940,7 +9940,7 @@ const teamTokenConfig: TeamTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeteamtokenconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeteamtokenconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamtokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamtokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamtokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9952,10 +9952,10 @@ const teamTokenConfig: TeamTokenConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamTokenConfig.property.count" id="cdktfprovidertfeteamtokenconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10104,7 +10104,7 @@ const variableConfig: VariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfevariableconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfevariableconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfevariableconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfevariableconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfevariableconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -10121,10 +10121,10 @@ const variableConfig: VariableConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableConfig.property.count" id="cdktfprovidertfevariableconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10256,7 +10256,7 @@ const workspaceConfig: WorkspaceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidertfeworkspaceconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidertfeworkspaceconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeworkspaceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeworkspaceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeworkspaceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -10286,10 +10286,10 @@ const workspaceConfig: WorkspaceConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.count" id="cdktfprovidertfeworkspaceconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10643,20 +10643,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 ```typescript
 import { DataTfeTeamAccessPermissions } from '@cdktf/provider-tfe'
 
-new DataTfeTeamAccessPermissions(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataTfeTeamAccessPermissions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovidertfedatatfeteamaccesspermissionsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.parameter.terraformResource" id="cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -10672,6 +10673,12 @@ new DataTfeTeamAccessPermissions(terraformResource: ITerraformResource, terrafor
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.parameter.wrapsSet" id="cdktfprovidertfedatatfeteamaccesspermissionsparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -10682,7 +10689,7 @@ new DataTfeTeamAccessPermissions(terraformResource: ITerraformResource, terrafor
 | [`sentinelMocks`](#cdktfprovidertfedatatfeteamaccesspermissionspropertysentinelmocks)<span title="Required">*</span> | `string` | *No description.* |
 | [`stateVersions`](#cdktfprovidertfedatatfeteamaccesspermissionspropertystateversions)<span title="Required">*</span> | `string` | *No description.* |
 | [`variables`](#cdktfprovidertfedatatfeteamaccesspermissionspropertyvariables)<span title="Required">*</span> | `string` | *No description.* |
-| [`workspaceLocking`](#cdktfprovidertfedatatfeteamaccesspermissionspropertyworkspacelocking)<span title="Required">*</span> | `any` | *No description.* |
+| [`workspaceLocking`](#cdktfprovidertfedatatfeteamaccesspermissionspropertyworkspacelocking)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 
 ---
 
@@ -10729,10 +10736,10 @@ public readonly variables: string;
 ##### `workspaceLocking`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.property.workspaceLocking" id="cdktfprovidertfedatatfeteamaccesspermissionspropertyworkspacelocking"></a>
 
 ```typescript
-public readonly workspaceLocking: any;
+public readonly workspaceLocking: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -10744,20 +10751,21 @@ public readonly workspaceLocking: any;
 ```typescript
 import { DataTfeWorkspaceVcsRepo } from '@cdktf/provider-tfe'
 
-new DataTfeWorkspaceVcsRepo(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataTfeWorkspaceVcsRepo(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovidertfedatatfeworkspacevcsrepoparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.parameter.terraformResource" id="cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -10773,6 +10781,12 @@ new DataTfeWorkspaceVcsRepo(terraformResource: ITerraformResource, terraformAttr
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.parameter.wrapsSet" id="cdktfprovidertfedatatfeworkspacevcsrepoparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -10781,7 +10795,7 @@ new DataTfeWorkspaceVcsRepo(terraformResource: ITerraformResource, terraformAttr
 | --- | --- | --- |
 | [`branch`](#cdktfprovidertfedatatfeworkspacevcsrepopropertybranch)<span title="Required">*</span> | `string` | *No description.* |
 | [`identifier`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyidentifier)<span title="Required">*</span> | `string` | *No description.* |
-| [`ingressSubmodules`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyingresssubmodules)<span title="Required">*</span> | `any` | *No description.* |
+| [`ingressSubmodules`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyingresssubmodules)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`oauthTokenId`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -10809,10 +10823,10 @@ public readonly identifier: string;
 ##### `ingressSubmodules`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.property.ingressSubmodules" id="cdktfprovidertfedatatfeworkspacevcsrepopropertyingresssubmodules"></a>
 
 ```typescript
-public readonly ingressSubmodules: any;
+public readonly ingressSubmodules: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -10834,12 +10848,12 @@ public readonly oauthTokenId: string;
 ```typescript
 import { PolicySetVcsRepoOutputReference } from '@cdktf/provider-tfe'
 
-new PolicySetVcsRepoOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new PolicySetVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -10847,7 +10861,7 @@ new PolicySetVcsRepoOutputReference(terraformResource: ITerraformResource, terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.PolicySetVcsRepoOutputReference.parameter.terraformResource" id="cdktfprovidertfepolicysetvcsrepooutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11005,12 +11019,12 @@ public readonly internalValue: PolicySetVcsRepo;
 ```typescript
 import { RegistryModuleVcsRepoOutputReference } from '@cdktf/provider-tfe'
 
-new RegistryModuleVcsRepoOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RegistryModuleVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -11018,7 +11032,7 @@ new RegistryModuleVcsRepoOutputReference(terraformResource: ITerraformResource, 
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModuleVcsRepoOutputReference.parameter.terraformResource" id="cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11134,12 +11148,12 @@ public readonly internalValue: RegistryModuleVcsRepo;
 ```typescript
 import { TeamOrganizationAccessOutputReference } from '@cdktf/provider-tfe'
 
-new TeamOrganizationAccessOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new TeamOrganizationAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -11147,7 +11161,7 @@ new TeamOrganizationAccessOutputReference(terraformResource: ITerraformResource,
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.TeamOrganizationAccessOutputReference.parameter.terraformResource" id="cdktfprovidertfeteamorganizationaccessoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11319,12 +11333,12 @@ public readonly internalValue: TeamOrganizationAccess;
 ```typescript
 import { WorkspaceVcsRepoOutputReference } from '@cdktf/provider-tfe'
 
-new WorkspaceVcsRepoOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WorkspaceVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -11332,7 +11346,7 @@ new WorkspaceVcsRepoOutputReference(terraformResource: ITerraformResource, terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference.parameter.terraformResource" id="cdktfprovidertfeworkspacevcsrepooutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 

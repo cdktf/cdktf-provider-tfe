@@ -46,7 +46,7 @@ export interface TeamOrganizationAccess {
 }
 
 export function teamOrganizationAccessToTerraform(struct?: TeamOrganizationAccessOutputReference | TeamOrganizationAccess): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -66,7 +66,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -112,7 +112,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   // manage_policies - computed: false, optional: true, required: false
   private _managePolicies?: boolean | cdktf.IResolvable; 
   public get managePolicies() {
-    return this.getBooleanAttribute('manage_policies') as any;
+    return this.getBooleanAttribute('manage_policies');
   }
   public set managePolicies(value: boolean | cdktf.IResolvable) {
     this._managePolicies = value;
@@ -128,7 +128,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   // manage_policy_overrides - computed: false, optional: true, required: false
   private _managePolicyOverrides?: boolean | cdktf.IResolvable; 
   public get managePolicyOverrides() {
-    return this.getBooleanAttribute('manage_policy_overrides') as any;
+    return this.getBooleanAttribute('manage_policy_overrides');
   }
   public set managePolicyOverrides(value: boolean | cdktf.IResolvable) {
     this._managePolicyOverrides = value;
@@ -144,7 +144,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   // manage_vcs_settings - computed: false, optional: true, required: false
   private _manageVcsSettings?: boolean | cdktf.IResolvable; 
   public get manageVcsSettings() {
-    return this.getBooleanAttribute('manage_vcs_settings') as any;
+    return this.getBooleanAttribute('manage_vcs_settings');
   }
   public set manageVcsSettings(value: boolean | cdktf.IResolvable) {
     this._manageVcsSettings = value;
@@ -160,7 +160,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   // manage_workspaces - computed: false, optional: true, required: false
   private _manageWorkspaces?: boolean | cdktf.IResolvable; 
   public get manageWorkspaces() {
-    return this.getBooleanAttribute('manage_workspaces') as any;
+    return this.getBooleanAttribute('manage_workspaces');
   }
   public set manageWorkspaces(value: boolean | cdktf.IResolvable) {
     this._manageWorkspaces = value;
@@ -264,7 +264,7 @@ export class Team extends cdktf.TerraformResource {
   }
 
   // organization_access - computed: false, optional: true, required: false
-  private _organizationAccess = new TeamOrganizationAccessOutputReference(this as any, "organization_access", true);
+  private _organizationAccess = new TeamOrganizationAccessOutputReference(this, "organization_access", true);
   public get organizationAccess() {
     return this._organizationAccess;
   }

@@ -34,7 +34,7 @@ export class DataTfeWorkspaceVcsRepo extends cdktf.ComplexComputedList {
 
   // ingress_submodules - computed: true, optional: false, required: false
   public get ingressSubmodules() {
-    return this.getBooleanAttribute('ingress_submodules') as any;
+    return this.getBooleanAttribute('ingress_submodules');
   }
 
   // oauth_token_id - computed: true, optional: false, required: false
@@ -86,12 +86,12 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // allow_destroy_plan - computed: true, optional: false, required: false
   public get allowDestroyPlan() {
-    return this.getBooleanAttribute('allow_destroy_plan') as any;
+    return this.getBooleanAttribute('allow_destroy_plan');
   }
 
   // auto_apply - computed: true, optional: false, required: false
   public get autoApply() {
-    return this.getBooleanAttribute('auto_apply') as any;
+    return this.getBooleanAttribute('auto_apply');
   }
 
   // description - computed: true, optional: false, required: false
@@ -101,12 +101,12 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // file_triggers_enabled - computed: true, optional: false, required: false
   public get fileTriggersEnabled() {
-    return this.getBooleanAttribute('file_triggers_enabled') as any;
+    return this.getBooleanAttribute('file_triggers_enabled');
   }
 
   // global_remote_state - computed: true, optional: false, required: false
   public get globalRemoteState() {
-    return this.getBooleanAttribute('global_remote_state') as any;
+    return this.getBooleanAttribute('global_remote_state');
   }
 
   // id - computed: true, optional: true, required: false
@@ -129,7 +129,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // operations - computed: true, optional: false, required: false
   public get operations() {
-    return this.getBooleanAttribute('operations') as any;
+    return this.getBooleanAttribute('operations');
   }
 
   // organization - computed: false, optional: false, required: true
@@ -152,12 +152,12 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // queue_all_runs - computed: true, optional: false, required: false
   public get queueAllRuns() {
-    return this.getBooleanAttribute('queue_all_runs') as any;
+    return this.getBooleanAttribute('queue_all_runs');
   }
 
   // remote_state_consumer_ids - computed: true, optional: false, required: false
   public get remoteStateConsumerIds() {
-    return this.getListAttribute('remote_state_consumer_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('remote_state_consumer_ids'));
   }
 
   // resource_count - computed: true, optional: false, required: false
@@ -177,7 +177,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // speculative_enabled - computed: true, optional: false, required: false
   public get speculativeEnabled() {
-    return this.getBooleanAttribute('speculative_enabled') as any;
+    return this.getBooleanAttribute('speculative_enabled');
   }
 
   // ssh_key_id - computed: true, optional: false, required: false
@@ -187,13 +187,13 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // structured_run_output_enabled - computed: true, optional: false, required: false
   public get structuredRunOutputEnabled() {
-    return this.getBooleanAttribute('structured_run_output_enabled') as any;
+    return this.getBooleanAttribute('structured_run_output_enabled');
   }
 
   // tag_names - computed: true, optional: true, required: false
   private _tagNames?: string[]; 
   public get tagNames() {
-    return this.getListAttribute('tag_names');
+    return cdktf.Fn.tolist(this.getListAttribute('tag_names'));
   }
   public set tagNames(value: string[]) {
     this._tagNames = value;
@@ -218,7 +218,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
   // vcs_repo - computed: true, optional: false, required: false
   public vcsRepo(index: string) {
-    return new DataTfeWorkspaceVcsRepo(this, 'vcs_repo', index);
+    return new DataTfeWorkspaceVcsRepo(this, 'vcs_repo', index, false);
   }
 
   // working_directory - computed: true, optional: false, required: false

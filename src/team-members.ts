@@ -78,7 +78,7 @@ export class TeamMembers extends cdktf.TerraformResource {
   // usernames - computed: false, optional: false, required: true
   private _usernames?: string[]; 
   public get usernames() {
-    return this.getListAttribute('usernames');
+    return cdktf.Fn.tolist(this.getListAttribute('usernames'));
   }
   public set usernames(value: string[]) {
     this._usernames = value;

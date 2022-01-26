@@ -40,7 +40,7 @@ export class DataTfeTeamAccessPermissions extends cdktf.ComplexComputedList {
 
   // workspace_locking - computed: true, optional: false, required: false
   public get workspaceLocking() {
-    return this.getBooleanAttribute('workspace_locking') as any;
+    return this.getBooleanAttribute('workspace_locking');
   }
 }
 
@@ -96,7 +96,7 @@ export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
 
   // permissions - computed: true, optional: false, required: false
   public permissions(index: string) {
-    return new DataTfeTeamAccessPermissions(this, 'permissions', index);
+    return new DataTfeTeamAccessPermissions(this, 'permissions', index, false);
   }
 
   // team_id - computed: false, optional: false, required: true

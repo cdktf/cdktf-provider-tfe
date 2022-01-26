@@ -16,7 +16,7 @@ export interface DataTfeOutputsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}
   */
-  readonly values?: { [key: string]: any } | cdktf.IResolvable;
+  readonly values?: { [key: string]: any };
   /**
   * The workspace to fetch the remote state from.
   * 
@@ -85,12 +85,11 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
   }
 
   // values - computed: true, optional: true, required: false
-  private _values?: { [key: string]: any } | cdktf.IResolvable; 
+  private _values?: { [key: string]: any }; 
   public get values() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('values') as any;
+    return this.getAnyMapAttribute('values');
   }
-  public set values(value: { [key: string]: any } | cdktf.IResolvable) {
+  public set values(value: { [key: string]: any }) {
     this._values = value;
   }
   public resetValues() {

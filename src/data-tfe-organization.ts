@@ -59,7 +59,7 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
 
   // cost_estimation_enabled - computed: true, optional: false, required: false
   public get costEstimationEnabled() {
-    return this.getBooleanAttribute('cost_estimation_enabled') as any;
+    return this.getBooleanAttribute('cost_estimation_enabled');
   }
 
   // email - computed: true, optional: false, required: false
@@ -97,7 +97,7 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
 
   // two_factor_conformant - computed: true, optional: false, required: false
   public get twoFactorConformant() {
-    return this.getBooleanAttribute('two_factor_conformant') as any;
+    return this.getBooleanAttribute('two_factor_conformant');
   }
 
   // =========

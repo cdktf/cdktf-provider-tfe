@@ -108,7 +108,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // email_addresses - computed: true, optional: true, required: false
   private _emailAddresses?: string[]; 
   public get emailAddresses() {
-    return this.getListAttribute('email_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('email_addresses'));
   }
   public set emailAddresses(value: string[]) {
     this._emailAddresses = value;
@@ -124,7 +124,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // email_user_ids - computed: true, optional: true, required: false
   private _emailUserIds?: string[]; 
   public get emailUserIds() {
-    return this.getListAttribute('email_user_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('email_user_ids'));
   }
   public set emailUserIds(value: string[]) {
     this._emailUserIds = value;
@@ -140,7 +140,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -190,7 +190,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // triggers - computed: false, optional: true, required: false
   private _triggers?: string[]; 
   public get triggers() {
-    return this.getListAttribute('triggers');
+    return cdktf.Fn.tolist(this.getListAttribute('triggers'));
   }
   public set triggers(value: string[]) {
     this._triggers = value;
