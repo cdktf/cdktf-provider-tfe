@@ -101,7 +101,7 @@ export class Organization extends cdktf.TerraformResource {
   // cost_estimation_enabled - computed: true, optional: true, required: false
   private _costEstimationEnabled?: boolean | cdktf.IResolvable; 
   public get costEstimationEnabled() {
-    return this.getBooleanAttribute('cost_estimation_enabled') as any;
+    return this.getBooleanAttribute('cost_estimation_enabled');
   }
   public set costEstimationEnabled(value: boolean | cdktf.IResolvable) {
     this._costEstimationEnabled = value;

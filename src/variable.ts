@@ -114,7 +114,7 @@ export class Variable extends cdktf.TerraformResource {
   // hcl - computed: false, optional: true, required: false
   private _hcl?: boolean | cdktf.IResolvable; 
   public get hcl() {
-    return this.getBooleanAttribute('hcl') as any;
+    return this.getBooleanAttribute('hcl');
   }
   public set hcl(value: boolean | cdktf.IResolvable) {
     this._hcl = value;
@@ -148,7 +148,7 @@ export class Variable extends cdktf.TerraformResource {
   // sensitive - computed: false, optional: true, required: false
   private _sensitive?: boolean | cdktf.IResolvable; 
   public get sensitive() {
-    return this.getBooleanAttribute('sensitive') as any;
+    return this.getBooleanAttribute('sensitive');
   }
   public set sensitive(value: boolean | cdktf.IResolvable) {
     this._sensitive = value;

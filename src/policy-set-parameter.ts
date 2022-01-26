@@ -101,7 +101,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   // sensitive - computed: false, optional: true, required: false
   private _sensitive?: boolean | cdktf.IResolvable; 
   public get sensitive() {
-    return this.getBooleanAttribute('sensitive') as any;
+    return this.getBooleanAttribute('sensitive');
   }
   public set sensitive(value: boolean | cdktf.IResolvable) {
     this._sensitive = value;

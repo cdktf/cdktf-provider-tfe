@@ -110,7 +110,7 @@ export interface WorkspaceVcsRepo {
 }
 
 export function workspaceVcsRepoToTerraform(struct?: WorkspaceVcsRepoOutputReference | WorkspaceVcsRepo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -130,7 +130,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -205,7 +205,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
   // ingress_submodules - computed: false, optional: true, required: false
   private _ingressSubmodules?: boolean | cdktf.IResolvable; 
   public get ingressSubmodules() {
-    return this.getBooleanAttribute('ingress_submodules') as any;
+    return this.getBooleanAttribute('ingress_submodules');
   }
   public set ingressSubmodules(value: boolean | cdktf.IResolvable) {
     this._ingressSubmodules = value;
@@ -309,7 +309,7 @@ export class Workspace extends cdktf.TerraformResource {
   // allow_destroy_plan - computed: false, optional: true, required: false
   private _allowDestroyPlan?: boolean | cdktf.IResolvable; 
   public get allowDestroyPlan() {
-    return this.getBooleanAttribute('allow_destroy_plan') as any;
+    return this.getBooleanAttribute('allow_destroy_plan');
   }
   public set allowDestroyPlan(value: boolean | cdktf.IResolvable) {
     this._allowDestroyPlan = value;
@@ -325,7 +325,7 @@ export class Workspace extends cdktf.TerraformResource {
   // auto_apply - computed: false, optional: true, required: false
   private _autoApply?: boolean | cdktf.IResolvable; 
   public get autoApply() {
-    return this.getBooleanAttribute('auto_apply') as any;
+    return this.getBooleanAttribute('auto_apply');
   }
   public set autoApply(value: boolean | cdktf.IResolvable) {
     this._autoApply = value;
@@ -373,7 +373,7 @@ export class Workspace extends cdktf.TerraformResource {
   // file_triggers_enabled - computed: false, optional: true, required: false
   private _fileTriggersEnabled?: boolean | cdktf.IResolvable; 
   public get fileTriggersEnabled() {
-    return this.getBooleanAttribute('file_triggers_enabled') as any;
+    return this.getBooleanAttribute('file_triggers_enabled');
   }
   public set fileTriggersEnabled(value: boolean | cdktf.IResolvable) {
     this._fileTriggersEnabled = value;
@@ -389,7 +389,7 @@ export class Workspace extends cdktf.TerraformResource {
   // global_remote_state - computed: true, optional: true, required: false
   private _globalRemoteState?: boolean | cdktf.IResolvable; 
   public get globalRemoteState() {
-    return this.getBooleanAttribute('global_remote_state') as any;
+    return this.getBooleanAttribute('global_remote_state');
   }
   public set globalRemoteState(value: boolean | cdktf.IResolvable) {
     this._globalRemoteState = value;
@@ -423,7 +423,7 @@ export class Workspace extends cdktf.TerraformResource {
   // operations - computed: true, optional: true, required: false
   private _operations?: boolean | cdktf.IResolvable; 
   public get operations() {
-    return this.getBooleanAttribute('operations') as any;
+    return this.getBooleanAttribute('operations');
   }
   public set operations(value: boolean | cdktf.IResolvable) {
     this._operations = value;
@@ -452,7 +452,7 @@ export class Workspace extends cdktf.TerraformResource {
   // queue_all_runs - computed: false, optional: true, required: false
   private _queueAllRuns?: boolean | cdktf.IResolvable; 
   public get queueAllRuns() {
-    return this.getBooleanAttribute('queue_all_runs') as any;
+    return this.getBooleanAttribute('queue_all_runs');
   }
   public set queueAllRuns(value: boolean | cdktf.IResolvable) {
     this._queueAllRuns = value;
@@ -468,7 +468,7 @@ export class Workspace extends cdktf.TerraformResource {
   // remote_state_consumer_ids - computed: false, optional: true, required: false
   private _remoteStateConsumerIds?: string[]; 
   public get remoteStateConsumerIds() {
-    return this.getListAttribute('remote_state_consumer_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('remote_state_consumer_ids'));
   }
   public set remoteStateConsumerIds(value: string[]) {
     this._remoteStateConsumerIds = value;
@@ -484,7 +484,7 @@ export class Workspace extends cdktf.TerraformResource {
   // speculative_enabled - computed: false, optional: true, required: false
   private _speculativeEnabled?: boolean | cdktf.IResolvable; 
   public get speculativeEnabled() {
-    return this.getBooleanAttribute('speculative_enabled') as any;
+    return this.getBooleanAttribute('speculative_enabled');
   }
   public set speculativeEnabled(value: boolean | cdktf.IResolvable) {
     this._speculativeEnabled = value;
@@ -516,7 +516,7 @@ export class Workspace extends cdktf.TerraformResource {
   // structured_run_output_enabled - computed: false, optional: true, required: false
   private _structuredRunOutputEnabled?: boolean | cdktf.IResolvable; 
   public get structuredRunOutputEnabled() {
-    return this.getBooleanAttribute('structured_run_output_enabled') as any;
+    return this.getBooleanAttribute('structured_run_output_enabled');
   }
   public set structuredRunOutputEnabled(value: boolean | cdktf.IResolvable) {
     this._structuredRunOutputEnabled = value;
@@ -532,7 +532,7 @@ export class Workspace extends cdktf.TerraformResource {
   // tag_names - computed: true, optional: true, required: false
   private _tagNames?: string[]; 
   public get tagNames() {
-    return this.getListAttribute('tag_names');
+    return cdktf.Fn.tolist(this.getListAttribute('tag_names'));
   }
   public set tagNames(value: string[]) {
     this._tagNames = value;
@@ -594,7 +594,7 @@ export class Workspace extends cdktf.TerraformResource {
   }
 
   // vcs_repo - computed: false, optional: true, required: false
-  private _vcsRepo = new WorkspaceVcsRepoOutputReference(this as any, "vcs_repo", true);
+  private _vcsRepo = new WorkspaceVcsRepoOutputReference(this, "vcs_repo", true);
   public get vcsRepo() {
     return this._vcsRepo;
   }

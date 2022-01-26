@@ -63,7 +63,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   // ==========
 
   // full_names - computed: true, optional: false, required: false
-  public fullNames(key: string): string {
+  public fullNames(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'full_names').lookup(key);
   }
 
@@ -73,7 +73,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   }
 
   // ids - computed: true, optional: false, required: false
-  public ids(key: string): string {
+  public ids(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'ids').lookup(key);
   }
 

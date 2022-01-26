@@ -55,7 +55,7 @@ export class DataTfeOrganizations extends cdktf.TerraformDataSource {
   // admin - computed: false, optional: true, required: false
   private _admin?: boolean | cdktf.IResolvable; 
   public get admin() {
-    return this.getBooleanAttribute('admin') as any;
+    return this.getBooleanAttribute('admin');
   }
   public set admin(value: boolean | cdktf.IResolvable) {
     this._admin = value;
@@ -74,7 +74,7 @@ export class DataTfeOrganizations extends cdktf.TerraformDataSource {
   }
 
   // ids - computed: true, optional: false, required: false
-  public ids(key: string): string {
+  public ids(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'ids').lookup(key);
   }
 
