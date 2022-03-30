@@ -72,7 +72,7 @@ export class TeamAccess extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_team_access";
+  public static readonly tfResourceType = "tfe_team_access";
 
   // ===========
   // INITIALIZER
@@ -89,7 +89,9 @@ export class TeamAccess extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_team_access',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

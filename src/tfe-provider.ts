@@ -42,7 +42,7 @@ export class TfeProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe";
+  public static readonly tfResourceType = "tfe";
 
   // ===========
   // INITIALIZER
@@ -60,6 +60,7 @@ export class TfeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'tfe',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
+        providerVersion: '0.26.1',
         providerVersionConstraint: '~> 0.26.1'
       },
       terraformProviderSource: 'hashicorp/tfe'

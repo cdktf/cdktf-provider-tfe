@@ -20,7 +20,45 @@ export interface DataTfeWorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagNames?: string[];
 }
-export class DataTfeWorkspaceVcsRepo extends cdktf.ComplexComputedList {
+export interface DataTfeWorkspaceVcsRepo {
+}
+
+export function dataTfeWorkspaceVcsRepoToTerraform(struct?: DataTfeWorkspaceVcsRepo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataTfeWorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataTfeWorkspaceVcsRepo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataTfeWorkspaceVcsRepo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // branch - computed: true, optional: false, required: false
   public get branch() {
@@ -43,6 +81,25 @@ export class DataTfeWorkspaceVcsRepo extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataTfeWorkspaceVcsRepoList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataTfeWorkspaceVcsRepoOutputReference {
+    return new DataTfeWorkspaceVcsRepoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace tfe_workspace}
 */
@@ -51,7 +108,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_workspace";
+  public static readonly tfResourceType = "tfe_workspace";
 
   // ===========
   // INITIALIZER
@@ -68,7 +125,9 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -217,8 +276,9 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   }
 
   // vcs_repo - computed: true, optional: false, required: false
-  public vcsRepo(index: string) {
-    return new DataTfeWorkspaceVcsRepo(this, 'vcs_repo', index, false);
+  private _vcsRepo = new DataTfeWorkspaceVcsRepoList(this, "vcs_repo", false);
+  public get vcsRepo() {
+    return this._vcsRepo;
   }
 
   // working_directory - computed: true, optional: false, required: false

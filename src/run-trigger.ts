@@ -25,7 +25,7 @@ export class RunTrigger extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_run_trigger";
+  public static readonly tfResourceType = "tfe_run_trigger";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class RunTrigger extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_run_trigger',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

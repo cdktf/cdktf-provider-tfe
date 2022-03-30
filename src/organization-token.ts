@@ -25,7 +25,7 @@ export class OrganizationToken extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_organization_token";
+  public static readonly tfResourceType = "tfe_organization_token";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class OrganizationToken extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_organization_token',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -45,7 +45,7 @@ export class Variable extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_variable";
+  public static readonly tfResourceType = "tfe_variable";
 
   // ===========
   // INITIALIZER
@@ -62,7 +62,9 @@ export class Variable extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_variable',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

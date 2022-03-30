@@ -37,7 +37,7 @@ export class SentinelPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_sentinel_policy";
+  public static readonly tfResourceType = "tfe_sentinel_policy";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class SentinelPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_sentinel_policy',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

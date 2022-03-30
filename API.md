@@ -1615,25 +1615,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`permissions`](#cdktfprovidertfedatatfeteamaccesspermissions) | *No description.* |
-
----
-
-##### `permissions` <a name="@cdktf/provider-tfe.DataTfeTeamAccess.permissions" id="cdktfprovidertfedatatfeteamaccesspermissions"></a>
-
-```typescript
-public permissions(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccess.parameter.index" id="cdktfprovidertfedatatfeteamaccessparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -1642,6 +1623,7 @@ public permissions(index: string)
 | --- | --- | --- |
 | [`access`](#cdktfprovidertfedatatfeteamaccesspropertyaccess)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeteamaccesspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`permissions`](#cdktfprovidertfedatatfeteamaccesspropertypermissions)<span title="Required">*</span> | [`@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList`](#@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList) | *No description.* |
 | [`teamIdInput`](#cdktfprovidertfedatatfeteamaccesspropertyteamidinput) | `string` | *No description.* |
 | [`workspaceIdInput`](#cdktfprovidertfedatatfeteamaccesspropertyworkspaceidinput) | `string` | *No description.* |
 | [`teamId`](#cdktfprovidertfedatatfeteamaccesspropertyteamid)<span title="Required">*</span> | `string` | *No description.* |
@@ -1666,6 +1648,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `permissions`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccess.property.permissions" id="cdktfprovidertfedatatfeteamaccesspropertypermissions"></a>
+
+```typescript
+public readonly permissions: DataTfeTeamAccessPermissionsList;
+```
+
+- *Type:* [`@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList`](#@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList)
 
 ---
 
@@ -1772,7 +1764,6 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`resetTagNames`](#cdktfprovidertfedatatfeworkspaceresettagnames) | *No description.* |
-| [`vcsRepo`](#cdktfprovidertfedatatfeworkspacevcsrepo) | *No description.* |
 
 ---
 
@@ -1781,18 +1772,6 @@ Must be unique amongst siblings in the same scope
 ```typescript
 public resetTagNames()
 ```
-
-##### `vcsRepo` <a name="@cdktf/provider-tfe.DataTfeWorkspace.vcsRepo" id="cdktfprovidertfedatatfeworkspacevcsrepo"></a>
-
-```typescript
-public vcsRepo(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.parameter.index" id="cdktfprovidertfedatatfeworkspaceparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -1817,6 +1796,7 @@ public vcsRepo(index: string)
 | [`structuredRunOutputEnabled`](#cdktfprovidertfedatatfeworkspacepropertystructuredrunoutputenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`terraformVersion`](#cdktfprovidertfedatatfeworkspacepropertyterraformversion)<span title="Required">*</span> | `string` | *No description.* |
 | [`triggerPrefixes`](#cdktfprovidertfedatatfeworkspacepropertytriggerprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`vcsRepo`](#cdktfprovidertfedatatfeworkspacepropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList) | *No description.* |
 | [`workingDirectory`](#cdktfprovidertfedatatfeworkspacepropertyworkingdirectory)<span title="Required">*</span> | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidertfedatatfeworkspacepropertynameinput) | `string` | *No description.* |
 | [`organizationInput`](#cdktfprovidertfedatatfeworkspacepropertyorganizationinput) | `string` | *No description.* |
@@ -2004,6 +1984,16 @@ public readonly triggerPrefixes: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `vcsRepo`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.vcsRepo" id="cdktfprovidertfedatatfeworkspacepropertyvcsrepo"></a>
+
+```typescript
+public readonly vcsRepo: DataTfeWorkspaceVcsRepoList;
+```
+
+- *Type:* [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList)
 
 ---
 
@@ -7547,6 +7537,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 
 ---
 
+### DataTfeTeamAccessPermissions <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions" id="cdktfprovidertfedatatfeteamaccesspermissions"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataTfeTeamAccessPermissions } from '@cdktf/provider-tfe'
+
+const dataTfeTeamAccessPermissions: DataTfeTeamAccessPermissions = { ... }
+```
+
+
 ### DataTfeTeamConfig <a name="@cdktf/provider-tfe.DataTfeTeamConfig" id="cdktfprovidertfedatatfeteamconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -7833,6 +7834,17 @@ public readonly tagNames: string[];
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}.
 
 ---
+
+### DataTfeWorkspaceVcsRepo <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo" id="cdktfprovidertfedatatfeworkspacevcsrepo"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataTfeWorkspaceVcsRepo } from '@cdktf/provider-tfe'
+
+const dataTfeWorkspaceVcsRepo: DataTfeWorkspaceVcsRepo = { ... }
+```
+
 
 ### NotificationConfigurationConfig <a name="@cdktf/provider-tfe.NotificationConfigurationConfig" id="cdktfprovidertfenotificationconfigurationconfig"></a>
 
@@ -10636,46 +10648,121 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ## Classes <a name="Classes" id="classes"></a>
 
-### DataTfeTeamAccessPermissions <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions" id="cdktfprovidertfedatatfeteamaccesspermissions"></a>
+### DataTfeTeamAccessPermissionsList <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList" id="cdktfprovidertfedatatfeteamaccesspermissionslist"></a>
 
-#### Initializers <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.Initializer" id="cdktfprovidertfedatatfeteamaccesspermissionsinitializer"></a>
+#### Initializers <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList.Initializer" id="cdktfprovidertfedatatfeteamaccesspermissionslistinitializer"></a>
 
 ```typescript
-import { DataTfeTeamAccessPermissions } from '@cdktf/provider-tfe'
+import { DataTfeTeamAccessPermissionsList } from '@cdktf/provider-tfe'
 
-new DataTfeTeamAccessPermissions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataTfeTeamAccessPermissionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovidertfedatatfeteamaccesspermissionsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovidertfedatatfeteamaccesspermissionsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovidertfedatatfeteamaccesspermissionslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfedatatfeteamaccesspermissionslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidertfedatatfeteamaccesspermissionslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.parameter.terraformResource" id="cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList.parameter.terraformResource" id="cdktfprovidertfedatatfeteamaccesspermissionslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.parameter.terraformAttribute" id="cdktfprovidertfedatatfeteamaccesspermissionsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList.parameter.terraformAttribute" id="cdktfprovidertfedatatfeteamaccesspermissionslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.parameter.complexComputedListIndex" id="cdktfprovidertfedatatfeteamaccesspermissionsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.parameter.wrapsSet" id="cdktfprovidertfedatatfeteamaccesspermissionsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList.parameter.wrapsSet" id="cdktfprovidertfedatatfeteamaccesspermissionslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidertfedatatfeteamaccesspermissionslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList.get" id="cdktfprovidertfedatatfeteamaccesspermissionslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList.parameter.index" id="cdktfprovidertfedatatfeteamaccesspermissionslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataTfeTeamAccessPermissionsOutputReference <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.Initializer" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataTfeTeamAccessPermissionsOutputReference } from '@cdktf/provider-tfe'
+
+new DataTfeTeamAccessPermissionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.parameter.terraformResource" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.parameter.terraformAttribute" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.parameter.complexObjectIndex" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -10685,15 +10772,16 @@ new DataTfeTeamAccessPermissions(terraformResource: IInterpolatingParent, terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`runs`](#cdktfprovidertfedatatfeteamaccesspermissionspropertyruns)<span title="Required">*</span> | `string` | *No description.* |
-| [`sentinelMocks`](#cdktfprovidertfedatatfeteamaccesspermissionspropertysentinelmocks)<span title="Required">*</span> | `string` | *No description.* |
-| [`stateVersions`](#cdktfprovidertfedatatfeteamaccesspermissionspropertystateversions)<span title="Required">*</span> | `string` | *No description.* |
-| [`variables`](#cdktfprovidertfedatatfeteamaccesspermissionspropertyvariables)<span title="Required">*</span> | `string` | *No description.* |
-| [`workspaceLocking`](#cdktfprovidertfedatatfeteamaccesspermissionspropertyworkspacelocking)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`runs`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyruns)<span title="Required">*</span> | `string` | *No description.* |
+| [`sentinelMocks`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertysentinelmocks)<span title="Required">*</span> | `string` | *No description.* |
+| [`stateVersions`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertystateversions)<span title="Required">*</span> | `string` | *No description.* |
+| [`variables`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyvariables)<span title="Required">*</span> | `string` | *No description.* |
+| [`workspaceLocking`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyworkspacelocking)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`internalValue`](#cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.DataTfeTeamAccessPermissions`](#@cdktf/provider-tfe.DataTfeTeamAccessPermissions) | *No description.* |
 
 ---
 
-##### `runs`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.property.runs" id="cdktfprovidertfedatatfeteamaccesspermissionspropertyruns"></a>
+##### `runs`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.property.runs" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyruns"></a>
 
 ```typescript
 public readonly runs: string;
@@ -10703,7 +10791,7 @@ public readonly runs: string;
 
 ---
 
-##### `sentinelMocks`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.property.sentinelMocks" id="cdktfprovidertfedatatfeteamaccesspermissionspropertysentinelmocks"></a>
+##### `sentinelMocks`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.property.sentinelMocks" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertysentinelmocks"></a>
 
 ```typescript
 public readonly sentinelMocks: string;
@@ -10713,7 +10801,7 @@ public readonly sentinelMocks: string;
 
 ---
 
-##### `stateVersions`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.property.stateVersions" id="cdktfprovidertfedatatfeteamaccesspermissionspropertystateversions"></a>
+##### `stateVersions`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.property.stateVersions" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertystateversions"></a>
 
 ```typescript
 public readonly stateVersions: string;
@@ -10723,7 +10811,7 @@ public readonly stateVersions: string;
 
 ---
 
-##### `variables`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.property.variables" id="cdktfprovidertfedatatfeteamaccesspermissionspropertyvariables"></a>
+##### `variables`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.property.variables" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyvariables"></a>
 
 ```typescript
 public readonly variables: string;
@@ -10733,7 +10821,7 @@ public readonly variables: string;
 
 ---
 
-##### `workspaceLocking`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissions.property.workspaceLocking" id="cdktfprovidertfedatatfeteamaccesspermissionspropertyworkspacelocking"></a>
+##### `workspaceLocking`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.property.workspaceLocking" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyworkspacelocking"></a>
 
 ```typescript
 public readonly workspaceLocking: IResolvable;
@@ -10743,47 +10831,132 @@ public readonly workspaceLocking: IResolvable;
 
 ---
 
-
-### DataTfeWorkspaceVcsRepo <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo" id="cdktfprovidertfedatatfeworkspacevcsrepo"></a>
-
-#### Initializers <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.Initializer" id="cdktfprovidertfedatatfeworkspacevcsrepoinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsOutputReference.property.internalValue" id="cdktfprovidertfedatatfeteamaccesspermissionsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataTfeWorkspaceVcsRepo } from '@cdktf/provider-tfe'
+public readonly internalValue: DataTfeTeamAccessPermissions;
+```
 
-new DataTfeWorkspaceVcsRepo(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-tfe.DataTfeTeamAccessPermissions`](#@cdktf/provider-tfe.DataTfeTeamAccessPermissions)
+
+---
+
+
+### DataTfeWorkspaceVcsRepoList <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList" id="cdktfprovidertfedatatfeworkspacevcsrepolist"></a>
+
+#### Initializers <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList.Initializer" id="cdktfprovidertfedatatfeworkspacevcsrepolistinitializer"></a>
+
+```typescript
+import { DataTfeWorkspaceVcsRepoList } from '@cdktf/provider-tfe'
+
+new DataTfeWorkspaceVcsRepoList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovidertfedatatfeworkspacevcsrepoparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovidertfedatatfeworkspacevcsrepoparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovidertfedatatfeworkspacevcsrepolistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfedatatfeworkspacevcsrepolistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidertfedatatfeworkspacevcsrepolistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.parameter.terraformResource" id="cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList.parameter.terraformResource" id="cdktfprovidertfedatatfeworkspacevcsrepolistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.parameter.terraformAttribute" id="cdktfprovidertfedatatfeworkspacevcsrepoparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList.parameter.terraformAttribute" id="cdktfprovidertfedatatfeworkspacevcsrepolistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.parameter.complexComputedListIndex" id="cdktfprovidertfedatatfeworkspacevcsrepoparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.parameter.wrapsSet" id="cdktfprovidertfedatatfeworkspacevcsrepoparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList.parameter.wrapsSet" id="cdktfprovidertfedatatfeworkspacevcsrepolistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidertfedatatfeworkspacevcsrepolistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList.get" id="cdktfprovidertfedatatfeworkspacevcsrepolistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList.parameter.index" id="cdktfprovidertfedatatfeworkspacevcsrepolistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataTfeWorkspaceVcsRepoOutputReference <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.Initializer" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceinitializer"></a>
+
+```typescript
+import { DataTfeWorkspaceVcsRepoOutputReference } from '@cdktf/provider-tfe'
+
+new DataTfeWorkspaceVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.parameter.terraformResource" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.parameter.terraformAttribute" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.parameter.complexObjectIndex" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -10793,14 +10966,15 @@ new DataTfeWorkspaceVcsRepo(terraformResource: IInterpolatingParent, terraformAt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`branch`](#cdktfprovidertfedatatfeworkspacevcsrepopropertybranch)<span title="Required">*</span> | `string` | *No description.* |
-| [`identifier`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyidentifier)<span title="Required">*</span> | `string` | *No description.* |
-| [`ingressSubmodules`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyingresssubmodules)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`oauthTokenId`](#cdktfprovidertfedatatfeworkspacevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | *No description.* |
+| [`branch`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertybranch)<span title="Required">*</span> | `string` | *No description.* |
+| [`identifier`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyidentifier)<span title="Required">*</span> | `string` | *No description.* |
+| [`ingressSubmodules`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyingresssubmodules)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`oauthTokenId`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyoauthtokenid)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo) | *No description.* |
 
 ---
 
-##### `branch`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.property.branch" id="cdktfprovidertfedatatfeworkspacevcsrepopropertybranch"></a>
+##### `branch`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.property.branch" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertybranch"></a>
 
 ```typescript
 public readonly branch: string;
@@ -10810,7 +10984,7 @@ public readonly branch: string;
 
 ---
 
-##### `identifier`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.property.identifier" id="cdktfprovidertfedatatfeworkspacevcsrepopropertyidentifier"></a>
+##### `identifier`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.property.identifier" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyidentifier"></a>
 
 ```typescript
 public readonly identifier: string;
@@ -10820,7 +10994,7 @@ public readonly identifier: string;
 
 ---
 
-##### `ingressSubmodules`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.property.ingressSubmodules" id="cdktfprovidertfedatatfeworkspacevcsrepopropertyingresssubmodules"></a>
+##### `ingressSubmodules`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.property.ingressSubmodules" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyingresssubmodules"></a>
 
 ```typescript
 public readonly ingressSubmodules: IResolvable;
@@ -10830,13 +11004,23 @@ public readonly ingressSubmodules: IResolvable;
 
 ---
 
-##### `oauthTokenId`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo.property.oauthTokenId" id="cdktfprovidertfedatatfeworkspacevcsrepopropertyoauthtokenid"></a>
+##### `oauthTokenId`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.property.oauthTokenId" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyoauthtokenid"></a>
 
 ```typescript
 public readonly oauthTokenId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.property.internalValue" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: DataTfeWorkspaceVcsRepo;
+```
+
+- *Type:* [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo)
 
 ---
 
@@ -10848,14 +11032,13 @@ public readonly oauthTokenId: string;
 ```typescript
 import { PolicySetVcsRepoOutputReference } from '@cdktf/provider-tfe'
 
-new PolicySetVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new PolicySetVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidertfepolicysetvcsrepooutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -10872,14 +11055,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-tfe.PolicySetVcsRepoOutputReference.parameter.isSingleItem" id="cdktfprovidertfepolicysetvcsrepooutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11019,14 +11194,13 @@ public readonly internalValue: PolicySetVcsRepo;
 ```typescript
 import { RegistryModuleVcsRepoOutputReference } from '@cdktf/provider-tfe'
 
-new RegistryModuleVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RegistryModuleVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -11043,14 +11217,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModuleVcsRepoOutputReference.parameter.isSingleItem" id="cdktfprovidertferegistrymodulevcsrepooutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11148,14 +11314,13 @@ public readonly internalValue: RegistryModuleVcsRepo;
 ```typescript
 import { TeamOrganizationAccessOutputReference } from '@cdktf/provider-tfe'
 
-new TeamOrganizationAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new TeamOrganizationAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidertfeteamorganizationaccessoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -11172,14 +11337,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-tfe.TeamOrganizationAccessOutputReference.parameter.isSingleItem" id="cdktfprovidertfeteamorganizationaccessoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11333,14 +11490,13 @@ public readonly internalValue: TeamOrganizationAccess;
 ```typescript
 import { WorkspaceVcsRepoOutputReference } from '@cdktf/provider-tfe'
 
-new WorkspaceVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WorkspaceVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidertfeworkspacevcsrepooutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -11357,14 +11513,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference.parameter.isSingleItem" id="cdktfprovidertfeworkspacevcsrepooutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 

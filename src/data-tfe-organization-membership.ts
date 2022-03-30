@@ -25,7 +25,7 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_organization_membership";
+  public static readonly tfResourceType = "tfe_organization_membership";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'tfe_organization_membership',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

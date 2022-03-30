@@ -33,7 +33,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_policy_set_parameter";
+  public static readonly tfResourceType = "tfe_policy_set_parameter";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class PolicySetParameter extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_policy_set_parameter',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

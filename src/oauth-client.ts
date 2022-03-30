@@ -41,7 +41,7 @@ export class OauthClient extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_oauth_client";
+  public static readonly tfResourceType = "tfe_oauth_client";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class OauthClient extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_oauth_client',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
