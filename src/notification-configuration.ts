@@ -53,7 +53,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_notification_configuration";
+  public static readonly tfResourceType = "tfe_notification_configuration";
 
   // ===========
   // INITIALIZER
@@ -70,7 +70,9 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_notification_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

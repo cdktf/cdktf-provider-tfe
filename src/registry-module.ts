@@ -47,10 +47,9 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RegistryModuleVcsRepo | undefined {
@@ -134,7 +133,7 @@ export class RegistryModule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_registry_module";
+  public static readonly tfResourceType = "tfe_registry_module";
 
   // ===========
   // INITIALIZER
@@ -151,7 +150,9 @@ export class RegistryModule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -186,7 +187,7 @@ export class RegistryModule extends cdktf.TerraformResource {
   }
 
   // vcs_repo - computed: false, optional: false, required: true
-  private _vcsRepo = new RegistryModuleVcsRepoOutputReference(this, "vcs_repo", true);
+  private _vcsRepo = new RegistryModuleVcsRepoOutputReference(this, "vcs_repo");
   public get vcsRepo() {
     return this._vcsRepo;
   }

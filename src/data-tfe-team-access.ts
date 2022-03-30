@@ -16,7 +16,45 @@ export interface DataTfeTeamAccessConfig extends cdktf.TerraformMetaArguments {
   */
   readonly workspaceId: string;
 }
-export class DataTfeTeamAccessPermissions extends cdktf.ComplexComputedList {
+export interface DataTfeTeamAccessPermissions {
+}
+
+export function dataTfeTeamAccessPermissionsToTerraform(struct?: DataTfeTeamAccessPermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataTfeTeamAccessPermissionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataTfeTeamAccessPermissions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataTfeTeamAccessPermissions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // runs - computed: true, optional: false, required: false
   public get runs() {
@@ -44,6 +82,25 @@ export class DataTfeTeamAccessPermissions extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataTfeTeamAccessPermissionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataTfeTeamAccessPermissionsOutputReference {
+    return new DataTfeTeamAccessPermissionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team_access tfe_team_access}
 */
@@ -52,7 +109,7 @@ export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_team_access";
+  public static readonly tfResourceType = "tfe_team_access";
 
   // ===========
   // INITIALIZER
@@ -69,7 +126,9 @@ export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'tfe_team_access',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -95,8 +154,9 @@ export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
   }
 
   // permissions - computed: true, optional: false, required: false
-  public permissions(index: string) {
-    return new DataTfeTeamAccessPermissions(this, 'permissions', index, false);
+  private _permissions = new DataTfeTeamAccessPermissionsList(this, "permissions", false);
+  public get permissions() {
+    return this._permissions;
   }
 
   // team_id - computed: false, optional: false, required: true

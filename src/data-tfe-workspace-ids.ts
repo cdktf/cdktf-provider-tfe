@@ -29,7 +29,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_workspace_ids";
+  public static readonly tfResourceType = "tfe_workspace_ids";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'tfe_workspace_ids',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

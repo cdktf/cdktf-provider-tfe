@@ -21,7 +21,7 @@ export class DataTfeOauthClient extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_oauth_client";
+  public static readonly tfResourceType = "tfe_oauth_client";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataTfeOauthClient extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'tfe_oauth_client',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

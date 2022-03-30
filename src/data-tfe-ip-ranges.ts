@@ -17,7 +17,7 @@ export class DataTfeIpRanges extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "tfe_ip_ranges";
+  public static readonly tfResourceType = "tfe_ip_ranges";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataTfeIpRanges extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'tfe_ip_ranges',
       terraformGeneratorMetadata: {
-        providerName: 'tfe'
+        providerName: 'tfe',
+        providerVersion: '0.26.1',
+        providerVersionConstraint: '~> 0.26.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
