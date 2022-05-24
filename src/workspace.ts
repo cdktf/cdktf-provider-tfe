@@ -36,6 +36,13 @@ export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly globalRemoteState?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#id Workspace#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#name Workspace#name}
   */
   readonly name: string;
@@ -272,6 +279,7 @@ export class Workspace extends cdktf.TerraformResource {
     this._executionMode = config.executionMode;
     this._fileTriggersEnabled = config.fileTriggersEnabled;
     this._globalRemoteState = config.globalRemoteState;
+    this._id = config.id;
     this._name = config.name;
     this._operations = config.operations;
     this._organization = config.organization;
@@ -404,8 +412,19 @@ export class Workspace extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -623,6 +642,7 @@ export class Workspace extends cdktf.TerraformResource {
       execution_mode: cdktf.stringToTerraform(this._executionMode),
       file_triggers_enabled: cdktf.booleanToTerraform(this._fileTriggersEnabled),
       global_remote_state: cdktf.booleanToTerraform(this._globalRemoteState),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       operations: cdktf.booleanToTerraform(this._operations),
       organization: cdktf.stringToTerraform(this._organization),

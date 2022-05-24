@@ -16,6 +16,13 @@ export interface OauthClientConfig extends cdktf.TerraformMetaArguments {
   */
   readonly httpUrl: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#id OauthClient#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}
   */
   readonly oauthToken: string;
@@ -69,6 +76,7 @@ export class OauthClient extends cdktf.TerraformResource {
     });
     this._apiUrl = config.apiUrl;
     this._httpUrl = config.httpUrl;
+    this._id = config.id;
     this._oauthToken = config.oauthToken;
     this._organization = config.organization;
     this._privateKey = config.privateKey;
@@ -106,8 +114,19 @@ export class OauthClient extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // oauth_token - computed: false, optional: false, required: true
@@ -178,6 +197,7 @@ export class OauthClient extends cdktf.TerraformResource {
     return {
       api_url: cdktf.stringToTerraform(this._apiUrl),
       http_url: cdktf.stringToTerraform(this._httpUrl),
+      id: cdktf.stringToTerraform(this._id),
       oauth_token: cdktf.stringToTerraform(this._oauthToken),
       organization: cdktf.stringToTerraform(this._organization),
       private_key: cdktf.stringToTerraform(this._privateKey),
