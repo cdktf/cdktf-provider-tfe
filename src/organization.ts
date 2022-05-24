@@ -20,6 +20,13 @@ export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly email: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#id Organization#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}
   */
   readonly name: string;
@@ -74,6 +81,7 @@ export class Organization extends cdktf.TerraformResource {
     this._collaboratorAuthPolicy = config.collaboratorAuthPolicy;
     this._costEstimationEnabled = config.costEstimationEnabled;
     this._email = config.email;
+    this._id = config.id;
     this._name = config.name;
     this._ownersTeamSamlRoleId = config.ownersTeamSamlRoleId;
     this._sessionRememberMinutes = config.sessionRememberMinutes;
@@ -130,8 +138,19 @@ export class Organization extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -204,6 +223,7 @@ export class Organization extends cdktf.TerraformResource {
       collaborator_auth_policy: cdktf.stringToTerraform(this._collaboratorAuthPolicy),
       cost_estimation_enabled: cdktf.booleanToTerraform(this._costEstimationEnabled),
       email: cdktf.stringToTerraform(this._email),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owners_team_saml_role_id: cdktf.stringToTerraform(this._ownersTeamSamlRoleId),
       session_remember_minutes: cdktf.numberToTerraform(this._sessionRememberMinutes),

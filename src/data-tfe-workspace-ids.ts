@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeWorkspaceIdsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#id DataTfeWorkspaceIds#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#names DataTfeWorkspaceIds#names}
   */
   readonly names?: string[];
@@ -55,6 +62,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._names = config.names;
     this._organization = config.organization;
     this._tagNames = config.tagNames;
@@ -65,18 +73,31 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   // ==========
 
   // full_names - computed: true, optional: false, required: false
-  public fullNames(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'full_names').lookup(key);
+  private _fullNames = new cdktf.StringMap(this, "full_names");
+  public get fullNames() {
+    return this._fullNames;
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // ids - computed: true, optional: false, required: false
-  public ids(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'ids').lookup(key);
+  private _ids = new cdktf.StringMap(this, "ids");
+  public get ids() {
+    return this._ids;
   }
 
   // names - computed: false, optional: true, required: false
@@ -130,6 +151,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       names: cdktf.listMapper(cdktf.stringToTerraform)(this._names),
       organization: cdktf.stringToTerraform(this._organization),
       tag_names: cdktf.listMapper(cdktf.stringToTerraform)(this._tagNames),
