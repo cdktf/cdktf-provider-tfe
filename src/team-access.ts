@@ -35,6 +35,10 @@ export interface TeamAccessConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamAccessPermissions {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#run_tasks TeamAccess#run_tasks}
+  */
+  readonly runTasks: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#runs TeamAccess#runs}
   */
   readonly runs: string;
@@ -62,6 +66,7 @@ export function teamAccessPermissionsToTerraform(struct?: TeamAccessPermissions 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    run_tasks: cdktf.booleanToTerraform(struct!.runTasks),
     runs: cdktf.stringToTerraform(struct!.runs),
     sentinel_mocks: cdktf.stringToTerraform(struct!.sentinelMocks),
     state_versions: cdktf.stringToTerraform(struct!.stateVersions),
@@ -90,6 +95,10 @@ export class TeamAccessPermissionsOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._runTasks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runTasks = this._runTasks;
+    }
     if (this._runs !== undefined) {
       hasAnyValues = true;
       internalValueResult.runs = this._runs;
@@ -117,6 +126,7 @@ export class TeamAccessPermissionsOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._runTasks = undefined;
       this._runs = undefined;
       this._sentinelMocks = undefined;
       this._stateVersions = undefined;
@@ -130,12 +140,26 @@ export class TeamAccessPermissionsOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._runTasks = value.runTasks;
       this._runs = value.runs;
       this._sentinelMocks = value.sentinelMocks;
       this._stateVersions = value.stateVersions;
       this._variables = value.variables;
       this._workspaceLocking = value.workspaceLocking;
     }
+  }
+
+  // run_tasks - computed: false, optional: false, required: true
+  private _runTasks?: boolean | cdktf.IResolvable; 
+  public get runTasks() {
+    return this.getBooleanAttribute('run_tasks');
+  }
+  public set runTasks(value: boolean | cdktf.IResolvable) {
+    this._runTasks = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runTasksInput() {
+    return this._runTasks;
   }
 
   // runs - computed: false, optional: false, required: true
@@ -250,8 +274,8 @@ export class TeamAccess extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team_access',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

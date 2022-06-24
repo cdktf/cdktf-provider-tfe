@@ -50,8 +50,8 @@ export class DataTfeAgentPool extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_agent_pool',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

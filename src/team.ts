@@ -23,6 +23,10 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly organization: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#sso_team_id Team#sso_team_id}
+  */
+  readonly ssoTeamId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#visibility Team#visibility}
   */
   readonly visibility?: string;
@@ -35,6 +39,10 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamOrganizationAccess {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_modules Team#manage_modules}
+  */
+  readonly manageModules?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policies Team#manage_policies}
   */
   readonly managePolicies?: boolean | cdktf.IResolvable;
@@ -42,6 +50,14 @@ export interface TeamOrganizationAccess {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policy_overrides Team#manage_policy_overrides}
   */
   readonly managePolicyOverrides?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_providers Team#manage_providers}
+  */
+  readonly manageProviders?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_run_tasks Team#manage_run_tasks}
+  */
+  readonly manageRunTasks?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_vcs_settings Team#manage_vcs_settings}
   */
@@ -58,8 +74,11 @@ export function teamOrganizationAccessToTerraform(struct?: TeamOrganizationAcces
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    manage_modules: cdktf.booleanToTerraform(struct!.manageModules),
     manage_policies: cdktf.booleanToTerraform(struct!.managePolicies),
     manage_policy_overrides: cdktf.booleanToTerraform(struct!.managePolicyOverrides),
+    manage_providers: cdktf.booleanToTerraform(struct!.manageProviders),
+    manage_run_tasks: cdktf.booleanToTerraform(struct!.manageRunTasks),
     manage_vcs_settings: cdktf.booleanToTerraform(struct!.manageVcsSettings),
     manage_workspaces: cdktf.booleanToTerraform(struct!.manageWorkspaces),
   }
@@ -79,6 +98,10 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   public get internalValue(): TeamOrganizationAccess | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._manageModules !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.manageModules = this._manageModules;
+    }
     if (this._managePolicies !== undefined) {
       hasAnyValues = true;
       internalValueResult.managePolicies = this._managePolicies;
@@ -86,6 +109,14 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
     if (this._managePolicyOverrides !== undefined) {
       hasAnyValues = true;
       internalValueResult.managePolicyOverrides = this._managePolicyOverrides;
+    }
+    if (this._manageProviders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.manageProviders = this._manageProviders;
+    }
+    if (this._manageRunTasks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.manageRunTasks = this._manageRunTasks;
     }
     if (this._manageVcsSettings !== undefined) {
       hasAnyValues = true;
@@ -101,18 +132,40 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: TeamOrganizationAccess | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._manageModules = undefined;
       this._managePolicies = undefined;
       this._managePolicyOverrides = undefined;
+      this._manageProviders = undefined;
+      this._manageRunTasks = undefined;
       this._manageVcsSettings = undefined;
       this._manageWorkspaces = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._manageModules = value.manageModules;
       this._managePolicies = value.managePolicies;
       this._managePolicyOverrides = value.managePolicyOverrides;
+      this._manageProviders = value.manageProviders;
+      this._manageRunTasks = value.manageRunTasks;
       this._manageVcsSettings = value.manageVcsSettings;
       this._manageWorkspaces = value.manageWorkspaces;
     }
+  }
+
+  // manage_modules - computed: false, optional: true, required: false
+  private _manageModules?: boolean | cdktf.IResolvable; 
+  public get manageModules() {
+    return this.getBooleanAttribute('manage_modules');
+  }
+  public set manageModules(value: boolean | cdktf.IResolvable) {
+    this._manageModules = value;
+  }
+  public resetManageModules() {
+    this._manageModules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageModulesInput() {
+    return this._manageModules;
   }
 
   // manage_policies - computed: false, optional: true, required: false
@@ -145,6 +198,38 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get managePolicyOverridesInput() {
     return this._managePolicyOverrides;
+  }
+
+  // manage_providers - computed: false, optional: true, required: false
+  private _manageProviders?: boolean | cdktf.IResolvable; 
+  public get manageProviders() {
+    return this.getBooleanAttribute('manage_providers');
+  }
+  public set manageProviders(value: boolean | cdktf.IResolvable) {
+    this._manageProviders = value;
+  }
+  public resetManageProviders() {
+    this._manageProviders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageProvidersInput() {
+    return this._manageProviders;
+  }
+
+  // manage_run_tasks - computed: false, optional: true, required: false
+  private _manageRunTasks?: boolean | cdktf.IResolvable; 
+  public get manageRunTasks() {
+    return this.getBooleanAttribute('manage_run_tasks');
+  }
+  public set manageRunTasks(value: boolean | cdktf.IResolvable) {
+    this._manageRunTasks = value;
+  }
+  public resetManageRunTasks() {
+    this._manageRunTasks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageRunTasksInput() {
+    return this._manageRunTasks;
   }
 
   // manage_vcs_settings - computed: false, optional: true, required: false
@@ -206,8 +291,8 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -217,6 +302,7 @@ export class Team extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._organization = config.organization;
+    this._ssoTeamId = config.ssoTeamId;
     this._visibility = config.visibility;
     this._organizationAccess.internalValue = config.organizationAccess;
   }
@@ -267,6 +353,22 @@ export class Team extends cdktf.TerraformResource {
     return this._organization;
   }
 
+  // sso_team_id - computed: false, optional: true, required: false
+  private _ssoTeamId?: string; 
+  public get ssoTeamId() {
+    return this.getStringAttribute('sso_team_id');
+  }
+  public set ssoTeamId(value: string) {
+    this._ssoTeamId = value;
+  }
+  public resetSsoTeamId() {
+    this._ssoTeamId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ssoTeamIdInput() {
+    return this._ssoTeamId;
+  }
+
   // visibility - computed: false, optional: true, required: false
   private _visibility?: string; 
   public get visibility() {
@@ -308,6 +410,7 @@ export class Team extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
+      sso_team_id: cdktf.stringToTerraform(this._ssoTeamId),
       visibility: cdktf.stringToTerraform(this._visibility),
       organization_access: teamOrganizationAccessToTerraform(this._organizationAccess.internalValue),
     };

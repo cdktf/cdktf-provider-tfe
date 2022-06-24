@@ -35,6 +35,10 @@ export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ownersTeamSamlRoleId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}
+  */
+  readonly sendPassingStatusesForUntriggeredSpeculativePlans?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}
   */
   readonly sessionRememberMinutes?: number;
@@ -70,8 +74,8 @@ export class Organization extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -84,6 +88,7 @@ export class Organization extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._ownersTeamSamlRoleId = config.ownersTeamSamlRoleId;
+    this._sendPassingStatusesForUntriggeredSpeculativePlans = config.sendPassingStatusesForUntriggeredSpeculativePlans;
     this._sessionRememberMinutes = config.sessionRememberMinutes;
     this._sessionTimeoutMinutes = config.sessionTimeoutMinutes;
   }
@@ -182,6 +187,22 @@ export class Organization extends cdktf.TerraformResource {
     return this._ownersTeamSamlRoleId;
   }
 
+  // send_passing_statuses_for_untriggered_speculative_plans - computed: true, optional: true, required: false
+  private _sendPassingStatusesForUntriggeredSpeculativePlans?: boolean | cdktf.IResolvable; 
+  public get sendPassingStatusesForUntriggeredSpeculativePlans() {
+    return this.getBooleanAttribute('send_passing_statuses_for_untriggered_speculative_plans');
+  }
+  public set sendPassingStatusesForUntriggeredSpeculativePlans(value: boolean | cdktf.IResolvable) {
+    this._sendPassingStatusesForUntriggeredSpeculativePlans = value;
+  }
+  public resetSendPassingStatusesForUntriggeredSpeculativePlans() {
+    this._sendPassingStatusesForUntriggeredSpeculativePlans = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sendPassingStatusesForUntriggeredSpeculativePlansInput() {
+    return this._sendPassingStatusesForUntriggeredSpeculativePlans;
+  }
+
   // session_remember_minutes - computed: false, optional: true, required: false
   private _sessionRememberMinutes?: number; 
   public get sessionRememberMinutes() {
@@ -226,6 +247,7 @@ export class Organization extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owners_team_saml_role_id: cdktf.stringToTerraform(this._ownersTeamSamlRoleId),
+      send_passing_statuses_for_untriggered_speculative_plans: cdktf.booleanToTerraform(this._sendPassingStatusesForUntriggeredSpeculativePlans),
       session_remember_minutes: cdktf.numberToTerraform(this._sessionRememberMinutes),
       session_timeout_minutes: cdktf.numberToTerraform(this._sessionTimeoutMinutes),
     };
