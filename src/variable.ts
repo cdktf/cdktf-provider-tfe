@@ -39,9 +39,13 @@ export interface VariableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly value?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#variable_set_id Variable#variable_set_id}
+  */
+  readonly variableSetId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 /**
@@ -70,8 +74,8 @@ export class Variable extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_variable',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -85,6 +89,7 @@ export class Variable extends cdktf.TerraformResource {
     this._key = config.key;
     this._sensitive = config.sensitive;
     this._value = config.value;
+    this._variableSetId = config.variableSetId;
     this._workspaceId = config.workspaceId;
   }
 
@@ -198,13 +203,32 @@ export class Variable extends cdktf.TerraformResource {
     return this._value;
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // variable_set_id - computed: false, optional: true, required: false
+  private _variableSetId?: string; 
+  public get variableSetId() {
+    return this.getStringAttribute('variable_set_id');
+  }
+  public set variableSetId(value: string) {
+    this._variableSetId = value;
+  }
+  public resetVariableSetId() {
+    this._variableSetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableSetIdInput() {
+    return this._variableSetId;
+  }
+
+  // workspace_id - computed: false, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -224,6 +248,7 @@ export class Variable extends cdktf.TerraformResource {
       key: cdktf.stringToTerraform(this._key),
       sensitive: cdktf.booleanToTerraform(this._sensitive),
       value: cdktf.stringToTerraform(this._value),
+      variable_set_id: cdktf.stringToTerraform(this._variableSetId),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }

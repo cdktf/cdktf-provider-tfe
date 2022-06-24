@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/run_trigger
+// https://www.terraform.io/docs/providers/tfe/r/workspace_run_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,52 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RunTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceRunTaskConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#id RunTrigger#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+  */
+  readonly enforcementLevel: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#id WorkspaceRunTask#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#sourceable_id RunTrigger#sourceable_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#task_id WorkspaceRunTask#task_id}
   */
-  readonly sourceableId: string;
+  readonly taskId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#workspace_id RunTrigger#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger tfe_run_trigger}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task tfe_workspace_run_task}
 */
-export class RunTrigger extends cdktf.TerraformResource {
+export class WorkspaceRunTask extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "tfe_run_trigger";
+  public static readonly tfResourceType = "tfe_workspace_run_task";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger tfe_run_trigger} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task tfe_workspace_run_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options RunTriggerConfig
+  * @param options WorkspaceRunTaskConfig
   */
-  public constructor(scope: Construct, id: string, config: RunTriggerConfig) {
+  public constructor(scope: Construct, id: string, config: WorkspaceRunTaskConfig) {
     super(scope, id, {
-      terraformResourceType: 'tfe_run_trigger',
+      terraformResourceType: 'tfe_workspace_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
         providerVersion: '0.32.1',
@@ -58,14 +62,28 @@ export class RunTrigger extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._enforcementLevel = config.enforcementLevel;
     this._id = config.id;
-    this._sourceableId = config.sourceableId;
+    this._taskId = config.taskId;
     this._workspaceId = config.workspaceId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enforcement_level - computed: false, optional: false, required: true
+  private _enforcementLevel?: string; 
+  public get enforcementLevel() {
+    return this.getStringAttribute('enforcement_level');
+  }
+  public set enforcementLevel(value: string) {
+    this._enforcementLevel = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforcementLevelInput() {
+    return this._enforcementLevel;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -83,17 +101,17 @@ export class RunTrigger extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // sourceable_id - computed: false, optional: false, required: true
-  private _sourceableId?: string; 
-  public get sourceableId() {
-    return this.getStringAttribute('sourceable_id');
+  // task_id - computed: false, optional: false, required: true
+  private _taskId?: string; 
+  public get taskId() {
+    return this.getStringAttribute('task_id');
   }
-  public set sourceableId(value: string) {
-    this._sourceableId = value;
+  public set taskId(value: string) {
+    this._taskId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get sourceableIdInput() {
-    return this._sourceableId;
+  public get taskIdInput() {
+    return this._taskId;
   }
 
   // workspace_id - computed: false, optional: false, required: true
@@ -115,8 +133,9 @@ export class RunTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enforcement_level: cdktf.stringToTerraform(this._enforcementLevel),
       id: cdktf.stringToTerraform(this._id),
-      sourceable_id: cdktf.stringToTerraform(this._sourceableId),
+      task_id: cdktf.stringToTerraform(this._taskId),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }

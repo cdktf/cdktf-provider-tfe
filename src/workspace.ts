@@ -264,8 +264,8 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -485,7 +485,7 @@ export class Workspace extends cdktf.TerraformResource {
     return this._queueAllRuns;
   }
 
-  // remote_state_consumer_ids - computed: false, optional: true, required: false
+  // remote_state_consumer_ids - computed: true, optional: true, required: false
   private _remoteStateConsumerIds?: string[]; 
   public get remoteStateConsumerIds() {
     return cdktf.Fn.tolist(this.getListAttribute('remote_state_consumer_ids'));
@@ -581,7 +581,7 @@ export class Workspace extends cdktf.TerraformResource {
     return this._terraformVersion;
   }
 
-  // trigger_prefixes - computed: false, optional: true, required: false
+  // trigger_prefixes - computed: true, optional: true, required: false
   private _triggerPrefixes?: string[]; 
   public get triggerPrefixes() {
     return this.getListAttribute('trigger_prefixes');

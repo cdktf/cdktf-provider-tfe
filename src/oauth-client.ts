@@ -23,9 +23,17 @@ export interface OauthClientConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#key OauthClient#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#name OauthClient#name}
+  */
+  readonly name?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}
   */
-  readonly oauthToken: string;
+  readonly oauthToken?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}
   */
@@ -34,6 +42,14 @@ export interface OauthClientConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}
   */
   readonly privateKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}
+  */
+  readonly rsaPublicKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#secret OauthClient#secret}
+  */
+  readonly secret?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}
   */
@@ -66,8 +82,8 @@ export class OauthClient extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_oauth_client',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -77,9 +93,13 @@ export class OauthClient extends cdktf.TerraformResource {
     this._apiUrl = config.apiUrl;
     this._httpUrl = config.httpUrl;
     this._id = config.id;
+    this._key = config.key;
+    this._name = config.name;
     this._oauthToken = config.oauthToken;
     this._organization = config.organization;
     this._privateKey = config.privateKey;
+    this._rsaPublicKey = config.rsaPublicKey;
+    this._secret = config.secret;
     this._serviceProvider = config.serviceProvider;
   }
 
@@ -129,13 +149,48 @@ export class OauthClient extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // oauth_token - computed: false, optional: false, required: true
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // oauth_token - computed: false, optional: true, required: false
   private _oauthToken?: string; 
   public get oauthToken() {
     return this.getStringAttribute('oauth_token');
   }
   public set oauthToken(value: string) {
     this._oauthToken = value;
+  }
+  public resetOauthToken() {
+    this._oauthToken = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oauthTokenInput() {
@@ -176,6 +231,38 @@ export class OauthClient extends cdktf.TerraformResource {
     return this._privateKey;
   }
 
+  // rsa_public_key - computed: false, optional: true, required: false
+  private _rsaPublicKey?: string; 
+  public get rsaPublicKey() {
+    return this.getStringAttribute('rsa_public_key');
+  }
+  public set rsaPublicKey(value: string) {
+    this._rsaPublicKey = value;
+  }
+  public resetRsaPublicKey() {
+    this._rsaPublicKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaPublicKeyInput() {
+    return this._rsaPublicKey;
+  }
+
+  // secret - computed: false, optional: true, required: false
+  private _secret?: string; 
+  public get secret() {
+    return this.getStringAttribute('secret');
+  }
+  public set secret(value: string) {
+    this._secret = value;
+  }
+  public resetSecret() {
+    this._secret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretInput() {
+    return this._secret;
+  }
+
   // service_provider - computed: false, optional: false, required: true
   private _serviceProvider?: string; 
   public get serviceProvider() {
@@ -198,9 +285,13 @@ export class OauthClient extends cdktf.TerraformResource {
       api_url: cdktf.stringToTerraform(this._apiUrl),
       http_url: cdktf.stringToTerraform(this._httpUrl),
       id: cdktf.stringToTerraform(this._id),
+      key: cdktf.stringToTerraform(this._key),
+      name: cdktf.stringToTerraform(this._name),
       oauth_token: cdktf.stringToTerraform(this._oauthToken),
       organization: cdktf.stringToTerraform(this._organization),
       private_key: cdktf.stringToTerraform(this._privateKey),
+      rsa_public_key: cdktf.stringToTerraform(this._rsaPublicKey),
+      secret: cdktf.stringToTerraform(this._secret),
       service_provider: cdktf.stringToTerraform(this._serviceProvider),
     };
   }

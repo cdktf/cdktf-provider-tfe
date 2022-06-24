@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/tfe/r/agent_pool
+// https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AgentPoolConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationModuleSharingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#id AgentPool#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#id OrganizationModuleSharing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#name AgentPool#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}
   */
-  readonly name: string;
+  readonly moduleConsumers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#organization AgentPool#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}
   */
   readonly organization: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool tfe_agent_pool}
+* Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing tfe_organization_module_sharing}
 */
-export class AgentPool extends cdktf.TerraformResource {
+export class OrganizationModuleSharing extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "tfe_agent_pool";
+  public static readonly tfResourceType = "tfe_organization_module_sharing";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool tfe_agent_pool} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing tfe_organization_module_sharing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AgentPoolConfig
+  * @param options OrganizationModuleSharingConfig
   */
-  public constructor(scope: Construct, id: string, config: AgentPoolConfig) {
+  public constructor(scope: Construct, id: string, config: OrganizationModuleSharingConfig) {
     super(scope, id, {
-      terraformResourceType: 'tfe_agent_pool',
+      terraformResourceType: 'tfe_organization_module_sharing',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
         providerVersion: '0.32.1',
@@ -59,7 +59,7 @@ export class AgentPool extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._id = config.id;
-    this._name = config.name;
+    this._moduleConsumers = config.moduleConsumers;
     this._organization = config.organization;
   }
 
@@ -83,17 +83,17 @@ export class AgentPool extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
+  // module_consumers - computed: false, optional: false, required: true
+  private _moduleConsumers?: string[]; 
+  public get moduleConsumers() {
+    return this.getListAttribute('module_consumers');
   }
-  public set name(value: string) {
-    this._name = value;
+  public set moduleConsumers(value: string[]) {
+    this._moduleConsumers = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
+  public get moduleConsumersInput() {
+    return this._moduleConsumers;
   }
 
   // organization - computed: false, optional: false, required: true
@@ -116,7 +116,7 @@ export class AgentPool extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      module_consumers: cdktf.listMapper(cdktf.stringToTerraform)(this._moduleConsumers),
       organization: cdktf.stringToTerraform(this._organization),
     };
   }

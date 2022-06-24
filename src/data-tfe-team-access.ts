@@ -63,6 +63,11 @@ export class DataTfeTeamAccessPermissionsOutputReference extends cdktf.ComplexOb
     }
   }
 
+  // run_tasks - computed: true, optional: false, required: false
+  public get runTasks() {
+    return this.getBooleanAttribute('run_tasks');
+  }
+
   // runs - computed: true, optional: false, required: false
   public get runs() {
     return this.getStringAttribute('runs');
@@ -134,8 +139,8 @@ export class DataTfeTeamAccess extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_team_access',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

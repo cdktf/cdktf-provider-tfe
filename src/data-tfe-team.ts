@@ -50,8 +50,8 @@ export class DataTfeTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_team',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -107,6 +107,11 @@ export class DataTfeTeam extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
     return this._organization;
+  }
+
+  // sso_team_id - computed: true, optional: false, required: false
+  public get ssoTeamId() {
+    return this.getStringAttribute('sso_team_id');
   }
 
   // =========

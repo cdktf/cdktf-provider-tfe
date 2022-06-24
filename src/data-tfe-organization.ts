@@ -46,8 +46,8 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.26.1',
-        providerVersionConstraint: '~> 0.26.1'
+        providerVersion: '0.32.1',
+        providerVersionConstraint: '~> 0.32.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -114,6 +114,11 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
   // owners_team_saml_role_id - computed: true, optional: false, required: false
   public get ownersTeamSamlRoleId() {
     return this.getStringAttribute('owners_team_saml_role_id');
+  }
+
+  // send_passing_statuses_for_untriggered_speculative_plans - computed: true, optional: false, required: false
+  public get sendPassingStatusesForUntriggeredSpeculativePlans() {
+    return this.getBooleanAttribute('send_passing_statuses_for_untriggered_speculative_plans');
   }
 
   // two_factor_conformant - computed: true, optional: false, required: false
