@@ -62,8 +62,8 @@ export class DataTfeOrganizationRunTask extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.32.1',
-        providerVersionConstraint: '~> 0.32.1'
+        providerVersion: '0.33.0',
+        providerVersionConstraint: '~> 0.33.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

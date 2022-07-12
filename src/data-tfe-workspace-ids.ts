@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeWorkspaceIdsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#exclude_tags DataTfeWorkspaceIds#exclude_tags}
+  */
+  readonly excludeTags?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#id DataTfeWorkspaceIds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -54,14 +58,15 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace_ids',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.32.1',
-        providerVersionConstraint: '~> 0.32.1'
+        providerVersion: '0.33.0',
+        providerVersionConstraint: '~> 0.33.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._excludeTags = config.excludeTags;
     this._id = config.id;
     this._names = config.names;
     this._organization = config.organization;
@@ -71,6 +76,22 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // exclude_tags - computed: false, optional: true, required: false
+  private _excludeTags?: string[]; 
+  public get excludeTags() {
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_tags'));
+  }
+  public set excludeTags(value: string[]) {
+    this._excludeTags = value;
+  }
+  public resetExcludeTags() {
+    this._excludeTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeTagsInput() {
+    return this._excludeTags;
+  }
 
   // full_names - computed: true, optional: false, required: false
   private _fullNames = new cdktf.StringMap(this, "full_names");
@@ -151,6 +172,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      exclude_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeTags),
       id: cdktf.stringToTerraform(this._id),
       names: cdktf.listMapper(cdktf.stringToTerraform)(this._names),
       organization: cdktf.stringToTerraform(this._organization),

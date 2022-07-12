@@ -2755,6 +2755,7 @@ public resetTagNames()
 | [`sshKeyId`](#cdktfprovidertfedatatfeworkspacepropertysshkeyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`structuredRunOutputEnabled`](#cdktfprovidertfedatatfeworkspacepropertystructuredrunoutputenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`terraformVersion`](#cdktfprovidertfedatatfeworkspacepropertyterraformversion)<span title="Required">*</span> | `string` | *No description.* |
+| [`triggerPatterns`](#cdktfprovidertfedatatfeworkspacepropertytriggerpatterns)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`triggerPrefixes`](#cdktfprovidertfedatatfeworkspacepropertytriggerprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`vcsRepo`](#cdktfprovidertfedatatfeworkspacepropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoList) | *No description.* |
 | [`workingDirectory`](#cdktfprovidertfedatatfeworkspacepropertyworkingdirectory)<span title="Required">*</span> | `string` | *No description.* |
@@ -2926,6 +2927,16 @@ public readonly terraformVersion: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `triggerPatterns`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.triggerPatterns" id="cdktfprovidertfedatatfeworkspacepropertytriggerpatterns"></a>
+
+```typescript
+public readonly triggerPatterns: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -3101,11 +3112,18 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
+| [`resetExcludeTags`](#cdktfprovidertfedatatfeworkspaceidsresetexcludetags) | *No description.* |
 | [`resetId`](#cdktfprovidertfedatatfeworkspaceidsresetid) | *No description.* |
 | [`resetNames`](#cdktfprovidertfedatatfeworkspaceidsresetnames) | *No description.* |
 | [`resetTagNames`](#cdktfprovidertfedatatfeworkspaceidsresettagnames) | *No description.* |
 
 ---
+
+##### `resetExcludeTags` <a name="@cdktf/provider-tfe.DataTfeWorkspaceIds.resetExcludeTags" id="cdktfprovidertfedatatfeworkspaceidsresetexcludetags"></a>
+
+```typescript
+public resetExcludeTags()
+```
 
 ##### `resetId` <a name="@cdktf/provider-tfe.DataTfeWorkspaceIds.resetId" id="cdktfprovidertfedatatfeworkspaceidsresetid"></a>
 
@@ -3132,10 +3150,12 @@ public resetTagNames()
 | --- | --- | --- |
 | [`fullNames`](#cdktfprovidertfedatatfeworkspaceidspropertyfullnames)<span title="Required">*</span> | [`cdktf.StringMap`](#cdktf.StringMap) | *No description.* |
 | [`ids`](#cdktfprovidertfedatatfeworkspaceidspropertyids)<span title="Required">*</span> | [`cdktf.StringMap`](#cdktf.StringMap) | *No description.* |
+| [`excludeTagsInput`](#cdktfprovidertfedatatfeworkspaceidspropertyexcludetagsinput) | `string`[] | *No description.* |
 | [`idInput`](#cdktfprovidertfedatatfeworkspaceidspropertyidinput) | `string` | *No description.* |
 | [`namesInput`](#cdktfprovidertfedatatfeworkspaceidspropertynamesinput) | `string`[] | *No description.* |
 | [`organizationInput`](#cdktfprovidertfedatatfeworkspaceidspropertyorganizationinput) | `string` | *No description.* |
 | [`tagNamesInput`](#cdktfprovidertfedatatfeworkspaceidspropertytagnamesinput) | `string`[] | *No description.* |
+| [`excludeTags`](#cdktfprovidertfedatatfeworkspaceidspropertyexcludetags)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeworkspaceidspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`names`](#cdktfprovidertfedatatfeworkspaceidspropertynames)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeworkspaceidspropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
@@ -3160,6 +3180,16 @@ public readonly ids: StringMap;
 ```
 
 - *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
+
+---
+
+##### `excludeTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIds.property.excludeTagsInput" id="cdktfprovidertfedatatfeworkspaceidspropertyexcludetagsinput"></a>
+
+```typescript
+public readonly excludeTagsInput: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -3197,6 +3227,16 @@ public readonly organizationInput: string;
 
 ```typescript
 public readonly tagNamesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `excludeTags`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIds.property.excludeTags" id="cdktfprovidertfedatatfeworkspaceidspropertyexcludetags"></a>
+
+```typescript
+public readonly excludeTags: string[];
 ```
 
 - *Type:* `string`[]
@@ -8634,6 +8674,7 @@ Must be unique amongst siblings in the same scope
 | [`resetStructuredRunOutputEnabled`](#cdktfprovidertfeworkspaceresetstructuredrunoutputenabled) | *No description.* |
 | [`resetTagNames`](#cdktfprovidertfeworkspaceresettagnames) | *No description.* |
 | [`resetTerraformVersion`](#cdktfprovidertfeworkspaceresetterraformversion) | *No description.* |
+| [`resetTriggerPatterns`](#cdktfprovidertfeworkspaceresettriggerpatterns) | *No description.* |
 | [`resetTriggerPrefixes`](#cdktfprovidertfeworkspaceresettriggerprefixes) | *No description.* |
 | [`resetVcsRepo`](#cdktfprovidertfeworkspaceresetvcsrepo) | *No description.* |
 | [`resetWorkingDirectory`](#cdktfprovidertfeworkspaceresetworkingdirectory) | *No description.* |
@@ -8748,6 +8789,12 @@ public resetTagNames()
 public resetTerraformVersion()
 ```
 
+##### `resetTriggerPatterns` <a name="@cdktf/provider-tfe.Workspace.resetTriggerPatterns" id="cdktfprovidertfeworkspaceresettriggerpatterns"></a>
+
+```typescript
+public resetTriggerPatterns()
+```
+
 ##### `resetTriggerPrefixes` <a name="@cdktf/provider-tfe.Workspace.resetTriggerPrefixes" id="cdktfprovidertfeworkspaceresettriggerprefixes"></a>
 
 ```typescript
@@ -8790,6 +8837,7 @@ public resetWorkingDirectory()
 | [`structuredRunOutputEnabledInput`](#cdktfprovidertfeworkspacepropertystructuredrunoutputenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`tagNamesInput`](#cdktfprovidertfeworkspacepropertytagnamesinput) | `string`[] | *No description.* |
 | [`terraformVersionInput`](#cdktfprovidertfeworkspacepropertyterraformversioninput) | `string` | *No description.* |
+| [`triggerPatternsInput`](#cdktfprovidertfeworkspacepropertytriggerpatternsinput) | `string`[] | *No description.* |
 | [`triggerPrefixesInput`](#cdktfprovidertfeworkspacepropertytriggerprefixesinput) | `string`[] | *No description.* |
 | [`vcsRepoInput`](#cdktfprovidertfeworkspacepropertyvcsrepoinput) | [`@cdktf/provider-tfe.WorkspaceVcsRepo`](#@cdktf/provider-tfe.WorkspaceVcsRepo) | *No description.* |
 | [`workingDirectoryInput`](#cdktfprovidertfeworkspacepropertyworkingdirectoryinput) | `string` | *No description.* |
@@ -8811,6 +8859,7 @@ public resetWorkingDirectory()
 | [`structuredRunOutputEnabled`](#cdktfprovidertfeworkspacepropertystructuredrunoutputenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`tagNames`](#cdktfprovidertfeworkspacepropertytagnames)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`terraformVersion`](#cdktfprovidertfeworkspacepropertyterraformversion)<span title="Required">*</span> | `string` | *No description.* |
+| [`triggerPatterns`](#cdktfprovidertfeworkspacepropertytriggerpatterns)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`triggerPrefixes`](#cdktfprovidertfeworkspacepropertytriggerprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`workingDirectory`](#cdktfprovidertfeworkspacepropertyworkingdirectory)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -9003,6 +9052,16 @@ public readonly terraformVersionInput: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `triggerPatternsInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.Workspace.property.triggerPatternsInput" id="cdktfprovidertfeworkspacepropertytriggerpatternsinput"></a>
+
+```typescript
+public readonly triggerPatternsInput: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -9216,6 +9275,16 @@ public readonly terraformVersion: string;
 
 ---
 
+##### `triggerPatterns`<sup>Required</sup> <a name="@cdktf/provider-tfe.Workspace.property.triggerPatterns" id="cdktfprovidertfeworkspacepropertytriggerpatterns"></a>
+
+```typescript
+public readonly triggerPatterns: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `triggerPrefixes`<sup>Required</sup> <a name="@cdktf/provider-tfe.Workspace.property.triggerPrefixes" id="cdktfprovidertfeworkspacepropertytriggerprefixes"></a>
 
 ```typescript
@@ -9413,6 +9482,152 @@ public readonly workspaceId: string;
 ---
 
 ##### `tfResourceType` <a name="@cdktf/provider-tfe.WorkspaceRunTask.property.tfResourceType" id="cdktfprovidertfeworkspaceruntaskpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### WorkspaceVariableSet <a name="@cdktf/provider-tfe.WorkspaceVariableSet" id="cdktfprovidertfeworkspacevariableset"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set tfe_workspace_variable_set}.
+
+#### Initializers <a name="@cdktf/provider-tfe.WorkspaceVariableSet.Initializer" id="cdktfprovidertfeworkspacevariablesetinitializer"></a>
+
+```typescript
+import { WorkspaceVariableSet } from '@cdktf/provider-tfe'
+
+new WorkspaceVariableSet(scope: Construct, id: string, config: WorkspaceVariableSetConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidertfeworkspacevariablesetparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidertfeworkspacevariablesetparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidertfeworkspacevariablesetparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-tfe.WorkspaceVariableSetConfig`](#@cdktf/provider-tfe.WorkspaceVariableSetConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.parameter.scope" id="cdktfprovidertfeworkspacevariablesetparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.parameter.id" id="cdktfprovidertfeworkspacevariablesetparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.parameter.config" id="cdktfprovidertfeworkspacevariablesetparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-tfe.WorkspaceVariableSetConfig`](#@cdktf/provider-tfe.WorkspaceVariableSetConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetId`](#cdktfprovidertfeworkspacevariablesetresetid) | *No description.* |
+
+---
+
+##### `resetId` <a name="@cdktf/provider-tfe.WorkspaceVariableSet.resetId" id="cdktfprovidertfeworkspacevariablesetresetid"></a>
+
+```typescript
+public resetId()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`idInput`](#cdktfprovidertfeworkspacevariablesetpropertyidinput) | `string` | *No description.* |
+| [`variableSetIdInput`](#cdktfprovidertfeworkspacevariablesetpropertyvariablesetidinput) | `string` | *No description.* |
+| [`workspaceIdInput`](#cdktfprovidertfeworkspacevariablesetpropertyworkspaceidinput) | `string` | *No description.* |
+| [`id`](#cdktfprovidertfeworkspacevariablesetpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`variableSetId`](#cdktfprovidertfeworkspacevariablesetpropertyvariablesetid)<span title="Required">*</span> | `string` | *No description.* |
+| [`workspaceId`](#cdktfprovidertfeworkspacevariablesetpropertyworkspaceid)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.idInput" id="cdktfprovidertfeworkspacevariablesetpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `variableSetIdInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.variableSetIdInput" id="cdktfprovidertfeworkspacevariablesetpropertyvariablesetidinput"></a>
+
+```typescript
+public readonly variableSetIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workspaceIdInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.workspaceIdInput" id="cdktfprovidertfeworkspacevariablesetpropertyworkspaceidinput"></a>
+
+```typescript
+public readonly workspaceIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.id" id="cdktfprovidertfeworkspacevariablesetpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `variableSetId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.variableSetId" id="cdktfprovidertfeworkspacevariablesetpropertyvariablesetid"></a>
+
+```typescript
+public readonly variableSetId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.workspaceId" id="cdktfprovidertfeworkspacevariablesetpropertyworkspaceid"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidertfeworkspacevariablesetpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-tfe.WorkspaceVariableSet.property.tfResourceType" id="cdktfprovidertfeworkspacevariablesetpropertytfresourcetype"></a>
 
 - *Type:* `string`
 
@@ -11219,6 +11434,7 @@ const dataTfeWorkspaceIdsConfig: DataTfeWorkspaceIdsConfig = { ... }
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#organization DataTfeWorkspaceIds#organization}. |
+| [`excludeTags`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyexcludetags) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#exclude_tags DataTfeWorkspaceIds#exclude_tags}. |
 | [`id`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#id DataTfeWorkspaceIds#id}. |
 | [`names`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertynames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#names DataTfeWorkspaceIds#names}. |
 | [`tagNames`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}. |
@@ -11274,6 +11490,18 @@ public readonly organization: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#organization DataTfeWorkspaceIds#organization}.
+
+---
+
+##### `excludeTags`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIdsConfig.property.excludeTags" id="cdktfprovidertfedatatfeworkspaceidsconfigpropertyexcludetags"></a>
+
+```typescript
+public readonly excludeTags: string[];
+```
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#exclude_tags DataTfeWorkspaceIds#exclude_tags}.
 
 ---
 
@@ -14862,6 +15090,7 @@ const workspaceConfig: WorkspaceConfig = { ... }
 | [`structuredRunOutputEnabled`](#cdktfprovidertfeworkspaceconfigpropertystructuredrunoutputenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
 | [`tagNames`](#cdktfprovidertfeworkspaceconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tag_names Workspace#tag_names}. |
 | [`terraformVersion`](#cdktfprovidertfeworkspaceconfigpropertyterraformversion) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#terraform_version Workspace#terraform_version}. |
+| [`triggerPatterns`](#cdktfprovidertfeworkspaceconfigpropertytriggerpatterns) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_patterns Workspace#trigger_patterns}. |
 | [`triggerPrefixes`](#cdktfprovidertfeworkspaceconfigpropertytriggerprefixes) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_prefixes Workspace#trigger_prefixes}. |
 | [`vcsRepo`](#cdktfprovidertfeworkspaceconfigpropertyvcsrepo) | [`@cdktf/provider-tfe.WorkspaceVcsRepo`](#@cdktf/provider-tfe.WorkspaceVcsRepo) | vcs_repo block. |
 | [`workingDirectory`](#cdktfprovidertfeworkspaceconfigpropertyworkingdirectory) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#working_directory Workspace#working_directory}. |
@@ -15126,6 +15355,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+##### `triggerPatterns`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.triggerPatterns" id="cdktfprovidertfeworkspaceconfigpropertytriggerpatterns"></a>
+
+```typescript
+public readonly triggerPatterns: string[];
+```
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_patterns Workspace#trigger_patterns}.
+
+---
+
 ##### `triggerPrefixes`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.triggerPrefixes" id="cdktfprovidertfeworkspaceconfigpropertytriggerprefixes"></a>
 
 ```typescript
@@ -15274,6 +15515,108 @@ public readonly id: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#id WorkspaceRunTask#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### WorkspaceVariableSetConfig <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig" id="cdktfprovidertfeworkspacevariablesetconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkspaceVariableSetConfig } from '@cdktf/provider-tfe'
+
+const workspaceVariableSetConfig: WorkspaceVariableSetConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidertfeworkspacevariablesetconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidertfeworkspacevariablesetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidertfeworkspacevariablesetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidertfeworkspacevariablesetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`variableSetId`](#cdktfprovidertfeworkspacevariablesetconfigpropertyvariablesetid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#variable_set_id WorkspaceVariableSet#variable_set_id}. |
+| [`workspaceId`](#cdktfprovidertfeworkspacevariablesetconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#workspace_id WorkspaceVariableSet#workspace_id}. |
+| [`id`](#cdktfprovidertfeworkspacevariablesetconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#id WorkspaceVariableSet#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.count" id="cdktfprovidertfeworkspacevariablesetconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.dependsOn" id="cdktfprovidertfeworkspacevariablesetconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.lifecycle" id="cdktfprovidertfeworkspacevariablesetconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.provider" id="cdktfprovidertfeworkspacevariablesetconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `variableSetId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.variableSetId" id="cdktfprovidertfeworkspacevariablesetconfigpropertyvariablesetid"></a>
+
+```typescript
+public readonly variableSetId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#variable_set_id WorkspaceVariableSet#variable_set_id}.
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.workspaceId" id="cdktfprovidertfeworkspacevariablesetconfigpropertyworkspaceid"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#workspace_id WorkspaceVariableSet#workspace_id}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.id" id="cdktfprovidertfeworkspacevariablesetconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#id WorkspaceVariableSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
