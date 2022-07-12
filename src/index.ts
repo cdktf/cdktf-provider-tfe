@@ -25,6 +25,7 @@ export * from './variable';
 export * from './variable-set';
 export * from './workspace';
 export * from './workspace-run-task';
+export * from './workspace-variable-set';
 export * from './data-tfe-agent-pool';
 export * from './data-tfe-ip-ranges';
 export * from './data-tfe-oauth-client';

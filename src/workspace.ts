@@ -83,6 +83,10 @@ export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly terraformVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_patterns Workspace#trigger_patterns}
+  */
+  readonly triggerPatterns?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#trigger_prefixes Workspace#trigger_prefixes}
   */
   readonly triggerPrefixes?: string[];
@@ -264,8 +268,8 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.32.1',
-        providerVersionConstraint: '~> 0.32.1'
+        providerVersion: '0.33.0',
+        providerVersionConstraint: '~> 0.33.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -290,6 +294,7 @@ export class Workspace extends cdktf.TerraformResource {
     this._structuredRunOutputEnabled = config.structuredRunOutputEnabled;
     this._tagNames = config.tagNames;
     this._terraformVersion = config.terraformVersion;
+    this._triggerPatterns = config.triggerPatterns;
     this._triggerPrefixes = config.triggerPrefixes;
     this._workingDirectory = config.workingDirectory;
     this._vcsRepo.internalValue = config.vcsRepo;
@@ -581,6 +586,22 @@ export class Workspace extends cdktf.TerraformResource {
     return this._terraformVersion;
   }
 
+  // trigger_patterns - computed: true, optional: true, required: false
+  private _triggerPatterns?: string[]; 
+  public get triggerPatterns() {
+    return this.getListAttribute('trigger_patterns');
+  }
+  public set triggerPatterns(value: string[]) {
+    this._triggerPatterns = value;
+  }
+  public resetTriggerPatterns() {
+    this._triggerPatterns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerPatternsInput() {
+    return this._triggerPatterns;
+  }
+
   // trigger_prefixes - computed: true, optional: true, required: false
   private _triggerPrefixes?: string[]; 
   public get triggerPrefixes() {
@@ -653,6 +674,7 @@ export class Workspace extends cdktf.TerraformResource {
       structured_run_output_enabled: cdktf.booleanToTerraform(this._structuredRunOutputEnabled),
       tag_names: cdktf.listMapper(cdktf.stringToTerraform)(this._tagNames),
       terraform_version: cdktf.stringToTerraform(this._terraformVersion),
+      trigger_patterns: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerPatterns),
       trigger_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerPrefixes),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
       vcs_repo: workspaceVcsRepoToTerraform(this._vcsRepo.internalValue),

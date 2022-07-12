@@ -133,8 +133,8 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.32.1',
-        providerVersionConstraint: '~> 0.32.1'
+        providerVersion: '0.33.0',
+        providerVersionConstraint: '~> 0.33.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -287,6 +287,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // terraform_version - computed: true, optional: false, required: false
   public get terraformVersion() {
     return this.getStringAttribute('terraform_version');
+  }
+
+  // trigger_patterns - computed: true, optional: false, required: false
+  public get triggerPatterns() {
+    return this.getListAttribute('trigger_patterns');
   }
 
   // trigger_prefixes - computed: true, optional: false, required: false
