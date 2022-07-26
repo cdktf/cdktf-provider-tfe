@@ -51,7 +51,7 @@ export class DataTfeTeam extends cdktf.TerraformDataSource {
       terraformGeneratorMetadata: {
         providerName: 'tfe',
         providerVersion: '0.33.0',
-        providerVersionConstraint: '~> 0.33.0'
+        providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
