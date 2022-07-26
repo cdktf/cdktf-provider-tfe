@@ -280,7 +280,10 @@ export class TeamAccess extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._access = config.access;
     this._id = config.id;
@@ -377,7 +380,7 @@ export class TeamAccess extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       team_id: cdktf.stringToTerraform(this._teamId),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      permissions: cdktf.listMapper(teamAccessPermissionsToTerraform)(this._permissions.internalValue),
+      permissions: cdktf.listMapper(teamAccessPermissionsToTerraform, true)(this._permissions.internalValue),
     };
   }
 }

@@ -226,7 +226,10 @@ export class PolicySet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._global = config.global;
@@ -410,9 +413,9 @@ export class PolicySet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
       policies_path: cdktf.stringToTerraform(this._policiesPath),
-      policy_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._policyIds),
+      policy_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyIds),
       slug: cdktf.hashMapper(cdktf.stringToTerraform)(this._slug),
-      workspace_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._workspaceIds),
+      workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
       vcs_repo: policySetVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
   }

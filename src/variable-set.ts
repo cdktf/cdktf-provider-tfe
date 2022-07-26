@@ -68,7 +68,10 @@ export class VariableSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._global = config.global;
@@ -183,7 +186,7 @@ export class VariableSet extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
-      workspace_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._workspaceIds),
+      workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
     };
   }
 }

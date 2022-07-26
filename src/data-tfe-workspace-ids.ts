@@ -64,7 +64,10 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._excludeTags = config.excludeTags;
     this._id = config.id;
@@ -172,11 +175,11 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exclude_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeTags),
+      exclude_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludeTags),
       id: cdktf.stringToTerraform(this._id),
-      names: cdktf.listMapper(cdktf.stringToTerraform)(this._names),
+      names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._names),
       organization: cdktf.stringToTerraform(this._organization),
-      tag_names: cdktf.listMapper(cdktf.stringToTerraform)(this._tagNames),
+      tag_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagNames),
     };
   }
 }
