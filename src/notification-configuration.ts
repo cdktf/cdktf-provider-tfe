@@ -84,7 +84,10 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._destinationType = config.destinationType;
     this._emailAddresses = config.emailAddresses;
@@ -260,13 +263,13 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination_type: cdktf.stringToTerraform(this._destinationType),
-      email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._emailAddresses),
-      email_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._emailUserIds),
+      email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emailAddresses),
+      email_user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emailUserIds),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       token: cdktf.stringToTerraform(this._token),
-      triggers: cdktf.listMapper(cdktf.stringToTerraform)(this._triggers),
+      triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggers),
       url: cdktf.stringToTerraform(this._url),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };

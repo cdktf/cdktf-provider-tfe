@@ -9649,13 +9649,26 @@ const agentPoolConfig: AgentPoolConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeagentpoolconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeagentpoolconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeagentpoolconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeagentpoolconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeagentpoolconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeagentpoolconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeagentpoolconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfeagentpoolconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#name AgentPool#name}. |
 | [`organization`](#cdktfprovidertfeagentpoolconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#organization AgentPool#organization}. |
 | [`id`](#cdktfprovidertfeagentpoolconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_pool#id AgentPool#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentPoolConfig.property.connection" id="cdktfprovidertfeagentpoolconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -9679,6 +9692,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentPoolConfig.property.forEach" id="cdktfprovidertfeagentpoolconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentPoolConfig.property.lifecycle" id="cdktfprovidertfeagentpoolconfigpropertylifecycle"></a>
 
 ```typescript
@@ -9696,6 +9719,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentPoolConfig.property.provisioners" id="cdktfprovidertfeagentpoolconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -9751,13 +9784,26 @@ const agentTokenConfig: AgentTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeagenttokenconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeagenttokenconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeagenttokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeagenttokenconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeagenttokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeagenttokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeagenttokenconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`agentPoolId`](#cdktfprovidertfeagenttokenconfigpropertyagentpoolid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#agent_pool_id AgentToken#agent_pool_id}. |
 | [`description`](#cdktfprovidertfeagenttokenconfigpropertydescription)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#description AgentToken#description}. |
 | [`id`](#cdktfprovidertfeagenttokenconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/agent_token#id AgentToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentTokenConfig.property.connection" id="cdktfprovidertfeagenttokenconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -9781,6 +9827,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentTokenConfig.property.forEach" id="cdktfprovidertfeagenttokenconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentTokenConfig.property.lifecycle" id="cdktfprovidertfeagenttokenconfigpropertylifecycle"></a>
 
 ```typescript
@@ -9798,6 +9854,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.AgentTokenConfig.property.provisioners" id="cdktfprovidertfeagenttokenconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -9853,13 +9919,26 @@ const dataTfeAgentPoolConfig: DataTfeAgentPoolConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeagentpoolconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeagentpoolconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeagentpoolconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeagentpoolconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeagentpoolconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeagentpoolconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeagentpoolconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeagentpoolconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#name DataTfeAgentPool#name}. |
 | [`organization`](#cdktfprovidertfedatatfeagentpoolconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#organization DataTfeAgentPool#organization}. |
 | [`id`](#cdktfprovidertfedatatfeagentpoolconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/agent_pool#id DataTfeAgentPool#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeAgentPoolConfig.property.connection" id="cdktfprovidertfedatatfeagentpoolconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -9883,6 +9962,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeAgentPoolConfig.property.forEach" id="cdktfprovidertfedatatfeagentpoolconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeAgentPoolConfig.property.lifecycle" id="cdktfprovidertfedatatfeagentpoolconfigpropertylifecycle"></a>
 
 ```typescript
@@ -9900,6 +9989,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeAgentPoolConfig.property.provisioners" id="cdktfprovidertfedatatfeagentpoolconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -9955,11 +10054,24 @@ const dataTfeIpRangesConfig: DataTfeIpRangesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeiprangesconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeiprangesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeiprangesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeiprangesconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeiprangesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeiprangesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeiprangesconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeiprangesconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ip_ranges#id DataTfeIpRanges#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeIpRangesConfig.property.connection" id="cdktfprovidertfedatatfeiprangesconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -9983,6 +10095,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeIpRangesConfig.property.forEach" id="cdktfprovidertfedatatfeiprangesconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeIpRangesConfig.property.lifecycle" id="cdktfprovidertfedatatfeiprangesconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10000,6 +10122,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeIpRangesConfig.property.provisioners" id="cdktfprovidertfedatatfeiprangesconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10031,12 +10163,25 @@ const dataTfeOauthClientConfig: DataTfeOauthClientConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeoauthclientconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeoauthclientconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeoauthclientconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeoauthclientconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeoauthclientconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeoauthclientconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeoauthclientconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`oauthClientId`](#cdktfprovidertfedatatfeoauthclientconfigpropertyoauthclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
 | [`id`](#cdktfprovidertfedatatfeoauthclientconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/oauth_client#id DataTfeOauthClient#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOauthClientConfig.property.connection" id="cdktfprovidertfedatatfeoauthclientconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10060,6 +10205,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOauthClientConfig.property.forEach" id="cdktfprovidertfedatatfeoauthclientconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOauthClientConfig.property.lifecycle" id="cdktfprovidertfedatatfeoauthclientconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10077,6 +10232,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOauthClientConfig.property.provisioners" id="cdktfprovidertfedatatfeoauthclientconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10120,12 +10285,25 @@ const dataTfeOrganizationConfig: DataTfeOrganizationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeorganizationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeorganizationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeorganizationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeorganizationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization#name DataTfeOrganization#name}. |
 | [`id`](#cdktfprovidertfedatatfeorganizationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization#id DataTfeOrganization#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationConfig.property.connection" id="cdktfprovidertfedatatfeorganizationconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10149,6 +10327,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationConfig.property.forEach" id="cdktfprovidertfedatatfeorganizationconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationConfig.property.lifecycle" id="cdktfprovidertfedatatfeorganizationconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10166,6 +10354,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationConfig.property.provisioners" id="cdktfprovidertfedatatfeorganizationconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10209,13 +10407,26 @@ const dataTfeOrganizationMembershipConfig: DataTfeOrganizationMembershipConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`email`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#email DataTfeOrganizationMembership#email}. |
 | [`organization`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#organization DataTfeOrganizationMembership#organization}. |
 | [`id`](#cdktfprovidertfedatatfeorganizationmembershipconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#id DataTfeOrganizationMembership#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationMembershipConfig.property.connection" id="cdktfprovidertfedatatfeorganizationmembershipconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10239,6 +10450,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationMembershipConfig.property.forEach" id="cdktfprovidertfedatatfeorganizationmembershipconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationMembershipConfig.property.lifecycle" id="cdktfprovidertfedatatfeorganizationmembershipconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10256,6 +10477,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationMembershipConfig.property.provisioners" id="cdktfprovidertfedatatfeorganizationmembershipconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10311,16 +10542,29 @@ const dataTfeOrganizationRunTaskConfig: DataTfeOrganizationRunTaskConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#name DataTfeOrganizationRunTask#name}. |
 | [`organization`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#organization DataTfeOrganizationRunTask#organization}. |
 | [`category`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertycategory) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#category DataTfeOrganizationRunTask#category}. |
 | [`enabled`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#enabled DataTfeOrganizationRunTask#enabled}. |
 | [`id`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#id DataTfeOrganizationRunTask#id}. |
 | [`url`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyurl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#url DataTfeOrganizationRunTask#url}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTaskConfig.property.connection" id="cdktfprovidertfedatatfeorganizationruntaskconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10344,6 +10588,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTaskConfig.property.forEach" id="cdktfprovidertfedatatfeorganizationruntaskconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTaskConfig.property.lifecycle" id="cdktfprovidertfedatatfeorganizationruntaskconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10361,6 +10615,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTaskConfig.property.provisioners" id="cdktfprovidertfedatatfeorganizationruntaskconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10452,12 +10716,25 @@ const dataTfeOrganizationsConfig: DataTfeOrganizationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeorganizationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeorganizationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeorganizationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeorganizationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeorganizationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeorganizationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeorganizationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`admin`](#cdktfprovidertfedatatfeorganizationsconfigpropertyadmin) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations#admin DataTfeOrganizations#admin}. |
 | [`id`](#cdktfprovidertfedatatfeorganizationsconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organizations#id DataTfeOrganizations#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationsConfig.property.connection" id="cdktfprovidertfedatatfeorganizationsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10481,6 +10758,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationsConfig.property.forEach" id="cdktfprovidertfedatatfeorganizationsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationsConfig.property.lifecycle" id="cdktfprovidertfedatatfeorganizationsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10498,6 +10785,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationsConfig.property.provisioners" id="cdktfprovidertfedatatfeorganizationsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10541,13 +10838,26 @@ const dataTfeOutputsConfig: DataTfeOutputsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeoutputsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeoutputsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeoutputsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeoutputsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeoutputsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeoutputsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeoutputsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeoutputsconfigpropertyorganization)<span title="Required">*</span> | `string` | The organization to fetch the remote state from. |
 | [`workspace`](#cdktfprovidertfedatatfeoutputsconfigpropertyworkspace)<span title="Required">*</span> | `string` | The workspace to fetch the remote state from. |
 | [`values`](#cdktfprovidertfedatatfeoutputsconfigpropertyvalues) | {[ key: string ]: `any`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputsConfig.property.connection" id="cdktfprovidertfedatatfeoutputsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10571,6 +10881,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputsConfig.property.forEach" id="cdktfprovidertfedatatfeoutputsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputsConfig.property.lifecycle" id="cdktfprovidertfedatatfeoutputsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10588,6 +10908,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOutputsConfig.property.provisioners" id="cdktfprovidertfedatatfeoutputsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10645,12 +10975,25 @@ const dataTfeSlugConfig: DataTfeSlugConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeslugconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeslugconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeslugconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeslugconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeslugconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeslugconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeslugconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`sourcePath`](#cdktfprovidertfedatatfeslugconfigpropertysourcepath)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#source_path DataTfeSlug#source_path}. |
 | [`id`](#cdktfprovidertfedatatfeslugconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#id DataTfeSlug#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSlugConfig.property.connection" id="cdktfprovidertfedatatfeslugconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10674,6 +11017,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSlugConfig.property.forEach" id="cdktfprovidertfedatatfeslugconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSlugConfig.property.lifecycle" id="cdktfprovidertfedatatfeslugconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10691,6 +11044,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSlugConfig.property.provisioners" id="cdktfprovidertfedatatfeslugconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10734,13 +11097,26 @@ const dataTfeSshKeyConfig: DataTfeSshKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfesshkeyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfesshkeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfesshkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfesshkeyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfesshkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfesshkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfesshkeyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfesshkeyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#name DataTfeSshKey#name}. |
 | [`organization`](#cdktfprovidertfedatatfesshkeyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#organization DataTfeSshKey#organization}. |
 | [`id`](#cdktfprovidertfedatatfesshkeyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/ssh_key#id DataTfeSshKey#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSshKeyConfig.property.connection" id="cdktfprovidertfedatatfesshkeyconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10764,6 +11140,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSshKeyConfig.property.forEach" id="cdktfprovidertfedatatfesshkeyconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSshKeyConfig.property.lifecycle" id="cdktfprovidertfedatatfesshkeyconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10781,6 +11167,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeSshKeyConfig.property.provisioners" id="cdktfprovidertfedatatfesshkeyconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10836,13 +11232,26 @@ const dataTfeTeamAccessConfig: DataTfeTeamAccessConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeteamaccessconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeteamaccessconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeteamaccessconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeteamaccessconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeteamaccessconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeteamaccessconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeteamaccessconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`teamId`](#cdktfprovidertfedatatfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#team_id DataTfeTeamAccess#team_id}. |
 | [`workspaceId`](#cdktfprovidertfedatatfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#workspace_id DataTfeTeamAccess#workspace_id}. |
 | [`id`](#cdktfprovidertfedatatfeteamaccessconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team_access#id DataTfeTeamAccess#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessConfig.property.connection" id="cdktfprovidertfedatatfeteamaccessconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10866,6 +11275,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessConfig.property.forEach" id="cdktfprovidertfedatatfeteamaccessconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessConfig.property.lifecycle" id="cdktfprovidertfedatatfeteamaccessconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10883,6 +11302,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamAccessConfig.property.provisioners" id="cdktfprovidertfedatatfeteamaccessconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -10949,13 +11378,26 @@ const dataTfeTeamConfig: DataTfeTeamConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeteamconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeteamconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeteamconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeteamconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeteamconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeteamconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeteamconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeteamconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#name DataTfeTeam#name}. |
 | [`organization`](#cdktfprovidertfedatatfeteamconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#organization DataTfeTeam#organization}. |
 | [`id`](#cdktfprovidertfedatatfeteamconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/team#id DataTfeTeam#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamConfig.property.connection" id="cdktfprovidertfedatatfeteamconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -10979,6 +11421,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamConfig.property.forEach" id="cdktfprovidertfedatatfeteamconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamConfig.property.lifecycle" id="cdktfprovidertfedatatfeteamconfigpropertylifecycle"></a>
 
 ```typescript
@@ -10996,6 +11448,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeTeamConfig.property.provisioners" id="cdktfprovidertfedatatfeteamconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11051,13 +11513,26 @@ const dataTfeVariablesConfig: DataTfeVariablesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfevariablesconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfevariablesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfevariablesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfevariablesconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfevariablesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfevariablesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfevariablesconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`id`](#cdktfprovidertfedatatfevariablesconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variables#id DataTfeVariables#id}. |
 | [`variableSetId`](#cdktfprovidertfedatatfevariablesconfigpropertyvariablesetid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variables#variable_set_id DataTfeVariables#variable_set_id}. |
 | [`workspaceId`](#cdktfprovidertfedatatfevariablesconfigpropertyworkspaceid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variables#workspace_id DataTfeVariables#workspace_id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariablesConfig.property.connection" id="cdktfprovidertfedatatfevariablesconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11081,6 +11556,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariablesConfig.property.forEach" id="cdktfprovidertfedatatfevariablesconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariablesConfig.property.lifecycle" id="cdktfprovidertfedatatfevariablesconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11098,6 +11583,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariablesConfig.property.provisioners" id="cdktfprovidertfedatatfevariablesconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11164,15 +11659,28 @@ const dataTfeVariableSetConfig: DataTfeVariableSetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfevariablesetconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfevariablesetconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfevariablesetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfevariablesetconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfevariablesetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfevariablesetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfevariablesetconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfevariablesetconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variable_set#name DataTfeVariableSet#name}. |
 | [`organization`](#cdktfprovidertfedatatfevariablesetconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variable_set#organization DataTfeVariableSet#organization}. |
 | [`id`](#cdktfprovidertfedatatfevariablesetconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variable_set#id DataTfeVariableSet#id}. |
 | [`variableIds`](#cdktfprovidertfedatatfevariablesetconfigpropertyvariableids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variable_set#variable_ids DataTfeVariableSet#variable_ids}. |
 | [`workspaceIds`](#cdktfprovidertfedatatfevariablesetconfigpropertyworkspaceids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariableSetConfig.property.connection" id="cdktfprovidertfedatatfevariablesetconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11196,6 +11704,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariableSetConfig.property.forEach" id="cdktfprovidertfedatatfevariablesetconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariableSetConfig.property.lifecycle" id="cdktfprovidertfedatatfevariablesetconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11213,6 +11731,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeVariableSetConfig.property.provisioners" id="cdktfprovidertfedatatfevariablesetconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11314,14 +11842,27 @@ const dataTfeWorkspaceConfig: DataTfeWorkspaceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeworkspaceconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeworkspaceconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeworkspaceconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeworkspaceconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeworkspaceconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#name DataTfeWorkspace#name}. |
 | [`organization`](#cdktfprovidertfedatatfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#organization DataTfeWorkspace#organization}. |
 | [`id`](#cdktfprovidertfedatatfeworkspaceconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#id DataTfeWorkspace#id}. |
 | [`tagNames`](#cdktfprovidertfedatatfeworkspaceconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#tag_names DataTfeWorkspace#tag_names}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceConfig.property.connection" id="cdktfprovidertfedatatfeworkspaceconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11345,6 +11886,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceConfig.property.forEach" id="cdktfprovidertfedatatfeworkspaceconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceConfig.property.lifecycle" id="cdktfprovidertfedatatfeworkspaceconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11362,6 +11913,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceConfig.property.provisioners" id="cdktfprovidertfedatatfeworkspaceconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11429,15 +11990,28 @@ const dataTfeWorkspaceIdsConfig: DataTfeWorkspaceIdsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`organization`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#organization DataTfeWorkspaceIds#organization}. |
 | [`excludeTags`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyexcludetags) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#exclude_tags DataTfeWorkspaceIds#exclude_tags}. |
 | [`id`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#id DataTfeWorkspaceIds#id}. |
 | [`names`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertynames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#names DataTfeWorkspaceIds#names}. |
 | [`tagNames`](#cdktfprovidertfedatatfeworkspaceidsconfigpropertytagnames) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIdsConfig.property.connection" id="cdktfprovidertfedatatfeworkspaceidsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11461,6 +12035,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIdsConfig.property.forEach" id="cdktfprovidertfedatatfeworkspaceidsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIdsConfig.property.lifecycle" id="cdktfprovidertfedatatfeworkspaceidsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11478,6 +12062,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceIdsConfig.property.provisioners" id="cdktfprovidertfedatatfeworkspaceidsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11557,13 +12151,26 @@ const dataTfeWorkspaceRunTaskConfig: DataTfeWorkspaceRunTaskConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`taskId`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertytaskid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}. |
 | [`workspaceId`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}. |
 | [`id`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#id DataTfeWorkspaceRunTask#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceRunTaskConfig.property.connection" id="cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11587,6 +12194,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceRunTaskConfig.property.forEach" id="cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceRunTaskConfig.property.lifecycle" id="cdktfprovidertfedatatfeworkspaceruntaskconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11604,6 +12221,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceRunTaskConfig.property.provisioners" id="cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11670,10 +12297,13 @@ const notificationConfigurationConfig: NotificationConfigurationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfenotificationconfigurationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfenotificationconfigurationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfenotificationconfigurationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfenotificationconfigurationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfenotificationconfigurationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfenotificationconfigurationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfenotificationconfigurationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`destinationType`](#cdktfprovidertfenotificationconfigurationconfigpropertydestinationtype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#destination_type NotificationConfiguration#destination_type}. |
 | [`name`](#cdktfprovidertfenotificationconfigurationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#name NotificationConfiguration#name}. |
 | [`workspaceId`](#cdktfprovidertfenotificationconfigurationconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#workspace_id NotificationConfiguration#workspace_id}. |
@@ -11684,6 +12314,16 @@ const notificationConfigurationConfig: NotificationConfigurationConfig = { ... }
 | [`token`](#cdktfprovidertfenotificationconfigurationconfigpropertytoken) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#token NotificationConfiguration#token}. |
 | [`triggers`](#cdktfprovidertfenotificationconfigurationconfigpropertytriggers) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#triggers NotificationConfiguration#triggers}. |
 | [`url`](#cdktfprovidertfenotificationconfigurationconfigpropertyurl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/notification_configuration#url NotificationConfiguration#url}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.NotificationConfigurationConfig.property.connection" id="cdktfprovidertfenotificationconfigurationconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11707,6 +12347,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.NotificationConfigurationConfig.property.forEach" id="cdktfprovidertfenotificationconfigurationconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.NotificationConfigurationConfig.property.lifecycle" id="cdktfprovidertfenotificationconfigurationconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11724,6 +12374,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.NotificationConfigurationConfig.property.provisioners" id="cdktfprovidertfenotificationconfigurationconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -11863,10 +12523,13 @@ const oauthClientConfig: OauthClientConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeoauthclientconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeoauthclientconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeoauthclientconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeoauthclientconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeoauthclientconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeoauthclientconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeoauthclientconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`apiUrl`](#cdktfprovidertfeoauthclientconfigpropertyapiurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}. |
 | [`httpUrl`](#cdktfprovidertfeoauthclientconfigpropertyhttpurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}. |
 | [`organization`](#cdktfprovidertfeoauthclientconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}. |
@@ -11878,6 +12541,16 @@ const oauthClientConfig: OauthClientConfig = { ... }
 | [`privateKey`](#cdktfprovidertfeoauthclientconfigpropertyprivatekey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}. |
 | [`rsaPublicKey`](#cdktfprovidertfeoauthclientconfigpropertyrsapublickey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}. |
 | [`secret`](#cdktfprovidertfeoauthclientconfigpropertysecret) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#secret OauthClient#secret}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OauthClientConfig.property.connection" id="cdktfprovidertfeoauthclientconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -11901,6 +12574,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OauthClientConfig.property.forEach" id="cdktfprovidertfeoauthclientconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OauthClientConfig.property.lifecycle" id="cdktfprovidertfeoauthclientconfigpropertylifecycle"></a>
 
 ```typescript
@@ -11918,6 +12601,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OauthClientConfig.property.provisioners" id="cdktfprovidertfeoauthclientconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12069,10 +12762,13 @@ const organizationConfig: OrganizationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeorganizationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeorganizationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeorganizationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeorganizationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`email`](#cdktfprovidertfeorganizationconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}. |
 | [`name`](#cdktfprovidertfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}. |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationconfigpropertycollaboratorauthpolicy) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
@@ -12082,6 +12778,16 @@ const organizationConfig: OrganizationConfig = { ... }
 | [`sendPassingStatusesForUntriggeredSpeculativePlans`](#cdktfprovidertfeorganizationconfigpropertysendpassingstatusesforuntriggeredspeculativeplans) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
 | [`sessionRememberMinutes`](#cdktfprovidertfeorganizationconfigpropertysessionrememberminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}. |
 | [`sessionTimeoutMinutes`](#cdktfprovidertfeorganizationconfigpropertysessiontimeoutminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.connection" id="cdktfprovidertfeorganizationconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12105,6 +12811,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.forEach" id="cdktfprovidertfeorganizationconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.lifecycle" id="cdktfprovidertfeorganizationconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12122,6 +12838,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.provisioners" id="cdktfprovidertfeorganizationconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12249,13 +12975,26 @@ const organizationMembershipConfig: OrganizationMembershipConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeorganizationmembershipconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeorganizationmembershipconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeorganizationmembershipconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeorganizationmembershipconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`email`](#cdktfprovidertfeorganizationmembershipconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#email OrganizationMembership#email}. |
 | [`organization`](#cdktfprovidertfeorganizationmembershipconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#organization OrganizationMembership#organization}. |
 | [`id`](#cdktfprovidertfeorganizationmembershipconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#id OrganizationMembership#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationMembershipConfig.property.connection" id="cdktfprovidertfeorganizationmembershipconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12279,6 +13018,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationMembershipConfig.property.forEach" id="cdktfprovidertfeorganizationmembershipconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationMembershipConfig.property.lifecycle" id="cdktfprovidertfeorganizationmembershipconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12296,6 +13045,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationMembershipConfig.property.provisioners" id="cdktfprovidertfeorganizationmembershipconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12351,13 +13110,26 @@ const organizationModuleSharingConfig: OrganizationModuleSharingConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeorganizationmodulesharingconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeorganizationmodulesharingconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationmodulesharingconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeorganizationmodulesharingconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationmodulesharingconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationmodulesharingconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeorganizationmodulesharingconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`moduleConsumers`](#cdktfprovidertfeorganizationmodulesharingconfigpropertymoduleconsumers)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}. |
 | [`organization`](#cdktfprovidertfeorganizationmodulesharingconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}. |
 | [`id`](#cdktfprovidertfeorganizationmodulesharingconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#id OrganizationModuleSharing#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationModuleSharingConfig.property.connection" id="cdktfprovidertfeorganizationmodulesharingconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12381,6 +13153,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationModuleSharingConfig.property.forEach" id="cdktfprovidertfeorganizationmodulesharingconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationModuleSharingConfig.property.lifecycle" id="cdktfprovidertfeorganizationmodulesharingconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12398,6 +13180,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationModuleSharingConfig.property.provisioners" id="cdktfprovidertfeorganizationmodulesharingconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12453,10 +13245,13 @@ const organizationRunTaskConfig: OrganizationRunTaskConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeorganizationruntaskconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeorganizationruntaskconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationruntaskconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeorganizationruntaskconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationruntaskconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationruntaskconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeorganizationruntaskconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfeorganizationruntaskconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#name OrganizationRunTask#name}. |
 | [`organization`](#cdktfprovidertfeorganizationruntaskconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#organization OrganizationRunTask#organization}. |
 | [`url`](#cdktfprovidertfeorganizationruntaskconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#url OrganizationRunTask#url}. |
@@ -12464,6 +13259,16 @@ const organizationRunTaskConfig: OrganizationRunTaskConfig = { ... }
 | [`enabled`](#cdktfprovidertfeorganizationruntaskconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#enabled OrganizationRunTask#enabled}. |
 | [`hmacKey`](#cdktfprovidertfeorganizationruntaskconfigpropertyhmackey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#hmac_key OrganizationRunTask#hmac_key}. |
 | [`id`](#cdktfprovidertfeorganizationruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#id OrganizationRunTask#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationRunTaskConfig.property.connection" id="cdktfprovidertfeorganizationruntaskconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12487,6 +13292,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationRunTaskConfig.property.forEach" id="cdktfprovidertfeorganizationruntaskconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationRunTaskConfig.property.lifecycle" id="cdktfprovidertfeorganizationruntaskconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12504,6 +13319,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationRunTaskConfig.property.provisioners" id="cdktfprovidertfeorganizationruntaskconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12607,13 +13432,26 @@ const organizationTokenConfig: OrganizationTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeorganizationtokenconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeorganizationtokenconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeorganizationtokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeorganizationtokenconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeorganizationtokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeorganizationtokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeorganizationtokenconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`organization`](#cdktfprovidertfeorganizationtokenconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#organization OrganizationToken#organization}. |
 | [`forceRegenerate`](#cdktfprovidertfeorganizationtokenconfigpropertyforceregenerate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#force_regenerate OrganizationToken#force_regenerate}. |
 | [`id`](#cdktfprovidertfeorganizationtokenconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_token#id OrganizationToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationTokenConfig.property.connection" id="cdktfprovidertfeorganizationtokenconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12637,6 +13475,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationTokenConfig.property.forEach" id="cdktfprovidertfeorganizationtokenconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationTokenConfig.property.lifecycle" id="cdktfprovidertfeorganizationtokenconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12654,6 +13502,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationTokenConfig.property.provisioners" id="cdktfprovidertfeorganizationtokenconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12709,10 +13567,13 @@ const policySetConfig: PolicySetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfepolicysetconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfepolicysetconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfepolicysetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfepolicysetconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfepolicysetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfepolicysetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfepolicysetconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfepolicysetconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#name PolicySet#name}. |
 | [`organization`](#cdktfprovidertfepolicysetconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#organization PolicySet#organization}. |
 | [`description`](#cdktfprovidertfepolicysetconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#description PolicySet#description}. |
@@ -12723,6 +13584,16 @@ const policySetConfig: PolicySetConfig = { ... }
 | [`slug`](#cdktfprovidertfepolicysetconfigpropertyslug) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#slug PolicySet#slug}. |
 | [`vcsRepo`](#cdktfprovidertfepolicysetconfigpropertyvcsrepo) | [`@cdktf/provider-tfe.PolicySetVcsRepo`](#@cdktf/provider-tfe.PolicySetVcsRepo) | vcs_repo block. |
 | [`workspaceIds`](#cdktfprovidertfepolicysetconfigpropertyworkspaceids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#workspace_ids PolicySet#workspace_ids}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetConfig.property.connection" id="cdktfprovidertfepolicysetconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12746,6 +13617,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetConfig.property.forEach" id="cdktfprovidertfepolicysetconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetConfig.property.lifecycle" id="cdktfprovidertfepolicysetconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12763,6 +13644,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetConfig.property.provisioners" id="cdktfprovidertfepolicysetconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12904,15 +13795,28 @@ const policySetParameterConfig: PolicySetParameterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfepolicysetparameterconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfepolicysetparameterconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfepolicysetparameterconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfepolicysetparameterconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfepolicysetparameterconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfepolicysetparameterconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfepolicysetparameterconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`key`](#cdktfprovidertfepolicysetparameterconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#key PolicySetParameter#key}. |
 | [`policySetId`](#cdktfprovidertfepolicysetparameterconfigpropertypolicysetid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}. |
 | [`id`](#cdktfprovidertfepolicysetparameterconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#id PolicySetParameter#id}. |
 | [`sensitive`](#cdktfprovidertfepolicysetparameterconfigpropertysensitive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#sensitive PolicySetParameter#sensitive}. |
 | [`value`](#cdktfprovidertfepolicysetparameterconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_parameter#value PolicySetParameter#value}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetParameterConfig.property.connection" id="cdktfprovidertfepolicysetparameterconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -12936,6 +13840,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetParameterConfig.property.forEach" id="cdktfprovidertfepolicysetparameterconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetParameterConfig.property.lifecycle" id="cdktfprovidertfepolicysetparameterconfigpropertylifecycle"></a>
 
 ```typescript
@@ -12953,6 +13867,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.PolicySetParameterConfig.property.provisioners" id="cdktfprovidertfepolicysetparameterconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13101,12 +14025,25 @@ const registryModuleConfig: RegistryModuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertferegistrymoduleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertferegistrymoduleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertferegistrymoduleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertferegistrymoduleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertferegistrymoduleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertferegistrymoduleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertferegistrymoduleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`vcsRepo`](#cdktfprovidertferegistrymoduleconfigpropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.RegistryModuleVcsRepo`](#@cdktf/provider-tfe.RegistryModuleVcsRepo) | vcs_repo block. |
 | [`id`](#cdktfprovidertferegistrymoduleconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#id RegistryModule#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.connection" id="cdktfprovidertferegistrymoduleconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -13130,6 +14067,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.forEach" id="cdktfprovidertferegistrymoduleconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.lifecycle" id="cdktfprovidertferegistrymoduleconfigpropertylifecycle"></a>
 
 ```typescript
@@ -13147,6 +14094,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.provisioners" id="cdktfprovidertferegistrymoduleconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13248,13 +14205,26 @@ const runTriggerConfig: RunTriggerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertferuntriggerconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertferuntriggerconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertferuntriggerconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertferuntriggerconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertferuntriggerconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertferuntriggerconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertferuntriggerconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`sourceableId`](#cdktfprovidertferuntriggerconfigpropertysourceableid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#sourceable_id RunTrigger#sourceable_id}. |
 | [`workspaceId`](#cdktfprovidertferuntriggerconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#workspace_id RunTrigger#workspace_id}. |
 | [`id`](#cdktfprovidertferuntriggerconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/run_trigger#id RunTrigger#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RunTriggerConfig.property.connection" id="cdktfprovidertferuntriggerconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -13278,6 +14248,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RunTriggerConfig.property.forEach" id="cdktfprovidertferuntriggerconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RunTriggerConfig.property.lifecycle" id="cdktfprovidertferuntriggerconfigpropertylifecycle"></a>
 
 ```typescript
@@ -13295,6 +14275,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RunTriggerConfig.property.provisioners" id="cdktfprovidertferuntriggerconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13350,16 +14340,29 @@ const sentinelPolicyConfig: SentinelPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfesentinelpolicyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfesentinelpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfesentinelpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfesentinelpolicyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfesentinelpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfesentinelpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfesentinelpolicyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfesentinelpolicyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#name SentinelPolicy#name}. |
 | [`organization`](#cdktfprovidertfesentinelpolicyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#organization SentinelPolicy#organization}. |
 | [`policy`](#cdktfprovidertfesentinelpolicyconfigpropertypolicy)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#policy SentinelPolicy#policy}. |
 | [`description`](#cdktfprovidertfesentinelpolicyconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#description SentinelPolicy#description}. |
 | [`enforceMode`](#cdktfprovidertfesentinelpolicyconfigpropertyenforcemode) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}. |
 | [`id`](#cdktfprovidertfesentinelpolicyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/sentinel_policy#id SentinelPolicy#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SentinelPolicyConfig.property.connection" id="cdktfprovidertfesentinelpolicyconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -13383,6 +14386,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SentinelPolicyConfig.property.forEach" id="cdktfprovidertfesentinelpolicyconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SentinelPolicyConfig.property.lifecycle" id="cdktfprovidertfesentinelpolicyconfigpropertylifecycle"></a>
 
 ```typescript
@@ -13400,6 +14413,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SentinelPolicyConfig.property.provisioners" id="cdktfprovidertfesentinelpolicyconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13491,14 +14514,27 @@ const sshKeyConfig: SshKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfesshkeyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfesshkeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfesshkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfesshkeyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfesshkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfesshkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfesshkeyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`key`](#cdktfprovidertfesshkeyconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#key SshKey#key}. |
 | [`name`](#cdktfprovidertfesshkeyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#name SshKey#name}. |
 | [`organization`](#cdktfprovidertfesshkeyconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#organization SshKey#organization}. |
 | [`id`](#cdktfprovidertfesshkeyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#id SshKey#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SshKeyConfig.property.connection" id="cdktfprovidertfesshkeyconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -13522,6 +14558,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SshKeyConfig.property.forEach" id="cdktfprovidertfesshkeyconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SshKeyConfig.property.lifecycle" id="cdktfprovidertfesshkeyconfigpropertylifecycle"></a>
 
 ```typescript
@@ -13539,6 +14585,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.SshKeyConfig.property.provisioners" id="cdktfprovidertfesshkeyconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13606,15 +14662,28 @@ const teamAccessConfig: TeamAccessConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeteamaccessconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeteamaccessconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamaccessconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeteamaccessconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamaccessconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamaccessconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeteamaccessconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`teamId`](#cdktfprovidertfeteamaccessconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#team_id TeamAccess#team_id}. |
 | [`workspaceId`](#cdktfprovidertfeteamaccessconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#workspace_id TeamAccess#workspace_id}. |
 | [`access`](#cdktfprovidertfeteamaccessconfigpropertyaccess) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#access TeamAccess#access}. |
 | [`id`](#cdktfprovidertfeteamaccessconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_access#id TeamAccess#id}. |
 | [`permissions`](#cdktfprovidertfeteamaccessconfigpropertypermissions) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-tfe.TeamAccessPermissions`](#@cdktf/provider-tfe.TeamAccessPermissions)[] | permissions block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccessConfig.property.connection" id="cdktfprovidertfeteamaccessconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -13638,6 +14707,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccessConfig.property.forEach" id="cdktfprovidertfeteamaccessconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccessConfig.property.lifecycle" id="cdktfprovidertfeteamaccessconfigpropertylifecycle"></a>
 
 ```typescript
@@ -13655,6 +14734,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamAccessConfig.property.provisioners" id="cdktfprovidertfeteamaccessconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13831,16 +14920,29 @@ const teamConfig: TeamConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeteamconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeteamconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeteamconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeteamconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfeteamconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#name Team#name}. |
 | [`organization`](#cdktfprovidertfeteamconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization Team#organization}. |
 | [`id`](#cdktfprovidertfeteamconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#id Team#id}. |
 | [`organizationAccess`](#cdktfprovidertfeteamconfigpropertyorganizationaccess) | [`@cdktf/provider-tfe.TeamOrganizationAccess`](#@cdktf/provider-tfe.TeamOrganizationAccess) | organization_access block. |
 | [`ssoTeamId`](#cdktfprovidertfeteamconfigpropertyssoteamid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#sso_team_id Team#sso_team_id}. |
 | [`visibility`](#cdktfprovidertfeteamconfigpropertyvisibility) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#visibility Team#visibility}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamConfig.property.connection" id="cdktfprovidertfeteamconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -13864,6 +14966,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamConfig.property.forEach" id="cdktfprovidertfeteamconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamConfig.property.lifecycle" id="cdktfprovidertfeteamconfigpropertylifecycle"></a>
 
 ```typescript
@@ -13881,6 +14993,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamConfig.property.provisioners" id="cdktfprovidertfeteamconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13974,13 +15096,26 @@ const teamMemberConfig: TeamMemberConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeteammemberconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeteammemberconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteammemberconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeteammemberconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteammemberconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteammemberconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeteammemberconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`teamId`](#cdktfprovidertfeteammemberconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}. |
 | [`username`](#cdktfprovidertfeteammemberconfigpropertyusername)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}. |
 | [`id`](#cdktfprovidertfeteammemberconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#id TeamMember#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMemberConfig.property.connection" id="cdktfprovidertfeteammemberconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14004,6 +15139,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMemberConfig.property.forEach" id="cdktfprovidertfeteammemberconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMemberConfig.property.lifecycle" id="cdktfprovidertfeteammemberconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14021,6 +15166,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMemberConfig.property.provisioners" id="cdktfprovidertfeteammemberconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14076,13 +15231,26 @@ const teamMembersConfig: TeamMembersConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeteammembersconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeteammembersconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteammembersconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeteammembersconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteammembersconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteammembersconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeteammembersconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`teamId`](#cdktfprovidertfeteammembersconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#team_id TeamMembers#team_id}. |
 | [`usernames`](#cdktfprovidertfeteammembersconfigpropertyusernames)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#usernames TeamMembers#usernames}. |
 | [`id`](#cdktfprovidertfeteammembersconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#id TeamMembers#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMembersConfig.property.connection" id="cdktfprovidertfeteammembersconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14106,6 +15274,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMembersConfig.property.forEach" id="cdktfprovidertfeteammembersconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMembersConfig.property.lifecycle" id="cdktfprovidertfeteammembersconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14123,6 +15301,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamMembersConfig.property.provisioners" id="cdktfprovidertfeteammembersconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14286,13 +15474,26 @@ const teamOrganizationMemberConfig: TeamOrganizationMemberConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeteamorganizationmemberconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeteamorganizationmemberconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamorganizationmemberconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeteamorganizationmemberconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamorganizationmemberconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamorganizationmemberconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeteamorganizationmemberconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`organizationMembershipId`](#cdktfprovidertfeteamorganizationmemberconfigpropertyorganizationmembershipid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}. |
 | [`teamId`](#cdktfprovidertfeteamorganizationmemberconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#team_id TeamOrganizationMember#team_id}. |
 | [`id`](#cdktfprovidertfeteamorganizationmemberconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_organization_member#id TeamOrganizationMember#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamOrganizationMemberConfig.property.connection" id="cdktfprovidertfeteamorganizationmemberconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14316,6 +15517,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamOrganizationMemberConfig.property.forEach" id="cdktfprovidertfeteamorganizationmemberconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamOrganizationMemberConfig.property.lifecycle" id="cdktfprovidertfeteamorganizationmemberconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14333,6 +15544,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamOrganizationMemberConfig.property.provisioners" id="cdktfprovidertfeteamorganizationmemberconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14388,13 +15609,26 @@ const teamTokenConfig: TeamTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeteamtokenconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeteamtokenconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeteamtokenconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeteamtokenconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeteamtokenconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeteamtokenconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeteamtokenconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`teamId`](#cdktfprovidertfeteamtokenconfigpropertyteamid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#team_id TeamToken#team_id}. |
 | [`forceRegenerate`](#cdktfprovidertfeteamtokenconfigpropertyforceregenerate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#force_regenerate TeamToken#force_regenerate}. |
 | [`id`](#cdktfprovidertfeteamtokenconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_token#id TeamToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamTokenConfig.property.connection" id="cdktfprovidertfeteamtokenconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14418,6 +15652,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamTokenConfig.property.forEach" id="cdktfprovidertfeteamtokenconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamTokenConfig.property.lifecycle" id="cdktfprovidertfeteamtokenconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14435,6 +15679,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TeamTokenConfig.property.provisioners" id="cdktfprovidertfeteamtokenconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14490,10 +15744,13 @@ const terraformVersionConfig: TerraformVersionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeterraformversionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeterraformversionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeterraformversionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeterraformversionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeterraformversionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeterraformversionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeterraformversionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`sha`](#cdktfprovidertfeterraformversionconfigpropertysha)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/terraform_version#sha TerraformVersion#sha}. |
 | [`url`](#cdktfprovidertfeterraformversionconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/terraform_version#url TerraformVersion#url}. |
 | [`version`](#cdktfprovidertfeterraformversionconfigpropertyversion)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/terraform_version#version TerraformVersion#version}. |
@@ -14503,6 +15760,16 @@ const terraformVersionConfig: TerraformVersionConfig = { ... }
 | [`enabled`](#cdktfprovidertfeterraformversionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/terraform_version#enabled TerraformVersion#enabled}. |
 | [`id`](#cdktfprovidertfeterraformversionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/terraform_version#id TerraformVersion#id}. |
 | [`official`](#cdktfprovidertfeterraformversionconfigpropertyofficial) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/terraform_version#official TerraformVersion#official}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TerraformVersionConfig.property.connection" id="cdktfprovidertfeterraformversionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14526,6 +15793,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TerraformVersionConfig.property.forEach" id="cdktfprovidertfeterraformversionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TerraformVersionConfig.property.lifecycle" id="cdktfprovidertfeterraformversionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14543,6 +15820,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.TerraformVersionConfig.property.provisioners" id="cdktfprovidertfeterraformversionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14747,10 +16034,13 @@ const variableConfig: VariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfevariableconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfevariableconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfevariableconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfevariableconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfevariableconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfevariableconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfevariableconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`category`](#cdktfprovidertfevariableconfigpropertycategory)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#category Variable#category}. |
 | [`key`](#cdktfprovidertfevariableconfigpropertykey)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#key Variable#key}. |
 | [`description`](#cdktfprovidertfevariableconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#description Variable#description}. |
@@ -14760,6 +16050,16 @@ const variableConfig: VariableConfig = { ... }
 | [`value`](#cdktfprovidertfevariableconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#value Variable#value}. |
 | [`variableSetId`](#cdktfprovidertfevariableconfigpropertyvariablesetid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#variable_set_id Variable#variable_set_id}. |
 | [`workspaceId`](#cdktfprovidertfevariableconfigpropertyworkspaceid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableConfig.property.connection" id="cdktfprovidertfevariableconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14783,6 +16083,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableConfig.property.forEach" id="cdktfprovidertfevariableconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableConfig.property.lifecycle" id="cdktfprovidertfevariableconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14800,6 +16110,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableConfig.property.provisioners" id="cdktfprovidertfevariableconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14927,16 +16247,29 @@ const variableSetConfig: VariableSetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfevariablesetconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfevariablesetconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfevariablesetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfevariablesetconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfevariablesetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfevariablesetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfevariablesetconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfevariablesetconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#name VariableSet#name}. |
 | [`organization`](#cdktfprovidertfevariablesetconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#organization VariableSet#organization}. |
 | [`description`](#cdktfprovidertfevariablesetconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#description VariableSet#description}. |
 | [`global`](#cdktfprovidertfevariablesetconfigpropertyglobal) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#global VariableSet#global}. |
 | [`id`](#cdktfprovidertfevariablesetconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#id VariableSet#id}. |
 | [`workspaceIds`](#cdktfprovidertfevariablesetconfigpropertyworkspaceids) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#workspace_ids VariableSet#workspace_ids}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableSetConfig.property.connection" id="cdktfprovidertfevariablesetconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -14960,6 +16293,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableSetConfig.property.forEach" id="cdktfprovidertfevariablesetconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableSetConfig.property.lifecycle" id="cdktfprovidertfevariablesetconfigpropertylifecycle"></a>
 
 ```typescript
@@ -14977,6 +16320,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.VariableSetConfig.property.provisioners" id="cdktfprovidertfevariablesetconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15068,10 +16421,13 @@ const workspaceConfig: WorkspaceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeworkspaceconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeworkspaceconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeworkspaceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeworkspaceconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeworkspaceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeworkspaceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeworkspaceconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidertfeworkspaceconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#name Workspace#name}. |
 | [`organization`](#cdktfprovidertfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#organization Workspace#organization}. |
 | [`agentPoolId`](#cdktfprovidertfeworkspaceconfigpropertyagentpoolid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#agent_pool_id Workspace#agent_pool_id}. |
@@ -15097,6 +16453,16 @@ const workspaceConfig: WorkspaceConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.connection" id="cdktfprovidertfeworkspaceconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.count" id="cdktfprovidertfeworkspaceconfigpropertycount"></a>
 
 ```typescript
@@ -15117,6 +16483,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.forEach" id="cdktfprovidertfeworkspaceconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.lifecycle" id="cdktfprovidertfeworkspaceconfigpropertylifecycle"></a>
 
 ```typescript
@@ -15134,6 +16510,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.provisioners" id="cdktfprovidertfeworkspaceconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15419,14 +16805,27 @@ const workspaceRunTaskConfig: WorkspaceRunTaskConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeworkspaceruntaskconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeworkspaceruntaskconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeworkspaceruntaskconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeworkspaceruntaskconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeworkspaceruntaskconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeworkspaceruntaskconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeworkspaceruntaskconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`enforcementLevel`](#cdktfprovidertfeworkspaceruntaskconfigpropertyenforcementlevel)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}. |
 | [`taskId`](#cdktfprovidertfeworkspaceruntaskconfigpropertytaskid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#task_id WorkspaceRunTask#task_id}. |
 | [`workspaceId`](#cdktfprovidertfeworkspaceruntaskconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}. |
 | [`id`](#cdktfprovidertfeworkspaceruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#id WorkspaceRunTask#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTaskConfig.property.connection" id="cdktfprovidertfeworkspaceruntaskconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -15450,6 +16849,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTaskConfig.property.forEach" id="cdktfprovidertfeworkspaceruntaskconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTaskConfig.property.lifecycle" id="cdktfprovidertfeworkspaceruntaskconfigpropertylifecycle"></a>
 
 ```typescript
@@ -15467,6 +16876,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTaskConfig.property.provisioners" id="cdktfprovidertfeworkspaceruntaskconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15534,13 +16953,26 @@ const workspaceVariableSetConfig: WorkspaceVariableSetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidertfeworkspacevariablesetconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidertfeworkspacevariablesetconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidertfeworkspacevariablesetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeworkspacevariablesetconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidertfeworkspacevariablesetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeworkspacevariablesetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeworkspacevariablesetconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`variableSetId`](#cdktfprovidertfeworkspacevariablesetconfigpropertyvariablesetid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#variable_set_id WorkspaceVariableSet#variable_set_id}. |
 | [`workspaceId`](#cdktfprovidertfeworkspacevariablesetconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#workspace_id WorkspaceVariableSet#workspace_id}. |
 | [`id`](#cdktfprovidertfeworkspacevariablesetconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set#id WorkspaceVariableSet#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.connection" id="cdktfprovidertfeworkspacevariablesetconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -15564,6 +16996,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.forEach" id="cdktfprovidertfeworkspacevariablesetconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.lifecycle" id="cdktfprovidertfeworkspacevariablesetconfigpropertylifecycle"></a>
 
 ```typescript
@@ -15581,6 +17023,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVariableSetConfig.property.provisioners" id="cdktfprovidertfeworkspacevariablesetconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 

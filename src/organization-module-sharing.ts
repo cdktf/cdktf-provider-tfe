@@ -56,7 +56,10 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._moduleConsumers = config.moduleConsumers;
@@ -116,7 +119,7 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      module_consumers: cdktf.listMapper(cdktf.stringToTerraform)(this._moduleConsumers),
+      module_consumers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._moduleConsumers),
       organization: cdktf.stringToTerraform(this._organization),
     };
   }

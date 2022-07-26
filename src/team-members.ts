@@ -56,7 +56,10 @@ export class TeamMembers extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._teamId = config.teamId;
@@ -117,7 +120,7 @@ export class TeamMembers extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       team_id: cdktf.stringToTerraform(this._teamId),
-      usernames: cdktf.listMapper(cdktf.stringToTerraform)(this._usernames),
+      usernames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usernames),
     };
   }
 }

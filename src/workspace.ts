@@ -274,7 +274,10 @@ export class Workspace extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._agentPoolId = config.agentPoolId;
     this._allowDestroyPlan = config.allowDestroyPlan;
@@ -668,14 +671,14 @@ export class Workspace extends cdktf.TerraformResource {
       operations: cdktf.booleanToTerraform(this._operations),
       organization: cdktf.stringToTerraform(this._organization),
       queue_all_runs: cdktf.booleanToTerraform(this._queueAllRuns),
-      remote_state_consumer_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._remoteStateConsumerIds),
+      remote_state_consumer_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._remoteStateConsumerIds),
       speculative_enabled: cdktf.booleanToTerraform(this._speculativeEnabled),
       ssh_key_id: cdktf.stringToTerraform(this._sshKeyId),
       structured_run_output_enabled: cdktf.booleanToTerraform(this._structuredRunOutputEnabled),
-      tag_names: cdktf.listMapper(cdktf.stringToTerraform)(this._tagNames),
+      tag_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagNames),
       terraform_version: cdktf.stringToTerraform(this._terraformVersion),
-      trigger_patterns: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerPatterns),
-      trigger_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerPrefixes),
+      trigger_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggerPatterns),
+      trigger_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggerPrefixes),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
       vcs_repo: workspaceVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
