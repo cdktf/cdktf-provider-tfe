@@ -46,6 +46,77 @@ export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}
   */
   readonly sessionTimeoutMinutes?: number;
+  /**
+  * admin_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#admin_settings Organization#admin_settings}
+  */
+  readonly adminSettings?: OrganizationAdminSettings;
+}
+export interface OrganizationAdminSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#workspace_limit Organization#workspace_limit}
+  */
+  readonly workspaceLimit?: number;
+}
+
+export function organizationAdminSettingsToTerraform(struct?: OrganizationAdminSettingsOutputReference | OrganizationAdminSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_limit: cdktf.numberToTerraform(struct!.workspaceLimit),
+  }
+}
+
+export class OrganizationAdminSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OrganizationAdminSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceLimit = this._workspaceLimit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationAdminSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceLimit = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceLimit = value.workspaceLimit;
+    }
+  }
+
+  // workspace_limit - computed: false, optional: true, required: false
+  private _workspaceLimit?: number; 
+  public get workspaceLimit() {
+    return this.getNumberAttribute('workspace_limit');
+  }
+  public set workspaceLimit(value: number) {
+    this._workspaceLimit = value;
+  }
+  public resetWorkspaceLimit() {
+    this._workspaceLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceLimitInput() {
+    return this._workspaceLimit;
+  }
 }
 
 /**
@@ -74,7 +145,7 @@ export class Organization extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.33.0',
+        providerVersion: '0.34.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -94,6 +165,7 @@ export class Organization extends cdktf.TerraformResource {
     this._sendPassingStatusesForUntriggeredSpeculativePlans = config.sendPassingStatusesForUntriggeredSpeculativePlans;
     this._sessionRememberMinutes = config.sessionRememberMinutes;
     this._sessionTimeoutMinutes = config.sessionTimeoutMinutes;
+    this._adminSettings.internalValue = config.adminSettings;
   }
 
   // ==========
@@ -238,6 +310,22 @@ export class Organization extends cdktf.TerraformResource {
     return this._sessionTimeoutMinutes;
   }
 
+  // admin_settings - computed: false, optional: true, required: false
+  private _adminSettings = new OrganizationAdminSettingsOutputReference(this, "admin_settings");
+  public get adminSettings() {
+    return this._adminSettings;
+  }
+  public putAdminSettings(value: OrganizationAdminSettings) {
+    this._adminSettings.internalValue = value;
+  }
+  public resetAdminSettings() {
+    this._adminSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminSettingsInput() {
+    return this._adminSettings.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -253,6 +341,7 @@ export class Organization extends cdktf.TerraformResource {
       send_passing_statuses_for_untriggered_speculative_plans: cdktf.booleanToTerraform(this._sendPassingStatusesForUntriggeredSpeculativePlans),
       session_remember_minutes: cdktf.numberToTerraform(this._sessionRememberMinutes),
       session_timeout_minutes: cdktf.numberToTerraform(this._sessionTimeoutMinutes),
+      admin_settings: organizationAdminSettingsToTerraform(this._adminSettings.internalValue),
     };
   }
 }

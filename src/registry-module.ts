@@ -15,11 +15,31 @@ export interface RegistryModuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#module_provider RegistryModule#module_provider}
+  */
+  readonly moduleProvider?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#name RegistryModule#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#namespace RegistryModule#namespace}
+  */
+  readonly namespace?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#organization RegistryModule#organization}
+  */
+  readonly organization?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#registry_name RegistryModule#registry_name}
+  */
+  readonly registryName?: string;
+  /**
   * vcs_repo block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#vcs_repo RegistryModule#vcs_repo}
   */
-  readonly vcsRepo: RegistryModuleVcsRepo;
+  readonly vcsRepo?: RegistryModuleVcsRepo;
 }
 export interface RegistryModuleVcsRepo {
   /**
@@ -151,14 +171,14 @@ export class RegistryModule extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options RegistryModuleConfig
+  * @param options RegistryModuleConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: RegistryModuleConfig) {
+  public constructor(scope: Construct, id: string, config: RegistryModuleConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.33.0',
+        providerVersion: '0.34.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -170,6 +190,11 @@ export class RegistryModule extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._moduleProvider = config.moduleProvider;
+    this._name = config.name;
+    this._namespace = config.namespace;
+    this._organization = config.organization;
+    this._registryName = config.registryName;
     this._vcsRepo.internalValue = config.vcsRepo;
   }
 
@@ -193,28 +218,96 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // module_provider - computed: true, optional: false, required: false
+  // module_provider - computed: false, optional: true, required: false
+  private _moduleProvider?: string; 
   public get moduleProvider() {
     return this.getStringAttribute('module_provider');
   }
+  public set moduleProvider(value: string) {
+    this._moduleProvider = value;
+  }
+  public resetModuleProvider() {
+    this._moduleProvider = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get moduleProviderInput() {
+    return this._moduleProvider;
+  }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
 
-  // organization - computed: true, optional: false, required: false
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
+  // organization - computed: false, optional: true, required: false
+  private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
+  public set organization(value: string) {
+    this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationInput() {
+    return this._organization;
+  }
 
-  // vcs_repo - computed: false, optional: false, required: true
+  // registry_name - computed: false, optional: true, required: false
+  private _registryName?: string; 
+  public get registryName() {
+    return this.getStringAttribute('registry_name');
+  }
+  public set registryName(value: string) {
+    this._registryName = value;
+  }
+  public resetRegistryName() {
+    this._registryName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get registryNameInput() {
+    return this._registryName;
+  }
+
+  // vcs_repo - computed: false, optional: true, required: false
   private _vcsRepo = new RegistryModuleVcsRepoOutputReference(this, "vcs_repo");
   public get vcsRepo() {
     return this._vcsRepo;
   }
   public putVcsRepo(value: RegistryModuleVcsRepo) {
     this._vcsRepo.internalValue = value;
+  }
+  public resetVcsRepo() {
+    this._vcsRepo.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get vcsRepoInput() {
@@ -228,6 +321,11 @@ export class RegistryModule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      module_provider: cdktf.stringToTerraform(this._moduleProvider),
+      name: cdktf.stringToTerraform(this._name),
+      namespace: cdktf.stringToTerraform(this._namespace),
+      organization: cdktf.stringToTerraform(this._organization),
+      registry_name: cdktf.stringToTerraform(this._registryName),
       vcs_repo: registryModuleVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
   }
