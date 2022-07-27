@@ -50,7 +50,7 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_module_sharing',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.33.0',
+        providerVersion: '0.34.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

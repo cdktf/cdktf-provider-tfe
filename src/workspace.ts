@@ -268,7 +268,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.33.0',
+        providerVersion: '0.34.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -589,7 +589,7 @@ export class Workspace extends cdktf.TerraformResource {
     return this._terraformVersion;
   }
 
-  // trigger_patterns - computed: true, optional: true, required: false
+  // trigger_patterns - computed: false, optional: true, required: false
   private _triggerPatterns?: string[]; 
   public get triggerPatterns() {
     return this.getListAttribute('trigger_patterns');
@@ -605,7 +605,7 @@ export class Workspace extends cdktf.TerraformResource {
     return this._triggerPatterns;
   }
 
-  // trigger_prefixes - computed: true, optional: true, required: false
+  // trigger_prefixes - computed: false, optional: true, required: false
   private _triggerPrefixes?: string[]; 
   public get triggerPrefixes() {
     return this.getListAttribute('trigger_prefixes');

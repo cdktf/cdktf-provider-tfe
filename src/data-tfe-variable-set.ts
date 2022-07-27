@@ -58,7 +58,7 @@ export class DataTfeVariableSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_variable_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.33.0',
+        providerVersion: '0.34.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

@@ -4219,6 +4219,8 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
+| [`putAdminSettings`](#cdktfprovidertfeorganizationputadminsettings) | *No description.* |
+| [`resetAdminSettings`](#cdktfprovidertfeorganizationresetadminsettings) | *No description.* |
 | [`resetCollaboratorAuthPolicy`](#cdktfprovidertfeorganizationresetcollaboratorauthpolicy) | *No description.* |
 | [`resetCostEstimationEnabled`](#cdktfprovidertfeorganizationresetcostestimationenabled) | *No description.* |
 | [`resetId`](#cdktfprovidertfeorganizationresetid) | *No description.* |
@@ -4228,6 +4230,24 @@ Must be unique amongst siblings in the same scope
 | [`resetSessionTimeoutMinutes`](#cdktfprovidertfeorganizationresetsessiontimeoutminutes) | *No description.* |
 
 ---
+
+##### `putAdminSettings` <a name="@cdktf/provider-tfe.Organization.putAdminSettings" id="cdktfprovidertfeorganizationputadminsettings"></a>
+
+```typescript
+public putAdminSettings(value: OrganizationAdminSettings)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-tfe.Organization.parameter.value" id="cdktfprovidertfeorganizationparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
+
+---
+
+##### `resetAdminSettings` <a name="@cdktf/provider-tfe.Organization.resetAdminSettings" id="cdktfprovidertfeorganizationresetadminsettings"></a>
+
+```typescript
+public resetAdminSettings()
+```
 
 ##### `resetCollaboratorAuthPolicy` <a name="@cdktf/provider-tfe.Organization.resetCollaboratorAuthPolicy" id="cdktfprovidertfeorganizationresetcollaboratorauthpolicy"></a>
 
@@ -4276,6 +4296,8 @@ public resetSessionTimeoutMinutes()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`adminSettings`](#cdktfprovidertfeorganizationpropertyadminsettings)<span title="Required">*</span> | [`@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference`](#@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference) | *No description.* |
+| [`adminSettingsInput`](#cdktfprovidertfeorganizationpropertyadminsettingsinput) | [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings) | *No description.* |
 | [`collaboratorAuthPolicyInput`](#cdktfprovidertfeorganizationpropertycollaboratorauthpolicyinput) | `string` | *No description.* |
 | [`costEstimationEnabledInput`](#cdktfprovidertfeorganizationpropertycostestimationenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`emailInput`](#cdktfprovidertfeorganizationpropertyemailinput) | `string` | *No description.* |
@@ -4294,6 +4316,26 @@ public resetSessionTimeoutMinutes()
 | [`sendPassingStatusesForUntriggeredSpeculativePlans`](#cdktfprovidertfeorganizationpropertysendpassingstatusesforuntriggeredspeculativeplans)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`sessionRememberMinutes`](#cdktfprovidertfeorganizationpropertysessionrememberminutes)<span title="Required">*</span> | `number` | *No description.* |
 | [`sessionTimeoutMinutes`](#cdktfprovidertfeorganizationpropertysessiontimeoutminutes)<span title="Required">*</span> | `number` | *No description.* |
+
+---
+
+##### `adminSettings`<sup>Required</sup> <a name="@cdktf/provider-tfe.Organization.property.adminSettings" id="cdktfprovidertfeorganizationpropertyadminsettings"></a>
+
+```typescript
+public readonly adminSettings: OrganizationAdminSettingsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference`](#@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference)
+
+---
+
+##### `adminSettingsInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.Organization.property.adminSettingsInput" id="cdktfprovidertfeorganizationpropertyadminsettingsinput"></a>
+
+```typescript
+public readonly adminSettingsInput: OrganizationAdminSettings;
+```
+
+- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
 
 ---
 
@@ -5788,14 +5830,14 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/registry_modul
 ```typescript
 import { RegistryModule } from '@cdktf/provider-tfe'
 
-new RegistryModule(scope: Construct, id: string, config: RegistryModuleConfig)
+new RegistryModule(scope: Construct, id: string, config?: RegistryModuleConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`scope`](#cdktfprovidertferegistrymoduleparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
 | [`id`](#cdktfprovidertferegistrymoduleparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
-| [`config`](#cdktfprovidertferegistrymoduleparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-tfe.RegistryModuleConfig`](#@cdktf/provider-tfe.RegistryModuleConfig) | *No description.* |
+| [`config`](#cdktfprovidertferegistrymoduleparameterconfig) | [`@cdktf/provider-tfe.RegistryModuleConfig`](#@cdktf/provider-tfe.RegistryModuleConfig) | *No description.* |
 
 ---
 
@@ -5817,7 +5859,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.parameter.config" id="cdktfprovidertferegistrymoduleparameterconfig"></a>
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.parameter.config" id="cdktfprovidertferegistrymoduleparameterconfig"></a>
 
 - *Type:* [`@cdktf/provider-tfe.RegistryModuleConfig`](#@cdktf/provider-tfe.RegistryModuleConfig)
 
@@ -5829,6 +5871,12 @@ Must be unique amongst siblings in the same scope
 | --- | --- |
 | [`putVcsRepo`](#cdktfprovidertferegistrymoduleputvcsrepo) | *No description.* |
 | [`resetId`](#cdktfprovidertferegistrymoduleresetid) | *No description.* |
+| [`resetModuleProvider`](#cdktfprovidertferegistrymoduleresetmoduleprovider) | *No description.* |
+| [`resetName`](#cdktfprovidertferegistrymoduleresetname) | *No description.* |
+| [`resetNamespace`](#cdktfprovidertferegistrymoduleresetnamespace) | *No description.* |
+| [`resetOrganization`](#cdktfprovidertferegistrymoduleresetorganization) | *No description.* |
+| [`resetRegistryName`](#cdktfprovidertferegistrymoduleresetregistryname) | *No description.* |
+| [`resetVcsRepo`](#cdktfprovidertferegistrymoduleresetvcsrepo) | *No description.* |
 
 ---
 
@@ -5850,48 +5898,61 @@ public putVcsRepo(value: RegistryModuleVcsRepo)
 public resetId()
 ```
 
+##### `resetModuleProvider` <a name="@cdktf/provider-tfe.RegistryModule.resetModuleProvider" id="cdktfprovidertferegistrymoduleresetmoduleprovider"></a>
+
+```typescript
+public resetModuleProvider()
+```
+
+##### `resetName` <a name="@cdktf/provider-tfe.RegistryModule.resetName" id="cdktfprovidertferegistrymoduleresetname"></a>
+
+```typescript
+public resetName()
+```
+
+##### `resetNamespace` <a name="@cdktf/provider-tfe.RegistryModule.resetNamespace" id="cdktfprovidertferegistrymoduleresetnamespace"></a>
+
+```typescript
+public resetNamespace()
+```
+
+##### `resetOrganization` <a name="@cdktf/provider-tfe.RegistryModule.resetOrganization" id="cdktfprovidertferegistrymoduleresetorganization"></a>
+
+```typescript
+public resetOrganization()
+```
+
+##### `resetRegistryName` <a name="@cdktf/provider-tfe.RegistryModule.resetRegistryName" id="cdktfprovidertferegistrymoduleresetregistryname"></a>
+
+```typescript
+public resetRegistryName()
+```
+
+##### `resetVcsRepo` <a name="@cdktf/provider-tfe.RegistryModule.resetVcsRepo" id="cdktfprovidertferegistrymoduleresetvcsrepo"></a>
+
+```typescript
+public resetVcsRepo()
+```
+
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`moduleProvider`](#cdktfprovidertferegistrymodulepropertymoduleprovider)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovidertferegistrymodulepropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`organization`](#cdktfprovidertferegistrymodulepropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
 | [`vcsRepo`](#cdktfprovidertferegistrymodulepropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.RegistryModuleVcsRepoOutputReference`](#@cdktf/provider-tfe.RegistryModuleVcsRepoOutputReference) | *No description.* |
 | [`idInput`](#cdktfprovidertferegistrymodulepropertyidinput) | `string` | *No description.* |
+| [`moduleProviderInput`](#cdktfprovidertferegistrymodulepropertymoduleproviderinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidertferegistrymodulepropertynameinput) | `string` | *No description.* |
+| [`namespaceInput`](#cdktfprovidertferegistrymodulepropertynamespaceinput) | `string` | *No description.* |
+| [`organizationInput`](#cdktfprovidertferegistrymodulepropertyorganizationinput) | `string` | *No description.* |
+| [`registryNameInput`](#cdktfprovidertferegistrymodulepropertyregistrynameinput) | `string` | *No description.* |
 | [`vcsRepoInput`](#cdktfprovidertferegistrymodulepropertyvcsrepoinput) | [`@cdktf/provider-tfe.RegistryModuleVcsRepo`](#@cdktf/provider-tfe.RegistryModuleVcsRepo) | *No description.* |
 | [`id`](#cdktfprovidertferegistrymodulepropertyid)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `moduleProvider`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.moduleProvider" id="cdktfprovidertferegistrymodulepropertymoduleprovider"></a>
-
-```typescript
-public readonly moduleProvider: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.name" id="cdktfprovidertferegistrymodulepropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `organization`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.organization" id="cdktfprovidertferegistrymodulepropertyorganization"></a>
-
-```typescript
-public readonly organization: string;
-```
-
-- *Type:* `string`
+| [`moduleProvider`](#cdktfprovidertferegistrymodulepropertymoduleprovider)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidertferegistrymodulepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`namespace`](#cdktfprovidertferegistrymodulepropertynamespace)<span title="Required">*</span> | `string` | *No description.* |
+| [`organization`](#cdktfprovidertferegistrymodulepropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
+| [`registryName`](#cdktfprovidertferegistrymodulepropertyregistryname)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -5915,6 +5976,56 @@ public readonly idInput: string;
 
 ---
 
+##### `moduleProviderInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.moduleProviderInput" id="cdktfprovidertferegistrymodulepropertymoduleproviderinput"></a>
+
+```typescript
+public readonly moduleProviderInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.nameInput" id="cdktfprovidertferegistrymodulepropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `namespaceInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.namespaceInput" id="cdktfprovidertferegistrymodulepropertynamespaceinput"></a>
+
+```typescript
+public readonly namespaceInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `organizationInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.organizationInput" id="cdktfprovidertferegistrymodulepropertyorganizationinput"></a>
+
+```typescript
+public readonly organizationInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `registryNameInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.registryNameInput" id="cdktfprovidertferegistrymodulepropertyregistrynameinput"></a>
+
+```typescript
+public readonly registryNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `vcsRepoInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.vcsRepoInput" id="cdktfprovidertferegistrymodulepropertyvcsrepoinput"></a>
 
 ```typescript
@@ -5929,6 +6040,56 @@ public readonly vcsRepoInput: RegistryModuleVcsRepo;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `moduleProvider`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.moduleProvider" id="cdktfprovidertferegistrymodulepropertymoduleprovider"></a>
+
+```typescript
+public readonly moduleProvider: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.name" id="cdktfprovidertferegistrymodulepropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `namespace`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.namespace" id="cdktfprovidertferegistrymodulepropertynamespace"></a>
+
+```typescript
+public readonly namespace: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `organization`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.organization" id="cdktfprovidertferegistrymodulepropertyorganization"></a>
+
+```typescript
+public readonly organization: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `registryName`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModule.property.registryName" id="cdktfprovidertferegistrymodulepropertyregistryname"></a>
+
+```typescript
+public readonly registryName: string;
 ```
 
 - *Type:* `string`
@@ -12748,6 +12909,36 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+### OrganizationAdminSettings <a name="@cdktf/provider-tfe.OrganizationAdminSettings" id="cdktfprovidertfeorganizationadminsettings"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { OrganizationAdminSettings } from '@cdktf/provider-tfe'
+
+const organizationAdminSettings: OrganizationAdminSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`workspaceLimit`](#cdktfprovidertfeorganizationadminsettingspropertyworkspacelimit) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#workspace_limit Organization#workspace_limit}. |
+
+---
+
+##### `workspaceLimit`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettings.property.workspaceLimit" id="cdktfprovidertfeorganizationadminsettingspropertyworkspacelimit"></a>
+
+```typescript
+public readonly workspaceLimit: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#workspace_limit Organization#workspace_limit}.
+
+---
+
 ### OrganizationConfig <a name="@cdktf/provider-tfe.OrganizationConfig" id="cdktfprovidertfeorganizationconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -12771,6 +12962,7 @@ const organizationConfig: OrganizationConfig = { ... }
 | [`provisioners`](#cdktfprovidertfeorganizationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`email`](#cdktfprovidertfeorganizationconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}. |
 | [`name`](#cdktfprovidertfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}. |
+| [`adminSettings`](#cdktfprovidertfeorganizationconfigpropertyadminsettings) | [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings) | admin_settings block. |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationconfigpropertycollaboratorauthpolicy) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
 | [`costEstimationEnabled`](#cdktfprovidertfeorganizationconfigpropertycostestimationenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | [`id`](#cdktfprovidertfeorganizationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#id Organization#id}. |
@@ -12872,6 +13064,20 @@ public readonly name: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}.
+
+---
+
+##### `adminSettings`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.adminSettings" id="cdktfprovidertfeorganizationconfigpropertyadminsettings"></a>
+
+```typescript
+public readonly adminSettings: OrganizationAdminSettings;
+```
+
+- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
+
+admin_settings block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#admin_settings Organization#admin_settings}
 
 ---
 
@@ -14032,8 +14238,13 @@ const registryModuleConfig: RegistryModuleConfig = { ... }
 | [`lifecycle`](#cdktfprovidertferegistrymoduleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertferegistrymoduleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`provisioners`](#cdktfprovidertferegistrymoduleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
-| [`vcsRepo`](#cdktfprovidertferegistrymoduleconfigpropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.RegistryModuleVcsRepo`](#@cdktf/provider-tfe.RegistryModuleVcsRepo) | vcs_repo block. |
 | [`id`](#cdktfprovidertferegistrymoduleconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#id RegistryModule#id}. |
+| [`moduleProvider`](#cdktfprovidertferegistrymoduleconfigpropertymoduleprovider) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#module_provider RegistryModule#module_provider}. |
+| [`name`](#cdktfprovidertferegistrymoduleconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#name RegistryModule#name}. |
+| [`namespace`](#cdktfprovidertferegistrymoduleconfigpropertynamespace) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#namespace RegistryModule#namespace}. |
+| [`organization`](#cdktfprovidertferegistrymoduleconfigpropertyorganization) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#organization RegistryModule#organization}. |
+| [`registryName`](#cdktfprovidertferegistrymoduleconfigpropertyregistryname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#registry_name RegistryModule#registry_name}. |
+| [`vcsRepo`](#cdktfprovidertferegistrymoduleconfigpropertyvcsrepo) | [`@cdktf/provider-tfe.RegistryModuleVcsRepo`](#@cdktf/provider-tfe.RegistryModuleVcsRepo) | vcs_repo block. |
 
 ---
 
@@ -14107,20 +14318,6 @@ public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemote
 
 ---
 
-##### `vcsRepo`<sup>Required</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.vcsRepo" id="cdktfprovidertferegistrymoduleconfigpropertyvcsrepo"></a>
-
-```typescript
-public readonly vcsRepo: RegistryModuleVcsRepo;
-```
-
-- *Type:* [`@cdktf/provider-tfe.RegistryModuleVcsRepo`](#@cdktf/provider-tfe.RegistryModuleVcsRepo)
-
-vcs_repo block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#vcs_repo RegistryModule#vcs_repo}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.id" id="cdktfprovidertferegistrymoduleconfigpropertyid"></a>
 
 ```typescript
@@ -14132,6 +14329,80 @@ public readonly id: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#id RegistryModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `moduleProvider`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.moduleProvider" id="cdktfprovidertferegistrymoduleconfigpropertymoduleprovider"></a>
+
+```typescript
+public readonly moduleProvider: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#module_provider RegistryModule#module_provider}.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.name" id="cdktfprovidertferegistrymoduleconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#name RegistryModule#name}.
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.namespace" id="cdktfprovidertferegistrymoduleconfigpropertynamespace"></a>
+
+```typescript
+public readonly namespace: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#namespace RegistryModule#namespace}.
+
+---
+
+##### `organization`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.organization" id="cdktfprovidertferegistrymoduleconfigpropertyorganization"></a>
+
+```typescript
+public readonly organization: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#organization RegistryModule#organization}.
+
+---
+
+##### `registryName`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.registryName" id="cdktfprovidertferegistrymoduleconfigpropertyregistryname"></a>
+
+```typescript
+public readonly registryName: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#registry_name RegistryModule#registry_name}.
+
+---
+
+##### `vcsRepo`<sup>Optional</sup> <a name="@cdktf/provider-tfe.RegistryModuleConfig.property.vcsRepo" id="cdktfprovidertferegistrymoduleconfigpropertyvcsrepo"></a>
+
+```typescript
+public readonly vcsRepo: RegistryModuleVcsRepo;
+```
+
+- *Type:* [`@cdktf/provider-tfe.RegistryModuleVcsRepo`](#@cdktf/provider-tfe.RegistryModuleVcsRepo)
+
+vcs_repo block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#vcs_repo RegistryModule#vcs_repo}
 
 ---
 
@@ -18144,6 +18415,95 @@ public readonly internalValue: DataTfeWorkspaceVcsRepo;
 ```
 
 - *Type:* [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo)
+
+---
+
+
+### OrganizationAdminSettingsOutputReference <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference" id="cdktfprovidertfeorganizationadminsettingsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.Initializer" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceinitializer"></a>
+
+```typescript
+import { OrganizationAdminSettingsOutputReference } from '@cdktf/provider-tfe'
+
+new OrganizationAdminSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.parameter.terraformResource" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.parameter.terraformAttribute" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetWorkspaceLimit`](#cdktfprovidertfeorganizationadminsettingsoutputreferenceresetworkspacelimit) | *No description.* |
+
+---
+
+##### `resetWorkspaceLimit` <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.resetWorkspaceLimit" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceresetworkspacelimit"></a>
+
+```typescript
+public resetWorkspaceLimit()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`workspaceLimitInput`](#cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimitinput) | `number` | *No description.* |
+| [`workspaceLimit`](#cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimit)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings) | *No description.* |
+
+---
+
+##### `workspaceLimitInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.property.workspaceLimitInput" id="cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimitinput"></a>
+
+```typescript
+public readonly workspaceLimitInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `workspaceLimit`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.property.workspaceLimit" id="cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimit"></a>
+
+```typescript
+public readonly workspaceLimit: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.property.internalValue" id="cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: OrganizationAdminSettings;
+```
+
+- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
 
 ---
 
