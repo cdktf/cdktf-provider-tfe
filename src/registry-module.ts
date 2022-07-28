@@ -178,7 +178,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.34.0',
+        providerVersion: '0.35.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -218,7 +218,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // module_provider - computed: false, optional: true, required: false
+  // module_provider - computed: true, optional: true, required: false
   private _moduleProvider?: string; 
   public get moduleProvider() {
     return this.getStringAttribute('module_provider');
@@ -234,7 +234,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._moduleProvider;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -250,7 +250,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // namespace - computed: false, optional: true, required: false
+  // namespace - computed: true, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
     return this.getStringAttribute('namespace');
@@ -266,7 +266,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._namespace;
   }
 
-  // organization - computed: false, optional: true, required: false
+  // organization - computed: true, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
@@ -282,7 +282,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._organization;
   }
 
-  // registry_name - computed: false, optional: true, required: false
+  // registry_name - computed: true, optional: true, required: false
   private _registryName?: string; 
   public get registryName() {
     return this.getStringAttribute('registry_name');

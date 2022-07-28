@@ -58,7 +58,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace_ids',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.34.0',
+        providerVersion: '0.35.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
