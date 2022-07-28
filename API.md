@@ -4219,8 +4219,6 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`putAdminSettings`](#cdktfprovidertfeorganizationputadminsettings) | *No description.* |
-| [`resetAdminSettings`](#cdktfprovidertfeorganizationresetadminsettings) | *No description.* |
 | [`resetCollaboratorAuthPolicy`](#cdktfprovidertfeorganizationresetcollaboratorauthpolicy) | *No description.* |
 | [`resetCostEstimationEnabled`](#cdktfprovidertfeorganizationresetcostestimationenabled) | *No description.* |
 | [`resetId`](#cdktfprovidertfeorganizationresetid) | *No description.* |
@@ -4230,24 +4228,6 @@ Must be unique amongst siblings in the same scope
 | [`resetSessionTimeoutMinutes`](#cdktfprovidertfeorganizationresetsessiontimeoutminutes) | *No description.* |
 
 ---
-
-##### `putAdminSettings` <a name="@cdktf/provider-tfe.Organization.putAdminSettings" id="cdktfprovidertfeorganizationputadminsettings"></a>
-
-```typescript
-public putAdminSettings(value: OrganizationAdminSettings)
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-tfe.Organization.parameter.value" id="cdktfprovidertfeorganizationparametervalue"></a>
-
-- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
-
----
-
-##### `resetAdminSettings` <a name="@cdktf/provider-tfe.Organization.resetAdminSettings" id="cdktfprovidertfeorganizationresetadminsettings"></a>
-
-```typescript
-public resetAdminSettings()
-```
 
 ##### `resetCollaboratorAuthPolicy` <a name="@cdktf/provider-tfe.Organization.resetCollaboratorAuthPolicy" id="cdktfprovidertfeorganizationresetcollaboratorauthpolicy"></a>
 
@@ -4296,8 +4276,6 @@ public resetSessionTimeoutMinutes()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`adminSettings`](#cdktfprovidertfeorganizationpropertyadminsettings)<span title="Required">*</span> | [`@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference`](#@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference) | *No description.* |
-| [`adminSettingsInput`](#cdktfprovidertfeorganizationpropertyadminsettingsinput) | [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings) | *No description.* |
 | [`collaboratorAuthPolicyInput`](#cdktfprovidertfeorganizationpropertycollaboratorauthpolicyinput) | `string` | *No description.* |
 | [`costEstimationEnabledInput`](#cdktfprovidertfeorganizationpropertycostestimationenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`emailInput`](#cdktfprovidertfeorganizationpropertyemailinput) | `string` | *No description.* |
@@ -4316,26 +4294,6 @@ public resetSessionTimeoutMinutes()
 | [`sendPassingStatusesForUntriggeredSpeculativePlans`](#cdktfprovidertfeorganizationpropertysendpassingstatusesforuntriggeredspeculativeplans)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`sessionRememberMinutes`](#cdktfprovidertfeorganizationpropertysessionrememberminutes)<span title="Required">*</span> | `number` | *No description.* |
 | [`sessionTimeoutMinutes`](#cdktfprovidertfeorganizationpropertysessiontimeoutminutes)<span title="Required">*</span> | `number` | *No description.* |
-
----
-
-##### `adminSettings`<sup>Required</sup> <a name="@cdktf/provider-tfe.Organization.property.adminSettings" id="cdktfprovidertfeorganizationpropertyadminsettings"></a>
-
-```typescript
-public readonly adminSettings: OrganizationAdminSettingsOutputReference;
-```
-
-- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference`](#@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference)
-
----
-
-##### `adminSettingsInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.Organization.property.adminSettingsInput" id="cdktfprovidertfeorganizationpropertyadminsettingsinput"></a>
-
-```typescript
-public readonly adminSettingsInput: OrganizationAdminSettings;
-```
-
-- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
 
 ---
 
@@ -12909,36 +12867,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
-### OrganizationAdminSettings <a name="@cdktf/provider-tfe.OrganizationAdminSettings" id="cdktfprovidertfeorganizationadminsettings"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { OrganizationAdminSettings } from '@cdktf/provider-tfe'
-
-const organizationAdminSettings: OrganizationAdminSettings = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`workspaceLimit`](#cdktfprovidertfeorganizationadminsettingspropertyworkspacelimit) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#workspace_limit Organization#workspace_limit}. |
-
----
-
-##### `workspaceLimit`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettings.property.workspaceLimit" id="cdktfprovidertfeorganizationadminsettingspropertyworkspacelimit"></a>
-
-```typescript
-public readonly workspaceLimit: number;
-```
-
-- *Type:* `number`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#workspace_limit Organization#workspace_limit}.
-
----
-
 ### OrganizationConfig <a name="@cdktf/provider-tfe.OrganizationConfig" id="cdktfprovidertfeorganizationconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -12962,7 +12890,6 @@ const organizationConfig: OrganizationConfig = { ... }
 | [`provisioners`](#cdktfprovidertfeorganizationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`email`](#cdktfprovidertfeorganizationconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}. |
 | [`name`](#cdktfprovidertfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}. |
-| [`adminSettings`](#cdktfprovidertfeorganizationconfigpropertyadminsettings) | [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings) | admin_settings block. |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationconfigpropertycollaboratorauthpolicy) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
 | [`costEstimationEnabled`](#cdktfprovidertfeorganizationconfigpropertycostestimationenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | [`id`](#cdktfprovidertfeorganizationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#id Organization#id}. |
@@ -13064,20 +12991,6 @@ public readonly name: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}.
-
----
-
-##### `adminSettings`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.adminSettings" id="cdktfprovidertfeorganizationconfigpropertyadminsettings"></a>
-
-```typescript
-public readonly adminSettings: OrganizationAdminSettings;
-```
-
-- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
-
-admin_settings block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#admin_settings Organization#admin_settings}
 
 ---
 
@@ -18415,95 +18328,6 @@ public readonly internalValue: DataTfeWorkspaceVcsRepo;
 ```
 
 - *Type:* [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo)
-
----
-
-
-### OrganizationAdminSettingsOutputReference <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference" id="cdktfprovidertfeorganizationadminsettingsoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.Initializer" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceinitializer"></a>
-
-```typescript
-import { OrganizationAdminSettingsOutputReference } from '@cdktf/provider-tfe'
-
-new OrganizationAdminSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.parameter.terraformResource" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.parameter.terraformAttribute" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`resetWorkspaceLimit`](#cdktfprovidertfeorganizationadminsettingsoutputreferenceresetworkspacelimit) | *No description.* |
-
----
-
-##### `resetWorkspaceLimit` <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.resetWorkspaceLimit" id="cdktfprovidertfeorganizationadminsettingsoutputreferenceresetworkspacelimit"></a>
-
-```typescript
-public resetWorkspaceLimit()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`workspaceLimitInput`](#cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimitinput) | `number` | *No description.* |
-| [`workspaceLimit`](#cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimit)<span title="Required">*</span> | `number` | *No description.* |
-| [`internalValue`](#cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings) | *No description.* |
-
----
-
-##### `workspaceLimitInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.property.workspaceLimitInput" id="cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimitinput"></a>
-
-```typescript
-public readonly workspaceLimitInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `workspaceLimit`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.property.workspaceLimit" id="cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyworkspacelimit"></a>
-
-```typescript
-public readonly workspaceLimit: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationAdminSettingsOutputReference.property.internalValue" id="cdktfprovidertfeorganizationadminsettingsoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: OrganizationAdminSettings;
-```
-
-- *Type:* [`@cdktf/provider-tfe.OrganizationAdminSettings`](#@cdktf/provider-tfe.OrganizationAdminSettings)
 
 ---
 
