@@ -50,7 +50,7 @@ export class DataTfeSshKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.35.0',
+        providerVersion: '0.36.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

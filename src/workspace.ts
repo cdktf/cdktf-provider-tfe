@@ -118,6 +118,10 @@ export interface WorkspaceVcsRepo {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}
   */
   readonly oauthTokenId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tags_regex Workspace#tags_regex}
+  */
+  readonly tagsRegex?: string;
 }
 
 export function workspaceVcsRepoToTerraform(struct?: WorkspaceVcsRepoOutputReference | WorkspaceVcsRepo): any {
@@ -130,6 +134,7 @@ export function workspaceVcsRepoToTerraform(struct?: WorkspaceVcsRepoOutputRefer
     identifier: cdktf.stringToTerraform(struct!.identifier),
     ingress_submodules: cdktf.booleanToTerraform(struct!.ingressSubmodules),
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
+    tags_regex: cdktf.stringToTerraform(struct!.tagsRegex),
   }
 }
 
@@ -163,6 +168,10 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.oauthTokenId = this._oauthTokenId;
     }
+    if (this._tagsRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagsRegex = this._tagsRegex;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -173,6 +182,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
       this._identifier = undefined;
       this._ingressSubmodules = undefined;
       this._oauthTokenId = undefined;
+      this._tagsRegex = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -180,6 +190,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
       this._identifier = value.identifier;
       this._ingressSubmodules = value.ingressSubmodules;
       this._oauthTokenId = value.oauthTokenId;
+      this._tagsRegex = value.tagsRegex;
     }
   }
 
@@ -240,6 +251,22 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
   public get oauthTokenIdInput() {
     return this._oauthTokenId;
   }
+
+  // tags_regex - computed: false, optional: true, required: false
+  private _tagsRegex?: string; 
+  public get tagsRegex() {
+    return this.getStringAttribute('tags_regex');
+  }
+  public set tagsRegex(value: string) {
+    this._tagsRegex = value;
+  }
+  public resetTagsRegex() {
+    this._tagsRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsRegexInput() {
+    return this._tagsRegex;
+  }
 }
 
 /**
@@ -268,7 +295,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.35.0',
+        providerVersion: '0.36.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
