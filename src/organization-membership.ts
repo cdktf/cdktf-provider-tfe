@@ -50,7 +50,7 @@ export class OrganizationMembership extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_membership',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.35.0',
+        providerVersion: '0.36.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

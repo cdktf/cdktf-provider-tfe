@@ -78,7 +78,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_notification_configuration',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.35.0',
+        providerVersion: '0.36.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

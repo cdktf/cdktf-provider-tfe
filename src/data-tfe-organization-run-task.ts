@@ -12,6 +12,10 @@ export interface DataTfeOrganizationRunTaskConfig extends cdktf.TerraformMetaArg
   */
   readonly category?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#description DataTfeOrganizationRunTask#description}
+  */
+  readonly description?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#enabled DataTfeOrganizationRunTask#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -62,7 +66,7 @@ export class DataTfeOrganizationRunTask extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.35.0',
+        providerVersion: '0.36.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -74,6 +78,7 @@ export class DataTfeOrganizationRunTask extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._category = config.category;
+    this._description = config.description;
     this._enabled = config.enabled;
     this._id = config.id;
     this._name = config.name;
@@ -99,6 +104,22 @@ export class DataTfeOrganizationRunTask extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
     return this._category;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // enabled - computed: false, optional: true, required: false
@@ -182,6 +203,7 @@ export class DataTfeOrganizationRunTask extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       category: cdktf.stringToTerraform(this._category),
+      description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

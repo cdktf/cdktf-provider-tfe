@@ -86,6 +86,11 @@ export class DataTfeWorkspaceVcsRepoOutputReference extends cdktf.ComplexObject 
   public get oauthTokenId() {
     return this.getStringAttribute('oauth_token_id');
   }
+
+  // tags_regex - computed: true, optional: false, required: false
+  public get tagsRegex() {
+    return this.getStringAttribute('tags_regex');
+  }
 }
 
 export class DataTfeWorkspaceVcsRepoList extends cdktf.ComplexList {
@@ -133,7 +138,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.35.0',
+        providerVersion: '0.36.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

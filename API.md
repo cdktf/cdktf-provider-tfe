@@ -1161,6 +1161,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`resetCategory`](#cdktfprovidertfedatatfeorganizationruntaskresetcategory) | *No description.* |
+| [`resetDescription`](#cdktfprovidertfedatatfeorganizationruntaskresetdescription) | *No description.* |
 | [`resetEnabled`](#cdktfprovidertfedatatfeorganizationruntaskresetenabled) | *No description.* |
 | [`resetId`](#cdktfprovidertfedatatfeorganizationruntaskresetid) | *No description.* |
 | [`resetUrl`](#cdktfprovidertfedatatfeorganizationruntaskreseturl) | *No description.* |
@@ -1171,6 +1172,12 @@ Must be unique amongst siblings in the same scope
 
 ```typescript
 public resetCategory()
+```
+
+##### `resetDescription` <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTask.resetDescription" id="cdktfprovidertfedatatfeorganizationruntaskresetdescription"></a>
+
+```typescript
+public resetDescription()
 ```
 
 ##### `resetEnabled` <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTask.resetEnabled" id="cdktfprovidertfedatatfeorganizationruntaskresetenabled"></a>
@@ -1197,12 +1204,14 @@ public resetUrl()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`categoryInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertycategoryinput) | `string` | *No description.* |
+| [`descriptionInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertydescriptioninput) | `string` | *No description.* |
 | [`enabledInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertyenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`idInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertyidinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertynameinput) | `string` | *No description.* |
 | [`organizationInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertyorganizationinput) | `string` | *No description.* |
 | [`urlInput`](#cdktfprovidertfedatatfeorganizationruntaskpropertyurlinput) | `string` | *No description.* |
 | [`category`](#cdktfprovidertfedatatfeorganizationruntaskpropertycategory)<span title="Required">*</span> | `string` | *No description.* |
+| [`description`](#cdktfprovidertfedatatfeorganizationruntaskpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enabled`](#cdktfprovidertfedatatfeorganizationruntaskpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeorganizationruntaskpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeorganizationruntaskpropertyname)<span title="Required">*</span> | `string` | *No description.* |
@@ -1215,6 +1224,16 @@ public resetUrl()
 
 ```typescript
 public readonly categoryInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTask.property.descriptionInput" id="cdktfprovidertfedatatfeorganizationruntaskpropertydescriptioninput"></a>
+
+```typescript
+public readonly descriptionInput: string;
 ```
 
 - *Type:* `string`
@@ -1275,6 +1294,16 @@ public readonly urlInput: string;
 
 ```typescript
 public readonly category: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTask.property.description" id="cdktfprovidertfedatatfeorganizationruntaskpropertydescription"></a>
+
+```typescript
+public readonly description: string;
 ```
 
 - *Type:* `string`
@@ -4843,6 +4872,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`resetCategory`](#cdktfprovidertfeorganizationruntaskresetcategory) | *No description.* |
+| [`resetDescription`](#cdktfprovidertfeorganizationruntaskresetdescription) | *No description.* |
 | [`resetEnabled`](#cdktfprovidertfeorganizationruntaskresetenabled) | *No description.* |
 | [`resetHmacKey`](#cdktfprovidertfeorganizationruntaskresethmackey) | *No description.* |
 | [`resetId`](#cdktfprovidertfeorganizationruntaskresetid) | *No description.* |
@@ -4853,6 +4883,12 @@ Must be unique amongst siblings in the same scope
 
 ```typescript
 public resetCategory()
+```
+
+##### `resetDescription` <a name="@cdktf/provider-tfe.OrganizationRunTask.resetDescription" id="cdktfprovidertfeorganizationruntaskresetdescription"></a>
+
+```typescript
+public resetDescription()
 ```
 
 ##### `resetEnabled` <a name="@cdktf/provider-tfe.OrganizationRunTask.resetEnabled" id="cdktfprovidertfeorganizationruntaskresetenabled"></a>
@@ -4879,6 +4915,7 @@ public resetId()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`categoryInput`](#cdktfprovidertfeorganizationruntaskpropertycategoryinput) | `string` | *No description.* |
+| [`descriptionInput`](#cdktfprovidertfeorganizationruntaskpropertydescriptioninput) | `string` | *No description.* |
 | [`enabledInput`](#cdktfprovidertfeorganizationruntaskpropertyenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`hmacKeyInput`](#cdktfprovidertfeorganizationruntaskpropertyhmackeyinput) | `string` | *No description.* |
 | [`idInput`](#cdktfprovidertfeorganizationruntaskpropertyidinput) | `string` | *No description.* |
@@ -4886,6 +4923,7 @@ public resetId()
 | [`organizationInput`](#cdktfprovidertfeorganizationruntaskpropertyorganizationinput) | `string` | *No description.* |
 | [`urlInput`](#cdktfprovidertfeorganizationruntaskpropertyurlinput) | `string` | *No description.* |
 | [`category`](#cdktfprovidertfeorganizationruntaskpropertycategory)<span title="Required">*</span> | `string` | *No description.* |
+| [`description`](#cdktfprovidertfeorganizationruntaskpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enabled`](#cdktfprovidertfeorganizationruntaskpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`hmacKey`](#cdktfprovidertfeorganizationruntaskpropertyhmackey)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovidertfeorganizationruntaskpropertyid)<span title="Required">*</span> | `string` | *No description.* |
@@ -4899,6 +4937,16 @@ public resetId()
 
 ```typescript
 public readonly categoryInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationRunTask.property.descriptionInput" id="cdktfprovidertfeorganizationruntaskpropertydescriptioninput"></a>
+
+```typescript
+public readonly descriptionInput: string;
 ```
 
 - *Type:* `string`
@@ -4969,6 +5017,16 @@ public readonly urlInput: string;
 
 ```typescript
 public readonly category: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-tfe.OrganizationRunTask.property.description" id="cdktfprovidertfeorganizationruntaskpropertydescription"></a>
+
+```typescript
+public readonly description: string;
 ```
 
 - *Type:* `string`
@@ -10671,6 +10729,7 @@ const dataTfeOrganizationRunTaskConfig: DataTfeOrganizationRunTaskConfig = { ...
 | [`name`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#name DataTfeOrganizationRunTask#name}. |
 | [`organization`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#organization DataTfeOrganizationRunTask#organization}. |
 | [`category`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertycategory) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#category DataTfeOrganizationRunTask#category}. |
+| [`description`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#description DataTfeOrganizationRunTask#description}. |
 | [`enabled`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#enabled DataTfeOrganizationRunTask#enabled}. |
 | [`id`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#id DataTfeOrganizationRunTask#id}. |
 | [`url`](#cdktfprovidertfedatatfeorganizationruntaskconfigpropertyurl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#url DataTfeOrganizationRunTask#url}. |
@@ -10780,6 +10839,18 @@ public readonly category: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#category DataTfeOrganizationRunTask#category}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfeOrganizationRunTaskConfig.property.description" id="cdktfprovidertfedatatfeorganizationruntaskconfigpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_run_task#description DataTfeOrganizationRunTask#description}.
 
 ---
 
@@ -13375,6 +13446,7 @@ const organizationRunTaskConfig: OrganizationRunTaskConfig = { ... }
 | [`organization`](#cdktfprovidertfeorganizationruntaskconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#organization OrganizationRunTask#organization}. |
 | [`url`](#cdktfprovidertfeorganizationruntaskconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#url OrganizationRunTask#url}. |
 | [`category`](#cdktfprovidertfeorganizationruntaskconfigpropertycategory) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#category OrganizationRunTask#category}. |
+| [`description`](#cdktfprovidertfeorganizationruntaskconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#description OrganizationRunTask#description}. |
 | [`enabled`](#cdktfprovidertfeorganizationruntaskconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#enabled OrganizationRunTask#enabled}. |
 | [`hmacKey`](#cdktfprovidertfeorganizationruntaskconfigpropertyhmackey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#hmac_key OrganizationRunTask#hmac_key}. |
 | [`id`](#cdktfprovidertfeorganizationruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#id OrganizationRunTask#id}. |
@@ -13496,6 +13568,18 @@ public readonly category: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#category OrganizationRunTask#category}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationRunTaskConfig.property.description" id="cdktfprovidertfeorganizationruntaskconfigpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_run_task#description OrganizationRunTask#description}.
 
 ---
 
@@ -17276,6 +17360,7 @@ const workspaceVcsRepo: WorkspaceVcsRepo = { ... }
 | [`oauthTokenId`](#cdktfprovidertfeworkspacevcsrepopropertyoauthtokenid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}. |
 | [`branch`](#cdktfprovidertfeworkspacevcsrepopropertybranch) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#branch Workspace#branch}. |
 | [`ingressSubmodules`](#cdktfprovidertfeworkspacevcsrepopropertyingresssubmodules) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ingress_submodules Workspace#ingress_submodules}. |
+| [`tagsRegex`](#cdktfprovidertfeworkspacevcsrepopropertytagsregex) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tags_regex Workspace#tags_regex}. |
 
 ---
 
@@ -17324,6 +17409,18 @@ public readonly ingressSubmodules: boolean | IResolvable;
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ingress_submodules Workspace#ingress_submodules}.
+
+---
+
+##### `tagsRegex`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVcsRepo.property.tagsRegex" id="cdktfprovidertfeworkspacevcsrepopropertytagsregex"></a>
+
+```typescript
+public readonly tagsRegex: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tags_regex Workspace#tags_regex}.
 
 ---
 
@@ -18277,6 +18374,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`identifier`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyidentifier)<span title="Required">*</span> | `string` | *No description.* |
 | [`ingressSubmodules`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyingresssubmodules)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`oauthTokenId`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyoauthtokenid)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagsRegex`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertytagsregex)<span title="Required">*</span> | `string` | *No description.* |
 | [`internalValue`](#cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo`](#@cdktf/provider-tfe.DataTfeWorkspaceVcsRepo) | *No description.* |
 
 ---
@@ -18315,6 +18413,16 @@ public readonly ingressSubmodules: IResolvable;
 
 ```typescript
 public readonly oauthTokenId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagsRegex`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceVcsRepoOutputReference.property.tagsRegex" id="cdktfprovidertfedatatfeworkspacevcsrepooutputreferencepropertytagsregex"></a>
+
+```typescript
+public readonly tagsRegex: string;
 ```
 
 - *Type:* `string`
@@ -19204,6 +19312,7 @@ The attribute on the parent resource this class is referencing.
 | --- | --- |
 | [`resetBranch`](#cdktfprovidertfeworkspacevcsrepooutputreferenceresetbranch) | *No description.* |
 | [`resetIngressSubmodules`](#cdktfprovidertfeworkspacevcsrepooutputreferenceresetingresssubmodules) | *No description.* |
+| [`resetTagsRegex`](#cdktfprovidertfeworkspacevcsrepooutputreferenceresettagsregex) | *No description.* |
 
 ---
 
@@ -19219,6 +19328,12 @@ public resetBranch()
 public resetIngressSubmodules()
 ```
 
+##### `resetTagsRegex` <a name="@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference.resetTagsRegex" id="cdktfprovidertfeworkspacevcsrepooutputreferenceresettagsregex"></a>
+
+```typescript
+public resetTagsRegex()
+```
+
 
 #### Properties <a name="Properties" id="properties"></a>
 
@@ -19228,10 +19343,12 @@ public resetIngressSubmodules()
 | [`identifierInput`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyidentifierinput) | `string` | *No description.* |
 | [`ingressSubmodulesInput`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyingresssubmodulesinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`oauthTokenIdInput`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyoauthtokenidinput) | `string` | *No description.* |
+| [`tagsRegexInput`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertytagsregexinput) | `string` | *No description.* |
 | [`branch`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertybranch)<span title="Required">*</span> | `string` | *No description.* |
 | [`identifier`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyidentifier)<span title="Required">*</span> | `string` | *No description.* |
 | [`ingressSubmodules`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyingresssubmodules)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`oauthTokenId`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyoauthtokenid)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagsRegex`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertytagsregex)<span title="Required">*</span> | `string` | *No description.* |
 | [`internalValue`](#cdktfprovidertfeworkspacevcsrepooutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.WorkspaceVcsRepo`](#@cdktf/provider-tfe.WorkspaceVcsRepo) | *No description.* |
 
 ---
@@ -19276,6 +19393,16 @@ public readonly oauthTokenIdInput: string;
 
 ---
 
+##### `tagsRegexInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference.property.tagsRegexInput" id="cdktfprovidertfeworkspacevcsrepooutputreferencepropertytagsregexinput"></a>
+
+```typescript
+public readonly tagsRegexInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `branch`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference.property.branch" id="cdktfprovidertfeworkspacevcsrepooutputreferencepropertybranch"></a>
 
 ```typescript
@@ -19310,6 +19437,16 @@ public readonly ingressSubmodules: boolean | IResolvable;
 
 ```typescript
 public readonly oauthTokenId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagsRegex`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference.property.tagsRegex" id="cdktfprovidertfeworkspacevcsrepooutputreferencepropertytagsregex"></a>
+
+```typescript
+public readonly tagsRegex: string;
 ```
 
 - *Type:* `string`
