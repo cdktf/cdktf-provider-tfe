@@ -54,7 +54,7 @@ export class SshKey extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

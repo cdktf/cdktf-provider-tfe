@@ -138,7 +138,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -162,6 +162,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // allow_destroy_plan - computed: true, optional: false, required: false
   public get allowDestroyPlan() {
     return this.getBooleanAttribute('allow_destroy_plan');
+  }
+
+  // assessments_enabled - computed: true, optional: false, required: false
+  public get assessmentsEnabled() {
+    return this.getBooleanAttribute('assessments_enabled');
   }
 
   // auto_apply - computed: true, optional: false, required: false
