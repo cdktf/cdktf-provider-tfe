@@ -46,7 +46,7 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -64,6 +64,11 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // assessments_enforced - computed: true, optional: false, required: false
+  public get assessmentsEnforced() {
+    return this.getBooleanAttribute('assessments_enforced');
+  }
 
   // collaborator_auth_policy - computed: true, optional: false, required: false
   public get collaboratorAuthPolicy() {

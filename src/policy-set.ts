@@ -220,7 +220,7 @@ export class PolicySet extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_policy_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -369,7 +369,7 @@ export class PolicySet extends cdktf.TerraformResource {
     return this._slug;
   }
 
-  // workspace_ids - computed: false, optional: true, required: false
+  // workspace_ids - computed: true, optional: true, required: false
   private _workspaceIds?: string[]; 
   public get workspaceIds() {
     return cdktf.Fn.tolist(this.getListAttribute('workspace_ids'));

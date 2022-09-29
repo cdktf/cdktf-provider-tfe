@@ -817,6 +817,7 @@ public resetId()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`assessmentsEnforced`](#cdktfprovidertfedatatfeorganizationpropertyassessmentsenforced)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfedatatfeorganizationpropertycollaboratorauthpolicy)<span title="Required">*</span> | `string` | *No description.* |
 | [`costEstimationEnabled`](#cdktfprovidertfedatatfeorganizationpropertycostestimationenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`email`](#cdktfprovidertfedatatfeorganizationpropertyemail)<span title="Required">*</span> | `string` | *No description.* |
@@ -828,6 +829,16 @@ public resetId()
 | [`nameInput`](#cdktfprovidertfedatatfeorganizationpropertynameinput) | `string` | *No description.* |
 | [`id`](#cdktfprovidertfedatatfeorganizationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidertfedatatfeorganizationpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `assessmentsEnforced`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeOrganization.property.assessmentsEnforced" id="cdktfprovidertfedatatfeorganizationpropertyassessmentsenforced"></a>
+
+```typescript
+public readonly assessmentsEnforced: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1679,6 +1690,218 @@ public readonly workspace: string;
 ---
 
 ##### `tfResourceType` <a name="@cdktf/provider-tfe.DataTfeOutputs.property.tfResourceType" id="cdktfprovidertfedatatfeoutputspropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### DataTfePolicySet <a name="@cdktf/provider-tfe.DataTfePolicySet" id="cdktfprovidertfedatatfepolicyset"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/tfe/d/policy_set tfe_policy_set}.
+
+#### Initializers <a name="@cdktf/provider-tfe.DataTfePolicySet.Initializer" id="cdktfprovidertfedatatfepolicysetinitializer"></a>
+
+```typescript
+import { DataTfePolicySet } from '@cdktf/provider-tfe'
+
+new DataTfePolicySet(scope: Construct, id: string, config: DataTfePolicySetConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidertfedatatfepolicysetparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidertfedatatfepolicysetparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidertfedatatfepolicysetparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-tfe.DataTfePolicySetConfig`](#@cdktf/provider-tfe.DataTfePolicySetConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.parameter.scope" id="cdktfprovidertfedatatfepolicysetparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.parameter.id" id="cdktfprovidertfedatatfepolicysetparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.parameter.config" id="cdktfprovidertfedatatfepolicysetparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-tfe.DataTfePolicySetConfig`](#@cdktf/provider-tfe.DataTfePolicySetConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetId`](#cdktfprovidertfedatatfepolicysetresetid) | *No description.* |
+
+---
+
+##### `resetId` <a name="@cdktf/provider-tfe.DataTfePolicySet.resetId" id="cdktfprovidertfedatatfepolicysetresetid"></a>
+
+```typescript
+public resetId()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`description`](#cdktfprovidertfedatatfepolicysetpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`global`](#cdktfprovidertfedatatfepolicysetpropertyglobal)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`policiesPath`](#cdktfprovidertfedatatfepolicysetpropertypoliciespath)<span title="Required">*</span> | `string` | *No description.* |
+| [`policyIds`](#cdktfprovidertfedatatfepolicysetpropertypolicyids)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`vcsRepo`](#cdktfprovidertfedatatfepolicysetpropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.DataTfePolicySetVcsRepoList`](#@cdktf/provider-tfe.DataTfePolicySetVcsRepoList) | *No description.* |
+| [`workspaceIds`](#cdktfprovidertfedatatfepolicysetpropertyworkspaceids)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`idInput`](#cdktfprovidertfedatatfepolicysetpropertyidinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidertfedatatfepolicysetpropertynameinput) | `string` | *No description.* |
+| [`organizationInput`](#cdktfprovidertfedatatfepolicysetpropertyorganizationinput) | `string` | *No description.* |
+| [`id`](#cdktfprovidertfedatatfepolicysetpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidertfedatatfepolicysetpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`organization`](#cdktfprovidertfedatatfepolicysetpropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.description" id="cdktfprovidertfedatatfepolicysetpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `global`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.global" id="cdktfprovidertfedatatfepolicysetpropertyglobal"></a>
+
+```typescript
+public readonly global: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `policiesPath`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.policiesPath" id="cdktfprovidertfedatatfepolicysetpropertypoliciespath"></a>
+
+```typescript
+public readonly policiesPath: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `policyIds`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.policyIds" id="cdktfprovidertfedatatfepolicysetpropertypolicyids"></a>
+
+```typescript
+public readonly policyIds: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `vcsRepo`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.vcsRepo" id="cdktfprovidertfedatatfepolicysetpropertyvcsrepo"></a>
+
+```typescript
+public readonly vcsRepo: DataTfePolicySetVcsRepoList;
+```
+
+- *Type:* [`@cdktf/provider-tfe.DataTfePolicySetVcsRepoList`](#@cdktf/provider-tfe.DataTfePolicySetVcsRepoList)
+
+---
+
+##### `workspaceIds`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.workspaceIds" id="cdktfprovidertfedatatfepolicysetpropertyworkspaceids"></a>
+
+```typescript
+public readonly workspaceIds: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.idInput" id="cdktfprovidertfedatatfepolicysetpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.nameInput" id="cdktfprovidertfedatatfepolicysetpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `organizationInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.organizationInput" id="cdktfprovidertfedatatfepolicysetpropertyorganizationinput"></a>
+
+```typescript
+public readonly organizationInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.id" id="cdktfprovidertfedatatfepolicysetpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.name" id="cdktfprovidertfedatatfepolicysetpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `organization`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySet.property.organization" id="cdktfprovidertfedatatfepolicysetpropertyorganization"></a>
+
+```typescript
+public readonly organization: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidertfedatatfepolicysetpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-tfe.DataTfePolicySet.property.tfResourceType" id="cdktfprovidertfedatatfepolicysetpropertytfresourcetype"></a>
 
 - *Type:* `string`
 
@@ -2769,6 +2992,7 @@ public resetTagNames()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`allowDestroyPlan`](#cdktfprovidertfedatatfeworkspacepropertyallowdestroyplan)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`assessmentsEnabled`](#cdktfprovidertfedatatfeworkspacepropertyassessmentsenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`autoApply`](#cdktfprovidertfedatatfeworkspacepropertyautoapply)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`description`](#cdktfprovidertfedatatfeworkspacepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`fileTriggersEnabled`](#cdktfprovidertfedatatfeworkspacepropertyfiletriggersenabled)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -2803,6 +3027,16 @@ public resetTagNames()
 
 ```typescript
 public readonly allowDestroyPlan: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `assessmentsEnabled`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspace.property.assessmentsEnabled" id="cdktfprovidertfedatatfeworkspacepropertyassessmentsenabled"></a>
+
+```typescript
+public readonly assessmentsEnabled: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -3390,6 +3624,7 @@ public resetId()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`enforcementLevel`](#cdktfprovidertfedatatfeworkspaceruntaskpropertyenforcementlevel)<span title="Required">*</span> | `string` | *No description.* |
+| [`stage`](#cdktfprovidertfedatatfeworkspaceruntaskpropertystage)<span title="Required">*</span> | `string` | *No description.* |
 | [`idInput`](#cdktfprovidertfedatatfeworkspaceruntaskpropertyidinput) | `string` | *No description.* |
 | [`taskIdInput`](#cdktfprovidertfedatatfeworkspaceruntaskpropertytaskidinput) | `string` | *No description.* |
 | [`workspaceIdInput`](#cdktfprovidertfedatatfeworkspaceruntaskpropertyworkspaceidinput) | `string` | *No description.* |
@@ -3403,6 +3638,16 @@ public resetId()
 
 ```typescript
 public readonly enforcementLevel: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `stage`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfeWorkspaceRunTask.property.stage" id="cdktfprovidertfedatatfeworkspaceruntaskpropertystage"></a>
+
+```typescript
+public readonly stage: string;
 ```
 
 - *Type:* `string`
@@ -4248,6 +4493,7 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
+| [`resetAssessmentsEnforced`](#cdktfprovidertfeorganizationresetassessmentsenforced) | *No description.* |
 | [`resetCollaboratorAuthPolicy`](#cdktfprovidertfeorganizationresetcollaboratorauthpolicy) | *No description.* |
 | [`resetCostEstimationEnabled`](#cdktfprovidertfeorganizationresetcostestimationenabled) | *No description.* |
 | [`resetId`](#cdktfprovidertfeorganizationresetid) | *No description.* |
@@ -4257,6 +4503,12 @@ Must be unique amongst siblings in the same scope
 | [`resetSessionTimeoutMinutes`](#cdktfprovidertfeorganizationresetsessiontimeoutminutes) | *No description.* |
 
 ---
+
+##### `resetAssessmentsEnforced` <a name="@cdktf/provider-tfe.Organization.resetAssessmentsEnforced" id="cdktfprovidertfeorganizationresetassessmentsenforced"></a>
+
+```typescript
+public resetAssessmentsEnforced()
+```
 
 ##### `resetCollaboratorAuthPolicy` <a name="@cdktf/provider-tfe.Organization.resetCollaboratorAuthPolicy" id="cdktfprovidertfeorganizationresetcollaboratorauthpolicy"></a>
 
@@ -4305,6 +4557,7 @@ public resetSessionTimeoutMinutes()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`assessmentsEnforcedInput`](#cdktfprovidertfeorganizationpropertyassessmentsenforcedinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`collaboratorAuthPolicyInput`](#cdktfprovidertfeorganizationpropertycollaboratorauthpolicyinput) | `string` | *No description.* |
 | [`costEstimationEnabledInput`](#cdktfprovidertfeorganizationpropertycostestimationenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`emailInput`](#cdktfprovidertfeorganizationpropertyemailinput) | `string` | *No description.* |
@@ -4314,6 +4567,7 @@ public resetSessionTimeoutMinutes()
 | [`sendPassingStatusesForUntriggeredSpeculativePlansInput`](#cdktfprovidertfeorganizationpropertysendpassingstatusesforuntriggeredspeculativeplansinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`sessionRememberMinutesInput`](#cdktfprovidertfeorganizationpropertysessionrememberminutesinput) | `number` | *No description.* |
 | [`sessionTimeoutMinutesInput`](#cdktfprovidertfeorganizationpropertysessiontimeoutminutesinput) | `number` | *No description.* |
+| [`assessmentsEnforced`](#cdktfprovidertfeorganizationpropertyassessmentsenforced)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationpropertycollaboratorauthpolicy)<span title="Required">*</span> | `string` | *No description.* |
 | [`costEstimationEnabled`](#cdktfprovidertfeorganizationpropertycostestimationenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`email`](#cdktfprovidertfeorganizationpropertyemail)<span title="Required">*</span> | `string` | *No description.* |
@@ -4323,6 +4577,16 @@ public resetSessionTimeoutMinutes()
 | [`sendPassingStatusesForUntriggeredSpeculativePlans`](#cdktfprovidertfeorganizationpropertysendpassingstatusesforuntriggeredspeculativeplans)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`sessionRememberMinutes`](#cdktfprovidertfeorganizationpropertysessionrememberminutes)<span title="Required">*</span> | `number` | *No description.* |
 | [`sessionTimeoutMinutes`](#cdktfprovidertfeorganizationpropertysessiontimeoutminutes)<span title="Required">*</span> | `number` | *No description.* |
+
+---
+
+##### `assessmentsEnforcedInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.Organization.property.assessmentsEnforcedInput" id="cdktfprovidertfeorganizationpropertyassessmentsenforcedinput"></a>
+
+```typescript
+public readonly assessmentsEnforcedInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -4413,6 +4677,16 @@ public readonly sessionTimeoutMinutesInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `assessmentsEnforced`<sup>Required</sup> <a name="@cdktf/provider-tfe.Organization.property.assessmentsEnforced" id="cdktfprovidertfeorganizationpropertyassessmentsenforced"></a>
+
+```typescript
+public readonly assessmentsEnforced: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -8837,6 +9111,7 @@ Must be unique amongst siblings in the same scope
 | [`putVcsRepo`](#cdktfprovidertfeworkspaceputvcsrepo) | *No description.* |
 | [`resetAgentPoolId`](#cdktfprovidertfeworkspaceresetagentpoolid) | *No description.* |
 | [`resetAllowDestroyPlan`](#cdktfprovidertfeworkspaceresetallowdestroyplan) | *No description.* |
+| [`resetAssessmentsEnabled`](#cdktfprovidertfeworkspaceresetassessmentsenabled) | *No description.* |
 | [`resetAutoApply`](#cdktfprovidertfeworkspaceresetautoapply) | *No description.* |
 | [`resetDescription`](#cdktfprovidertfeworkspaceresetdescription) | *No description.* |
 | [`resetExecutionMode`](#cdktfprovidertfeworkspaceresetexecutionmode) | *No description.* |
@@ -8880,6 +9155,12 @@ public resetAgentPoolId()
 
 ```typescript
 public resetAllowDestroyPlan()
+```
+
+##### `resetAssessmentsEnabled` <a name="@cdktf/provider-tfe.Workspace.resetAssessmentsEnabled" id="cdktfprovidertfeworkspaceresetassessmentsenabled"></a>
+
+```typescript
+public resetAssessmentsEnabled()
 ```
 
 ##### `resetAutoApply` <a name="@cdktf/provider-tfe.Workspace.resetAutoApply" id="cdktfprovidertfeworkspaceresetautoapply"></a>
@@ -8998,6 +9279,7 @@ public resetWorkingDirectory()
 | [`vcsRepo`](#cdktfprovidertfeworkspacepropertyvcsrepo)<span title="Required">*</span> | [`@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference`](#@cdktf/provider-tfe.WorkspaceVcsRepoOutputReference) | *No description.* |
 | [`agentPoolIdInput`](#cdktfprovidertfeworkspacepropertyagentpoolidinput) | `string` | *No description.* |
 | [`allowDestroyPlanInput`](#cdktfprovidertfeworkspacepropertyallowdestroyplaninput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`assessmentsEnabledInput`](#cdktfprovidertfeworkspacepropertyassessmentsenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`autoApplyInput`](#cdktfprovidertfeworkspacepropertyautoapplyinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`descriptionInput`](#cdktfprovidertfeworkspacepropertydescriptioninput) | `string` | *No description.* |
 | [`executionModeInput`](#cdktfprovidertfeworkspacepropertyexecutionmodeinput) | `string` | *No description.* |
@@ -9020,6 +9302,7 @@ public resetWorkingDirectory()
 | [`workingDirectoryInput`](#cdktfprovidertfeworkspacepropertyworkingdirectoryinput) | `string` | *No description.* |
 | [`agentPoolId`](#cdktfprovidertfeworkspacepropertyagentpoolid)<span title="Required">*</span> | `string` | *No description.* |
 | [`allowDestroyPlan`](#cdktfprovidertfeworkspacepropertyallowdestroyplan)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`assessmentsEnabled`](#cdktfprovidertfeworkspacepropertyassessmentsenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`autoApply`](#cdktfprovidertfeworkspacepropertyautoapply)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`description`](#cdktfprovidertfeworkspacepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`executionMode`](#cdktfprovidertfeworkspacepropertyexecutionmode)<span title="Required">*</span> | `string` | *No description.* |
@@ -9066,6 +9349,16 @@ public readonly agentPoolIdInput: string;
 
 ```typescript
 public readonly allowDestroyPlanInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `assessmentsEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.Workspace.property.assessmentsEnabledInput" id="cdktfprovidertfeworkspacepropertyassessmentsenabledinput"></a>
+
+```typescript
+public readonly assessmentsEnabledInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -9292,6 +9585,16 @@ public readonly allowDestroyPlan: boolean | IResolvable;
 
 ---
 
+##### `assessmentsEnabled`<sup>Required</sup> <a name="@cdktf/provider-tfe.Workspace.property.assessmentsEnabled" id="cdktfprovidertfeworkspacepropertyassessmentsenabled"></a>
+
+```typescript
+public readonly assessmentsEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `autoApply`<sup>Required</sup> <a name="@cdktf/provider-tfe.Workspace.property.autoApply" id="cdktfprovidertfeworkspacepropertyautoapply"></a>
 
 ```typescript
@@ -9496,6 +9799,152 @@ public readonly workingDirectory: string;
 
 ---
 
+### WorkspacePolicySet <a name="@cdktf/provider-tfe.WorkspacePolicySet" id="cdktfprovidertfeworkspacepolicyset"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set tfe_workspace_policy_set}.
+
+#### Initializers <a name="@cdktf/provider-tfe.WorkspacePolicySet.Initializer" id="cdktfprovidertfeworkspacepolicysetinitializer"></a>
+
+```typescript
+import { WorkspacePolicySet } from '@cdktf/provider-tfe'
+
+new WorkspacePolicySet(scope: Construct, id: string, config: WorkspacePolicySetConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidertfeworkspacepolicysetparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidertfeworkspacepolicysetparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidertfeworkspacepolicysetparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-tfe.WorkspacePolicySetConfig`](#@cdktf/provider-tfe.WorkspacePolicySetConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.parameter.scope" id="cdktfprovidertfeworkspacepolicysetparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.parameter.id" id="cdktfprovidertfeworkspacepolicysetparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.parameter.config" id="cdktfprovidertfeworkspacepolicysetparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-tfe.WorkspacePolicySetConfig`](#@cdktf/provider-tfe.WorkspacePolicySetConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetId`](#cdktfprovidertfeworkspacepolicysetresetid) | *No description.* |
+
+---
+
+##### `resetId` <a name="@cdktf/provider-tfe.WorkspacePolicySet.resetId" id="cdktfprovidertfeworkspacepolicysetresetid"></a>
+
+```typescript
+public resetId()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`idInput`](#cdktfprovidertfeworkspacepolicysetpropertyidinput) | `string` | *No description.* |
+| [`policySetIdInput`](#cdktfprovidertfeworkspacepolicysetpropertypolicysetidinput) | `string` | *No description.* |
+| [`workspaceIdInput`](#cdktfprovidertfeworkspacepolicysetpropertyworkspaceidinput) | `string` | *No description.* |
+| [`id`](#cdktfprovidertfeworkspacepolicysetpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`policySetId`](#cdktfprovidertfeworkspacepolicysetpropertypolicysetid)<span title="Required">*</span> | `string` | *No description.* |
+| [`workspaceId`](#cdktfprovidertfeworkspacepolicysetpropertyworkspaceid)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.idInput" id="cdktfprovidertfeworkspacepolicysetpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `policySetIdInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.policySetIdInput" id="cdktfprovidertfeworkspacepolicysetpropertypolicysetidinput"></a>
+
+```typescript
+public readonly policySetIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workspaceIdInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.workspaceIdInput" id="cdktfprovidertfeworkspacepolicysetpropertyworkspaceidinput"></a>
+
+```typescript
+public readonly workspaceIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.id" id="cdktfprovidertfeworkspacepolicysetpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `policySetId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.policySetId" id="cdktfprovidertfeworkspacepolicysetpropertypolicysetid"></a>
+
+```typescript
+public readonly policySetId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.workspaceId" id="cdktfprovidertfeworkspacepolicysetpropertyworkspaceid"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidertfeworkspacepolicysetpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-tfe.WorkspacePolicySet.property.tfResourceType" id="cdktfprovidertfeworkspacepolicysetpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### WorkspaceRunTask <a name="@cdktf/provider-tfe.WorkspaceRunTask" id="cdktfprovidertfeworkspaceruntask"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task tfe_workspace_run_task}.
@@ -9545,6 +9994,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`resetId`](#cdktfprovidertfeworkspaceruntaskresetid) | *No description.* |
+| [`resetStage`](#cdktfprovidertfeworkspaceruntaskresetstage) | *No description.* |
 
 ---
 
@@ -9554,6 +10004,12 @@ Must be unique amongst siblings in the same scope
 public resetId()
 ```
 
+##### `resetStage` <a name="@cdktf/provider-tfe.WorkspaceRunTask.resetStage" id="cdktfprovidertfeworkspaceruntaskresetstage"></a>
+
+```typescript
+public resetStage()
+```
+
 
 #### Properties <a name="Properties" id="properties"></a>
 
@@ -9561,10 +10017,12 @@ public resetId()
 | --- | --- | --- |
 | [`enforcementLevelInput`](#cdktfprovidertfeworkspaceruntaskpropertyenforcementlevelinput) | `string` | *No description.* |
 | [`idInput`](#cdktfprovidertfeworkspaceruntaskpropertyidinput) | `string` | *No description.* |
+| [`stageInput`](#cdktfprovidertfeworkspaceruntaskpropertystageinput) | `string` | *No description.* |
 | [`taskIdInput`](#cdktfprovidertfeworkspaceruntaskpropertytaskidinput) | `string` | *No description.* |
 | [`workspaceIdInput`](#cdktfprovidertfeworkspaceruntaskpropertyworkspaceidinput) | `string` | *No description.* |
 | [`enforcementLevel`](#cdktfprovidertfeworkspaceruntaskpropertyenforcementlevel)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovidertfeworkspaceruntaskpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`stage`](#cdktfprovidertfeworkspaceruntaskpropertystage)<span title="Required">*</span> | `string` | *No description.* |
 | [`taskId`](#cdktfprovidertfeworkspaceruntaskpropertytaskid)<span title="Required">*</span> | `string` | *No description.* |
 | [`workspaceId`](#cdktfprovidertfeworkspaceruntaskpropertyworkspaceid)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -9584,6 +10042,16 @@ public readonly enforcementLevelInput: string;
 
 ```typescript
 public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `stageInput`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTask.property.stageInput" id="cdktfprovidertfeworkspaceruntaskpropertystageinput"></a>
+
+```typescript
+public readonly stageInput: string;
 ```
 
 - *Type:* `string`
@@ -9624,6 +10092,16 @@ public readonly enforcementLevel: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `stage`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTask.property.stage" id="cdktfprovidertfeworkspaceruntaskpropertystage"></a>
+
+```typescript
+public readonly stage: string;
 ```
 
 - *Type:* `string`
@@ -11151,6 +11629,152 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 
 ---
 
+### DataTfePolicySetConfig <a name="@cdktf/provider-tfe.DataTfePolicySetConfig" id="cdktfprovidertfedatatfepolicysetconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataTfePolicySetConfig } from '@cdktf/provider-tfe'
+
+const dataTfePolicySetConfig: DataTfePolicySetConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`connection`](#cdktfprovidertfedatatfepolicysetconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
+| [`count`](#cdktfprovidertfedatatfepolicysetconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidertfedatatfepolicysetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfedatatfepolicysetconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
+| [`lifecycle`](#cdktfprovidertfedatatfepolicysetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidertfedatatfepolicysetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfedatatfepolicysetconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`name`](#cdktfprovidertfedatatfepolicysetconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#name DataTfePolicySet#name}. |
+| [`organization`](#cdktfprovidertfedatatfepolicysetconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#organization DataTfePolicySet#organization}. |
+| [`id`](#cdktfprovidertfedatatfepolicysetconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#id DataTfePolicySet#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.connection" id="cdktfprovidertfedatatfepolicysetconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.count" id="cdktfprovidertfedatatfepolicysetconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.dependsOn" id="cdktfprovidertfedatatfepolicysetconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.forEach" id="cdktfprovidertfedatatfepolicysetconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.lifecycle" id="cdktfprovidertfedatatfepolicysetconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.provider" id="cdktfprovidertfedatatfepolicysetconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.provisioners" id="cdktfprovidertfedatatfepolicysetconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.name" id="cdktfprovidertfedatatfepolicysetconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#name DataTfePolicySet#name}.
+
+---
+
+##### `organization`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.organization" id="cdktfprovidertfedatatfepolicysetconfigpropertyorganization"></a>
+
+```typescript
+public readonly organization: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#organization DataTfePolicySet#organization}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetConfig.property.id" id="cdktfprovidertfedatatfepolicysetconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#id DataTfePolicySet#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataTfePolicySetVcsRepo <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepo" id="cdktfprovidertfedatatfepolicysetvcsrepo"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataTfePolicySetVcsRepo } from '@cdktf/provider-tfe'
+
+const dataTfePolicySetVcsRepo: DataTfePolicySetVcsRepo = { ... }
+```
+
+
 ### DataTfeSlugConfig <a name="@cdktf/provider-tfe.DataTfeSlugConfig" id="cdktfprovidertfedatatfeslugconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -12348,8 +12972,8 @@ const dataTfeWorkspaceRunTaskConfig: DataTfeWorkspaceRunTaskConfig = { ... }
 | [`lifecycle`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`provisioners`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
-| [`taskId`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertytaskid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}. |
-| [`workspaceId`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}. |
+| [`taskId`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertytaskid)<span title="Required">*</span> | `string` | The id of the run task. |
+| [`workspaceId`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | The id of the workspace. |
 | [`id`](#cdktfprovidertfedatatfeworkspaceruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#id DataTfeWorkspaceRunTask#id}. |
 
 ---
@@ -12432,7 +13056,9 @@ public readonly taskId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}.
+The id of the run task.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}
 
 ---
 
@@ -12444,7 +13070,9 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}.
+The id of the workspace.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}
 
 ---
 
@@ -12961,6 +13589,7 @@ const organizationConfig: OrganizationConfig = { ... }
 | [`provisioners`](#cdktfprovidertfeorganizationconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`email`](#cdktfprovidertfeorganizationconfigpropertyemail)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}. |
 | [`name`](#cdktfprovidertfeorganizationconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}. |
+| [`assessmentsEnforced`](#cdktfprovidertfeorganizationconfigpropertyassessmentsenforced) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#assessments_enforced Organization#assessments_enforced}. |
 | [`collaboratorAuthPolicy`](#cdktfprovidertfeorganizationconfigpropertycollaboratorauthpolicy) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
 | [`costEstimationEnabled`](#cdktfprovidertfeorganizationconfigpropertycostestimationenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | [`id`](#cdktfprovidertfeorganizationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#id Organization#id}. |
@@ -13062,6 +13691,18 @@ public readonly name: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}.
+
+---
+
+##### `assessmentsEnforced`<sup>Optional</sup> <a name="@cdktf/provider-tfe.OrganizationConfig.property.assessmentsEnforced" id="cdktfprovidertfeorganizationconfigpropertyassessmentsenforced"></a>
+
+```typescript
+public readonly assessmentsEnforced: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#assessments_enforced Organization#assessments_enforced}.
 
 ---
 
@@ -16700,6 +17341,7 @@ const workspaceConfig: WorkspaceConfig = { ... }
 | [`organization`](#cdktfprovidertfeworkspaceconfigpropertyorganization)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#organization Workspace#organization}. |
 | [`agentPoolId`](#cdktfprovidertfeworkspaceconfigpropertyagentpoolid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#agent_pool_id Workspace#agent_pool_id}. |
 | [`allowDestroyPlan`](#cdktfprovidertfeworkspaceconfigpropertyallowdestroyplan) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| [`assessmentsEnabled`](#cdktfprovidertfeworkspaceconfigpropertyassessmentsenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#assessments_enabled Workspace#assessments_enabled}. |
 | [`autoApply`](#cdktfprovidertfeworkspaceconfigpropertyautoapply) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#auto_apply Workspace#auto_apply}. |
 | [`description`](#cdktfprovidertfeworkspaceconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#description Workspace#description}. |
 | [`executionMode`](#cdktfprovidertfeworkspaceconfigpropertyexecutionmode) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#execution_mode Workspace#execution_mode}. |
@@ -16836,6 +17478,18 @@ public readonly allowDestroyPlan: boolean | IResolvable;
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
+
+---
+
+##### `assessmentsEnabled`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceConfig.property.assessmentsEnabled" id="cdktfprovidertfeworkspaceconfigpropertyassessmentsenabled"></a>
+
+```typescript
+public readonly assessmentsEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#assessments_enabled Workspace#assessments_enabled}.
 
 ---
 
@@ -17059,6 +17713,141 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+### WorkspacePolicySetConfig <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig" id="cdktfprovidertfeworkspacepolicysetconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkspacePolicySetConfig } from '@cdktf/provider-tfe'
+
+const workspacePolicySetConfig: WorkspacePolicySetConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`connection`](#cdktfprovidertfeworkspacepolicysetconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
+| [`count`](#cdktfprovidertfeworkspacepolicysetconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidertfeworkspacepolicysetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidertfeworkspacepolicysetconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
+| [`lifecycle`](#cdktfprovidertfeworkspacepolicysetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidertfeworkspacepolicysetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidertfeworkspacepolicysetconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`policySetId`](#cdktfprovidertfeworkspacepolicysetconfigpropertypolicysetid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}. |
+| [`workspaceId`](#cdktfprovidertfeworkspacepolicysetconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}. |
+| [`id`](#cdktfprovidertfeworkspacepolicysetconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set#id WorkspacePolicySet#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.connection" id="cdktfprovidertfeworkspacepolicysetconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.count" id="cdktfprovidertfeworkspacepolicysetconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.dependsOn" id="cdktfprovidertfeworkspacepolicysetconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.forEach" id="cdktfprovidertfeworkspacepolicysetconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.lifecycle" id="cdktfprovidertfeworkspacepolicysetconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.provider" id="cdktfprovidertfeworkspacepolicysetconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.provisioners" id="cdktfprovidertfeworkspacepolicysetconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
+
+---
+
+##### `policySetId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.policySetId" id="cdktfprovidertfeworkspacepolicysetconfigpropertypolicysetid"></a>
+
+```typescript
+public readonly policySetId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}.
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.workspaceId" id="cdktfprovidertfeworkspacepolicysetconfigpropertyworkspaceid"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspacePolicySetConfig.property.id" id="cdktfprovidertfeworkspacepolicysetconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_policy_set#id WorkspacePolicySet#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ### WorkspaceRunTaskConfig <a name="@cdktf/provider-tfe.WorkspaceRunTaskConfig" id="cdktfprovidertfeworkspaceruntaskconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -17080,10 +17869,11 @@ const workspaceRunTaskConfig: WorkspaceRunTaskConfig = { ... }
 | [`lifecycle`](#cdktfprovidertfeworkspaceruntaskconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidertfeworkspaceruntaskconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`provisioners`](#cdktfprovidertfeworkspaceruntaskconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
-| [`enforcementLevel`](#cdktfprovidertfeworkspaceruntaskconfigpropertyenforcementlevel)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}. |
-| [`taskId`](#cdktfprovidertfeworkspaceruntaskconfigpropertytaskid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#task_id WorkspaceRunTask#task_id}. |
-| [`workspaceId`](#cdktfprovidertfeworkspaceruntaskconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}. |
+| [`enforcementLevel`](#cdktfprovidertfeworkspaceruntaskconfigpropertyenforcementlevel)<span title="Required">*</span> | `string` | The enforcement level of the task. Valid values are `advisory` and `mandatory`. |
+| [`taskId`](#cdktfprovidertfeworkspaceruntaskconfigpropertytaskid)<span title="Required">*</span> | `string` | The id of the Run task to associate to the Workspace. |
+| [`workspaceId`](#cdktfprovidertfeworkspaceruntaskconfigpropertyworkspaceid)<span title="Required">*</span> | `string` | The id of the workspace to associate the Run task to. |
 | [`id`](#cdktfprovidertfeworkspaceruntaskconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#id WorkspaceRunTask#id}. |
+| [`stage`](#cdktfprovidertfeworkspaceruntaskconfigpropertystage) | `string` | This is currently in BETA. The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`. |
 
 ---
 
@@ -17165,7 +17955,9 @@ public readonly enforcementLevel: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}.
+The enforcement level of the task. Valid values are `advisory` and `mandatory`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
 
 ---
 
@@ -17177,7 +17969,9 @@ public readonly taskId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#task_id WorkspaceRunTask#task_id}.
+The id of the Run task to associate to the Workspace.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#task_id WorkspaceRunTask#task_id}
 
 ---
 
@@ -17189,7 +17983,9 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}.
+The id of the workspace to associate the Run task to.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
 
 ---
 
@@ -17204,6 +18000,20 @@ public readonly id: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#id WorkspaceRunTask#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `stage`<sup>Optional</sup> <a name="@cdktf/provider-tfe.WorkspaceRunTaskConfig.property.stage" id="cdktfprovidertfeworkspaceruntaskconfigpropertystage"></a>
+
+```typescript
+public readonly stage: string;
+```
+
+- *Type:* `string`
+
+This is currently in BETA. The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#stage WorkspaceRunTask#stage}
 
 ---
 
@@ -17425,6 +18235,189 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 ---
 
 ## Classes <a name="Classes" id="classes"></a>
+
+### DataTfePolicySetVcsRepoList <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList" id="cdktfprovidertfedatatfepolicysetvcsrepolist"></a>
+
+#### Initializers <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList.Initializer" id="cdktfprovidertfedatatfepolicysetvcsrepolistinitializer"></a>
+
+```typescript
+import { DataTfePolicySetVcsRepoList } from '@cdktf/provider-tfe'
+
+new DataTfePolicySetVcsRepoList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidertfedatatfepolicysetvcsrepolistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfedatatfepolicysetvcsrepolistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidertfedatatfepolicysetvcsrepolistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList.parameter.terraformResource" id="cdktfprovidertfedatatfepolicysetvcsrepolistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList.parameter.terraformAttribute" id="cdktfprovidertfedatatfepolicysetvcsrepolistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList.parameter.wrapsSet" id="cdktfprovidertfedatatfepolicysetvcsrepolistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidertfedatatfepolicysetvcsrepolistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList.get" id="cdktfprovidertfedatatfepolicysetvcsrepolistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoList.parameter.index" id="cdktfprovidertfedatatfepolicysetvcsrepolistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataTfePolicySetVcsRepoOutputReference <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.Initializer" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceinitializer"></a>
+
+```typescript
+import { DataTfePolicySetVcsRepoOutputReference } from '@cdktf/provider-tfe'
+
+new DataTfePolicySetVcsRepoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.parameter.terraformResource" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.parameter.terraformAttribute" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.parameter.complexObjectIndex" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`branch`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertybranch)<span title="Required">*</span> | `string` | *No description.* |
+| [`identifier`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyidentifier)<span title="Required">*</span> | `string` | *No description.* |
+| [`ingressSubmodules`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyingresssubmodules)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`oauthTokenId`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyoauthtokenid)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyinternalvalue) | [`@cdktf/provider-tfe.DataTfePolicySetVcsRepo`](#@cdktf/provider-tfe.DataTfePolicySetVcsRepo) | *No description.* |
+
+---
+
+##### `branch`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.property.branch" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertybranch"></a>
+
+```typescript
+public readonly branch: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.property.identifier" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyidentifier"></a>
+
+```typescript
+public readonly identifier: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `ingressSubmodules`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.property.ingressSubmodules" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyingresssubmodules"></a>
+
+```typescript
+public readonly ingressSubmodules: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `oauthTokenId`<sup>Required</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.property.oauthTokenId" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyoauthtokenid"></a>
+
+```typescript
+public readonly oauthTokenId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-tfe.DataTfePolicySetVcsRepoOutputReference.property.internalValue" id="cdktfprovidertfedatatfepolicysetvcsrepooutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: DataTfePolicySetVcsRepo;
+```
+
+- *Type:* [`@cdktf/provider-tfe.DataTfePolicySetVcsRepo`](#@cdktf/provider-tfe.DataTfePolicySetVcsRepo)
+
+---
+
 
 ### DataTfeTeamAccessPermissionsList <a name="@cdktf/provider-tfe.DataTfeTeamAccessPermissionsList" id="cdktfprovidertfedatatfeteamaccesspermissionslist"></a>
 

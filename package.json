@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/hashicorp/tfe",
-      "version": "0.36.1"
+      "version": "0.37.0"
     }
   },
   "resolutions": {

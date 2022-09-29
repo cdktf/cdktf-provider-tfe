@@ -16,6 +16,10 @@ export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowDestroyPlan?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#assessments_enabled Workspace#assessments_enabled}
+  */
+  readonly assessmentsEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#auto_apply Workspace#auto_apply}
   */
   readonly autoApply?: boolean | cdktf.IResolvable;
@@ -295,7 +299,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -308,6 +312,7 @@ export class Workspace extends cdktf.TerraformResource {
     });
     this._agentPoolId = config.agentPoolId;
     this._allowDestroyPlan = config.allowDestroyPlan;
+    this._assessmentsEnabled = config.assessmentsEnabled;
     this._autoApply = config.autoApply;
     this._description = config.description;
     this._executionMode = config.executionMode;
@@ -364,6 +369,22 @@ export class Workspace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowDestroyPlanInput() {
     return this._allowDestroyPlan;
+  }
+
+  // assessments_enabled - computed: false, optional: true, required: false
+  private _assessmentsEnabled?: boolean | cdktf.IResolvable; 
+  public get assessmentsEnabled() {
+    return this.getBooleanAttribute('assessments_enabled');
+  }
+  public set assessmentsEnabled(value: boolean | cdktf.IResolvable) {
+    this._assessmentsEnabled = value;
+  }
+  public resetAssessmentsEnabled() {
+    this._assessmentsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assessmentsEnabledInput() {
+    return this._assessmentsEnabled;
   }
 
   // auto_apply - computed: false, optional: true, required: false
@@ -688,6 +709,7 @@ export class Workspace extends cdktf.TerraformResource {
     return {
       agent_pool_id: cdktf.stringToTerraform(this._agentPoolId),
       allow_destroy_plan: cdktf.booleanToTerraform(this._allowDestroyPlan),
+      assessments_enabled: cdktf.booleanToTerraform(this._assessmentsEnabled),
       auto_apply: cdktf.booleanToTerraform(this._autoApply),
       description: cdktf.stringToTerraform(this._description),
       execution_mode: cdktf.stringToTerraform(this._executionMode),

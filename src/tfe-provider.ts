@@ -60,7 +60,7 @@ export class TfeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'tfe',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       terraformProviderSource: 'hashicorp/tfe'

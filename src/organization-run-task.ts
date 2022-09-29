@@ -70,7 +70,7 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

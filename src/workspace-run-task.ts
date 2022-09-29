@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceRunTaskConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The enforcement level of the task. Valid values are `advisory` and `mandatory`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
   */
   readonly enforcementLevel: string;
@@ -19,10 +21,20 @@ export interface WorkspaceRunTaskConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * This is currently in BETA. The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#stage WorkspaceRunTask#stage}
+  */
+  readonly stage?: string;
+  /**
+  * The id of the Run task to associate to the Workspace.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#task_id WorkspaceRunTask#task_id}
   */
   readonly taskId: string;
   /**
+  * The id of the workspace to associate the Run task to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
   */
   readonly workspaceId: string;
@@ -54,7 +66,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.36.1',
+        providerVersion: '0.37.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -67,6 +79,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
     });
     this._enforcementLevel = config.enforcementLevel;
     this._id = config.id;
+    this._stage = config.stage;
     this._taskId = config.taskId;
     this._workspaceId = config.workspaceId;
   }
@@ -104,6 +117,22 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // stage - computed: false, optional: true, required: false
+  private _stage?: string; 
+  public get stage() {
+    return this.getStringAttribute('stage');
+  }
+  public set stage(value: string) {
+    this._stage = value;
+  }
+  public resetStage() {
+    this._stage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageInput() {
+    return this._stage;
+  }
+
   // task_id - computed: false, optional: false, required: true
   private _taskId?: string; 
   public get taskId() {
@@ -138,6 +167,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
     return {
       enforcement_level: cdktf.stringToTerraform(this._enforcementLevel),
       id: cdktf.stringToTerraform(this._id),
+      stage: cdktf.stringToTerraform(this._stage),
       task_id: cdktf.stringToTerraform(this._taskId),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
