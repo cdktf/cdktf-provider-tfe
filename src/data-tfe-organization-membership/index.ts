@@ -10,7 +10,7 @@ export interface DataTfeOrganizationMembershipConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#email DataTfeOrganizationMembership#email}
   */
-  readonly email: string;
+  readonly email?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#id DataTfeOrganizationMembership#id}
   *
@@ -22,6 +22,10 @@ export interface DataTfeOrganizationMembershipConfig extends cdktf.TerraformMeta
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#organization DataTfeOrganizationMembership#organization}
   */
   readonly organization: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#username DataTfeOrganizationMembership#username}
+  */
+  readonly username?: string;
 }
 
 /**
@@ -50,7 +54,7 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization_membership',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.37.0',
+        providerVersion: '0.38.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -64,19 +68,23 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
     this._email = config.email;
     this._id = config.id;
     this._organization = config.organization;
+    this._username = config.username;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // email - computed: false, optional: false, required: true
+  // email - computed: false, optional: true, required: false
   private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
   public set email(value: string) {
     this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
@@ -117,6 +125,22 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
     return this.getStringAttribute('user_id');
   }
 
+  // username - computed: true, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -126,6 +150,7 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
       email: cdktf.stringToTerraform(this._email),
       id: cdktf.stringToTerraform(this._id),
       organization: cdktf.stringToTerraform(this._organization),
+      username: cdktf.stringToTerraform(this._username),
     };
   }
 }
