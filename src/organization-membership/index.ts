@@ -50,7 +50,7 @@ export class OrganizationMembership extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_membership',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.37.0',
+        providerVersion: '0.38.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -115,6 +115,11 @@ export class OrganizationMembership extends cdktf.TerraformResource {
   // user_id - computed: true, optional: false, required: false
   public get userId() {
     return this.getStringAttribute('user_id');
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
   }
 
   // =========
