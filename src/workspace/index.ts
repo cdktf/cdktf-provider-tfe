@@ -36,6 +36,10 @@ export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fileTriggersEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#force_delete Workspace#force_delete}
+  */
+  readonly forceDelete?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#global_remote_state Workspace#global_remote_state}
   */
   readonly globalRemoteState?: boolean | cdktf.IResolvable;
@@ -299,7 +303,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.38.0',
+        providerVersion: '0.39.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -317,6 +321,7 @@ export class Workspace extends cdktf.TerraformResource {
     this._description = config.description;
     this._executionMode = config.executionMode;
     this._fileTriggersEnabled = config.fileTriggersEnabled;
+    this._forceDelete = config.forceDelete;
     this._globalRemoteState = config.globalRemoteState;
     this._id = config.id;
     this._name = config.name;
@@ -449,6 +454,22 @@ export class Workspace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get fileTriggersEnabledInput() {
     return this._fileTriggersEnabled;
+  }
+
+  // force_delete - computed: false, optional: true, required: false
+  private _forceDelete?: boolean | cdktf.IResolvable; 
+  public get forceDelete() {
+    return this.getBooleanAttribute('force_delete');
+  }
+  public set forceDelete(value: boolean | cdktf.IResolvable) {
+    this._forceDelete = value;
+  }
+  public resetForceDelete() {
+    this._forceDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteInput() {
+    return this._forceDelete;
   }
 
   // global_remote_state - computed: true, optional: true, required: false
@@ -714,6 +735,7 @@ export class Workspace extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       execution_mode: cdktf.stringToTerraform(this._executionMode),
       file_triggers_enabled: cdktf.booleanToTerraform(this._fileTriggersEnabled),
+      force_delete: cdktf.booleanToTerraform(this._forceDelete),
       global_remote_state: cdktf.booleanToTerraform(this._globalRemoteState),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
