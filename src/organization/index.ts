@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}
+  */
+  readonly allowForceDeleteWorkspaces?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#assessments_enforced Organization#assessments_enforced}
   */
   readonly assessmentsEnforced?: boolean | cdktf.IResolvable;
@@ -78,7 +82,7 @@ export class Organization extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.38.0',
+        providerVersion: '0.39.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -89,6 +93,7 @@ export class Organization extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allowForceDeleteWorkspaces = config.allowForceDeleteWorkspaces;
     this._assessmentsEnforced = config.assessmentsEnforced;
     this._collaboratorAuthPolicy = config.collaboratorAuthPolicy;
     this._costEstimationEnabled = config.costEstimationEnabled;
@@ -104,6 +109,22 @@ export class Organization extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_force_delete_workspaces - computed: false, optional: true, required: false
+  private _allowForceDeleteWorkspaces?: boolean | cdktf.IResolvable; 
+  public get allowForceDeleteWorkspaces() {
+    return this.getBooleanAttribute('allow_force_delete_workspaces');
+  }
+  public set allowForceDeleteWorkspaces(value: boolean | cdktf.IResolvable) {
+    this._allowForceDeleteWorkspaces = value;
+  }
+  public resetAllowForceDeleteWorkspaces() {
+    this._allowForceDeleteWorkspaces = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowForceDeleteWorkspacesInput() {
+    return this._allowForceDeleteWorkspaces;
+  }
 
   // assessments_enforced - computed: false, optional: true, required: false
   private _assessmentsEnforced?: boolean | cdktf.IResolvable; 
@@ -265,6 +286,7 @@ export class Organization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_force_delete_workspaces: cdktf.booleanToTerraform(this._allowForceDeleteWorkspaces),
       assessments_enforced: cdktf.booleanToTerraform(this._assessmentsEnforced),
       collaborator_auth_policy: cdktf.stringToTerraform(this._collaboratorAuthPolicy),
       cost_estimation_enabled: cdktf.booleanToTerraform(this._costEstimationEnabled),
