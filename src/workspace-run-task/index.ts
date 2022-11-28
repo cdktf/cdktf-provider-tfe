@@ -21,7 +21,7 @@ export interface WorkspaceRunTaskConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * This is currently in BETA. The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`.
+  * The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace_run_task#stage WorkspaceRunTask#stage}
   */
@@ -66,7 +66,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.38.0',
+        providerVersion: '0.39.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

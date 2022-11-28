@@ -27,6 +27,10 @@ export interface RegistryModuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly namespace?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#no_code RegistryModule#no_code}
+  */
+  readonly noCode?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#organization RegistryModule#organization}
   */
   readonly organization?: string;
@@ -178,7 +182,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.38.0',
+        providerVersion: '0.39.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -193,6 +197,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     this._moduleProvider = config.moduleProvider;
     this._name = config.name;
     this._namespace = config.namespace;
+    this._noCode = config.noCode;
     this._organization = config.organization;
     this._registryName = config.registryName;
     this._vcsRepo.internalValue = config.vcsRepo;
@@ -266,6 +271,22 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._namespace;
   }
 
+  // no_code - computed: true, optional: true, required: false
+  private _noCode?: boolean | cdktf.IResolvable; 
+  public get noCode() {
+    return this.getBooleanAttribute('no_code');
+  }
+  public set noCode(value: boolean | cdktf.IResolvable) {
+    this._noCode = value;
+  }
+  public resetNoCode() {
+    this._noCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noCodeInput() {
+    return this._noCode;
+  }
+
   // organization - computed: true, optional: true, required: false
   private _organization?: string; 
   public get organization() {
@@ -324,6 +345,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       module_provider: cdktf.stringToTerraform(this._moduleProvider),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
+      no_code: cdktf.booleanToTerraform(this._noCode),
       organization: cdktf.stringToTerraform(this._organization),
       registry_name: cdktf.stringToTerraform(this._registryName),
       vcs_repo: registryModuleVcsRepoToTerraform(this._vcsRepo.internalValue),
