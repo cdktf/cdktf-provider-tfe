@@ -182,7 +182,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.39.0',
+        providerVersion: '0.40.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

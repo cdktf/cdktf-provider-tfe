@@ -63,6 +63,10 @@ export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly organization: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#project_id Workspace#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#queue_all_runs Workspace#queue_all_runs}
   */
   readonly queueAllRuns?: boolean | cdktf.IResolvable;
@@ -303,7 +307,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.39.0',
+        providerVersion: '0.40.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -327,6 +331,7 @@ export class Workspace extends cdktf.TerraformResource {
     this._name = config.name;
     this._operations = config.operations;
     this._organization = config.organization;
+    this._projectId = config.projectId;
     this._queueAllRuns = config.queueAllRuns;
     this._remoteStateConsumerIds = config.remoteStateConsumerIds;
     this._speculativeEnabled = config.speculativeEnabled;
@@ -546,6 +551,22 @@ export class Workspace extends cdktf.TerraformResource {
     return this._organization;
   }
 
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // queue_all_runs - computed: false, optional: true, required: false
   private _queueAllRuns?: boolean | cdktf.IResolvable; 
   public get queueAllRuns() {
@@ -741,6 +762,7 @@ export class Workspace extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       operations: cdktf.booleanToTerraform(this._operations),
       organization: cdktf.stringToTerraform(this._organization),
+      project_id: cdktf.stringToTerraform(this._projectId),
       queue_all_runs: cdktf.booleanToTerraform(this._queueAllRuns),
       remote_state_consumer_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._remoteStateConsumerIds),
       speculative_enabled: cdktf.booleanToTerraform(this._speculativeEnabled),

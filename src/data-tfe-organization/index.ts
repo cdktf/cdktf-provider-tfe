@@ -46,7 +46,7 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.39.0',
+        providerVersion: '0.40.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -78,6 +78,11 @@ export class DataTfeOrganization extends cdktf.TerraformDataSource {
   // cost_estimation_enabled - computed: true, optional: false, required: false
   public get costEstimationEnabled() {
     return this.getBooleanAttribute('cost_estimation_enabled');
+  }
+
+  // default_project_id - computed: true, optional: false, required: false
+  public get defaultProjectId() {
+    return this.getStringAttribute('default_project_id');
   }
 
   // email - computed: true, optional: false, required: false

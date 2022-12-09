@@ -138,7 +138,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.39.0',
+        providerVersion: '0.40.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -239,6 +239,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // policy_check_failures - computed: true, optional: false, required: false
   public get policyCheckFailures() {
     return this.getNumberAttribute('policy_check_failures');
+  }
+
+  // project_id - computed: true, optional: false, required: false
+  public get projectId() {
+    return this.getStringAttribute('project_id');
   }
 
   // queue_all_runs - computed: true, optional: false, required: false

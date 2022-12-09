@@ -15,6 +15,12 @@ export interface DataTfePolicySetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The policy-as-code framework for the policy. Valid values are sentinel and opa
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#kind DataTfePolicySet#kind}
+  */
+  readonly kind?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#name DataTfePolicySet#name}
   */
   readonly name: string;
@@ -22,6 +28,12 @@ export interface DataTfePolicySetConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#organization DataTfePolicySet#organization}
   */
   readonly organization: string;
+  /**
+  * Whether users can override this policy when it fails during a run. Only valid for OPA policies
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/policy_set#overridable DataTfePolicySet#overridable}
+  */
+  readonly overridable?: boolean | cdktf.IResolvable;
 }
 export interface DataTfePolicySetVcsRepo {
 }
@@ -129,7 +141,7 @@ export class DataTfePolicySet extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_policy_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.39.0',
+        providerVersion: '0.40.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -141,8 +153,10 @@ export class DataTfePolicySet extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._kind = config.kind;
     this._name = config.name;
     this._organization = config.organization;
+    this._overridable = config.overridable;
   }
 
   // ==========
@@ -175,6 +189,22 @@ export class DataTfePolicySet extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // kind - computed: false, optional: true, required: false
+  private _kind?: string; 
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+  public set kind(value: string) {
+    this._kind = value;
+  }
+  public resetKind() {
+    this._kind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kindInput() {
+    return this._kind;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -199,6 +229,22 @@ export class DataTfePolicySet extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
     return this._organization;
+  }
+
+  // overridable - computed: false, optional: true, required: false
+  private _overridable?: boolean | cdktf.IResolvable; 
+  public get overridable() {
+    return this.getBooleanAttribute('overridable');
+  }
+  public set overridable(value: boolean | cdktf.IResolvable) {
+    this._overridable = value;
+  }
+  public resetOverridable() {
+    this._overridable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overridableInput() {
+    return this._overridable;
   }
 
   // policies_path - computed: true, optional: false, required: false
@@ -229,8 +275,10 @@ export class DataTfePolicySet extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
+      overridable: cdktf.booleanToTerraform(this._overridable),
     };
   }
 }
