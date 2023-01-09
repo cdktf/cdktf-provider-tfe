@@ -51,7 +51,7 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_outputs',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.40.0',
+        providerVersion: '0.41.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -74,6 +74,12 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // nonsensitive_values - computed: true, optional: false, required: false
+  private _nonsensitiveValues = new cdktf.AnyMap(this, "nonsensitive_values");
+  public get nonsensitiveValues() {
+    return this._nonsensitiveValues;
   }
 
   // organization - computed: false, optional: false, required: true

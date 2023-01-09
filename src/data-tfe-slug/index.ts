@@ -46,7 +46,7 @@ export class DataTfeSlug extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_slug',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.40.0',
+        providerVersion: '0.41.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

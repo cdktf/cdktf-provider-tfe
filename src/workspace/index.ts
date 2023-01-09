@@ -307,7 +307,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.40.0',
+        providerVersion: '0.41.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -597,6 +597,11 @@ export class Workspace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get remoteStateConsumerIdsInput() {
     return this._remoteStateConsumerIds;
+  }
+
+  // resource_count - computed: true, optional: false, required: false
+  public get resourceCount() {
+    return this.getNumberAttribute('resource_count');
   }
 
   // speculative_enabled - computed: false, optional: true, required: false
