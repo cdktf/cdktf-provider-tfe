@@ -50,7 +50,7 @@ export class TeamToken extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team_token',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.40.0',
+        providerVersion: '0.41.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
