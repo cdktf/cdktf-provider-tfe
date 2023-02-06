@@ -21,7 +21,7 @@ export interface DataTfeWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#organization DataTfeWorkspace#organization}
   */
-  readonly organization: string;
+  readonly organization?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/workspace#tag_names DataTfeWorkspace#tag_names}
   */
@@ -138,7 +138,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -177,6 +177,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // execution_mode - computed: true, optional: false, required: false
+  public get executionMode() {
+    return this.getStringAttribute('execution_mode');
   }
 
   // file_triggers_enabled - computed: true, optional: false, required: false
@@ -223,13 +228,16 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('operations');
   }
 
-  // organization - computed: false, optional: false, required: true
+  // organization - computed: false, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
   public set organization(value: string) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {

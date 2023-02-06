@@ -14,6 +14,13 @@ export interface TfeProviderConfig {
   */
   readonly hostname?: string;
   /**
+  * The organization to apply to a resource if one is not defined on
+the resource itself
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#organization TfeProvider#organization}
+  */
+  readonly organization?: string;
+  /**
   * Whether or not to skip certificate verifications.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#ssl_skip_verify TfeProvider#ssl_skip_verify}
@@ -60,12 +67,13 @@ export class TfeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'tfe',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.0',
         providerVersionConstraint: '~> 0.33'
       },
       terraformProviderSource: 'hashicorp/tfe'
     });
     this._hostname = config.hostname;
+    this._organization = config.organization;
     this._sslSkipVerify = config.sslSkipVerify;
     this._token = config.token;
     this._alias = config.alias;
@@ -89,6 +97,22 @@ export class TfeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get hostnameInput() {
     return this._hostname;
+  }
+
+  // organization - computed: false, optional: true, required: false
+  private _organization?: string; 
+  public get organization() {
+    return this._organization;
+  }
+  public set organization(value: string | undefined) {
+    this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationInput() {
+    return this._organization;
   }
 
   // ssl_skip_verify - computed: false, optional: true, required: false
@@ -146,6 +170,7 @@ export class TfeProvider extends cdktf.TerraformProvider {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       hostname: cdktf.stringToTerraform(this._hostname),
+      organization: cdktf.stringToTerraform(this._organization),
       ssl_skip_verify: cdktf.booleanToTerraform(this._sslSkipVerify),
       token: cdktf.stringToTerraform(this._token),
       alias: cdktf.stringToTerraform(this._alias),

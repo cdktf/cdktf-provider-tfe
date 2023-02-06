@@ -21,7 +21,7 @@ export interface DataTfeOrganizationMembershipConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#organization DataTfeOrganizationMembership#organization}
   */
-  readonly organization: string;
+  readonly organization?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_membership#username DataTfeOrganizationMembership#username}
   */
@@ -47,14 +47,14 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataTfeOrganizationMembershipConfig
+  * @param options DataTfeOrganizationMembershipConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataTfeOrganizationMembershipConfig) {
+  public constructor(scope: Construct, id: string, config: DataTfeOrganizationMembershipConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'tfe_organization_membership',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -107,13 +107,16 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // organization - computed: false, optional: false, required: true
+  // organization - computed: false, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
   public set organization(value: string) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
