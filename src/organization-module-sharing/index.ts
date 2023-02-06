@@ -21,7 +21,7 @@ export interface OrganizationModuleSharingConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}
   */
-  readonly organization: string;
+  readonly organization?: string;
 }
 
 /**
@@ -50,7 +50,7 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_module_sharing',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -99,13 +99,16 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
     return this._moduleConsumers;
   }
 
-  // organization - computed: false, optional: false, required: true
+  // organization - computed: true, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
   public set organization(value: string) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {

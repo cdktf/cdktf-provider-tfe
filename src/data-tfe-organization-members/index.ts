@@ -17,7 +17,7 @@ export interface DataTfeOrganizationMembersConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_members#organization DataTfeOrganizationMembers#organization}
   */
-  readonly organization: string;
+  readonly organization?: string;
 }
 export interface DataTfeOrganizationMembersMembers {
 }
@@ -177,14 +177,14 @@ export class DataTfeOrganizationMembers extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataTfeOrganizationMembersConfig
+  * @param options DataTfeOrganizationMembersConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataTfeOrganizationMembersConfig) {
+  public constructor(scope: Construct, id: string, config: DataTfeOrganizationMembersConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'tfe_organization_members',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -231,13 +231,16 @@ export class DataTfeOrganizationMembers extends cdktf.TerraformDataSource {
     return this._membersWaiting;
   }
 
-  // organization - computed: false, optional: false, required: true
+  // organization - computed: false, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
   public set organization(value: string) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {

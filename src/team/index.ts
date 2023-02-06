@@ -21,7 +21,7 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#organization Team#organization}
   */
-  readonly organization: string;
+  readonly organization?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#sso_team_id Team#sso_team_id}
   */
@@ -51,6 +51,10 @@ export interface TeamOrganizationAccess {
   */
   readonly managePolicyOverrides?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_projects Team#manage_projects}
+  */
+  readonly manageProjects?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_providers Team#manage_providers}
   */
   readonly manageProviders?: boolean | cdktf.IResolvable;
@@ -77,6 +81,7 @@ export function teamOrganizationAccessToTerraform(struct?: TeamOrganizationAcces
     manage_modules: cdktf.booleanToTerraform(struct!.manageModules),
     manage_policies: cdktf.booleanToTerraform(struct!.managePolicies),
     manage_policy_overrides: cdktf.booleanToTerraform(struct!.managePolicyOverrides),
+    manage_projects: cdktf.booleanToTerraform(struct!.manageProjects),
     manage_providers: cdktf.booleanToTerraform(struct!.manageProviders),
     manage_run_tasks: cdktf.booleanToTerraform(struct!.manageRunTasks),
     manage_vcs_settings: cdktf.booleanToTerraform(struct!.manageVcsSettings),
@@ -110,6 +115,10 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.managePolicyOverrides = this._managePolicyOverrides;
     }
+    if (this._manageProjects !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.manageProjects = this._manageProjects;
+    }
     if (this._manageProviders !== undefined) {
       hasAnyValues = true;
       internalValueResult.manageProviders = this._manageProviders;
@@ -135,6 +144,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
       this._manageModules = undefined;
       this._managePolicies = undefined;
       this._managePolicyOverrides = undefined;
+      this._manageProjects = undefined;
       this._manageProviders = undefined;
       this._manageRunTasks = undefined;
       this._manageVcsSettings = undefined;
@@ -145,6 +155,7 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
       this._manageModules = value.manageModules;
       this._managePolicies = value.managePolicies;
       this._managePolicyOverrides = value.managePolicyOverrides;
+      this._manageProjects = value.manageProjects;
       this._manageProviders = value.manageProviders;
       this._manageRunTasks = value.manageRunTasks;
       this._manageVcsSettings = value.manageVcsSettings;
@@ -198,6 +209,22 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get managePolicyOverridesInput() {
     return this._managePolicyOverrides;
+  }
+
+  // manage_projects - computed: false, optional: true, required: false
+  private _manageProjects?: boolean | cdktf.IResolvable; 
+  public get manageProjects() {
+    return this.getBooleanAttribute('manage_projects');
+  }
+  public set manageProjects(value: boolean | cdktf.IResolvable) {
+    this._manageProjects = value;
+  }
+  public resetManageProjects() {
+    this._manageProjects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageProjectsInput() {
+    return this._manageProjects;
   }
 
   // manage_providers - computed: false, optional: true, required: false
@@ -291,7 +318,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -343,13 +370,16 @@ export class Team extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // organization - computed: false, optional: false, required: true
+  // organization - computed: true, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
   public set organization(value: string) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
