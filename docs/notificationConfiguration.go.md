@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/notification_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/notificationconfiguration"
 
 notificationconfiguration.NewNotificationConfiguration(scope Construct, id *string, config NotificationConfigurationConfig) NotificationConfiguration
 ```
@@ -315,7 +315,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ notificationconfiguration.NotificationConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/notificationconfiguration"
 
 &notificationconfiguration.NotificationConfigurationConfig {
 	Connection: interface{},
