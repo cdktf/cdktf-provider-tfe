@@ -82,6 +82,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetQueueAllRuns">ResetQueueAllRuns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetRemoteStateConsumerIds">ResetRemoteStateConsumerIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetSourceName">ResetSourceName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetSourceUrl">ResetSourceUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetSpeculativeEnabled">ResetSpeculativeEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetSshKeyId">ResetSshKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.resetStructuredRunOutputEnabled">ResetStructuredRunOutputEnabled</a></code> | *No description.* |
@@ -380,6 +382,18 @@ func ResetQueueAllRuns()
 func ResetRemoteStateConsumerIds()
 ```
 
+##### `ResetSourceName` <a name="ResetSourceName" id="@cdktf/provider-tfe.workspace.Workspace.resetSourceName"></a>
+
+```go
+func ResetSourceName()
+```
+
+##### `ResetSourceUrl` <a name="ResetSourceUrl" id="@cdktf/provider-tfe.workspace.Workspace.resetSourceUrl"></a>
+
+```go
+func ResetSourceUrl()
+```
+
 ##### `ResetSpeculativeEnabled` <a name="ResetSpeculativeEnabled" id="@cdktf/provider-tfe.workspace.Workspace.resetSpeculativeEnabled"></a>
 
 ```go
@@ -522,6 +536,7 @@ workspace.Workspace_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.htmlUrl">HtmlUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.resourceCount">ResourceCount</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepo">VcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference">WorkspaceVcsRepoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolIdInput">AgentPoolIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -540,6 +555,8 @@ workspace.Workspace_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">QueueAllRunsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIdsInput">RemoteStateConsumerIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceNameInput">SourceNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrlInput">SourceUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">SpeculativeEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyIdInput">SshKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">StructuredRunOutputEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -565,6 +582,8 @@ workspace.Workspace_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">QueueAllRuns</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceName">SourceName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrl">SourceUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyId">SshKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>interface{}</code> | *No description.* |
@@ -715,6 +734,16 @@ func Provisioners() *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `HtmlUrl`<sup>Required</sup> <a name="HtmlUrl" id="@cdktf/provider-tfe.workspace.Workspace.property.htmlUrl"></a>
+
+```go
+func HtmlUrl() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -895,6 +924,26 @@ func RemoteStateConsumerIdsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `SourceNameInput`<sup>Optional</sup> <a name="SourceNameInput" id="@cdktf/provider-tfe.workspace.Workspace.property.sourceNameInput"></a>
+
+```go
+func SourceNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SourceUrlInput`<sup>Optional</sup> <a name="SourceUrlInput" id="@cdktf/provider-tfe.workspace.Workspace.property.sourceUrlInput"></a>
+
+```go
+func SourceUrlInput() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1148,6 +1197,26 @@ func RemoteStateConsumerIds() *[]*string
 
 ---
 
+##### `SourceName`<sup>Required</sup> <a name="SourceName" id="@cdktf/provider-tfe.workspace.Workspace.property.sourceName"></a>
+
+```go
+func SourceName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SourceUrl`<sup>Required</sup> <a name="SourceUrl" id="@cdktf/provider-tfe.workspace.Workspace.property.sourceUrl"></a>
+
+```go
+func SourceUrl() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SpeculativeEnabled`<sup>Required</sup> <a name="SpeculativeEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled"></a>
 
 ```go
@@ -1279,6 +1348,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 	ProjectId: *string,
 	QueueAllRuns: interface{},
 	RemoteStateConsumerIds: *[]*string,
+	SourceName: *string,
+	SourceUrl: *string,
 	SpeculativeEnabled: interface{},
 	SshKeyId: *string,
 	StructuredRunOutputEnabled: interface{},
@@ -1318,6 +1389,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#project_id Workspace#project_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">QueueAllRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#queue_all_runs Workspace#queue_all_runs}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#source_name Workspace#source_name}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl">SourceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#source_url Workspace#source_url}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#speculative_enabled Workspace#speculative_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sshKeyId">SshKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ssh_key_id Workspace#ssh_key_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
@@ -1595,6 +1668,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+##### `SourceName`<sup>Optional</sup> <a name="SourceName" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName"></a>
+
+```go
+SourceName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#source_name Workspace#source_name}.
+
+---
+
+##### `SourceUrl`<sup>Optional</sup> <a name="SourceUrl" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl"></a>
+
+```go
+SourceUrl *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#source_url Workspace#source_url}.
+
+---
+
 ##### `SpeculativeEnabled`<sup>Optional</sup> <a name="SpeculativeEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled"></a>
 
 ```go
@@ -1714,9 +1811,10 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 &workspace.WorkspaceVcsRepo {
 	Identifier: *string,
-	OauthTokenId: *string,
 	Branch: *string,
+	GithubAppInstallationId: *string,
 	IngressSubmodules: interface{},
+	OauthTokenId: *string,
 	TagsRegex: *string,
 }
 ```
@@ -1726,9 +1824,10 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#identifier Workspace#identifier}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#branch Workspace#branch}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#github_app_installation_id Workspace#github_app_installation_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">IngressSubmodules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ingress_submodules Workspace#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.tagsRegex">TagsRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tags_regex Workspace#tags_regex}. |
 
 ---
@@ -1745,18 +1844,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
-##### `OauthTokenId`<sup>Required</sup> <a name="OauthTokenId" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId"></a>
-
-```go
-OauthTokenId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}.
-
----
-
 ##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch"></a>
 
 ```go
@@ -1769,6 +1856,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+##### `GithubAppInstallationId`<sup>Optional</sup> <a name="GithubAppInstallationId" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId"></a>
+
+```go
+GithubAppInstallationId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#github_app_installation_id Workspace#github_app_installation_id}.
+
+---
+
 ##### `IngressSubmodules`<sup>Optional</sup> <a name="IngressSubmodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules"></a>
 
 ```go
@@ -1778,6 +1877,18 @@ IngressSubmodules interface{}
 - *Type:* interface{}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#ingress_submodules Workspace#ingress_submodules}.
+
+---
+
+##### `OauthTokenId`<sup>Optional</sup> <a name="OauthTokenId" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId"></a>
+
+```go
+OauthTokenId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}.
 
 ---
 
@@ -1846,7 +1957,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetGithubAppInstallationId">ResetGithubAppInstallationId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetIngressSubmodules">ResetIngressSubmodules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetOauthTokenId">ResetOauthTokenId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetTagsRegex">ResetTagsRegex</a></code> | *No description.* |
 
 ---
@@ -2007,10 +2120,22 @@ Returns a reversible string representation.
 func ResetBranch()
 ```
 
+##### `ResetGithubAppInstallationId` <a name="ResetGithubAppInstallationId" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetGithubAppInstallationId"></a>
+
+```go
+func ResetGithubAppInstallationId()
+```
+
 ##### `ResetIngressSubmodules` <a name="ResetIngressSubmodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetIngressSubmodules"></a>
 
 ```go
 func ResetIngressSubmodules()
+```
+
+##### `ResetOauthTokenId` <a name="ResetOauthTokenId" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetOauthTokenId"></a>
+
+```go
+func ResetOauthTokenId()
 ```
 
 ##### `ResetTagsRegex` <a name="ResetTagsRegex" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.resetTagsRegex"></a>
@@ -2027,11 +2152,13 @@ func ResetTagsRegex()
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branchInput">BranchInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationIdInput">GithubAppInstallationIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifierInput">IdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">IngressSubmodulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenIdInput">OauthTokenIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegexInput">TagsRegexInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branch">Branch</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifier">Identifier</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">IngressSubmodules</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenId">OauthTokenId</a></code> | <code>*string</code> | *No description.* |
@@ -2068,6 +2195,16 @@ func Fqn() *string
 
 ```go
 func BranchInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GithubAppInstallationIdInput`<sup>Optional</sup> <a name="GithubAppInstallationIdInput" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationIdInput"></a>
+
+```go
+func GithubAppInstallationIdInput() *string
 ```
 
 - *Type:* *string
@@ -2118,6 +2255,16 @@ func TagsRegexInput() *string
 
 ```go
 func Branch() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GithubAppInstallationId`<sup>Required</sup> <a name="GithubAppInstallationId" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationId"></a>
+
+```go
+func GithubAppInstallationId() *string
 ```
 
 - *Type:* *string

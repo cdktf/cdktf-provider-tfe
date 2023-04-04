@@ -412,7 +412,9 @@ def put_organization_access(
   manage_providers: typing.Union[bool, IResolvable] = None,
   manage_run_tasks: typing.Union[bool, IResolvable] = None,
   manage_vcs_settings: typing.Union[bool, IResolvable] = None,
-  manage_workspaces: typing.Union[bool, IResolvable] = None
+  manage_workspaces: typing.Union[bool, IResolvable] = None,
+  read_projects: typing.Union[bool, IResolvable] = None,
+  read_workspaces: typing.Union[bool, IResolvable] = None
 ) -> None
 ```
 
@@ -477,6 +479,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}.
+
+---
+
+###### `read_projects`<sup>Optional</sup> <a name="read_projects" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.readProjects"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_projects Team#read_projects}.
+
+---
+
+###### `read_workspaces`<sup>Optional</sup> <a name="read_workspaces" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.readWorkspaces"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_workspaces Team#read_workspaces}.
 
 ---
 
@@ -1107,7 +1125,9 @@ team.TeamOrganizationAccess(
   manage_providers: typing.Union[bool, IResolvable] = None,
   manage_run_tasks: typing.Union[bool, IResolvable] = None,
   manage_vcs_settings: typing.Union[bool, IResolvable] = None,
-  manage_workspaces: typing.Union[bool, IResolvable] = None
+  manage_workspaces: typing.Union[bool, IResolvable] = None,
+  read_projects: typing.Union[bool, IResolvable] = None,
+  read_workspaces: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -1123,6 +1143,8 @@ team.TeamOrganizationAccess(
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">manage_run_tasks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_run_tasks Team#manage_run_tasks}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">manage_vcs_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_vcs_settings Team#manage_vcs_settings}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">manage_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">read_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_projects Team#read_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">read_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_workspaces Team#read_workspaces}. |
 
 ---
 
@@ -1222,6 +1244,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+##### `read_projects`<sup>Optional</sup> <a name="read_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects"></a>
+
+```python
+read_projects: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_projects Team#read_projects}.
+
+---
+
+##### `read_workspaces`<sup>Optional</sup> <a name="read_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces"></a>
+
+```python
+read_workspaces: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_workspaces Team#read_workspaces}.
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### TeamOrganizationAccessOutputReference <a name="TeamOrganizationAccessOutputReference" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference"></a>
@@ -1285,6 +1331,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetManageRunTasks">reset_manage_run_tasks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetManageVcsSettings">reset_manage_vcs_settings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetManageWorkspaces">reset_manage_workspaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadProjects">reset_read_projects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadWorkspaces">reset_read_workspaces</a></code> | *No description.* |
 
 ---
 
@@ -1508,6 +1556,18 @@ def reset_manage_vcs_settings() -> None
 def reset_manage_workspaces() -> None
 ```
 
+##### `reset_read_projects` <a name="reset_read_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadProjects"></a>
+
+```python
+def reset_read_projects() -> None
+```
+
+##### `reset_read_workspaces` <a name="reset_read_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadWorkspaces"></a>
+
+```python
+def reset_read_workspaces() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1523,6 +1583,8 @@ def reset_manage_workspaces() -> None
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput">manage_run_tasks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput">manage_vcs_settings_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput">manage_workspaces_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput">read_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput">read_workspaces_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules">manage_modules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies">manage_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides">manage_policy_overrides</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1531,6 +1593,8 @@ def reset_manage_workspaces() -> None
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks">manage_run_tasks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings">manage_vcs_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces">manage_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects">read_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces">read_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 
 ---
@@ -1639,6 +1703,26 @@ manage_workspaces_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `read_projects_input`<sup>Optional</sup> <a name="read_projects_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput"></a>
+
+```python
+read_projects_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `read_workspaces_input`<sup>Optional</sup> <a name="read_workspaces_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput"></a>
+
+```python
+read_workspaces_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `manage_modules`<sup>Required</sup> <a name="manage_modules" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules"></a>
 
 ```python
@@ -1713,6 +1797,26 @@ manage_vcs_settings: typing.Union[bool, IResolvable]
 
 ```python
 manage_workspaces: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `read_projects`<sup>Required</sup> <a name="read_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects"></a>
+
+```python
+read_projects: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `read_workspaces`<sup>Required</sup> <a name="read_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces"></a>
+
+```python
+read_workspaces: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]

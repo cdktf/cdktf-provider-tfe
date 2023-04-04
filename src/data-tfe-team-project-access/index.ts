@@ -50,7 +50,7 @@ export class DataTfeTeamProjectAccess extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_team_project_access',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

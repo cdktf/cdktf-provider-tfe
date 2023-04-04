@@ -75,6 +75,14 @@ export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly remoteStateConsumerIds?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#source_name Workspace#source_name}
+  */
+  readonly sourceName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#source_url Workspace#source_url}
+  */
+  readonly sourceUrl?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#speculative_enabled Workspace#speculative_enabled}
   */
   readonly speculativeEnabled?: boolean | cdktf.IResolvable;
@@ -119,6 +127,10 @@ export interface WorkspaceVcsRepo {
   */
   readonly branch?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#github_app_installation_id Workspace#github_app_installation_id}
+  */
+  readonly githubAppInstallationId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#identifier Workspace#identifier}
   */
   readonly identifier: string;
@@ -129,7 +141,7 @@ export interface WorkspaceVcsRepo {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#oauth_token_id Workspace#oauth_token_id}
   */
-  readonly oauthTokenId: string;
+  readonly oauthTokenId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#tags_regex Workspace#tags_regex}
   */
@@ -143,6 +155,7 @@ export function workspaceVcsRepoToTerraform(struct?: WorkspaceVcsRepoOutputRefer
   }
   return {
     branch: cdktf.stringToTerraform(struct!.branch),
+    github_app_installation_id: cdktf.stringToTerraform(struct!.githubAppInstallationId),
     identifier: cdktf.stringToTerraform(struct!.identifier),
     ingress_submodules: cdktf.booleanToTerraform(struct!.ingressSubmodules),
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
@@ -168,6 +181,10 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.branch = this._branch;
     }
+    if (this._githubAppInstallationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubAppInstallationId = this._githubAppInstallationId;
+    }
     if (this._identifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.identifier = this._identifier;
@@ -191,6 +208,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._branch = undefined;
+      this._githubAppInstallationId = undefined;
       this._identifier = undefined;
       this._ingressSubmodules = undefined;
       this._oauthTokenId = undefined;
@@ -199,6 +217,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._branch = value.branch;
+      this._githubAppInstallationId = value.githubAppInstallationId;
       this._identifier = value.identifier;
       this._ingressSubmodules = value.ingressSubmodules;
       this._oauthTokenId = value.oauthTokenId;
@@ -220,6 +239,22 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
     return this._branch;
+  }
+
+  // github_app_installation_id - computed: false, optional: true, required: false
+  private _githubAppInstallationId?: string; 
+  public get githubAppInstallationId() {
+    return this.getStringAttribute('github_app_installation_id');
+  }
+  public set githubAppInstallationId(value: string) {
+    this._githubAppInstallationId = value;
+  }
+  public resetGithubAppInstallationId() {
+    this._githubAppInstallationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubAppInstallationIdInput() {
+    return this._githubAppInstallationId;
   }
 
   // identifier - computed: false, optional: false, required: true
@@ -251,13 +286,16 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
     return this._ingressSubmodules;
   }
 
-  // oauth_token_id - computed: false, optional: false, required: true
+  // oauth_token_id - computed: false, optional: true, required: false
   private _oauthTokenId?: string; 
   public get oauthTokenId() {
     return this.getStringAttribute('oauth_token_id');
   }
   public set oauthTokenId(value: string) {
     this._oauthTokenId = value;
+  }
+  public resetOauthTokenId() {
+    this._oauthTokenId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oauthTokenIdInput() {
@@ -307,7 +345,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -334,6 +372,8 @@ export class Workspace extends cdktf.TerraformResource {
     this._projectId = config.projectId;
     this._queueAllRuns = config.queueAllRuns;
     this._remoteStateConsumerIds = config.remoteStateConsumerIds;
+    this._sourceName = config.sourceName;
+    this._sourceUrl = config.sourceUrl;
     this._speculativeEnabled = config.speculativeEnabled;
     this._sshKeyId = config.sshKeyId;
     this._structuredRunOutputEnabled = config.structuredRunOutputEnabled;
@@ -493,6 +533,11 @@ export class Workspace extends cdktf.TerraformResource {
     return this._globalRemoteState;
   }
 
+  // html_url - computed: true, optional: false, required: false
+  public get htmlUrl() {
+    return this.getStringAttribute('html_url');
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -605,6 +650,38 @@ export class Workspace extends cdktf.TerraformResource {
   // resource_count - computed: true, optional: false, required: false
   public get resourceCount() {
     return this.getNumberAttribute('resource_count');
+  }
+
+  // source_name - computed: false, optional: true, required: false
+  private _sourceName?: string; 
+  public get sourceName() {
+    return this.getStringAttribute('source_name');
+  }
+  public set sourceName(value: string) {
+    this._sourceName = value;
+  }
+  public resetSourceName() {
+    this._sourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceNameInput() {
+    return this._sourceName;
+  }
+
+  // source_url - computed: false, optional: true, required: false
+  private _sourceUrl?: string; 
+  public get sourceUrl() {
+    return this.getStringAttribute('source_url');
+  }
+  public set sourceUrl(value: string) {
+    this._sourceUrl = value;
+  }
+  public resetSourceUrl() {
+    this._sourceUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceUrlInput() {
+    return this._sourceUrl;
   }
 
   // speculative_enabled - computed: false, optional: true, required: false
@@ -773,6 +850,8 @@ export class Workspace extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       queue_all_runs: cdktf.booleanToTerraform(this._queueAllRuns),
       remote_state_consumer_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._remoteStateConsumerIds),
+      source_name: cdktf.stringToTerraform(this._sourceName),
+      source_url: cdktf.stringToTerraform(this._sourceUrl),
       speculative_enabled: cdktf.booleanToTerraform(this._speculativeEnabled),
       ssh_key_id: cdktf.stringToTerraform(this._sshKeyId),
       structured_run_output_enabled: cdktf.booleanToTerraform(this._structuredRunOutputEnabled),
