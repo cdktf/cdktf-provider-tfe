@@ -51,13 +51,17 @@ export interface RegistryModuleVcsRepo {
   */
   readonly displayIdentifier: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}
+  */
+  readonly githubAppInstallationId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#identifier RegistryModule#identifier}
   */
   readonly identifier: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#oauth_token_id RegistryModule#oauth_token_id}
   */
-  readonly oauthTokenId: string;
+  readonly oauthTokenId?: string;
 }
 
 export function registryModuleVcsRepoToTerraform(struct?: RegistryModuleVcsRepoOutputReference | RegistryModuleVcsRepo): any {
@@ -67,6 +71,7 @@ export function registryModuleVcsRepoToTerraform(struct?: RegistryModuleVcsRepoO
   }
   return {
     display_identifier: cdktf.stringToTerraform(struct!.displayIdentifier),
+    github_app_installation_id: cdktf.stringToTerraform(struct!.githubAppInstallationId),
     identifier: cdktf.stringToTerraform(struct!.identifier),
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
   }
@@ -90,6 +95,10 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.displayIdentifier = this._displayIdentifier;
     }
+    if (this._githubAppInstallationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubAppInstallationId = this._githubAppInstallationId;
+    }
     if (this._identifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.identifier = this._identifier;
@@ -105,12 +114,14 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._displayIdentifier = undefined;
+      this._githubAppInstallationId = undefined;
       this._identifier = undefined;
       this._oauthTokenId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._displayIdentifier = value.displayIdentifier;
+      this._githubAppInstallationId = value.githubAppInstallationId;
       this._identifier = value.identifier;
       this._oauthTokenId = value.oauthTokenId;
     }
@@ -129,6 +140,22 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
     return this._displayIdentifier;
   }
 
+  // github_app_installation_id - computed: false, optional: true, required: false
+  private _githubAppInstallationId?: string; 
+  public get githubAppInstallationId() {
+    return this.getStringAttribute('github_app_installation_id');
+  }
+  public set githubAppInstallationId(value: string) {
+    this._githubAppInstallationId = value;
+  }
+  public resetGithubAppInstallationId() {
+    this._githubAppInstallationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubAppInstallationIdInput() {
+    return this._githubAppInstallationId;
+  }
+
   // identifier - computed: false, optional: false, required: true
   private _identifier?: string; 
   public get identifier() {
@@ -142,13 +169,16 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
     return this._identifier;
   }
 
-  // oauth_token_id - computed: false, optional: false, required: true
+  // oauth_token_id - computed: false, optional: true, required: false
   private _oauthTokenId?: string; 
   public get oauthTokenId() {
     return this.getStringAttribute('oauth_token_id');
   }
   public set oauthTokenId(value: string) {
     this._oauthTokenId = value;
+  }
+  public resetOauthTokenId() {
+    this._oauthTokenId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oauthTokenIdInput() {
@@ -182,7 +212,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

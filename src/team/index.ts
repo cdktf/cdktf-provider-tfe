@@ -70,6 +70,14 @@ export interface TeamOrganizationAccess {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}
   */
   readonly manageWorkspaces?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_projects Team#read_projects}
+  */
+  readonly readProjects?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_workspaces Team#read_workspaces}
+  */
+  readonly readWorkspaces?: boolean | cdktf.IResolvable;
 }
 
 export function teamOrganizationAccessToTerraform(struct?: TeamOrganizationAccessOutputReference | TeamOrganizationAccess): any {
@@ -86,6 +94,8 @@ export function teamOrganizationAccessToTerraform(struct?: TeamOrganizationAcces
     manage_run_tasks: cdktf.booleanToTerraform(struct!.manageRunTasks),
     manage_vcs_settings: cdktf.booleanToTerraform(struct!.manageVcsSettings),
     manage_workspaces: cdktf.booleanToTerraform(struct!.manageWorkspaces),
+    read_projects: cdktf.booleanToTerraform(struct!.readProjects),
+    read_workspaces: cdktf.booleanToTerraform(struct!.readWorkspaces),
   }
 }
 
@@ -135,6 +145,14 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.manageWorkspaces = this._manageWorkspaces;
     }
+    if (this._readProjects !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readProjects = this._readProjects;
+    }
+    if (this._readWorkspaces !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readWorkspaces = this._readWorkspaces;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -149,6 +167,8 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
       this._manageRunTasks = undefined;
       this._manageVcsSettings = undefined;
       this._manageWorkspaces = undefined;
+      this._readProjects = undefined;
+      this._readWorkspaces = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -160,6 +180,8 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
       this._manageRunTasks = value.manageRunTasks;
       this._manageVcsSettings = value.manageVcsSettings;
       this._manageWorkspaces = value.manageWorkspaces;
+      this._readProjects = value.readProjects;
+      this._readWorkspaces = value.readWorkspaces;
     }
   }
 
@@ -290,6 +312,38 @@ export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   public get manageWorkspacesInput() {
     return this._manageWorkspaces;
   }
+
+  // read_projects - computed: false, optional: true, required: false
+  private _readProjects?: boolean | cdktf.IResolvable; 
+  public get readProjects() {
+    return this.getBooleanAttribute('read_projects');
+  }
+  public set readProjects(value: boolean | cdktf.IResolvable) {
+    this._readProjects = value;
+  }
+  public resetReadProjects() {
+    this._readProjects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readProjectsInput() {
+    return this._readProjects;
+  }
+
+  // read_workspaces - computed: false, optional: true, required: false
+  private _readWorkspaces?: boolean | cdktf.IResolvable; 
+  public get readWorkspaces() {
+    return this.getBooleanAttribute('read_workspaces');
+  }
+  public set readWorkspaces(value: boolean | cdktf.IResolvable) {
+    this._readWorkspaces = value;
+  }
+  public resetReadWorkspaces() {
+    this._readWorkspaces = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readWorkspacesInput() {
+    return this._readWorkspaces;
+  }
 }
 
 /**
@@ -318,7 +372,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

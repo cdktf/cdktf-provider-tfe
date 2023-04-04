@@ -67,6 +67,10 @@ export interface PolicySetVcsRepo {
   */
   readonly branch?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#github_app_installation_id PolicySet#github_app_installation_id}
+  */
+  readonly githubAppInstallationId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#identifier PolicySet#identifier}
   */
   readonly identifier: string;
@@ -77,7 +81,7 @@ export interface PolicySetVcsRepo {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy_set#oauth_token_id PolicySet#oauth_token_id}
   */
-  readonly oauthTokenId: string;
+  readonly oauthTokenId?: string;
 }
 
 export function policySetVcsRepoToTerraform(struct?: PolicySetVcsRepoOutputReference | PolicySetVcsRepo): any {
@@ -87,6 +91,7 @@ export function policySetVcsRepoToTerraform(struct?: PolicySetVcsRepoOutputRefer
   }
   return {
     branch: cdktf.stringToTerraform(struct!.branch),
+    github_app_installation_id: cdktf.stringToTerraform(struct!.githubAppInstallationId),
     identifier: cdktf.stringToTerraform(struct!.identifier),
     ingress_submodules: cdktf.booleanToTerraform(struct!.ingressSubmodules),
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
@@ -111,6 +116,10 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.branch = this._branch;
     }
+    if (this._githubAppInstallationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubAppInstallationId = this._githubAppInstallationId;
+    }
     if (this._identifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.identifier = this._identifier;
@@ -130,6 +139,7 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._branch = undefined;
+      this._githubAppInstallationId = undefined;
       this._identifier = undefined;
       this._ingressSubmodules = undefined;
       this._oauthTokenId = undefined;
@@ -137,6 +147,7 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._branch = value.branch;
+      this._githubAppInstallationId = value.githubAppInstallationId;
       this._identifier = value.identifier;
       this._ingressSubmodules = value.ingressSubmodules;
       this._oauthTokenId = value.oauthTokenId;
@@ -157,6 +168,22 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
     return this._branch;
+  }
+
+  // github_app_installation_id - computed: false, optional: true, required: false
+  private _githubAppInstallationId?: string; 
+  public get githubAppInstallationId() {
+    return this.getStringAttribute('github_app_installation_id');
+  }
+  public set githubAppInstallationId(value: string) {
+    this._githubAppInstallationId = value;
+  }
+  public resetGithubAppInstallationId() {
+    this._githubAppInstallationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubAppInstallationIdInput() {
+    return this._githubAppInstallationId;
   }
 
   // identifier - computed: false, optional: false, required: true
@@ -188,13 +215,16 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
     return this._ingressSubmodules;
   }
 
-  // oauth_token_id - computed: false, optional: false, required: true
+  // oauth_token_id - computed: false, optional: true, required: false
   private _oauthTokenId?: string; 
   public get oauthTokenId() {
     return this.getStringAttribute('oauth_token_id');
   }
   public set oauthTokenId(value: string) {
     this._oauthTokenId = value;
+  }
+  public resetOauthTokenId() {
+    this._oauthTokenId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oauthTokenIdInput() {
@@ -228,7 +258,7 @@ export class PolicySet extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_policy_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

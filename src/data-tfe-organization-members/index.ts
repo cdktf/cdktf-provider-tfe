@@ -184,7 +184,7 @@ export class DataTfeOrganizationMembers extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization_members',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

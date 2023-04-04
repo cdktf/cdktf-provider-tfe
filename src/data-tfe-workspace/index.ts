@@ -72,6 +72,11 @@ export class DataTfeWorkspaceVcsRepoOutputReference extends cdktf.ComplexObject 
     return this.getStringAttribute('branch');
   }
 
+  // github_app_installation_id - computed: true, optional: false, required: false
+  public get githubAppInstallationId() {
+    return this.getStringAttribute('github_app_installation_id');
+  }
+
   // identifier - computed: true, optional: false, required: false
   public get identifier() {
     return this.getStringAttribute('identifier');
@@ -138,7 +143,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.42.0',
+        providerVersion: '0.43.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -192,6 +197,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // global_remote_state - computed: true, optional: false, required: false
   public get globalRemoteState() {
     return this.getBooleanAttribute('global_remote_state');
+  }
+
+  // html_url - computed: true, optional: false, required: false
+  public get htmlUrl() {
+    return this.getStringAttribute('html_url');
   }
 
   // id - computed: true, optional: true, required: false
@@ -277,6 +287,16 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // runs_count - computed: true, optional: false, required: false
   public get runsCount() {
     return this.getNumberAttribute('runs_count');
+  }
+
+  // source_name - computed: true, optional: false, required: false
+  public get sourceName() {
+    return this.getStringAttribute('source_name');
+  }
+
+  // source_url - computed: true, optional: false, required: false
+  public get sourceUrl() {
+    return this.getStringAttribute('source_url');
   }
 
   // speculative_enabled - computed: true, optional: false, required: false

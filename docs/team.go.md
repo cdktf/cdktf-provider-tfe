@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team tfe_team}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.team.Team.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.NewTeam(scope Construct, id *string, config TeamConfig) Team
 ```
@@ -314,7 +314,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.team.Team.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.team.Team.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ team.Team_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.team.Team.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_IsTerraformResource(x interface{}) *bool
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.team.TeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 &team.TeamConfig {
 	Connection: interface{},
@@ -704,7 +704,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
 	Name: *string,
 	Id: *string,
 	Organization: *string,
-	OrganizationAccess: github.com/cdktf/cdktf-provider-tfe-go/tfe/v5.team.TeamOrganizationAccess,
+	OrganizationAccess: github.com/cdktf/cdktf-provider-tfe-go/tfe.team.TeamOrganizationAccess,
 	SsoTeamId: *string,
 	Visibility: *string,
 }
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 &team.TeamOrganizationAccess {
 	ManageModules: interface{},
@@ -893,6 +893,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
 	ManageRunTasks: interface{},
 	ManageVcsSettings: interface{},
 	ManageWorkspaces: interface{},
+	ReadProjects: interface{},
+	ReadWorkspaces: interface{},
 }
 ```
 
@@ -908,6 +910,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">ManageRunTasks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_run_tasks Team#manage_run_tasks}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_vcs_settings Team#manage_vcs_settings}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_workspaces Team#manage_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">ReadProjects</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_projects Team#read_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">ReadWorkspaces</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_workspaces Team#read_workspaces}. |
 
 ---
 
@@ -1007,6 +1011,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 ---
 
+##### `ReadProjects`<sup>Optional</sup> <a name="ReadProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects"></a>
+
+```go
+ReadProjects interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_projects Team#read_projects}.
+
+---
+
+##### `ReadWorkspaces`<sup>Optional</sup> <a name="ReadWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces"></a>
+
+```go
+ReadWorkspaces interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#read_workspaces Team#read_workspaces}.
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### TeamOrganizationAccessOutputReference <a name="TeamOrganizationAccessOutputReference" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference"></a>
@@ -1014,7 +1042,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.NewTeamOrganizationAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamOrganizationAccessOutputReference
 ```
@@ -1067,6 +1095,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetManageRunTasks">ResetManageRunTasks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetManageVcsSettings">ResetManageVcsSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetManageWorkspaces">ResetManageWorkspaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadProjects">ResetReadProjects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadWorkspaces">ResetReadWorkspaces</a></code> | *No description.* |
 
 ---
 
@@ -1268,6 +1298,18 @@ func ResetManageVcsSettings()
 func ResetManageWorkspaces()
 ```
 
+##### `ResetReadProjects` <a name="ResetReadProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadProjects"></a>
+
+```go
+func ResetReadProjects()
+```
+
+##### `ResetReadWorkspaces` <a name="ResetReadWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.resetReadWorkspaces"></a>
+
+```go
+func ResetReadWorkspaces()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1283,6 +1325,8 @@ func ResetManageWorkspaces()
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput">ManageRunTasksInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput">ManageVcsSettingsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput">ManageWorkspacesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput">ReadProjectsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput">ReadWorkspacesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules">ManageModules</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies">ManagePolicies</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>interface{}</code> | *No description.* |
@@ -1291,6 +1335,8 @@ func ResetManageWorkspaces()
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks">ManageRunTasks</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects">ReadProjects</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces">ReadWorkspaces</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 
 ---
@@ -1399,6 +1445,26 @@ func ManageWorkspacesInput() interface{}
 
 ---
 
+##### `ReadProjectsInput`<sup>Optional</sup> <a name="ReadProjectsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput"></a>
+
+```go
+func ReadProjectsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ReadWorkspacesInput`<sup>Optional</sup> <a name="ReadWorkspacesInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput"></a>
+
+```go
+func ReadWorkspacesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ManageModules`<sup>Required</sup> <a name="ManageModules" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules"></a>
 
 ```go
@@ -1473,6 +1539,26 @@ func ManageVcsSettings() interface{}
 
 ```go
 func ManageWorkspaces() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ReadProjects`<sup>Required</sup> <a name="ReadProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects"></a>
+
+```go
+func ReadProjects() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ReadWorkspaces`<sup>Required</sup> <a name="ReadWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces"></a>
+
+```go
+func ReadWorkspaces() interface{}
 ```
 
 - *Type:* interface{}
