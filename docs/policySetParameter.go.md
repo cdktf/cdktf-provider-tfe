@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy_set_par
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policysetparameter"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/policysetparameter"
 
 policysetparameter.NewPolicySetParameter(scope Construct, id *string, config PolicySetParameterConfig) PolicySetParameter
 ```
@@ -287,7 +287,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policysetparameter"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/policysetparameter"
 
 policysetparameter.PolicySetParameter_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policysetparameter"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/policysetparameter"
 
 policysetparameter.PolicySetParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ policysetparameter.PolicySetParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policysetparameter"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/policysetparameter"
 
 policysetparameter.PolicySetParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policysetparameter"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/policysetparameter"
 
 &policysetparameter.PolicySetParameterConfig {
 	Connection: interface{},

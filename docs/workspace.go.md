@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/workspace tfe_
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspace.Workspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 workspace.NewWorkspace(scope Construct, id *string, config WorkspaceConfig) Workspace
 ```
@@ -461,7 +461,7 @@ func ResetWorkingDirectory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspace.Workspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 workspace.Workspace_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspace.Workspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 workspace.Workspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ workspace.Workspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspace.Workspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 workspace.Workspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -1322,7 +1322,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 &workspace.WorkspaceConfig {
 	Connection: interface{},
@@ -1357,7 +1357,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 	TerraformVersion: *string,
 	TriggerPatterns: *[]*string,
 	TriggerPrefixes: *[]*string,
-	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe.workspace.WorkspaceVcsRepo,
+	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe/v5.workspace.WorkspaceVcsRepo,
 	WorkingDirectory: *string,
 }
 ```
@@ -1807,7 +1807,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 &workspace.WorkspaceVcsRepo {
 	Identifier: *string,
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/workspace"
 
 workspace.NewWorkspaceVcsRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceVcsRepoOutputReference
 ```

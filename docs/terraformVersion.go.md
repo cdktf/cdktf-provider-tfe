@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/terraform_vers
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/terraformversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/terraformversion"
 
 terraformversion.NewTerraformVersion(scope Construct, id *string, config TerraformVersionConfig) TerraformVersion
 ```
@@ -308,7 +308,7 @@ func ResetOfficial()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/terraformversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/terraformversion"
 
 terraformversion.TerraformVersion_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/terraformversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/terraformversion"
 
 terraformversion.TerraformVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ terraformversion.TerraformVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/terraformversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/terraformversion"
 
 terraformversion.TerraformVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/terraformversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/terraformversion"
 
 &terraformversion.TerraformVersionConfig {
 	Connection: interface{},
