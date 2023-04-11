@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organizations 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizations"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizations"
 
 datatfeorganizations.NewDataTfeOrganizations(scope Construct, id *string, config DataTfeOrganizationsConfig) DataTfeOrganizations
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizations"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizations"
 
 datatfeorganizations.DataTfeOrganizations_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizations"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizations"
 
 datatfeorganizations.DataTfeOrganizations_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datatfeorganizations.DataTfeOrganizations_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizations"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizations"
 
 datatfeorganizations.DataTfeOrganizations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizations"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizations"
 
 &datatfeorganizations.DataTfeOrganizationsConfig {
 	Connection: interface{},

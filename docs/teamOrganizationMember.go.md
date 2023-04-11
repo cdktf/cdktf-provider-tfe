@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_organizat
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/teamorganizationmember"
 
 teamorganizationmember.NewTeamOrganizationMember(scope Construct, id *string, config TeamOrganizationMemberConfig) TeamOrganizationMember
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ teamorganizationmember.TeamOrganizationMember_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/teamorganizationmember"
 
 &teamorganizationmember.TeamOrganizationMemberConfig {
 	Connection: interface{},

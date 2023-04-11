@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_m
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationmembership"
 
 datatfeorganizationmembership.NewDataTfeOrganizationMembership(scope Construct, id *string, config DataTfeOrganizationMembershipConfig) DataTfeOrganizationMembership
 ```
@@ -294,7 +294,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationmembership"
 
 datatfeorganizationmembership.DataTfeOrganizationMembership_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationmembership"
 
 datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationmembership"
 
 datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationmembership"
 
 &datatfeorganizationmembership.DataTfeOrganizationMembershipConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_t
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTags(scope Construct, id *string, config DataTfeOrganizationTagsConfig) DataTfeOrganizationTags
 ```
@@ -280,7 +280,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 &datatfeorganizationtags.DataTfeOrganizationTagsConfig {
 	Connection: interface{},
@@ -691,7 +691,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 &datatfeorganizationtags.DataTfeOrganizationTagsTags {
 
@@ -706,7 +706,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeOrganizationTagsTagsList
 ```
@@ -838,7 +838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v5/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeOrganizationTagsTagsOutputReference
 ```
