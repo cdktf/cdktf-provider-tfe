@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/d/workspace_ids 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeworkspaceids"
 
 datatfeworkspaceids.NewDataTfeWorkspaceIds(scope Construct, id *string, config DataTfeWorkspaceIdsConfig) DataTfeWorkspaceIds
 ```
@@ -301,7 +301,7 @@ func ResetTagNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeworkspaceids"
 
 &datatfeworkspaceids.DataTfeWorkspaceIdsConfig {
 	Connection: interface{},

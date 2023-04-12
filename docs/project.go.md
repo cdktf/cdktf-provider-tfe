@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/r/project tfe_pr
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -280,7 +280,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
