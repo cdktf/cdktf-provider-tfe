@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/tfe/d/team_project_a
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamprojectaccess"
 
 datatfeteamprojectaccess.NewDataTfeTeamProjectAccess(scope Construct, id *string, config DataTfeTeamProjectAccessConfig) DataTfeTeamProjectAccess
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamprojectaccess"
 
 datatfeteamprojectaccess.DataTfeTeamProjectAccess_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamprojectaccess"
 
 datatfeteamprojectaccess.DataTfeTeamProjectAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datatfeteamprojectaccess.DataTfeTeamProjectAccess_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamprojectaccess"
 
 datatfeteamprojectaccess.DataTfeTeamProjectAccess_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamprojectaccess"
 
 &datatfeteamprojectaccess.DataTfeTeamProjectAccessConfig {
 	Connection: interface{},
