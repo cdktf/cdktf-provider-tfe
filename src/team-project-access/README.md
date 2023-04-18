@@ -1,3 +1,3 @@
 # `tfe_team_project_access`
 
-Refer to the Terraform Registory for docs: [`tfe_team_project_access`](https://www.terraform.io/docs/providers/tfe/r/team_project_access).
+Refer to the Terraform Registory for docs: [`tfe_team_project_access`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_project_access).

@@ -1,6 +1,6 @@
 # `tfe_policy`
 
-Refer to the Terraform Registory for docs: [`tfe_policy`](https://www.terraform.io/docs/providers/tfe/r/policy).
+Refer to the Terraform Registory for docs: [`tfe_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy).
 
 # `policy` Submodule <a name="`policy` Submodule" id="@cdktf/provider-tfe.policy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`tfe_policy`](https://www.terraform.
 
 ### Policy <a name="Policy" id="@cdktf/provider-tfe.policy.Policy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/policy tfe_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy tfe_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policy.Policy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
 
 policy.NewPolicy(scope Construct, id *string, config PolicyConfig) Policy
 ```
@@ -312,7 +312,7 @@ func ResetQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.policy.Policy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
 
 policy.Policy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.policy.Policy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
 
 policy.Policy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ policy.Policy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.policy.Policy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
 
 policy.Policy_IsTerraformResource(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ policy.Policy_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policy.Policy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policy.Policy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -491,10 +491,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.policy.Policy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -733,11 +733,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.policy.PolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
 
 &policy.PolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/policy"
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Text of a valid Sentinel or OPA policy. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.description">Description</a></code> | <code>*string</code> | Text describing the policy's purpose. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.enforceMode">EnforceMode</a></code> | <code>*string</code> | The enforcement configuration of the policy. |
-| <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#id Policy#id}. |
+| <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#id Policy#id}. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.kind">Kind</a></code> | <code>*string</code> | The policy-as-code framework for the policy. Valid values are sentinel and opa. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.organization">Organization</a></code> | <code>*string</code> | Name of the organization that this policy belongs to. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.query">Query</a></code> | <code>*string</code> | The OPA query to run. Required for OPA policies. |
@@ -789,10 +789,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.policy.PolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -856,7 +856,7 @@ Name *string
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#name Policy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#name Policy#name}
 
 ---
 
@@ -870,7 +870,7 @@ Policy *string
 
 Text of a valid Sentinel or OPA policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#policy Policy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#policy Policy#policy}
 
 ---
 
@@ -884,7 +884,7 @@ Description *string
 
 Text describing the policy's purpose.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#description Policy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#description Policy#description}
 
 ---
 
@@ -900,7 +900,7 @@ The enforcement configuration of the policy.
 
 For Sentinel, valid values are `hard-mandatory`, `soft-mandatory` and `advisory`. For OPA, Valid values are `mandatory` and `advisory`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#enforce_mode Policy#enforce_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#enforce_mode Policy#enforce_mode}
 
 ---
 
@@ -912,7 +912,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#id Policy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#id Policy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ Kind *string
 
 The policy-as-code framework for the policy. Valid values are sentinel and opa.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#kind Policy#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#kind Policy#kind}
 
 ---
 
@@ -943,7 +943,7 @@ Organization *string
 
 Name of the organization that this policy belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#organization Policy#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#organization Policy#organization}
 
 ---
 
@@ -957,7 +957,7 @@ Query *string
 
 The OPA query to run. Required for OPA policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/policy#query Policy#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/policy#query Policy#query}
 
 ---
 

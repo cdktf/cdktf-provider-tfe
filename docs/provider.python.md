@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`tfe`](https://www.terraform.io/docs/providers/tfe).
+Refer to the Terraform Registory for docs: [`tfe`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-tfe.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe`](https://www.terraform.io/docs
 
 ### TfeProvider <a name="TfeProvider" id="@cdktf/provider-tfe.provider.TfeProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe tfe}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs tfe}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.provider.TfeProvider.Initializer"></a>
 
@@ -62,7 +62,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#alias TfeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#alias TfeProvider#alias}
 
 ---
 
@@ -72,7 +72,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#a
 
 The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#hostname TfeProvider#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#hostname TfeProvider#hostname}
 
 ---
 
@@ -82,7 +82,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#h
 
 The organization to apply to a resource if one is not defined on the resource itself.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#organization TfeProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#organization TfeProvider#organization}
 
 ---
 
@@ -92,7 +92,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#o
 
 Whether or not to skip certificate verifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#ssl_skip_verify TfeProvider#ssl_skip_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#ssl_skip_verify TfeProvider#ssl_skip_verify}
 
 ---
 
@@ -105,7 +105,7 @@ The token used to authenticate with Terraform Enterprise.
 We recommend omitting
 the token which can be set as credentials in the CLI config file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#token TfeProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#token TfeProvider#token}
 
 ---
 
@@ -567,7 +567,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#alias TfeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#alias TfeProvider#alias}
 
 ---
 
@@ -581,7 +581,7 @@ hostname: str
 
 The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#hostname TfeProvider#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#hostname TfeProvider#hostname}
 
 ---
 
@@ -595,7 +595,7 @@ organization: str
 
 The organization to apply to a resource if one is not defined on the resource itself.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#organization TfeProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#organization TfeProvider#organization}
 
 ---
 
@@ -609,7 +609,7 @@ ssl_skip_verify: typing.Union[bool, IResolvable]
 
 Whether or not to skip certificate verifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#ssl_skip_verify TfeProvider#ssl_skip_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#ssl_skip_verify TfeProvider#ssl_skip_verify}
 
 ---
 
@@ -626,7 +626,7 @@ The token used to authenticate with Terraform Enterprise.
 We recommend omitting
 the token which can be set as credentials in the CLI config file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#token TfeProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#token TfeProvider#token}
 
 ---
 
