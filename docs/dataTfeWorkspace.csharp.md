@@ -1,3 +1,7 @@
+# `data_tfe_workspace`
+
+Refer to the Terraform Registory for docs: [`data_tfe_workspace`](https://www.terraform.io/docs/providers/tfe/d/workspace).
+
 # `dataTfeWorkspace` Submodule <a name="`dataTfeWorkspace` Submodule" id="@cdktf/provider-tfe.dataTfeWorkspace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_tfe_ssh_key`
+
+Refer to the Terraform Registory for docs: [`data_tfe_ssh_key`](https://www.terraform.io/docs/providers/tfe/d/ssh_key).
+
 # `dataTfeSshKey` Submodule <a name="`dataTfeSshKey` Submodule" id="@cdktf/provider-tfe.dataTfeSshKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

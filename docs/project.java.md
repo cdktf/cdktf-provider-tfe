@@ -1,3 +1,7 @@
+# `tfe_project`
+
+Refer to the Terraform Registory for docs: [`tfe_project`](https://www.terraform.io/docs/providers/tfe/r/project).
+
 # `project` Submodule <a name="`project` Submodule" id="@cdktf/provider-tfe.project"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

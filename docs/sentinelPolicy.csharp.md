@@ -1,3 +1,7 @@
+# `tfe_sentinel_policy`
+
+Refer to the Terraform Registory for docs: [`tfe_sentinel_policy`](https://www.terraform.io/docs/providers/tfe/r/sentinel_policy).
+
 # `sentinelPolicy` Submodule <a name="`sentinelPolicy` Submodule" id="@cdktf/provider-tfe.sentinelPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

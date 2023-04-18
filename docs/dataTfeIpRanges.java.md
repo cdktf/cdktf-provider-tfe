@@ -1,3 +1,7 @@
+# `data_tfe_ip_ranges`
+
+Refer to the Terraform Registory for docs: [`data_tfe_ip_ranges`](https://www.terraform.io/docs/providers/tfe/d/ip_ranges).
+
 # `dataTfeIpRanges` Submodule <a name="`dataTfeIpRanges` Submodule" id="@cdktf/provider-tfe.dataTfeIpRanges"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

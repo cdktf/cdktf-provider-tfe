@@ -1,3 +1,7 @@
+# `tfe_team_access`
+
+Refer to the Terraform Registory for docs: [`tfe_team_access`](https://www.terraform.io/docs/providers/tfe/r/team_access).
+
 # `teamAccess` Submodule <a name="`teamAccess` Submodule" id="@cdktf/provider-tfe.teamAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

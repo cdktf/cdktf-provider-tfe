@@ -1,3 +1,7 @@
+# `tfe_organization_membership`
+
+Refer to the Terraform Registory for docs: [`tfe_organization_membership`](https://www.terraform.io/docs/providers/tfe/r/organization_membership).
+
 # `organizationMembership` Submodule <a name="`organizationMembership` Submodule" id="@cdktf/provider-tfe.organizationMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
