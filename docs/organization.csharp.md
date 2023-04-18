@@ -1,6 +1,6 @@
 # `tfe_organization`
 
-Refer to the Terraform Registory for docs: [`tfe_organization`](https://www.terraform.io/docs/providers/tfe/r/organization).
+Refer to the Terraform Registory for docs: [`tfe_organization`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization).
 
 # `organization` Submodule <a name="`organization` Submodule" id="@cdktf/provider-tfe.organization"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_organization`](https://www.terr
 
 ### Organization <a name="Organization" id="@cdktf/provider-tfe.organization.Organization"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization tfe_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization tfe_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organization.Organization.Initializer"></a>
 
@@ -402,7 +402,7 @@ Organization.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -519,10 +519,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.organization.Organization.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -835,7 +835,7 @@ using HashiCorp.Cdktf.Providers.Tfe;
 
 new OrganizationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -860,23 +860,23 @@ new OrganizationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">AllowForceDeleteWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">AssessmentsEnforced</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#assessments_enforced Organization#assessments_enforced}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.collaboratorAuthPolicy">CollaboratorAuthPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">CostEstimationEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#id Organization#id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.ownersTeamSamlRoleId">OwnersTeamSamlRoleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">SendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionRememberMinutes">SessionRememberMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionTimeoutMinutes">SessionTimeoutMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#email Organization#email}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#name Organization#name}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">AllowForceDeleteWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">AssessmentsEnforced</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.collaboratorAuthPolicy">CollaboratorAuthPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">CostEstimationEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.ownersTeamSamlRoleId">OwnersTeamSamlRoleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">SendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionRememberMinutes">SessionRememberMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionTimeoutMinutes">SessionTimeoutMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
 
 ---
 
@@ -893,10 +893,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -958,7 +958,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#email Organization#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#email Organization#email}.
 
 ---
 
@@ -970,7 +970,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#name Organization#name}.
 
 ---
 
@@ -982,7 +982,7 @@ public object AllowForceDeleteWorkspaces { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
 
 ---
 
@@ -994,7 +994,7 @@ public object AssessmentsEnforced { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#assessments_enforced Organization#assessments_enforced}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public string CollaboratorAuthPolicy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}.
 
 ---
 
@@ -1018,7 +1018,7 @@ public object CostEstimationEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ public string OwnersTeamSamlRoleId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public object SendPassingStatusesForUntriggeredSpeculativePlans { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public double SessionRememberMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_remember_minutes Organization#session_remember_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public double SessionTimeoutMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#session_timeout_minutes Organization#session_timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}.
 
 ---
 

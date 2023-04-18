@@ -1,6 +1,6 @@
 # `tfe_team_member`
 
-Refer to the Terraform Registory for docs: [`tfe_team_member`](https://www.terraform.io/docs/providers/tfe/r/team_member).
+Refer to the Terraform Registory for docs: [`tfe_team_member`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member).
 
 # `teamMember` Submodule <a name="`teamMember` Submodule" id="@cdktf/provider-tfe.teamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_team_member`](https://www.terra
 
 ### TeamMember <a name="TeamMember" id="@cdktf/provider-tfe.teamMember.TeamMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_member tfe_team_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member tfe_team_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamMember.TeamMember.Initializer"></a>
 
@@ -19,7 +19,7 @@ teamMember.TeamMember(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,15 +36,15 @@ teamMember.TeamMember(
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}. |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#id TeamMember#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#team_id TeamMember#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#username TeamMember#username}. |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#id TeamMember#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.teamMember.TeamMember.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#team_id TeamMember#team_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#username TeamMember#username}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#id TeamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#id TeamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -462,7 +462,7 @@ teamMember.TeamMember.is_terraform_resource(
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -562,10 +562,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.teamMember.TeamMember.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -708,7 +708,7 @@ from cdktf_cdktf_provider_tfe import team_member
 
 teamMember.TeamMemberConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -725,15 +725,15 @@ teamMember.TeamMemberConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.teamId">team_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}. |
-| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#id TeamMember#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.teamId">team_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#team_id TeamMember#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#username TeamMember#username}. |
+| <code><a href="#@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#id TeamMember#id}. |
 
 ---
 
@@ -750,10 +750,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.teamMember.TeamMemberConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -815,7 +815,7 @@ team_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#team_id TeamMember#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#team_id TeamMember#team_id}.
 
 ---
 
@@ -827,7 +827,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#username TeamMember#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#username TeamMember#username}.
 
 ---
 
@@ -839,7 +839,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_member#id TeamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_member#id TeamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

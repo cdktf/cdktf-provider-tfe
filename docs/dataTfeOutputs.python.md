@@ -1,6 +1,6 @@
 # `data_tfe_outputs`
 
-Refer to the Terraform Registory for docs: [`data_tfe_outputs`](https://www.terraform.io/docs/providers/tfe/d/outputs).
+Refer to the Terraform Registory for docs: [`data_tfe_outputs`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs).
 
 # `dataTfeOutputs` Submodule <a name="`dataTfeOutputs` Submodule" id="@cdktf/provider-tfe.dataTfeOutputs"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_outputs`](https://www.terr
 
 ### DataTfeOutputs <a name="DataTfeOutputs" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/outputs tfe_outputs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs tfe_outputs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataTfeOutputs.DataTfeOutputs(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,7 +36,7 @@ dataTfeOutputs.DataTfeOutputs(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -44,7 +44,7 @@ dataTfeOutputs.DataTfeOutputs(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.workspace">workspace</a></code> | <code>str</code> | The workspace to fetch the remote state from. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 
 The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 
 - *Type:* typing.Mapping[typing.Any]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
 
 ---
 
@@ -469,7 +469,7 @@ dataTfeOutputs.DataTfeOutputs.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -560,10 +560,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -716,7 +716,7 @@ from cdktf_cdktf_provider_tfe import data_tfe_outputs
 
 dataTfeOutputs.DataTfeOutputsConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -733,7 +733,7 @@ dataTfeOutputs.DataTfeOutputsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -741,7 +741,7 @@ dataTfeOutputs.DataTfeOutputsConfig(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">workspace</a></code> | <code>str</code> | The workspace to fetch the remote state from. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">organization</a></code> | <code>str</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -758,10 +758,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -825,7 +825,7 @@ workspace: str
 
 The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -839,7 +839,7 @@ organization: str
 
 The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 
@@ -851,7 +851,7 @@ values: typing.Mapping[typing.Any]
 
 - *Type:* typing.Mapping[typing.Any]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
 
 ---
 

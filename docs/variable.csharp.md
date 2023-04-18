@@ -1,6 +1,6 @@
 # `tfe_variable`
 
-Refer to the Terraform Registory for docs: [`tfe_variable`](https://www.terraform.io/docs/providers/tfe/r/variable).
+Refer to the Terraform Registory for docs: [`tfe_variable`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable).
 
 # `variable` Submodule <a name="`variable` Submodule" id="@cdktf/provider-tfe.variable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_variable`](https://www.terrafor
 
 ### Variable <a name="Variable" id="@cdktf/provider-tfe.variable.Variable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/variable tfe_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable tfe_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.variable.Variable.Initializer"></a>
 
@@ -388,7 +388,7 @@ Variable.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.variable.Variable.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variable.Variable.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -500,10 +500,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.variable.Variable.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -766,7 +766,7 @@ using HashiCorp.Cdktf.Providers.Tfe;
 
 new VariableConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -789,21 +789,21 @@ new VariableConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.category">Category</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#category Variable#category}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#key Variable#key}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#description Variable#description}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.hcl">Hcl</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#hcl Variable#hcl}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#id Variable#id}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.sensitive">Sensitive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#sensitive Variable#sensitive}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#value Variable#value}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.variableSetId">VariableSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#variable_set_id Variable#variable_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.category">Category</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#category Variable#category}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#key Variable#key}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#description Variable#description}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.hcl">Hcl</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#hcl Variable#hcl}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#id Variable#id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.sensitive">Sensitive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#sensitive Variable#sensitive}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#value Variable#value}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.variableSetId">VariableSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#variable_set_id Variable#variable_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#workspace_id Variable#workspace_id}. |
 
 ---
 
@@ -820,10 +820,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.variable.VariableConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -885,7 +885,7 @@ public string Category { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#category Variable#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#category Variable#category}.
 
 ---
 
@@ -897,7 +897,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#key Variable#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#key Variable#key}.
 
 ---
 
@@ -909,7 +909,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#description Variable#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#description Variable#description}.
 
 ---
 
@@ -921,7 +921,7 @@ public object Hcl { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#hcl Variable#hcl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#hcl Variable#hcl}.
 
 ---
 
@@ -933,7 +933,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#id Variable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#id Variable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -948,7 +948,7 @@ public object Sensitive { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#sensitive Variable#sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#sensitive Variable#sensitive}.
 
 ---
 
@@ -960,7 +960,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#value Variable#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#value Variable#value}.
 
 ---
 
@@ -972,7 +972,7 @@ public string VariableSetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#variable_set_id Variable#variable_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#variable_set_id Variable#variable_set_id}.
 
 ---
 
@@ -984,7 +984,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable#workspace_id Variable#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable#workspace_id Variable#workspace_id}.
 
 ---
 

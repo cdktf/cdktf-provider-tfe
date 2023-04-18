@@ -1,6 +1,6 @@
 # `tfe_organization_module_sharing`
 
-Refer to the Terraform Registory for docs: [`tfe_organization_module_sharing`](https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing).
+Refer to the Terraform Registory for docs: [`tfe_organization_module_sharing`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing).
 
 # `organizationModuleSharing` Submodule <a name="`organizationModuleSharing` Submodule" id="@cdktf/provider-tfe.organizationModuleSharing"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_organization_module_sharing`](h
 
 ### OrganizationModuleSharing <a name="OrganizationModuleSharing" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing tfe_organization_module_sharing}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing tfe_organization_module_sharing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer"></a>
 
@@ -19,7 +19,7 @@ organizationModuleSharing.OrganizationModuleSharing(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,15 +36,15 @@ organizationModuleSharing.OrganizationModuleSharing(
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.moduleConsumers">module_consumers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}. |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#id OrganizationModuleSharing#id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.moduleConsumers">module_consumers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}. |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#id OrganizationModuleSharing#id}. |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#organization OrganizationModuleSharing#organization}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#id OrganizationModuleSharing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#id OrganizationModuleSharing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#organization OrganizationModuleSharing#organization}.
 
 ---
 
@@ -469,7 +469,7 @@ organizationModuleSharing.OrganizationModuleSharing.is_terraform_resource(
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -569,10 +569,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -715,7 +715,7 @@ from cdktf_cdktf_provider_tfe import organization_module_sharing
 
 organizationModuleSharing.OrganizationModuleSharingConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -732,15 +732,15 @@ organizationModuleSharing.OrganizationModuleSharingConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.moduleConsumers">module_consumers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}. |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#id OrganizationModuleSharing#id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.moduleConsumers">module_consumers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}. |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#id OrganizationModuleSharing#id}. |
+| <code><a href="#@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#organization OrganizationModuleSharing#organization}. |
 
 ---
 
@@ -757,10 +757,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -822,7 +822,7 @@ module_consumers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}.
 
 ---
 
@@ -834,7 +834,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#id OrganizationModuleSharing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#id OrganizationModuleSharing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_module_sharing#organization OrganizationModuleSharing#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing#organization OrganizationModuleSharing#organization}.
 
 ---
 

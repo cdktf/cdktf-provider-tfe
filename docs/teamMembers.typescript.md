@@ -1,6 +1,6 @@
 # `tfe_team_members`
 
-Refer to the Terraform Registory for docs: [`tfe_team_members`](https://www.terraform.io/docs/providers/tfe/r/team_members).
+Refer to the Terraform Registory for docs: [`tfe_team_members`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members).
 
 # `teamMembers` Submodule <a name="`teamMembers` Submodule" id="@cdktf/provider-tfe.teamMembers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_team_members`](https://www.terr
 
 ### TeamMembers <a name="TeamMembers" id="@cdktf/provider-tfe.teamMembers.TeamMembers"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/team_members tfe_team_members}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members tfe_team_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamMembers.TeamMembers.Initializer"></a>
 
@@ -346,7 +346,7 @@ teamMembers.TeamMembers.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembers.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.teamMembers.TeamMembers.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,15 +598,15 @@ const teamMembersConfig: teamMembers.TeamMembersConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.teamId">teamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#team_id TeamMembers#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.usernames">usernames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#usernames TeamMembers#usernames}. |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#id TeamMembers#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.teamId">teamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members#team_id TeamMembers#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.usernames">usernames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members#usernames TeamMembers#usernames}. |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members#id TeamMembers#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -688,7 +688,7 @@ public readonly teamId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#team_id TeamMembers#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members#team_id TeamMembers#team_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly usernames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#usernames TeamMembers#usernames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members#usernames TeamMembers#usernames}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team_members#id TeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/team_members#id TeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

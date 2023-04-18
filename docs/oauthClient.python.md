@@ -1,6 +1,6 @@
 # `tfe_oauth_client`
 
-Refer to the Terraform Registory for docs: [`tfe_oauth_client`](https://www.terraform.io/docs/providers/tfe/r/oauth_client).
+Refer to the Terraform Registory for docs: [`tfe_oauth_client`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client).
 
 # `oauthClient` Submodule <a name="`oauthClient` Submodule" id="@cdktf/provider-tfe.oauthClient"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_oauth_client`](https://www.terr
 
 ### OauthClient <a name="OauthClient" id="@cdktf/provider-tfe.oauthClient.OauthClient"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client tfe_oauth_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client tfe_oauth_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.oauthClient.OauthClient.Initializer"></a>
 
@@ -19,7 +19,7 @@ oauthClient.OauthClient(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -44,23 +44,23 @@ oauthClient.OauthClient(
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.apiUrl">api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.httpUrl">http_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#id OauthClient#id}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#key OauthClient#key}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#name OauthClient#name}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#secret OauthClient#secret}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.apiUrl">api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#api_url OauthClient#api_url}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.httpUrl">http_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#http_url OauthClient#http_url}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#service_provider OauthClient#service_provider}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#id OauthClient#id}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#key OauthClient#key}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#name OauthClient#name}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#oauth_token OauthClient#oauth_token}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#organization OauthClient#organization}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#private_key OauthClient#private_key}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#rsa_public_key OauthClient#rsa_public_key}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#secret OauthClient#secret}. |
 
 ---
 
@@ -90,7 +90,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.oauthClient.OauthClient.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#api_url OauthClient#api_url}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#http_url OauthClient#http_url}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#service_provider OauthClient#service_provider}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#id OauthClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#id OauthClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#key OauthClient#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#key OauthClient#key}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#name OauthClient#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#name OauthClient#name}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#oauth_token OauthClient#oauth_token}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#organization OauthClient#organization}.
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#private_key OauthClient#private_key}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#rsa_public_key OauthClient#rsa_public_key}.
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#secret OauthClient#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#secret OauthClient#secret}.
 
 ---
 
@@ -591,7 +591,7 @@ oauthClient.OauthClient.is_terraform_resource(
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClient.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -708,10 +708,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.oauthClient.OauthClient.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1024,7 +1024,7 @@ from cdktf_cdktf_provider_tfe import oauth_client
 
 oauthClient.OauthClientConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1049,23 +1049,23 @@ oauthClient.OauthClientConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.apiUrl">api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.httpUrl">http_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#id OauthClient#id}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#key OauthClient#key}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#name OauthClient#name}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}. |
-| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#secret OauthClient#secret}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.apiUrl">api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#api_url OauthClient#api_url}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.httpUrl">http_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#http_url OauthClient#http_url}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#service_provider OauthClient#service_provider}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#id OauthClient#id}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#key OauthClient#key}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#name OauthClient#name}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#oauth_token OauthClient#oauth_token}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#organization OauthClient#organization}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#private_key OauthClient#private_key}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#rsa_public_key OauthClient#rsa_public_key}. |
+| <code><a href="#@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#secret OauthClient#secret}. |
 
 ---
 
@@ -1082,10 +1082,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.oauthClient.OauthClientConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1147,7 +1147,7 @@ api_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#api_url OauthClient#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#api_url OauthClient#api_url}.
 
 ---
 
@@ -1159,7 +1159,7 @@ http_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#http_url OauthClient#http_url}.
 
 ---
 
@@ -1171,7 +1171,7 @@ service_provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#service_provider OauthClient#service_provider}.
 
 ---
 
@@ -1183,7 +1183,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#id OauthClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#id OauthClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1198,7 +1198,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#key OauthClient#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#key OauthClient#key}.
 
 ---
 
@@ -1210,7 +1210,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#name OauthClient#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#name OauthClient#name}.
 
 ---
 
@@ -1222,7 +1222,7 @@ oauth_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#oauth_token OauthClient#oauth_token}.
 
 ---
 
@@ -1234,7 +1234,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#organization OauthClient#organization}.
 
 ---
 
@@ -1246,7 +1246,7 @@ private_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#private_key OauthClient#private_key}.
 
 ---
 
@@ -1258,7 +1258,7 @@ rsa_public_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#rsa_public_key OauthClient#rsa_public_key}.
 
 ---
 
@@ -1270,7 +1270,7 @@ secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#secret OauthClient#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/oauth_client#secret OauthClient#secret}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `tfe_organization_membership`
 
-Refer to the Terraform Registory for docs: [`tfe_organization_membership`](https://www.terraform.io/docs/providers/tfe/r/organization_membership).
+Refer to the Terraform Registory for docs: [`tfe_organization_membership`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership).
 
 # `organizationMembership` Submodule <a name="`organizationMembership` Submodule" id="@cdktf/provider-tfe.organizationMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_organization_membership`](https
 
 ### OrganizationMembership <a name="OrganizationMembership" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership tfe_organization_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership tfe_organization_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.Initializer"></a>
 
@@ -353,7 +353,7 @@ OrganizationMembership.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -621,7 +621,7 @@ using HashiCorp.Cdktf.Providers.Tfe;
 
 new OrganizationMembershipConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -638,15 +638,15 @@ new OrganizationMembershipConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#email OrganizationMembership#email}. |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#id OrganizationMembership#id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#organization OrganizationMembership#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership#email OrganizationMembership#email}. |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership#id OrganizationMembership#id}. |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership#organization OrganizationMembership#organization}. |
 
 ---
 
@@ -663,10 +663,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -728,7 +728,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#email OrganizationMembership#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership#email OrganizationMembership#email}.
 
 ---
 
@@ -740,7 +740,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#id OrganizationMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership#id OrganizationMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization_membership#organization OrganizationMembership#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_membership#organization OrganizationMembership#organization}.
 
 ---
 

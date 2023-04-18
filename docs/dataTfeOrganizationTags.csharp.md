@@ -1,6 +1,6 @@
 # `data_tfe_organization_tags`
 
-Refer to the Terraform Registory for docs: [`data_tfe_organization_tags`](https://www.terraform.io/docs/providers/tfe/d/organization_tags).
+Refer to the Terraform Registory for docs: [`data_tfe_organization_tags`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags).
 
 # `dataTfeOrganizationTags` Submodule <a name="`dataTfeOrganizationTags` Submodule" id="@cdktf/provider-tfe.dataTfeOrganizationTags"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_organization_tags`](https:
 
 ### DataTfeOrganizationTags <a name="DataTfeOrganizationTags" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/organization_tags tfe_organization_tags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags tfe_organization_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.Initializer"></a>
 
@@ -352,7 +352,7 @@ DataTfeOrganizationTags.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -440,10 +440,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -566,7 +566,7 @@ using HashiCorp.Cdktf.Providers.Tfe;
 
 new DataTfeOrganizationTagsConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -582,14 +582,14 @@ new DataTfeOrganizationTagsConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_tags#id DataTfeOrganizationTags#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_tags#organization DataTfeOrganizationTags#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags#id DataTfeOrganizationTags#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags#organization DataTfeOrganizationTags#organization}. |
 
 ---
 
@@ -606,10 +606,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -671,7 +671,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_tags#id DataTfeOrganizationTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags#id DataTfeOrganizationTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -686,7 +686,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/organization_tags#organization DataTfeOrganizationTags#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/organization_tags#organization DataTfeOrganizationTags#organization}.
 
 ---
 

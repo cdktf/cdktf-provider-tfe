@@ -1,6 +1,6 @@
 # `data_tfe_slug`
 
-Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://www.terraform.io/docs/providers/tfe/d/slug).
+Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug).
 
 # `dataTfeSlug` Submodule <a name="`dataTfeSlug` Submodule" id="@cdktf/provider-tfe.dataTfeSlug"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://www.terrafo
 
 ### DataTfeSlug <a name="DataTfeSlug" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/slug tfe_slug}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug tfe_slug}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataTfeSlug.DataTfeSlug.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -554,14 +554,14 @@ const dataTfeSlugConfig: dataTfeSlug.DataTfeSlugConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.sourcePath">sourcePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#source_path DataTfeSlug#source_path}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#id DataTfeSlug#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.sourcePath">sourcePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug#source_path DataTfeSlug#source_path}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug#id DataTfeSlug#id}. |
 
 ---
 
@@ -578,10 +578,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -643,7 +643,7 @@ public readonly sourcePath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#source_path DataTfeSlug#source_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug#source_path DataTfeSlug#source_path}.
 
 ---
 
@@ -655,7 +655,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/slug#id DataTfeSlug#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/slug#id DataTfeSlug#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `tfe_variable_set`
 
-Refer to the Terraform Registory for docs: [`tfe_variable_set`](https://www.terraform.io/docs/providers/tfe/r/variable_set).
+Refer to the Terraform Registory for docs: [`tfe_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set).
 
 # `variableSet` Submodule <a name="`variableSet` Submodule" id="@cdktf/provider-tfe.variableSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_variable_set`](https://www.terr
 
 ### VariableSet <a name="VariableSet" id="@cdktf/provider-tfe.variableSet.VariableSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/variable_set tfe_variable_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set tfe_variable_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.variableSet.VariableSet.Initializer"></a>
 
@@ -374,7 +374,7 @@ variableset.VariableSet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -480,10 +480,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.variableSet.VariableSet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -686,7 +686,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/variableset"
 
 &variableset.VariableSetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -706,18 +706,18 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/variableset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#name VariableSet#name}. |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#description VariableSet#description}. |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.global">Global</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#global VariableSet#global}. |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#id VariableSet#id}. |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#organization VariableSet#organization}. |
-| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.workspaceIds">WorkspaceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#workspace_ids VariableSet#workspace_ids}. |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#name VariableSet#name}. |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#description VariableSet#description}. |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.global">Global</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#global VariableSet#global}. |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#id VariableSet#id}. |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#organization VariableSet#organization}. |
+| <code><a href="#@cdktf/provider-tfe.variableSet.VariableSetConfig.property.workspaceIds">WorkspaceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#workspace_ids VariableSet#workspace_ids}. |
 
 ---
 
@@ -734,10 +734,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.variableSet.VariableSetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -799,7 +799,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#name VariableSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#name VariableSet#name}.
 
 ---
 
@@ -811,7 +811,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#description VariableSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#description VariableSet#description}.
 
 ---
 
@@ -823,7 +823,7 @@ Global interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#global VariableSet#global}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#global VariableSet#global}.
 
 ---
 
@@ -835,7 +835,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#id VariableSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#id VariableSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -850,7 +850,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#organization VariableSet#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#organization VariableSet#organization}.
 
 ---
 
@@ -862,7 +862,7 @@ WorkspaceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/variable_set#workspace_ids VariableSet#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable_set#workspace_ids VariableSet#workspace_ids}.
 
 ---
 

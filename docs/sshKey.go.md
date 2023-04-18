@@ -1,6 +1,6 @@
 # `tfe_ssh_key`
 
-Refer to the Terraform Registory for docs: [`tfe_ssh_key`](https://www.terraform.io/docs/providers/tfe/r/ssh_key).
+Refer to the Terraform Registory for docs: [`tfe_ssh_key`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key).
 
 # `sshKey` Submodule <a name="`sshKey` Submodule" id="@cdktf/provider-tfe.sshKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_ssh_key`](https://www.terraform
 
 ### SshKey <a name="SshKey" id="@cdktf/provider-tfe.sshKey.SshKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key tfe_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer"></a>
 
@@ -353,7 +353,7 @@ sshkey.SshKey_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.sshKey.SshKey.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -621,7 +621,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/sshkey"
 
 &sshkey.SshKeyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -639,16 +639,16 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/sshkey"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#key SshKey#key}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#name SshKey#name}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#id SshKey#id}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#organization SshKey#organization}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#key SshKey#key}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#name SshKey#name}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#id SshKey#id}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#organization SshKey#organization}. |
 
 ---
 
@@ -665,10 +665,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -730,7 +730,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#key SshKey#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#key SshKey#key}.
 
 ---
 
@@ -742,7 +742,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#name SshKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#name SshKey#name}.
 
 ---
 
@@ -754,7 +754,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#id SshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#id SshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/ssh_key#organization SshKey#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/ssh_key#organization SshKey#organization}.
 
 ---
 

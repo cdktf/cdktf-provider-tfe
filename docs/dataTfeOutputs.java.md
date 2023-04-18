@@ -1,6 +1,6 @@
 # `data_tfe_outputs`
 
-Refer to the Terraform Registory for docs: [`data_tfe_outputs`](https://www.terraform.io/docs/providers/tfe/d/outputs).
+Refer to the Terraform Registory for docs: [`data_tfe_outputs`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs).
 
 # `dataTfeOutputs` Submodule <a name="`dataTfeOutputs` Submodule" id="@cdktf/provider-tfe.dataTfeOutputs"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_outputs`](https://www.terr
 
 ### DataTfeOutputs <a name="DataTfeOutputs" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/d/outputs tfe_outputs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs tfe_outputs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataTfeOutputs.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,7 +38,7 @@ DataTfeOutputs.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -45,7 +46,7 @@ DataTfeOutputs.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.workspace">workspace</a></code> | <code>java.lang.String</code> | The workspace to fetch the remote state from. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -125,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 
 The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d
 
 - *Type:* java.util.Map<java.lang.String, java.lang.Object>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
 
 ---
 
@@ -439,7 +440,7 @@ DataTfeOutputs.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -530,10 +531,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -688,6 +689,7 @@ DataTfeOutputsConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -706,7 +708,7 @@ DataTfeOutputsConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -714,7 +716,7 @@ DataTfeOutputsConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">workspace</a></code> | <code>java.lang.String</code> | The workspace to fetch the remote state from. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -731,10 +733,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -798,7 +800,7 @@ public java.lang.String getWorkspace();
 
 The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -812,7 +814,7 @@ public java.lang.String getOrganization();
 
 The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 
@@ -824,7 +826,7 @@ public java.util.Map<java.lang.String, java.lang.Object> getValues();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.Object>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/d/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
 
 ---
 

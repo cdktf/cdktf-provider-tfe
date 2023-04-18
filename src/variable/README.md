@@ -1,3 +1,3 @@
 # `tfe_variable`
 
-Refer to the Terraform Registory for docs: [`tfe_variable`](https://www.terraform.io/docs/providers/tfe/r/variable).
+Refer to the Terraform Registory for docs: [`tfe_variable`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable).

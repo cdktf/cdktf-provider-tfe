@@ -1,6 +1,6 @@
 # `tfe_admin_organization_settings`
 
-Refer to the Terraform Registory for docs: [`tfe_admin_organization_settings`](https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings).
+Refer to the Terraform Registory for docs: [`tfe_admin_organization_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings).
 
 # `adminOrganizationSettings` Submodule <a name="`adminOrganizationSettings` Submodule" id="@cdktf/provider-tfe.adminOrganizationSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_admin_organization_settings`](h
 
 ### AdminOrganizationSettings <a name="AdminOrganizationSettings" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings tfe_admin_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings tfe_admin_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer"></a>
 
@@ -19,7 +19,7 @@ adminOrganizationSettings.AdminOrganizationSettings(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,18 +39,18 @@ adminOrganizationSettings.AdminOrganizationSettings(
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.accessBetaTools">access_beta_tools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.globalModuleSharing">global_module_sharing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#id AdminOrganizationSettings#id}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.moduleSharingConsumerOrganizations">module_sharing_consumer_organizations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#organization AdminOrganizationSettings#organization}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.workspaceLimit">workspace_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.accessBetaTools">access_beta_tools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.globalModuleSharing">global_module_sharing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#id AdminOrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.moduleSharingConsumerOrganizations">module_sharing_consumer_organizations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#organization AdminOrganizationSettings#organization}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.workspaceLimit">workspace_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}. |
 
 ---
 
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#id AdminOrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#id AdminOrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#organization AdminOrganizationSettings#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#organization AdminOrganizationSettings#organization}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}.
 
 ---
 
@@ -527,7 +527,7 @@ adminOrganizationSettings.AdminOrganizationSettings.is_terraform_resource(
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -634,10 +634,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -850,7 +850,7 @@ from cdktf_cdktf_provider_tfe import admin_organization_settings
 
 adminOrganizationSettings.AdminOrganizationSettingsConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -870,18 +870,18 @@ adminOrganizationSettings.AdminOrganizationSettingsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.accessBetaTools">access_beta_tools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.globalModuleSharing">global_module_sharing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#id AdminOrganizationSettings#id}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.moduleSharingConsumerOrganizations">module_sharing_consumer_organizations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#organization AdminOrganizationSettings#organization}. |
-| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.workspaceLimit">workspace_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.accessBetaTools">access_beta_tools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.globalModuleSharing">global_module_sharing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#id AdminOrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.moduleSharingConsumerOrganizations">module_sharing_consumer_organizations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#organization AdminOrganizationSettings#organization}. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.workspaceLimit">workspace_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}. |
 
 ---
 
@@ -898,10 +898,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -963,7 +963,7 @@ access_beta_tools: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#access_beta_tools AdminOrganizationSettings#access_beta_tools}.
 
 ---
 
@@ -975,7 +975,7 @@ global_module_sharing: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#global_module_sharing AdminOrganizationSettings#global_module_sharing}.
 
 ---
 
@@ -987,7 +987,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#id AdminOrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#id AdminOrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1002,7 +1002,7 @@ module_sharing_consumer_organizations: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#module_sharing_consumer_organizations AdminOrganizationSettings#module_sharing_consumer_organizations}.
 
 ---
 
@@ -1014,7 +1014,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#organization AdminOrganizationSettings#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#organization AdminOrganizationSettings#organization}.
 
 ---
 
@@ -1026,7 +1026,7 @@ workspace_limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings#workspace_limit AdminOrganizationSettings#workspace_limit}.
 
 ---
 
