@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`tfe`](https://www.terraform.io/docs/providers/tfe).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-tfe.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

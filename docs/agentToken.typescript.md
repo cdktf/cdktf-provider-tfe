@@ -1,3 +1,7 @@
+# `tfe_agent_token`
+
+Refer to the Terraform Registory for docs: [`tfe_agent_token`](https://www.terraform.io/docs/providers/tfe/r/agent_token).
+
 # `agentToken` Submodule <a name="`agentToken` Submodule" id="@cdktf/provider-tfe.agentToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

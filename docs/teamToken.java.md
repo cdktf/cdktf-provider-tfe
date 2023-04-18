@@ -1,3 +1,7 @@
+# `tfe_team_token`
+
+Refer to the Terraform Registory for docs: [`tfe_team_token`](https://www.terraform.io/docs/providers/tfe/r/team_token).
+
 # `teamToken` Submodule <a name="`teamToken` Submodule" id="@cdktf/provider-tfe.teamToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

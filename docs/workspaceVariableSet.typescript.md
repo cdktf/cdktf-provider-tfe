@@ -1,3 +1,7 @@
+# `tfe_workspace_variable_set`
+
+Refer to the Terraform Registory for docs: [`tfe_workspace_variable_set`](https://www.terraform.io/docs/providers/tfe/r/workspace_variable_set).
+
 # `workspaceVariableSet` Submodule <a name="`workspaceVariableSet` Submodule" id="@cdktf/provider-tfe.workspaceVariableSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

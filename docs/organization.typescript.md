@@ -1,3 +1,7 @@
+# `tfe_organization`
+
+Refer to the Terraform Registory for docs: [`tfe_organization`](https://www.terraform.io/docs/providers/tfe/r/organization).
+
 # `organization` Submodule <a name="`organization` Submodule" id="@cdktf/provider-tfe.organization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
