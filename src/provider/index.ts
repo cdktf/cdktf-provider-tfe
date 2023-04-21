@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs
+// https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,39 +10,39 @@ export interface TfeProviderConfig {
   /**
   * The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#hostname TfeProvider#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs#hostname TfeProvider#hostname}
   */
   readonly hostname?: string;
   /**
   * The organization to apply to a resource if one is not defined on
 the resource itself
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#organization TfeProvider#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs#organization TfeProvider#organization}
   */
   readonly organization?: string;
   /**
   * Whether or not to skip certificate verifications.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#ssl_skip_verify TfeProvider#ssl_skip_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs#ssl_skip_verify TfeProvider#ssl_skip_verify}
   */
   readonly sslSkipVerify?: boolean | cdktf.IResolvable;
   /**
   * The token used to authenticate with Terraform Enterprise. We recommend omitting
 the token which can be set as credentials in the CLI config file.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#token TfeProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs#token TfeProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#alias TfeProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs#alias TfeProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs tfe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs tfe}
 */
 export class TfeProvider extends cdktf.TerraformProvider {
 
@@ -56,7 +56,7 @@ export class TfeProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs tfe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs tfe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class TfeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'tfe',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.43.0',
+        providerVersion: '0.44.0',
         providerVersionConstraint: '~> 0.33'
       },
       terraformProviderSource: 'hashicorp/tfe'

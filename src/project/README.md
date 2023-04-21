@@ -1,3 +1,3 @@
 # `tfe_project`
 
-Refer to the Terraform Registory for docs: [`tfe_project`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/project).
+Refer to the Terraform Registory for docs: [`tfe_project`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/resources/project).
