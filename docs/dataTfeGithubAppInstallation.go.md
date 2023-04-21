@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfegithubappinstallation"
 
 datatfegithubappinstallation.NewDataTfeGithubAppInstallation(scope Construct, id *string, config DataTfeGithubAppInstallationConfig) DataTfeGithubAppInstallation
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfegithubappinstallation"
 
 &datatfegithubappinstallation.DataTfeGithubAppInstallationConfig {
 	Connection: interface{},
