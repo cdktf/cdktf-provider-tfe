@@ -1,6 +1,6 @@
 # `data_tfe_ssh_key`
 
-Refer to the Terraform Registory for docs: [`data_tfe_ssh_key`](https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key).
+Refer to the Terraform Registory for docs: [`data_tfe_ssh_key`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key).
 
 # `dataTfeSshKey` Submodule <a name="`dataTfeSshKey` Submodule" id="@cdktf/provider-tfe.dataTfeSshKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_ssh_key`](https://registry
 
 ### DataTfeSshKey <a name="DataTfeSshKey" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key tfe_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey.Initializer"></a>
 
@@ -589,9 +589,9 @@ const dataTfeSshKeyConfig: dataTfeSshKey.DataTfeSshKeyConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key#name DataTfeSshKey#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key#id DataTfeSshKey#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key#organization DataTfeSshKey#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key#name DataTfeSshKey#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key#id DataTfeSshKey#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key#organization DataTfeSshKey#organization}. |
 
 ---
 
@@ -673,7 +673,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key#name DataTfeSshKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key#name DataTfeSshKey#name}.
 
 ---
 
@@ -685,7 +685,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key#id DataTfeSshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key#id DataTfeSshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -700,7 +700,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/ssh_key#organization DataTfeSshKey#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/ssh_key#organization DataTfeSshKey#organization}.
 
 ---
 

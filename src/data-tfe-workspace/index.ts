@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace
+// https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace#id DataTfeWorkspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace#id DataTfeWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace#name DataTfeWorkspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace#name DataTfeWorkspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}
   */
   readonly tagNames?: string[];
 }
@@ -118,7 +118,7 @@ export class DataTfeWorkspaceVcsRepoList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace tfe_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace tfe_workspace}
 */
 export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/workspace tfe_workspace} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/data-sources/workspace tfe_workspace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +143,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.43.0',
+        providerVersion: '0.44.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
