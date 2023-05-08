@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesshkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfesshkey"
 
 datatfesshkey.NewDataTfeSshKey(scope Construct, id *string, config DataTfeSshKeyConfig) DataTfeSshKey
 ```
@@ -284,7 +284,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesshkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfesshkey"
 
 datatfesshkey.DataTfeSshKey_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesshkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfesshkey"
 
 datatfesshkey.DataTfeSshKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datatfesshkey.DataTfeSshKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesshkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfesshkey"
 
 datatfesshkey.DataTfeSshKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesshkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfesshkey"
 
 &datatfesshkey.DataTfeSshKeyConfig {
 	Connection: interface{},
