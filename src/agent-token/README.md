@@ -1,3 +1,3 @@
 # `tfe_agent_token`
 
-Refer to the Terraform Registory for docs: [`tfe_agent_token`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.0/docs/resources/agent_token).
+Refer to the Terraform Registory for docs: [`tfe_agent_token`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/agent_token).
