@@ -61,7 +61,8 @@ This project is explicitly not tracking the Terraform tfe Provider version 1:1. 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform tfe Provider](https://github.com/terraform-providers/terraform-provider-tfe)
+- [Terraform tfe Provider](https://registry.terraform.io/providers/hashicorp/tfe/0.33.0)
+    - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-tfe/releases)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
