@@ -58,5 +58,6 @@ The following submodules are available:
 - [variableSet](./variableSet.go.md)
 - [workspace](./workspace.go.md)
 - [workspacePolicySet](./workspacePolicySet.go.md)
+- [workspaceRun](./workspaceRun.go.md)
 - [workspaceRunTask](./workspaceRunTask.go.md)
 - [workspaceVariableSet](./workspaceVariableSet.go.md)
