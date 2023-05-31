@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable
+// https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,48 +8,47 @@ import * as cdktf from 'cdktf';
 
 export interface VariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#category Variable#category}
+  * Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#category Variable#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#description Variable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#description Variable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#hcl Variable#hcl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#hcl Variable#hcl}
   */
   readonly hcl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#id Variable#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#key Variable#key}
+  * Name of the variable.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#key Variable#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#sensitive Variable#sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#sensitive Variable#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#value Variable#value}
+  * Value of the variable
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#value Variable#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#variable_set_id Variable#variable_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#variable_set_id Variable#variable_set_id}
   */
   readonly variableSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable#workspace_id Variable#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable#workspace_id Variable#workspace_id}
   */
   readonly workspaceId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable tfe_variable}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable tfe_variable}
 */
 export class Variable extends cdktf.TerraformResource {
 
@@ -63,7 +62,7 @@ export class Variable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/variable tfe_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/variable tfe_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +73,7 @@ export class Variable extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_variable',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.44.1',
+        providerVersion: '0.45.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -88,7 +87,6 @@ export class Variable extends cdktf.TerraformResource {
     this._category = config.category;
     this._description = config.description;
     this._hcl = config.hcl;
-    this._id = config.id;
     this._key = config.key;
     this._sensitive = config.sensitive;
     this._value = config.value;
@@ -113,7 +111,7 @@ export class Variable extends cdktf.TerraformResource {
     return this._category;
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -129,7 +127,7 @@ export class Variable extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // hcl - computed: false, optional: true, required: false
+  // hcl - computed: true, optional: true, required: false
   private _hcl?: boolean | cdktf.IResolvable; 
   public get hcl() {
     return this.getBooleanAttribute('hcl');
@@ -145,20 +143,9 @@ export class Variable extends cdktf.TerraformResource {
     return this._hcl;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -174,7 +161,12 @@ export class Variable extends cdktf.TerraformResource {
     return this._key;
   }
 
-  // sensitive - computed: false, optional: true, required: false
+  // readable_value - computed: true, optional: false, required: false
+  public get readableValue() {
+    return this.getStringAttribute('readable_value');
+  }
+
+  // sensitive - computed: true, optional: true, required: false
   private _sensitive?: boolean | cdktf.IResolvable; 
   public get sensitive() {
     return this.getBooleanAttribute('sensitive');
@@ -190,7 +182,7 @@ export class Variable extends cdktf.TerraformResource {
     return this._sensitive;
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -247,7 +239,6 @@ export class Variable extends cdktf.TerraformResource {
       category: cdktf.stringToTerraform(this._category),
       description: cdktf.stringToTerraform(this._description),
       hcl: cdktf.booleanToTerraform(this._hcl),
-      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       sensitive: cdktf.booleanToTerraform(this._sensitive),
       value: cdktf.stringToTerraform(this._value),

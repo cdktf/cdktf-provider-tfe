@@ -32,6 +32,7 @@ export * as variable from './variable';
 export * as variableSet from './variable-set';
 export * as workspace from './workspace';
 export * as workspacePolicySet from './workspace-policy-set';
+export * as workspaceRun from './workspace-run';
 export * as workspaceRunTask from './workspace-run-task';
 export * as workspaceVariableSet from './workspace-variable-set';
 export * as dataTfeAgentPool from './data-tfe-agent-pool';
