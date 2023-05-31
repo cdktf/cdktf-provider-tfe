@@ -58,5 +58,6 @@ The following submodules are available:
 - [variableSet](./variableSet.typescript.md)
 - [workspace](./workspace.typescript.md)
 - [workspacePolicySet](./workspacePolicySet.typescript.md)
+- [workspaceRun](./workspaceRun.typescript.md)
 - [workspaceRunTask](./workspaceRunTask.typescript.md)
 - [workspaceVariableSet](./workspaceVariableSet.typescript.md)

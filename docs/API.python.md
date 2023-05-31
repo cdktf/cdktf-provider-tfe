@@ -58,5 +58,6 @@ The following submodules are available:
 - [variableSet](./variableSet.python.md)
 - [workspace](./workspace.python.md)
 - [workspacePolicySet](./workspacePolicySet.python.md)
+- [workspaceRun](./workspaceRun.python.md)
 - [workspaceRunTask](./workspaceRunTask.python.md)
 - [workspaceVariableSet](./workspaceVariableSet.python.md)

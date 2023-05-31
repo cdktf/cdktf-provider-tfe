@@ -1,6 +1,6 @@
 # `data_tfe_slug`
 
-Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug).
+Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug).
 
 # `dataTfeSlug` Submodule <a name="`dataTfeSlug` Submodule" id="@cdktf/provider-tfe.dataTfeSlug"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://registry.te
 
 ### DataTfeSlug <a name="DataTfeSlug" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug tfe_slug}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug tfe_slug}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataTfeSlug.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.sourcePath">sourcePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#source_path DataTfeSlug#source_path}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#id DataTfeSlug#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.sourcePath">sourcePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#source_path DataTfeSlug#source_path}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#id DataTfeSlug#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#source_path DataTfeSlug#source_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#source_path DataTfeSlug#source_path}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#id DataTfeSlug#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#id DataTfeSlug#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -651,8 +651,8 @@ DataTfeSlugConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.sourcePath">sourcePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#source_path DataTfeSlug#source_path}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#id DataTfeSlug#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.sourcePath">sourcePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#source_path DataTfeSlug#source_path}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlugConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#id DataTfeSlug#id}. |
 
 ---
 
@@ -734,7 +734,7 @@ public java.lang.String getSourcePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#source_path DataTfeSlug#source_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#source_path DataTfeSlug#source_path}.
 
 ---
 
@@ -746,7 +746,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/slug#id DataTfeSlug#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/slug#id DataTfeSlug#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

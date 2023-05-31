@@ -58,5 +58,6 @@ The following submodules are available:
 - [variableSet](./variableSet.csharp.md)
 - [workspace](./workspace.csharp.md)
 - [workspacePolicySet](./workspacePolicySet.csharp.md)
+- [workspaceRun](./workspaceRun.csharp.md)
 - [workspaceRunTask](./workspaceRunTask.csharp.md)
 - [workspaceVariableSet](./workspaceVariableSet.csharp.md)
