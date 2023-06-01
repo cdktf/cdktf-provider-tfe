@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 datatfeteamaccess.NewDataTfeTeamAccess(scope Construct, id *string, config DataTfeTeamAccessConfig) DataTfeTeamAccess
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 datatfeteamaccess.DataTfeTeamAccess_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 datatfeteamaccess.DataTfeTeamAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datatfeteamaccess.DataTfeTeamAccess_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccess.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 datatfeteamaccess.DataTfeTeamAccess_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 &datatfeteamaccess.DataTfeTeamAccessConfig {
 	Connection: interface{},
@@ -735,7 +735,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 &datatfeteamaccess.DataTfeTeamAccessPermissions {
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 datatfeteamaccess.NewDataTfeTeamAccessPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeTeamAccessPermissionsList
 ```
@@ -882,7 +882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/datatfeteamaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteamaccess"
 
 datatfeteamaccess.NewDataTfeTeamAccessPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeTeamAccessPermissionsOutputReference
 ```
