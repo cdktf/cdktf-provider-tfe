@@ -1,6 +1,6 @@
 # `tfe_project_variable_set`
 
-Refer to the Terraform Registory for docs: [`tfe_project_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set).
+Refer to the Terraform Registory for docs: [`tfe_project_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set).
 
 # `projectVariableSet` Submodule <a name="`projectVariableSet` Submodule" id="@cdktf/provider-tfe.projectVariableSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`tfe_project_variable_set`](https://
 
 ### ProjectVariableSet <a name="ProjectVariableSet" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set tfe_project_variable_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set tfe_project_variable_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.NewProjectVariableSet(scope Construct, id *string, config ProjectVariableSetConfig) ProjectVariableSet
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ projectvariableset.ProjectVariableSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 &projectvariableset.ProjectVariableSetConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v6/projectvariableset"
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.variableSetId">VariableSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set#id ProjectVariableSet#id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.variableSetId">VariableSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set#id ProjectVariableSet#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}.
 
 ---
 
@@ -711,7 +711,7 @@ VariableSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/project_variable_set#id ProjectVariableSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/project_variable_set#id ProjectVariableSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

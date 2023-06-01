@@ -1,3 +1,3 @@
 # `tfe_sentinel_policy`
 
-Refer to the Terraform Registory for docs: [`tfe_sentinel_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/sentinel_policy).
+Refer to the Terraform Registory for docs: [`tfe_sentinel_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/sentinel_policy).

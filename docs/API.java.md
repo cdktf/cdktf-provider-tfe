@@ -58,5 +58,6 @@ The following submodules are available:
 - [variableSet](./variableSet.java.md)
 - [workspace](./workspace.java.md)
 - [workspacePolicySet](./workspacePolicySet.java.md)
+- [workspaceRun](./workspaceRun.java.md)
 - [workspaceRunTask](./workspaceRunTask.java.md)
 - [workspaceVariableSet](./workspaceVariableSet.java.md)
