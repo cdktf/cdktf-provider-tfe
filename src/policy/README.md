@@ -1,3 +1,3 @@
 # `tfe_policy`
 
-Refer to the Terraform Registory for docs: [`tfe_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/resources/policy).
+Refer to the Terraform Registory for docs: [`tfe_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy).

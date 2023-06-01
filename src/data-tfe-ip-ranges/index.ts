@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/ip_ranges
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/ip_ranges
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeIpRangesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/ip_ranges#id DataTfeIpRanges#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/ip_ranges#id DataTfeIpRanges#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +22,7 @@ export interface DataTfeIpRangesConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/ip_ranges tfe_ip_ranges}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/ip_ranges tfe_ip_ranges}
 */
 export class DataTfeIpRanges extends cdktf.TerraformDataSource {
 
@@ -31,7 +36,7 @@ export class DataTfeIpRanges extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.44.1/docs/data-sources/ip_ranges tfe_ip_ranges} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/ip_ranges tfe_ip_ranges} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -42,7 +47,7 @@ export class DataTfeIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.44.1',
+        providerVersion: '0.45.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
