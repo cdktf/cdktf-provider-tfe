@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.provider.TfeProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v7/provider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/provider"
 
 provider.NewTfeProvider(scope Construct, id *string, config TfeProviderConfig) TfeProvider
 ```
@@ -175,7 +175,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.provider.TfeProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v7/provider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/provider"
 
 provider.TfeProvider_IsConstruct(x interface{}) *bool
 ```
@@ -207,7 +207,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.provider.TfeProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v7/provider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/provider"
 
 provider.TfeProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -221,7 +221,7 @@ provider.TfeProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-tfe.provider.TfeProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v7/provider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/provider"
 
 provider.TfeProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.provider.TfeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v7/provider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/provider"
 
 &provider.TfeProviderConfig {
 	Alias: *string,
