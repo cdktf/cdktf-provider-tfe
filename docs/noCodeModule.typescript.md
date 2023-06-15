@@ -1302,7 +1302,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.options">options</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a></code> | *No description.* |
 
 ---
 
@@ -1393,10 +1393,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NoCodeModuleVariableOptions | IResolvable;
+public readonly internalValue: IResolvable | NoCodeModuleVariableOptions;
 ```
 
-- *Type:* <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>
 
 ---
 

@@ -1505,7 +1505,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.options">options</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]</code> | *No description.* |
 
 ---
 
@@ -1596,10 +1596,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[NoCodeModuleVariableOptions, IResolvable]
+internal_value: typing.Union[IResolvable, NoCodeModuleVariableOptions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
 
 ---
 
