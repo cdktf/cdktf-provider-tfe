@@ -1,6 +1,6 @@
 # `tfe_agent_token`
 
-Refer to the Terraform Registory for docs: [`tfe_agent_token`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token).
+Refer to the Terraform Registory for docs: [`tfe_agent_token`](https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token).
 
 # `agentToken` Submodule <a name="`agentToken` Submodule" id="@cdktf/provider-tfe.agentToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_agent_token`](https://registry.
 
 ### AgentToken <a name="AgentToken" id="@cdktf/provider-tfe.agentToken.AgentToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token tfe_agent_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token tfe_agent_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentToken.AgentToken.Initializer"></a>
 
@@ -626,9 +626,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/agenttoken"
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.agentPoolId">AgentPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token#agent_pool_id AgentToken#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token#description AgentToken#description}. |
-| <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token#id AgentToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.agentPoolId">AgentPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token#agent_pool_id AgentToken#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token#description AgentToken#description}. |
+| <code><a href="#@cdktf/provider-tfe.agentToken.AgentTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token#id AgentToken#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ AgentPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token#agent_pool_id AgentToken#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token#agent_pool_id AgentToken#agent_pool_id}.
 
 ---
 
@@ -722,7 +722,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token#description AgentToken#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token#description AgentToken#description}.
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_token#id AgentToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_token#id AgentToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

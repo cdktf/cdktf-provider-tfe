@@ -3,6 +3,7 @@
 The following submodules are available:
 - [adminOrganizationSettings](./adminOrganizationSettings.csharp.md)
 - [agentPool](./agentPool.csharp.md)
+- [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.csharp.md)
 - [agentToken](./agentToken.csharp.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.csharp.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.csharp.md)

@@ -3,6 +3,7 @@
 The following submodules are available:
 - [adminOrganizationSettings](./adminOrganizationSettings.java.md)
 - [agentPool](./agentPool.java.md)
+- [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.java.md)
 - [agentToken](./agentToken.java.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.java.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.java.md)

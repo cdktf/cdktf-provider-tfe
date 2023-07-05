@@ -3,6 +3,7 @@
 The following submodules are available:
 - [adminOrganizationSettings](./adminOrganizationSettings.typescript.md)
 - [agentPool](./agentPool.typescript.md)
+- [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.typescript.md)
 - [agentToken](./agentToken.typescript.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.typescript.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.typescript.md)

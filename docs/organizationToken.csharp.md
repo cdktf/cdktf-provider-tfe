@@ -1,6 +1,6 @@
 # `tfe_organization_token`
 
-Refer to the Terraform Registory for docs: [`tfe_organization_token`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token).
+Refer to the Terraform Registory for docs: [`tfe_organization_token`](https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token).
 
 # `organizationToken` Submodule <a name="`organizationToken` Submodule" id="@cdktf/provider-tfe.organizationToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_organization_token`](https://re
 
 ### OrganizationToken <a name="OrganizationToken" id="@cdktf/provider-tfe.organizationToken.OrganizationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token tfe_organization_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token tfe_organization_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.resetExpiredAt">ResetExpiredAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.resetForceRegenerate">ResetForceRegenerate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.resetOrganization">ResetOrganization</a></code> | *No description.* |
@@ -260,6 +261,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetExpiredAt` <a name="ResetExpiredAt" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.resetExpiredAt"></a>
+
+```csharp
+private void ResetExpiredAt()
+```
+
 ##### `ResetForceRegenerate` <a name="ResetForceRegenerate" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.resetForceRegenerate"></a>
 
 ```csharp
@@ -367,9 +374,11 @@ OrganizationToken.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.token">Token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.expiredAtInput">ExpiredAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.forceRegenerateInput">ForceRegenerateInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.expiredAt">ExpiredAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.forceRegenerate">ForceRegenerate</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationToken.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
@@ -528,6 +537,16 @@ public string Token { get; }
 
 ---
 
+##### `ExpiredAtInput`<sup>Optional</sup> <a name="ExpiredAtInput" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.property.expiredAtInput"></a>
+
+```csharp
+public string ExpiredAtInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ForceRegenerateInput`<sup>Optional</sup> <a name="ForceRegenerateInput" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.property.forceRegenerateInput"></a>
 
 ```csharp
@@ -552,6 +571,16 @@ public string IdInput { get; }
 
 ```csharp
 public string OrganizationInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExpiredAt`<sup>Required</sup> <a name="ExpiredAt" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.property.expiredAt"></a>
+
+```csharp
+public string ExpiredAt { get; }
 ```
 
 - *Type:* string
@@ -623,6 +652,7 @@ new OrganizationTokenConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
+    string ExpiredAt = null,
     object ForceRegenerate = null,
     string Id = null,
     string Organization = null
@@ -640,9 +670,10 @@ new OrganizationTokenConfig {
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.forceRegenerate">ForceRegenerate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#force_regenerate OrganizationToken#force_regenerate}. |
-| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#id OrganizationToken#id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#organization OrganizationToken#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.expiredAt">ExpiredAt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#expired_at OrganizationToken#expired_at}. |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.forceRegenerate">ForceRegenerate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#force_regenerate OrganizationToken#force_regenerate}. |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#id OrganizationToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#organization OrganizationToken#organization}. |
 
 ---
 
@@ -716,6 +747,18 @@ public object[] Provisioners { get; set; }
 
 ---
 
+##### `ExpiredAt`<sup>Optional</sup> <a name="ExpiredAt" id="@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.expiredAt"></a>
+
+```csharp
+public string ExpiredAt { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#expired_at OrganizationToken#expired_at}.
+
+---
+
 ##### `ForceRegenerate`<sup>Optional</sup> <a name="ForceRegenerate" id="@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.property.forceRegenerate"></a>
 
 ```csharp
@@ -724,7 +767,7 @@ public object ForceRegenerate { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#force_regenerate OrganizationToken#force_regenerate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#force_regenerate OrganizationToken#force_regenerate}.
 
 ---
 
@@ -736,7 +779,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#id OrganizationToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#id OrganizationToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -751,7 +794,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#organization OrganizationToken#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#organization OrganizationToken#organization}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership
+// https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeOrganizationMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership#email DataTfeOrganizationMembership#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership#email DataTfeOrganizationMembership#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership#id DataTfeOrganizationMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership#id DataTfeOrganizationMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership#organization DataTfeOrganizationMembership#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership#organization DataTfeOrganizationMembership#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership#username DataTfeOrganizationMembership#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership#username DataTfeOrganizationMembership#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership tfe_organization_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership tfe_organization_membership}
 */
 export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
 
@@ -48,7 +48,7 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/organization_membership tfe_organization_membership} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/organization_membership tfe_organization_membership} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_organization_membership',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.45.0',
+        providerVersion: '0.46.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

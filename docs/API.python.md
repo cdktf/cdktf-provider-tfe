@@ -3,6 +3,7 @@
 The following submodules are available:
 - [adminOrganizationSettings](./adminOrganizationSettings.python.md)
 - [agentPool](./agentPool.python.md)
+- [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.python.md)
 - [agentToken](./agentToken.python.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.python.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.python.md)

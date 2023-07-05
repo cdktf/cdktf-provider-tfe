@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token
+// https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#force_regenerate OrganizationToken#force_regenerate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#expired_at OrganizationToken#expired_at}
+  */
+  readonly expiredAt?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#force_regenerate OrganizationToken#force_regenerate}
   */
   readonly forceRegenerate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#id OrganizationToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#id OrganizationToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token#organization OrganizationToken#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token#organization OrganizationToken#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token tfe_organization_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token tfe_organization_token}
 */
 export class OrganizationToken extends cdktf.TerraformResource {
 
@@ -44,7 +48,7 @@ export class OrganizationToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/organization_token tfe_organization_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/organization_token tfe_organization_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +59,7 @@ export class OrganizationToken extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_token',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.45.0',
+        providerVersion: '0.46.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -66,6 +70,7 @@ export class OrganizationToken extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._expiredAt = config.expiredAt;
     this._forceRegenerate = config.forceRegenerate;
     this._id = config.id;
     this._organization = config.organization;
@@ -74,6 +79,22 @@ export class OrganizationToken extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // expired_at - computed: false, optional: true, required: false
+  private _expiredAt?: string; 
+  public get expiredAt() {
+    return this.getStringAttribute('expired_at');
+  }
+  public set expiredAt(value: string) {
+    this._expiredAt = value;
+  }
+  public resetExpiredAt() {
+    this._expiredAt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expiredAtInput() {
+    return this._expiredAt;
+  }
 
   // force_regenerate - computed: false, optional: true, required: false
   private _forceRegenerate?: boolean | cdktf.IResolvable; 
@@ -134,6 +155,7 @@ export class OrganizationToken extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      expired_at: cdktf.stringToTerraform(this._expiredAt),
       force_regenerate: cdktf.booleanToTerraform(this._forceRegenerate),
       id: cdktf.stringToTerraform(this._id),
       organization: cdktf.stringToTerraform(this._organization),
