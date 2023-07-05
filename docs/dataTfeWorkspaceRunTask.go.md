@@ -1,6 +1,6 @@
 # `data_tfe_workspace_run_task`
 
-Refer to the Terraform Registory for docs: [`data_tfe_workspace_run_task`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/workspace_run_task).
+Refer to the Terraform Registory for docs: [`data_tfe_workspace_run_task`](https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/workspace_run_task).
 
 # `dataTfeWorkspaceRunTask` Submodule <a name="`dataTfeWorkspaceRunTask` Submodule" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_tfe_workspace_run_task`](https
 
 ### DataTfeWorkspaceRunTask <a name="DataTfeWorkspaceRunTask" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/workspace_run_task tfe_workspace_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/workspace_run_task tfe_workspace_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.NewDataTfeWorkspaceRunTask(scope Construct, id *string, config DataTfeWorkspaceRunTaskConfig) DataTfeWorkspaceRunTask
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 &datatfeworkspaceruntask.DataTfeWorkspaceRunTaskConfig {
 	Connection: interface{},
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeworkspaceruntask"
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.property.taskId">TaskId</a></code> | <code>*string</code> | The id of the run task. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | The id of the workspace. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/workspace_run_task#id DataTfeWorkspaceRunTask#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/workspace_run_task#id DataTfeWorkspaceRunTask#id}. |
 
 ---
 
@@ -701,7 +701,7 @@ TaskId *string
 
 The id of the run task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}
 
 ---
 
@@ -715,7 +715,7 @@ WorkspaceId *string
 
 The id of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/data-sources/workspace_run_task#id DataTfeWorkspaceRunTask#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/data-sources/workspace_run_task#id DataTfeWorkspaceRunTask#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

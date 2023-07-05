@@ -1,6 +1,6 @@
 # `tfe_agent_pool`
 
-Refer to the Terraform Registory for docs: [`tfe_agent_pool`](https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool).
+Refer to the Terraform Registory for docs: [`tfe_agent_pool`](https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool).
 
 # `agentPool` Submodule <a name="`agentPool` Submodule" id="@cdktf/provider-tfe.agentPool"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_agent_pool`](https://registry.t
 
 ### AgentPool <a name="AgentPool" id="@cdktf/provider-tfe.agentPool.AgentPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool tfe_agent_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool tfe_agent_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentPool.AgentPool.Initializer"></a>
 
@@ -27,7 +27,8 @@ agentPool.AgentPool(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   id: str = None,
-  organization: str = None
+  organization: str = None,
+  organization_scoped: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -42,9 +43,10 @@ agentPool.AgentPool(
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#name AgentPool#name}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#id AgentPool#id}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#organization AgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#name AgentPool#name}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#id AgentPool#id}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization AgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organizationScoped">organization_scoped</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#name AgentPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#name AgentPool#name}.
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#id AgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#id AgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +133,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#organization AgentPool#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization AgentPool#organization}.
+
+---
+
+##### `organization_scoped`<sup>Optional</sup> <a name="organization_scoped" id="@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organizationScoped"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}.
 
 ---
 
@@ -157,6 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.resetOrganization">reset_organization</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.resetOrganizationScoped">reset_organization_scoped</a></code> | *No description.* |
 
 ---
 
@@ -381,6 +392,12 @@ def reset_id() -> None
 def reset_organization() -> None
 ```
 
+##### `reset_organization_scoped` <a name="reset_organization_scoped" id="@cdktf/provider-tfe.agentPool.AgentPool.resetOrganizationScoped"></a>
+
+```python
+def reset_organization_scoped() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -478,9 +495,11 @@ agentPool.AgentPool.is_terraform_resource(
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.organizationScopedInput">organization_scoped_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.organization">organization</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.property.organizationScoped">organization_scoped</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -656,6 +675,16 @@ organization_input: str
 
 ---
 
+##### `organization_scoped_input`<sup>Optional</sup> <a name="organization_scoped_input" id="@cdktf/provider-tfe.agentPool.AgentPool.property.organizationScopedInput"></a>
+
+```python
+organization_scoped_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.agentPool.AgentPool.property.id"></a>
 
 ```python
@@ -683,6 +712,16 @@ organization: str
 ```
 
 - *Type:* str
+
+---
+
+##### `organization_scoped`<sup>Required</sup> <a name="organization_scoped" id="@cdktf/provider-tfe.agentPool.AgentPool.property.organizationScoped"></a>
+
+```python
+organization_scoped: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -723,7 +762,8 @@ agentPool.AgentPoolConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   id: str = None,
-  organization: str = None
+  organization: str = None,
+  organization_scoped: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -738,9 +778,10 @@ agentPool.AgentPoolConfig(
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#name AgentPool#name}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#id AgentPool#id}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#organization AgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#name AgentPool#name}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#id AgentPool#id}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization AgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organizationScoped">organization_scoped</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}. |
 
 ---
 
@@ -822,7 +863,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#name AgentPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#name AgentPool#name}.
 
 ---
 
@@ -834,7 +875,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#id AgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#id AgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +890,19 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/agent_pool#organization AgentPool#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization AgentPool#organization}.
+
+---
+
+##### `organization_scoped`<sup>Optional</sup> <a name="organization_scoped" id="@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organizationScoped"></a>
+
+```python
+organization_scoped: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}.
 
 ---
 

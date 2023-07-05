@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy
+// https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface PolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Text describing the policy's purpose
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#description Policy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#description Policy#description}
   */
   readonly description?: string;
   /**
   * The enforcement configuration of the policy. For Sentinel, valid values are `hard-mandatory`, `soft-mandatory` and `advisory`. For OPA, Valid values are ``mandatory` and `advisory``
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#enforce_mode Policy#enforce_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#enforce_mode Policy#enforce_mode}
   */
   readonly enforceMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#id Policy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#id Policy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,37 @@ export interface PolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The policy-as-code framework for the policy. Valid values are sentinel and opa
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#kind Policy#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#kind Policy#kind}
   */
   readonly kind?: string;
   /**
   * The name of the policy
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#name Policy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#name Policy#name}
   */
   readonly name: string;
   /**
   * Name of the organization that this policy belongs to
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#organization Policy#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#organization Policy#organization}
   */
   readonly organization?: string;
   /**
   * Text of a valid Sentinel or OPA policy
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#policy Policy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#policy Policy#policy}
   */
   readonly policy: string;
   /**
   * The OPA query to run. Required for OPA policies
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy#query Policy#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy#query Policy#query}
   */
   readonly query?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy tfe_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy tfe_policy}
 */
 export class Policy extends cdktf.TerraformResource {
 
@@ -78,7 +73,7 @@ export class Policy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.45.0/docs/resources/policy tfe_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/policy tfe_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +84,7 @@ export class Policy extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_policy',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.45.0',
+        providerVersion: '0.46.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
