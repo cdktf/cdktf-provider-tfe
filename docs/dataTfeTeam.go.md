@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteam"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeteam"
 
 datatfeteam.NewDataTfeTeam(scope Construct, id *string, config DataTfeTeamConfig) DataTfeTeam
 ```
@@ -284,7 +284,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteam"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeteam"
 
 datatfeteam.DataTfeTeam_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteam"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeteam"
 
 datatfeteam.DataTfeTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datatfeteam.DataTfeTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeam.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteam"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeteam"
 
 datatfeteam.DataTfeTeam_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeteam"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfeteam"
 
 &datatfeteam.DataTfeTeamConfig {
 	Connection: interface{},
