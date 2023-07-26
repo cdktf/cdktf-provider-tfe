@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamprojectaccess"
 
 teamprojectaccess.NewTeamProjectAccess(scope Construct, id *string, config TeamProjectAccessConfig) TeamProjectAccess
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ teamprojectaccess.TeamProjectAccess_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamprojectaccess"
 
 &teamprojectaccess.TeamProjectAccessConfig {
 	Connection: interface{},
