@@ -1,6 +1,6 @@
 # `tfe_workspace_run`
 
-Refer to the Terraform Registory for docs: [`tfe_workspace_run`](https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run).
+Refer to the Terraform Registory for docs: [`tfe_workspace_run`](https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run).
 
 # `workspaceRun` Submodule <a name="`workspaceRun` Submodule" id="@cdktf/provider-tfe.workspaceRun"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`tfe_workspace_run`](https://registr
 
 ### WorkspaceRun <a name="WorkspaceRun" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run tfe_workspace_run}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run tfe_workspace_run}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 workspacerun.NewWorkspaceRun(scope Construct, id *string, config WorkspaceRunConfig) WorkspaceRun
 ```
@@ -317,7 +317,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 workspacerun.WorkspaceRun_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 workspacerun.WorkspaceRun_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ workspacerun.WorkspaceRun_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 workspacerun.WorkspaceRun_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 &workspacerun.WorkspaceRunApply {
 	ManualConfirm: interface{},
@@ -666,12 +666,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.manualConfirm">ManualConfirm</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retry">Retry</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry WorkspaceRun#retry}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retryAttempts">RetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retryBackoffMax">RetryBackoffMax</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retryBackoffMin">RetryBackoffMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.waitForRun">WaitForRun</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.manualConfirm">ManualConfirm</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retry">Retry</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry WorkspaceRun#retry}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retryAttempts">RetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retryBackoffMax">RetryBackoffMax</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.retryBackoffMin">RetryBackoffMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.property.waitForRun">WaitForRun</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}. |
 
 ---
 
@@ -683,7 +683,7 @@ ManualConfirm interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}.
 
 ---
 
@@ -695,7 +695,7 @@ Retry interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry WorkspaceRun#retry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry WorkspaceRun#retry}.
 
 ---
 
@@ -707,7 +707,7 @@ RetryAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}.
 
 ---
 
@@ -719,7 +719,7 @@ RetryBackoffMax *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}.
 
 ---
 
@@ -731,7 +731,7 @@ RetryBackoffMin *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}.
 
 ---
 
@@ -743,7 +743,7 @@ WaitForRun interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}.
 
 ---
 
@@ -752,7 +752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 &workspacerun.WorkspaceRunConfig {
 	Connection: interface{},
@@ -763,8 +763,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	WorkspaceId: *string,
-	Apply: github.com/cdktf/cdktf-provider-tfe-go/tfe/v8.workspaceRun.WorkspaceRunApply,
-	Destroy: github.com/cdktf/cdktf-provider-tfe-go/tfe/v8.workspaceRun.WorkspaceRunDestroy,
+	Apply: github.com/cdktf/cdktf-provider-tfe-go/tfe.workspaceRun.WorkspaceRunApply,
+	Destroy: github.com/cdktf/cdktf-provider-tfe-go/tfe.workspaceRun.WorkspaceRunDestroy,
 	Id: *string,
 }
 ```
@@ -780,10 +780,10 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
 | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#workspace_id WorkspaceRun#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#workspace_id WorkspaceRun#workspace_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.apply">Apply</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply">WorkspaceRunApply</a></code> | apply block. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.destroy">Destroy</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy">WorkspaceRunDestroy</a></code> | destroy block. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#id WorkspaceRun#id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#id WorkspaceRun#id}. |
 
 ---
 
@@ -865,7 +865,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#workspace_id WorkspaceRun#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#workspace_id WorkspaceRun#workspace_id}.
 
 ---
 
@@ -879,7 +879,7 @@ Apply WorkspaceRunApply
 
 apply block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#apply WorkspaceRun#apply}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#apply WorkspaceRun#apply}
 
 ---
 
@@ -893,7 +893,7 @@ Destroy WorkspaceRunDestroy
 
 destroy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#destroy WorkspaceRun#destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#destroy WorkspaceRun#destroy}
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#id WorkspaceRun#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#id WorkspaceRun#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -917,7 +917,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 &workspacerun.WorkspaceRunDestroy {
 	ManualConfirm: interface{},
@@ -933,12 +933,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.manualConfirm">ManualConfirm</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retry">Retry</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry WorkspaceRun#retry}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retryAttempts">RetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retryBackoffMax">RetryBackoffMax</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retryBackoffMin">RetryBackoffMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.waitForRun">WaitForRun</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.manualConfirm">ManualConfirm</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retry">Retry</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry WorkspaceRun#retry}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retryAttempts">RetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retryBackoffMax">RetryBackoffMax</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.retryBackoffMin">RetryBackoffMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.property.waitForRun">WaitForRun</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}. |
 
 ---
 
@@ -950,7 +950,7 @@ ManualConfirm interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#manual_confirm WorkspaceRun#manual_confirm}.
 
 ---
 
@@ -962,7 +962,7 @@ Retry interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry WorkspaceRun#retry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry WorkspaceRun#retry}.
 
 ---
 
@@ -974,7 +974,7 @@ RetryAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_attempts WorkspaceRun#retry_attempts}.
 
 ---
 
@@ -986,7 +986,7 @@ RetryBackoffMax *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_max WorkspaceRun#retry_backoff_max}.
 
 ---
 
@@ -998,7 +998,7 @@ RetryBackoffMin *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#retry_backoff_min WorkspaceRun#retry_backoff_min}.
 
 ---
 
@@ -1010,7 +1010,7 @@ WaitForRun interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/workspace_run#wait_for_run WorkspaceRun#wait_for_run}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunApplyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 workspacerun.NewWorkspaceRunApplyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceRunApplyOutputReference
 ```
@@ -1437,7 +1437,7 @@ func InternalValue() WorkspaceRunApply
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 
 workspacerun.NewWorkspaceRunDestroyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceRunDestroyOutputReference
 ```

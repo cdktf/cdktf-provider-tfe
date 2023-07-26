@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.csharp.md)
 - [dataTfePolicySet](./dataTfePolicySet.csharp.md)
 - [dataTfeProject](./dataTfeProject.csharp.md)
+- [dataTfeSamlSettings](./dataTfeSamlSettings.csharp.md)
 - [dataTfeSlug](./dataTfeSlug.csharp.md)
 - [dataTfeSshKey](./dataTfeSshKey.csharp.md)
 - [dataTfeTeam](./dataTfeTeam.csharp.md)

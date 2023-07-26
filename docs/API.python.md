@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.python.md)
 - [dataTfePolicySet](./dataTfePolicySet.python.md)
 - [dataTfeProject](./dataTfeProject.python.md)
+- [dataTfeSamlSettings](./dataTfeSamlSettings.python.md)
 - [dataTfeSlug](./dataTfeSlug.python.md)
 - [dataTfeSshKey](./dataTfeSshKey.python.md)
 - [dataTfeTeam](./dataTfeTeam.python.md)

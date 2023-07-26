@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.go.md)
 - [dataTfePolicySet](./dataTfePolicySet.go.md)
 - [dataTfeProject](./dataTfeProject.go.md)
+- [dataTfeSamlSettings](./dataTfeSamlSettings.go.md)
 - [dataTfeSlug](./dataTfeSlug.go.md)
 - [dataTfeSshKey](./dataTfeSshKey.go.md)
 - [dataTfeTeam](./dataTfeTeam.go.md)

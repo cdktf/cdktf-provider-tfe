@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.typescript.md)
 - [dataTfePolicySet](./dataTfePolicySet.typescript.md)
 - [dataTfeProject](./dataTfeProject.typescript.md)
+- [dataTfeSamlSettings](./dataTfeSamlSettings.typescript.md)
 - [dataTfeSlug](./dataTfeSlug.typescript.md)
 - [dataTfeSshKey](./dataTfeSshKey.typescript.md)
 - [dataTfeTeam](./dataTfeTeam.typescript.md)
