@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool_allowed_workspaces
+// https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/agent_pool_allowed_workspaces
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface AgentPoolAllowedWorkspacesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool_allowed_workspaces#agent_pool_id AgentPoolAllowedWorkspaces#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/agent_pool_allowed_workspaces#agent_pool_id AgentPoolAllowedWorkspaces#agent_pool_id}
   */
   readonly agentPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool_allowed_workspaces#allowed_workspace_ids AgentPoolAllowedWorkspaces#allowed_workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/agent_pool_allowed_workspaces#allowed_workspace_ids AgentPoolAllowedWorkspaces#allowed_workspace_ids}
   */
   readonly allowedWorkspaceIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool_allowed_workspaces#id AgentPoolAllowedWorkspaces#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/agent_pool_allowed_workspaces#id AgentPoolAllowedWorkspaces#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface AgentPoolAllowedWorkspacesConfig extends cdktf.TerraformMetaArg
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool_allowed_workspaces tfe_agent_pool_allowed_workspaces}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/agent_pool_allowed_workspaces tfe_agent_pool_allowed_workspaces}
 */
 export class AgentPoolAllowedWorkspaces extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class AgentPoolAllowedWorkspaces extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/agent_pool_allowed_workspaces tfe_agent_pool_allowed_workspaces} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/agent_pool_allowed_workspaces tfe_agent_pool_allowed_workspaces} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class AgentPoolAllowedWorkspaces extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_agent_pool_allowed_workspaces',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.46.0',
+        providerVersion: '0.47.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

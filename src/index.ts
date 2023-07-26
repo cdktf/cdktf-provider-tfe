@@ -54,6 +54,7 @@ export * as dataTfeOrganizations from './data-tfe-organizations';
 export * as dataTfeOutputs from './data-tfe-outputs';
 export * as dataTfePolicySet from './data-tfe-policy-set';
 export * as dataTfeProject from './data-tfe-project';
+export * as dataTfeSamlSettings from './data-tfe-saml-settings';
 export * as dataTfeSlug from './data-tfe-slug';
 export * as dataTfeSshKey from './data-tfe-ssh-key';
 export * as dataTfeTeam from './data-tfe-team';

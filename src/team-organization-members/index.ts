@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_organization_members
+// https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_organization_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface TeamOrganizationMembersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_organization_members#id TeamOrganizationMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_organization_members#id TeamOrganizationMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_organization_members#organization_membership_ids TeamOrganizationMembers#organization_membership_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_organization_members#organization_membership_ids TeamOrganizationMembers#organization_membership_ids}
   */
   readonly organizationMembershipIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_organization_members#team_id TeamOrganizationMembers#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_organization_members#team_id TeamOrganizationMembers#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_organization_members tfe_team_organization_members}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_organization_members tfe_team_organization_members}
 */
 export class TeamOrganizationMembers extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class TeamOrganizationMembers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_organization_members tfe_team_organization_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_organization_members tfe_team_organization_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class TeamOrganizationMembers extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team_organization_members',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.46.0',
+        providerVersion: '0.47.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

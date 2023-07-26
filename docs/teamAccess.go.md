@@ -1,6 +1,6 @@
 # `tfe_team_access`
 
-Refer to the Terraform Registory for docs: [`tfe_team_access`](https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access).
+Refer to the Terraform Registory for docs: [`tfe_team_access`](https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access).
 
 # `teamAccess` Submodule <a name="`teamAccess` Submodule" id="@cdktf/provider-tfe.teamAccess"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_team_access`](https://registry.
 
 ### TeamAccess <a name="TeamAccess" id="@cdktf/provider-tfe.teamAccess.TeamAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access tfe_team_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access tfe_team_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamAccess.TeamAccess.Initializer"></a>
 
@@ -688,10 +688,10 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamaccess"
 | <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#team_id TeamAccess#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#workspace_id TeamAccess#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.access">Access</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#access TeamAccess#access}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#id TeamAccess#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#team_id TeamAccess#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#workspace_id TeamAccess#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.access">Access</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#access TeamAccess#access}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#id TeamAccess#id}. |
 | <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
 
 ---
@@ -774,7 +774,7 @@ TeamId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#team_id TeamAccess#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#team_id TeamAccess#team_id}.
 
 ---
 
@@ -786,7 +786,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#workspace_id TeamAccess#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#workspace_id TeamAccess#workspace_id}.
 
 ---
 
@@ -798,7 +798,7 @@ Access *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#access TeamAccess#access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#access TeamAccess#access}.
 
 ---
 
@@ -810,7 +810,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#id TeamAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#id TeamAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -827,7 +827,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#permissions TeamAccess#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#permissions TeamAccess#permissions}
 
 ---
 
@@ -852,12 +852,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/teamaccess"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.runs">Runs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#runs TeamAccess#runs}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.runTasks">RunTasks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#run_tasks TeamAccess#run_tasks}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.sentinelMocks">SentinelMocks</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#sentinel_mocks TeamAccess#sentinel_mocks}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.stateVersions">StateVersions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#state_versions TeamAccess#state_versions}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.variables">Variables</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#variables TeamAccess#variables}. |
-| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.workspaceLocking">WorkspaceLocking</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#workspace_locking TeamAccess#workspace_locking}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.runs">Runs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#runs TeamAccess#runs}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.runTasks">RunTasks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#run_tasks TeamAccess#run_tasks}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.sentinelMocks">SentinelMocks</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#sentinel_mocks TeamAccess#sentinel_mocks}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.stateVersions">StateVersions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#state_versions TeamAccess#state_versions}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.variables">Variables</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#variables TeamAccess#variables}. |
+| <code><a href="#@cdktf/provider-tfe.teamAccess.TeamAccessPermissions.property.workspaceLocking">WorkspaceLocking</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#workspace_locking TeamAccess#workspace_locking}. |
 
 ---
 
@@ -869,7 +869,7 @@ Runs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#runs TeamAccess#runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#runs TeamAccess#runs}.
 
 ---
 
@@ -881,7 +881,7 @@ RunTasks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#run_tasks TeamAccess#run_tasks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#run_tasks TeamAccess#run_tasks}.
 
 ---
 
@@ -893,7 +893,7 @@ SentinelMocks *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#sentinel_mocks TeamAccess#sentinel_mocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#sentinel_mocks TeamAccess#sentinel_mocks}.
 
 ---
 
@@ -905,7 +905,7 @@ StateVersions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#state_versions TeamAccess#state_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#state_versions TeamAccess#state_versions}.
 
 ---
 
@@ -917,7 +917,7 @@ Variables *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#variables TeamAccess#variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#variables TeamAccess#variables}.
 
 ---
 
@@ -929,7 +929,7 @@ WorkspaceLocking interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.46.0/docs/resources/team_access#workspace_locking TeamAccess#workspace_locking}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/team_access#workspace_locking TeamAccess#workspace_locking}.
 
 ---
 

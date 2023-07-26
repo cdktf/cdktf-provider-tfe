@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.java.md)
 - [dataTfePolicySet](./dataTfePolicySet.java.md)
 - [dataTfeProject](./dataTfeProject.java.md)
+- [dataTfeSamlSettings](./dataTfeSamlSettings.java.md)
 - [dataTfeSlug](./dataTfeSlug.java.md)
 - [dataTfeSshKey](./dataTfeSshKey.java.md)
 - [dataTfeTeam](./dataTfeTeam.java.md)
