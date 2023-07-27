@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentPool.AgentPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/agentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpool"
 
 agentpool.NewAgentPool(scope Construct, id *string, config AgentPoolConfig) AgentPool
 ```
@@ -291,7 +291,7 @@ func ResetOrganizationScoped()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.agentPool.AgentPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/agentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpool"
 
 agentpool.AgentPool_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.agentPool.AgentPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/agentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpool"
 
 agentpool.AgentPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ agentpool.AgentPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.agentPool.AgentPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/agentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpool"
 
 agentpool.AgentPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.agentPool.AgentPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/agentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpool"
 
 &agentpool.AgentPoolConfig {
 	Connection: interface{},
