@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/saml_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataTfeSamlSettingsConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/saml_settings tfe_saml_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings tfe_saml_settings}
 */
 export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
 
@@ -29,7 +24,7 @@ export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/saml_settings tfe_saml_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings tfe_saml_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +35,7 @@ export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_saml_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.47.0',
+        providerVersion: '0.48.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -115,6 +110,21 @@ export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
   // old_idp_cert - computed: true, optional: false, required: false
   public get oldIdpCert() {
     return this.getStringAttribute('old_idp_cert');
+  }
+
+  // private_key - computed: true, optional: false, required: false
+  public get privateKey() {
+    return this.getStringAttribute('private_key');
+  }
+
+  // signature_digest_method - computed: true, optional: false, required: false
+  public get signatureDigestMethod() {
+    return this.getStringAttribute('signature_digest_method');
+  }
+
+  // signature_signing_method - computed: true, optional: false, required: false
+  public get signatureSigningMethod() {
+    return this.getStringAttribute('signature_signing_method');
   }
 
   // site_admin_role - computed: true, optional: false, required: false

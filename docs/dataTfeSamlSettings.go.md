@@ -1,6 +1,6 @@
 # `data_tfe_saml_settings`
 
-Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/saml_settings).
+Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings).
 
 # `dataTfeSamlSettings` Submodule <a name="`dataTfeSamlSettings` Submodule" id="@cdktf/provider-tfe.dataTfeSamlSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://re
 
 ### DataTfeSamlSettings <a name="DataTfeSamlSettings" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/saml_settings tfe_saml_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings tfe_saml_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.NewDataTfeSamlSettings(scope Construct, id *string, config DataTfeSamlSettingsConfig) DataTfeSamlSettings
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datatfesamlsettings.DataTfeSamlSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,6 +355,9 @@ datatfesamlsettings.DataTfeSamlSettings_IsTerraformDataSource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.idpCert">IdpCert</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.metadataUrl">MetadataUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.oldIdpCert">OldIdpCert</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.signatureDigestMethod">SignatureDigestMethod</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.signatureSigningMethod">SignatureSigningMethod</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.siteAdminRole">SiteAdminRole</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.sloEndpointUrl">SloEndpointUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.ssoApiTokenSessionTimeout">SsoApiTokenSessionTimeout</a></code> | <code>*f64</code> | *No description.* |
@@ -606,6 +609,36 @@ func OldIdpCert() *string
 
 ---
 
+##### `PrivateKey`<sup>Required</sup> <a name="PrivateKey" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.privateKey"></a>
+
+```go
+func PrivateKey() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SignatureDigestMethod`<sup>Required</sup> <a name="SignatureDigestMethod" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.signatureDigestMethod"></a>
+
+```go
+func SignatureDigestMethod() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SignatureSigningMethod`<sup>Required</sup> <a name="SignatureSigningMethod" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.signatureSigningMethod"></a>
+
+```go
+func SignatureSigningMethod() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SiteAdminRole`<sup>Required</sup> <a name="SiteAdminRole" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.property.siteAdminRole"></a>
 
 ```go
@@ -691,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v8/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 &datatfesamlsettings.DataTfeSamlSettingsConfig {
 	Connection: interface{},
