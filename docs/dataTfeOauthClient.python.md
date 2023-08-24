@@ -1,6 +1,6 @@
 # `data_tfe_oauth_client`
 
-Refer to the Terraform Registory for docs: [`data_tfe_oauth_client`](https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client).
+Refer to the Terraform Registory for docs: [`data_tfe_oauth_client`](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client).
 
 # `dataTfeOauthClient` Submodule <a name="`dataTfeOauthClient` Submodule" id="@cdktf/provider-tfe.dataTfeOauthClient"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_oauth_client`](https://reg
 
 ### DataTfeOauthClient <a name="DataTfeOauthClient" id="@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client tfe_oauth_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client tfe_oauth_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer"></a>
 
@@ -44,11 +44,11 @@ dataTfeOauthClient.DataTfeOauthClient(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.oauthClientId">oauth_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.oauthClientId">oauth_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient.Initializer.parameter.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}.
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}.
 
 ---
 
@@ -869,11 +869,11 @@ dataTfeOauthClient.DataTfeOauthClientConfig(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.oauthClientId">oauth_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.oauthClientId">oauth_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClientConfig.property.serviceProvider">service_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}. |
 
 ---
 
@@ -955,7 +955,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#id DataTfeOauthClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,7 +970,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#name DataTfeOauthClient#name}.
 
 ---
 
@@ -982,7 +982,7 @@ oauth_client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#oauth_client_id DataTfeOauthClient#oauth_client_id}.
 
 ---
 
@@ -994,7 +994,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#organization DataTfeOauthClient#organization}.
 
 ---
 
@@ -1006,7 +1006,7 @@ service_provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/oauth_client#service_provider DataTfeOauthClient#service_provider}.
 
 ---
 

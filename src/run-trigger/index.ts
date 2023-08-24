@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/run_trigger
+// https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface RunTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/run_trigger#id RunTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger#id RunTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/run_trigger#sourceable_id RunTrigger#sourceable_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger#sourceable_id RunTrigger#sourceable_id}
   */
   readonly sourceableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/run_trigger#workspace_id RunTrigger#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger#workspace_id RunTrigger#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/run_trigger tfe_run_trigger}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger tfe_run_trigger}
 */
 export class RunTrigger extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class RunTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.47.0/docs/resources/run_trigger tfe_run_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger tfe_run_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class RunTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_run_trigger',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.47.0',
+        providerVersion: '0.48.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
