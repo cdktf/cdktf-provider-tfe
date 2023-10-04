@@ -1,6 +1,6 @@
 # `tfe_policy`
 
-Refer to the Terraform Registory for docs: [`tfe_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy).
+Refer to the Terraform Registory for docs: [`tfe_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy).
 
 # `policy` Submodule <a name="`policy` Submodule" id="@cdktf/provider-tfe.policy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_policy`](https://registry.terra
 
 ### Policy <a name="Policy" id="@cdktf/provider-tfe.policy.Policy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy tfe_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy tfe_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policy.Policy.Initializer"></a>
 
@@ -53,7 +53,7 @@ Policy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Text of a valid Sentinel or OPA policy. |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Text describing the policy's purpose. |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.enforceMode">enforceMode</a></code> | <code>java.lang.String</code> | The enforcement configuration of the policy. |
-| <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#id Policy#id}. |
+| <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#id Policy#id}. |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The policy-as-code framework for the policy. Valid values are sentinel and opa. |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Name of the organization that this policy belongs to. |
 | <code><a href="#@cdktf/provider-tfe.policy.Policy.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | The OPA query to run. Required for OPA policies. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#name Policy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#name Policy#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Text of a valid Sentinel or OPA policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#policy Policy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#policy Policy#policy}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Text describing the policy's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#description Policy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#description Policy#description}
 
 ---
 
@@ -158,7 +158,7 @@ The enforcement configuration of the policy.
 
 For Sentinel, valid values are `hard-mandatory`, `soft-mandatory` and `advisory`. For OPA, Valid values are `mandatory` and `advisory`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#enforce_mode Policy#enforce_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#enforce_mode Policy#enforce_mode}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#id Policy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#id Policy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The policy-as-code framework for the policy. Valid values are sentinel and opa.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#kind Policy#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#kind Policy#kind}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization that this policy belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#organization Policy#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#organization Policy#organization}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OPA query to run. Required for OPA policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#query Policy#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#query Policy#query}
 
 ---
 
@@ -926,7 +926,7 @@ PolicyConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Text of a valid Sentinel or OPA policy. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | Text describing the policy's purpose. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.enforceMode">enforceMode</a></code> | <code>java.lang.String</code> | The enforcement configuration of the policy. |
-| <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#id Policy#id}. |
+| <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#id Policy#id}. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The policy-as-code framework for the policy. Valid values are sentinel and opa. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Name of the organization that this policy belongs to. |
 | <code><a href="#@cdktf/provider-tfe.policy.PolicyConfig.property.query">query</a></code> | <code>java.lang.String</code> | The OPA query to run. Required for OPA policies. |
@@ -1013,7 +1013,7 @@ public java.lang.String getName();
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#name Policy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#name Policy#name}
 
 ---
 
@@ -1027,7 +1027,7 @@ public java.lang.String getPolicy();
 
 Text of a valid Sentinel or OPA policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#policy Policy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#policy Policy#policy}
 
 ---
 
@@ -1041,7 +1041,7 @@ public java.lang.String getDescription();
 
 Text describing the policy's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#description Policy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#description Policy#description}
 
 ---
 
@@ -1057,7 +1057,7 @@ The enforcement configuration of the policy.
 
 For Sentinel, valid values are `hard-mandatory`, `soft-mandatory` and `advisory`. For OPA, Valid values are `mandatory` and `advisory`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#enforce_mode Policy#enforce_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#enforce_mode Policy#enforce_mode}
 
 ---
 
@@ -1069,7 +1069,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#id Policy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#id Policy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ public java.lang.String getKind();
 
 The policy-as-code framework for the policy. Valid values are sentinel and opa.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#kind Policy#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#kind Policy#kind}
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.lang.String getOrganization();
 
 Name of the organization that this policy belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#organization Policy#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#organization Policy#organization}
 
 ---
 
@@ -1114,7 +1114,7 @@ public java.lang.String getQuery();
 
 The OPA query to run. Required for OPA policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/policy#query Policy#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy#query Policy#query}
 
 ---
 

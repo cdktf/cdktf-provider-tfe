@@ -1,6 +1,6 @@
 # `data_tfe_saml_settings`
 
-Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings).
+Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/saml_settings).
 
 # `dataTfeSamlSettings` Submodule <a name="`dataTfeSamlSettings` Submodule" id="@cdktf/provider-tfe.dataTfeSamlSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://re
 
 ### DataTfeSamlSettings <a name="DataTfeSamlSettings" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/saml_settings tfe_saml_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/saml_settings tfe_saml_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.Initializer"></a>
 

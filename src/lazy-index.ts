@@ -40,6 +40,7 @@ Object.defineProperty(exports, 'variable', { get: function () { return require('
 Object.defineProperty(exports, 'variableSet', { get: function () { return require('./variable-set'); } });
 Object.defineProperty(exports, 'workspace', { get: function () { return require('./workspace'); } });
 Object.defineProperty(exports, 'workspacePolicySet', { get: function () { return require('./workspace-policy-set'); } });
+Object.defineProperty(exports, 'workspacePolicySetExclusion', { get: function () { return require('./workspace-policy-set-exclusion'); } });
 Object.defineProperty(exports, 'workspaceRun', { get: function () { return require('./workspace-run'); } });
 Object.defineProperty(exports, 'workspaceRunTask', { get: function () { return require('./workspace-run-task'); } });
 Object.defineProperty(exports, 'workspaceVariableSet', { get: function () { return require('./workspace-variable-set'); } });
@@ -62,6 +63,7 @@ Object.defineProperty(exports, 'dataTfeSshKey', { get: function () { return requ
 Object.defineProperty(exports, 'dataTfeTeam', { get: function () { return require('./data-tfe-team'); } });
 Object.defineProperty(exports, 'dataTfeTeamAccess', { get: function () { return require('./data-tfe-team-access'); } });
 Object.defineProperty(exports, 'dataTfeTeamProjectAccess', { get: function () { return require('./data-tfe-team-project-access'); } });
+Object.defineProperty(exports, 'dataTfeTeams', { get: function () { return require('./data-tfe-teams'); } });
 Object.defineProperty(exports, 'dataTfeVariableSet', { get: function () { return require('./data-tfe-variable-set'); } });
 Object.defineProperty(exports, 'dataTfeVariables', { get: function () { return require('./data-tfe-variables'); } });
 Object.defineProperty(exports, 'dataTfeWorkspace', { get: function () { return require('./data-tfe-workspace'); } });

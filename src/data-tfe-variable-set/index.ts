@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeVariableSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set#id DataTfeVariableSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#id DataTfeVariableSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set#name DataTfeVariableSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#name DataTfeVariableSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}
+  */
+  readonly projectIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}
   */
   readonly variableIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}
   */
   readonly workspaceIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set tfe_variable_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set tfe_variable_set}
 */
 export class DataTfeVariableSet extends cdktf.TerraformDataSource {
 
@@ -52,7 +56,7 @@ export class DataTfeVariableSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/variable_set tfe_variable_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set tfe_variable_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +67,7 @@ export class DataTfeVariableSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_variable_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.48.0',
+        providerVersion: '0.49.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -77,6 +81,7 @@ export class DataTfeVariableSet extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._name = config.name;
     this._organization = config.organization;
+    this._projectIds = config.projectIds;
     this._variableIds = config.variableIds;
     this._workspaceIds = config.workspaceIds;
   }
@@ -140,6 +145,22 @@ export class DataTfeVariableSet extends cdktf.TerraformDataSource {
     return this._organization;
   }
 
+  // project_ids - computed: true, optional: true, required: false
+  private _projectIds?: string[]; 
+  public get projectIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('project_ids'));
+  }
+  public set projectIds(value: string[]) {
+    this._projectIds = value;
+  }
+  public resetProjectIds() {
+    this._projectIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdsInput() {
+    return this._projectIds;
+  }
+
   // variable_ids - computed: true, optional: true, required: false
   private _variableIds?: string[]; 
   public get variableIds() {
@@ -181,6 +202,7 @@ export class DataTfeVariableSet extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
+      project_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._projectIds),
       variable_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._variableIds),
       workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
     };

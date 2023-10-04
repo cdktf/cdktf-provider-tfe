@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project_variable_set
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_variable_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectVariableSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project_variable_set#id ProjectVariableSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_variable_set#id ProjectVariableSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}
   */
   readonly variableSetId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project_variable_set tfe_project_variable_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_variable_set tfe_project_variable_set}
 */
 export class ProjectVariableSet extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class ProjectVariableSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project_variable_set tfe_project_variable_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_variable_set tfe_project_variable_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class ProjectVariableSet extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_project_variable_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.48.0',
+        providerVersion: '0.49.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
