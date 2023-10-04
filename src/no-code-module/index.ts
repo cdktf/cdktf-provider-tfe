@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface NoCodeModuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#enabled NoCodeModule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#id NoCodeModule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#id NoCodeModule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#organization NoCodeModule#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#organization NoCodeModule#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}
   */
   readonly registryModule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}
   */
   readonly versionPin?: string;
   /**
   * variable_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#variable_options NoCodeModule#variable_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#variable_options NoCodeModule#variable_options}
   */
   readonly variableOptions?: NoCodeModuleVariableOptions[] | cdktf.IResolvable;
 }
 export interface NoCodeModuleVariableOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#name NoCodeModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#name NoCodeModule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#options NoCodeModule#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#options NoCodeModule#options}
   */
   readonly options: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module#type NoCodeModule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module#type NoCodeModule#type}
   */
   readonly type: string;
 }
@@ -186,7 +181,7 @@ export class NoCodeModuleVariableOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module tfe_no_code_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module tfe_no_code_module}
 */
 export class NoCodeModule extends cdktf.TerraformResource {
 
@@ -200,7 +195,7 @@ export class NoCodeModule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/no_code_module tfe_no_code_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/no_code_module tfe_no_code_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +206,7 @@ export class NoCodeModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_no_code_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.48.0',
+        providerVersion: '0.49.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

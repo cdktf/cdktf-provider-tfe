@@ -1,6 +1,6 @@
 # `data_tfe_organization_membership`
 
-Refer to the Terraform Registory for docs: [`data_tfe_organization_membership`](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership).
+Refer to the Terraform Registory for docs: [`data_tfe_organization_membership`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership).
 
 # `dataTfeOrganizationMembership` Submodule <a name="`dataTfeOrganizationMembership` Submodule" id="@cdktf/provider-tfe.dataTfeOrganizationMembership"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_tfe_organization_membership`](
 
 ### DataTfeOrganizationMembership <a name="DataTfeOrganizationMembership" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership tfe_organization_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership tfe_organization_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembership"
 
 datatfeorganizationmembership.NewDataTfeOrganizationMembership(scope Construct, id *string, config DataTfeOrganizationMembershipConfig) DataTfeOrganizationMembership
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetOrganization">ResetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetOrganizationMembershipId">ResetOrganizationMembershipId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetUsername">ResetUsername</a></code> | *No description.* |
 
 ---
@@ -279,6 +280,12 @@ func ResetId()
 func ResetOrganization()
 ```
 
+##### `ResetOrganizationMembershipId` <a name="ResetOrganizationMembershipId" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetOrganizationMembershipId"></a>
+
+```go
+func ResetOrganizationMembershipId()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.resetUsername"></a>
 
 ```go
@@ -298,7 +305,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembership"
 
 datatfeorganizationmembership.DataTfeOrganizationMembership_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembership"
 
 datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +351,7 @@ datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembership"
 
 datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -375,10 +382,12 @@ datatfeorganizationmembership.DataTfeOrganizationMembership_IsTerraformDataSourc
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.organizationMembershipIdInput">OrganizationMembershipIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.email">Email</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.organizationMembershipId">OrganizationMembershipId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -545,6 +554,16 @@ func OrganizationInput() *string
 
 ---
 
+##### `OrganizationMembershipIdInput`<sup>Optional</sup> <a name="OrganizationMembershipIdInput" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.organizationMembershipIdInput"></a>
+
+```go
+func OrganizationMembershipIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.usernameInput"></a>
 
 ```go
@@ -579,6 +598,16 @@ func Id() *string
 
 ```go
 func Organization() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OrganizationMembershipId`<sup>Required</sup> <a name="OrganizationMembershipId" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership.property.organizationMembershipId"></a>
+
+```go
+func OrganizationMembershipId() *string
 ```
 
 - *Type:* *string
@@ -620,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembership"
 
 &datatfeorganizationmembership.DataTfeOrganizationMembershipConfig {
 	Connection: interface{},
@@ -633,6 +662,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembers
 	Email: *string,
 	Id: *string,
 	Organization: *string,
+	OrganizationMembershipId: *string,
 	Username: *string,
 }
 ```
@@ -648,10 +678,11 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfeorganizationmembers
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#email DataTfeOrganizationMembership#email}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#id DataTfeOrganizationMembership#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#organization DataTfeOrganizationMembership#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#username DataTfeOrganizationMembership#username}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#email DataTfeOrganizationMembership#email}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#id DataTfeOrganizationMembership#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#organization DataTfeOrganizationMembership#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.organizationMembershipId">OrganizationMembershipId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#organization_membership_id DataTfeOrganizationMembership#organization_membership_id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#username DataTfeOrganizationMembership#username}. |
 
 ---
 
@@ -733,7 +764,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#email DataTfeOrganizationMembership#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#email DataTfeOrganizationMembership#email}.
 
 ---
 
@@ -745,7 +776,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#id DataTfeOrganizationMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#id DataTfeOrganizationMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -760,7 +791,19 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#organization DataTfeOrganizationMembership#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#organization DataTfeOrganizationMembership#organization}.
+
+---
+
+##### `OrganizationMembershipId`<sup>Optional</sup> <a name="OrganizationMembershipId" id="@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig.property.organizationMembershipId"></a>
+
+```go
+OrganizationMembershipId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#organization_membership_id DataTfeOrganizationMembership#organization_membership_id}.
 
 ---
 
@@ -772,7 +815,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization_membership#username DataTfeOrganizationMembership#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organization_membership#username DataTfeOrganizationMembership#username}.
 
 ---
 
