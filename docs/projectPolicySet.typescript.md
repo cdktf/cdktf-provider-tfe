@@ -1,6 +1,6 @@
 # `tfe_project_policy_set`
 
-Refer to the Terraform Registory for docs: [`tfe_project_policy_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set).
+Refer to the Terraform Registory for docs: [`tfe_project_policy_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set).
 
 # `projectPolicySet` Submodule <a name="`projectPolicySet` Submodule" id="@cdktf/provider-tfe.projectPolicySet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_project_policy_set`](https://re
 
 ### ProjectPolicySet <a name="ProjectPolicySet" id="@cdktf/provider-tfe.projectPolicySet.ProjectPolicySet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set tfe_project_policy_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set tfe_project_policy_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectPolicySet.ProjectPolicySet.Initializer"></a>
 
@@ -604,9 +604,9 @@ const projectPolicySetConfig: projectPolicySet.ProjectPolicySetConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.policySetId">policySetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#policy_set_id ProjectPolicySet#policy_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#project_id ProjectPolicySet#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#id ProjectPolicySet#id}. |
+| <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.policySetId">policySetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#policy_set_id ProjectPolicySet#policy_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#project_id ProjectPolicySet#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectPolicySet.ProjectPolicySetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#id ProjectPolicySet#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ public readonly policySetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#policy_set_id ProjectPolicySet#policy_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#policy_set_id ProjectPolicySet#policy_set_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#project_id ProjectPolicySet#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#project_id ProjectPolicySet#project_id}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#id ProjectPolicySet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#id ProjectPolicySet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

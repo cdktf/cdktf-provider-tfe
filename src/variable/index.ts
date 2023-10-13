@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,45 +10,45 @@ export interface VariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#category Variable#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#category Variable#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#description Variable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#description Variable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#hcl Variable#hcl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#hcl Variable#hcl}
   */
   readonly hcl?: boolean | cdktf.IResolvable;
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#key Variable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#key Variable#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#sensitive Variable#sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#sensitive Variable#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
   * Value of the variable
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#value Variable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#value Variable#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#variable_set_id Variable#variable_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#variable_set_id Variable#variable_set_id}
   */
   readonly variableSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable#workspace_id Variable#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable#workspace_id Variable#workspace_id}
   */
   readonly workspaceId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable tfe_variable}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable tfe_variable}
 */
 export class Variable extends cdktf.TerraformResource {
 
@@ -67,7 +62,7 @@ export class Variable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/variable tfe_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable tfe_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class Variable extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_variable',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.49.1',
+        providerVersion: '0.49.2',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

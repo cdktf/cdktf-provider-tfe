@@ -1,6 +1,6 @@
 # `data_tfe_variable_set`
 
-Refer to the Terraform Registory for docs: [`data_tfe_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set).
+Refer to the Terraform Registory for docs: [`data_tfe_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set).
 
 # `dataTfeVariableSet` Submodule <a name="`dataTfeVariableSet` Submodule" id="@cdktf/provider-tfe.dataTfeVariableSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_tfe_variable_set`](https://reg
 
 ### DataTfeVariableSet <a name="DataTfeVariableSet" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set tfe_variable_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set tfe_variable_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.NewDataTfeVariableSet(scope Construct, id *string, config DataTfeVariableSetConfig) DataTfeVariableSet
 ```
@@ -305,7 +305,7 @@ func ResetWorkspaceIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datatfevariableset.DataTfeVariableSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 &datatfevariableset.DataTfeVariableSetConfig {
 	Connection: interface{},
@@ -712,12 +712,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/datatfevariableset"
 | <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#name DataTfeVariableSet#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#id DataTfeVariableSet#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.projectIds">ProjectIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.variableIds">VariableIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.workspaceIds">WorkspaceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#name DataTfeVariableSet#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#id DataTfeVariableSet#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.projectIds">ProjectIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.variableIds">VariableIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.property.workspaceIds">WorkspaceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}. |
 
 ---
 
@@ -799,7 +799,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#name DataTfeVariableSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#name DataTfeVariableSet#name}.
 
 ---
 
@@ -811,7 +811,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#id DataTfeVariableSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#id DataTfeVariableSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}.
 
 ---
 
@@ -838,7 +838,7 @@ ProjectIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}.
 
 ---
 
@@ -850,7 +850,7 @@ VariableIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}.
 
 ---
 
@@ -862,7 +862,7 @@ WorkspaceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}.
 
 ---
 

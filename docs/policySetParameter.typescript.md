@@ -1,6 +1,6 @@
 # `tfe_policy_set_parameter`
 
-Refer to the Terraform Registory for docs: [`tfe_policy_set_parameter`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter).
+Refer to the Terraform Registory for docs: [`tfe_policy_set_parameter`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter).
 
 # `policySetParameter` Submodule <a name="`policySetParameter` Submodule" id="@cdktf/provider-tfe.policySetParameter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_policy_set_parameter`](https://
 
 ### PolicySetParameter <a name="PolicySetParameter" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.Initializer"></a>
 
@@ -662,11 +662,11 @@ const policySetParameterConfig: policySetParameter.PolicySetParameterConfig = { 
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#key PolicySetParameter#key}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.policySetId">policySetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#id PolicySetParameter#id}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.sensitive">sensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#value PolicySetParameter#value}. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#key PolicySetParameter#key}. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.policySetId">policySetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#id PolicySetParameter#id}. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.sensitive">sensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#value PolicySetParameter#value}. |
 
 ---
 
@@ -748,7 +748,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#key PolicySetParameter#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#key PolicySetParameter#key}.
 
 ---
 
@@ -760,7 +760,7 @@ public readonly policySetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}.
 
 ---
 
@@ -772,7 +772,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#id PolicySetParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#id PolicySetParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -787,7 +787,7 @@ public readonly sensitive: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}.
 
 ---
 
@@ -799,7 +799,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/policy_set_parameter#value PolicySetParameter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set_parameter#value PolicySetParameter#value}.
 
 ---
 
