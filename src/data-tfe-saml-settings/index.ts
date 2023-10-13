@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/saml_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/saml_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataTfeSamlSettingsConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/saml_settings tfe_saml_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/saml_settings tfe_saml_settings}
 */
 export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
 
@@ -29,7 +24,7 @@ export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/saml_settings tfe_saml_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/saml_settings tfe_saml_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +35,7 @@ export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_saml_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.49.1',
+        providerVersion: '0.49.2',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

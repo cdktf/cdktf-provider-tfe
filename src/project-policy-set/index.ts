@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectPolicySetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#id ProjectPolicySet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#id ProjectPolicySet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#policy_set_id ProjectPolicySet#policy_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#policy_set_id ProjectPolicySet#policy_set_id}
   */
   readonly policySetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set#project_id ProjectPolicySet#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set#project_id ProjectPolicySet#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set tfe_project_policy_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set tfe_project_policy_set}
 */
 export class ProjectPolicySet extends cdktf.TerraformResource {
 
@@ -44,7 +39,7 @@ export class ProjectPolicySet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/resources/project_policy_set tfe_project_policy_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project_policy_set tfe_project_policy_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +50,7 @@ export class ProjectPolicySet extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_project_policy_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.49.1',
+        providerVersion: '0.49.2',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

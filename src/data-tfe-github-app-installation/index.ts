@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/github_app_installation
+// https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeGithubAppInstallationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/github_app_installation#installation_id DataTfeGithubAppInstallation#installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#installation_id DataTfeGithubAppInstallation#installation_id}
   */
   readonly installationId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/github_app_installation#name DataTfeGithubAppInstallation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#name DataTfeGithubAppInstallation#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/github_app_installation tfe_github_app_installation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation tfe_github_app_installation}
 */
 export class DataTfeGithubAppInstallation extends cdktf.TerraformDataSource {
 
@@ -37,7 +32,7 @@ export class DataTfeGithubAppInstallation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/github_app_installation tfe_github_app_installation} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation tfe_github_app_installation} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +43,7 @@ export class DataTfeGithubAppInstallation extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_github_app_installation',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.49.1',
+        providerVersion: '0.49.2',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
