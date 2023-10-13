@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policy.Policy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/policy"
 
 policy.NewPolicy(scope Construct, id *string, config PolicyConfig) Policy
 ```
@@ -312,7 +312,7 @@ func ResetQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.policy.Policy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/policy"
 
 policy.Policy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.policy.Policy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/policy"
 
 policy.Policy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ policy.Policy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.policy.Policy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/policy"
 
 policy.Policy_IsTerraformResource(x interface{}) *bool
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.policy.PolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/policy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v9/policy"
 
 &policy.PolicyConfig {
 	Connection: interface{},
