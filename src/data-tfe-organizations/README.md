@@ -1,3 +1,3 @@
 # `data_tfe_organizations`
 
-Refer to the Terraform Registory for docs: [`data_tfe_organizations`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.1/docs/data-sources/organizations).
+Refer to the Terraform Registory for docs: [`data_tfe_organizations`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/organizations).
