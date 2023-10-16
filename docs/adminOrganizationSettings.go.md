@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/adminorganizationsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/adminorganizationsettings"
 
 adminorganizationsettings.NewAdminOrganizationSettings(scope Construct, id *string, config AdminOrganizationSettingsConfig) AdminOrganizationSettings
 ```
@@ -312,7 +312,7 @@ func ResetWorkspaceLimit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/adminorganizationsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/adminorganizationsettings"
 
 adminorganizationsettings.AdminOrganizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/adminorganizationsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/adminorganizationsettings"
 
 adminorganizationsettings.AdminOrganizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ adminorganizationsettings.AdminOrganizationSettings_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/adminorganizationsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/adminorganizationsettings"
 
 adminorganizationsettings.AdminOrganizationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/adminorganizationsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/adminorganizationsettings"
 
 &adminorganizationsettings.AdminOrganizationSettingsConfig {
 	Connection: interface{},
