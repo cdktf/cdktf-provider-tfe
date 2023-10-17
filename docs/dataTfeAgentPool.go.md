@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeagentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeagentpool"
 
 datatfeagentpool.NewDataTfeAgentPool(scope Construct, id *string, config DataTfeAgentPoolConfig) DataTfeAgentPool
 ```
@@ -285,7 +285,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeagentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeagentpool"
 
 datatfeagentpool.DataTfeAgentPool_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeagentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeagentpool"
 
 datatfeagentpool.DataTfeAgentPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datatfeagentpool.DataTfeAgentPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeagentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeagentpool"
 
 datatfeagentpool.DataTfeAgentPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datatfeagentpool.DataTfeAgentPool_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeagentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeagentpool"
 
 datatfeagentpool.DataTfeAgentPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeagentpool"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeagentpool"
 
 &datatfeagentpool.DataTfeAgentPoolConfig {
 	Connection: interface{},
