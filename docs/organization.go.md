@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organization.Organization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organization"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organization"
 
 organization.NewOrganization(scope Construct, id *string, config OrganizationConfig) Organization
 ```
@@ -333,7 +333,7 @@ func ResetSessionTimeoutMinutes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organization.Organization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organization"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organization"
 
 organization.Organization_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organization.Organization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organization"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organization"
 
 organization.Organization_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ organization.Organization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organization.Organization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organization"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organization"
 
 organization.Organization_IsTerraformResource(x interface{}) *bool
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organization.OrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organization"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organization"
 
 &organization.OrganizationConfig {
 	Connection: interface{},
