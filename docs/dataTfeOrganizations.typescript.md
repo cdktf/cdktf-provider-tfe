@@ -278,6 +278,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataTfeOrganizations resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -338,6 +339,50 @@ dataTfeOrganizations.DataTfeOrganizations.isTerraformDataSource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport"></a>
+
+```typescript
+import { dataTfeOrganizations } from '@cdktf/provider-tfe'
+
+dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataTfeOrganizations resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataTfeOrganizations to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataTfeOrganizations that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tfe.dataTfeOrganizations.DataTfeOrganizations.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTfeOrganizations to import is found.
 
 ---
 

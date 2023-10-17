@@ -247,6 +247,20 @@ export class PolicySet extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "tfe_policy_set";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a PolicySet resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the PolicySet to import
+  * @param importFromId The id of the existing PolicySet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/policy_set#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the PolicySet to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tfe_policy_set", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

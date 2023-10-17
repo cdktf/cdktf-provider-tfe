@@ -47,6 +47,20 @@ export class DataTfeOauthClient extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "tfe_oauth_client";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataTfeOauthClient resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataTfeOauthClient to import
+  * @param importFromId The id of the existing DataTfeOauthClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/oauth_client#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataTfeOauthClient to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tfe_oauth_client", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

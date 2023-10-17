@@ -35,6 +35,20 @@ export class DataTfeTeams extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "tfe_teams";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataTfeTeams resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataTfeTeams to import
+  * @param importFromId The id of the existing DataTfeTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataTfeTeams to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tfe_teams", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
