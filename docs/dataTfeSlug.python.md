@@ -371,6 +371,7 @@ def reset_id() -> None
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataTfeSlug resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -437,6 +438,55 @@ dataTfeSlug.DataTfeSlug.is_terraform_data_source(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_tfe import data_tfe_slug
+
+dataTfeSlug.DataTfeSlug.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a DataTfeSlug resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the DataTfeSlug to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing DataTfeSlug that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/slug#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tfe.dataTfeSlug.DataTfeSlug.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTfeSlug to import is found.
 
 ---
 

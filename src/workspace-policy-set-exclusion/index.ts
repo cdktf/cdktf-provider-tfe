@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace_policy_set_exclusion
 // generated from terraform resource schema
 
@@ -38,6 +33,20 @@ export class WorkspacePolicySetExclusion extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "tfe_workspace_policy_set_exclusion";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a WorkspacePolicySetExclusion resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the WorkspacePolicySetExclusion to import
+  * @param importFromId The id of the existing WorkspacePolicySetExclusion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace_policy_set_exclusion#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the WorkspacePolicySetExclusion to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tfe_workspace_policy_set_exclusion", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.resetAccessBetaTools">resetAccessBetaTools</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.resetGlobalModuleSharing">resetGlobalModuleSharing</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.resetId">resetId</a></code> | *No description.* |
@@ -142,6 +145,22 @@ public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.addMoveTarget"></a>
+
+```typescript
+public addMoveTarget(moveTarget: string): void
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.getAnyMapAttribute"></a>
 
@@ -251,6 +270,24 @@ public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: stri
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.importFrom"></a>
+
+```typescript
+public importFrom(id: string, provider?: TerraformProvider): void
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.importFrom.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.interpolationForAttribute"></a>
 
 ```typescript
@@ -260,6 +297,30 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.moveTo"></a>
+
+```typescript
+public moveTo(moveTarget: string, index?: string | number): void
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.moveTo.parameter.index"></a>
+
+- *Type:* string | number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -306,6 +367,7 @@ public resetWorkspaceLimit(): void
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AdminOrganizationSettings resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -366,6 +428,50 @@ adminOrganizationSettings.AdminOrganizationSettings.isTerraformResource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport"></a>
+
+```typescript
+import { adminOrganizationSettings } from '@cdktf/provider-tfe'
+
+adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a AdminOrganizationSettings resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the AdminOrganizationSettings to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing AdminOrganizationSettings that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/admin_organization_settings#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the AdminOrganizationSettings to import is found.
 
 ---
 

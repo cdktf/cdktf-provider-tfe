@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTags(scope Construct, id *string, config DataTfeOrganizationTagsConfig) DataTfeOrganizationTags
 ```
@@ -278,13 +278,14 @@ func ResetOrganization()
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataTfeOrganizationTags resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformDataSource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
+
+datatfeorganizationtags.DataTfeOrganizationTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataTfeOrganizationTags resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataTfeOrganizationTags to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataTfeOrganizationTags that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/organization_tags#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTfeOrganizationTags to import is found.
 
 ---
 
@@ -562,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 &datatfeorganizationtags.DataTfeOrganizationTagsConfig {
 	Connection: interface{},
@@ -695,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 &datatfeorganizationtags.DataTfeOrganizationTagsTags {
 
@@ -710,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeOrganizationTagsTagsList
 ```
@@ -842,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeOrganizationTagsTagsOutputReference
 ```

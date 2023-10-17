@@ -271,6 +271,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataTfeIpRanges resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ dataTfeIpRanges.DataTfeIpRanges.isTerraformDataSource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport"></a>
+
+```typescript
+import { dataTfeIpRanges } from '@cdktf/provider-tfe'
+
+dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataTfeIpRanges resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataTfeIpRanges to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataTfeIpRanges that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTfeIpRanges to import is found.
 
 ---
 
