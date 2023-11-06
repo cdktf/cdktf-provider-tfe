@@ -1,7 +1,9 @@
 
-# Terraform CDK tfe Provider ~> 0.33
+# Terraform CDK tfe Provider tracks ~> 0.33
 
 This repo builds and publishes the Terraform tfe Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on tfe 0.49.2
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform tfe Provider version 1:1. 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform tfe Provider](https://registry.terraform.io/providers/hashicorp/tfe/0.33.0)
+- [Terraform tfe Provider](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-tfe/releases)
 - [Terraform Engine](https://terraform.io)
 
