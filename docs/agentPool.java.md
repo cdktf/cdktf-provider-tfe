@@ -1,6 +1,6 @@
 # `tfe_agent_pool`
 
-Refer to the Terraform Registory for docs: [`tfe_agent_pool`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool).
+Refer to the Terraform Registory for docs: [`tfe_agent_pool`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool).
 
 # `agentPool` Submodule <a name="`agentPool` Submodule" id="@cdktf/provider-tfe.agentPool"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_agent_pool`](https://registry.t
 
 ### AgentPool <a name="AgentPool" id="@cdktf/provider-tfe.agentPool.AgentPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool tfe_agent_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool tfe_agent_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentPool.AgentPool.Initializer"></a>
 
@@ -46,10 +46,10 @@ AgentPool.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#name AgentPool#name}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#id AgentPool#id}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization AgentPool#organization}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organizationScoped">organizationScoped</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#name AgentPool#name}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#id AgentPool#id}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization AgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPool.Initializer.parameter.organizationScoped">organizationScoped</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}. |
 
 ---
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#name AgentPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#name AgentPool#name}.
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#id AgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#id AgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -136,7 +136,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization AgentPool#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization AgentPool#organization}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}.
 
 ---
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the AgentPool to import.
 
 The id of the existing AgentPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,10 +863,10 @@ AgentPoolConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#name AgentPool#name}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#id AgentPool#id}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization AgentPool#organization}. |
-| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organizationScoped">organizationScoped</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#name AgentPool#name}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#id AgentPool#id}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization AgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.agentPool.AgentPoolConfig.property.organizationScoped">organizationScoped</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}. |
 
 ---
 
@@ -948,7 +948,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#name AgentPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#name AgentPool#name}.
 
 ---
 
@@ -960,7 +960,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#id AgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#id AgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ public java.lang.String getOrganization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization AgentPool#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization AgentPool#organization}.
 
 ---
 
@@ -987,7 +987,7 @@ public java.lang.Object getOrganizationScoped();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool#organization_scoped AgentPool#organization_scoped}.
 
 ---
 

@@ -1,3 +1,3 @@
 # `tfe_organization_membership`
 
-Refer to the Terraform Registory for docs: [`tfe_organization_membership`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/organization_membership).
+Refer to the Terraform Registory for docs: [`tfe_organization_membership`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/organization_membership).

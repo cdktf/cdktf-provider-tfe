@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace
+// https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,142 +8,146 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}
   */
   readonly agentPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}
   */
   readonly allowDestroyPlan?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}
   */
   readonly assessmentsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#auto_apply Workspace#auto_apply}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#auto_apply Workspace#auto_apply}
   */
   readonly autoApply?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#description Workspace#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}
+  */
+  readonly autoApplyRunTrigger?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#description Workspace#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#execution_mode Workspace#execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#execution_mode Workspace#execution_mode}
   */
   readonly executionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}
   */
   readonly fileTriggersEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#force_delete Workspace#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#force_delete Workspace#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#global_remote_state Workspace#global_remote_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}
   */
   readonly globalRemoteState?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#id Workspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#id Workspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#name Workspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#name Workspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#operations Workspace#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#operations Workspace#operations}
   */
   readonly operations?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#organization Workspace#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#organization Workspace#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#project_id Workspace#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#project_id Workspace#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}
   */
   readonly queueAllRuns?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}
   */
   readonly remoteStateConsumerIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#source_name Workspace#source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#source_name Workspace#source_name}
   */
   readonly sourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#source_url Workspace#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#source_url Workspace#source_url}
   */
   readonly sourceUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}
   */
   readonly speculativeEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}
   */
   readonly sshKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}
   */
   readonly structuredRunOutputEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#tag_names Workspace#tag_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#tag_names Workspace#tag_names}
   */
   readonly tagNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#terraform_version Workspace#terraform_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#terraform_version Workspace#terraform_version}
   */
   readonly terraformVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#trigger_patterns Workspace#trigger_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#trigger_patterns Workspace#trigger_patterns}
   */
   readonly triggerPatterns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#trigger_prefixes Workspace#trigger_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#trigger_prefixes Workspace#trigger_prefixes}
   */
   readonly triggerPrefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#working_directory Workspace#working_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#working_directory Workspace#working_directory}
   */
   readonly workingDirectory?: string;
   /**
   * vcs_repo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#vcs_repo Workspace#vcs_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#vcs_repo Workspace#vcs_repo}
   */
   readonly vcsRepo?: WorkspaceVcsRepo;
 }
 export interface WorkspaceVcsRepo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#branch Workspace#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#branch Workspace#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}
   */
   readonly githubAppInstallationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#identifier Workspace#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#identifier Workspace#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}
   */
   readonly ingressSubmodules?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}
   */
   readonly oauthTokenId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#tags_regex Workspace#tags_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#tags_regex Workspace#tags_regex}
   */
   readonly tagsRegex?: string;
 }
@@ -325,7 +324,7 @@ export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace tfe_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace tfe_workspace}
 */
 export class Workspace extends cdktf.TerraformResource {
 
@@ -341,7 +340,7 @@ export class Workspace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Workspace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workspace to import
-  * @param importFromId The id of the existing Workspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workspace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -353,7 +352,7 @@ export class Workspace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace tfe_workspace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace tfe_workspace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +363,7 @@ export class Workspace extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.49.2',
+        providerVersion: '0.50.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -379,6 +378,7 @@ export class Workspace extends cdktf.TerraformResource {
     this._allowDestroyPlan = config.allowDestroyPlan;
     this._assessmentsEnabled = config.assessmentsEnabled;
     this._autoApply = config.autoApply;
+    this._autoApplyRunTrigger = config.autoApplyRunTrigger;
     this._description = config.description;
     this._executionMode = config.executionMode;
     this._fileTriggersEnabled = config.fileTriggersEnabled;
@@ -470,6 +470,22 @@ export class Workspace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoApplyInput() {
     return this._autoApply;
+  }
+
+  // auto_apply_run_trigger - computed: false, optional: true, required: false
+  private _autoApplyRunTrigger?: boolean | cdktf.IResolvable; 
+  public get autoApplyRunTrigger() {
+    return this.getBooleanAttribute('auto_apply_run_trigger');
+  }
+  public set autoApplyRunTrigger(value: boolean | cdktf.IResolvable) {
+    this._autoApplyRunTrigger = value;
+  }
+  public resetAutoApplyRunTrigger() {
+    this._autoApplyRunTrigger = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoApplyRunTriggerInput() {
+    return this._autoApplyRunTrigger;
   }
 
   // description - computed: false, optional: true, required: false
@@ -857,6 +873,7 @@ export class Workspace extends cdktf.TerraformResource {
       allow_destroy_plan: cdktf.booleanToTerraform(this._allowDestroyPlan),
       assessments_enabled: cdktf.booleanToTerraform(this._assessmentsEnabled),
       auto_apply: cdktf.booleanToTerraform(this._autoApply),
+      auto_apply_run_trigger: cdktf.booleanToTerraform(this._autoApplyRunTrigger),
       description: cdktf.stringToTerraform(this._description),
       execution_mode: cdktf.stringToTerraform(this._executionMode),
       file_triggers_enabled: cdktf.booleanToTerraform(this._fileTriggersEnabled),

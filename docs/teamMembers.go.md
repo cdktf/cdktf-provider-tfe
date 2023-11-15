@@ -1,6 +1,6 @@
 # `tfe_team_members`
 
-Refer to the Terraform Registory for docs: [`tfe_team_members`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members).
+Refer to the Terraform Registory for docs: [`tfe_team_members`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members).
 
 # `teamMembers` Submodule <a name="`teamMembers` Submodule" id="@cdktf/provider-tfe.teamMembers"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`tfe_team_members`](https://registry
 
 ### TeamMembers <a name="TeamMembers" id="@cdktf/provider-tfe.teamMembers.TeamMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members tfe_team_members}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members tfe_team_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamMembers.TeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammembers"
 
 teammembers.NewTeamMembers(scope Construct, id *string, config TeamMembersConfig) TeamMembers
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamMembers.TeamMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammembers"
 
 teammembers.TeamMembers_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamMembers.TeamMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammembers"
 
 teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamMembers.TeamMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammembers"
 
 teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.teamMembers.TeamMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammembers"
 
 teammembers.TeamMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the TeamMembers to import.
 
 The id of the existing TeamMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamMembers.TeamMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammembers"
 
 &teammembers.TeamMembersConfig {
 	Connection: interface{},
@@ -721,9 +721,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teammembers"
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#team_id TeamMembers#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.usernames">Usernames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#usernames TeamMembers#usernames}. |
-| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#id TeamMembers#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#team_id TeamMembers#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.usernames">Usernames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#usernames TeamMembers#usernames}. |
+| <code><a href="#@cdktf/provider-tfe.teamMembers.TeamMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#id TeamMembers#id}. |
 
 ---
 
@@ -805,7 +805,7 @@ TeamId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#team_id TeamMembers#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#team_id TeamMembers#team_id}.
 
 ---
 
@@ -817,7 +817,7 @@ Usernames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#usernames TeamMembers#usernames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#usernames TeamMembers#usernames}.
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_members#id TeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_members#id TeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

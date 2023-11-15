@@ -1,6 +1,6 @@
 # `data_tfe_saml_settings`
 
-Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/saml_settings).
+Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/saml_settings).
 
 # `dataTfeSamlSettings` Submodule <a name="`dataTfeSamlSettings` Submodule" id="@cdktf/provider-tfe.dataTfeSamlSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_tfe_saml_settings`](https://re
 
 ### DataTfeSamlSettings <a name="DataTfeSamlSettings" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/saml_settings tfe_saml_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/saml_settings tfe_saml_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.NewDataTfeSamlSettings(scope Construct, id *string, config DataTfeSamlSettingsConfig) DataTfeSamlSettings
 ```
@@ -271,7 +271,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +303,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ datatfesamlsettings.DataTfeSamlSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datatfesamlsettings.DataTfeSamlSettings_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 datatfesamlsettings.DataTfeSamlSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataTfeSamlSettings to imp
 
 The id of the existing DataTfeSamlSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/saml_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/saml_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfesamlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfesamlsettings"
 
 &datatfesamlsettings.DataTfeSamlSettingsConfig {
 	Connection: interface{},

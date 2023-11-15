@@ -1,6 +1,6 @@
 # `data_tfe_github_app_installation`
 
-Refer to the Terraform Registory for docs: [`data_tfe_github_app_installation`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation).
+Refer to the Terraform Registory for docs: [`data_tfe_github_app_installation`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation).
 
 # `dataTfeGithubAppInstallation` Submodule <a name="`dataTfeGithubAppInstallation` Submodule" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_tfe_github_app_installation`](
 
 ### DataTfeGithubAppInstallation <a name="DataTfeGithubAppInstallation" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation tfe_github_app_installation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation tfe_github_app_installation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
 
 datatfegithubappinstallation.NewDataTfeGithubAppInstallation(scope Construct, id *string, config DataTfeGithubAppInstallationConfig) DataTfeGithubAppInstallation
 ```
@@ -285,7 +285,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datatfegithubappinstallation.DataTfeGithubAppInstallation_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
 
 datatfegithubappinstallation.DataTfeGithubAppInstallation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataTfeGithubAppInstallati
 
 The id of the existing DataTfeGithubAppInstallation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallation"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfegithubappinstallation"
 
 &datatfegithubappinstallation.DataTfeGithubAppInstallationConfig {
 	Connection: interface{},
@@ -633,8 +633,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfegithubappinstallat
 | <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.installationId">InstallationId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#installation_id DataTfeGithubAppInstallation#installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#name DataTfeGithubAppInstallation#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.installationId">InstallationId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation#installation_id DataTfeGithubAppInstallation#installation_id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation#name DataTfeGithubAppInstallation#name}. |
 
 ---
 
@@ -716,7 +716,7 @@ InstallationId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#installation_id DataTfeGithubAppInstallation#installation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation#installation_id DataTfeGithubAppInstallation#installation_id}.
 
 ---
 
@@ -728,7 +728,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/github_app_installation#name DataTfeGithubAppInstallation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/github_app_installation#name DataTfeGithubAppInstallation#name}.
 
 ---
 
