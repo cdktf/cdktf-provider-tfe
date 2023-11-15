@@ -1,6 +1,6 @@
 # `tfe_sentinel_policy`
 
-Refer to the Terraform Registory for docs: [`tfe_sentinel_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy).
+Refer to the Terraform Registory for docs: [`tfe_sentinel_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy).
 
 # `sentinelPolicy` Submodule <a name="`sentinelPolicy` Submodule" id="@cdktf/provider-tfe.sentinelPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`tfe_sentinel_policy`](https://regis
 
 ### SentinelPolicy <a name="SentinelPolicy" id="@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy tfe_sentinel_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy tfe_sentinel_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the SentinelPolicy to import.
 
 The id of the existing SentinelPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,12 +811,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/sentinelpolicy"
 | <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#name SentinelPolicy#name}. |
-| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#policy SentinelPolicy#policy}. |
-| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#description SentinelPolicy#description}. |
-| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.enforceMode">EnforceMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}. |
-| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#id SentinelPolicy#id}. |
-| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#organization SentinelPolicy#organization}. |
+| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#name SentinelPolicy#name}. |
+| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#policy SentinelPolicy#policy}. |
+| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#description SentinelPolicy#description}. |
+| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.enforceMode">EnforceMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}. |
+| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#id SentinelPolicy#id}. |
+| <code><a href="#@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#organization SentinelPolicy#organization}. |
 
 ---
 
@@ -898,7 +898,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#name SentinelPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#name SentinelPolicy#name}.
 
 ---
 
@@ -910,7 +910,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#policy SentinelPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#policy SentinelPolicy#policy}.
 
 ---
 
@@ -922,7 +922,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#description SentinelPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#description SentinelPolicy#description}.
 
 ---
 
@@ -934,7 +934,7 @@ EnforceMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#enforce_mode SentinelPolicy#enforce_mode}.
 
 ---
 
@@ -946,7 +946,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#id SentinelPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#id SentinelPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/sentinel_policy#organization SentinelPolicy#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/sentinel_policy#organization SentinelPolicy#organization}.
 
 ---
 
