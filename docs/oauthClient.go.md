@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.oauthClient.OauthClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/oauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/oauthclient"
 
 oauthclient.NewOauthClient(scope Construct, id *string, config OauthClientConfig) OauthClient
 ```
@@ -388,7 +388,7 @@ func ResetSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.oauthClient.OauthClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/oauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/oauthclient"
 
 oauthclient.OauthClient_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.oauthClient.OauthClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/oauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/oauthclient"
 
 oauthclient.OauthClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ oauthclient.OauthClient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.oauthClient.OauthClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/oauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/oauthclient"
 
 oauthclient.OauthClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ oauthclient.OauthClient_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.oauthClient.OauthClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/oauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/oauthclient"
 
 oauthclient.OauthClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.oauthClient.OauthClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/oauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/oauthclient"
 
 &oauthclient.OauthClientConfig {
 	Connection: interface{},
