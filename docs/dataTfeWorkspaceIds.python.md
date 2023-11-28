@@ -1,7 +1,3 @@
-# `data_tfe_workspace_ids`
-
-Refer to the Terraform Registory for docs: [`data_tfe_workspace_ids`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/workspace_ids).
-
 # `dataTfeWorkspaceIds` Submodule <a name="`dataTfeWorkspaceIds` Submodule" id="@cdktf/provider-tfe.dataTfeWorkspaceIds"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_tfe_organization_members`
-
-Refer to the Terraform Registory for docs: [`data_tfe_organization_members`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization_members).
-
 # `dataTfeOrganizationMembers` Submodule <a name="`dataTfeOrganizationMembers` Submodule" id="@cdktf/provider-tfe.dataTfeOrganizationMembers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `tfe_notification_configuration`
-
-Refer to the Terraform Registory for docs: [`tfe_notification_configuration`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/notification_configuration).
-
 # `notificationConfiguration` Submodule <a name="`notificationConfiguration` Submodule" id="@cdktf/provider-tfe.notificationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

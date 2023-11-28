@@ -1,7 +1,3 @@
-# `tfe_variable_set`
-
-Refer to the Terraform Registory for docs: [`tfe_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/variable_set).
-
 # `variableSet` Submodule <a name="`variableSet` Submodule" id="@cdktf/provider-tfe.variableSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

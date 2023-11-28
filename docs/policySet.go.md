@@ -1,7 +1,3 @@
-# `tfe_policy_set`
-
-Refer to the Terraform Registory for docs: [`tfe_policy_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/policy_set).
-
 # `policySet` Submodule <a name="`policySet` Submodule" id="@cdktf/provider-tfe.policySet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
