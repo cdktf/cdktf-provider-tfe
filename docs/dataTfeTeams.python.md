@@ -1,7 +1,3 @@
-# `data_tfe_teams`
-
-Refer to the Terraform Registory for docs: [`data_tfe_teams`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/teams).
-
 # `dataTfeTeams` Submodule <a name="`dataTfeTeams` Submodule" id="@cdktf/provider-tfe.dataTfeTeams"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

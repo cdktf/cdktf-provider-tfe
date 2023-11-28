@@ -1,7 +1,3 @@
-# `tfe_registry_module`
-
-Refer to the Terraform Registory for docs: [`tfe_registry_module`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module).
-
 # `registryModule` Submodule <a name="`registryModule` Submodule" id="@cdktf/provider-tfe.registryModule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

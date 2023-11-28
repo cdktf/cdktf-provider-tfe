@@ -1,7 +1,3 @@
-# `tfe_team_project_access`
-
-Refer to the Terraform Registory for docs: [`tfe_team_project_access`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_project_access).
-
 # `teamProjectAccess` Submodule <a name="`teamProjectAccess` Submodule" id="@cdktf/provider-tfe.teamProjectAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.NewTeamProjectAccess(scope Construct, id *string, config TeamProjectAccessConfig) TeamProjectAccess
 ```
@@ -379,7 +375,7 @@ func ResetWorkspaceAccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +421,7 @@ teamprojectaccess.TeamProjectAccess_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -439,7 +435,7 @@ teamprojectaccess.TeamProjectAccess_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.TeamProjectAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -800,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 &teamprojectaccess.TeamProjectAccessConfig {
 	Connection: interface{},
@@ -993,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessProjectAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 &teamprojectaccess.TeamProjectAccessProjectAccess {
 	Settings: *string,
@@ -1039,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessWorkspaceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 &teamprojectaccess.TeamProjectAccessWorkspaceAccess {
 	Create: interface{},
@@ -1185,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessProjectAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.NewTeamProjectAccessProjectAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamProjectAccessProjectAccessList
 ```
@@ -1328,7 +1324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessProjectAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.NewTeamProjectAccessProjectAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamProjectAccessProjectAccessOutputReference
 ```
@@ -1653,7 +1649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessWorkspaceAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.NewTeamProjectAccessWorkspaceAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamProjectAccessWorkspaceAccessList
 ```
@@ -1796,7 +1792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessWorkspaceAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamprojectaccess"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamprojectaccess"
 
 teamprojectaccess.NewTeamProjectAccessWorkspaceAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamProjectAccessWorkspaceAccessOutputReference
 ```

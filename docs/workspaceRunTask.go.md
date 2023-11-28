@@ -1,7 +1,3 @@
-# `tfe_workspace_run_task`
-
-Refer to the Terraform Registory for docs: [`tfe_workspace_run_task`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace_run_task).
-
 # `workspaceRunTask` Submodule <a name="`workspaceRunTask` Submodule" id="@cdktf/provider-tfe.workspaceRunTask"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.NewWorkspaceRunTask(scope Construct, id *string, config WorkspaceRunTaskConfig) WorkspaceRunTask
 ```
@@ -346,7 +342,7 @@ func ResetStage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ workspaceruntask.WorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ workspaceruntask.WorkspaceRunTask_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 &workspaceruntask.WorkspaceRunTaskConfig {
 	Connection: interface{},

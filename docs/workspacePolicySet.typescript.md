@@ -1,7 +1,3 @@
-# `tfe_workspace_policy_set`
-
-Refer to the Terraform Registory for docs: [`tfe_workspace_policy_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace_policy_set).
-
 # `workspacePolicySet` Submodule <a name="`workspacePolicySet` Submodule" id="@cdktf/provider-tfe.workspacePolicySet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_tfe_variables`
-
-Refer to the Terraform Registory for docs: [`data_tfe_variables`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/variables).
-
 # `dataTfeVariables` Submodule <a name="`dataTfeVariables` Submodule" id="@cdktf/provider-tfe.dataTfeVariables"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

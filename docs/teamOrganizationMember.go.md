@@ -1,7 +1,3 @@
-# `tfe_team_organization_member`
-
-Refer to the Terraform Registory for docs: [`tfe_team_organization_member`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member).
-
 # `teamOrganizationMember` Submodule <a name="`teamOrganizationMember` Submodule" id="@cdktf/provider-tfe.teamOrganizationMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamorganizationmember"
 
 teamorganizationmember.NewTeamOrganizationMember(scope Construct, id *string, config TeamOrganizationMemberConfig) TeamOrganizationMember
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ teamorganizationmember.TeamOrganizationMember_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ teamorganizationmember.TeamOrganizationMember_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamorganizationmember"
 
 teamorganizationmember.TeamOrganizationMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamorganizationmember"
 
 &teamorganizationmember.TeamOrganizationMemberConfig {
 	Connection: interface{},

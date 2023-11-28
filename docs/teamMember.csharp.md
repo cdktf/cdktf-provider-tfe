@@ -1,7 +1,3 @@
-# `tfe_team_member`
-
-Refer to the Terraform Registory for docs: [`tfe_team_member`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_member).
-
 # `teamMember` Submodule <a name="`teamMember` Submodule" id="@cdktf/provider-tfe.teamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

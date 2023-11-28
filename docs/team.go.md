@@ -1,7 +1,3 @@
-# `tfe_team`
-
-Refer to the Terraform Registory for docs: [`tfe_team`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team).
-
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-tfe.team"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.team.Team.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.NewTeam(scope Construct, id *string, config TeamConfig) Team
 ```
@@ -380,7 +376,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.team.Team.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.team.Team.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ team.Team_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.team.Team.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ team.Team_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.team.Team.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.Team_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.team.TeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 &team.TeamConfig {
 	Connection: interface{},
@@ -814,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
 	Name: *string,
 	Id: *string,
 	Organization: *string,
-	OrganizationAccess: github.com/cdktf/cdktf-provider-tfe-go/tfe/v10.team.TeamOrganizationAccess,
+	OrganizationAccess: github.com/cdktf/cdktf-provider-tfe-go/tfe.team.TeamOrganizationAccess,
 	SsoTeamId: *string,
 	Visibility: *string,
 }
@@ -992,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 &team.TeamOrganizationAccess {
 	ManageMembership: interface{},
@@ -1166,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/team"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/team"
 
 team.NewTeamOrganizationAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamOrganizationAccessOutputReference
 ```

@@ -1,7 +1,3 @@
-# `tfe_project_variable_set`
-
-Refer to the Terraform Registory for docs: [`tfe_project_variable_set`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project_variable_set).
-
 # `projectVariableSet` Submodule <a name="`projectVariableSet` Submodule" id="@cdktf/provider-tfe.projectVariableSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.NewProjectVariableSet(scope Construct, id *string, config ProjectVariableSetConfig) ProjectVariableSet
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ projectvariableset.ProjectVariableSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ projectvariableset.ProjectVariableSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 projectvariableset.ProjectVariableSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/projectvariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectvariableset"
 
 &projectvariableset.ProjectVariableSetConfig {
 	Connection: interface{},

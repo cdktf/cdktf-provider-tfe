@@ -1,7 +1,3 @@
-# `tfe_workspace_policy_set_exclusion`
-
-Refer to the Terraform Registory for docs: [`tfe_workspace_policy_set_exclusion`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/workspace_policy_set_exclusion).
-
 # `workspacePolicySetExclusion` Submodule <a name="`workspacePolicySetExclusion` Submodule" id="@cdktf/provider-tfe.workspacePolicySetExclusion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspacePolicySetExclusion.WorkspacePolicySetExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspacepolicysetexclusion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacepolicysetexclusion"
 
 workspacepolicysetexclusion.NewWorkspacePolicySetExclusion(scope Construct, id *string, config WorkspacePolicySetExclusionConfig) WorkspacePolicySetExclusion
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspacePolicySetExclusion.WorkspacePolicySetExclusion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspacepolicysetexclusion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacepolicysetexclusion"
 
 workspacepolicysetexclusion.WorkspacePolicySetExclusion_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspacePolicySetExclusion.WorkspacePolicySetExclusion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspacepolicysetexclusion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacepolicysetexclusion"
 
 workspacepolicysetexclusion.WorkspacePolicySetExclusion_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ workspacepolicysetexclusion.WorkspacePolicySetExclusion_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspacePolicySetExclusion.WorkspacePolicySetExclusion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspacepolicysetexclusion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacepolicysetexclusion"
 
 workspacepolicysetexclusion.WorkspacePolicySetExclusion_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ workspacepolicysetexclusion.WorkspacePolicySetExclusion_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.workspacePolicySetExclusion.WorkspacePolicySetExclusion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspacepolicysetexclusion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacepolicysetexclusion"
 
 workspacepolicysetexclusion.WorkspacePolicySetExclusion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspacePolicySetExclusion.WorkspacePolicySetExclusionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/workspacepolicysetexclusion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacepolicysetexclusion"
 
 &workspacepolicysetexclusion.WorkspacePolicySetExclusionConfig {
 	Connection: interface{},

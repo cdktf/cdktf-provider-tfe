@@ -1,7 +1,3 @@
-# `tfe_notification_configuration`
-
-Refer to the Terraform Registory for docs: [`tfe_notification_configuration`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/notification_configuration).
-
 # `notificationConfiguration` Submodule <a name="`notificationConfiguration` Submodule" id="@cdktf/provider-tfe.notificationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
 
 notificationconfiguration.NewNotificationConfiguration(scope Construct, id *string, config NotificationConfigurationConfig) NotificationConfiguration
 ```
@@ -381,7 +377,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ notificationconfiguration.NotificationConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ notificationconfiguration.NotificationConfiguration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
 
 notificationconfiguration.NotificationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -890,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/notificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/notificationconfiguration"
 
 &notificationconfiguration.NotificationConfigurationConfig {
 	Connection: interface{},

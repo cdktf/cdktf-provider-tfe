@@ -1,7 +1,3 @@
-# `tfe_agent_pool_allowed_workspaces`
-
-Refer to the Terraform Registory for docs: [`tfe_agent_pool_allowed_workspaces`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/agent_pool_allowed_workspaces).
-
 # `agentPoolAllowedWorkspaces` Submodule <a name="`agentPoolAllowedWorkspaces` Submodule" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

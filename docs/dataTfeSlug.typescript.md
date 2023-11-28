@@ -1,7 +1,3 @@
-# `data_tfe_slug`
-
-Refer to the Terraform Registory for docs: [`data_tfe_slug`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/slug).
-
 # `dataTfeSlug` Submodule <a name="`dataTfeSlug` Submodule" id="@cdktf/provider-tfe.dataTfeSlug"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

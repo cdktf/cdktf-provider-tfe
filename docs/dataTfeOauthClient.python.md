@@ -1,7 +1,3 @@
-# `data_tfe_oauth_client`
-
-Refer to the Terraform Registory for docs: [`data_tfe_oauth_client`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/oauth_client).
-
 # `dataTfeOauthClient` Submodule <a name="`dataTfeOauthClient` Submodule" id="@cdktf/provider-tfe.dataTfeOauthClient"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `tfe_run_trigger`
-
-Refer to the Terraform Registory for docs: [`tfe_run_trigger`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/run_trigger).
-
 # `runTrigger` Submodule <a name="`runTrigger` Submodule" id="@cdktf/provider-tfe.runTrigger"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.runTrigger.RunTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/runtrigger"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/runtrigger"
 
 runtrigger.NewRunTrigger(scope Construct, id *string, config RunTriggerConfig) RunTrigger
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.runTrigger.RunTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/runtrigger"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/runtrigger"
 
 runtrigger.RunTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.runTrigger.RunTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/runtrigger"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/runtrigger"
 
 runtrigger.RunTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ runtrigger.RunTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.runTrigger.RunTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/runtrigger"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/runtrigger"
 
 runtrigger.RunTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ runtrigger.RunTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.runTrigger.RunTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/runtrigger"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/runtrigger"
 
 runtrigger.RunTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.runTrigger.RunTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/runtrigger"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/runtrigger"
 
 &runtrigger.RunTriggerConfig {
 	Connection: interface{},

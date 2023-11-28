@@ -1,7 +1,3 @@
-# `tfe_saml_settings`
-
-Refer to the Terraform Registory for docs: [`tfe_saml_settings`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/saml_settings).
-
 # `samlSettings` Submodule <a name="`samlSettings` Submodule" id="@cdktf/provider-tfe.samlSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/samlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/samlsettings"
 
 samlsettings.NewSamlSettings(scope Construct, id *string, config SamlSettingsConfig) SamlSettings
 ```
@@ -423,7 +419,7 @@ func ResetWantAssertionsSigned()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.samlSettings.SamlSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/samlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/samlsettings"
 
 samlsettings.SamlSettings_IsConstruct(x interface{}) *bool
 ```
@@ -455,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.samlSettings.SamlSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/samlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/samlsettings"
 
 samlsettings.SamlSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -469,7 +465,7 @@ samlsettings.SamlSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.samlSettings.SamlSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/samlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/samlsettings"
 
 samlsettings.SamlSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -483,7 +479,7 @@ samlsettings.SamlSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.samlSettings.SamlSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/samlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/samlsettings"
 
 samlsettings.SamlSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1119,7 +1115,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/samlsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/samlsettings"
 
 &samlsettings.SamlSettingsConfig {
 	Connection: interface{},

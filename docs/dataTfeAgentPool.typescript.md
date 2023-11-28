@@ -1,7 +1,3 @@
-# `data_tfe_agent_pool`
-
-Refer to the Terraform Registory for docs: [`data_tfe_agent_pool`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/agent_pool).
-
 # `dataTfeAgentPool` Submodule <a name="`dataTfeAgentPool` Submodule" id="@cdktf/provider-tfe.dataTfeAgentPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

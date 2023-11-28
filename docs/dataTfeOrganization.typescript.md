@@ -1,7 +1,3 @@
-# `data_tfe_organization`
-
-Refer to the Terraform Registory for docs: [`data_tfe_organization`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization).
-
 # `dataTfeOrganization` Submodule <a name="`dataTfeOrganization` Submodule" id="@cdktf/provider-tfe.dataTfeOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

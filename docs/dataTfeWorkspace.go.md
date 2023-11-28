@@ -1,7 +1,3 @@
-# `data_tfe_workspace`
-
-Refer to the Terraform Registory for docs: [`data_tfe_workspace`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/workspace).
-
 # `dataTfeWorkspace` Submodule <a name="`dataTfeWorkspace` Submodule" id="@cdktf/provider-tfe.dataTfeWorkspace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.NewDataTfeWorkspace(scope Construct, id *string, config DataTfeWorkspaceConfig) DataTfeWorkspace
 ```
@@ -292,7 +288,7 @@ func ResetTagNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.DataTfeWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.DataTfeWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datatfeworkspace.DataTfeWorkspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.DataTfeWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datatfeworkspace.DataTfeWorkspace_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.DataTfeWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 &datatfeworkspace.DataTfeWorkspaceConfig {
 	Connection: interface{},
@@ -1105,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 &datatfeworkspace.DataTfeWorkspaceVcsRepo {
 
@@ -1120,7 +1116,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.NewDataTfeWorkspaceVcsRepoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeWorkspaceVcsRepoList
 ```
@@ -1252,7 +1248,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspace"
 
 datatfeworkspace.NewDataTfeWorkspaceVcsRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeWorkspaceVcsRepoOutputReference
 ```
