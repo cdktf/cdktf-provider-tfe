@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.NewDataTfeOrganizationMembers(scope Construct, id *string, config DataTfeOrganizationMembersConfig) DataTfeOrganizationMembers
 ```
@@ -281,7 +281,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.DataTfeOrganizationMembers_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.DataTfeOrganizationMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datatfeorganizationmembers.DataTfeOrganizationMembers_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.DataTfeOrganizationMembers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datatfeorganizationmembers.DataTfeOrganizationMembers_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.DataTfeOrganizationMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 &datatfeorganizationmembers.DataTfeOrganizationMembersConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 &datatfeorganizationmembers.DataTfeOrganizationMembersMembers {
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmember
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaiting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 &datatfeorganizationmembers.DataTfeOrganizationMembersMembersWaiting {
 
@@ -775,7 +775,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmember
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.NewDataTfeOrganizationMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeOrganizationMembersMembersList
 ```
@@ -907,7 +907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.NewDataTfeOrganizationMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeOrganizationMembersMembersOutputReference
 ```
@@ -1196,7 +1196,7 @@ func InternalValue() DataTfeOrganizationMembersMembers
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.NewDataTfeOrganizationMembersMembersWaitingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeOrganizationMembersMembersWaitingList
 ```
@@ -1328,7 +1328,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationmembers"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationmembers"
 
 datatfeorganizationmembers.NewDataTfeOrganizationMembersMembersWaitingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeOrganizationMembersMembersWaitingOutputReference
 ```
