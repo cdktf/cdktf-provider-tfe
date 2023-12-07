@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organizationtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationtoken"
 
 organizationtoken.NewOrganizationToken(scope Construct, id *string, config OrganizationTokenConfig) OrganizationToken
 ```
@@ -399,7 +399,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organizationtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationtoken"
 
 organizationtoken.OrganizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organizationtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationtoken"
 
 organizationtoken.OrganizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationtoken.OrganizationToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organizationtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationtoken"
 
 organizationtoken.OrganizationToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ organizationtoken.OrganizationToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.organizationToken.OrganizationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organizationtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationtoken"
 
 organizationtoken.OrganizationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organizationToken.OrganizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/organizationtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationtoken"
 
 &organizationtoken.OrganizationTokenConfig {
 	Connection: interface{},
