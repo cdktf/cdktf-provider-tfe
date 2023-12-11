@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeipranges"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeipranges"
 
 datatfeipranges.NewDataTfeIpRanges(scope Construct, id *string, config DataTfeIpRangesConfig) DataTfeIpRanges
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeipranges"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeipranges"
 
 datatfeipranges.DataTfeIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeipranges"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeipranges"
 
 datatfeipranges.DataTfeIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datatfeipranges.DataTfeIpRanges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeipranges"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeipranges"
 
 datatfeipranges.DataTfeIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datatfeipranges.DataTfeIpRanges_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeipranges"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeipranges"
 
 datatfeipranges.DataTfeIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeipranges"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeipranges"
 
 &datatfeipranges.DataTfeIpRangesConfig {
 	Connection: interface{},
