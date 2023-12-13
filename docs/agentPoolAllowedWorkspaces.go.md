@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces.AgentPoolAllowedWorkspaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agentpoolallowedworkspaces"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpoolallowedworkspaces"
 
 agentpoolallowedworkspaces.NewAgentPoolAllowedWorkspaces(scope Construct, id *string, config AgentPoolAllowedWorkspacesConfig) AgentPoolAllowedWorkspaces
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces.AgentPoolAllowedWorkspaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agentpoolallowedworkspaces"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpoolallowedworkspaces"
 
 agentpoolallowedworkspaces.AgentPoolAllowedWorkspaces_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces.AgentPoolAllowedWorkspaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agentpoolallowedworkspaces"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpoolallowedworkspaces"
 
 agentpoolallowedworkspaces.AgentPoolAllowedWorkspaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ agentpoolallowedworkspaces.AgentPoolAllowedWorkspaces_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces.AgentPoolAllowedWorkspaces.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agentpoolallowedworkspaces"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpoolallowedworkspaces"
 
 agentpoolallowedworkspaces.AgentPoolAllowedWorkspaces_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ agentpoolallowedworkspaces.AgentPoolAllowedWorkspaces_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces.AgentPoolAllowedWorkspaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agentpoolallowedworkspaces"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpoolallowedworkspaces"
 
 agentpoolallowedworkspaces.AgentPoolAllowedWorkspaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.agentPoolAllowedWorkspaces.AgentPoolAllowedWorkspacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agentpoolallowedworkspaces"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/agentpoolallowedworkspaces"
 
 &agentpoolallowedworkspaces.AgentPoolAllowedWorkspacesConfig {
 	Connection: interface{},
