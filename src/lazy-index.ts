@@ -12,6 +12,7 @@ Object.defineProperty(exports, 'noCodeModule', { get: function () { return requi
 Object.defineProperty(exports, 'notificationConfiguration', { get: function () { return require('./notification-configuration'); } });
 Object.defineProperty(exports, 'oauthClient', { get: function () { return require('./oauth-client'); } });
 Object.defineProperty(exports, 'organization', { get: function () { return require('./organization'); } });
+Object.defineProperty(exports, 'organizationDefaultSettings', { get: function () { return require('./organization-default-settings'); } });
 Object.defineProperty(exports, 'organizationMembership', { get: function () { return require('./organization-membership'); } });
 Object.defineProperty(exports, 'organizationModuleSharing', { get: function () { return require('./organization-module-sharing'); } });
 Object.defineProperty(exports, 'organizationRunTask', { get: function () { return require('./organization-run-task'); } });
@@ -22,6 +23,7 @@ Object.defineProperty(exports, 'policySetParameter', { get: function () { return
 Object.defineProperty(exports, 'project', { get: function () { return require('./project'); } });
 Object.defineProperty(exports, 'projectPolicySet', { get: function () { return require('./project-policy-set'); } });
 Object.defineProperty(exports, 'projectVariableSet', { get: function () { return require('./project-variable-set'); } });
+Object.defineProperty(exports, 'registryGpgKey', { get: function () { return require('./registry-gpg-key'); } });
 Object.defineProperty(exports, 'registryModule', { get: function () { return require('./registry-module'); } });
 Object.defineProperty(exports, 'runTrigger', { get: function () { return require('./run-trigger'); } });
 Object.defineProperty(exports, 'samlSettings', { get: function () { return require('./saml-settings'); } });
@@ -43,6 +45,7 @@ Object.defineProperty(exports, 'workspacePolicySet', { get: function () { return
 Object.defineProperty(exports, 'workspacePolicySetExclusion', { get: function () { return require('./workspace-policy-set-exclusion'); } });
 Object.defineProperty(exports, 'workspaceRun', { get: function () { return require('./workspace-run'); } });
 Object.defineProperty(exports, 'workspaceRunTask', { get: function () { return require('./workspace-run-task'); } });
+Object.defineProperty(exports, 'workspaceSettings', { get: function () { return require('./workspace-settings'); } });
 Object.defineProperty(exports, 'workspaceVariableSet', { get: function () { return require('./workspace-variable-set'); } });
 Object.defineProperty(exports, 'dataTfeAgentPool', { get: function () { return require('./data-tfe-agent-pool'); } });
 Object.defineProperty(exports, 'dataTfeGithubAppInstallation', { get: function () { return require('./data-tfe-github-app-installation'); } });
@@ -57,6 +60,8 @@ Object.defineProperty(exports, 'dataTfeOrganizations', { get: function () { retu
 Object.defineProperty(exports, 'dataTfeOutputs', { get: function () { return require('./data-tfe-outputs'); } });
 Object.defineProperty(exports, 'dataTfePolicySet', { get: function () { return require('./data-tfe-policy-set'); } });
 Object.defineProperty(exports, 'dataTfeProject', { get: function () { return require('./data-tfe-project'); } });
+Object.defineProperty(exports, 'dataTfeRegistryGpgKey', { get: function () { return require('./data-tfe-registry-gpg-key'); } });
+Object.defineProperty(exports, 'dataTfeRegistryGpgKeys', { get: function () { return require('./data-tfe-registry-gpg-keys'); } });
 Object.defineProperty(exports, 'dataTfeSamlSettings', { get: function () { return require('./data-tfe-saml-settings'); } });
 Object.defineProperty(exports, 'dataTfeSlug', { get: function () { return require('./data-tfe-slug'); } });
 Object.defineProperty(exports, 'dataTfeSshKey', { get: function () { return require('./data-tfe-ssh-key'); } });

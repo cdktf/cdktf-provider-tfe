@@ -4,7 +4,7 @@
 
 ### DataTfeOrganization <a name="DataTfeOrganization" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization tfe_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization tfe_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig">DataTfeOrganizationConfig</a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.resetName">ResetName</a></code> | *No description.* |
 
 ---
 
@@ -260,6 +261,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetName` <a name="ResetName" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization.resetName"></a>
+
+```go
+func ResetName()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -363,7 +370,7 @@ The construct id used in the generated config for the DataTfeOrganization to imp
 
 The id of the existing DataTfeOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,8 +701,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganization"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Name: *string,
 	Id: *string,
+	Name: *string,
 }
 ```
 
@@ -710,8 +717,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganization"
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization#name DataTfeOrganization#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization#id DataTfeOrganization#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization#id DataTfeOrganization#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization#name DataTfeOrganization#name}. |
 
 ---
 
@@ -785,18 +792,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.name"></a>
-
-```go
-Name *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization#name DataTfeOrganization#name}.
-
----
-
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.id"></a>
 
 ```go
@@ -805,10 +800,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/data-sources/organization#id DataTfeOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization#id DataTfeOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization#name DataTfeOrganization#name}.
 
 ---
 

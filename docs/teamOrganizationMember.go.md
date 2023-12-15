@@ -4,7 +4,7 @@
 
 ### TeamOrganizationMember <a name="TeamOrganizationMember" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member tfe_team_organization_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member tfe_team_organization_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMember.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TeamOrganizationMember to 
 
 The id of the existing TeamOrganizationMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,9 +760,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/teamorganizationmember"
 | <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.organizationMembershipId">OrganizationMembershipId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#team_id TeamOrganizationMember#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#id TeamOrganizationMember#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.organizationMembershipId">OrganizationMembershipId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#team_id TeamOrganizationMember#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamOrganizationMember.TeamOrganizationMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#id TeamOrganizationMember#id}. |
 
 ---
 
@@ -844,7 +844,7 @@ OrganizationMembershipId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#organization_membership_id TeamOrganizationMember#organization_membership_id}.
 
 ---
 
@@ -856,7 +856,7 @@ TeamId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#team_id TeamOrganizationMember#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#team_id TeamOrganizationMember#team_id}.
 
 ---
 
@@ -868,7 +868,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/team_organization_member#id TeamOrganizationMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team_organization_member#id TeamOrganizationMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `tfe_organization_module_sharing`
 
-Refer to the Terraform Registory for docs: [`tfe_organization_module_sharing`](https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/organization_module_sharing).
+Refer to the Terraform Registory for docs: [`tfe_organization_module_sharing`](https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/organization_module_sharing).

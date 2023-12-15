@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-tfe.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,9 +756,9 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#organization Project#organization}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#name Project#name}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#organization Project#organization}. |
 
 ---
 
@@ -840,7 +840,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#name Project#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#name Project#name}.
 
 ---
 
@@ -852,7 +852,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -867,7 +867,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/project#organization Project#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project#organization Project#organization}.
 
 ---
 

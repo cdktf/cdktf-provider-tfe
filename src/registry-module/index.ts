@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module
+// https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,171 @@ import * as cdktf from 'cdktf';
 
 export interface RegistryModuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#id RegistryModule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#id RegistryModule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}
   */
   readonly moduleProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#name RegistryModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#name RegistryModule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#namespace RegistryModule#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#namespace RegistryModule#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#no_code RegistryModule#no_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#no_code RegistryModule#no_code}
   */
   readonly noCode?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#organization RegistryModule#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#organization RegistryModule#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}
   */
   readonly registryName?: string;
   /**
+  * test_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#test_config RegistryModule#test_config}
+  */
+  readonly testConfig?: RegistryModuleTestConfig[] | cdktf.IResolvable;
+  /**
   * vcs_repo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
   */
   readonly vcsRepo?: RegistryModuleVcsRepo;
 }
+export interface RegistryModuleTestConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}
+  */
+  readonly testsEnabled?: boolean | cdktf.IResolvable;
+}
+
+export function registryModuleTestConfigToTerraform(struct?: RegistryModuleTestConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    tests_enabled: cdktf.booleanToTerraform(struct!.testsEnabled),
+  }
+}
+
+export class RegistryModuleTestConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RegistryModuleTestConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._testsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.testsEnabled = this._testsEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RegistryModuleTestConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._testsEnabled = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._testsEnabled = value.testsEnabled;
+    }
+  }
+
+  // tests_enabled - computed: false, optional: true, required: false
+  private _testsEnabled?: boolean | cdktf.IResolvable; 
+  public get testsEnabled() {
+    return this.getBooleanAttribute('tests_enabled');
+  }
+  public set testsEnabled(value: boolean | cdktf.IResolvable) {
+    this._testsEnabled = value;
+  }
+  public resetTestsEnabled() {
+    this._testsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get testsEnabledInput() {
+    return this._testsEnabled;
+  }
+}
+
+export class RegistryModuleTestConfigList extends cdktf.ComplexList {
+  public internalValue? : RegistryModuleTestConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RegistryModuleTestConfigOutputReference {
+    return new RegistryModuleTestConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RegistryModuleVcsRepo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#branch RegistryModule#branch}
+  */
+  readonly branch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}
   */
   readonly displayIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}
   */
   readonly githubAppInstallationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#identifier RegistryModule#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#identifier RegistryModule#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}
   */
   readonly oauthTokenId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#tags RegistryModule#tags}
+  */
+  readonly tags?: boolean | cdktf.IResolvable;
 }
 
 export function registryModuleVcsRepoToTerraform(struct?: RegistryModuleVcsRepoOutputReference | RegistryModuleVcsRepo): any {
@@ -75,10 +186,12 @@ export function registryModuleVcsRepoToTerraform(struct?: RegistryModuleVcsRepoO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    branch: cdktf.stringToTerraform(struct!.branch),
     display_identifier: cdktf.stringToTerraform(struct!.displayIdentifier),
     github_app_installation_id: cdktf.stringToTerraform(struct!.githubAppInstallationId),
     identifier: cdktf.stringToTerraform(struct!.identifier),
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
+    tags: cdktf.booleanToTerraform(struct!.tags),
   }
 }
 
@@ -96,6 +209,10 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RegistryModuleVcsRepo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
     if (this._displayIdentifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.displayIdentifier = this._displayIdentifier;
@@ -112,24 +229,48 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.oauthTokenId = this._oauthTokenId;
     }
+    if (this._tags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: RegistryModuleVcsRepo | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._branch = undefined;
       this._displayIdentifier = undefined;
       this._githubAppInstallationId = undefined;
       this._identifier = undefined;
       this._oauthTokenId = undefined;
+      this._tags = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
       this._displayIdentifier = value.displayIdentifier;
       this._githubAppInstallationId = value.githubAppInstallationId;
       this._identifier = value.identifier;
       this._oauthTokenId = value.oauthTokenId;
+      this._tags = value.tags;
     }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
   }
 
   // display_identifier - computed: false, optional: false, required: true
@@ -189,10 +330,26 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
   public get oauthTokenIdInput() {
     return this._oauthTokenId;
   }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: boolean | cdktf.IResolvable; 
+  public get tags() {
+    return this.getBooleanAttribute('tags');
+  }
+  public set tags(value: boolean | cdktf.IResolvable) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module tfe_registry_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module tfe_registry_module}
 */
 export class RegistryModule extends cdktf.TerraformResource {
 
@@ -208,7 +365,7 @@ export class RegistryModule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RegistryModule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegistryModule to import
-  * @param importFromId The id of the existing RegistryModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegistryModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegistryModule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +377,7 @@ export class RegistryModule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.50.0/docs/resources/registry_module tfe_registry_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module tfe_registry_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +388,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.50.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -249,6 +406,7 @@ export class RegistryModule extends cdktf.TerraformResource {
     this._noCode = config.noCode;
     this._organization = config.organization;
     this._registryName = config.registryName;
+    this._testConfig.internalValue = config.testConfig;
     this._vcsRepo.internalValue = config.vcsRepo;
   }
 
@@ -352,6 +510,11 @@ export class RegistryModule extends cdktf.TerraformResource {
     return this._organization;
   }
 
+  // publishing_mechanism - computed: true, optional: false, required: false
+  public get publishingMechanism() {
+    return this.getStringAttribute('publishing_mechanism');
+  }
+
   // registry_name - computed: true, optional: true, required: false
   private _registryName?: string; 
   public get registryName() {
@@ -366,6 +529,22 @@ export class RegistryModule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get registryNameInput() {
     return this._registryName;
+  }
+
+  // test_config - computed: false, optional: true, required: false
+  private _testConfig = new RegistryModuleTestConfigList(this, "test_config", false);
+  public get testConfig() {
+    return this._testConfig;
+  }
+  public putTestConfig(value: RegistryModuleTestConfig[] | cdktf.IResolvable) {
+    this._testConfig.internalValue = value;
+  }
+  public resetTestConfig() {
+    this._testConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get testConfigInput() {
+    return this._testConfig.internalValue;
   }
 
   // vcs_repo - computed: false, optional: true, required: false
@@ -397,6 +576,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       no_code: cdktf.booleanToTerraform(this._noCode),
       organization: cdktf.stringToTerraform(this._organization),
       registry_name: cdktf.stringToTerraform(this._registryName),
+      test_config: cdktf.listMapper(registryModuleTestConfigToTerraform, true)(this._testConfig.internalValue),
       vcs_repo: registryModuleVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
   }
