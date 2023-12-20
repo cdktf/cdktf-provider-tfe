@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.NewDataTfePolicySet(scope Construct, id *string, config DataTfePolicySetConfig) DataTfePolicySet
 ```
@@ -295,7 +295,7 @@ func ResetOverridable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.DataTfePolicySet_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.DataTfePolicySet_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datatfepolicyset.DataTfePolicySet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.DataTfePolicySet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ datatfepolicyset.DataTfePolicySet_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.DataTfePolicySet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 &datatfepolicyset.DataTfePolicySetConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 &datatfepolicyset.DataTfePolicySetVcsRepo {
 
@@ -954,7 +954,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.NewDataTfePolicySetVcsRepoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfePolicySetVcsRepoList
 ```
@@ -1086,7 +1086,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfepolicyset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfepolicyset"
 
 datatfepolicyset.NewDataTfePolicySetVcsRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfePolicySetVcsRepoOutputReference
 ```
