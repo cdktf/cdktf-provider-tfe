@@ -4,12 +4,12 @@
 
 ### NoCodeModule <a name="NoCodeModule" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module tfe_no_code_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module tfe_no_code_module}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NewNoCodeModule(scope Construct, id *string, config NoCodeModuleConfig) NoCodeModule
 ```
@@ -419,7 +419,7 @@ func ResetVersionPin()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ nocodemodule.NoCodeModule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ nocodemodule.NoCodeModule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the NoCodeModule to import.
 
 The id of the existing NoCodeModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 &nocodemodule.NoCodeModuleConfig {
 	Connection: interface{},
@@ -870,12 +870,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.registryModule">RegistryModule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#id NoCodeModule#id}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#organization NoCodeModule#organization}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.registryModule">RegistryModule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#enabled NoCodeModule#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#id NoCodeModule#id}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#organization NoCodeModule#organization}. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.variableOptions">VariableOptions</a></code> | <code>interface{}</code> | variable_options block. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.versionPin">VersionPin</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.versionPin">VersionPin</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}. |
 
 ---
 
@@ -957,7 +957,7 @@ RegistryModule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}.
 
 ---
 
@@ -969,7 +969,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#enabled NoCodeModule#enabled}.
 
 ---
 
@@ -981,7 +981,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#id NoCodeModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#id NoCodeModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#organization NoCodeModule#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#organization NoCodeModule#organization}.
 
 ---
 
@@ -1010,7 +1010,7 @@ VariableOptions interface{}
 
 variable_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#variable_options NoCodeModule#variable_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#variable_options NoCodeModule#variable_options}
 
 ---
 
@@ -1022,7 +1022,7 @@ VersionPin *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}.
 
 ---
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 &nocodemodule.NoCodeModuleVariableOptions {
 	Name: *string,
@@ -1044,9 +1044,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#name NoCodeModule#name}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.property.options">Options</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#options NoCodeModule#options}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#type NoCodeModule#type}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#name NoCodeModule#name}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.property.options">Options</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#options NoCodeModule#options}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#type NoCodeModule#type}. |
 
 ---
 
@@ -1058,7 +1058,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#name NoCodeModule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#name NoCodeModule#name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ Options *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#options NoCodeModule#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#options NoCodeModule#options}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/no_code_module#type NoCodeModule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module#type NoCodeModule#type}.
 
 ---
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NewNoCodeModuleVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NoCodeModuleVariableOptionsList
 ```
@@ -1236,7 +1236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NewNoCodeModuleVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NoCodeModuleVariableOptionsOutputReference
 ```

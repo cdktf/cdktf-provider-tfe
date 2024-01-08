@@ -4,7 +4,7 @@
 
 ### RegistryGpgKey <a name="RegistryGpgKey" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key tfe_registry_gpg_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key tfe_registry_gpg_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ASCII-armored representation of the GPG key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
 
 ---
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the RegistryGpgKey to import.
 
 The id of the existing RegistryGpgKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ public java.lang.String getAsciiArmor();
 
 ASCII-armored representation of the GPG key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
 
 ---
 
@@ -953,7 +953,7 @@ public java.lang.String getOrganization();
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataTfeRegistryGpgKeys <a name="DataTfeRegistryGpgKeys" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.NewDataTfeRegistryGpgKeys(scope Construct, id *string, config DataTfeRegistryGpgKeysConfig) DataTfeRegistryGpgKeys
 ```
@@ -274,7 +274,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.DataTfeRegistryGpgKeys_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.DataTfeRegistryGpgKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datatferegistrygpgkeys.DataTfeRegistryGpgKeys_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.DataTfeRegistryGpgKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datatferegistrygpgkeys.DataTfeRegistryGpgKeys_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.DataTfeRegistryGpgKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataTfeRegistryGpgKeys to 
 
 The id of the existing DataTfeRegistryGpgKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 &datatferegistrygpgkeys.DataTfeRegistryGpgKeysConfig {
 	Connection: interface{},
@@ -694,7 +694,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_keys#organization DataTfeRegistryGpgKeys#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_keys#organization DataTfeRegistryGpgKeys#organization}
 
 ---
 
@@ -703,7 +703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeysKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 &datatferegistrygpgkeys.DataTfeRegistryGpgKeysKeys {
 
@@ -718,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeysKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.NewDataTfeRegistryGpgKeysKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeRegistryGpgKeysKeysList
 ```
@@ -850,7 +850,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeysKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkeys"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkeys"
 
 datatferegistrygpgkeys.NewDataTfeRegistryGpgKeysKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeRegistryGpgKeysKeysOutputReference
 ```

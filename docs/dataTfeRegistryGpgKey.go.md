@@ -4,12 +4,12 @@
 
 ### DataTfeRegistryGpgKey <a name="DataTfeRegistryGpgKey" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_key tfe_registry_gpg_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_key tfe_registry_gpg_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkey"
 
 datatferegistrygpgkey.NewDataTfeRegistryGpgKey(scope Construct, id *string, config DataTfeRegistryGpgKeyConfig) DataTfeRegistryGpgKey
 ```
@@ -274,7 +274,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkey"
 
 datatferegistrygpgkey.DataTfeRegistryGpgKey_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkey"
 
 datatferegistrygpgkey.DataTfeRegistryGpgKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datatferegistrygpgkey.DataTfeRegistryGpgKey_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkey"
 
 datatferegistrygpgkey.DataTfeRegistryGpgKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datatferegistrygpgkey.DataTfeRegistryGpgKey_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkey"
 
 datatferegistrygpgkey.DataTfeRegistryGpgKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataTfeRegistryGpgKey to i
 
 The id of the existing DataTfeRegistryGpgKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistrygpgkey"
 
 &datatferegistrygpgkey.DataTfeRegistryGpgKeyConfig {
 	Connection: interface{},
@@ -644,7 +644,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatferegistrygpgkey"
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_key#id DataTfeRegistryGpgKey#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_key#id DataTfeRegistryGpgKey#id}. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig.property.organization">Organization</a></code> | <code>*string</code> | Name of the organization. If omitted, organization must be defined in the provider config. |
 
 ---
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_key#id DataTfeRegistryGpgKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_key#id DataTfeRegistryGpgKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -744,7 +744,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/registry_gpg_key#organization DataTfeRegistryGpgKey#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/registry_gpg_key#organization DataTfeRegistryGpgKey#organization}
 
 ---
 
