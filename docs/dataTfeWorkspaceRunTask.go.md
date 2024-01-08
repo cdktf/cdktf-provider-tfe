@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.NewDataTfeWorkspaceRunTask(scope Construct, id *string, config DataTfeWorkspaceRunTaskConfig) DataTfeWorkspaceRunTask
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceruntask"
 
 &datatfeworkspaceruntask.DataTfeWorkspaceRunTaskConfig {
 	Connection: interface{},
