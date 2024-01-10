@@ -186,4 +186,42 @@ export class PolicySetParameter extends cdktf.TerraformResource {
       value: cdktf.stringToTerraform(this._value),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_set_id: {
+        value: cdktf.stringToHclTerraform(this._policySetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sensitive: {
+        value: cdktf.booleanToHclTerraform(this._sensitive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

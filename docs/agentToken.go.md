@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentToken.AgentToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agenttoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/agenttoken"
 
 agenttoken.NewAgentToken(scope Construct, id *string, config AgentTokenConfig) AgentToken
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.agentToken.AgentToken.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tfe.agentToken.AgentToken.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tfe.agentToken.AgentToken.toMetadata"></a>
 
@@ -378,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.agentToken.AgentToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agenttoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/agenttoken"
 
 agenttoken.AgentToken_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.agentToken.AgentToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agenttoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/agenttoken"
 
 agenttoken.AgentToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ agenttoken.AgentToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.agentToken.AgentToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agenttoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/agenttoken"
 
 agenttoken.AgentToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ agenttoken.AgentToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.agentToken.AgentToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agenttoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/agenttoken"
 
 agenttoken.AgentToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.agentToken.AgentTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/agenttoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/agenttoken"
 
 &agenttoken.AgentTokenConfig {
 	Connection: interface{},

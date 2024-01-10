@@ -142,4 +142,30 @@ export class TeamOrganizationMember extends cdktf.TerraformResource {
       team_id: cdktf.stringToTerraform(this._teamId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_membership_id: {
+        value: cdktf.stringToHclTerraform(this._organizationMembershipId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

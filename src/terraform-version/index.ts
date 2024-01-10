@@ -271,4 +271,66 @@ export class TerraformVersion extends cdktf.TerraformResource {
       version: cdktf.stringToTerraform(this._version),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      beta: {
+        value: cdktf.booleanToHclTerraform(this._beta),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deprecated: {
+        value: cdktf.booleanToHclTerraform(this._deprecated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deprecated_reason: {
+        value: cdktf.stringToHclTerraform(this._deprecatedReason),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      official: {
+        value: cdktf.booleanToHclTerraform(this._official),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sha: {
+        value: cdktf.stringToHclTerraform(this._sha),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

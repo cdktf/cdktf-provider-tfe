@@ -172,6 +172,55 @@ export function workspaceVcsRepoToTerraform(struct?: WorkspaceVcsRepoOutputRefer
   }
 }
 
+
+export function workspaceVcsRepoToHclTerraform(struct?: WorkspaceVcsRepoOutputReference | WorkspaceVcsRepo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branch: {
+      value: cdktf.stringToHclTerraform(struct!.branch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    github_app_installation_id: {
+      value: cdktf.stringToHclTerraform(struct!.githubAppInstallationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identifier: {
+      value: cdktf.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ingress_submodules: {
+      value: cdktf.booleanToHclTerraform(struct!.ingressSubmodules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    oauth_token_id: {
+      value: cdktf.stringToHclTerraform(struct!.oauthTokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags_regex: {
+      value: cdktf.stringToHclTerraform(struct!.tagsRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkspaceVcsRepoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -903,5 +952,181 @@ export class Workspace extends cdktf.TerraformResource {
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
       vcs_repo: workspaceVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_pool_id: {
+        value: cdktf.stringToHclTerraform(this._agentPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allow_destroy_plan: {
+        value: cdktf.booleanToHclTerraform(this._allowDestroyPlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      assessments_enabled: {
+        value: cdktf.booleanToHclTerraform(this._assessmentsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_apply: {
+        value: cdktf.booleanToHclTerraform(this._autoApply),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_apply_run_trigger: {
+        value: cdktf.booleanToHclTerraform(this._autoApplyRunTrigger),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      execution_mode: {
+        value: cdktf.stringToHclTerraform(this._executionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_triggers_enabled: {
+        value: cdktf.booleanToHclTerraform(this._fileTriggersEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_delete: {
+        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      global_remote_state: {
+        value: cdktf.booleanToHclTerraform(this._globalRemoteState),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operations: {
+        value: cdktf.booleanToHclTerraform(this._operations),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      queue_all_runs: {
+        value: cdktf.booleanToHclTerraform(this._queueAllRuns),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      remote_state_consumer_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._remoteStateConsumerIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      source_name: {
+        value: cdktf.stringToHclTerraform(this._sourceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_url: {
+        value: cdktf.stringToHclTerraform(this._sourceUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      speculative_enabled: {
+        value: cdktf.booleanToHclTerraform(this._speculativeEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ssh_key_id: {
+        value: cdktf.stringToHclTerraform(this._sshKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      structured_run_output_enabled: {
+        value: cdktf.booleanToHclTerraform(this._structuredRunOutputEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      terraform_version: {
+        value: cdktf.stringToHclTerraform(this._terraformVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trigger_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._triggerPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      trigger_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._triggerPrefixes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      working_directory: {
+        value: cdktf.stringToHclTerraform(this._workingDirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vcs_repo: {
+        value: workspaceVcsRepoToHclTerraform(this._vcsRepo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorkspaceVcsRepoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

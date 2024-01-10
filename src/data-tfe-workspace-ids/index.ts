@@ -204,4 +204,42 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
       tag_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagNames),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      exclude_tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludeTags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._names),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

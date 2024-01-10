@@ -66,6 +66,31 @@ export function teamProjectAccessProjectAccessToTerraform(struct?: TeamProjectAc
   }
 }
 
+
+export function teamProjectAccessProjectAccessToHclTerraform(struct?: TeamProjectAccessProjectAccess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    settings: {
+      value: cdktf.stringToHclTerraform(struct!.settings),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    teams: {
+      value: cdktf.stringToHclTerraform(struct!.teams),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamProjectAccessProjectAccessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -223,6 +248,73 @@ export function teamProjectAccessWorkspaceAccessToTerraform(struct?: TeamProject
     state_versions: cdktf.stringToTerraform(struct!.stateVersions),
     variables: cdktf.stringToTerraform(struct!.variables),
   }
+}
+
+
+export function teamProjectAccessWorkspaceAccessToHclTerraform(struct?: TeamProjectAccessWorkspaceAccess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.booleanToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    delete: {
+      value: cdktf.booleanToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    locking: {
+      value: cdktf.booleanToHclTerraform(struct!.locking),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    move: {
+      value: cdktf.booleanToHclTerraform(struct!.move),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    run_tasks: {
+      value: cdktf.booleanToHclTerraform(struct!.runTasks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    runs: {
+      value: cdktf.stringToHclTerraform(struct!.runs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sentinel_mocks: {
+      value: cdktf.stringToHclTerraform(struct!.sentinelMocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state_versions: {
+      value: cdktf.stringToHclTerraform(struct!.stateVersions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    variables: {
+      value: cdktf.stringToHclTerraform(struct!.variables),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamProjectAccessWorkspaceAccessOutputReference extends cdktf.ComplexObject {
@@ -645,5 +737,49 @@ export class TeamProjectAccess extends cdktf.TerraformResource {
       project_access: cdktf.listMapper(teamProjectAccessProjectAccessToTerraform, true)(this._projectAccess.internalValue),
       workspace_access: cdktf.listMapper(teamProjectAccessWorkspaceAccessToTerraform, true)(this._workspaceAccess.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access: {
+        value: cdktf.stringToHclTerraform(this._access),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_access: {
+        value: cdktf.listMapperHcl(teamProjectAccessProjectAccessToHclTerraform, true)(this._projectAccess.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamProjectAccessProjectAccessList",
+      },
+      workspace_access: {
+        value: cdktf.listMapperHcl(teamProjectAccessWorkspaceAccessToHclTerraform, true)(this._workspaceAccess.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamProjectAccessWorkspaceAccessList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

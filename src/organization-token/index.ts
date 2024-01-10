@@ -175,4 +175,36 @@ export class OrganizationToken extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      expired_at: {
+        value: cdktf.stringToHclTerraform(this._expiredAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_regenerate: {
+        value: cdktf.booleanToHclTerraform(this._forceRegenerate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

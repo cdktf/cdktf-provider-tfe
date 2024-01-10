@@ -479,4 +479,108 @@ export class SamlSettings extends cdktf.TerraformResource {
       want_assertions_signed: cdktf.booleanToTerraform(this._wantAssertionsSigned),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attr_groups: {
+        value: cdktf.stringToHclTerraform(this._attrGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attr_site_admin: {
+        value: cdktf.stringToHclTerraform(this._attrSiteAdmin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attr_username: {
+        value: cdktf.stringToHclTerraform(this._attrUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authn_requests_signed: {
+        value: cdktf.booleanToHclTerraform(this._authnRequestsSigned),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      certificate: {
+        value: cdktf.stringToHclTerraform(this._certificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      debug: {
+        value: cdktf.booleanToHclTerraform(this._debug),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      idp_cert: {
+        value: cdktf.stringToHclTerraform(this._idpCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature_digest_method: {
+        value: cdktf.stringToHclTerraform(this._signatureDigestMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature_signing_method: {
+        value: cdktf.stringToHclTerraform(this._signatureSigningMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_admin_role: {
+        value: cdktf.stringToHclTerraform(this._siteAdminRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slo_endpoint_url: {
+        value: cdktf.stringToHclTerraform(this._sloEndpointUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sso_api_token_session_timeout: {
+        value: cdktf.numberToHclTerraform(this._ssoApiTokenSessionTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sso_endpoint_url: {
+        value: cdktf.stringToHclTerraform(this._ssoEndpointUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_management_enabled: {
+        value: cdktf.booleanToHclTerraform(this._teamManagementEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      want_assertions_signed: {
+        value: cdktf.booleanToHclTerraform(this._wantAssertionsSigned),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.toHclTerraform">toHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey.toMetadata"></a>
 

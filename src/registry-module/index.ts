@@ -73,6 +73,25 @@ export function registryModuleTestConfigToTerraform(struct?: RegistryModuleTestC
   }
 }
 
+
+export function registryModuleTestConfigToHclTerraform(struct?: RegistryModuleTestConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tests_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.testsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RegistryModuleTestConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -193,6 +212,55 @@ export function registryModuleVcsRepoToTerraform(struct?: RegistryModuleVcsRepoO
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
     tags: cdktf.booleanToTerraform(struct!.tags),
   }
+}
+
+
+export function registryModuleVcsRepoToHclTerraform(struct?: RegistryModuleVcsRepoOutputReference | RegistryModuleVcsRepo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branch: {
+      value: cdktf.stringToHclTerraform(struct!.branch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.displayIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    github_app_installation_id: {
+      value: cdktf.stringToHclTerraform(struct!.githubAppInstallationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identifier: {
+      value: cdktf.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oauth_token_id: {
+      value: cdktf.stringToHclTerraform(struct!.oauthTokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.booleanToHclTerraform(struct!.tags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
@@ -579,5 +647,67 @@ export class RegistryModule extends cdktf.TerraformResource {
       test_config: cdktf.listMapper(registryModuleTestConfigToTerraform, true)(this._testConfig.internalValue),
       vcs_repo: registryModuleVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      module_provider: {
+        value: cdktf.stringToHclTerraform(this._moduleProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      no_code: {
+        value: cdktf.booleanToHclTerraform(this._noCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      registry_name: {
+        value: cdktf.stringToHclTerraform(this._registryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      test_config: {
+        value: cdktf.listMapperHcl(registryModuleTestConfigToHclTerraform, true)(this._testConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RegistryModuleTestConfigList",
+      },
+      vcs_repo: {
+        value: registryModuleVcsRepoToHclTerraform(this._vcsRepo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RegistryModuleVcsRepoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

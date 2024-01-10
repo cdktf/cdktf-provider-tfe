@@ -197,4 +197,42 @@ export class DataTfeOrganizationMembership extends cdktf.TerraformDataSource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_membership_id: {
+        value: cdktf.stringToHclTerraform(this._organizationMembershipId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

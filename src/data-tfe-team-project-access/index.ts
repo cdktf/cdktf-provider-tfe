@@ -40,6 +40,17 @@ export function dataTfeTeamProjectAccessProjectAccessToTerraform(struct?: DataTf
   }
 }
 
+
+export function dataTfeTeamProjectAccessProjectAccessToHclTerraform(struct?: DataTfeTeamProjectAccessProjectAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataTfeTeamProjectAccessProjectAccessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -107,6 +118,17 @@ export function dataTfeTeamProjectAccessWorkspaceAccessToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataTfeTeamProjectAccessWorkspaceAccessToHclTerraform(struct?: DataTfeTeamProjectAccessWorkspaceAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataTfeTeamProjectAccessWorkspaceAccessOutputReference extends cdktf.ComplexObject {
@@ -331,5 +353,31 @@ export class DataTfeTeamProjectAccess extends cdktf.TerraformDataSource {
       project_id: cdktf.stringToTerraform(this._projectId),
       team_id: cdktf.stringToTerraform(this._teamId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

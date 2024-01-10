@@ -191,4 +191,42 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enforcement_level: {
+        value: cdktf.stringToHclTerraform(this._enforcementLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage: {
+        value: cdktf.stringToHclTerraform(this._stage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      task_id: {
+        value: cdktf.stringToHclTerraform(this._taskId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

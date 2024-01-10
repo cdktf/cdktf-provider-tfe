@@ -167,4 +167,36 @@ export class OrganizationDefaultSettings extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_agent_pool_id: {
+        value: cdktf.stringToHclTerraform(this._defaultAgentPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_execution_mode: {
+        value: cdktf.stringToHclTerraform(this._defaultExecutionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

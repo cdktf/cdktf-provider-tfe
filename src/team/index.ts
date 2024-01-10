@@ -109,6 +109,85 @@ export function teamOrganizationAccessToTerraform(struct?: TeamOrganizationAcces
   }
 }
 
+
+export function teamOrganizationAccessToHclTerraform(struct?: TeamOrganizationAccessOutputReference | TeamOrganizationAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    manage_membership: {
+      value: cdktf.booleanToHclTerraform(struct!.manageMembership),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_modules: {
+      value: cdktf.booleanToHclTerraform(struct!.manageModules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_policies: {
+      value: cdktf.booleanToHclTerraform(struct!.managePolicies),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_policy_overrides: {
+      value: cdktf.booleanToHclTerraform(struct!.managePolicyOverrides),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_projects: {
+      value: cdktf.booleanToHclTerraform(struct!.manageProjects),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_providers: {
+      value: cdktf.booleanToHclTerraform(struct!.manageProviders),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_run_tasks: {
+      value: cdktf.booleanToHclTerraform(struct!.manageRunTasks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_vcs_settings: {
+      value: cdktf.booleanToHclTerraform(struct!.manageVcsSettings),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    manage_workspaces: {
+      value: cdktf.booleanToHclTerraform(struct!.manageWorkspaces),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    read_projects: {
+      value: cdktf.booleanToHclTerraform(struct!.readProjects),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    read_workspaces: {
+      value: cdktf.booleanToHclTerraform(struct!.readWorkspaces),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamOrganizationAccessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -547,5 +626,49 @@ export class Team extends cdktf.TerraformResource {
       visibility: cdktf.stringToTerraform(this._visibility),
       organization_access: teamOrganizationAccessToTerraform(this._organizationAccess.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sso_team_id: {
+        value: cdktf.stringToHclTerraform(this._ssoTeamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_access: {
+        value: teamOrganizationAccessToHclTerraform(this._organizationAccess.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamOrganizationAccessList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

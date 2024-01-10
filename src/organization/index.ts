@@ -323,4 +323,78 @@ export class Organization extends cdktf.TerraformResource {
       session_timeout_minutes: cdktf.numberToTerraform(this._sessionTimeoutMinutes),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_force_delete_workspaces: {
+        value: cdktf.booleanToHclTerraform(this._allowForceDeleteWorkspaces),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      assessments_enforced: {
+        value: cdktf.booleanToHclTerraform(this._assessmentsEnforced),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      collaborator_auth_policy: {
+        value: cdktf.stringToHclTerraform(this._collaboratorAuthPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cost_estimation_enabled: {
+        value: cdktf.booleanToHclTerraform(this._costEstimationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owners_team_saml_role_id: {
+        value: cdktf.stringToHclTerraform(this._ownersTeamSamlRoleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      send_passing_statuses_for_untriggered_speculative_plans: {
+        value: cdktf.booleanToHclTerraform(this._sendPassingStatusesForUntriggeredSpeculativePlans),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      session_remember_minutes: {
+        value: cdktf.numberToHclTerraform(this._sessionRememberMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      session_timeout_minutes: {
+        value: cdktf.numberToHclTerraform(this._sessionTimeoutMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
