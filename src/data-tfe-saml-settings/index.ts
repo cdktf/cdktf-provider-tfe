@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/saml_settings
 // generated from terraform resource schema
 
@@ -183,5 +178,11 @@ export class DataTfeSamlSettings extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
   }
 }

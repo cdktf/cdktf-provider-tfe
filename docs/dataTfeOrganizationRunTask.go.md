@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntask"
 
 datatfeorganizationruntask.NewDataTfeOrganizationRunTask(scope Construct, id *string, config DataTfeOrganizationRunTaskConfig) DataTfeOrganizationRunTask
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -124,6 +125,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.toMetadata"></a>
 
@@ -309,7 +318,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntask"
 
 datatfeorganizationruntask.DataTfeOrganizationRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntask"
 
 datatfeorganizationruntask.DataTfeOrganizationRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ datatfeorganizationruntask.DataTfeOrganizationRunTask_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntask"
 
 datatfeorganizationruntask.DataTfeOrganizationRunTask_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -369,7 +378,7 @@ datatfeorganizationruntask.DataTfeOrganizationRunTask_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntask"
 
 datatfeorganizationruntask.DataTfeOrganizationRunTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -730,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationRunTask.DataTfeOrganizationRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntask"
 
 &datatfeorganizationruntask.DataTfeOrganizationRunTaskConfig {
 	Connection: interface{},

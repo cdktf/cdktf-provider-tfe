@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTags(scope Construct, id *string, config DataTfeOrganizationTagsConfig) DataTfeOrganizationTags
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datatfeorganizationtags.DataTfeOrganizationTags_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.DataTfeOrganizationTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 &datatfeorganizationtags.DataTfeOrganizationTagsConfig {
 	Connection: interface{},
@@ -736,7 +745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 &datatfeorganizationtags.DataTfeOrganizationTagsTags {
 
@@ -751,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeOrganizationTagsTagsList
 ```
@@ -792,10 +801,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -883,7 +909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationTags.DataTfeOrganizationTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeorganizationtags"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationtags"
 
 datatfeorganizationtags.NewDataTfeOrganizationTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeOrganizationTagsTagsOutputReference
 ```

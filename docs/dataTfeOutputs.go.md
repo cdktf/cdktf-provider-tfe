@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.NewDataTfeOutputs(scope Construct, id *string, config DataTfeOutputsConfig) DataTfeOutputs
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetValues()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datatfeoutputs.DataTfeOutputs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datatfeoutputs.DataTfeOutputs_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 &datatfeoutputs.DataTfeOutputsConfig {
 	Connection: interface{},

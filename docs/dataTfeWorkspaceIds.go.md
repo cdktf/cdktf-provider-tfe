@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
 
 datatfeworkspaceids.NewDataTfeWorkspaceIds(scope Construct, id *string, config DataTfeWorkspaceIdsConfig) DataTfeWorkspaceIds
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -123,6 +124,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.toMetadata"></a>
 
@@ -302,7 +311,7 @@ func ResetTagNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -362,7 +371,7 @@ datatfeworkspaceids.DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
 
 datatfeworkspaceids.DataTfeWorkspaceIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v10/datatfeworkspaceids"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceids"
 
 &datatfeworkspaceids.DataTfeWorkspaceIdsConfig {
 	Connection: interface{},

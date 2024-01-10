@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/team_organization_members
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class TeamOrganizationMembers extends cdktf.TerraformResource {
       organization_membership_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._organizationMembershipIds),
       team_id: cdktf.stringToTerraform(this._teamId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_membership_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._organizationMembershipIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

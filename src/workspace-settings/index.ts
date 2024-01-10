@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/workspace_settings
 // generated from terraform resource schema
 
@@ -35,6 +30,17 @@ export function workspaceSettingsOverwritesToTerraform(struct?: WorkspaceSetting
   }
   return {
   }
+}
+
+
+export function workspaceSettingsOverwritesToHclTerraform(struct?: WorkspaceSettingsOverwrites): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class WorkspaceSettingsOverwritesOutputReference extends cdktf.ComplexObject {
@@ -221,5 +227,31 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
       execution_mode: cdktf.stringToTerraform(this._executionMode),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_pool_id: {
+        value: cdktf.stringToHclTerraform(this._agentPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      execution_mode: {
+        value: cdktf.stringToHclTerraform(this._executionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

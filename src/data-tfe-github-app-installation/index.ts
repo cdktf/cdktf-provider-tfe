@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/github_app_installation
 // generated from terraform resource schema
 
@@ -127,5 +122,25 @@ export class DataTfeGithubAppInstallation extends cdktf.TerraformDataSource {
       installation_id: cdktf.numberToTerraform(this._installationId),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      installation_id: {
+        value: cdktf.numberToHclTerraform(this._installationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

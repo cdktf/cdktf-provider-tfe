@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/team_access
 // generated from terraform resource schema
 
@@ -78,6 +73,55 @@ export function teamAccessPermissionsToTerraform(struct?: TeamAccessPermissions 
     variables: cdktf.stringToTerraform(struct!.variables),
     workspace_locking: cdktf.booleanToTerraform(struct!.workspaceLocking),
   }
+}
+
+
+export function teamAccessPermissionsToHclTerraform(struct?: TeamAccessPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    run_tasks: {
+      value: cdktf.booleanToHclTerraform(struct!.runTasks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    runs: {
+      value: cdktf.stringToHclTerraform(struct!.runs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sentinel_mocks: {
+      value: cdktf.stringToHclTerraform(struct!.sentinelMocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state_versions: {
+      value: cdktf.stringToHclTerraform(struct!.stateVersions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    variables: {
+      value: cdktf.stringToHclTerraform(struct!.variables),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workspace_locking: {
+      value: cdktf.booleanToHclTerraform(struct!.workspaceLocking),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamAccessPermissionsOutputReference extends cdktf.ComplexObject {
@@ -401,5 +445,43 @@ export class TeamAccess extends cdktf.TerraformResource {
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
       permissions: cdktf.listMapper(teamAccessPermissionsToTerraform, true)(this._permissions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access: {
+        value: cdktf.stringToHclTerraform(this._access),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.listMapperHcl(teamAccessPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamAccessPermissionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

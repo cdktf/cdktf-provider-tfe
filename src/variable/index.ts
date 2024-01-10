@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/variable
 // generated from terraform resource schema
 
@@ -264,5 +259,61 @@ export class Variable extends cdktf.TerraformResource {
       variable_set_id: cdktf.stringToTerraform(this._variableSetId),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      category: {
+        value: cdktf.stringToHclTerraform(this._category),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hcl: {
+        value: cdktf.booleanToHclTerraform(this._hcl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sensitive: {
+        value: cdktf.booleanToHclTerraform(this._sensitive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      variable_set_id: {
+        value: cdktf.stringToHclTerraform(this._variableSetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

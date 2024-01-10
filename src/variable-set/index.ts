@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/variable_set
 // generated from terraform resource schema
 
@@ -232,5 +227,55 @@ export class VariableSet extends cdktf.TerraformResource {
       priority: cdktf.booleanToTerraform(this._priority),
       workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      global: {
+        value: cdktf.booleanToHclTerraform(this._global),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.booleanToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      workspace_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._workspaceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/registry_gpg_key
 // generated from terraform resource schema
 
@@ -138,5 +133,25 @@ export class RegistryGpgKey extends cdktf.TerraformResource {
       ascii_armor: cdktf.stringToTerraform(this._asciiArmor),
       organization: cdktf.stringToTerraform(this._organization),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ascii_armor: {
+        value: cdktf.stringToHclTerraform(this._asciiArmor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

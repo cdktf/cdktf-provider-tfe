@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/oauth_client
 // generated from terraform resource schema
 
@@ -319,5 +314,79 @@ export class OauthClient extends cdktf.TerraformResource {
       secret: cdktf.stringToTerraform(this._secret),
       service_provider: cdktf.stringToTerraform(this._serviceProvider),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_url: {
+        value: cdktf.stringToHclTerraform(this._apiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_url: {
+        value: cdktf.stringToHclTerraform(this._httpUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_token: {
+        value: cdktf.stringToHclTerraform(this._oauthToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rsa_public_key: {
+        value: cdktf.stringToHclTerraform(this._rsaPublicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret: {
+        value: cdktf.stringToHclTerraform(this._secret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_provider: {
+        value: cdktf.stringToHclTerraform(this._serviceProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

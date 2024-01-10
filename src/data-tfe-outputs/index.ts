@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/outputs
 // generated from terraform resource schema
 
@@ -156,5 +151,31 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
       values: cdktf.hashMapper(cdktf.anyToTerraform)(this._values),
       workspace: cdktf.stringToTerraform(this._workspace),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      values: {
+        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._values),
+        isBlock: false,
+        type: "map",
+        storageClassType: "anyMap",
+      },
+      workspace: {
+        value: cdktf.stringToHclTerraform(this._workspace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

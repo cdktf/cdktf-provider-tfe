@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/no_code_module
 // generated from terraform resource schema
 
@@ -67,6 +62,37 @@ export function noCodeModuleVariableOptionsToTerraform(struct?: NoCodeModuleVari
     options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function noCodeModuleVariableOptionsToHclTerraform(struct?: NoCodeModuleVariableOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.options),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NoCodeModuleVariableOptionsOutputReference extends cdktf.ComplexObject {
@@ -354,5 +380,49 @@ export class NoCodeModule extends cdktf.TerraformResource {
       version_pin: cdktf.stringToTerraform(this._versionPin),
       variable_options: cdktf.listMapper(noCodeModuleVariableOptionsToTerraform, true)(this._variableOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      registry_module: {
+        value: cdktf.stringToHclTerraform(this._registryModule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_pin: {
+        value: cdktf.stringToHclTerraform(this._versionPin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      variable_options: {
+        value: cdktf.listMapperHcl(noCodeModuleVariableOptionsToHclTerraform, true)(this._variableOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NoCodeModuleVariableOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/workspace_policy_set
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class WorkspacePolicySet extends cdktf.TerraformResource {
       policy_set_id: cdktf.stringToTerraform(this._policySetId),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_set_id: {
+        value: cdktf.stringToHclTerraform(this._policySetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

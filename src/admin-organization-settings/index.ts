@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/admin_organization_settings
 // generated from terraform resource schema
 
@@ -218,5 +213,49 @@ export class AdminOrganizationSettings extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
       workspace_limit: cdktf.numberToTerraform(this._workspaceLimit),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_beta_tools: {
+        value: cdktf.booleanToHclTerraform(this._accessBetaTools),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      global_module_sharing: {
+        value: cdktf.booleanToHclTerraform(this._globalModuleSharing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      module_sharing_consumer_organizations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._moduleSharingConsumerOrganizations),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_limit: {
+        value: cdktf.numberToHclTerraform(this._workspaceLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

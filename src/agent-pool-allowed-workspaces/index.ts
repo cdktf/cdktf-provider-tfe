@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/agent_pool_allowed_workspaces
 // generated from terraform resource schema
 
@@ -141,5 +136,31 @@ export class AgentPoolAllowedWorkspaces extends cdktf.TerraformResource {
       allowed_workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedWorkspaceIds),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_pool_id: {
+        value: cdktf.stringToHclTerraform(this._agentPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_workspace_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedWorkspaceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

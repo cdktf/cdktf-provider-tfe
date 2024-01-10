@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set
 // generated from terraform resource schema
 
@@ -101,6 +96,49 @@ export function policySetVcsRepoToTerraform(struct?: PolicySetVcsRepoOutputRefer
     ingress_submodules: cdktf.booleanToTerraform(struct!.ingressSubmodules),
     oauth_token_id: cdktf.stringToTerraform(struct!.oauthTokenId),
   }
+}
+
+
+export function policySetVcsRepoToHclTerraform(struct?: PolicySetVcsRepoOutputReference | PolicySetVcsRepo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branch: {
+      value: cdktf.stringToHclTerraform(struct!.branch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    github_app_installation_id: {
+      value: cdktf.stringToHclTerraform(struct!.githubAppInstallationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identifier: {
+      value: cdktf.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ingress_submodules: {
+      value: cdktf.booleanToHclTerraform(struct!.ingressSubmodules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    oauth_token_id: {
+      value: cdktf.stringToHclTerraform(struct!.oauthTokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
@@ -514,5 +552,85 @@ export class PolicySet extends cdktf.TerraformResource {
       workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
       vcs_repo: policySetVcsRepoToTerraform(this._vcsRepo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      global: {
+        value: cdktf.booleanToHclTerraform(this._global),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      overridable: {
+        value: cdktf.booleanToHclTerraform(this._overridable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      policies_path: {
+        value: cdktf.stringToHclTerraform(this._policiesPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      slug: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._slug),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      workspace_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._workspaceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vcs_repo: {
+        value: policySetVcsRepoToHclTerraform(this._vcsRepo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PolicySetVcsRepoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
