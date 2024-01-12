@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.NewOrganizationMembership(scope Construct, id *string, config OrganizationMembershipConfig) OrganizationMembership
 ```
@@ -392,7 +392,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ organizationmembership.OrganizationMembership_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ organizationmembership.OrganizationMembership_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 &organizationmembership.OrganizationMembershipConfig {
 	Connection: interface{},
