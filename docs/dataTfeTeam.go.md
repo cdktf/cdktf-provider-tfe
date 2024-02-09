@@ -4,7 +4,7 @@
 
 ### DataTfeTeam <a name="DataTfeTeam" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team tfe_team}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team tfe_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeam.DataTfeTeam.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataTfeTeam to import.
 
 The id of the existing DataTfeTeam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,9 +661,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeteam"
 | <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#name DataTfeTeam#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#id DataTfeTeam#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#organization DataTfeTeam#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#name DataTfeTeam#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#id DataTfeTeam#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeTeam.DataTfeTeamConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#organization DataTfeTeam#organization}. |
 
 ---
 
@@ -745,7 +745,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#name DataTfeTeam#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#name DataTfeTeam#name}.
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#id DataTfeTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#id DataTfeTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/data-sources/team#organization DataTfeTeam#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/data-sources/team#organization DataTfeTeam#organization}.
 
 ---
 

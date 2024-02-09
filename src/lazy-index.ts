@@ -11,6 +11,7 @@ Object.defineProperty(exports, 'agentToken', { get: function () { return require
 Object.defineProperty(exports, 'noCodeModule', { get: function () { return require('./no-code-module'); } });
 Object.defineProperty(exports, 'notificationConfiguration', { get: function () { return require('./notification-configuration'); } });
 Object.defineProperty(exports, 'oauthClient', { get: function () { return require('./oauth-client'); } });
+Object.defineProperty(exports, 'opaVersion', { get: function () { return require('./opa-version'); } });
 Object.defineProperty(exports, 'organization', { get: function () { return require('./organization'); } });
 Object.defineProperty(exports, 'organizationDefaultSettings', { get: function () { return require('./organization-default-settings'); } });
 Object.defineProperty(exports, 'organizationMembership', { get: function () { return require('./organization-membership'); } });
@@ -25,9 +26,11 @@ Object.defineProperty(exports, 'projectPolicySet', { get: function () { return r
 Object.defineProperty(exports, 'projectVariableSet', { get: function () { return require('./project-variable-set'); } });
 Object.defineProperty(exports, 'registryGpgKey', { get: function () { return require('./registry-gpg-key'); } });
 Object.defineProperty(exports, 'registryModule', { get: function () { return require('./registry-module'); } });
+Object.defineProperty(exports, 'registryProvider', { get: function () { return require('./registry-provider'); } });
 Object.defineProperty(exports, 'runTrigger', { get: function () { return require('./run-trigger'); } });
 Object.defineProperty(exports, 'samlSettings', { get: function () { return require('./saml-settings'); } });
 Object.defineProperty(exports, 'sentinelPolicy', { get: function () { return require('./sentinel-policy'); } });
+Object.defineProperty(exports, 'sentinelVersion', { get: function () { return require('./sentinel-version'); } });
 Object.defineProperty(exports, 'sshKey', { get: function () { return require('./ssh-key'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
 Object.defineProperty(exports, 'teamAccess', { get: function () { return require('./team-access'); } });
@@ -50,6 +53,7 @@ Object.defineProperty(exports, 'workspaceVariableSet', { get: function () { retu
 Object.defineProperty(exports, 'dataTfeAgentPool', { get: function () { return require('./data-tfe-agent-pool'); } });
 Object.defineProperty(exports, 'dataTfeGithubAppInstallation', { get: function () { return require('./data-tfe-github-app-installation'); } });
 Object.defineProperty(exports, 'dataTfeIpRanges', { get: function () { return require('./data-tfe-ip-ranges'); } });
+Object.defineProperty(exports, 'dataTfeNoCodeModule', { get: function () { return require('./data-tfe-no-code-module'); } });
 Object.defineProperty(exports, 'dataTfeOauthClient', { get: function () { return require('./data-tfe-oauth-client'); } });
 Object.defineProperty(exports, 'dataTfeOrganization', { get: function () { return require('./data-tfe-organization'); } });
 Object.defineProperty(exports, 'dataTfeOrganizationMembers', { get: function () { return require('./data-tfe-organization-members'); } });
@@ -62,6 +66,8 @@ Object.defineProperty(exports, 'dataTfePolicySet', { get: function () { return r
 Object.defineProperty(exports, 'dataTfeProject', { get: function () { return require('./data-tfe-project'); } });
 Object.defineProperty(exports, 'dataTfeRegistryGpgKey', { get: function () { return require('./data-tfe-registry-gpg-key'); } });
 Object.defineProperty(exports, 'dataTfeRegistryGpgKeys', { get: function () { return require('./data-tfe-registry-gpg-keys'); } });
+Object.defineProperty(exports, 'dataTfeRegistryProvider', { get: function () { return require('./data-tfe-registry-provider'); } });
+Object.defineProperty(exports, 'dataTfeRegistryProviders', { get: function () { return require('./data-tfe-registry-providers'); } });
 Object.defineProperty(exports, 'dataTfeSamlSettings', { get: function () { return require('./data-tfe-saml-settings'); } });
 Object.defineProperty(exports, 'dataTfeSlug', { get: function () { return require('./data-tfe-slug'); } });
 Object.defineProperty(exports, 'dataTfeSshKey', { get: function () { return require('./data-tfe-ssh-key'); } });

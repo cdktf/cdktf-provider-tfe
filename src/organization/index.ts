@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization
+// https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}
+  */
+  readonly aggregatedCommitStatusEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}
   */
   readonly allowForceDeleteWorkspaces?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#assessments_enforced Organization#assessments_enforced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}
   */
   readonly assessmentsEnforced?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}
   */
   readonly collaboratorAuthPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}
   */
   readonly costEstimationEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#email Organization#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#email Organization#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#id Organization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#id Organization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#name Organization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#name Organization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}
   */
   readonly ownersTeamSamlRoleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}
   */
   readonly sendPassingStatusesForUntriggeredSpeculativePlans?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}
   */
   readonly sessionRememberMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}
   */
   readonly sessionTimeoutMinutes?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization tfe_organization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization tfe_organization}
 */
 export class Organization extends cdktf.TerraformResource {
 
@@ -78,7 +82,7 @@ export class Organization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Organization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Organization to import
-  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Organization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -90,7 +94,7 @@ export class Organization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/organization tfe_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/organization tfe_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +105,7 @@ export class Organization extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.51.1',
+        providerVersion: '0.52.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -112,6 +116,7 @@ export class Organization extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._aggregatedCommitStatusEnabled = config.aggregatedCommitStatusEnabled;
     this._allowForceDeleteWorkspaces = config.allowForceDeleteWorkspaces;
     this._assessmentsEnforced = config.assessmentsEnforced;
     this._collaboratorAuthPolicy = config.collaboratorAuthPolicy;
@@ -128,6 +133,22 @@ export class Organization extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // aggregated_commit_status_enabled - computed: true, optional: true, required: false
+  private _aggregatedCommitStatusEnabled?: boolean | cdktf.IResolvable; 
+  public get aggregatedCommitStatusEnabled() {
+    return this.getBooleanAttribute('aggregated_commit_status_enabled');
+  }
+  public set aggregatedCommitStatusEnabled(value: boolean | cdktf.IResolvable) {
+    this._aggregatedCommitStatusEnabled = value;
+  }
+  public resetAggregatedCommitStatusEnabled() {
+    this._aggregatedCommitStatusEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregatedCommitStatusEnabledInput() {
+    return this._aggregatedCommitStatusEnabled;
+  }
 
   // allow_force_delete_workspaces - computed: false, optional: true, required: false
   private _allowForceDeleteWorkspaces?: boolean | cdktf.IResolvable; 
@@ -310,6 +331,7 @@ export class Organization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      aggregated_commit_status_enabled: cdktf.booleanToTerraform(this._aggregatedCommitStatusEnabled),
       allow_force_delete_workspaces: cdktf.booleanToTerraform(this._allowForceDeleteWorkspaces),
       assessments_enforced: cdktf.booleanToTerraform(this._assessmentsEnforced),
       collaborator_auth_policy: cdktf.stringToTerraform(this._collaboratorAuthPolicy),
@@ -326,6 +348,12 @@ export class Organization extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      aggregated_commit_status_enabled: {
+        value: cdktf.booleanToHclTerraform(this._aggregatedCommitStatusEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       allow_force_delete_workspaces: {
         value: cdktf.booleanToHclTerraform(this._allowForceDeleteWorkspaces),
         isBlock: false,

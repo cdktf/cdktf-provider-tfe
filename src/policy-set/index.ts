@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set
+// https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,90 @@ import * as cdktf from 'cdktf';
 
 export interface PolicySetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#description PolicySet#description}
+  * Whether the policy set is executed in the TFC agent. True by default for OPA policies
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#agent_enabled PolicySet#agent_enabled}
+  */
+  readonly agentEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#description PolicySet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#global PolicySet#global}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#global PolicySet#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#id PolicySet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#id PolicySet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#kind PolicySet#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#kind PolicySet#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#name PolicySet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#name PolicySet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#organization PolicySet#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#organization PolicySet#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#overridable PolicySet#overridable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#overridable PolicySet#overridable}
   */
   readonly overridable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policies_path PolicySet#policies_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policies_path PolicySet#policies_path}
   */
   readonly policiesPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policy_ids PolicySet#policy_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}
   */
   readonly policyIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#slug PolicySet#slug}
+  * The policy tool version to run the policy evaluation against
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_tool_version PolicySet#policy_tool_version}
+  */
+  readonly policyToolVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#slug PolicySet#slug}
   */
   readonly slug?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}
   */
   readonly workspaceIds?: string[];
   /**
   * vcs_repo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
   */
   readonly vcsRepo?: PolicySetVcsRepo;
 }
 export interface PolicySetVcsRepo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#branch PolicySet#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#branch PolicySet#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}
   */
   readonly githubAppInstallationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#identifier PolicySet#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#identifier PolicySet#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}
   */
   readonly ingressSubmodules?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}
   */
   readonly oauthTokenId?: string;
 }
@@ -281,7 +293,7 @@ export class PolicySetVcsRepoOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set tfe_policy_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set tfe_policy_set}
 */
 export class PolicySet extends cdktf.TerraformResource {
 
@@ -297,7 +309,7 @@ export class PolicySet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicySet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicySet to import
-  * @param importFromId The id of the existing PolicySet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicySet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicySet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -309,7 +321,7 @@ export class PolicySet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set tfe_policy_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set tfe_policy_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +332,7 @@ export class PolicySet extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_policy_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.51.1',
+        providerVersion: '0.52.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -331,6 +343,7 @@ export class PolicySet extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._agentEnabled = config.agentEnabled;
     this._description = config.description;
     this._global = config.global;
     this._id = config.id;
@@ -340,6 +353,7 @@ export class PolicySet extends cdktf.TerraformResource {
     this._overridable = config.overridable;
     this._policiesPath = config.policiesPath;
     this._policyIds = config.policyIds;
+    this._policyToolVersion = config.policyToolVersion;
     this._slug = config.slug;
     this._workspaceIds = config.workspaceIds;
     this._vcsRepo.internalValue = config.vcsRepo;
@@ -348,6 +362,22 @@ export class PolicySet extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // agent_enabled - computed: true, optional: true, required: false
+  private _agentEnabled?: boolean | cdktf.IResolvable; 
+  public get agentEnabled() {
+    return this.getBooleanAttribute('agent_enabled');
+  }
+  public set agentEnabled(value: boolean | cdktf.IResolvable) {
+    this._agentEnabled = value;
+  }
+  public resetAgentEnabled() {
+    this._agentEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get agentEnabledInput() {
+    return this._agentEnabled;
+  }
 
   // description - computed: true, optional: true, required: false
   private _description?: string; 
@@ -490,6 +520,22 @@ export class PolicySet extends cdktf.TerraformResource {
     return this._policyIds;
   }
 
+  // policy_tool_version - computed: true, optional: true, required: false
+  private _policyToolVersion?: string; 
+  public get policyToolVersion() {
+    return this.getStringAttribute('policy_tool_version');
+  }
+  public set policyToolVersion(value: string) {
+    this._policyToolVersion = value;
+  }
+  public resetPolicyToolVersion() {
+    this._policyToolVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyToolVersionInput() {
+    return this._policyToolVersion;
+  }
+
   // slug - computed: false, optional: true, required: false
   private _slug?: { [key: string]: string }; 
   public get slug() {
@@ -544,6 +590,7 @@ export class PolicySet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      agent_enabled: cdktf.booleanToTerraform(this._agentEnabled),
       description: cdktf.stringToTerraform(this._description),
       global: cdktf.booleanToTerraform(this._global),
       id: cdktf.stringToTerraform(this._id),
@@ -553,6 +600,7 @@ export class PolicySet extends cdktf.TerraformResource {
       overridable: cdktf.booleanToTerraform(this._overridable),
       policies_path: cdktf.stringToTerraform(this._policiesPath),
       policy_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyIds),
+      policy_tool_version: cdktf.stringToTerraform(this._policyToolVersion),
       slug: cdktf.hashMapper(cdktf.stringToTerraform)(this._slug),
       workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
       vcs_repo: policySetVcsRepoToTerraform(this._vcsRepo.internalValue),
@@ -561,6 +609,12 @@ export class PolicySet extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      agent_enabled: {
+        value: cdktf.booleanToHclTerraform(this._agentEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
@@ -614,6 +668,12 @@ export class PolicySet extends cdktf.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      policy_tool_version: {
+        value: cdktf.stringToHclTerraform(this._policyToolVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       slug: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._slug),
