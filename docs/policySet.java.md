@@ -4,7 +4,7 @@
 
 ### PolicySet <a name="PolicySet" id="@cdktf/provider-tfe.policySet.PolicySet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set tfe_policy_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set tfe_policy_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer"></a>
 
@@ -24,6 +24,8 @@ PolicySet.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .agentEnabled(java.lang.Boolean)
+//  .agentEnabled(IResolvable)
 //  .description(java.lang.String)
 //  .global(java.lang.Boolean)
 //  .global(IResolvable)
@@ -34,6 +36,7 @@ PolicySet.Builder.create(Construct scope, java.lang.String id)
 //  .overridable(IResolvable)
 //  .policiesPath(java.lang.String)
 //  .policyIds(java.util.List<java.lang.String>)
+//  .policyToolVersion(java.lang.String)
 //  .slug(java.util.Map<java.lang.String, java.lang.String>)
 //  .vcsRepo(PolicySetVcsRepo)
 //  .workspaceIds(java.util.List<java.lang.String>)
@@ -51,18 +54,20 @@ PolicySet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#name PolicySet#name}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#description PolicySet#description}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.global">global</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#global PolicySet#global}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#id PolicySet#id}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#kind PolicySet#kind}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#organization PolicySet#organization}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.overridable">overridable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#overridable PolicySet#overridable}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policiesPath">policiesPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policies_path PolicySet#policies_path}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policyIds">policyIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policy_ids PolicySet#policy_ids}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.slug">slug</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#slug PolicySet#slug}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#name PolicySet#name}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.agentEnabled">agentEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the policy set is executed in the TFC agent. True by default for OPA policies. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#description PolicySet#description}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.global">global</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#global PolicySet#global}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#id PolicySet#id}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#kind PolicySet#kind}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#organization PolicySet#organization}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.overridable">overridable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#overridable PolicySet#overridable}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policiesPath">policiesPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policies_path PolicySet#policies_path}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policyIds">policyIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policyToolVersion">policyToolVersion</a></code> | <code>java.lang.String</code> | The policy tool version to run the policy evaluation against. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.slug">slug</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#slug PolicySet#slug}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo">PolicySetVcsRepo</a></code> | vcs_repo block. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}. |
 
 ---
 
@@ -130,7 +135,17 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#name PolicySet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#name PolicySet#name}.
+
+---
+
+##### `agentEnabled`<sup>Optional</sup> <a name="agentEnabled" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.agentEnabled"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether the policy set is executed in the TFC agent. True by default for OPA policies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#agent_enabled PolicySet#agent_enabled}
 
 ---
 
@@ -138,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#description PolicySet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#description PolicySet#description}.
 
 ---
 
@@ -146,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#global PolicySet#global}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#global PolicySet#global}.
 
 ---
 
@@ -154,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#id PolicySet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#id PolicySet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#kind PolicySet#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#kind PolicySet#kind}.
 
 ---
 
@@ -173,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#organization PolicySet#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#organization PolicySet#organization}.
 
 ---
 
@@ -181,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#overridable PolicySet#overridable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#overridable PolicySet#overridable}.
 
 ---
 
@@ -189,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policies_path PolicySet#policies_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policies_path PolicySet#policies_path}.
 
 ---
 
@@ -197,7 +212,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
+
+---
+
+##### `policyToolVersion`<sup>Optional</sup> <a name="policyToolVersion" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policyToolVersion"></a>
+
+- *Type:* java.lang.String
+
+The policy tool version to run the policy evaluation against.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_tool_version PolicySet#policy_tool_version}
 
 ---
 
@@ -205,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#slug PolicySet#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#slug PolicySet#slug}.
 
 ---
 
@@ -215,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
 
 ---
 
@@ -223,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
 
 ---
 
@@ -255,6 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.putVcsRepo">putVcsRepo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetAgentEnabled">resetAgentEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetGlobal">resetGlobal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetId">resetId</a></code> | *No description.* |
@@ -263,6 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetOverridable">resetOverridable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetPoliciesPath">resetPoliciesPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetPolicyIds">resetPolicyIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetPolicyToolVersion">resetPolicyToolVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetSlug">resetSlug</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetVcsRepo">resetVcsRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.resetWorkspaceIds">resetWorkspaceIds</a></code> | *No description.* |
@@ -571,6 +598,12 @@ public void putVcsRepo(PolicySetVcsRepo value)
 
 ---
 
+##### `resetAgentEnabled` <a name="resetAgentEnabled" id="@cdktf/provider-tfe.policySet.PolicySet.resetAgentEnabled"></a>
+
+```java
+public void resetAgentEnabled()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-tfe.policySet.PolicySet.resetDescription"></a>
 
 ```java
@@ -617,6 +650,12 @@ public void resetPoliciesPath()
 
 ```java
 public void resetPolicyIds()
+```
+
+##### `resetPolicyToolVersion` <a name="resetPolicyToolVersion" id="@cdktf/provider-tfe.policySet.PolicySet.resetPolicyToolVersion"></a>
+
+```java
+public void resetPolicyToolVersion()
 ```
 
 ##### `resetSlug` <a name="resetSlug" id="@cdktf/provider-tfe.policySet.PolicySet.resetSlug"></a>
@@ -740,7 +779,7 @@ The construct id used in the generated config for the PolicySet to import.
 
 The id of the existing PolicySet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,6 +810,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference">PolicySetVcsRepoOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabledInput">agentEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.globalInput">globalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -780,9 +820,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.overridableInput">overridableInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policiesPathInput">policiesPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyIdsInput">policyIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyToolVersionInput">policyToolVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.slugInput">slugInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.vcsRepoInput">vcsRepoInput</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo">PolicySetVcsRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.workspaceIdsInput">workspaceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabled">agentEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.global">global</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -792,6 +834,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.overridable">overridable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policiesPath">policiesPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyIds">policyIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyToolVersion">policyToolVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.slug">slug</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
@@ -949,6 +992,16 @@ public PolicySetVcsRepoOutputReference getVcsRepo();
 
 ---
 
+##### `agentEnabledInput`<sup>Optional</sup> <a name="agentEnabledInput" id="@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabledInput"></a>
+
+```java
+public java.lang.Object getAgentEnabledInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-tfe.policySet.PolicySet.property.descriptionInput"></a>
 
 ```java
@@ -1039,6 +1092,16 @@ public java.util.List<java.lang.String> getPolicyIdsInput();
 
 ---
 
+##### `policyToolVersionInput`<sup>Optional</sup> <a name="policyToolVersionInput" id="@cdktf/provider-tfe.policySet.PolicySet.property.policyToolVersionInput"></a>
+
+```java
+public java.lang.String getPolicyToolVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `slugInput`<sup>Optional</sup> <a name="slugInput" id="@cdktf/provider-tfe.policySet.PolicySet.property.slugInput"></a>
 
 ```java
@@ -1066,6 +1129,16 @@ public java.util.List<java.lang.String> getWorkspaceIdsInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `agentEnabled`<sup>Required</sup> <a name="agentEnabled" id="@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabled"></a>
+
+```java
+public java.lang.Object getAgentEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1159,6 +1232,16 @@ public java.util.List<java.lang.String> getPolicyIds();
 
 ---
 
+##### `policyToolVersion`<sup>Required</sup> <a name="policyToolVersion" id="@cdktf/provider-tfe.policySet.PolicySet.property.policyToolVersion"></a>
+
+```java
+public java.lang.String getPolicyToolVersion();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `slug`<sup>Required</sup> <a name="slug" id="@cdktf/provider-tfe.policySet.PolicySet.property.slug"></a>
 
 ```java
@@ -1219,6 +1302,8 @@ PolicySetConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .agentEnabled(java.lang.Boolean)
+//  .agentEnabled(IResolvable)
 //  .description(java.lang.String)
 //  .global(java.lang.Boolean)
 //  .global(IResolvable)
@@ -1229,6 +1314,7 @@ PolicySetConfig.builder()
 //  .overridable(IResolvable)
 //  .policiesPath(java.lang.String)
 //  .policyIds(java.util.List<java.lang.String>)
+//  .policyToolVersion(java.lang.String)
 //  .slug(java.util.Map<java.lang.String, java.lang.String>)
 //  .vcsRepo(PolicySetVcsRepo)
 //  .workspaceIds(java.util.List<java.lang.String>)
@@ -1246,18 +1332,20 @@ PolicySetConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#name PolicySet#name}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#description PolicySet#description}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.global">global</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#global PolicySet#global}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#id PolicySet#id}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#kind PolicySet#kind}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#organization PolicySet#organization}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.overridable">overridable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#overridable PolicySet#overridable}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policiesPath">policiesPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policies_path PolicySet#policies_path}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policyIds">policyIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policy_ids PolicySet#policy_ids}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.slug">slug</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#slug PolicySet#slug}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#name PolicySet#name}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.agentEnabled">agentEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the policy set is executed in the TFC agent. True by default for OPA policies. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#description PolicySet#description}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.global">global</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#global PolicySet#global}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#id PolicySet#id}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#kind PolicySet#kind}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#organization PolicySet#organization}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.overridable">overridable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#overridable PolicySet#overridable}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policiesPath">policiesPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policies_path PolicySet#policies_path}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policyIds">policyIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policyToolVersion">policyToolVersion</a></code> | <code>java.lang.String</code> | The policy tool version to run the policy evaluation against. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.slug">slug</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#slug PolicySet#slug}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo">PolicySetVcsRepo</a></code> | vcs_repo block. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}. |
 
 ---
 
@@ -1339,7 +1427,21 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#name PolicySet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#name PolicySet#name}.
+
+---
+
+##### `agentEnabled`<sup>Optional</sup> <a name="agentEnabled" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.agentEnabled"></a>
+
+```java
+public java.lang.Object getAgentEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether the policy set is executed in the TFC agent. True by default for OPA policies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#agent_enabled PolicySet#agent_enabled}
 
 ---
 
@@ -1351,7 +1453,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#description PolicySet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#description PolicySet#description}.
 
 ---
 
@@ -1363,7 +1465,7 @@ public java.lang.Object getGlobal();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#global PolicySet#global}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#global PolicySet#global}.
 
 ---
 
@@ -1375,7 +1477,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#id PolicySet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#id PolicySet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1390,7 +1492,7 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#kind PolicySet#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#kind PolicySet#kind}.
 
 ---
 
@@ -1402,7 +1504,7 @@ public java.lang.String getOrganization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#organization PolicySet#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#organization PolicySet#organization}.
 
 ---
 
@@ -1414,7 +1516,7 @@ public java.lang.Object getOverridable();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#overridable PolicySet#overridable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#overridable PolicySet#overridable}.
 
 ---
 
@@ -1426,7 +1528,7 @@ public java.lang.String getPoliciesPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policies_path PolicySet#policies_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policies_path PolicySet#policies_path}.
 
 ---
 
@@ -1438,7 +1540,21 @@ public java.util.List<java.lang.String> getPolicyIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
+
+---
+
+##### `policyToolVersion`<sup>Optional</sup> <a name="policyToolVersion" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.policyToolVersion"></a>
+
+```java
+public java.lang.String getPolicyToolVersion();
+```
+
+- *Type:* java.lang.String
+
+The policy tool version to run the policy evaluation against.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#policy_tool_version PolicySet#policy_tool_version}
 
 ---
 
@@ -1450,7 +1566,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSlug();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#slug PolicySet#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#slug PolicySet#slug}.
 
 ---
 
@@ -1464,7 +1580,7 @@ public PolicySetVcsRepo getVcsRepo();
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
 
 ---
 
@@ -1476,7 +1592,7 @@ public java.util.List<java.lang.String> getWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
 
 ---
 
@@ -1501,11 +1617,11 @@ PolicySetVcsRepo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#identifier PolicySet#identifier}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.branch">branch</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#branch PolicySet#branch}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.githubAppInstallationId">githubAppInstallationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.ingressSubmodules">ingressSubmodules</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.oauthTokenId">oauthTokenId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#identifier PolicySet#identifier}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.branch">branch</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#branch PolicySet#branch}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.githubAppInstallationId">githubAppInstallationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.ingressSubmodules">ingressSubmodules</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.oauthTokenId">oauthTokenId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}. |
 
 ---
 
@@ -1517,7 +1633,7 @@ public java.lang.String getIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#identifier PolicySet#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#identifier PolicySet#identifier}.
 
 ---
 
@@ -1529,7 +1645,7 @@ public java.lang.String getBranch();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#branch PolicySet#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#branch PolicySet#branch}.
 
 ---
 
@@ -1541,7 +1657,7 @@ public java.lang.String getGithubAppInstallationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}.
 
 ---
 
@@ -1553,7 +1669,7 @@ public java.lang.Object getIngressSubmodules();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}.
 
 ---
 
@@ -1565,7 +1681,7 @@ public java.lang.String getOauthTokenId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}.
 
 ---
 

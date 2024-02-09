@@ -4,7 +4,7 @@
 
 ### RunTrigger <a name="RunTrigger" id="@cdktf/provider-tfe.runTrigger.RunTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger tfe_run_trigger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger tfe_run_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.runTrigger.RunTrigger.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RunTrigger to import.
 
 The id of the existing RunTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,9 +756,9 @@ const runTriggerConfig: runTrigger.RunTriggerConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.sourceableId">sourceableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#sourceable_id RunTrigger#sourceable_id}. |
-| <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#workspace_id RunTrigger#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#id RunTrigger#id}. |
+| <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.sourceableId">sourceableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#sourceable_id RunTrigger#sourceable_id}. |
+| <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#workspace_id RunTrigger#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.runTrigger.RunTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#id RunTrigger#id}. |
 
 ---
 
@@ -840,7 +840,7 @@ public readonly sourceableId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#sourceable_id RunTrigger#sourceable_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#sourceable_id RunTrigger#sourceable_id}.
 
 ---
 
@@ -852,7 +852,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#workspace_id RunTrigger#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#workspace_id RunTrigger#workspace_id}.
 
 ---
 
@@ -864,7 +864,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.1/docs/resources/run_trigger#id RunTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0/docs/resources/run_trigger#id RunTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
