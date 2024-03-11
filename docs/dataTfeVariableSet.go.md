@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.52.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.NewDataTfeVariableSet(scope Construct, id *string, config DataTfeVariableSetConfig) DataTfeVariableSet
 ```
@@ -311,7 +311,7 @@ func ResetWorkspaceIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datatfevariableset.DataTfeVariableSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datatfevariableset.DataTfeVariableSet_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 datatfevariableset.DataTfeVariableSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfevariableset"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfevariableset"
 
 &datatfevariableset.DataTfeVariableSetConfig {
 	Connection: interface{},
