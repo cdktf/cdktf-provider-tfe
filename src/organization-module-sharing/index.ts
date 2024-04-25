@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing
+// https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationModuleSharingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing#id OrganizationModuleSharing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing#id OrganizationModuleSharing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing#module_consumers OrganizationModuleSharing#module_consumers}
   */
   readonly moduleConsumers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing#organization OrganizationModuleSharing#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing#organization OrganizationModuleSharing#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing tfe_organization_module_sharing}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing tfe_organization_module_sharing}
 */
 export class OrganizationModuleSharing extends cdktf.TerraformResource {
 
@@ -46,7 +46,7 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationModuleSharing resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationModuleSharing to import
-  * @param importFromId The id of the existing OrganizationModuleSharing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationModuleSharing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationModuleSharing to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/organization_module_sharing tfe_organization_module_sharing} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_module_sharing tfe_organization_module_sharing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class OrganizationModuleSharing extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_module_sharing',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.53.0',
+        providerVersion: '0.54.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

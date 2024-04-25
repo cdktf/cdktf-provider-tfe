@@ -22,6 +22,7 @@ Object.defineProperty(exports, 'policy', { get: function () { return require('./
 Object.defineProperty(exports, 'policySet', { get: function () { return require('./policy-set'); } });
 Object.defineProperty(exports, 'policySetParameter', { get: function () { return require('./policy-set-parameter'); } });
 Object.defineProperty(exports, 'project', { get: function () { return require('./project'); } });
+Object.defineProperty(exports, 'projectOauthClient', { get: function () { return require('./project-oauth-client'); } });
 Object.defineProperty(exports, 'projectPolicySet', { get: function () { return require('./project-policy-set'); } });
 Object.defineProperty(exports, 'projectVariableSet', { get: function () { return require('./project-variable-set'); } });
 Object.defineProperty(exports, 'registryGpgKey', { get: function () { return require('./registry-gpg-key'); } });
@@ -41,6 +42,7 @@ Object.defineProperty(exports, 'teamOrganizationMembers', { get: function () { r
 Object.defineProperty(exports, 'teamProjectAccess', { get: function () { return require('./team-project-access'); } });
 Object.defineProperty(exports, 'teamToken', { get: function () { return require('./team-token'); } });
 Object.defineProperty(exports, 'terraformVersion', { get: function () { return require('./terraform-version'); } });
+Object.defineProperty(exports, 'testVariable', { get: function () { return require('./test-variable'); } });
 Object.defineProperty(exports, 'variable', { get: function () { return require('./variable'); } });
 Object.defineProperty(exports, 'variableSet', { get: function () { return require('./variable-set'); } });
 Object.defineProperty(exports, 'workspace', { get: function () { return require('./workspace'); } });
