@@ -4,12 +4,12 @@
 
 ### WorkspaceRunTask <a name="WorkspaceRunTask" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.NewWorkspaceRunTask(scope Construct, id *string, config WorkspaceRunTaskConfig) WorkspaceRunTask
 ```
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetStage">ResetStage</a></code> | *No description.* |
 
 ---
@@ -366,12 +365,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetStage` <a name="ResetStage" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetStage"></a>
 
 ```go
@@ -392,7 +385,7 @@ func ResetStage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +431,7 @@ workspaceruntask.WorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +445,7 @@ workspaceruntask.WorkspaceRunTask_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 workspaceruntask.WorkspaceRunTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +474,7 @@ The construct id used in the generated config for the WorkspaceRunTask to import
 
 The id of the existing WorkspaceRunTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,13 +504,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.enforcementLevelInput">EnforcementLevelInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stageInput">StageInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.taskIdInput">TaskIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.enforcementLevel">EnforcementLevel</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stage">Stage</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.taskId">TaskId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
@@ -666,20 +658,20 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `EnforcementLevelInput`<sup>Optional</sup> <a name="EnforcementLevelInput" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.enforcementLevelInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.id"></a>
 
 ```go
-func EnforcementLevelInput() *string
+func Id() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.idInput"></a>
+##### `EnforcementLevelInput`<sup>Optional</sup> <a name="EnforcementLevelInput" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.enforcementLevelInput"></a>
 
 ```go
-func IdInput() *string
+func EnforcementLevelInput() *string
 ```
 
 - *Type:* *string
@@ -720,16 +712,6 @@ func WorkspaceIdInput() *string
 
 ```go
 func EnforcementLevel() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -791,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspaceruntask"
 
 &workspaceruntask.WorkspaceRunTaskConfig {
 	Connection: interface{},
@@ -804,7 +786,6 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
 	EnforcementLevel: *string,
 	TaskId: *string,
 	WorkspaceId: *string,
-	Id: *string,
 	Stage: *string,
 }
 ```
@@ -823,8 +804,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspaceruntask"
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.enforcementLevel">EnforcementLevel</a></code> | <code>*string</code> | The enforcement level of the task. Valid values are `advisory` and `mandatory`. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.taskId">TaskId</a></code> | <code>*string</code> | The id of the Run task to associate to the Workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | The id of the workspace to associate the Run task to. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#id WorkspaceRunTask#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.stage">Stage</a></code> | <code>*string</code> | The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.stage">Stage</a></code> | <code>*string</code> | The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`. |
 
 ---
 
@@ -908,7 +888,7 @@ EnforcementLevel *string
 
 The enforcement level of the task. Valid values are `advisory` and `mandatory`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
 
 ---
 
@@ -922,7 +902,7 @@ TaskId *string
 
 The id of the Run task to associate to the Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
 
 ---
 
@@ -936,22 +916,7 @@ WorkspaceId *string
 
 The id of the workspace to associate the Run task to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#id WorkspaceRunTask#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
 
 ---
 
@@ -963,9 +928,9 @@ Stage *string
 
 - *Type:* *string
 
-The stage to run the task in. Valid values are `pre_plan`, `post_plan` and `pre_apply`.
+The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
 
 ---
 
