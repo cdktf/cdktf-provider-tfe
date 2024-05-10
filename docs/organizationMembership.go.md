@@ -4,12 +4,12 @@
 
 ### OrganizationMembership <a name="OrganizationMembership" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership tfe_organization_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership tfe_organization_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.NewOrganizationMembership(scope Construct, id *string, config OrganizationMembershipConfig) OrganizationMembership
 ```
@@ -392,7 +392,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ organizationmembership.OrganizationMembership_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ organizationmembership.OrganizationMembership_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 organizationmembership.OrganizationMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the OrganizationMembership to 
 
 The id of the existing OrganizationMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmembership"
 
 &organizationmembership.OrganizationMembershipConfig {
 	Connection: interface{},
@@ -796,9 +796,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmembership"
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#email OrganizationMembership#email}. |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#id OrganizationMembership#id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#organization OrganizationMembership#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#email OrganizationMembership#email}. |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#id OrganizationMembership#id}. |
+| <code><a href="#@cdktf/provider-tfe.organizationMembership.OrganizationMembershipConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#organization OrganizationMembership#organization}. |
 
 ---
 
@@ -880,7 +880,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#email OrganizationMembership#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#email OrganizationMembership#email}.
 
 ---
 
@@ -892,7 +892,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#id OrganizationMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#id OrganizationMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/organization_membership#organization OrganizationMembership#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/organization_membership#organization OrganizationMembership#organization}.
 
 ---
 

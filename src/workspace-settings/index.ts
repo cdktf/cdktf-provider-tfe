@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}
   */
   readonly agentPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}
   */
   readonly executionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -107,7 +102,7 @@ export class WorkspaceSettingsOverwritesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings tfe_workspace_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings tfe_workspace_settings}
 */
 export class WorkspaceSettings extends cdktf.TerraformResource {
 
@@ -123,7 +118,7 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkspaceSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceSettings to import
-  * @param importFromId The id of the existing WorkspaceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -135,7 +130,7 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/resources/workspace_settings tfe_workspace_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_settings tfe_workspace_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +141,7 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.54.0',
+        providerVersion: '0.55.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
