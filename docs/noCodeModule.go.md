@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NewNoCodeModule(scope Construct, id *string, config NoCodeModuleConfig) NoCodeModule
 ```
@@ -426,7 +426,7 @@ func ResetVersionPin()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ nocodemodule.NoCodeModule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ nocodemodule.NoCodeModule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NoCodeModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -847,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 &nocodemodule.NoCodeModuleConfig {
 	Connection: interface{},
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 &nocodemodule.NoCodeModuleVariableOptions {
 	Name: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NewNoCodeModuleVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NoCodeModuleVariableOptionsList
 ```
@@ -1260,7 +1260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/nocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/nocodemodule"
 
 nocodemodule.NewNoCodeModuleVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NoCodeModuleVariableOptionsOutputReference
 ```
