@@ -4,12 +4,12 @@
 
 ### DataTfeRegistryProvider <a name="DataTfeRegistryProvider" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/data-sources/registry_provider tfe_registry_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/data-sources/registry_provider tfe_registry_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryprovider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryprovider"
 
 datatferegistryprovider.NewDataTfeRegistryProvider(scope Construct, id *string, config DataTfeRegistryProviderConfig) DataTfeRegistryProvider
 ```
@@ -297,7 +297,7 @@ func ResetRegistryName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryprovider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryprovider"
 
 datatferegistryprovider.DataTfeRegistryProvider_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryprovider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryprovider"
 
 datatferegistryprovider.DataTfeRegistryProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datatferegistryprovider.DataTfeRegistryProvider_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryprovider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryprovider"
 
 datatferegistryprovider.DataTfeRegistryProvider_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datatferegistryprovider.DataTfeRegistryProvider_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryprovider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryprovider"
 
 datatferegistryprovider.DataTfeRegistryProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataTfeRegistryProvider to
 
 The id of the existing DataTfeRegistryProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/data-sources/registry_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/data-sources/registry_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryprovider"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryprovider"
 
 &datatferegistryprovider.DataTfeRegistryProviderConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ Name *string
 
 Name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/data-sources/registry_provider#name DataTfeRegistryProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/data-sources/registry_provider#name DataTfeRegistryProvider#name}
 
 ---
 
@@ -814,7 +814,7 @@ Namespace *string
 
 The namespace of the provider. For private providers this is the same as the oraganization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/data-sources/registry_provider#namespace DataTfeRegistryProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/data-sources/registry_provider#namespace DataTfeRegistryProvider#namespace}
 
 ---
 
@@ -828,7 +828,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/data-sources/registry_provider#organization DataTfeRegistryProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/data-sources/registry_provider#organization DataTfeRegistryProvider#organization}
 
 ---
 
@@ -842,7 +842,7 @@ RegistryName *string
 
 Whether this is a publicly maintained provider or private. Must be either `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/data-sources/registry_provider#registry_name DataTfeRegistryProvider#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/data-sources/registry_provider#registry_name DataTfeRegistryProvider#registry_name}
 
 ---
 
