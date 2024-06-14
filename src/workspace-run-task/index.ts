@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task
+// https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface WorkspaceRunTaskConfig extends cdktf.TerraformMetaArguments {
   /**
   * The enforcement level of the task. Valid values are `advisory` and `mandatory`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
   */
   readonly enforcementLevel: string;
   /**
   * The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
   */
   readonly stage?: string;
   /**
   * The id of the Run task to associate to the Workspace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
   */
   readonly taskId: string;
   /**
   * The id of the workspace to associate the Run task to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task tfe_workspace_run_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task tfe_workspace_run_task}
 */
 export class WorkspaceRunTask extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkspaceRunTask resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceRunTask to import
-  * @param importFromId The id of the existing WorkspaceRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceRunTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/workspace_run_task tfe_workspace_run_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task tfe_workspace_run_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class WorkspaceRunTask extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.55.0',
+        providerVersion: '0.56.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

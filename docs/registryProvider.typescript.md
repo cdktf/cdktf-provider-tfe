@@ -4,7 +4,7 @@
 
 ### RegistryProvider <a name="RegistryProvider" id="@cdktf/provider-tfe.registryProvider.RegistryProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/registry_provider tfe_registry_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/registry_provider tfe_registry_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryProvider.RegistryProvider.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the RegistryProvider to import
 
 The id of the existing RegistryProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/registry_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/registry_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ public readonly name: string;
 
 Name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/registry_provider#name RegistryProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/registry_provider#name RegistryProvider#name}
 
 ---
 
@@ -926,7 +926,7 @@ public readonly namespace: string;
 
 The namespace of the provider. For private providers this is the same as the oraganization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/registry_provider#namespace RegistryProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/registry_provider#namespace RegistryProvider#namespace}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly organization: string;
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/registry_provider#organization RegistryProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/registry_provider#organization RegistryProvider#organization}
 
 ---
 
@@ -954,7 +954,7 @@ public readonly registryName: string;
 
 Whether this is a publicly maintained provider or private. Must be either `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.55.0/docs/resources/registry_provider#registry_name RegistryProvider#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/registry_provider#registry_name RegistryProvider#registry_name}
 
 ---
 
