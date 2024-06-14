@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryModule.RegistryModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.NewRegistryModule(scope Construct, id *string, config RegistryModuleConfig) RegistryModule
 ```
@@ -474,7 +474,7 @@ func ResetVcsRepo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.registryModule.RegistryModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.RegistryModule_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.registryModule.RegistryModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.RegistryModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ registrymodule.RegistryModule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.registryModule.RegistryModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.RegistryModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ registrymodule.RegistryModule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.registryModule.RegistryModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.RegistryModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.registryModule.RegistryModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 &registrymodule.RegistryModuleConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
 	Organization: *string,
 	RegistryName: *string,
 	TestConfig: interface{},
-	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe.registryModule.RegistryModuleVcsRepo,
+	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.registryModule.RegistryModuleVcsRepo,
 }
 ```
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 &registrymodule.RegistryModuleTestConfig {
 	TestsEnabled: interface{},
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 &registrymodule.RegistryModuleVcsRepo {
 	DisplayIdentifier: *string,
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.NewRegistryModuleTestConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RegistryModuleTestConfigList
 ```
@@ -1539,7 +1539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.NewRegistryModuleTestConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RegistryModuleTestConfigOutputReference
 ```
@@ -1835,7 +1835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrymodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrymodule"
 
 registrymodule.NewRegistryModuleVcsRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RegistryModuleVcsRepoOutputReference
 ```
