@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -399,7 +399,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
