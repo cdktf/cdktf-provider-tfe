@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmodulesharing"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmodulesharing"
 
 organizationmodulesharing.NewOrganizationModuleSharing(scope Construct, id *string, config OrganizationModuleSharingConfig) OrganizationModuleSharing
 ```
@@ -392,7 +392,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmodulesharing"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmodulesharing"
 
 organizationmodulesharing.OrganizationModuleSharing_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmodulesharing"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmodulesharing"
 
 organizationmodulesharing.OrganizationModuleSharing_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ organizationmodulesharing.OrganizationModuleSharing_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmodulesharing"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmodulesharing"
 
 organizationmodulesharing.OrganizationModuleSharing_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ organizationmodulesharing.OrganizationModuleSharing_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmodulesharing"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmodulesharing"
 
 organizationmodulesharing.OrganizationModuleSharing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationmodulesharing"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationmodulesharing"
 
 &organizationmodulesharing.OrganizationModuleSharingConfig {
 	Connection: interface{},
