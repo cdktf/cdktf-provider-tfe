@@ -8,6 +8,7 @@ Object.defineProperty(exports, 'adminOrganizationSettings', { get: function () {
 Object.defineProperty(exports, 'agentPool', { get: function () { return require('./agent-pool'); } });
 Object.defineProperty(exports, 'agentPoolAllowedWorkspaces', { get: function () { return require('./agent-pool-allowed-workspaces'); } });
 Object.defineProperty(exports, 'agentToken', { get: function () { return require('./agent-token'); } });
+Object.defineProperty(exports, 'dataRetentionPolicy', { get: function () { return require('./data-retention-policy'); } });
 Object.defineProperty(exports, 'noCodeModule', { get: function () { return require('./no-code-module'); } });
 Object.defineProperty(exports, 'notificationConfiguration', { get: function () { return require('./notification-configuration'); } });
 Object.defineProperty(exports, 'oauthClient', { get: function () { return require('./oauth-client'); } });
@@ -17,6 +18,7 @@ Object.defineProperty(exports, 'organizationDefaultSettings', { get: function ()
 Object.defineProperty(exports, 'organizationMembership', { get: function () { return require('./organization-membership'); } });
 Object.defineProperty(exports, 'organizationModuleSharing', { get: function () { return require('./organization-module-sharing'); } });
 Object.defineProperty(exports, 'organizationRunTask', { get: function () { return require('./organization-run-task'); } });
+Object.defineProperty(exports, 'organizationRunTaskGlobalSettings', { get: function () { return require('./organization-run-task-global-settings'); } });
 Object.defineProperty(exports, 'organizationToken', { get: function () { return require('./organization-token'); } });
 Object.defineProperty(exports, 'policy', { get: function () { return require('./policy'); } });
 Object.defineProperty(exports, 'policySet', { get: function () { return require('./policy-set'); } });
@@ -33,6 +35,7 @@ Object.defineProperty(exports, 'samlSettings', { get: function () { return requi
 Object.defineProperty(exports, 'sentinelPolicy', { get: function () { return require('./sentinel-policy'); } });
 Object.defineProperty(exports, 'sentinelVersion', { get: function () { return require('./sentinel-version'); } });
 Object.defineProperty(exports, 'sshKey', { get: function () { return require('./ssh-key'); } });
+Object.defineProperty(exports, 'stack', { get: function () { return require('./stack'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
 Object.defineProperty(exports, 'teamAccess', { get: function () { return require('./team-access'); } });
 Object.defineProperty(exports, 'teamMember', { get: function () { return require('./team-member'); } });
@@ -61,6 +64,7 @@ Object.defineProperty(exports, 'dataTfeOrganization', { get: function () { retur
 Object.defineProperty(exports, 'dataTfeOrganizationMembers', { get: function () { return require('./data-tfe-organization-members'); } });
 Object.defineProperty(exports, 'dataTfeOrganizationMembership', { get: function () { return require('./data-tfe-organization-membership'); } });
 Object.defineProperty(exports, 'dataTfeOrganizationRunTask', { get: function () { return require('./data-tfe-organization-run-task'); } });
+Object.defineProperty(exports, 'dataTfeOrganizationRunTaskGlobalSettings', { get: function () { return require('./data-tfe-organization-run-task-global-settings'); } });
 Object.defineProperty(exports, 'dataTfeOrganizationTags', { get: function () { return require('./data-tfe-organization-tags'); } });
 Object.defineProperty(exports, 'dataTfeOrganizations', { get: function () { return require('./data-tfe-organizations'); } });
 Object.defineProperty(exports, 'dataTfeOutputs', { get: function () { return require('./data-tfe-outputs'); } });
