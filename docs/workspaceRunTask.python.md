@@ -4,7 +4,7 @@
 
 ### WorkspaceRunTask <a name="WorkspaceRunTask" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer"></a>
 
@@ -24,7 +24,8 @@ workspaceRunTask.WorkspaceRunTask(
   enforcement_level: str,
   task_id: str,
   workspace_id: str,
-  stage: str = None
+  stage: str = None,
+  stages: typing.List[str] = None
 )
 ```
 
@@ -43,6 +44,7 @@ workspaceRunTask.WorkspaceRunTask(
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer.parameter.taskId">task_id</a></code> | <code>str</code> | The id of the Run task to associate to the Workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | The id of the workspace to associate the Run task to. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer.parameter.stage">stage</a></code> | <code>str</code> | The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer.parameter.stages">stages</a></code> | <code>typing.List[str]</code> | The stages to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The enforcement level of the task. Valid values are `advisory` and `mandatory`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the Run task to associate to the Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the workspace to associate the Run task to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
 
 ---
 
@@ -142,7 +144,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+
+---
+
+##### `stages`<sup>Optional</sup> <a name="stages" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer.parameter.stages"></a>
+
+- *Type:* typing.List[str]
+
+The stages to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#stages WorkspaceRunTask#stages}
 
 ---
 
@@ -174,6 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetStage">reset_stage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetStages">reset_stages</a></code> | *No description.* |
 
 ---
 
@@ -508,6 +521,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_stage() -> None
 ```
 
+##### `reset_stages` <a name="reset_stages" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.resetStages"></a>
+
+```python
+def reset_stages() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -622,7 +641,7 @@ The construct id used in the generated config for the WorkspaceRunTask to import
 
 The id of the existing WorkspaceRunTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -655,10 +674,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.enforcementLevelInput">enforcement_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stagesInput">stages_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.taskIdInput">task_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.enforcementLevel">enforcement_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stage">stage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stages">stages</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.taskId">task_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
@@ -836,6 +857,16 @@ stage_input: str
 
 ---
 
+##### `stages_input`<sup>Optional</sup> <a name="stages_input" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stagesInput"></a>
+
+```python
+stages_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `task_id_input`<sup>Optional</sup> <a name="task_id_input" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.taskIdInput"></a>
 
 ```python
@@ -873,6 +904,16 @@ stage: str
 ```
 
 - *Type:* str
+
+---
+
+##### `stages`<sup>Required</sup> <a name="stages" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.property.stages"></a>
+
+```python
+stages: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -934,7 +975,8 @@ workspaceRunTask.WorkspaceRunTaskConfig(
   enforcement_level: str,
   task_id: str,
   workspace_id: str,
-  stage: str = None
+  stage: str = None,
+  stages: typing.List[str] = None
 )
 ```
 
@@ -953,6 +995,7 @@ workspaceRunTask.WorkspaceRunTaskConfig(
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.taskId">task_id</a></code> | <code>str</code> | The id of the Run task to associate to the Workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | The id of the workspace to associate the Run task to. |
 | <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.stage">stage</a></code> | <code>str</code> | The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`. |
+| <code><a href="#@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.stages">stages</a></code> | <code>typing.List[str]</code> | The stages to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`. |
 
 ---
 
@@ -1036,7 +1079,7 @@ enforcement_level: str
 
 The enforcement level of the task. Valid values are `advisory` and `mandatory`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
 
 ---
 
@@ -1050,7 +1093,7 @@ task_id: str
 
 The id of the Run task to associate to the Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
 
 ---
 
@@ -1064,7 +1107,7 @@ workspace_id: str
 
 The id of the workspace to associate the Run task to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
 
 ---
 
@@ -1078,7 +1121,21 @@ stage: str
 
 The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.56.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+
+---
+
+##### `stages`<sup>Optional</sup> <a name="stages" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTaskConfig.property.stages"></a>
+
+```python
+stages: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The stages to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0/docs/resources/workspace_run_task#stages WorkspaceRunTask#stages}
 
 ---
 
