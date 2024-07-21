@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.NewWorkspaceSettings(scope Construct, id *string, config WorkspaceSettingsConfig) WorkspaceSettings
 ```
@@ -392,7 +392,7 @@ func ResetExecutionMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.WorkspaceSettings_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.WorkspaceSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ workspacesettings.WorkspaceSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.WorkspaceSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ workspacesettings.WorkspaceSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.WorkspaceSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 &workspacesettings.WorkspaceSettingsConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwrites.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 &workspacesettings.WorkspaceSettingsOverwrites {
 
@@ -928,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.NewWorkspaceSettingsOverwritesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceSettingsOverwritesList
 ```
@@ -1077,7 +1077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacesettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacesettings"
 
 workspacesettings.NewWorkspaceSettingsOverwritesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceSettingsOverwritesOutputReference
 ```
