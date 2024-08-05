@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamtoken"
 
 teamtoken.NewTeamToken(scope Construct, id *string, config TeamTokenConfig) TeamToken
 ```
@@ -399,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamToken.TeamToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamtoken"
 
 teamtoken.TeamToken_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamToken.TeamToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamtoken"
 
 teamtoken.TeamToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ teamtoken.TeamToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamToken.TeamToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamtoken"
 
 teamtoken.TeamToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ teamtoken.TeamToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.teamToken.TeamToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamtoken"
 
 teamtoken.TeamToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamToken.TeamTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teamtoken"
 
 &teamtoken.TeamTokenConfig {
 	Connection: interface{},
