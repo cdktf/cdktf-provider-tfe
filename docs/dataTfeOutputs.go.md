@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.NewDataTfeOutputs(scope Construct, id *string, config DataTfeOutputsConfig) DataTfeOutputs
 ```
@@ -290,7 +290,7 @@ func ResetValues()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datatfeoutputs.DataTfeOutputs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datatfeoutputs.DataTfeOutputs_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 datatfeoutputs.DataTfeOutputs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeoutputs"
 
 &datatfeoutputs.DataTfeOutputsConfig {
 	Connection: interface{},
