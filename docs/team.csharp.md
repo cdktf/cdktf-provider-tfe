@@ -4,7 +4,7 @@
 
 ### Team <a name="Team" id="@cdktf/provider-tfe.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team tfe_team}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team tfe_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.team.Team.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.team.Team.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.team.Team.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.team.Team.putOrganizationAccess">PutOrganizationAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.resetAllowMemberTokenManagement">ResetAllowMemberTokenManagement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.resetOrganization">ResetOrganization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.resetOrganizationAccess">ResetOrganizationAccess</a></code> | *No description.* |
@@ -382,6 +383,12 @@ private void PutOrganizationAccess(TeamOrganizationAccess Value)
 
 ---
 
+##### `ResetAllowMemberTokenManagement` <a name="ResetAllowMemberTokenManagement" id="@cdktf/provider-tfe.team.Team.resetAllowMemberTokenManagement"></a>
+
+```csharp
+private void ResetAllowMemberTokenManagement()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-tfe.team.Team.resetId"></a>
 
 ```csharp
@@ -515,7 +522,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -546,12 +553,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationAccess">OrganizationAccess</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference">TeamOrganizationAccessOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput">AllowMemberTokenManagementInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationAccessInput">OrganizationAccessInput</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.ssoTeamIdInput">SsoTeamIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.visibilityInput">VisibilityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement">AllowMemberTokenManagement</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
@@ -712,6 +721,16 @@ public TeamOrganizationAccessOutputReference OrganizationAccess { get; }
 
 ---
 
+##### `AllowMemberTokenManagementInput`<sup>Optional</sup> <a name="AllowMemberTokenManagementInput" id="@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput"></a>
+
+```csharp
+public object AllowMemberTokenManagementInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.team.Team.property.idInput"></a>
 
 ```csharp
@@ -769,6 +788,16 @@ public string VisibilityInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AllowMemberTokenManagement`<sup>Required</sup> <a name="AllowMemberTokenManagement" id="@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement"></a>
+
+```csharp
+public object AllowMemberTokenManagement { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -858,6 +887,7 @@ new TeamConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Name,
+    object AllowMemberTokenManagement = null,
     string Id = null,
     string Organization = null,
     TeamOrganizationAccess OrganizationAccess = null,
@@ -877,12 +907,13 @@ new TeamConfig {
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#name Team#name}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#id Team#id}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#organization Team#organization}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#name Team#name}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement">AllowMemberTokenManagement</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#organization Team#organization}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organizationAccess">OrganizationAccess</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | organization_access block. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.ssoTeamId">SsoTeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#sso_team_id Team#sso_team_id}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.visibility">Visibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#visibility Team#visibility}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.ssoTeamId">SsoTeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#sso_team_id Team#sso_team_id}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.visibility">Visibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#visibility Team#visibility}. |
 
 ---
 
@@ -964,7 +995,19 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#name Team#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#name Team#name}.
+
+---
+
+##### `AllowMemberTokenManagement`<sup>Optional</sup> <a name="AllowMemberTokenManagement" id="@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement"></a>
+
+```csharp
+public object AllowMemberTokenManagement { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}.
 
 ---
 
@@ -976,7 +1019,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +1034,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#organization Team#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#organization Team#organization}.
 
 ---
 
@@ -1005,7 +1048,7 @@ public TeamOrganizationAccess OrganizationAccess { get; set; }
 
 organization_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#organization_access Team#organization_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#organization_access Team#organization_access}
 
 ---
 
@@ -1017,7 +1060,7 @@ public string SsoTeamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#sso_team_id Team#sso_team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#sso_team_id Team#sso_team_id}.
 
 ---
 
@@ -1029,7 +1072,7 @@ public string Visibility { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#visibility Team#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#visibility Team#visibility}.
 
 ---
 
@@ -1063,21 +1106,21 @@ new TeamOrganizationAccess {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams">AccessSecretTeams</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#access_secret_teams Team#access_secret_teams}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools">ManageAgentPools</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_agent_pools Team#manage_agent_pools}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership">ManageMembership</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_membership Team#manage_membership}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules">ManageModules</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_modules Team#manage_modules}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess">ManageOrganizationAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_organization_access Team#manage_organization_access}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies">ManagePolicies</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_policies Team#manage_policies}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects">ManageProjects</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_projects Team#manage_projects}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders">ManageProviders</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_providers Team#manage_providers}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">ManageRunTasks</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_run_tasks Team#manage_run_tasks}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams">ManageTeams</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_teams Team#manage_teams}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_workspaces Team#manage_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">ReadProjects</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#read_projects Team#read_projects}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">ReadWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#read_workspaces Team#read_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams">AccessSecretTeams</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#access_secret_teams Team#access_secret_teams}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools">ManageAgentPools</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership">ManageMembership</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_membership Team#manage_membership}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules">ManageModules</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_modules Team#manage_modules}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess">ManageOrganizationAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_organization_access Team#manage_organization_access}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies">ManagePolicies</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_policies Team#manage_policies}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects">ManageProjects</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_projects Team#manage_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders">ManageProviders</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_providers Team#manage_providers}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">ManageRunTasks</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams">ManageTeams</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_teams Team#manage_teams}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_workspaces Team#manage_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">ReadProjects</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#read_projects Team#read_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">ReadWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#read_workspaces Team#read_workspaces}. |
 
 ---
 
@@ -1089,7 +1132,7 @@ public object AccessSecretTeams { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#access_secret_teams Team#access_secret_teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#access_secret_teams Team#access_secret_teams}.
 
 ---
 
@@ -1101,7 +1144,7 @@ public object ManageAgentPools { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_agent_pools Team#manage_agent_pools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}.
 
 ---
 
@@ -1113,7 +1156,7 @@ public object ManageMembership { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_membership Team#manage_membership}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_membership Team#manage_membership}.
 
 ---
 
@@ -1125,7 +1168,7 @@ public object ManageModules { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_modules Team#manage_modules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_modules Team#manage_modules}.
 
 ---
 
@@ -1137,7 +1180,7 @@ public object ManageOrganizationAccess { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_organization_access Team#manage_organization_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_organization_access Team#manage_organization_access}.
 
 ---
 
@@ -1149,7 +1192,7 @@ public object ManagePolicies { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_policies Team#manage_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_policies Team#manage_policies}.
 
 ---
 
@@ -1161,7 +1204,7 @@ public object ManagePolicyOverrides { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}.
 
 ---
 
@@ -1173,7 +1216,7 @@ public object ManageProjects { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_projects Team#manage_projects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_projects Team#manage_projects}.
 
 ---
 
@@ -1185,7 +1228,7 @@ public object ManageProviders { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_providers Team#manage_providers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_providers Team#manage_providers}.
 
 ---
 
@@ -1197,7 +1240,7 @@ public object ManageRunTasks { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_run_tasks Team#manage_run_tasks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}.
 
 ---
 
@@ -1209,7 +1252,7 @@ public object ManageTeams { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_teams Team#manage_teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_teams Team#manage_teams}.
 
 ---
 
@@ -1221,7 +1264,7 @@ public object ManageVcsSettings { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}.
 
 ---
 
@@ -1233,7 +1276,7 @@ public object ManageWorkspaces { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#manage_workspaces Team#manage_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#manage_workspaces Team#manage_workspaces}.
 
 ---
 
@@ -1245,7 +1288,7 @@ public object ReadProjects { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#read_projects Team#read_projects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#read_projects Team#read_projects}.
 
 ---
 
@@ -1257,7 +1300,7 @@ public object ReadWorkspaces { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/team#read_workspaces Team#read_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/team#read_workspaces Team#read_workspaces}.
 
 ---
 
