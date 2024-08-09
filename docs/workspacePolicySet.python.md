@@ -4,7 +4,7 @@
 
 ### WorkspacePolicySet <a name="WorkspacePolicySet" id="@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set tfe_workspace_policy_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set tfe_workspace_policy_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer"></a>
 
@@ -38,9 +38,9 @@ workspacePolicySet.WorkspacePolicySet(
 | <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.policySetId">policy_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}. |
+| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.policySetId">policy_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -607,7 +607,7 @@ The construct id used in the generated config for the WorkspacePolicySet to impo
 
 The id of the existing WorkspacePolicySet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,9 +900,9 @@ workspacePolicySet.WorkspacePolicySetConfig(
 | <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.policySetId">policy_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}. |
+| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.policySetId">policy_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}. |
 
 ---
 
@@ -984,7 +984,7 @@ policy_set_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#policy_set_id WorkspacePolicySet#policy_set_id}.
 
 ---
 
@@ -996,7 +996,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#workspace_id WorkspacePolicySet#workspace_id}.
 
 ---
 
@@ -1008,7 +1008,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/workspace_policy_set#id WorkspacePolicySet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

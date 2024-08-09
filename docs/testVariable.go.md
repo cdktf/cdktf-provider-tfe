@@ -4,7 +4,7 @@
 
 ### TestVariable <a name="TestVariable" id="@cdktf/provider-tfe.testVariable.TestVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable tfe_test_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable tfe_test_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.testVariable.TestVariable.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the TestVariable to import.
 
 The id of the existing TestVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,12 +950,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 | <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.category">Category</a></code> | <code>*string</code> | Whether this is a Terraform or environment variable. Valid values are "terraform" or "env". |
 | <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.key">Key</a></code> | <code>*string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.moduleName">ModuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#module_name TestVariable#module_name}. |
-| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.moduleProvider">ModuleProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#module_provider TestVariable#module_provider}. |
-| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#organization TestVariable#organization}. |
-| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#description TestVariable#description}. |
-| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.hcl">Hcl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#hcl TestVariable#hcl}. |
-| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#sensitive TestVariable#sensitive}. |
+| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.moduleName">ModuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#module_name TestVariable#module_name}. |
+| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.moduleProvider">ModuleProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#module_provider TestVariable#module_provider}. |
+| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#organization TestVariable#organization}. |
+| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#description TestVariable#description}. |
+| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.hcl">Hcl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#hcl TestVariable#hcl}. |
+| <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#sensitive TestVariable#sensitive}. |
 | <code><a href="#@cdktf/provider-tfe.testVariable.TestVariableConfig.property.value">Value</a></code> | <code>*string</code> | Value of the variable. |
 
 ---
@@ -1040,7 +1040,7 @@ Category *string
 
 Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#category TestVariable#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#category TestVariable#category}
 
 ---
 
@@ -1054,7 +1054,7 @@ Key *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#key TestVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#key TestVariable#key}
 
 ---
 
@@ -1066,7 +1066,7 @@ ModuleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#module_name TestVariable#module_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#module_name TestVariable#module_name}.
 
 ---
 
@@ -1078,7 +1078,7 @@ ModuleProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#module_provider TestVariable#module_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#module_provider TestVariable#module_provider}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#organization TestVariable#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#organization TestVariable#organization}.
 
 ---
 
@@ -1102,7 +1102,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#description TestVariable#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#description TestVariable#description}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Hcl interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#hcl TestVariable#hcl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#hcl TestVariable#hcl}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Sensitive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#sensitive TestVariable#sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#sensitive TestVariable#sensitive}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Value *string
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.57.1/docs/resources/test_variable#value TestVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.0/docs/resources/test_variable#value TestVariable#value}
 
 ---
 
