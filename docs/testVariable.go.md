@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.testVariable.TestVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/testvariable"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 
 testvariable.NewTestVariable(scope Construct, id *string, config TestVariableConfig) TestVariable
 ```
@@ -406,7 +406,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.testVariable.TestVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/testvariable"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 
 testvariable.TestVariable_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.testVariable.TestVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/testvariable"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 
 testvariable.TestVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ testvariable.TestVariable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.testVariable.TestVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/testvariable"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 
 testvariable.TestVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ testvariable.TestVariable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.testVariable.TestVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/testvariable"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 
 testvariable.TestVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.testVariable.TestVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/testvariable"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/testvariable"
 
 &testvariable.TestVariableConfig {
 	Connection: interface{},
