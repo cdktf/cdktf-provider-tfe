@@ -4,12 +4,12 @@
 
 ### ProjectOauthClient <a name="ProjectOauthClient" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client tfe_project_oauth_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client tfe_project_oauth_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectoauthclient"
 
 projectoauthclient.NewProjectOauthClient(scope Construct, id *string, config ProjectOauthClientConfig) ProjectOauthClient
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectoauthclient"
 
 projectoauthclient.ProjectOauthClient_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectoauthclient"
 
 projectoauthclient.ProjectOauthClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ projectoauthclient.ProjectOauthClient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectoauthclient"
 
 projectoauthclient.ProjectOauthClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectoauthclient.ProjectOauthClient_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectoauthclient"
 
 projectoauthclient.ProjectOauthClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ProjectOauthClient to impo
 
 The id of the existing ProjectOauthClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectoauthclient"
 
 &projectoauthclient.ProjectOauthClientConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/projectoauthclient"
 | <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.oauthClientId">OauthClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#oauth_client_id ProjectOauthClient#oauth_client_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#project_id ProjectOauthClient#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#id ProjectOauthClient#id}. |
+| <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.oauthClientId">OauthClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#oauth_client_id ProjectOauthClient#oauth_client_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#project_id ProjectOauthClient#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectOauthClient.ProjectOauthClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#id ProjectOauthClient#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ OauthClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#oauth_client_id ProjectOauthClient#oauth_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#oauth_client_id ProjectOauthClient#oauth_client_id}.
 
 ---
 
@@ -863,7 +863,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#project_id ProjectOauthClient#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#project_id ProjectOauthClient#project_id}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/project_oauth_client#id ProjectOauthClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/project_oauth_client#id ProjectOauthClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

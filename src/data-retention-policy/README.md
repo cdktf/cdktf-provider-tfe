@@ -1,3 +1,3 @@
 # `tfe_data_retention_policy`
 
-Refer to the Terraform Registry for docs: [`tfe_data_retention_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/resources/data_retention_policy).
+Refer to the Terraform Registry for docs: [`tfe_data_retention_policy`](https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/data_retention_policy).

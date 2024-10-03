@@ -4,12 +4,12 @@
 
 ### DataTfeOrganizationRunTaskGlobalSettings <a name="DataTfeOrganizationRunTaskGlobalSettings" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeorganizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntaskglobalsettings"
 
 datatfeorganizationruntaskglobalsettings.NewDataTfeOrganizationRunTaskGlobalSettings(scope Construct, id *string, config DataTfeOrganizationRunTaskGlobalSettingsConfig) DataTfeOrganizationRunTaskGlobalSettings
 ```
@@ -297,7 +297,7 @@ func ResetStages()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeorganizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntaskglobalsettings"
 
 datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSettings_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeorganizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntaskglobalsettings"
 
 datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSetting
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeorganizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntaskglobalsettings"
 
 datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSetting
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeorganizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntaskglobalsettings"
 
 datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataTfeOrganizationRunTask
 
 The id of the existing DataTfeOrganizationRunTaskGlobalSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/data-sources/organization_run_task_global_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/organization_run_task_global_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeOrganizationRunTaskGlobalSettings.DataTfeOrganizationRunTaskGlobalSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeorganizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeorganizationruntaskglobalsettings"
 
 &datatfeorganizationruntaskglobalsettings.DataTfeOrganizationRunTaskGlobalSettingsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ TaskId *string
 
 The id of the run task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/data-sources/organization_run_task_global_settings#task_id DataTfeOrganizationRunTaskGlobalSettings#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/organization_run_task_global_settings#task_id DataTfeOrganizationRunTaskGlobalSettings#task_id}
 
 ---
 
@@ -792,7 +792,7 @@ Enabled interface{}
 
 Whether the run task will be applied globally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/data-sources/organization_run_task_global_settings#enabled DataTfeOrganizationRunTaskGlobalSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/organization_run_task_global_settings#enabled DataTfeOrganizationRunTaskGlobalSettings#enabled}
 
 ---
 
@@ -806,7 +806,7 @@ EnforcementLevel *string
 
 The enforcement level of the global task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/data-sources/organization_run_task_global_settings#enforcement_level DataTfeOrganizationRunTaskGlobalSettings#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/organization_run_task_global_settings#enforcement_level DataTfeOrganizationRunTaskGlobalSettings#enforcement_level}
 
 ---
 
@@ -820,7 +820,7 @@ Stages *[]*string
 
 Which stages the task will run in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.58.1/docs/data-sources/organization_run_task_global_settings#stages DataTfeOrganizationRunTaskGlobalSettings#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/organization_run_task_global_settings#stages DataTfeOrganizationRunTaskGlobalSettings#stages}
 
 ---
 
