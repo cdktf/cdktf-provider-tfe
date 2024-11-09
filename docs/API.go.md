@@ -24,6 +24,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.go.md)
 - [dataTfePolicySet](./dataTfePolicySet.go.md)
 - [dataTfeProject](./dataTfeProject.go.md)
+- [dataTfeProjects](./dataTfeProjects.go.md)
 - [dataTfeRegistryGpgKey](./dataTfeRegistryGpgKey.go.md)
 - [dataTfeRegistryGpgKeys](./dataTfeRegistryGpgKeys.go.md)
 - [dataTfeRegistryProvider](./dataTfeRegistryProvider.go.md)

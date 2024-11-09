@@ -70,6 +70,7 @@ Object.defineProperty(exports, 'dataTfeOrganizations', { get: function () { retu
 Object.defineProperty(exports, 'dataTfeOutputs', { get: function () { return require('./data-tfe-outputs'); } });
 Object.defineProperty(exports, 'dataTfePolicySet', { get: function () { return require('./data-tfe-policy-set'); } });
 Object.defineProperty(exports, 'dataTfeProject', { get: function () { return require('./data-tfe-project'); } });
+Object.defineProperty(exports, 'dataTfeProjects', { get: function () { return require('./data-tfe-projects'); } });
 Object.defineProperty(exports, 'dataTfeRegistryGpgKey', { get: function () { return require('./data-tfe-registry-gpg-key'); } });
 Object.defineProperty(exports, 'dataTfeRegistryGpgKeys', { get: function () { return require('./data-tfe-registry-gpg-keys'); } });
 Object.defineProperty(exports, 'dataTfeRegistryProvider', { get: function () { return require('./data-tfe-registry-provider'); } });

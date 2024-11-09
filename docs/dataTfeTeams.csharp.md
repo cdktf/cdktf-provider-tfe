@@ -4,7 +4,7 @@
 
 ### DataTfeTeams <a name="DataTfeTeams" id="@cdktf/provider-tfe.dataTfeTeams.DataTfeTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/teams tfe_teams}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/data-sources/teams tfe_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeTeams.DataTfeTeams.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataTfeTeams to import.
 
 The id of the existing DataTfeTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,8 +649,8 @@ new DataTfeTeamsConfig {
 | <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/teams#id DataTfeTeams#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/teams#organization DataTfeTeams#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/data-sources/teams#id DataTfeTeams#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeTeams.DataTfeTeamsConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/data-sources/teams#organization DataTfeTeams#organization}. |
 
 ---
 
@@ -732,7 +732,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/teams#id DataTfeTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/data-sources/teams#id DataTfeTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -747,7 +747,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/data-sources/teams#organization DataTfeTeams#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/data-sources/teams#organization DataTfeTeams#organization}.
 
 ---
 

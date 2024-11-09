@@ -24,6 +24,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.csharp.md)
 - [dataTfePolicySet](./dataTfePolicySet.csharp.md)
 - [dataTfeProject](./dataTfeProject.csharp.md)
+- [dataTfeProjects](./dataTfeProjects.csharp.md)
 - [dataTfeRegistryGpgKey](./dataTfeRegistryGpgKey.csharp.md)
 - [dataTfeRegistryGpgKeys](./dataTfeRegistryGpgKeys.csharp.md)
 - [dataTfeRegistryProvider](./dataTfeRegistryProvider.csharp.md)

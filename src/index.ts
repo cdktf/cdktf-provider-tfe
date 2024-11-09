@@ -70,6 +70,7 @@ export * as dataTfeOrganizations from './data-tfe-organizations';
 export * as dataTfeOutputs from './data-tfe-outputs';
 export * as dataTfePolicySet from './data-tfe-policy-set';
 export * as dataTfeProject from './data-tfe-project';
+export * as dataTfeProjects from './data-tfe-projects';
 export * as dataTfeRegistryGpgKey from './data-tfe-registry-gpg-key';
 export * as dataTfeRegistryGpgKeys from './data-tfe-registry-gpg-keys';
 export * as dataTfeRegistryProvider from './data-tfe-registry-provider';
