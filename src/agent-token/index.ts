@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token
+// https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface AgentTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token#agent_pool_id AgentToken#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token#agent_pool_id AgentToken#agent_pool_id}
   */
   readonly agentPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token#description AgentToken#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token#description AgentToken#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token#id AgentToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token#id AgentToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +25,7 @@ export interface AgentTokenConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token tfe_agent_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token tfe_agent_token}
 */
 export class AgentToken extends cdktf.TerraformResource {
 
@@ -46,7 +41,7 @@ export class AgentToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AgentToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentToken to import
-  * @param importFromId The id of the existing AgentToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +53,7 @@ export class AgentToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.59.0/docs/resources/agent_token tfe_agent_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/agent_token tfe_agent_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +64,7 @@ export class AgentToken extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_agent_token',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.59.0',
+        providerVersion: '0.60.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

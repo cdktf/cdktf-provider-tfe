@@ -24,6 +24,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.java.md)
 - [dataTfePolicySet](./dataTfePolicySet.java.md)
 - [dataTfeProject](./dataTfeProject.java.md)
+- [dataTfeProjects](./dataTfeProjects.java.md)
 - [dataTfeRegistryGpgKey](./dataTfeRegistryGpgKey.java.md)
 - [dataTfeRegistryGpgKeys](./dataTfeRegistryGpgKeys.java.md)
 - [dataTfeRegistryProvider](./dataTfeRegistryProvider.java.md)

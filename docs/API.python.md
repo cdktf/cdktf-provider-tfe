@@ -24,6 +24,7 @@ The following submodules are available:
 - [dataTfeOutputs](./dataTfeOutputs.python.md)
 - [dataTfePolicySet](./dataTfePolicySet.python.md)
 - [dataTfeProject](./dataTfeProject.python.md)
+- [dataTfeProjects](./dataTfeProjects.python.md)
 - [dataTfeRegistryGpgKey](./dataTfeRegistryGpgKey.python.md)
 - [dataTfeRegistryGpgKeys](./dataTfeRegistryGpgKeys.python.md)
 - [dataTfeRegistryProvider](./dataTfeRegistryProvider.python.md)
