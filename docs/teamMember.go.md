@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamMember.TeamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teammember"
 
 teammember.NewTeamMember(scope Construct, id *string, config TeamMemberConfig) TeamMember
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamMember.TeamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teammember"
 
 teammember.TeamMember_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamMember.TeamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teammember"
 
 teammember.TeamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ teammember.TeamMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamMember.TeamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teammember"
 
 teammember.TeamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ teammember.TeamMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.teamMember.TeamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teammember"
 
 teammember.TeamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamMember.TeamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/teammember"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teammember"
 
 &teammember.TeamMemberConfig {
 	Connection: interface{},
