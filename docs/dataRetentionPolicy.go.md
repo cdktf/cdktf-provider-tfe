@@ -4,12 +4,12 @@
 
 ### DataRetentionPolicy <a name="DataRetentionPolicy" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy tfe_data_retention_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy tfe_data_retention_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.NewDataRetentionPolicy(scope Construct, id *string, config DataRetentionPolicyConfig) DataRetentionPolicy
 ```
@@ -425,7 +425,7 @@ func ResetWorkspaceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.DataRetentionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.DataRetentionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ dataretentionpolicy.DataRetentionPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.DataRetentionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ dataretentionpolicy.DataRetentionPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.DataRetentionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the DataRetentionPolicy to imp
 
 The id of the existing DataRetentionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 &dataretentionpolicy.DataRetentionPolicyConfig {
 	Connection: interface{},
@@ -823,8 +823,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DeleteOlderThan: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThan,
-	DontDelete: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.dataRetentionPolicy.DataRetentionPolicyDontDelete,
+	DeleteOlderThan: github.com/cdktf/cdktf-provider-tfe-go/tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThan,
+	DontDelete: github.com/cdktf/cdktf-provider-tfe-go/tfe.dataRetentionPolicy.DataRetentionPolicyDontDelete,
 	Organization: *string,
 	WorkspaceId: *string,
 }
@@ -928,7 +928,7 @@ DeleteOlderThan DataRetentionPolicyDeleteOlderThan
 
 delete_older_than block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
 
 ---
 
@@ -942,7 +942,7 @@ DontDelete DataRetentionPolicyDontDelete
 
 dont_delete block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
 
 ---
 
@@ -956,7 +956,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
 
 ---
 
@@ -972,7 +972,7 @@ ID of the workspace that the data retention policy should apply to.
 
 If omitted, the data retention policy will apply to the entire organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 &dataretentionpolicy.DataRetentionPolicyDeleteOlderThan {
 	Days: *f64,
@@ -1006,7 +1006,7 @@ Days *f64
 
 Number of days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/data_retention_policy#days DataRetentionPolicy#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/data_retention_policy#days DataRetentionPolicy#days}
 
 ---
 
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDontDelete.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 &dataretentionpolicy.DataRetentionPolicyDontDelete {
 
@@ -1030,7 +1030,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.NewDataRetentionPolicyDeleteOlderThanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataRetentionPolicyDeleteOlderThanOutputReference
 ```
@@ -1308,7 +1308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDontDeleteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/dataretentionpolicy"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/dataretentionpolicy"
 
 dataretentionpolicy.NewDataRetentionPolicyDontDeleteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataRetentionPolicyDontDeleteOutputReference
 ```

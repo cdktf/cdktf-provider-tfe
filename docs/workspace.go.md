@@ -4,12 +4,12 @@
 
 ### Workspace <a name="Workspace" id="@cdktf/provider-tfe.workspace.Workspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace tfe_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace tfe_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspace.Workspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 workspace.NewWorkspace(scope Construct, id *string, config WorkspaceConfig) Workspace
 ```
@@ -601,7 +601,7 @@ func ResetWorkingDirectory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspace.Workspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 workspace.Workspace_IsConstruct(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspace.Workspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 workspace.Workspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -647,7 +647,7 @@ workspace.Workspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspace.Workspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 workspace.Workspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ workspace.Workspace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.workspace.Workspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 workspace.Workspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ The construct id used in the generated config for the Workspace to import.
 
 The id of the existing Workspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1594,7 +1594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 &workspace.WorkspaceConfig {
 	Connection: interface{},
@@ -1633,7 +1633,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
 	TerraformVersion: *string,
 	TriggerPatterns: *[]*string,
 	TriggerPrefixes: *[]*string,
-	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.workspace.WorkspaceVcsRepo,
+	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe.workspace.WorkspaceVcsRepo,
 	WorkingDirectory: *string,
 }
 ```
@@ -1649,37 +1649,37 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#name Workspace#name}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.agentPoolId">AgentPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">AllowDestroyPlan</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">AutoApply</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">AutoApplyRunTrigger</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyAt">AutoDestroyAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#description Workspace#description}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.executionMode">ExecutionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">FileTriggersEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#id Workspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">IgnoreAdditionalTagNames</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">Operations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#operations Workspace#operations}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#organization Workspace#organization}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#project_id Workspace#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">QueueAllRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#source_name Workspace#source_name}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl">SourceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#source_url Workspace#source_url}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sshKeyId">SshKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tagNames">TagNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#tag_names Workspace#tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.terraformVersion">TerraformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.triggerPatterns">TriggerPatterns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#trigger_patterns Workspace#trigger_patterns}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.triggerPrefixes">TriggerPrefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#trigger_prefixes Workspace#trigger_prefixes}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#name Workspace#name}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.agentPoolId">AgentPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">AllowDestroyPlan</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">AutoApply</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">AutoApplyRunTrigger</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyAt">AutoDestroyAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#description Workspace#description}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.executionMode">ExecutionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">FileTriggersEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#force_delete Workspace#force_delete}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#id Workspace#id}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">IgnoreAdditionalTagNames</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">Operations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#operations Workspace#operations}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#organization Workspace#organization}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#project_id Workspace#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">QueueAllRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#source_name Workspace#source_name}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl">SourceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#source_url Workspace#source_url}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sshKeyId">SshKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tagNames">TagNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#tag_names Workspace#tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.terraformVersion">TerraformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.triggerPatterns">TriggerPatterns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#trigger_patterns Workspace#trigger_patterns}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.triggerPrefixes">TriggerPrefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#trigger_prefixes Workspace#trigger_prefixes}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.vcsRepo">VcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | vcs_repo block. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.workingDirectory">WorkingDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#working_directory Workspace#working_directory}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.workingDirectory">WorkingDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#working_directory Workspace#working_directory}. |
 
 ---
 
@@ -1761,7 +1761,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#name Workspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#name Workspace#name}.
 
 ---
 
@@ -1773,7 +1773,7 @@ AgentPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}.
 
 ---
 
@@ -1785,7 +1785,7 @@ AllowDestroyPlan interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
 ---
 
@@ -1797,7 +1797,7 @@ AssessmentsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
 
 ---
 
@@ -1809,7 +1809,7 @@ AutoApply interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_apply Workspace#auto_apply}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_apply Workspace#auto_apply}.
 
 ---
 
@@ -1821,7 +1821,7 @@ AutoApplyRunTrigger interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
 
 ---
 
@@ -1833,7 +1833,7 @@ AutoDestroyActivityDuration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}.
 
 ---
 
@@ -1845,7 +1845,7 @@ AutoDestroyAt *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}.
 
 ---
 
@@ -1857,7 +1857,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#description Workspace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#description Workspace#description}.
 
 ---
 
@@ -1869,7 +1869,7 @@ ExecutionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#execution_mode Workspace#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#execution_mode Workspace#execution_mode}.
 
 ---
 
@@ -1881,7 +1881,7 @@ FileTriggersEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
 ---
 
@@ -1893,7 +1893,7 @@ ForceDelete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#force_delete Workspace#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#force_delete Workspace#force_delete}.
 
 ---
 
@@ -1905,7 +1905,7 @@ GlobalRemoteState interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
 
 ---
 
@@ -1917,7 +1917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#id Workspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#id Workspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1932,7 +1932,7 @@ IgnoreAdditionalTagNames interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
 
 ---
 
@@ -1944,7 +1944,7 @@ Operations interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#operations Workspace#operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#operations Workspace#operations}.
 
 ---
 
@@ -1956,7 +1956,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#organization Workspace#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#organization Workspace#organization}.
 
 ---
 
@@ -1968,7 +1968,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#project_id Workspace#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#project_id Workspace#project_id}.
 
 ---
 
@@ -1980,7 +1980,7 @@ QueueAllRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
 
 ---
 
@@ -1992,7 +1992,7 @@ RemoteStateConsumerIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}.
 
 ---
 
@@ -2004,7 +2004,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#source_name Workspace#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#source_name Workspace#source_name}.
 
 ---
 
@@ -2016,7 +2016,7 @@ SourceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#source_url Workspace#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#source_url Workspace#source_url}.
 
 ---
 
@@ -2028,7 +2028,7 @@ SpeculativeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
 
 ---
 
@@ -2040,7 +2040,7 @@ SshKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}.
 
 ---
 
@@ -2052,7 +2052,7 @@ StructuredRunOutputEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
 ---
 
@@ -2064,7 +2064,7 @@ TagNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#tag_names Workspace#tag_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#tag_names Workspace#tag_names}.
 
 ---
 
@@ -2076,7 +2076,7 @@ TerraformVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#terraform_version Workspace#terraform_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#terraform_version Workspace#terraform_version}.
 
 ---
 
@@ -2088,7 +2088,7 @@ TriggerPatterns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#trigger_patterns Workspace#trigger_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#trigger_patterns Workspace#trigger_patterns}.
 
 ---
 
@@ -2100,7 +2100,7 @@ TriggerPrefixes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#trigger_prefixes Workspace#trigger_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#trigger_prefixes Workspace#trigger_prefixes}.
 
 ---
 
@@ -2114,7 +2114,7 @@ VcsRepo WorkspaceVcsRepo
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#vcs_repo Workspace#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#vcs_repo Workspace#vcs_repo}
 
 ---
 
@@ -2126,7 +2126,7 @@ WorkingDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#working_directory Workspace#working_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#working_directory Workspace#working_directory}.
 
 ---
 
@@ -2135,7 +2135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 &workspace.WorkspaceVcsRepo {
 	Identifier: *string,
@@ -2151,12 +2151,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#identifier Workspace#identifier}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#branch Workspace#branch}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">IngressSubmodules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.tagsRegex">TagsRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#tags_regex Workspace#tags_regex}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#identifier Workspace#identifier}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#branch Workspace#branch}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">IngressSubmodules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.tagsRegex">TagsRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#tags_regex Workspace#tags_regex}. |
 
 ---
 
@@ -2168,7 +2168,7 @@ Identifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#identifier Workspace#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#identifier Workspace#identifier}.
 
 ---
 
@@ -2180,7 +2180,7 @@ Branch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#branch Workspace#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#branch Workspace#branch}.
 
 ---
 
@@ -2192,7 +2192,7 @@ GithubAppInstallationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}.
 
 ---
 
@@ -2204,7 +2204,7 @@ IngressSubmodules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}.
 
 ---
 
@@ -2216,7 +2216,7 @@ OauthTokenId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}.
 
 ---
 
@@ -2228,7 +2228,7 @@ TagsRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.0/docs/resources/workspace#tags_regex Workspace#tags_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace#tags_regex Workspace#tags_regex}.
 
 ---
 
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspace"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspace"
 
 workspace.NewWorkspaceVcsRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceVcsRepoOutputReference
 ```
