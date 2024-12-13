@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.NewOrganizationRunTaskGlobalSettings(scope Construct, id *string, config OrganizationRunTaskGlobalSettingsConfig) OrganizationRunTaskGlobalSettings
 ```
@@ -385,7 +385,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
 
 &organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettingsConfig {
 	Connection: interface{},
