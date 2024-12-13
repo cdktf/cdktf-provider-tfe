@@ -8,6 +8,7 @@ Object.defineProperty(exports, 'adminOrganizationSettings', { get: function () {
 Object.defineProperty(exports, 'agentPool', { get: function () { return require('./agent-pool'); } });
 Object.defineProperty(exports, 'agentPoolAllowedWorkspaces', { get: function () { return require('./agent-pool-allowed-workspaces'); } });
 Object.defineProperty(exports, 'agentToken', { get: function () { return require('./agent-token'); } });
+Object.defineProperty(exports, 'auditTrailToken', { get: function () { return require('./audit-trail-token'); } });
 Object.defineProperty(exports, 'dataRetentionPolicy', { get: function () { return require('./data-retention-policy'); } });
 Object.defineProperty(exports, 'noCodeModule', { get: function () { return require('./no-code-module'); } });
 Object.defineProperty(exports, 'notificationConfiguration', { get: function () { return require('./notification-configuration'); } });

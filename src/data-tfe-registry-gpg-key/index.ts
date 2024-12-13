@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_gpg_key
+// https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_gpg_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeRegistryGpgKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_gpg_key#id DataTfeRegistryGpgKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_gpg_key#id DataTfeRegistryGpgKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataTfeRegistryGpgKeyConfig extends cdktf.TerraformMetaArgument
   /**
   * Name of the organization. If omitted, organization must be defined in the provider config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_gpg_key#organization DataTfeRegistryGpgKey#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_gpg_key#organization DataTfeRegistryGpgKey#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_gpg_key tfe_registry_gpg_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_gpg_key tfe_registry_gpg_key}
 */
 export class DataTfeRegistryGpgKey extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataTfeRegistryGpgKey extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeRegistryGpgKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeRegistryGpgKey to import
-  * @param importFromId The id of the existing DataTfeRegistryGpgKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeRegistryGpgKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeRegistryGpgKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +56,7 @@ export class DataTfeRegistryGpgKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_gpg_key tfe_registry_gpg_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_gpg_key tfe_registry_gpg_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class DataTfeRegistryGpgKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_registry_gpg_key',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.60.1',
+        providerVersion: '0.61.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

@@ -8,6 +8,7 @@ export * as adminOrganizationSettings from './admin-organization-settings';
 export * as agentPool from './agent-pool';
 export * as agentPoolAllowedWorkspaces from './agent-pool-allowed-workspaces';
 export * as agentToken from './agent-token';
+export * as auditTrailToken from './audit-trail-token';
 export * as dataRetentionPolicy from './data-retention-policy';
 export * as noCodeModule from './no-code-module';
 export * as notificationConfiguration from './notification-configuration';

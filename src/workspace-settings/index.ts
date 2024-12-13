@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}
   */
   readonly agentPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}
   */
   readonly executionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}
+  * Whether the workspace allows all workspaces in the organization to access its state data during runs. If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+  */
+  readonly globalRemoteState?: boolean | cdktf.IResolvable;
+  /**
+  * The set of workspace IDs set as explicit remote state consumers for the given workspace.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
+  */
+  readonly remoteStateConsumerIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -107,7 +119,7 @@ export class WorkspaceSettingsOverwritesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings tfe_workspace_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings tfe_workspace_settings}
 */
 export class WorkspaceSettings extends cdktf.TerraformResource {
 
@@ -123,7 +135,7 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkspaceSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceSettings to import
-  * @param importFromId The id of the existing WorkspaceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -135,7 +147,7 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings tfe_workspace_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings tfe_workspace_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +158,7 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_workspace_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.60.1',
+        providerVersion: '0.61.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -159,6 +171,8 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
     });
     this._agentPoolId = config.agentPoolId;
     this._executionMode = config.executionMode;
+    this._globalRemoteState = config.globalRemoteState;
+    this._remoteStateConsumerIds = config.remoteStateConsumerIds;
     this._workspaceId = config.workspaceId;
   }
 
@@ -198,6 +212,22 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
     return this._executionMode;
   }
 
+  // global_remote_state - computed: true, optional: true, required: false
+  private _globalRemoteState?: boolean | cdktf.IResolvable; 
+  public get globalRemoteState() {
+    return this.getBooleanAttribute('global_remote_state');
+  }
+  public set globalRemoteState(value: boolean | cdktf.IResolvable) {
+    this._globalRemoteState = value;
+  }
+  public resetGlobalRemoteState() {
+    this._globalRemoteState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalRemoteStateInput() {
+    return this._globalRemoteState;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -207,6 +237,22 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
   private _overwrites = new WorkspaceSettingsOverwritesList(this, "overwrites", false);
   public get overwrites() {
     return this._overwrites;
+  }
+
+  // remote_state_consumer_ids - computed: true, optional: true, required: false
+  private _remoteStateConsumerIds?: string[]; 
+  public get remoteStateConsumerIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('remote_state_consumer_ids'));
+  }
+  public set remoteStateConsumerIds(value: string[]) {
+    this._remoteStateConsumerIds = value;
+  }
+  public resetRemoteStateConsumerIds() {
+    this._remoteStateConsumerIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteStateConsumerIdsInput() {
+    return this._remoteStateConsumerIds;
   }
 
   // workspace_id - computed: false, optional: false, required: true
@@ -230,6 +276,8 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
     return {
       agent_pool_id: cdktf.stringToTerraform(this._agentPoolId),
       execution_mode: cdktf.stringToTerraform(this._executionMode),
+      global_remote_state: cdktf.booleanToTerraform(this._globalRemoteState),
+      remote_state_consumer_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._remoteStateConsumerIds),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
@@ -247,6 +295,18 @@ export class WorkspaceSettings extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      global_remote_state: {
+        value: cdktf.booleanToHclTerraform(this._globalRemoteState),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      remote_state_consumer_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._remoteStateConsumerIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       workspace_id: {
         value: cdktf.stringToHclTerraform(this._workspaceId),

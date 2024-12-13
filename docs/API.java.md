@@ -8,6 +8,7 @@ The following submodules are available:
 - [agentPool](./agentPool.java.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.java.md)
 - [agentToken](./agentToken.java.md)
+- [auditTrailToken](./auditTrailToken.java.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.java.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.java.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.java.md)
