@@ -8,6 +8,7 @@ The following submodules are available:
 - [agentPool](./agentPool.python.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.python.md)
 - [agentToken](./agentToken.python.md)
+- [auditTrailToken](./auditTrailToken.python.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.python.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.python.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.python.md)

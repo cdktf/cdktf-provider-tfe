@@ -4,12 +4,12 @@
 
 ### OrganizationRunTaskGlobalSettings <a name="OrganizationRunTaskGlobalSettings" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/organization_run_task_global_settings tfe_organization_run_task_global_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_run_task_global_settings tfe_organization_run_task_global_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.NewOrganizationRunTaskGlobalSettings(scope Construct, id *string, config OrganizationRunTaskGlobalSettingsConfig) OrganizationRunTaskGlobalSettings
 ```
@@ -385,7 +385,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
 
 organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OrganizationRunTaskGlobalS
 
 The id of the existing OrganizationRunTaskGlobalSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/organization_run_task_global_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_run_task_global_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.organizationRunTaskGlobalSettings.OrganizationRunTaskGlobalSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationruntaskglobalsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/organizationruntaskglobalsettings"
 
 &organizationruntaskglobalsettings.OrganizationRunTaskGlobalSettingsConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ EnforcementLevel *string
 
 The enforcement level of the global task. Valid values are `advisory` and `mandatory`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/organization_run_task_global_settings#enforcement_level OrganizationRunTaskGlobalSettings#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_run_task_global_settings#enforcement_level OrganizationRunTaskGlobalSettings#enforcement_level}
 
 ---
 
@@ -902,7 +902,7 @@ Stages *[]*string
 
 Which stages the task will run in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/organization_run_task_global_settings#stages OrganizationRunTaskGlobalSettings#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_run_task_global_settings#stages OrganizationRunTaskGlobalSettings#stages}
 
 ---
 
@@ -916,7 +916,7 @@ TaskId *string
 
 The id of the run task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/organization_run_task_global_settings#task_id OrganizationRunTaskGlobalSettings#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_run_task_global_settings#task_id OrganizationRunTaskGlobalSettings#task_id}
 
 ---
 
@@ -930,7 +930,7 @@ Enabled interface{}
 
 Whether the run task will be applied globally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/organization_run_task_global_settings#enabled OrganizationRunTaskGlobalSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_run_task_global_settings#enabled OrganizationRunTaskGlobalSettings#enabled}
 
 ---
 

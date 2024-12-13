@@ -8,6 +8,7 @@ The following submodules are available:
 - [agentPool](./agentPool.go.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.go.md)
 - [agentToken](./agentToken.go.md)
+- [auditTrailToken](./auditTrailToken.go.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.go.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.go.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.go.md)

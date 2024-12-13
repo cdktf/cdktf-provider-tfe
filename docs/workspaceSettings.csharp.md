@@ -4,7 +4,7 @@
 
 ### WorkspaceSettings <a name="WorkspaceSettings" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings tfe_workspace_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings tfe_workspace_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer"></a>
 
@@ -75,6 +75,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAgentPoolId">ResetAgentPoolId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetExecutionMode">ResetExecutionMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetGlobalRemoteState">ResetGlobalRemoteState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetRemoteStateConsumerIds">ResetRemoteStateConsumerIds</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +380,18 @@ private void ResetAgentPoolId()
 private void ResetExecutionMode()
 ```
 
+##### `ResetGlobalRemoteState` <a name="ResetGlobalRemoteState" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetGlobalRemoteState"></a>
+
+```csharp
+private void ResetGlobalRemoteState()
+```
+
+##### `ResetRemoteStateConsumerIds` <a name="ResetRemoteStateConsumerIds" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetRemoteStateConsumerIds"></a>
+
+```csharp
+private void ResetRemoteStateConsumerIds()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +495,7 @@ The construct id used in the generated config for the WorkspaceSettings to impor
 
 The id of the existing WorkspaceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,9 +529,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.overwrites">Overwrites</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList">WorkspaceSettingsOverwritesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolIdInput">AgentPoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionModeInput">ExecutionModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">GlobalRemoteStateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput">RemoteStateConsumerIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionMode">ExecutionMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -704,6 +722,26 @@ public string ExecutionModeInput { get; }
 
 ---
 
+##### `GlobalRemoteStateInput`<sup>Optional</sup> <a name="GlobalRemoteStateInput" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput"></a>
+
+```csharp
+public object GlobalRemoteStateInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RemoteStateConsumerIdsInput`<sup>Optional</sup> <a name="RemoteStateConsumerIdsInput" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput"></a>
+
+```csharp
+public string[] RemoteStateConsumerIdsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput"></a>
 
 ```csharp
@@ -731,6 +769,26 @@ public string ExecutionMode { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `GlobalRemoteState`<sup>Required</sup> <a name="GlobalRemoteState" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState"></a>
+
+```csharp
+public object GlobalRemoteState { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RemoteStateConsumerIds`<sup>Required</sup> <a name="RemoteStateConsumerIds" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds"></a>
+
+```csharp
+public string[] RemoteStateConsumerIds { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -781,7 +839,9 @@ new WorkspaceSettingsConfig {
     object[] Provisioners = null,
     string WorkspaceId,
     string AgentPoolId = null,
-    string ExecutionMode = null
+    string ExecutionMode = null,
+    object GlobalRemoteState = null,
+    string[] RemoteStateConsumerIds = null
 };
 ```
 
@@ -796,9 +856,11 @@ new WorkspaceSettingsConfig {
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">ExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">ExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 
 ---
 
@@ -880,7 +942,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 
 ---
 
@@ -892,7 +954,7 @@ public string AgentPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
 
 ---
 
@@ -904,7 +966,37 @@ public string ExecutionMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+
+---
+
+##### `GlobalRemoteState`<sup>Optional</sup> <a name="GlobalRemoteState" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState"></a>
+
+```csharp
+public object GlobalRemoteState { get; set; }
+```
+
+- *Type:* object
+
+Whether the workspace allows all workspaces in the organization to access its state data during runs.
+
+If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+
+---
+
+##### `RemoteStateConsumerIds`<sup>Optional</sup> <a name="RemoteStateConsumerIds" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds"></a>
+
+```csharp
+public string[] RemoteStateConsumerIds { get; set; }
+```
+
+- *Type:* string[]
+
+The set of workspace IDs set as explicit remote state consumers for the given workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
 
 ---
 

@@ -8,6 +8,7 @@ The following submodules are available:
 - [agentPool](./agentPool.csharp.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.csharp.md)
 - [agentToken](./agentToken.csharp.md)
+- [auditTrailToken](./auditTrailToken.csharp.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.csharp.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.csharp.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.csharp.md)

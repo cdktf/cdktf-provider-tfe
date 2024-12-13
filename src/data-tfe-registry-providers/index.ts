@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers
+// https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataTfeRegistryProvidersConfig extends cdktf.TerraformMetaArgum
   /**
   * Name of the organization. If omitted, organization must be defined in the provider config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers#organization DataTfeRegistryProviders#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers#organization DataTfeRegistryProviders#organization}
   */
   readonly organization?: string;
   /**
   * Whether to list only public or private providers. Must be either `public` or `private`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers#registry_name DataTfeRegistryProviders#registry_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers#registry_name DataTfeRegistryProviders#registry_name}
   */
   readonly registryName?: string;
   /**
   * A query string to do a fuzzy search on provider name and namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers#search DataTfeRegistryProviders#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers#search DataTfeRegistryProviders#search}
   */
   readonly search?: string;
 }
@@ -138,7 +133,7 @@ export class DataTfeRegistryProvidersProvidersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers tfe_registry_providers}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers tfe_registry_providers}
 */
 export class DataTfeRegistryProviders extends cdktf.TerraformDataSource {
 
@@ -154,7 +149,7 @@ export class DataTfeRegistryProviders extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeRegistryProviders resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeRegistryProviders to import
-  * @param importFromId The id of the existing DataTfeRegistryProviders that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeRegistryProviders that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeRegistryProviders to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -166,7 +161,7 @@ export class DataTfeRegistryProviders extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/data-sources/registry_providers tfe_registry_providers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/data-sources/registry_providers tfe_registry_providers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +172,7 @@ export class DataTfeRegistryProviders extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_registry_providers',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.60.1',
+        providerVersion: '0.61.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

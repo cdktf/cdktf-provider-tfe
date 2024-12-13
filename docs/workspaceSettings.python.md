@@ -4,7 +4,7 @@
 
 ### WorkspaceSettings <a name="WorkspaceSettings" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings tfe_workspace_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings tfe_workspace_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer"></a>
 
@@ -23,7 +23,9 @@ workspaceSettings.WorkspaceSettings(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   workspace_id: str,
   agent_pool_id: str = None,
-  execution_mode: str = None
+  execution_mode: str = None,
+  global_remote_state: typing.Union[bool, IResolvable] = None,
+  remote_state_consumer_ids: typing.List[str] = None
 )
 ```
 
@@ -38,9 +40,11 @@ workspaceSettings.WorkspaceSettings(
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 
 ---
 
@@ -108,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 
 ---
 
@@ -116,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
 
 ---
 
@@ -124,7 +128,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+
+---
+
+##### `global_remote_state`<sup>Optional</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.globalRemoteState"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether the workspace allows all workspaces in the organization to access its state data during runs.
+
+If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+
+---
+
+##### `remote_state_consumer_ids`<sup>Optional</sup> <a name="remote_state_consumer_ids" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.remoteStateConsumerIds"></a>
+
+- *Type:* typing.List[str]
+
+The set of workspace IDs set as explicit remote state consumers for the given workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
 
 ---
 
@@ -157,6 +183,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAgentPoolId">reset_agent_pool_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetExecutionMode">reset_execution_mode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetGlobalRemoteState">reset_global_remote_state</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetRemoteStateConsumerIds">reset_remote_state_consumer_ids</a></code> | *No description.* |
 
 ---
 
@@ -497,6 +525,18 @@ def reset_agent_pool_id() -> None
 def reset_execution_mode() -> None
 ```
 
+##### `reset_global_remote_state` <a name="reset_global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetGlobalRemoteState"></a>
+
+```python
+def reset_global_remote_state() -> None
+```
+
+##### `reset_remote_state_consumer_ids` <a name="reset_remote_state_consumer_ids" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetRemoteStateConsumerIds"></a>
+
+```python
+def reset_remote_state_consumer_ids() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -611,7 +651,7 @@ The construct id used in the generated config for the WorkspaceSettings to impor
 
 The id of the existing WorkspaceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,9 +685,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.overwrites">overwrites</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList">WorkspaceSettingsOverwritesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolIdInput">agent_pool_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionModeInput">execution_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">global_remote_state_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput">remote_state_consumer_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionMode">execution_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -834,6 +878,26 @@ execution_mode_input: str
 
 ---
 
+##### `global_remote_state_input`<sup>Optional</sup> <a name="global_remote_state_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput"></a>
+
+```python
+global_remote_state_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `remote_state_consumer_ids_input`<sup>Optional</sup> <a name="remote_state_consumer_ids_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput"></a>
+
+```python
+remote_state_consumer_ids_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput"></a>
 
 ```python
@@ -861,6 +925,26 @@ execution_mode: str
 ```
 
 - *Type:* str
+
+---
+
+##### `global_remote_state`<sup>Required</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState"></a>
+
+```python
+global_remote_state: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `remote_state_consumer_ids`<sup>Required</sup> <a name="remote_state_consumer_ids" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds"></a>
+
+```python
+remote_state_consumer_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -911,7 +995,9 @@ workspaceSettings.WorkspaceSettingsConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   workspace_id: str,
   agent_pool_id: str = None,
-  execution_mode: str = None
+  execution_mode: str = None,
+  global_remote_state: typing.Union[bool, IResolvable] = None,
+  remote_state_consumer_ids: typing.List[str] = None
 )
 ```
 
@@ -926,9 +1012,11 @@ workspaceSettings.WorkspaceSettingsConfig(
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 
 ---
 
@@ -1010,7 +1098,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 
 ---
 
@@ -1022,7 +1110,7 @@ agent_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
 
 ---
 
@@ -1034,7 +1122,37 @@ execution_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.60.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+
+---
+
+##### `global_remote_state`<sup>Optional</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState"></a>
+
+```python
+global_remote_state: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether the workspace allows all workspaces in the organization to access its state data during runs.
+
+If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+
+---
+
+##### `remote_state_consumer_ids`<sup>Optional</sup> <a name="remote_state_consumer_ids" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds"></a>
+
+```python
+remote_state_consumer_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The set of workspace IDs set as explicit remote state consumers for the given workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
 
 ---
 

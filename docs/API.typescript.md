@@ -8,6 +8,7 @@ The following submodules are available:
 - [agentPool](./agentPool.typescript.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.typescript.md)
 - [agentToken](./agentToken.typescript.md)
+- [auditTrailToken](./auditTrailToken.typescript.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.typescript.md)
 - [dataTfeAgentPool](./dataTfeAgentPool.typescript.md)
 - [dataTfeGithubAppInstallation](./dataTfeGithubAppInstallation.typescript.md)
