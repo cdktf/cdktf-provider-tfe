@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeNoCodeModule.DataTfeNoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfenocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfenocodemodule"
 
 datatfenocodemodule.NewDataTfeNoCodeModule(scope Construct, id *string, config DataTfeNoCodeModuleConfig) DataTfeNoCodeModule
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeNoCodeModule.DataTfeNoCodeModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfenocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfenocodemodule"
 
 datatfenocodemodule.DataTfeNoCodeModule_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeNoCodeModule.DataTfeNoCodeModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfenocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfenocodemodule"
 
 datatfenocodemodule.DataTfeNoCodeModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datatfenocodemodule.DataTfeNoCodeModule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeNoCodeModule.DataTfeNoCodeModule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfenocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfenocodemodule"
 
 datatfenocodemodule.DataTfeNoCodeModule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datatfenocodemodule.DataTfeNoCodeModule_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeNoCodeModule.DataTfeNoCodeModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfenocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfenocodemodule"
 
 datatfenocodemodule.DataTfeNoCodeModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeNoCodeModule.DataTfeNoCodeModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfenocodemodule"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfenocodemodule"
 
 &datatfenocodemodule.DataTfeNoCodeModuleConfig {
 	Connection: interface{},
