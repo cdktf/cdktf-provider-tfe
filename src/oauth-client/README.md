@@ -1,3 +1,3 @@
 # `tfe_oauth_client`
 
-Refer to the Terraform Registry for docs: [`tfe_oauth_client`](https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/oauth_client).
+Refer to the Terraform Registry for docs: [`tfe_oauth_client`](https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/oauth_client).
