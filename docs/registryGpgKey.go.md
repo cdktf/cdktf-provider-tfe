@@ -4,12 +4,12 @@
 
 ### RegistryGpgKey <a name="RegistryGpgKey" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/registry_gpg_key tfe_registry_gpg_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_gpg_key tfe_registry_gpg_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrygpgkey"
 
 registrygpgkey.NewRegistryGpgKey(scope Construct, id *string, config RegistryGpgKeyConfig) RegistryGpgKey
 ```
@@ -385,7 +385,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrygpgkey"
 
 registrygpgkey.RegistryGpgKey_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrygpgkey"
 
 registrygpgkey.RegistryGpgKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ registrygpgkey.RegistryGpgKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrygpgkey"
 
 registrygpgkey.RegistryGpgKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ registrygpgkey.RegistryGpgKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrygpgkey"
 
 registrygpgkey.RegistryGpgKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RegistryGpgKey to import.
 
 The id of the existing RegistryGpgKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/registrygpgkey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/registrygpgkey"
 
 &registrygpgkey.RegistryGpgKeyConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ AsciiArmor *string
 
 ASCII-armored representation of the GPG key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
 
 ---
 
@@ -876,7 +876,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
 
 ---
 

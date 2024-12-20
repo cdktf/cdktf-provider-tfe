@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationDefaultSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings#default_agent_pool_id OrganizationDefaultSettings#default_agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings#default_agent_pool_id OrganizationDefaultSettings#default_agent_pool_id}
   */
   readonly defaultAgentPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings#default_execution_mode OrganizationDefaultSettings#default_execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings#default_execution_mode OrganizationDefaultSettings#default_execution_mode}
   */
   readonly defaultExecutionMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings#id OrganizationDefaultSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings#id OrganizationDefaultSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings#organization OrganizationDefaultSettings#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings#organization OrganizationDefaultSettings#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings tfe_organization_default_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings tfe_organization_default_settings}
 */
 export class OrganizationDefaultSettings extends cdktf.TerraformResource {
 
@@ -50,7 +45,7 @@ export class OrganizationDefaultSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationDefaultSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationDefaultSettings to import
-  * @param importFromId The id of the existing OrganizationDefaultSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationDefaultSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationDefaultSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class OrganizationDefaultSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.61.0/docs/resources/organization_default_settings tfe_organization_default_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization_default_settings tfe_organization_default_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class OrganizationDefaultSettings extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_default_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.61.0',
+        providerVersion: '0.62.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
