@@ -41,6 +41,7 @@ export * as team from './team';
 export * as teamAccess from './team-access';
 export * as teamMember from './team-member';
 export * as teamMembers from './team-members';
+export * as teamNotificationConfiguration from './team-notification-configuration';
 export * as teamOrganizationMember from './team-organization-member';
 export * as teamOrganizationMembers from './team-organization-members';
 export * as teamProjectAccess from './team-project-access';

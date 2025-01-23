@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set
+// https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface VariableSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#description VariableSet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#description VariableSet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#global VariableSet#global}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#global VariableSet#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#id VariableSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#id VariableSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#name VariableSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#name VariableSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#organization VariableSet#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#organization VariableSet#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#parent_project_id VariableSet#parent_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#parent_project_id VariableSet#parent_project_id}
   */
   readonly parentProjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#priority VariableSet#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#priority VariableSet#priority}
   */
   readonly priority?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#workspace_ids VariableSet#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#workspace_ids VariableSet#workspace_ids}
   */
   readonly workspaceIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set tfe_variable_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set tfe_variable_set}
 */
 export class VariableSet extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class VariableSet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VariableSet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VariableSet to import
-  * @param importFromId The id of the existing VariableSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VariableSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VariableSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class VariableSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set tfe_variable_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable_set tfe_variable_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class VariableSet extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_variable_set',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.62.0',
+        providerVersion: '0.63.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

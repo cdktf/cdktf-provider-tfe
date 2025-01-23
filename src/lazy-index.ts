@@ -41,6 +41,7 @@ Object.defineProperty(exports, 'team', { get: function () { return require('./te
 Object.defineProperty(exports, 'teamAccess', { get: function () { return require('./team-access'); } });
 Object.defineProperty(exports, 'teamMember', { get: function () { return require('./team-member'); } });
 Object.defineProperty(exports, 'teamMembers', { get: function () { return require('./team-members'); } });
+Object.defineProperty(exports, 'teamNotificationConfiguration', { get: function () { return require('./team-notification-configuration'); } });
 Object.defineProperty(exports, 'teamOrganizationMember', { get: function () { return require('./team-organization-member'); } });
 Object.defineProperty(exports, 'teamOrganizationMembers', { get: function () { return require('./team-organization-members'); } });
 Object.defineProperty(exports, 'teamProjectAccess', { get: function () { return require('./team-project-access'); } });

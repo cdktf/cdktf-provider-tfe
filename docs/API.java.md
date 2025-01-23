@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamAccess](./teamAccess.java.md)
 - [teamMember](./teamMember.java.md)
 - [teamMembers](./teamMembers.java.md)
+- [teamNotificationConfiguration](./teamNotificationConfiguration.java.md)
 - [teamOrganizationMember](./teamOrganizationMember.java.md)
 - [teamOrganizationMembers](./teamOrganizationMembers.java.md)
 - [teamProjectAccess](./teamProjectAccess.java.md)

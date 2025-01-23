@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamAccess](./teamAccess.csharp.md)
 - [teamMember](./teamMember.csharp.md)
 - [teamMembers](./teamMembers.csharp.md)
+- [teamNotificationConfiguration](./teamNotificationConfiguration.csharp.md)
 - [teamOrganizationMember](./teamOrganizationMember.csharp.md)
 - [teamOrganizationMembers](./teamOrganizationMembers.csharp.md)
 - [teamProjectAccess](./teamProjectAccess.csharp.md)
