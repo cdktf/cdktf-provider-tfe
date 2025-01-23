@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamAccess](./teamAccess.typescript.md)
 - [teamMember](./teamMember.typescript.md)
 - [teamMembers](./teamMembers.typescript.md)
+- [teamNotificationConfiguration](./teamNotificationConfiguration.typescript.md)
 - [teamOrganizationMember](./teamOrganizationMember.typescript.md)
 - [teamOrganizationMembers](./teamOrganizationMembers.typescript.md)
 - [teamProjectAccess](./teamProjectAccess.typescript.md)

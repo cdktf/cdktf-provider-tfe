@@ -4,7 +4,7 @@
 
 ### DataTfeRegistryGpgKeys <a name="DataTfeRegistryGpgKeys" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryGpgKeys.DataTfeRegistryGpgKeys.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys#organization DataTfeRegistryGpgKeys#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_gpg_keys#organization DataTfeRegistryGpgKeys#organization}
 
 ---
 
@@ -438,7 +438,7 @@ The construct id used in the generated config for the DataTfeRegistryGpgKeys to 
 
 The id of the existing DataTfeRegistryGpgKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_gpg_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ public java.lang.String getOrganization();
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys#organization DataTfeRegistryGpgKeys#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_gpg_keys#organization DataTfeRegistryGpgKeys#organization}
 
 ---
 

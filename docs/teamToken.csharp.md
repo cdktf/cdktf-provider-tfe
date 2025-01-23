@@ -4,7 +4,7 @@
 
 ### TeamToken <a name="TeamToken" id="@cdktf/provider-tfe.teamToken.TeamToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token tfe_team_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token tfe_team_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the TeamToken to import.
 
 The id of the existing TeamToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,10 +815,10 @@ new TeamTokenConfig {
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#team_id TeamToken#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">ExpiredAt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#expired_at TeamToken#expired_at}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">ForceRegenerate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#id TeamToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#team_id TeamToken#team_id}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">ExpiredAt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#expired_at TeamToken#expired_at}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">ForceRegenerate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#id TeamToken#id}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string TeamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#team_id TeamToken#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#team_id TeamToken#team_id}.
 
 ---
 
@@ -912,7 +912,7 @@ public string ExpiredAt { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#expired_at TeamToken#expired_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#expired_at TeamToken#expired_at}.
 
 ---
 
@@ -924,7 +924,7 @@ public object ForceRegenerate { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}.
 
 ---
 
@@ -936,7 +936,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token#id TeamToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_token#id TeamToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

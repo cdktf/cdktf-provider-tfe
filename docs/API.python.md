@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamAccess](./teamAccess.python.md)
 - [teamMember](./teamMember.python.md)
 - [teamMembers](./teamMembers.python.md)
+- [teamNotificationConfiguration](./teamNotificationConfiguration.python.md)
 - [teamOrganizationMember](./teamOrganizationMember.python.md)
 - [teamOrganizationMembers](./teamOrganizationMembers.python.md)
 - [teamProjectAccess](./teamProjectAccess.python.md)

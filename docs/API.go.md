@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamAccess](./teamAccess.go.md)
 - [teamMember](./teamMember.go.md)
 - [teamMembers](./teamMembers.go.md)
+- [teamNotificationConfiguration](./teamNotificationConfiguration.go.md)
 - [teamOrganizationMember](./teamOrganizationMember.go.md)
 - [teamOrganizationMembers](./teamOrganizationMembers.go.md)
 - [teamProjectAccess](./teamProjectAccess.go.md)
