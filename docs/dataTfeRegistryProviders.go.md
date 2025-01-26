@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.NewDataTfeRegistryProviders(scope Construct, id *string, config DataTfeRegistryProvidersConfig) DataTfeRegistryProviders
 ```
@@ -297,7 +297,7 @@ func ResetSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.DataTfeRegistryProviders_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.DataTfeRegistryProviders_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datatferegistryproviders.DataTfeRegistryProviders_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.DataTfeRegistryProviders_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datatferegistryproviders.DataTfeRegistryProviders_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.DataTfeRegistryProviders_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 &datatferegistryproviders.DataTfeRegistryProvidersConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 &datatferegistryproviders.DataTfeRegistryProvidersProviders {
 
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.NewDataTfeRegistryProvidersProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTfeRegistryProvidersProvidersList
 ```
@@ -966,7 +966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatferegistryproviders"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatferegistryproviders"
 
 datatferegistryproviders.NewDataTfeRegistryProvidersProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTfeRegistryProvidersProvidersOutputReference
 ```
