@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.NewWorkspaceRun(scope Construct, id *string, config WorkspaceRunConfig) WorkspaceRun
 ```
@@ -425,7 +425,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.WorkspaceRun_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.WorkspaceRun_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ workspacerun.WorkspaceRun_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.WorkspaceRun_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ workspacerun.WorkspaceRun_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRun.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.WorkspaceRun_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunApply.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 &workspacerun.WorkspaceRunApply {
 	ManualConfirm: interface{},
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 &workspacerun.WorkspaceRunConfig {
 	Connection: interface{},
@@ -915,8 +915,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	WorkspaceId: *string,
-	Apply: github.com/cdktf/cdktf-provider-tfe-go/tfe.workspaceRun.WorkspaceRunApply,
-	Destroy: github.com/cdktf/cdktf-provider-tfe-go/tfe.workspaceRun.WorkspaceRunDestroy,
+	Apply: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.workspaceRun.WorkspaceRunApply,
+	Destroy: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.workspaceRun.WorkspaceRunDestroy,
 	Id: *string,
 }
 ```
@@ -1069,7 +1069,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 &workspacerun.WorkspaceRunDestroy {
 	ManualConfirm: interface{},
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunApplyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.NewWorkspaceRunApplyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceRunApplyOutputReference
 ```
@@ -1589,7 +1589,7 @@ func InternalValue() WorkspaceRunApply
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/workspacerun"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/workspacerun"
 
 workspacerun.NewWorkspaceRunDestroyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceRunDestroyOutputReference
 ```
