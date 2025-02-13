@@ -4,7 +4,7 @@
 
 ### DataTfeRegistryProvider <a name="DataTfeRegistryProvider" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider tfe_registry_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider tfe_registry_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#name DataTfeRegistryProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#name DataTfeRegistryProvider#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The namespace of the provider. For private providers this is the same as the oraganization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#namespace DataTfeRegistryProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#namespace DataTfeRegistryProvider#namespace}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#organization DataTfeRegistryProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#organization DataTfeRegistryProvider#organization}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether this is a publicly maintained provider or private. Must be either `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#registry_name DataTfeRegistryProvider#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#registry_name DataTfeRegistryProvider#registry_name}
 
 ---
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the DataTfeRegistryProvider to
 
 The id of the existing DataTfeRegistryProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -936,7 +936,7 @@ name: str
 
 Name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#name DataTfeRegistryProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#name DataTfeRegistryProvider#name}
 
 ---
 
@@ -950,7 +950,7 @@ namespace: str
 
 The namespace of the provider. For private providers this is the same as the oraganization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#namespace DataTfeRegistryProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#namespace DataTfeRegistryProvider#namespace}
 
 ---
 
@@ -964,7 +964,7 @@ organization: str
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#organization DataTfeRegistryProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#organization DataTfeRegistryProvider#organization}
 
 ---
 
@@ -978,7 +978,7 @@ registry_name: str
 
 Whether this is a publicly maintained provider or private. Must be either `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/registry_provider#registry_name DataTfeRegistryProvider#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/registry_provider#registry_name DataTfeRegistryProvider#registry_name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TeamNotificationConfiguration <a name="TeamNotificationConfiguration" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration tfe_team_notification_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration tfe_team_notification_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the TeamNotificationConfigurat
 
 The id of the existing TeamNotificationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1043,7 +1043,7 @@ public string DestinationType { get; set; }
 
 The type of notification configuration payload to send.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
 
 ---
 
@@ -1057,7 +1057,7 @@ public string Name { get; set; }
 
 Name of the team notification configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
 
 ---
 
@@ -1071,7 +1071,7 @@ public string TeamId { get; set; }
 
 The ID of the team that owns the notification configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
 
 ---
 
@@ -1085,7 +1085,7 @@ public string[] EmailAddresses { get; set; }
 
 A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
 
 ---
 
@@ -1099,7 +1099,7 @@ public string[] EmailUserIds { get; set; }
 
 A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
 
 ---
 
@@ -1115,7 +1115,7 @@ Whether the team notification configuration should be enabled or not.
 
 Disabled configurations will not send any notifications. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
 
 ---
 
@@ -1131,7 +1131,7 @@ A write-only secure token for the notification configuration, which can be used 
 
 Defaults to `null`. This value *must not* be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
 
 ---
 
@@ -1147,7 +1147,7 @@ The array of triggers for which this team notification configuration will send n
 
 If omitted, no notification triggers are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
 
 ---
 
@@ -1163,7 +1163,7 @@ The HTTP or HTTPS URL where notification requests will be made.
 
 This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
 
 ---
 

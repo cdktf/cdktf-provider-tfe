@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack
+// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface StackConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the Stack
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#description Stack#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#description Stack#description}
   */
   readonly description?: string;
   /**
   * Name of the Stack
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#name Stack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#name Stack#name}
   */
   readonly name: string;
   /**
   * ID of the project that the Stack belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#project_id Stack#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#project_id Stack#project_id}
   */
   readonly projectId: string;
   /**
   * vcs_repo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
   */
   readonly vcsRepo?: StackVcsRepo;
 }
@@ -41,25 +41,25 @@ export interface StackVcsRepo {
   /**
   * The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#branch Stack#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#branch Stack#branch}
   */
   readonly branch?: string;
   /**
   * The installation ID of the GitHub App. This conflicts with `oauth_token_id` and can only be used if `oauth_token_id` is not used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
   */
   readonly githubAppInstallationId?: string;
   /**
   * Identifier of the VCS repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#identifier Stack#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#identifier Stack#identifier}
   */
   readonly identifier: string;
   /**
   * The VCS Connection to use. This ID can be obtained from a `tfe_oauth_client` resource. This conflicts with `github_app_installation_id` and can only be used if `github_app_installation_id` is not used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
   */
   readonly oauthTokenId?: string;
 }
@@ -237,7 +237,7 @@ export class StackVcsRepoOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack tfe_stack}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack tfe_stack}
 */
 export class Stack extends cdktf.TerraformResource {
 
@@ -253,7 +253,7 @@ export class Stack extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Stack resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Stack to import
-  * @param importFromId The id of the existing Stack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Stack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Stack to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -265,7 +265,7 @@ export class Stack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack tfe_stack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack tfe_stack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +276,7 @@ export class Stack extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_stack',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.63.0',
+        providerVersion: '0.64.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

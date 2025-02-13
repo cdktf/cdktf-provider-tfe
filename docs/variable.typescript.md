@@ -4,7 +4,7 @@
 
 ### Variable <a name="Variable" id="@cdktf/provider-tfe.variable.Variable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable tfe_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable tfe_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.variable.Variable.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Variable to import.
 
 The id of the existing Variable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,12 +925,12 @@ const variableConfig: variable.VariableConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.category">category</a></code> | <code>string</code> | Whether this is a Terraform or environment variable. Valid values are "terraform" or "env". |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.key">key</a></code> | <code>string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#description Variable#description}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.hcl">hcl</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#hcl Variable#hcl}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.sensitive">sensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#sensitive Variable#sensitive}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#description Variable#description}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.hcl">hcl</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#hcl Variable#hcl}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.sensitive">sensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#sensitive Variable#sensitive}. |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.value">value</a></code> | <code>string</code> | Value of the variable. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.variableSetId">variableSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#variable_set_id Variable#variable_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#workspace_id Variable#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.variableSetId">variableSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#variable_set_id Variable#variable_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#workspace_id Variable#workspace_id}. |
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly category: string;
 
 Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#category Variable#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#category Variable#category}
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly key: string;
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#key Variable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#key Variable#key}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#description Variable#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#description Variable#description}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public readonly hcl: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#hcl Variable#hcl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#hcl Variable#hcl}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly sensitive: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#sensitive Variable#sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#sensitive Variable#sensitive}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public readonly value: string;
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#value Variable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#value Variable#value}
 
 ---
 
@@ -1090,7 +1090,7 @@ public readonly variableSetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#variable_set_id Variable#variable_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#variable_set_id Variable#variable_set_id}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/variable#workspace_id Variable#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#workspace_id Variable#workspace_id}.
 
 ---
 
