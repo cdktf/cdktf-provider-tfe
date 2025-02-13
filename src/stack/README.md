@@ -1,3 +1,3 @@
 # `tfe_stack`
 
-Refer to the Terraform Registry for docs: [`tfe_stack`](https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/stack).
+Refer to the Terraform Registry for docs: [`tfe_stack`](https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/stack).

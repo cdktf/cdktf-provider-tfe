@@ -4,12 +4,12 @@
 
 ### AuditTrailToken <a name="AuditTrailToken" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/audit_trail_token tfe_audit_trail_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/audit_trail_token tfe_audit_trail_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/audittrailtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/audittrailtoken"
 
 audittrailtoken.NewAuditTrailToken(scope Construct, id *string, config AuditTrailTokenConfig) AuditTrailToken
 ```
@@ -399,7 +399,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/audittrailtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/audittrailtoken"
 
 audittrailtoken.AuditTrailToken_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/audittrailtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/audittrailtoken"
 
 audittrailtoken.AuditTrailToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ audittrailtoken.AuditTrailToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/audittrailtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/audittrailtoken"
 
 audittrailtoken.AuditTrailToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ audittrailtoken.AuditTrailToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/audittrailtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/audittrailtoken"
 
 audittrailtoken.AuditTrailToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the AuditTrailToken to import.
 
 The id of the existing AuditTrailToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/audit_trail_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/audit_trail_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/audittrailtoken"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/audittrailtoken"
 
 &audittrailtoken.AuditTrailTokenConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ ExpiredAt *string
 
 The time when the audit trail token will expire. This must be a valid ISO8601 timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
 
 ---
 
@@ -903,7 +903,7 @@ ForceRegenerate interface{}
 
 When set to true will force the audit trail token to be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
 
 ---
 
@@ -917,7 +917,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
 
 ---
 

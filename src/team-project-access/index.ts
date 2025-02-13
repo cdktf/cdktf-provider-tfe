@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access
+// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface TeamProjectAccessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#access TeamProjectAccess#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#access TeamProjectAccess#access}
   */
   readonly access: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#id TeamProjectAccess#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#id TeamProjectAccess#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#project_id TeamProjectAccess#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#project_id TeamProjectAccess#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#team_id TeamProjectAccess#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#team_id TeamProjectAccess#team_id}
   */
   readonly teamId: string;
   /**
   * project_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#project_access TeamProjectAccess#project_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#project_access TeamProjectAccess#project_access}
   */
   readonly projectAccess?: TeamProjectAccessProjectAccess[] | cdktf.IResolvable;
   /**
   * workspace_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#workspace_access TeamProjectAccess#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#workspace_access TeamProjectAccess#workspace_access}
   */
   readonly workspaceAccess?: TeamProjectAccessWorkspaceAccess[] | cdktf.IResolvable;
 }
 export interface TeamProjectAccessProjectAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#settings TeamProjectAccess#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#settings TeamProjectAccess#settings}
   */
   readonly settings?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#teams TeamProjectAccess#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#teams TeamProjectAccess#teams}
   */
   readonly teams?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#variable_sets TeamProjectAccess#variable_sets}
+  */
+  readonly variableSets?: string;
 }
 
 export function teamProjectAccessProjectAccessToTerraform(struct?: TeamProjectAccessProjectAccess | cdktf.IResolvable): any {
@@ -63,6 +62,7 @@ export function teamProjectAccessProjectAccessToTerraform(struct?: TeamProjectAc
   return {
     settings: cdktf.stringToTerraform(struct!.settings),
     teams: cdktf.stringToTerraform(struct!.teams),
+    variable_sets: cdktf.stringToTerraform(struct!.variableSets),
   }
 }
 
@@ -81,6 +81,12 @@ export function teamProjectAccessProjectAccessToHclTerraform(struct?: TeamProjec
     },
     teams: {
       value: cdktf.stringToHclTerraform(struct!.teams),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    variable_sets: {
+      value: cdktf.stringToHclTerraform(struct!.variableSets),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,6 +125,10 @@ export class TeamProjectAccessProjectAccessOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.teams = this._teams;
     }
+    if (this._variableSets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.variableSets = this._variableSets;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -128,6 +138,7 @@ export class TeamProjectAccessProjectAccessOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._settings = undefined;
       this._teams = undefined;
+      this._variableSets = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -138,6 +149,7 @@ export class TeamProjectAccessProjectAccessOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._settings = value.settings;
       this._teams = value.teams;
+      this._variableSets = value.variableSets;
     }
   }
 
@@ -172,6 +184,22 @@ export class TeamProjectAccessProjectAccessOutputReference extends cdktf.Complex
   public get teamsInput() {
     return this._teams;
   }
+
+  // variable_sets - computed: true, optional: true, required: false
+  private _variableSets?: string; 
+  public get variableSets() {
+    return this.getStringAttribute('variable_sets');
+  }
+  public set variableSets(value: string) {
+    this._variableSets = value;
+  }
+  public resetVariableSets() {
+    this._variableSets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableSetsInput() {
+    return this._variableSets;
+  }
 }
 
 export class TeamProjectAccessProjectAccessList extends cdktf.ComplexList {
@@ -195,39 +223,39 @@ export class TeamProjectAccessProjectAccessList extends cdktf.ComplexList {
 }
 export interface TeamProjectAccessWorkspaceAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#create TeamProjectAccess#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#create TeamProjectAccess#create}
   */
   readonly create?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#delete TeamProjectAccess#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#delete TeamProjectAccess#delete}
   */
   readonly delete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#locking TeamProjectAccess#locking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#locking TeamProjectAccess#locking}
   */
   readonly locking?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#move TeamProjectAccess#move}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#move TeamProjectAccess#move}
   */
   readonly move?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#run_tasks TeamProjectAccess#run_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#run_tasks TeamProjectAccess#run_tasks}
   */
   readonly runTasks?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#runs TeamProjectAccess#runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#runs TeamProjectAccess#runs}
   */
   readonly runs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#sentinel_mocks TeamProjectAccess#sentinel_mocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#sentinel_mocks TeamProjectAccess#sentinel_mocks}
   */
   readonly sentinelMocks?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#state_versions TeamProjectAccess#state_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#state_versions TeamProjectAccess#state_versions}
   */
   readonly stateVersions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#variables TeamProjectAccess#variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#variables TeamProjectAccess#variables}
   */
   readonly variables?: string;
 }
@@ -575,7 +603,7 @@ export class TeamProjectAccessWorkspaceAccessList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access tfe_team_project_access}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access tfe_team_project_access}
 */
 export class TeamProjectAccess extends cdktf.TerraformResource {
 
@@ -591,7 +619,7 @@ export class TeamProjectAccess extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamProjectAccess resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamProjectAccess to import
-  * @param importFromId The id of the existing TeamProjectAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamProjectAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamProjectAccess to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -603,7 +631,7 @@ export class TeamProjectAccess extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/team_project_access tfe_team_project_access} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_project_access tfe_team_project_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -614,7 +642,7 @@ export class TeamProjectAccess extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team_project_access',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.63.0',
+        providerVersion: '0.64.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

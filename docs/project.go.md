@@ -4,12 +4,12 @@
 
 ### Project <a name="Project" id="@cdktf/provider-tfe.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.project.Project.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.project.Project.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.project.Project.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetAutoDestroyActivityDuration">ResetAutoDestroyActivityDuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetOrganization">ResetOrganization</a></code> | *No description.* |
@@ -367,6 +368,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAutoDestroyActivityDuration` <a name="ResetAutoDestroyActivityDuration" id="@cdktf/provider-tfe.project.Project.resetAutoDestroyActivityDuration"></a>
+
+```go
+func ResetAutoDestroyActivityDuration()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-tfe.project.Project.resetDescription"></a>
 
 ```go
@@ -399,7 +406,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +495,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,10 +525,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput">AutoDestroyActivityDurationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -671,6 +680,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `AutoDestroyActivityDurationInput`<sup>Optional</sup> <a name="AutoDestroyActivityDurationInput" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput"></a>
+
+```go
+func AutoDestroyActivityDurationInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-tfe.project.Project.property.descriptionInput"></a>
 
 ```go
@@ -705,6 +724,16 @@ func NameInput() *string
 
 ```go
 func OrganizationInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AutoDestroyActivityDuration`<sup>Required</sup> <a name="AutoDestroyActivityDuration" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration"></a>
+
+```go
+func AutoDestroyActivityDuration() *string
 ```
 
 - *Type:* *string
@@ -776,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -787,6 +816,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	AutoDestroyActivityDuration: *string,
 	Description: *string,
 	Id: *string,
 	Organization: *string,
@@ -804,10 +834,11 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#description Project#description}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#organization Project#organization}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}. |
 
 ---
 
@@ -889,7 +920,19 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#name Project#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}.
+
+---
+
+##### `AutoDestroyActivityDuration`<sup>Optional</sup> <a name="AutoDestroyActivityDuration" id="@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration"></a>
+
+```go
+AutoDestroyActivityDuration *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}.
 
 ---
 
@@ -901,7 +944,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#description Project#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}.
 
 ---
 
@@ -913,7 +956,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -928,7 +971,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/project#organization Project#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataTfeWorkspaceRunTask <a name="DataTfeWorkspaceRunTask" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/workspace_run_task tfe_workspace_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/workspace_run_task tfe_workspace_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.NewDataTfeWorkspaceRunTask(scope Construct, id *string, config DataTfeWorkspaceRunTaskConfig) DataTfeWorkspaceRunTask
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datatfeworkspaceruntask.DataTfeWorkspaceRunTask_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 datatfeworkspaceruntask.DataTfeWorkspaceRunTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataTfeWorkspaceRunTask to
 
 The id of the existing DataTfeWorkspaceRunTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/workspace_run_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/workspace_run_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeworkspaceruntask"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfeworkspaceruntask"
 
 &datatfeworkspaceruntask.DataTfeWorkspaceRunTaskConfig {
 	Connection: interface{},
@@ -742,7 +742,7 @@ TaskId *string
 
 The id of the run task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/workspace_run_task#task_id DataTfeWorkspaceRunTask#task_id}
 
 ---
 
@@ -756,7 +756,7 @@ WorkspaceId *string
 
 The id of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/data-sources/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/workspace_run_task#workspace_id DataTfeWorkspaceRunTask#workspace_id}
 
 ---
 

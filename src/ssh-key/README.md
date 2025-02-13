@@ -1,3 +1,3 @@
 # `tfe_ssh_key`
 
-Refer to the Terraform Registry for docs: [`tfe_ssh_key`](https://registry.terraform.io/providers/hashicorp/tfe/0.63.0/docs/resources/ssh_key).
+Refer to the Terraform Registry for docs: [`tfe_ssh_key`](https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key).
