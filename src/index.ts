@@ -75,6 +75,7 @@ export * as dataTfeProject from './data-tfe-project';
 export * as dataTfeProjects from './data-tfe-projects';
 export * as dataTfeRegistryGpgKey from './data-tfe-registry-gpg-key';
 export * as dataTfeRegistryGpgKeys from './data-tfe-registry-gpg-keys';
+export * as dataTfeRegistryModule from './data-tfe-registry-module';
 export * as dataTfeRegistryProvider from './data-tfe-registry-provider';
 export * as dataTfeRegistryProviders from './data-tfe-registry-providers';
 export * as dataTfeSamlSettings from './data-tfe-saml-settings';

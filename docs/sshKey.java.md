@@ -4,7 +4,7 @@
 
 ### SshKey <a name="SshKey" id="@cdktf/provider-tfe.sshKey.SshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key tfe_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer"></a>
 
@@ -23,9 +23,9 @@ SshKey.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .key(java.lang.String)
     .name(java.lang.String)
-//  .id(java.lang.String)
+//  .key(java.lang.String)
+//  .keyWo(java.lang.String)
 //  .organization(java.lang.String)
     .build();
 ```
@@ -41,10 +41,10 @@ SshKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the SSH key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | The text of the SSH private key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.keyWo">keyWo</a></code> | <code>java.lang.String</code> | The text of the SSH private key, guaranteed not to be written to state. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The name of the organization. |
 
 ---
 
@@ -108,30 +108,33 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}.
+The name of the SSH key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#name SshKey#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.id"></a>
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}.
+The text of the SSH private key.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key SshKey#key}
+
+---
+
+##### `keyWo`<sup>Optional</sup> <a name="keyWo" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.keyWo"></a>
+
+- *Type:* java.lang.String
+
+The text of the SSH private key, guaranteed not to be written to state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
 
 ---
 
@@ -139,7 +142,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}.
+The name of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#organization SshKey#organization}
 
 ---
 
@@ -170,7 +175,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetKey">resetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetKeyWo">resetKeyWo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetOrganization">resetOrganization</a></code> | *No description.* |
 
 ---
@@ -465,10 +471,16 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-tfe.sshKey.SshKey.resetId"></a>
+##### `resetKey` <a name="resetKey" id="@cdktf/provider-tfe.sshKey.SshKey.resetKey"></a>
 
 ```java
-public void resetId()
+public void resetKey()
+```
+
+##### `resetKeyWo` <a name="resetKeyWo" id="@cdktf/provider-tfe.sshKey.SshKey.resetKeyWo"></a>
+
+```java
+public void resetKeyWo()
 ```
 
 ##### `resetOrganization` <a name="resetOrganization" id="@cdktf/provider-tfe.sshKey.SshKey.resetOrganization"></a>
@@ -580,7 +592,7 @@ The construct id used in the generated config for the SshKey to import.
 
 The id of the existing SshKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -610,12 +622,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.keyWoInput">keyWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.keyWo">keyWo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -763,10 +776,10 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-tfe.sshKey.SshKey.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKey.property.id"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -777,6 +790,16 @@ public java.lang.String getIdInput();
 
 ```java
 public java.lang.String getKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `keyWoInput`<sup>Optional</sup> <a name="keyWoInput" id="@cdktf/provider-tfe.sshKey.SshKey.property.keyWoInput"></a>
+
+```java
+public java.lang.String getKeyWoInput();
 ```
 
 - *Type:* java.lang.String
@@ -803,20 +826,20 @@ public java.lang.String getOrganizationInput();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKey.property.id"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.property.key"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.String getKey();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.property.key"></a>
+##### `keyWo`<sup>Required</sup> <a name="keyWo" id="@cdktf/provider-tfe.sshKey.SshKey.property.keyWo"></a>
 
 ```java
-public java.lang.String getKey();
+public java.lang.String getKeyWo();
 ```
 
 - *Type:* java.lang.String
@@ -882,9 +905,9 @@ SshKeyConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .key(java.lang.String)
     .name(java.lang.String)
-//  .id(java.lang.String)
+//  .key(java.lang.String)
+//  .keyWo(java.lang.String)
 //  .organization(java.lang.String)
     .build();
 ```
@@ -900,10 +923,10 @@ SshKeyConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the SSH key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key">key</a></code> | <code>java.lang.String</code> | The text of the SSH private key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.keyWo">keyWo</a></code> | <code>java.lang.String</code> | The text of the SSH private key, guaranteed not to be written to state. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The name of the organization. |
 
 ---
 
@@ -977,18 +1000,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key"></a>
-
-```java
-public java.lang.String getKey();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name"></a>
 
 ```java
@@ -997,22 +1008,37 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}.
+The name of the SSH key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#name SshKey#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.id"></a>
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.String getKey();
 ```
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}.
+The text of the SSH private key.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key SshKey#key}
+
+---
+
+##### `keyWo`<sup>Optional</sup> <a name="keyWo" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.keyWo"></a>
+
+```java
+public java.lang.String getKeyWo();
+```
+
+- *Type:* java.lang.String
+
+The text of the SSH private key, guaranteed not to be written to state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
 
 ---
 
@@ -1024,7 +1050,9 @@ public java.lang.String getOrganization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}.
+The name of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#organization SshKey#organization}
 
 ---
 

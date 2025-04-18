@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeProjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}
+  * The name of the project.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#name DataTfeProject#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}
+  * The name of the organization that the project belongs to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#organization DataTfeProject#organization}
   */
   readonly organization?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}
-  */
-  readonly workspaceIds?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}
-  */
-  readonly workspaceNames?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project tfe_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project tfe_project}
 */
 export class DataTfeProject extends cdktf.TerraformDataSource {
 
@@ -54,7 +43,7 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeProject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeProject to import
-  * @param importFromId The id of the existing DataTfeProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +55,7 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project tfe_project} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project tfe_project} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +66,7 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_project',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -88,11 +77,8 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
     this._organization = config.organization;
-    this._workspaceIds = config.workspaceIds;
-    this._workspaceNames = config.workspaceNames;
   }
 
   // ==========
@@ -109,20 +95,15 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
     return this.getStringAttribute('description');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // effective_tags - computed: true, optional: false, required: false
+  private _effectiveTags = new cdktf.StringMap(this, "effective_tags");
+  public get effectiveTags() {
+    return this._effectiveTags;
+  }
+
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -138,7 +119,7 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
     return this._name;
   }
 
-  // organization - computed: false, optional: true, required: false
+  // organization - computed: true, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
@@ -154,36 +135,14 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
     return this._organization;
   }
 
-  // workspace_ids - computed: true, optional: true, required: false
-  private _workspaceIds?: string[]; 
+  // workspace_ids - computed: true, optional: false, required: false
   public get workspaceIds() {
     return cdktf.Fn.tolist(this.getListAttribute('workspace_ids'));
   }
-  public set workspaceIds(value: string[]) {
-    this._workspaceIds = value;
-  }
-  public resetWorkspaceIds() {
-    this._workspaceIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdsInput() {
-    return this._workspaceIds;
-  }
 
-  // workspace_names - computed: true, optional: true, required: false
-  private _workspaceNames?: string[]; 
+  // workspace_names - computed: true, optional: false, required: false
   public get workspaceNames() {
     return cdktf.Fn.tolist(this.getListAttribute('workspace_names'));
-  }
-  public set workspaceNames(value: string[]) {
-    this._workspaceNames = value;
-  }
-  public resetWorkspaceNames() {
-    this._workspaceNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceNamesInput() {
-    return this._workspaceNames;
   }
 
   // =========
@@ -192,22 +151,13 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
-      workspace_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceIds),
-      workspace_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._workspaceNames),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
@@ -219,18 +169,6 @@ export class DataTfeProject extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      workspace_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._workspaceIds),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
-      },
-      workspace_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._workspaceNames),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
       },
     };
 

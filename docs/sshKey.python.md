@@ -4,7 +4,7 @@
 
 ### SshKey <a name="SshKey" id="@cdktf/provider-tfe.sshKey.SshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key tfe_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer"></a>
 
@@ -21,9 +21,9 @@ sshKey.SshKey(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  key: str,
   name: str,
-  id: str = None,
+  key: str = None,
+  key_wo: str = None,
   organization: str = None
 )
 ```
@@ -39,10 +39,10 @@ sshKey.SshKey(
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the SSH key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key">key</a></code> | <code>str</code> | The text of the SSH private key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.keyWo">key_wo</a></code> | <code>str</code> | The text of the SSH private key, guaranteed not to be written to state. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The name of the organization. |
 
 ---
 
@@ -106,30 +106,33 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}.
+The name of the SSH key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#name SshKey#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.id"></a>
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.key"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}.
+The text of the SSH private key.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key SshKey#key}
+
+---
+
+##### `key_wo`<sup>Optional</sup> <a name="key_wo" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer.parameter.keyWo"></a>
+
+- *Type:* str
+
+The text of the SSH private key, guaranteed not to be written to state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
 
 ---
 
@@ -137,7 +140,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}.
+The name of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#organization SshKey#organization}
 
 ---
 
@@ -168,7 +173,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetKeyWo">reset_key_wo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.resetOrganization">reset_organization</a></code> | *No description.* |
 
 ---
@@ -498,10 +504,16 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-tfe.sshKey.SshKey.resetId"></a>
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-tfe.sshKey.SshKey.resetKey"></a>
 
 ```python
-def reset_id() -> None
+def reset_key() -> None
+```
+
+##### `reset_key_wo` <a name="reset_key_wo" id="@cdktf/provider-tfe.sshKey.SshKey.resetKeyWo"></a>
+
+```python
+def reset_key_wo() -> None
 ```
 
 ##### `reset_organization` <a name="reset_organization" id="@cdktf/provider-tfe.sshKey.SshKey.resetOrganization"></a>
@@ -624,7 +636,7 @@ The construct id used in the generated config for the SshKey to import.
 
 The id of the existing SshKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,12 +666,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.keyWoInput">key_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.keyWo">key_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKey.property.organization">organization</a></code> | <code>str</code> | *No description.* |
 
@@ -807,10 +820,10 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-tfe.sshKey.SshKey.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKey.property.id"></a>
 
 ```python
-id_input: str
+id: str
 ```
 
 - *Type:* str
@@ -821,6 +834,16 @@ id_input: str
 
 ```python
 key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_wo_input`<sup>Optional</sup> <a name="key_wo_input" id="@cdktf/provider-tfe.sshKey.SshKey.property.keyWoInput"></a>
+
+```python
+key_wo_input: str
 ```
 
 - *Type:* str
@@ -847,20 +870,20 @@ organization_input: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKey.property.id"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.property.key"></a>
 
 ```python
-id: str
+key: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKey.property.key"></a>
+##### `key_wo`<sup>Required</sup> <a name="key_wo" id="@cdktf/provider-tfe.sshKey.SshKey.property.keyWo"></a>
 
 ```python
-key: str
+key_wo: str
 ```
 
 - *Type:* str
@@ -922,9 +945,9 @@ sshKey.SshKeyConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  key: str,
   name: str,
-  id: str = None,
+  key: str = None,
+  key_wo: str = None,
   organization: str = None
 )
 ```
@@ -940,10 +963,10 @@ sshKey.SshKeyConfig(
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}. |
-| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name">name</a></code> | <code>str</code> | The name of the SSH key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key">key</a></code> | <code>str</code> | The text of the SSH private key. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.keyWo">key_wo</a></code> | <code>str</code> | The text of the SSH private key, guaranteed not to be written to state. |
+| <code><a href="#@cdktf/provider-tfe.sshKey.SshKeyConfig.property.organization">organization</a></code> | <code>str</code> | The name of the organization. |
 
 ---
 
@@ -1017,18 +1040,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key"></a>
-
-```python
-key: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.name"></a>
 
 ```python
@@ -1037,22 +1048,37 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}.
+The name of the SSH key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#name SshKey#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.id"></a>
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.key"></a>
 
 ```python
-id: str
+key: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}.
+The text of the SSH private key.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key SshKey#key}
+
+---
+
+##### `key_wo`<sup>Optional</sup> <a name="key_wo" id="@cdktf/provider-tfe.sshKey.SshKeyConfig.property.keyWo"></a>
+
+```python
+key_wo: str
+```
+
+- *Type:* str
+
+The text of the SSH private key, guaranteed not to be written to state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
 
 ---
 
@@ -1064,7 +1090,9 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}.
+The name of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#organization SshKey#organization}
 
 ---
 

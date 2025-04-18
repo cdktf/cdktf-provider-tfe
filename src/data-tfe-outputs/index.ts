@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeOutputsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The organization to fetch the remote state from.
+  * Name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}
-  */
-  readonly values?: { [key: string]: any };
-  /**
-  * The workspace to fetch the remote state from.
+  * Name of the workspace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
   */
   readonly workspace: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs tfe_outputs}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs tfe_outputs}
 */
 export class DataTfeOutputs extends cdktf.TerraformDataSource {
 
@@ -47,7 +43,7 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeOutputs resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeOutputs to import
-  * @param importFromId The id of the existing DataTfeOutputs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeOutputs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeOutputs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +55,7 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs tfe_outputs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs tfe_outputs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +66,7 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_outputs',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -82,7 +78,6 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._organization = config.organization;
-    this._values = config.values;
     this._workspace = config.workspace;
   }
 
@@ -117,19 +112,9 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
     return this._organization;
   }
 
-  // values - computed: true, optional: true, required: false
-  private _values?: { [key: string]: any }; 
+  // values - computed: true, optional: false, required: false
+  private _values = new cdktf.AnyMap(this, "values");
   public get values() {
-    return this.getAnyMapAttribute('values');
-  }
-  public set values(value: { [key: string]: any }) {
-    this._values = value;
-  }
-  public resetValues() {
-    this._values = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
     return this._values;
   }
 
@@ -153,7 +138,6 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       organization: cdktf.stringToTerraform(this._organization),
-      values: cdktf.hashMapper(cdktf.anyToTerraform)(this._values),
       workspace: cdktf.stringToTerraform(this._workspace),
     };
   }
@@ -165,12 +149,6 @@ export class DataTfeOutputs extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      values: {
-        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._values),
-        isBlock: false,
-        type: "map",
-        storageClassType: "anyMap",
       },
       workspace: {
         value: cdktf.stringToHclTerraform(this._workspace),

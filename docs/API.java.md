@@ -28,6 +28,7 @@ The following submodules are available:
 - [dataTfeProjects](./dataTfeProjects.java.md)
 - [dataTfeRegistryGpgKey](./dataTfeRegistryGpgKey.java.md)
 - [dataTfeRegistryGpgKeys](./dataTfeRegistryGpgKeys.java.md)
+- [dataTfeRegistryModule](./dataTfeRegistryModule.java.md)
 - [dataTfeRegistryProvider](./dataTfeRegistryProvider.java.md)
 - [dataTfeRegistryProviders](./dataTfeRegistryProviders.java.md)
 - [dataTfeSamlSettings](./dataTfeSamlSettings.java.md)

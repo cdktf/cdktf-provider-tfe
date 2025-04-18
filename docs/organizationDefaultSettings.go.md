@@ -4,7 +4,7 @@
 
 ### OrganizationDefaultSettings <a name="OrganizationDefaultSettings" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings tfe_organization_default_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings tfe_organization_default_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.resetDefaultAgentPoolId">ResetDefaultAgentPoolId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.resetOrganization">ResetOrganization</a></code> | *No description.* |
 
 ---
@@ -373,12 +372,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetDefaultAgentPoolId()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetOrganization` <a name="ResetOrganization" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.resetOrganization"></a>
 
 ```go
@@ -488,7 +481,7 @@ The construct id used in the generated config for the OrganizationDefaultSetting
 
 The id of the existing OrganizationDefaultSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,11 +513,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.defaultAgentPoolIdInput">DefaultAgentPoolIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.defaultExecutionModeInput">DefaultExecutionModeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.defaultAgentPoolId">DefaultAgentPoolId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.defaultExecutionMode">DefaultExecutionMode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -691,16 +682,6 @@ func DefaultExecutionModeInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.organizationInput"></a>
 
 ```go
@@ -725,16 +706,6 @@ func DefaultAgentPoolId() *string
 
 ```go
 func DefaultExecutionMode() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettings.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -788,7 +759,6 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationdefaultsettin
 	Provisioners: *[]interface{},
 	DefaultExecutionMode: *string,
 	DefaultAgentPoolId: *string,
-	Id: *string,
 	Organization: *string,
 }
 ```
@@ -804,10 +774,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/organizationdefaultsettin
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.defaultExecutionMode">DefaultExecutionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#default_execution_mode OrganizationDefaultSettings#default_execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.defaultAgentPoolId">DefaultAgentPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#default_agent_pool_id OrganizationDefaultSettings#default_agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#id OrganizationDefaultSettings#id}. |
-| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#organization OrganizationDefaultSettings#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.defaultExecutionMode">DefaultExecutionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings#default_execution_mode OrganizationDefaultSettings#default_execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.defaultAgentPoolId">DefaultAgentPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings#default_agent_pool_id OrganizationDefaultSettings#default_agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.organization">Organization</a></code> | <code>*string</code> | The name of the organization. |
 
 ---
 
@@ -889,7 +858,7 @@ DefaultExecutionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#default_execution_mode OrganizationDefaultSettings#default_execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings#default_execution_mode OrganizationDefaultSettings#default_execution_mode}.
 
 ---
 
@@ -901,22 +870,7 @@ DefaultAgentPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#default_agent_pool_id OrganizationDefaultSettings#default_agent_pool_id}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-tfe.organizationDefaultSettings.OrganizationDefaultSettingsConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#id OrganizationDefaultSettings#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings#default_agent_pool_id OrganizationDefaultSettings#default_agent_pool_id}.
 
 ---
 
@@ -928,7 +882,9 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_default_settings#organization OrganizationDefaultSettings#organization}.
+The name of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_default_settings#organization OrganizationDefaultSettings#organization}
 
 ---
 

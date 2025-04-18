@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,69 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}
+  * The type of notification configuration payload to send.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}
   */
   readonly destinationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
+  * A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
+  * A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
   */
   readonly emailUserIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}
+  * Whether the notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#id NotificationConfiguration#id}
+  * Name of the notification configuration.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#name NotificationConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#name NotificationConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#token NotificationConfiguration#token}
+  * A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. Defaults to `null`. This value _must not_ be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#token NotificationConfiguration#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}
+  * Value of the token in write-only mode
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#token_wo NotificationConfiguration#token_wo}
+  */
+  readonly tokenWo?: string;
+  /**
+  * The array of triggers for which this notification configuration will send notifications. If omitted, no notification triggers are configured.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}
   */
   readonly triggers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#url NotificationConfiguration#url}
+  * The HTTP or HTTPS URL where notification requests will be made. This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#url NotificationConfiguration#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
+  * The ID of the workspace that owns the notification configuration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration tfe_notification_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration tfe_notification_configuration}
 */
 export class NotificationConfiguration extends cdktf.TerraformResource {
 
@@ -74,7 +91,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationConfiguration to import
-  * @param importFromId The id of the existing NotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +103,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration tfe_notification_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration tfe_notification_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +114,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_notification_configuration',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -112,9 +129,9 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
     this._emailAddresses = config.emailAddresses;
     this._emailUserIds = config.emailUserIds;
     this._enabled = config.enabled;
-    this._id = config.id;
     this._name = config.name;
     this._token = config.token;
+    this._tokenWo = config.tokenWo;
     this._triggers = config.triggers;
     this._url = config.url;
     this._workspaceId = config.workspaceId;
@@ -169,7 +186,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
     return this._emailUserIds;
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -185,20 +202,9 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -228,6 +234,22 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
     return this._token;
+  }
+
+  // token_wo - computed: false, optional: true, required: false
+  private _tokenWo?: string; 
+  public get tokenWo() {
+    return this.getStringAttribute('token_wo');
+  }
+  public set tokenWo(value: string) {
+    this._tokenWo = value;
+  }
+  public resetTokenWo() {
+    this._tokenWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenWoInput() {
+    return this._tokenWo;
   }
 
   // triggers - computed: false, optional: true, required: false
@@ -285,9 +307,9 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
       email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emailAddresses),
       email_user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emailUserIds),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       token: cdktf.stringToTerraform(this._token),
+      token_wo: cdktf.stringToTerraform(this._tokenWo),
       triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggers),
       url: cdktf.stringToTerraform(this._url),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
@@ -320,12 +342,6 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
@@ -334,6 +350,12 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
       },
       token: {
         value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_wo: {
+        value: cdktf.stringToHclTerraform(this._tokenWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

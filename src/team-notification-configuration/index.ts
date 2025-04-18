@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,61 +15,67 @@ export interface TeamNotificationConfigurationConfig extends cdktf.TerraformMeta
   /**
   * The type of notification configuration payload to send.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
   */
   readonly destinationType: string;
   /**
   * A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
   * A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
   */
   readonly emailUserIds?: string[];
   /**
   * Whether the team notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the team notification configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
   */
   readonly name: string;
   /**
   * The ID of the team that owns the notification configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
   */
   readonly teamId: string;
   /**
   * A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. Defaults to `null`. This value _must not_ be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
   */
   readonly token?: string;
   /**
+  * A write-only secure token for the notification configuration, guaranteed not to be written to plan or state artifacts.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#token_wo TeamNotificationConfiguration#token_wo}
+  */
+  readonly tokenWo?: string;
+  /**
   * The array of triggers for which this team notification configuration will send notifications. If omitted, no notification triggers are configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
   */
   readonly triggers?: string[];
   /**
   * The HTTP or HTTPS URL where notification requests will be made. This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration tfe_team_notification_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration tfe_team_notification_configuration}
 */
 export class TeamNotificationConfiguration extends cdktf.TerraformResource {
 
@@ -85,7 +91,7 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamNotificationConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamNotificationConfiguration to import
-  * @param importFromId The id of the existing TeamNotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamNotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamNotificationConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -97,7 +103,7 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration tfe_team_notification_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration tfe_team_notification_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +114,7 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team_notification_configuration',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -126,6 +132,7 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
     this._name = config.name;
     this._teamId = config.teamId;
     this._token = config.token;
+    this._tokenWo = config.tokenWo;
     this._triggers = config.triggers;
     this._url = config.url;
   }
@@ -242,6 +249,22 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
     return this._token;
   }
 
+  // token_wo - computed: false, optional: true, required: false
+  private _tokenWo?: string; 
+  public get tokenWo() {
+    return this.getStringAttribute('token_wo');
+  }
+  public set tokenWo(value: string) {
+    this._tokenWo = value;
+  }
+  public resetTokenWo() {
+    this._tokenWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenWoInput() {
+    return this._tokenWo;
+  }
+
   // triggers - computed: false, optional: true, required: false
   private _triggers?: string[]; 
   public get triggers() {
@@ -287,6 +310,7 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       team_id: cdktf.stringToTerraform(this._teamId),
       token: cdktf.stringToTerraform(this._token),
+      token_wo: cdktf.stringToTerraform(this._tokenWo),
       triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggers),
       url: cdktf.stringToTerraform(this._url),
     };
@@ -332,6 +356,12 @@ export class TeamNotificationConfiguration extends cdktf.TerraformResource {
       },
       token: {
         value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_wo: {
+        value: cdktf.stringToHclTerraform(this._tokenWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

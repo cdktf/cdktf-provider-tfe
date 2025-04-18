@@ -4,7 +4,7 @@
 
 ### TeamToken <a name="TeamToken" id="@cdktf/provider-tfe.teamToken.TeamToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token tfe_team_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token tfe_team_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer"></a>
 
@@ -27,7 +27,6 @@ TeamToken.Builder.create(Construct scope, java.lang.String id)
 //  .expiredAt(java.lang.String)
 //  .forceRegenerate(java.lang.Boolean)
 //  .forceRegenerate(IResolvable)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -42,10 +41,9 @@ TeamToken.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.expiredAt">expiredAt</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.forceRegenerate">forceRegenerate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | ID of the team. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.expiredAt">expiredAt</a></code> | <code>java.lang.String</code> | The token's expiration date. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.forceRegenerate">forceRegenerate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true will force the audit trail token to be recreated. |
 
 ---
 
@@ -113,7 +111,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}.
+ID of the team.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#team_id TeamToken#team_id}
 
 ---
 
@@ -121,7 +121,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}.
+The token's expiration date.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#expired_at TeamToken#expired_at}
 
 ---
 
@@ -129,18 +131,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}.
+When set to true will force the audit trail token to be recreated.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
 
 ---
 
@@ -173,7 +166,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetExpiredAt">resetExpiredAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetForceRegenerate">resetForceRegenerate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -479,12 +471,6 @@ public void resetExpiredAt()
 public void resetForceRegenerate()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-tfe.teamToken.TeamToken.resetId"></a>
-
-```java
-public void resetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -588,7 +574,7 @@ The construct id used in the generated config for the TeamToken to import.
 
 The id of the existing TeamToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,14 +604,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAtInput">expiredAtInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerateInput">forceRegenerateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamIdInput">teamIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAt">expiredAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerate">forceRegenerate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamId">teamId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -772,6 +757,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamToken.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-tfe.teamToken.TeamToken.property.token"></a>
 
 ```java
@@ -802,16 +797,6 @@ public java.lang.Object getForceRegenerateInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-tfe.teamToken.TeamToken.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `teamIdInput`<sup>Optional</sup> <a name="teamIdInput" id="@cdktf/provider-tfe.teamToken.TeamToken.property.teamIdInput"></a>
 
 ```java
@@ -839,16 +824,6 @@ public java.lang.Object getForceRegenerate();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamToken.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -905,7 +880,6 @@ TeamTokenConfig.builder()
 //  .expiredAt(java.lang.String)
 //  .forceRegenerate(java.lang.Boolean)
 //  .forceRegenerate(IResolvable)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -920,10 +894,9 @@ TeamTokenConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">expiredAt</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">forceRegenerate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | ID of the team. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">expiredAt</a></code> | <code>java.lang.String</code> | The token's expiration date. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">forceRegenerate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true will force the audit trail token to be recreated. |
 
 ---
 
@@ -1005,7 +978,9 @@ public java.lang.String getTeamId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}.
+ID of the team.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#team_id TeamToken#team_id}
 
 ---
 
@@ -1017,7 +992,9 @@ public java.lang.String getExpiredAt();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}.
+The token's expiration date.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#expired_at TeamToken#expired_at}
 
 ---
 
@@ -1029,22 +1006,9 @@ public java.lang.Object getForceRegenerate();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}.
+When set to true will force the audit trail token to be recreated.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
 
 ---
 

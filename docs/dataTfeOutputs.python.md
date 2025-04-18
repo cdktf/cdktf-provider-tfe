@@ -4,7 +4,7 @@
 
 ### DataTfeOutputs <a name="DataTfeOutputs" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs tfe_outputs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs tfe_outputs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
@@ -22,8 +22,7 @@ dataTfeOutputs.DataTfeOutputs(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   workspace: str,
-  organization: str = None,
-  values: typing.Mapping[typing.Any] = None
+  organization: str = None
 )
 ```
 
@@ -38,9 +37,8 @@ dataTfeOutputs.DataTfeOutputs(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.workspace">workspace</a></code> | <code>str</code> | The workspace to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.workspace">workspace</a></code> | <code>str</code> | Name of the workspace. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Name of the organization. |
 
 ---
 
@@ -108,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The workspace to fetch the remote state from.
+Name of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -118,17 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The organization to fetch the remote state from.
+Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
-
----
-
-##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values"></a>
-
-- *Type:* typing.Mapping[typing.Any]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 
@@ -154,7 +144,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetOrganization">reset_organization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues">reset_values</a></code> | *No description.* |
 
 ---
 
@@ -381,12 +370,6 @@ def interpolation_for_attribute(
 def reset_organization() -> None
 ```
 
-##### `reset_values` <a name="reset_values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues"></a>
-
-```python
-def reset_values() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +484,7 @@ The construct id used in the generated config for the DataTfeOutputs to import.
 
 The id of the existing DataTfeOutputs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,11 +514,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.nonsensitiveValues">nonsensitive_values</a></code> | <code>cdktf.AnyMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">values</a></code> | <code>cdktf.AnyMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput">values_input</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspaceInput">workspace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organization">organization</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspace">workspace</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -682,6 +664,16 @@ nonsensitive_values: AnyMap
 
 ---
 
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
+
+```python
+values: AnyMap
+```
+
+- *Type:* cdktf.AnyMap
+
+---
+
 ##### `organization_input`<sup>Optional</sup> <a name="organization_input" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput"></a>
 
 ```python
@@ -689,16 +681,6 @@ organization_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput"></a>
-
-```python
-values_input: typing.Mapping[typing.Any]
-```
-
-- *Type:* typing.Mapping[typing.Any]
 
 ---
 
@@ -719,16 +701,6 @@ organization: str
 ```
 
 - *Type:* str
-
----
-
-##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
-
-```python
-values: typing.Mapping[typing.Any]
-```
-
-- *Type:* typing.Mapping[typing.Any]
 
 ---
 
@@ -778,8 +750,7 @@ dataTfeOutputs.DataTfeOutputsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   workspace: str,
-  organization: str = None,
-  values: typing.Mapping[typing.Any] = None
+  organization: str = None
 )
 ```
 
@@ -794,9 +765,8 @@ dataTfeOutputs.DataTfeOutputsConfig(
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">workspace</a></code> | <code>str</code> | The workspace to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">organization</a></code> | <code>str</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">values</a></code> | <code>typing.Mapping[typing.Any]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">workspace</a></code> | <code>str</code> | Name of the workspace. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">organization</a></code> | <code>str</code> | Name of the organization. |
 
 ---
 
@@ -878,9 +848,9 @@ workspace: str
 
 - *Type:* str
 
-The workspace to fetch the remote state from.
+Name of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -892,21 +862,9 @@ organization: str
 
 - *Type:* str
 
-The organization to fetch the remote state from.
+Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
-
----
-
-##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values"></a>
-
-```python
-values: typing.Mapping[typing.Any]
-```
-
-- *Type:* typing.Mapping[typing.Any]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 

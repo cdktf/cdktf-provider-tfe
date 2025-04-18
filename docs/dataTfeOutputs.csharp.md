@@ -4,7 +4,7 @@
 
 ### DataTfeOutputs <a name="DataTfeOutputs" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs tfe_outputs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs tfe_outputs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
@@ -68,7 +68,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetOrganization">ResetOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues">ResetValues</a></code> | *No description.* |
 
 ---
 
@@ -270,12 +269,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetOrganization()
 ```
 
-##### `ResetValues` <a name="ResetValues" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues"></a>
-
-```csharp
-private void ResetValues()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -379,7 +372,7 @@ The construct id used in the generated config for the DataTfeOutputs to import.
 
 The id of the existing DataTfeOutputs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -409,11 +402,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.nonsensitiveValues">NonsensitiveValues</a></code> | <code>HashiCorp.Cdktf.AnyMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">Values</a></code> | <code>HashiCorp.Cdktf.AnyMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput">ValuesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspaceInput">WorkspaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">Values</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspace">Workspace</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -560,6 +552,16 @@ public AnyMap NonsensitiveValues { get; }
 
 ---
 
+##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
+
+```csharp
+public AnyMap Values { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.AnyMap
+
+---
+
 ##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput"></a>
 
 ```csharp
@@ -567,16 +569,6 @@ public string OrganizationInput { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput"></a>
-
-```csharp
-public System.Collections.Generic.IDictionary<string, object> ValuesInput { get; }
-```
-
-- *Type:* System.Collections.Generic.IDictionary<string, object>
 
 ---
 
@@ -597,16 +589,6 @@ public string Organization { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
-
-```csharp
-public System.Collections.Generic.IDictionary<string, object> Values { get; }
-```
-
-- *Type:* System.Collections.Generic.IDictionary<string, object>
 
 ---
 
@@ -656,8 +638,7 @@ new DataTfeOutputsConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Workspace,
-    string Organization = null,
-    System.Collections.Generic.IDictionary<string, object> Values = null
+    string Organization = null
 };
 ```
 
@@ -672,9 +653,8 @@ new DataTfeOutputsConfig {
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">Workspace</a></code> | <code>string</code> | The workspace to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">Organization</a></code> | <code>string</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">Values</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">Workspace</a></code> | <code>string</code> | Name of the workspace. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">Organization</a></code> | <code>string</code> | Name of the organization. |
 
 ---
 
@@ -756,9 +736,9 @@ public string Workspace { get; set; }
 
 - *Type:* string
 
-The workspace to fetch the remote state from.
+Name of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -770,21 +750,9 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-The organization to fetch the remote state from.
+Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
-
----
-
-##### `Values`<sup>Optional</sup> <a name="Values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values"></a>
-
-```csharp
-public System.Collections.Generic.IDictionary<string, object> Values { get; set; }
-```
-
-- *Type:* System.Collections.Generic.IDictionary<string, object>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 

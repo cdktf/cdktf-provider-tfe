@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
+  * Duration after which the project will be auto-destroyed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
   */
   readonly autoDestroyActivityDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}
+  * Description of the project.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#description Project#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}
+  * Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
   */
-  readonly id?: string;
+  readonly ignoreAdditionalTags?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}
+  * Name of the project.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#name Project#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}
+  * Name of the organization to which the project belongs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#organization Project#organization}
   */
   readonly organization?: string;
+  /**
+  * A map of key-value tags to add to the project.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#tags Project#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project tfe_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project tfe_project}
 */
 export class Project extends cdktf.TerraformResource {
 
@@ -54,7 +67,7 @@ export class Project extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Project resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Project to import
-  * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Project to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +79,7 @@ export class Project extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project tfe_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project tfe_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +90,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_project',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -90,9 +103,10 @@ export class Project extends cdktf.TerraformResource {
     });
     this._autoDestroyActivityDuration = config.autoDestroyActivityDuration;
     this._description = config.description;
-    this._id = config.id;
+    this._ignoreAdditionalTags = config.ignoreAdditionalTags;
     this._name = config.name;
     this._organization = config.organization;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -115,7 +129,7 @@ export class Project extends cdktf.TerraformResource {
     return this._autoDestroyActivityDuration;
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -131,20 +145,25 @@ export class Project extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // ignore_additional_tags - computed: false, optional: true, required: false
+  private _ignoreAdditionalTags?: boolean | cdktf.IResolvable; 
+  public get ignoreAdditionalTags() {
+    return this.getBooleanAttribute('ignore_additional_tags');
   }
-  public resetId() {
-    this._id = undefined;
+  public set ignoreAdditionalTags(value: boolean | cdktf.IResolvable) {
+    this._ignoreAdditionalTags = value;
+  }
+  public resetIgnoreAdditionalTags() {
+    this._ignoreAdditionalTags = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get ignoreAdditionalTagsInput() {
+    return this._ignoreAdditionalTags;
   }
 
   // name - computed: false, optional: false, required: true
@@ -176,6 +195,22 @@ export class Project extends cdktf.TerraformResource {
     return this._organization;
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -184,9 +219,10 @@ export class Project extends cdktf.TerraformResource {
     return {
       auto_destroy_activity_duration: cdktf.stringToTerraform(this._autoDestroyActivityDuration),
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
+      ignore_additional_tags: cdktf.booleanToTerraform(this._ignoreAdditionalTags),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 
@@ -204,11 +240,11 @@ export class Project extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      ignore_additional_tags: {
+        value: cdktf.booleanToHclTerraform(this._ignoreAdditionalTags),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "boolean",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
@@ -221,6 +257,12 @@ export class Project extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 

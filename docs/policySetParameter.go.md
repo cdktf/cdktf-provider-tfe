@@ -4,7 +4,7 @@
 
 ### PolicySetParameter <a name="PolicySetParameter" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.Initializer"></a>
 
@@ -73,9 +73,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetSensitive">ResetSensitive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetValue">ResetValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetValueWo">ResetValueWo</a></code> | *No description.* |
 
 ---
 
@@ -367,12 +367,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetSensitive` <a name="ResetSensitive" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetSensitive"></a>
 
 ```go
@@ -383,6 +377,12 @@ func ResetSensitive()
 
 ```go
 func ResetValue()
+```
+
+##### `ResetValueWo` <a name="ResetValueWo" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.resetValueWo"></a>
+
+```go
+func ResetValueWo()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -488,7 +488,7 @@ The construct id used in the generated config for the PolicySetParameter to impo
 
 The id of the existing PolicySetParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,16 +518,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.policySetIdInput">PolicySetIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.sensitiveInput">SensitiveInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.valueWoInput">ValueWoInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.policySetId">PolicySetId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.valueWo">ValueWo</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -673,10 +674,10 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.idInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.id"></a>
 
 ```go
-func IdInput() *string
+func Id() *string
 ```
 
 - *Type:* *string
@@ -723,10 +724,10 @@ func ValueInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.id"></a>
+##### `ValueWoInput`<sup>Optional</sup> <a name="ValueWoInput" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.valueWoInput"></a>
 
 ```go
-func Id() *string
+func ValueWoInput() *string
 ```
 
 - *Type:* *string
@@ -773,6 +774,16 @@ func Value() *string
 
 ---
 
+##### `ValueWo`<sup>Required</sup> <a name="ValueWo" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.property.valueWo"></a>
+
+```go
+func ValueWo() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -810,9 +821,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/policysetparameter"
 	Provisioners: *[]interface{},
 	Key: *string,
 	PolicySetId: *string,
-	Id: *string,
 	Sensitive: interface{},
 	Value: *string,
+	ValueWo: *string,
 }
 ```
 
@@ -827,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/policysetparameter"
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.policySetId">PolicySetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#id PolicySetParameter#id}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}. |
-| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.key">Key</a></code> | <code>*string</code> | Name of the parameter. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.policySetId">PolicySetId</a></code> | <code>*string</code> | The ID of the policy set that owns the parameter. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | Whether the value is sensitive. If true then the parameter is written once and not visible thereafter. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.value">Value</a></code> | <code>*string</code> | Value of the parameter. |
+| <code><a href="#@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.valueWo">ValueWo</a></code> | <code>*string</code> | Value of the parameter in write-only mode. |
 
 ---
 
@@ -913,7 +924,9 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}.
+Name of the parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
 
 ---
 
@@ -925,22 +938,9 @@ PolicySetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}.
+The ID of the policy set that owns the parameter.
 
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#id PolicySetParameter#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
 
 ---
 
@@ -952,7 +952,9 @@ Sensitive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}.
+Whether the value is sensitive. If true then the parameter is written once and not visible thereafter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
 
 ---
 
@@ -964,7 +966,23 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}.
+Value of the parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
+
+---
+
+##### `ValueWo`<sup>Optional</sup> <a name="ValueWo" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameterConfig.property.valueWo"></a>
+
+```go
+ValueWo *string
+```
+
+- *Type:* *string
+
+Value of the parameter in write-only mode.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
 
 ---
 

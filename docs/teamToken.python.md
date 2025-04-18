@@ -4,7 +4,7 @@
 
 ### TeamToken <a name="TeamToken" id="@cdktf/provider-tfe.teamToken.TeamToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token tfe_team_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token tfe_team_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer"></a>
 
@@ -23,8 +23,7 @@ teamToken.TeamToken(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   team_id: str,
   expired_at: str = None,
-  force_regenerate: typing.Union[bool, IResolvable] = None,
-  id: str = None
+  force_regenerate: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -39,10 +38,9 @@ teamToken.TeamToken(
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.expiredAt">expired_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.forceRegenerate">force_regenerate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | ID of the team. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.expiredAt">expired_at</a></code> | <code>str</code> | The token's expiration date. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.forceRegenerate">force_regenerate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true will force the audit trail token to be recreated. |
 
 ---
 
@@ -110,7 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}.
+ID of the team.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#team_id TeamToken#team_id}
 
 ---
 
@@ -118,7 +118,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}.
+The token's expiration date.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#expired_at TeamToken#expired_at}
 
 ---
 
@@ -126,18 +128,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}.
+When set to true will force the audit trail token to be recreated.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
 
 ---
 
@@ -170,7 +163,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetExpiredAt">reset_expired_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetForceRegenerate">reset_force_regenerate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -511,12 +503,6 @@ def reset_expired_at() -> None
 def reset_force_regenerate() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-tfe.teamToken.TeamToken.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -631,7 +617,7 @@ The construct id used in the generated config for the TeamToken to import.
 
 The id of the existing TeamToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,14 +647,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAtInput">expired_at_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerateInput">force_regenerate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamIdInput">team_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAt">expired_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerate">force_regenerate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamId">team_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -815,6 +800,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamToken.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-tfe.teamToken.TeamToken.property.token"></a>
 
 ```python
@@ -845,16 +840,6 @@ force_regenerate_input: typing.Union[bool, IResolvable]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-tfe.teamToken.TeamToken.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `team_id_input`<sup>Optional</sup> <a name="team_id_input" id="@cdktf/provider-tfe.teamToken.TeamToken.property.teamIdInput"></a>
 
 ```python
@@ -882,16 +867,6 @@ force_regenerate: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamToken.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -942,8 +917,7 @@ teamToken.TeamTokenConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   team_id: str,
   expired_at: str = None,
-  force_regenerate: typing.Union[bool, IResolvable] = None,
-  id: str = None
+  force_regenerate: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -958,10 +932,9 @@ teamToken.TeamTokenConfig(
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">team_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">expired_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">force_regenerate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}. |
-| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">team_id</a></code> | <code>str</code> | ID of the team. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">expired_at</a></code> | <code>str</code> | The token's expiration date. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">force_regenerate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true will force the audit trail token to be recreated. |
 
 ---
 
@@ -1043,7 +1016,9 @@ team_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#team_id TeamToken#team_id}.
+ID of the team.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#team_id TeamToken#team_id}
 
 ---
 
@@ -1055,7 +1030,9 @@ expired_at: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#expired_at TeamToken#expired_at}.
+The token's expiration date.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#expired_at TeamToken#expired_at}
 
 ---
 
@@ -1067,22 +1044,9 @@ force_regenerate: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}.
+When set to true will force the audit trail token to be recreated.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_token#id TeamToken#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
 
 ---
 

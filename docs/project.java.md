@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-tfe.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
@@ -26,8 +26,10 @@ Project.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .autoDestroyActivityDuration(java.lang.String)
 //  .description(java.lang.String)
-//  .id(java.lang.String)
+//  .ignoreAdditionalTags(java.lang.Boolean)
+//  .ignoreAdditionalTags(IResolvable)
 //  .organization(java.lang.String)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
 
@@ -42,11 +44,12 @@ Project.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}. |
-| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}. |
-| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}. |
+| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | Duration after which the project will be auto-destroyed. |
+| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration. |
+| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Name of the organization to which the project belongs. |
+| <code><a href="#@cdktf/provider-tfe.project.Project.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value tags to add to the project. |
 
 ---
 
@@ -114,7 +117,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}.
+Name of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -122,7 +127,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}.
+Duration after which the project will be auto-destroyed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
 
 ---
 
@@ -130,18 +137,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}.
+Description of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#description Project#description}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.project.Project.Initializer.parameter.id"></a>
+##### `ignoreAdditionalTags`<sup>Optional</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.Initializer.parameter.ignoreAdditionalTags"></a>
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}.
+Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
 
 ---
 
@@ -149,7 +157,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}.
+Name of the organization to which the project belongs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#organization Project#organization}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-tfe.project.Project.Initializer.parameter.tags"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+A map of key-value tags to add to the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -182,8 +202,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.project.Project.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetAutoDestroyActivityDuration">resetAutoDestroyActivityDuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetIgnoreAdditionalTags">resetIgnoreAdditionalTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetOrganization">resetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
@@ -489,16 +510,22 @@ public void resetAutoDestroyActivityDuration()
 public void resetDescription()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-tfe.project.Project.resetId"></a>
+##### `resetIgnoreAdditionalTags` <a name="resetIgnoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.resetIgnoreAdditionalTags"></a>
 
 ```java
-public void resetId()
+public void resetIgnoreAdditionalTags()
 ```
 
 ##### `resetOrganization` <a name="resetOrganization" id="@cdktf/provider-tfe.project.Project.resetOrganization"></a>
 
 ```java
 public void resetOrganization()
+```
+
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-tfe.project.Project.resetTags"></a>
+
+```java
+public void resetTags()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -604,7 +631,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,16 +661,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput">autoDestroyActivityDurationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTagsInput">ignoreAdditionalTagsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 
 ---
 
@@ -789,6 +819,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.project.Project.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `autoDestroyActivityDurationInput`<sup>Optional</sup> <a name="autoDestroyActivityDurationInput" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput"></a>
 
 ```java
@@ -809,13 +849,13 @@ public java.lang.String getDescriptionInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-tfe.project.Project.property.idInput"></a>
+##### `ignoreAdditionalTagsInput`<sup>Optional</sup> <a name="ignoreAdditionalTagsInput" id="@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTagsInput"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.Object getIgnoreAdditionalTagsInput();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -839,6 +879,16 @@ public java.lang.String getOrganizationInput();
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-tfe.project.Project.property.tagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `autoDestroyActivityDuration`<sup>Required</sup> <a name="autoDestroyActivityDuration" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration"></a>
 
 ```java
@@ -859,13 +909,13 @@ public java.lang.String getDescription();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.project.Project.property.id"></a>
+##### `ignoreAdditionalTags`<sup>Required</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTags"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getIgnoreAdditionalTags();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -886,6 +936,16 @@ public java.lang.String getOrganization();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-tfe.project.Project.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -931,8 +991,10 @@ ProjectConfig.builder()
     .name(java.lang.String)
 //  .autoDestroyActivityDuration(java.lang.String)
 //  .description(java.lang.String)
-//  .id(java.lang.String)
+//  .ignoreAdditionalTags(java.lang.Boolean)
+//  .ignoreAdditionalTags(IResolvable)
 //  .organization(java.lang.String)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
 
@@ -947,11 +1009,12 @@ ProjectConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | Duration after which the project will be auto-destroyed. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Name of the organization to which the project belongs. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value tags to add to the project. |
 
 ---
 
@@ -1033,7 +1096,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}.
+Name of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -1045,7 +1110,9 @@ public java.lang.String getAutoDestroyActivityDuration();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}.
+Duration after which the project will be auto-destroyed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
 
 ---
 
@@ -1057,22 +1124,23 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}.
+Description of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#description Project#description}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.project.ProjectConfig.property.id"></a>
+##### `ignoreAdditionalTags`<sup>Optional</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.project.ProjectConfig.property.ignoreAdditionalTags"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getIgnoreAdditionalTags();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}.
+Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
 
 ---
 
@@ -1084,7 +1152,23 @@ public java.lang.String getOrganization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}.
+Name of the organization to which the project belongs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#organization Project#organization}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-tfe.project.ProjectConfig.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+A map of key-value tags to add to the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#tags Project#tags}
 
 ---
 

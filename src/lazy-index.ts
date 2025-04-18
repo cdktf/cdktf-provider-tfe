@@ -75,6 +75,7 @@ Object.defineProperty(exports, 'dataTfeProject', { get: function () { return req
 Object.defineProperty(exports, 'dataTfeProjects', { get: function () { return require('./data-tfe-projects'); } });
 Object.defineProperty(exports, 'dataTfeRegistryGpgKey', { get: function () { return require('./data-tfe-registry-gpg-key'); } });
 Object.defineProperty(exports, 'dataTfeRegistryGpgKeys', { get: function () { return require('./data-tfe-registry-gpg-keys'); } });
+Object.defineProperty(exports, 'dataTfeRegistryModule', { get: function () { return require('./data-tfe-registry-module'); } });
 Object.defineProperty(exports, 'dataTfeRegistryProvider', { get: function () { return require('./data-tfe-registry-provider'); } });
 Object.defineProperty(exports, 'dataTfeRegistryProviders', { get: function () { return require('./data-tfe-registry-providers'); } });
 Object.defineProperty(exports, 'dataTfeSamlSettings', { get: function () { return require('./data-tfe-saml-settings'); } });

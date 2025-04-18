@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationRunTaskConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#category OrganizationRunTask#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#category OrganizationRunTask#category}
   */
   readonly category?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#description OrganizationRunTask#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#description OrganizationRunTask#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#enabled OrganizationRunTask#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#enabled OrganizationRunTask#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#hmac_key OrganizationRunTask#hmac_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#hmac_key OrganizationRunTask#hmac_key}
   */
   readonly hmacKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#name OrganizationRunTask#name}
+  * HMAC key in write-only mode
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#hmac_key_wo OrganizationRunTask#hmac_key_wo}
+  */
+  readonly hmacKeyWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#name OrganizationRunTask#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#organization OrganizationRunTask#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#organization OrganizationRunTask#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#url OrganizationRunTask#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#url OrganizationRunTask#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task tfe_organization_run_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task tfe_organization_run_task}
 */
 export class OrganizationRunTask extends cdktf.TerraformResource {
 
@@ -59,7 +65,7 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationRunTask resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationRunTask to import
-  * @param importFromId The id of the existing OrganizationRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationRunTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -71,7 +77,7 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task tfe_organization_run_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task tfe_organization_run_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +88,7 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_organization_run_task',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -97,6 +103,7 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
     this._description = config.description;
     this._enabled = config.enabled;
     this._hmacKey = config.hmacKey;
+    this._hmacKeyWo = config.hmacKeyWo;
     this._name = config.name;
     this._organization = config.organization;
     this._url = config.url;
@@ -170,6 +177,22 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
     return this._hmacKey;
   }
 
+  // hmac_key_wo - computed: false, optional: true, required: false
+  private _hmacKeyWo?: string; 
+  public get hmacKeyWo() {
+    return this.getStringAttribute('hmac_key_wo');
+  }
+  public set hmacKeyWo(value: string) {
+    this._hmacKeyWo = value;
+  }
+  public resetHmacKeyWo() {
+    this._hmacKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hmacKeyWoInput() {
+    return this._hmacKeyWo;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -227,6 +250,7 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       hmac_key: cdktf.stringToTerraform(this._hmacKey),
+      hmac_key_wo: cdktf.stringToTerraform(this._hmacKeyWo),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
       url: cdktf.stringToTerraform(this._url),
@@ -255,6 +279,12 @@ export class OrganizationRunTask extends cdktf.TerraformResource {
       },
       hmac_key: {
         value: cdktf.stringToHclTerraform(this._hmacKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hmac_key_wo: {
+        value: cdktf.stringToHclTerraform(this._hmacKeyWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
