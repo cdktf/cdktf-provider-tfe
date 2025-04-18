@@ -4,7 +4,7 @@
 
 ### OrganizationRunTask <a name="OrganizationRunTask" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task tfe_organization_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task tfe_organization_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetHmacKey">resetHmacKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetHmacKeyWo">resetHmacKeyWo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetOrganization">resetOrganization</a></code> | *No description.* |
 
 ---
@@ -393,6 +394,12 @@ public resetEnabled(): void
 public resetHmacKey(): void
 ```
 
+##### `resetHmacKeyWo` <a name="resetHmacKeyWo" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetHmacKeyWo"></a>
+
+```typescript
+public resetHmacKeyWo(): void
+```
+
 ##### `resetOrganization` <a name="resetOrganization" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.resetOrganization"></a>
 
 ```typescript
@@ -502,7 +509,7 @@ The construct id used in the generated config for the OrganizationRunTask to imp
 
 The id of the existing OrganizationRunTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -537,6 +544,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.hmacKeyInput">hmacKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.hmacKeyWoInput">hmacKeyWoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.organizationInput">organizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
@@ -544,6 +552,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.hmacKey">hmacKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.hmacKeyWo">hmacKeyWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.organization">organization</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.url">url</a></code> | <code>string</code> | *No description.* |
@@ -742,6 +751,16 @@ public readonly hmacKeyInput: string;
 
 ---
 
+##### `hmacKeyWoInput`<sup>Optional</sup> <a name="hmacKeyWoInput" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.hmacKeyWoInput"></a>
+
+```typescript
+public readonly hmacKeyWoInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.nameInput"></a>
 
 ```typescript
@@ -806,6 +825,16 @@ public readonly enabled: boolean | IResolvable;
 
 ```typescript
 public readonly hmacKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hmacKeyWo`<sup>Required</sup> <a name="hmacKeyWo" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask.property.hmacKeyWo"></a>
+
+```typescript
+public readonly hmacKeyWo: string;
 ```
 
 - *Type:* string
@@ -883,13 +912,14 @@ const organizationRunTaskConfig: organizationRunTask.OrganizationRunTaskConfig =
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#name OrganizationRunTask#name}. |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#url OrganizationRunTask#url}. |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.category">category</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#category OrganizationRunTask#category}. |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#description OrganizationRunTask#description}. |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#enabled OrganizationRunTask#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.hmacKey">hmacKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#hmac_key OrganizationRunTask#hmac_key}. |
-| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#organization OrganizationRunTask#organization}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#name OrganizationRunTask#name}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#url OrganizationRunTask#url}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.category">category</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#category OrganizationRunTask#category}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#description OrganizationRunTask#description}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#enabled OrganizationRunTask#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.hmacKey">hmacKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#hmac_key OrganizationRunTask#hmac_key}. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.hmacKeyWo">hmacKeyWo</a></code> | <code>string</code> | HMAC key in write-only mode. |
+| <code><a href="#@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#organization OrganizationRunTask#organization}. |
 
 ---
 
@@ -971,7 +1001,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#name OrganizationRunTask#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#name OrganizationRunTask#name}.
 
 ---
 
@@ -983,7 +1013,7 @@ public readonly url: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#url OrganizationRunTask#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#url OrganizationRunTask#url}.
 
 ---
 
@@ -995,7 +1025,7 @@ public readonly category: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#category OrganizationRunTask#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#category OrganizationRunTask#category}.
 
 ---
 
@@ -1007,7 +1037,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#description OrganizationRunTask#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#description OrganizationRunTask#description}.
 
 ---
 
@@ -1019,7 +1049,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#enabled OrganizationRunTask#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#enabled OrganizationRunTask#enabled}.
 
 ---
 
@@ -1031,7 +1061,21 @@ public readonly hmacKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#hmac_key OrganizationRunTask#hmac_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#hmac_key OrganizationRunTask#hmac_key}.
+
+---
+
+##### `hmacKeyWo`<sup>Optional</sup> <a name="hmacKeyWo" id="@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig.property.hmacKeyWo"></a>
+
+```typescript
+public readonly hmacKeyWo: string;
+```
+
+- *Type:* string
+
+HMAC key in write-only mode.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#hmac_key_wo OrganizationRunTask#hmac_key_wo}
 
 ---
 
@@ -1043,7 +1087,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/organization_run_task#organization OrganizationRunTask#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/organization_run_task#organization OrganizationRunTask#organization}.
 
 ---
 

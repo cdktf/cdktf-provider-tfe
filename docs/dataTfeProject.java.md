@@ -4,7 +4,7 @@
 
 ### DataTfeProject <a name="DataTfeProject" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer"></a>
 
@@ -24,10 +24,7 @@ DataTfeProject.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .id(java.lang.String)
 //  .organization(java.lang.String)
-//  .workspaceIds(java.util.List<java.lang.String>)
-//  .workspaceNames(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -42,11 +39,8 @@ DataTfeProject.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.workspaceNames">workspaceNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the project. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The name of the organization that the project belongs to. |
 
 ---
 
@@ -114,18 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}.
+The name of the project.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#name DataTfeProject#name}
 
 ---
 
@@ -133,23 +118,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}.
+The name of the organization that the project belongs to.
 
----
-
-##### `workspaceIds`<sup>Optional</sup> <a name="workspaceIds" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.workspaceIds"></a>
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}.
-
----
-
-##### `workspaceNames`<sup>Optional</sup> <a name="workspaceNames" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer.parameter.workspaceNames"></a>
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#organization DataTfeProject#organization}
 
 ---
 
@@ -174,10 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetOrganization">resetOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceIds">resetWorkspaceIds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceNames">resetWorkspaceNames</a></code> | *No description.* |
 
 ---
 
@@ -373,28 +341,10 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetOrganization` <a name="resetOrganization" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetOrganization"></a>
 
 ```java
 public void resetOrganization()
-```
-
-##### `resetWorkspaceIds` <a name="resetWorkspaceIds" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceIds"></a>
-
-```java
-public void resetWorkspaceIds()
-```
-
-##### `resetWorkspaceNames` <a name="resetWorkspaceNames" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceNames"></a>
-
-```java
-public void resetWorkspaceNames()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -500,7 +450,7 @@ The construct id used in the generated config for the DataTfeProject to import.
 
 The id of the existing DataTfeProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,16 +480,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceIdsInput">workspaceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceNamesInput">workspaceNamesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.effectiveTags">effectiveTags</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceNames">workspaceNames</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -685,53 +633,13 @@ public java.lang.String getDescription();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.idInput"></a>
+##### `effectiveTags`<sup>Required</sup> <a name="effectiveTags" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.effectiveTags"></a>
 
 ```java
-public java.lang.String getIdInput();
+public StringMap getEffectiveTags();
 ```
 
-- *Type:* java.lang.String
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput"></a>
-
-```java
-public java.lang.String getNameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `organizationInput`<sup>Optional</sup> <a name="organizationInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput"></a>
-
-```java
-public java.lang.String getOrganizationInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `workspaceIdsInput`<sup>Optional</sup> <a name="workspaceIdsInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceIdsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getWorkspaceIdsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `workspaceNamesInput`<sup>Optional</sup> <a name="workspaceNamesInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceNamesInput"></a>
-
-```java
-public java.util.List<java.lang.String> getWorkspaceNamesInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
+- *Type:* com.hashicorp.cdktf.StringMap
 
 ---
 
@@ -739,26 +647,6 @@ public java.util.List<java.lang.String> getWorkspaceNamesInput();
 
 ```java
 public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name"></a>
-
-```java
-public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `organization`<sup>Required</sup> <a name="organization" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization"></a>
-
-```java
-public java.lang.String getOrganization();
 ```
 
 - *Type:* java.lang.String
@@ -782,6 +670,46 @@ public java.util.List<java.lang.String> getWorkspaceNames();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `organizationInput`<sup>Optional</sup> <a name="organizationInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput"></a>
+
+```java
+public java.lang.String getOrganizationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `organization`<sup>Required</sup> <a name="organization" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization"></a>
+
+```java
+public java.lang.String getOrganization();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -825,10 +753,7 @@ DataTfeProjectConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .id(java.lang.String)
 //  .organization(java.lang.String)
-//  .workspaceIds(java.util.List<java.lang.String>)
-//  .workspaceNames(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -843,11 +768,8 @@ DataTfeProjectConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceNames">workspaceNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the project. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The name of the organization that the project belongs to. |
 
 ---
 
@@ -929,22 +851,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}.
+The name of the project.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#name DataTfeProject#name}
 
 ---
 
@@ -956,31 +865,9 @@ public java.lang.String getOrganization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}.
+The name of the organization that the project belongs to.
 
----
-
-##### `workspaceIds`<sup>Optional</sup> <a name="workspaceIds" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceIds"></a>
-
-```java
-public java.util.List<java.lang.String> getWorkspaceIds();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}.
-
----
-
-##### `workspaceNames`<sup>Optional</sup> <a name="workspaceNames" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceNames"></a>
-
-```java
-public java.util.List<java.lang.String> getWorkspaceNames();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#organization DataTfeProject#organization}
 
 ---
 

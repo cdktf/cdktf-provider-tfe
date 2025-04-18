@@ -4,7 +4,7 @@
 
 ### NotificationConfiguration <a name="NotificationConfiguration" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration tfe_notification_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration tfe_notification_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer"></a>
 
@@ -30,8 +30,8 @@ NotificationConfiguration.Builder.create(Construct scope, java.lang.String id)
 //  .emailUserIds(java.util.List<java.lang.String>)
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
-//  .id(java.lang.String)
 //  .token(java.lang.String)
+//  .tokenWo(java.lang.String)
 //  .triggers(java.util.List<java.lang.String>)
 //  .url(java.lang.String)
     .build();
@@ -48,16 +48,16 @@ NotificationConfiguration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#name NotificationConfiguration#name}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.emailAddresses">emailAddresses</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.emailUserIds">emailUserIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#id NotificationConfiguration#id}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#token NotificationConfiguration#token}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.triggers">triggers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#url NotificationConfiguration#url}. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.destinationType">destinationType</a></code> | <code>java.lang.String</code> | The type of notification configuration payload to send. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the notification configuration. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | The ID of the workspace that owns the notification configuration. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.emailAddresses">emailAddresses</a></code> | <code>java.util.List<java.lang.String></code> | A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.emailUserIds">emailUserIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.tokenWo">tokenWo</a></code> | <code>java.lang.String</code> | Value of the token in write-only mode. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.triggers">triggers</a></code> | <code>java.util.List<java.lang.String></code> | The array of triggers for which this notification configuration will send notifications. If omitted, no notification triggers are configured. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | The HTTP or HTTPS URL where notification requests will be made. |
 
 ---
 
@@ -125,7 +125,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}.
+The type of notification configuration payload to send.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}
 
 ---
 
@@ -133,7 +135,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#name NotificationConfiguration#name}.
+Name of the notification configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#name NotificationConfiguration#name}
 
 ---
 
@@ -141,7 +145,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}.
+The ID of the workspace that owns the notification configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
 
 ---
 
@@ -149,7 +155,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}.
+A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
 
 ---
 
@@ -157,7 +165,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}.
+A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
 
 ---
 
@@ -165,18 +175,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}.
+Whether the notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#id NotificationConfiguration#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}
 
 ---
 
@@ -184,7 +185,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#token NotificationConfiguration#token}.
+A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`.
+
+Defaults to `null`. This value *must not* be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#token NotificationConfiguration#token}
+
+---
+
+##### `tokenWo`<sup>Optional</sup> <a name="tokenWo" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.Initializer.parameter.tokenWo"></a>
+
+- *Type:* java.lang.String
+
+Value of the token in write-only mode.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#token_wo NotificationConfiguration#token_wo}
 
 ---
 
@@ -192,7 +207,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}.
+The array of triggers for which this notification configuration will send notifications. If omitted, no notification triggers are configured.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}
 
 ---
 
@@ -200,7 +217,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#url NotificationConfiguration#url}.
+The HTTP or HTTPS URL where notification requests will be made.
+
+This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#url NotificationConfiguration#url}
 
 ---
 
@@ -234,8 +255,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetEmailAddresses">resetEmailAddresses</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetEmailUserIds">resetEmailUserIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetEnabled">resetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetToken">resetToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetTokenWo">resetTokenWo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetTriggers">resetTriggers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetUrl">resetUrl</a></code> | *No description.* |
 
@@ -549,16 +570,16 @@ public void resetEmailUserIds()
 public void resetEnabled()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetToken` <a name="resetToken" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetToken"></a>
 
 ```java
 public void resetToken()
+```
+
+##### `resetTokenWo` <a name="resetTokenWo" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetTokenWo"></a>
+
+```java
+public void resetTokenWo()
 ```
 
 ##### `resetTriggers` <a name="resetTriggers" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.resetTriggers"></a>
@@ -676,7 +697,7 @@ The construct id used in the generated config for the NotificationConfiguration 
 
 The id of the existing NotificationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,13 +727,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.destinationTypeInput">destinationTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.emailAddressesInput">emailAddressesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.emailUserIdsInput">emailUserIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.tokenWoInput">tokenWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.triggersInput">triggersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.workspaceIdInput">workspaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -720,9 +742,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.emailAddresses">emailAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.emailUserIds">emailUserIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.tokenWo">tokenWo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.triggers">triggers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -871,6 +893,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `destinationTypeInput`<sup>Optional</sup> <a name="destinationTypeInput" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.destinationTypeInput"></a>
 
 ```java
@@ -911,16 +943,6 @@ public java.lang.Object getEnabledInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.nameInput"></a>
 
 ```java
@@ -935,6 +957,16 @@ public java.lang.String getNameInput();
 
 ```java
 public java.lang.String getTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tokenWoInput`<sup>Optional</sup> <a name="tokenWoInput" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.tokenWoInput"></a>
+
+```java
+public java.lang.String getTokenWoInput();
 ```
 
 - *Type:* java.lang.String
@@ -1011,16 +1043,6 @@ public java.lang.Object getEnabled();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.name"></a>
 
 ```java
@@ -1035,6 +1057,16 @@ public java.lang.String getName();
 
 ```java
 public java.lang.String getToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tokenWo`<sup>Required</sup> <a name="tokenWo" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration.property.tokenWo"></a>
+
+```java
+public java.lang.String getTokenWo();
 ```
 
 - *Type:* java.lang.String
@@ -1117,8 +1149,8 @@ NotificationConfigurationConfig.builder()
 //  .emailUserIds(java.util.List<java.lang.String>)
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
-//  .id(java.lang.String)
 //  .token(java.lang.String)
+//  .tokenWo(java.lang.String)
 //  .triggers(java.util.List<java.lang.String>)
 //  .url(java.lang.String)
     .build();
@@ -1135,16 +1167,16 @@ NotificationConfigurationConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#name NotificationConfiguration#name}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.emailAddresses">emailAddresses</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.emailUserIds">emailUserIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#id NotificationConfiguration#id}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#token NotificationConfiguration#token}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.triggers">triggers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}. |
-| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#url NotificationConfiguration#url}. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | The type of notification configuration payload to send. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the notification configuration. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | The ID of the workspace that owns the notification configuration. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.emailAddresses">emailAddresses</a></code> | <code>java.util.List<java.lang.String></code> | A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.emailUserIds">emailUserIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.token">token</a></code> | <code>java.lang.String</code> | A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.tokenWo">tokenWo</a></code> | <code>java.lang.String</code> | Value of the token in write-only mode. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.triggers">triggers</a></code> | <code>java.util.List<java.lang.String></code> | The array of triggers for which this notification configuration will send notifications. If omitted, no notification triggers are configured. |
+| <code><a href="#@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.url">url</a></code> | <code>java.lang.String</code> | The HTTP or HTTPS URL where notification requests will be made. |
 
 ---
 
@@ -1226,7 +1258,9 @@ public java.lang.String getDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}.
+The type of notification configuration payload to send.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}
 
 ---
 
@@ -1238,7 +1272,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#name NotificationConfiguration#name}.
+Name of the notification configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#name NotificationConfiguration#name}
 
 ---
 
@@ -1250,7 +1286,9 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}.
+The ID of the workspace that owns the notification configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
 
 ---
 
@@ -1262,7 +1300,9 @@ public java.util.List<java.lang.String> getEmailAddresses();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}.
+A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
 
 ---
 
@@ -1274,7 +1314,9 @@ public java.util.List<java.lang.String> getEmailUserIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}.
+A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
 
 ---
 
@@ -1286,22 +1328,9 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}.
+Whether the notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#id NotificationConfiguration#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}
 
 ---
 
@@ -1313,7 +1342,25 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#token NotificationConfiguration#token}.
+A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`.
+
+Defaults to `null`. This value *must not* be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#token NotificationConfiguration#token}
+
+---
+
+##### `tokenWo`<sup>Optional</sup> <a name="tokenWo" id="@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig.property.tokenWo"></a>
+
+```java
+public java.lang.String getTokenWo();
+```
+
+- *Type:* java.lang.String
+
+Value of the token in write-only mode.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#token_wo NotificationConfiguration#token_wo}
 
 ---
 
@@ -1325,7 +1372,9 @@ public java.util.List<java.lang.String> getTriggers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}.
+The array of triggers for which this notification configuration will send notifications. If omitted, no notification triggers are configured.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}
 
 ---
 
@@ -1337,7 +1386,11 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/notification_configuration#url NotificationConfiguration#url}.
+The HTTP or HTTPS URL where notification requests will be made.
+
+This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/notification_configuration#url NotificationConfiguration#url}
 
 ---
 

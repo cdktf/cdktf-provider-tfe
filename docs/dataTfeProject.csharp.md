@@ -4,7 +4,7 @@
 
 ### DataTfeProject <a name="DataTfeProject" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer"></a>
 
@@ -67,10 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetOrganization">ResetOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceIds">ResetWorkspaceIds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceNames">ResetWorkspaceNames</a></code> | *No description.* |
 
 ---
 
@@ -266,28 +263,10 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetOrganization` <a name="ResetOrganization" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetOrganization"></a>
 
 ```csharp
 private void ResetOrganization()
-```
-
-##### `ResetWorkspaceIds` <a name="ResetWorkspaceIds" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceIds"></a>
-
-```csharp
-private void ResetWorkspaceIds()
-```
-
-##### `ResetWorkspaceNames` <a name="ResetWorkspaceNames" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.resetWorkspaceNames"></a>
-
-```csharp
-private void ResetWorkspaceNames()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -393,7 +372,7 @@ The construct id used in the generated config for the DataTfeProject to import.
 
 The id of the existing DataTfeProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,16 +402,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceIdsInput">WorkspaceIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceNamesInput">WorkspaceNamesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.effectiveTags">EffectiveTags</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceIds">WorkspaceIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceNames">WorkspaceNames</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -578,53 +555,13 @@ public string Description { get; }
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.idInput"></a>
+##### `EffectiveTags`<sup>Required</sup> <a name="EffectiveTags" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.effectiveTags"></a>
 
 ```csharp
-public string IdInput { get; }
+public StringMap EffectiveTags { get; }
 ```
 
-- *Type:* string
-
----
-
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput"></a>
-
-```csharp
-public string NameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput"></a>
-
-```csharp
-public string OrganizationInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `WorkspaceIdsInput`<sup>Optional</sup> <a name="WorkspaceIdsInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceIdsInput"></a>
-
-```csharp
-public string[] WorkspaceIdsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `WorkspaceNamesInput`<sup>Optional</sup> <a name="WorkspaceNamesInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.workspaceNamesInput"></a>
-
-```csharp
-public string[] WorkspaceNamesInput { get; }
-```
-
-- *Type:* string[]
+- *Type:* HashiCorp.Cdktf.StringMap
 
 ---
 
@@ -632,26 +569,6 @@ public string[] WorkspaceNamesInput { get; }
 
 ```csharp
 public string Id { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name"></a>
-
-```csharp
-public string Name { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization"></a>
-
-```csharp
-public string Organization { get; }
 ```
 
 - *Type:* string
@@ -675,6 +592,46 @@ public string[] WorkspaceNames { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organizationInput"></a>
+
+```csharp
+public string OrganizationInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.property.organization"></a>
+
+```csharp
+public string Organization { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -714,10 +671,7 @@ new DataTfeProjectConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Name,
-    string Id = null,
-    string Organization = null,
-    string[] WorkspaceIds = null,
-    string[] WorkspaceNames = null
+    string Organization = null
 };
 ```
 
@@ -732,11 +686,8 @@ new DataTfeProjectConfig {
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceIds">WorkspaceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceNames">WorkspaceNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.name">Name</a></code> | <code>string</code> | The name of the project. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.organization">Organization</a></code> | <code>string</code> | The name of the organization that the project belongs to. |
 
 ---
 
@@ -818,22 +769,9 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#name DataTfeProject#name}.
+The name of the project.
 
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#id DataTfeProject#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#name DataTfeProject#name}
 
 ---
 
@@ -845,31 +783,9 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#organization DataTfeProject#organization}.
+The name of the organization that the project belongs to.
 
----
-
-##### `WorkspaceIds`<sup>Optional</sup> <a name="WorkspaceIds" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceIds"></a>
-
-```csharp
-public string[] WorkspaceIds { get; set; }
-```
-
-- *Type:* string[]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_ids DataTfeProject#workspace_ids}.
-
----
-
-##### `WorkspaceNames`<sup>Optional</sup> <a name="WorkspaceNames" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProjectConfig.property.workspaceNames"></a>
-
-```csharp
-public string[] WorkspaceNames { get; set; }
-```
-
-- *Type:* string[]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/data-sources/project#workspace_names DataTfeProject#workspace_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#organization DataTfeProject#organization}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TeamNotificationConfiguration <a name="TeamNotificationConfiguration" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration tfe_team_notification_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration tfe_team_notification_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer"></a>
 
@@ -28,6 +28,7 @@ teamNotificationConfiguration.TeamNotificationConfiguration(
   email_user_ids: typing.List[str] = None,
   enabled: typing.Union[bool, IResolvable] = None,
   token: str = None,
+  token_wo: str = None,
   triggers: typing.List[str] = None,
   url: str = None
 )
@@ -51,6 +52,7 @@ teamNotificationConfiguration.TeamNotificationConfiguration(
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.emailUserIds">email_user_ids</a></code> | <code>typing.List[str]</code> | A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the team notification configuration should be enabled or not. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.token">token</a></code> | <code>str</code> | A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. |
+| <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.tokenWo">token_wo</a></code> | <code>str</code> | A write-only secure token for the notification configuration, guaranteed not to be written to plan or state artifacts. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.triggers">triggers</a></code> | <code>typing.List[str]</code> | The array of triggers for which this team notification configuration will send notifications. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.url">url</a></code> | <code>str</code> | The HTTP or HTTPS URL where notification requests will be made. |
 
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The type of notification configuration payload to send.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the team notification configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the team that owns the notification configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
 
 ---
 
@@ -174,7 +176,7 @@ Whether the team notification configuration should be enabled or not.
 
 Disabled configurations will not send any notifications. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
 
 ---
 
@@ -186,7 +188,17 @@ A write-only secure token for the notification configuration, which can be used 
 
 Defaults to `null`. This value *must not* be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
+
+---
+
+##### `token_wo`<sup>Optional</sup> <a name="token_wo" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer.parameter.tokenWo"></a>
+
+- *Type:* str
+
+A write-only secure token for the notification configuration, guaranteed not to be written to plan or state artifacts.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#token_wo TeamNotificationConfiguration#token_wo}
 
 ---
 
@@ -198,7 +210,7 @@ The array of triggers for which this team notification configuration will send n
 
 If omitted, no notification triggers are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
 
 ---
 
@@ -210,7 +222,7 @@ The HTTP or HTTPS URL where notification requests will be made.
 
 This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
 
 ---
 
@@ -245,6 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetEmailUserIds">reset_email_user_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetToken">reset_token</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetTokenWo">reset_token_wo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetTriggers">reset_triggers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetUrl">reset_url</a></code> | *No description.* |
 
@@ -599,6 +612,12 @@ def reset_enabled() -> None
 def reset_token() -> None
 ```
 
+##### `reset_token_wo` <a name="reset_token_wo" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetTokenWo"></a>
+
+```python
+def reset_token_wo() -> None
+```
+
 ##### `reset_triggers` <a name="reset_triggers" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.resetTriggers"></a>
 
 ```python
@@ -725,7 +744,7 @@ The construct id used in the generated config for the TeamNotificationConfigurat
 
 The id of the existing TeamNotificationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -763,6 +782,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.teamIdInput">team_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.tokenWoInput">token_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.triggersInput">triggers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.destinationType">destination_type</a></code> | <code>str</code> | *No description.* |
@@ -772,6 +792,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.teamId">team_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.token">token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.tokenWo">token_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.triggers">triggers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.url">url</a></code> | <code>str</code> | *No description.* |
 
@@ -999,6 +1020,16 @@ token_input: str
 
 ---
 
+##### `token_wo_input`<sup>Optional</sup> <a name="token_wo_input" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.tokenWoInput"></a>
+
+```python
+token_wo_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `triggers_input`<sup>Optional</sup> <a name="triggers_input" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.triggersInput"></a>
 
 ```python
@@ -1089,6 +1120,16 @@ token: str
 
 ---
 
+##### `token_wo`<sup>Required</sup> <a name="token_wo" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.tokenWo"></a>
+
+```python
+token_wo: str
+```
+
+- *Type:* str
+
+---
+
 ##### `triggers`<sup>Required</sup> <a name="triggers" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.property.triggers"></a>
 
 ```python
@@ -1151,6 +1192,7 @@ teamNotificationConfiguration.TeamNotificationConfigurationConfig(
   email_user_ids: typing.List[str] = None,
   enabled: typing.Union[bool, IResolvable] = None,
   token: str = None,
+  token_wo: str = None,
   triggers: typing.List[str] = None,
   url: str = None
 )
@@ -1174,6 +1216,7 @@ teamNotificationConfiguration.TeamNotificationConfigurationConfig(
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.emailUserIds">email_user_ids</a></code> | <code>typing.List[str]</code> | A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the team notification configuration should be enabled or not. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.token">token</a></code> | <code>str</code> | A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. |
+| <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.tokenWo">token_wo</a></code> | <code>str</code> | A write-only secure token for the notification configuration, guaranteed not to be written to plan or state artifacts. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.triggers">triggers</a></code> | <code>typing.List[str]</code> | The array of triggers for which this team notification configuration will send notifications. |
 | <code><a href="#@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.url">url</a></code> | <code>str</code> | The HTTP or HTTPS URL where notification requests will be made. |
 
@@ -1259,7 +1302,7 @@ destination_type: str
 
 The type of notification configuration payload to send.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#destination_type TeamNotificationConfiguration#destination_type}
 
 ---
 
@@ -1273,7 +1316,7 @@ name: str
 
 Name of the team notification configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#name TeamNotificationConfiguration#name}
 
 ---
 
@@ -1287,7 +1330,7 @@ team_id: str
 
 The ID of the team that owns the notification configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#team_id TeamNotificationConfiguration#team_id}
 
 ---
 
@@ -1301,7 +1344,7 @@ email_addresses: typing.List[str]
 
 A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#email_addresses TeamNotificationConfiguration#email_addresses}
 
 ---
 
@@ -1315,7 +1358,7 @@ email_user_ids: typing.List[str]
 
 A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#email_user_ids TeamNotificationConfiguration#email_user_ids}
 
 ---
 
@@ -1331,7 +1374,7 @@ Whether the team notification configuration should be enabled or not.
 
 Disabled configurations will not send any notifications. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#enabled TeamNotificationConfiguration#enabled}
 
 ---
 
@@ -1347,7 +1390,21 @@ A write-only secure token for the notification configuration, which can be used 
 
 Defaults to `null`. This value *must not* be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#token TeamNotificationConfiguration#token}
+
+---
+
+##### `token_wo`<sup>Optional</sup> <a name="token_wo" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.property.tokenWo"></a>
+
+```python
+token_wo: str
+```
+
+- *Type:* str
+
+A write-only secure token for the notification configuration, guaranteed not to be written to plan or state artifacts.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#token_wo TeamNotificationConfiguration#token_wo}
 
 ---
 
@@ -1363,7 +1420,7 @@ The array of triggers for which this team notification configuration will send n
 
 If omitted, no notification triggers are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#triggers TeamNotificationConfiguration#triggers}
 
 ---
 
@@ -1379,7 +1436,7 @@ The HTTP or HTTPS URL where notification requests will be made.
 
 This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/team_notification_configuration#url TeamNotificationConfiguration#url}
 
 ---
 

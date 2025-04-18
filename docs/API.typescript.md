@@ -28,6 +28,7 @@ The following submodules are available:
 - [dataTfeProjects](./dataTfeProjects.typescript.md)
 - [dataTfeRegistryGpgKey](./dataTfeRegistryGpgKey.typescript.md)
 - [dataTfeRegistryGpgKeys](./dataTfeRegistryGpgKeys.typescript.md)
+- [dataTfeRegistryModule](./dataTfeRegistryModule.typescript.md)
 - [dataTfeRegistryProvider](./dataTfeRegistryProvider.typescript.md)
 - [dataTfeRegistryProviders](./dataTfeRegistryProviders.typescript.md)
 - [dataTfeSamlSettings](./dataTfeSamlSettings.typescript.md)

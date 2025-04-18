@@ -4,7 +4,7 @@
 
 ### SamlSettings <a name="SamlSettings" id="@cdktf/provider-tfe.samlSettings.SamlSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings tfe_saml_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings tfe_saml_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetCertificate">ResetCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetDebug">ResetDebug</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetPrivateKeyWo">ResetPrivateKeyWo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetSignatureDigestMethod">ResetSignatureDigestMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetSignatureSigningMethod">ResetSignatureSigningMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.resetSiteAdminRole">ResetSiteAdminRole</a></code> | *No description.* |
@@ -419,6 +420,12 @@ func ResetDebug()
 func ResetPrivateKey()
 ```
 
+##### `ResetPrivateKeyWo` <a name="ResetPrivateKeyWo" id="@cdktf/provider-tfe.samlSettings.SamlSettings.resetPrivateKeyWo"></a>
+
+```go
+func ResetPrivateKeyWo()
+```
+
 ##### `ResetSignatureDigestMethod` <a name="ResetSignatureDigestMethod" id="@cdktf/provider-tfe.samlSettings.SamlSettings.resetSignatureDigestMethod"></a>
 
 ```go
@@ -558,7 +565,7 @@ The construct id used in the generated config for the SamlSettings to import.
 
 The id of the existing SamlSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,6 +608,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput">DebugInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.idpCertInput">IdpCertInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyInput">PrivateKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWoInput">PrivateKeyWoInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.signatureDigestMethodInput">SignatureDigestMethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.signatureSigningMethodInput">SignatureSigningMethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.siteAdminRoleInput">SiteAdminRoleInput</a></code> | <code>*string</code> | *No description.* |
@@ -617,6 +625,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug">Debug</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.idpCert">IdpCert</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWo">PrivateKeyWo</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.signatureDigestMethod">SignatureDigestMethod</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.signatureSigningMethod">SignatureSigningMethod</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.siteAdminRole">SiteAdminRole</a></code> | <code>*string</code> | *No description.* |
@@ -900,6 +909,16 @@ func PrivateKeyInput() *string
 
 ---
 
+##### `PrivateKeyWoInput`<sup>Optional</sup> <a name="PrivateKeyWoInput" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWoInput"></a>
+
+```go
+func PrivateKeyWoInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SignatureDigestMethodInput`<sup>Optional</sup> <a name="SignatureDigestMethodInput" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.signatureDigestMethodInput"></a>
 
 ```go
@@ -1060,6 +1079,16 @@ func PrivateKey() *string
 
 ---
 
+##### `PrivateKeyWo`<sup>Required</sup> <a name="PrivateKeyWo" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWo"></a>
+
+```go
+func PrivateKeyWo() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SignatureDigestMethod`<sup>Required</sup> <a name="SignatureDigestMethod" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.signatureDigestMethod"></a>
 
 ```go
@@ -1185,6 +1214,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/samlsettings"
 	Certificate: *string,
 	Debug: interface{},
 	PrivateKey: *string,
+	PrivateKeyWo: *string,
 	SignatureDigestMethod: *string,
 	SignatureSigningMethod: *string,
 	SiteAdminRole: *string,
@@ -1215,6 +1245,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/samlsettings"
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.certificate">Certificate</a></code> | <code>*string</code> | The certificate used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug">Debug</a></code> | <code>interface{}</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The private key used for request and assertion signing. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKeyWo">PrivateKeyWo</a></code> | <code>*string</code> | The private key in write-only mode used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.signatureDigestMethod">SignatureDigestMethod</a></code> | <code>*string</code> | Signature Digest Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.signatureSigningMethod">SignatureSigningMethod</a></code> | <code>*string</code> | Signature Signing Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.siteAdminRole">SiteAdminRole</a></code> | <code>*string</code> | Specifies the role for site admin access, provided in the list of roles sent in the Team Attribute Name attribute. |
@@ -1304,7 +1335,7 @@ IdpCert *string
 
 Identity Provider Certificate specifies the PEM encoded X.509 Certificate as provided by the IdP configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#idp_cert SamlSettings#idp_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#idp_cert SamlSettings#idp_cert}
 
 ---
 
@@ -1320,7 +1351,7 @@ Single Log Out URL specifies the HTTPS endpoint on your IdP for single logout re
 
 This value is provided by the IdP configuration
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#slo_endpoint_url SamlSettings#slo_endpoint_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#slo_endpoint_url SamlSettings#slo_endpoint_url}
 
 ---
 
@@ -1336,7 +1367,7 @@ Single Sign On URL specifies the HTTPS endpoint on your IdP for single sign-on r
 
 This value is provided by the IdP configuration
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#sso_endpoint_url SamlSettings#sso_endpoint_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#sso_endpoint_url SamlSettings#sso_endpoint_url}
 
 ---
 
@@ -1350,7 +1381,7 @@ AttrGroups *string
 
 Team Attribute Name specifies the name of the SAML attribute that determines team membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#attr_groups SamlSettings#attr_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#attr_groups SamlSettings#attr_groups}
 
 ---
 
@@ -1364,7 +1395,7 @@ AttrSiteAdmin *string
 
 Specifies the role for site admin access. Overrides the "Site Admin Role" method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#attr_site_admin SamlSettings#attr_site_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#attr_site_admin SamlSettings#attr_site_admin}
 
 ---
 
@@ -1378,7 +1409,7 @@ AttrUsername *string
 
 Username Attribute Name specifies the name of the SAML attribute that determines the user's username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#attr_username SamlSettings#attr_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#attr_username SamlSettings#attr_username}
 
 ---
 
@@ -1392,7 +1423,7 @@ AuthnRequestsSigned interface{}
 
 Ensure that <samlp:AuthnRequest> messages are signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#authn_requests_signed SamlSettings#authn_requests_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#authn_requests_signed SamlSettings#authn_requests_signed}
 
 ---
 
@@ -1406,7 +1437,7 @@ Certificate *string
 
 The certificate used for request and assertion signing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#certificate SamlSettings#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#certificate SamlSettings#certificate}
 
 ---
 
@@ -1420,7 +1451,7 @@ Debug interface{}
 
 When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#debug SamlSettings#debug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#debug SamlSettings#debug}
 
 ---
 
@@ -1434,7 +1465,21 @@ PrivateKey *string
 
 The private key used for request and assertion signing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#private_key SamlSettings#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#private_key SamlSettings#private_key}
+
+---
+
+##### `PrivateKeyWo`<sup>Optional</sup> <a name="PrivateKeyWo" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKeyWo"></a>
+
+```go
+PrivateKeyWo *string
+```
+
+- *Type:* *string
+
+The private key in write-only mode used for request and assertion signing.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#private_key_wo SamlSettings#private_key_wo}
 
 ---
 
@@ -1448,7 +1493,7 @@ SignatureDigestMethod *string
 
 Signature Digest Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#signature_digest_method SamlSettings#signature_digest_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#signature_digest_method SamlSettings#signature_digest_method}
 
 ---
 
@@ -1462,7 +1507,7 @@ SignatureSigningMethod *string
 
 Signature Signing Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#signature_signing_method SamlSettings#signature_signing_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#signature_signing_method SamlSettings#signature_signing_method}
 
 ---
 
@@ -1476,7 +1521,7 @@ SiteAdminRole *string
 
 Specifies the role for site admin access, provided in the list of roles sent in the Team Attribute Name attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#site_admin_role SamlSettings#site_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#site_admin_role SamlSettings#site_admin_role}
 
 ---
 
@@ -1490,7 +1535,7 @@ SsoApiTokenSessionTimeout *f64
 
 Specifies the Single Sign On session timeout in seconds. Defaults to 14 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#sso_api_token_session_timeout SamlSettings#sso_api_token_session_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#sso_api_token_session_timeout SamlSettings#sso_api_token_session_timeout}
 
 ---
 
@@ -1504,7 +1549,7 @@ TeamManagementEnabled interface{}
 
 Set it to false if you would rather use Terraform Enterprise to manage team membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#team_management_enabled SamlSettings#team_management_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#team_management_enabled SamlSettings#team_management_enabled}
 
 ---
 
@@ -1518,7 +1563,7 @@ WantAssertionsSigned interface{}
 
 Ensure that <saml:Assertion> elements are signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/saml_settings#want_assertions_signed SamlSettings#want_assertions_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/saml_settings#want_assertions_signed SamlSettings#want_assertions_signed}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Variable <a name="Variable" id="@cdktf/provider-tfe.variable.Variable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable tfe_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable tfe_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.variable.Variable.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.resetHcl">ResetHcl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.resetSensitive">ResetSensitive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.resetValue">ResetValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variable.Variable.resetValueWo">ResetValueWo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.resetVariableSetId">ResetVariableSetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
@@ -394,6 +395,12 @@ func ResetSensitive()
 func ResetValue()
 ```
 
+##### `ResetValueWo` <a name="ResetValueWo" id="@cdktf/provider-tfe.variable.Variable.resetValueWo"></a>
+
+```go
+func ResetValueWo()
+```
+
 ##### `ResetVariableSetId` <a name="ResetVariableSetId" id="@cdktf/provider-tfe.variable.Variable.resetVariableSetId"></a>
 
 ```go
@@ -509,7 +516,7 @@ The construct id used in the generated config for the Variable to import.
 
 The id of the existing Variable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,6 +554,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.sensitiveInput">SensitiveInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variable.Variable.property.valueWoInput">ValueWoInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.variableSetIdInput">VariableSetIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.category">Category</a></code> | <code>*string</code> | *No description.* |
@@ -555,6 +563,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.variable.Variable.property.valueWo">ValueWo</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.variableSetId">VariableSetId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.Variable.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
 
@@ -782,6 +791,16 @@ func ValueInput() *string
 
 ---
 
+##### `ValueWoInput`<sup>Optional</sup> <a name="ValueWoInput" id="@cdktf/provider-tfe.variable.Variable.property.valueWoInput"></a>
+
+```go
+func ValueWoInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `VariableSetIdInput`<sup>Optional</sup> <a name="VariableSetIdInput" id="@cdktf/provider-tfe.variable.Variable.property.variableSetIdInput"></a>
 
 ```go
@@ -862,6 +881,16 @@ func Value() *string
 
 ---
 
+##### `ValueWo`<sup>Required</sup> <a name="ValueWo" id="@cdktf/provider-tfe.variable.Variable.property.valueWo"></a>
+
+```go
+func ValueWo() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `VariableSetId`<sup>Required</sup> <a name="VariableSetId" id="@cdktf/provider-tfe.variable.Variable.property.variableSetId"></a>
 
 ```go
@@ -923,6 +952,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/variable"
 	Hcl: interface{},
 	Sensitive: interface{},
 	Value: *string,
+	ValueWo: *string,
 	VariableSetId: *string,
 	WorkspaceId: *string,
 }
@@ -941,12 +971,13 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/variable"
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.category">Category</a></code> | <code>*string</code> | Whether this is a Terraform or environment variable. Valid values are "terraform" or "env". |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.key">Key</a></code> | <code>*string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#description Variable#description}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.hcl">Hcl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#hcl Variable#hcl}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#sensitive Variable#sensitive}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#description Variable#description}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.hcl">Hcl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#hcl Variable#hcl}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.sensitive">Sensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#sensitive Variable#sensitive}. |
 | <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.value">Value</a></code> | <code>*string</code> | Value of the variable. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.variableSetId">VariableSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#variable_set_id Variable#variable_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#workspace_id Variable#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.valueWo">ValueWo</a></code> | <code>*string</code> | Value of the variable in write-only mode. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.variableSetId">VariableSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#variable_set_id Variable#variable_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.variable.VariableConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#workspace_id Variable#workspace_id}. |
 
 ---
 
@@ -1030,7 +1061,7 @@ Category *string
 
 Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#category Variable#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#category Variable#category}
 
 ---
 
@@ -1044,7 +1075,7 @@ Key *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#key Variable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#key Variable#key}
 
 ---
 
@@ -1056,7 +1087,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#description Variable#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#description Variable#description}.
 
 ---
 
@@ -1068,7 +1099,7 @@ Hcl interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#hcl Variable#hcl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#hcl Variable#hcl}.
 
 ---
 
@@ -1080,7 +1111,7 @@ Sensitive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#sensitive Variable#sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#sensitive Variable#sensitive}.
 
 ---
 
@@ -1094,7 +1125,21 @@ Value *string
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#value Variable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#value Variable#value}
+
+---
+
+##### `ValueWo`<sup>Optional</sup> <a name="ValueWo" id="@cdktf/provider-tfe.variable.VariableConfig.property.valueWo"></a>
+
+```go
+ValueWo *string
+```
+
+- *Type:* *string
+
+Value of the variable in write-only mode.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#value_wo Variable#value_wo}
 
 ---
 
@@ -1106,7 +1151,7 @@ VariableSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#variable_set_id Variable#variable_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#variable_set_id Variable#variable_set_id}.
 
 ---
 
@@ -1118,7 +1163,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/variable#workspace_id Variable#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/variable#workspace_id Variable#workspace_id}.
 
 ---
 

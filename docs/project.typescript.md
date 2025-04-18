@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-tfe.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
@@ -75,8 +75,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.project.Project.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetAutoDestroyActivityDuration">resetAutoDestroyActivityDuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetIgnoreAdditionalTags">resetIgnoreAdditionalTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetOrganization">resetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
@@ -380,16 +381,22 @@ public resetAutoDestroyActivityDuration(): void
 public resetDescription(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-tfe.project.Project.resetId"></a>
+##### `resetIgnoreAdditionalTags` <a name="resetIgnoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.resetIgnoreAdditionalTags"></a>
 
 ```typescript
-public resetId(): void
+public resetIgnoreAdditionalTags(): void
 ```
 
 ##### `resetOrganization` <a name="resetOrganization" id="@cdktf/provider-tfe.project.Project.resetOrganization"></a>
 
 ```typescript
 public resetOrganization(): void
+```
+
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-tfe.project.Project.resetTags"></a>
+
+```typescript
+public resetTags(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -495,7 +502,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,16 +532,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput">autoDestroyActivityDurationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTagsInput">ignoreAdditionalTagsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organizationInput">organizationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organization">organization</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -680,6 +690,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.project.Project.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `autoDestroyActivityDurationInput`<sup>Optional</sup> <a name="autoDestroyActivityDurationInput" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput"></a>
 
 ```typescript
@@ -700,13 +720,13 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-tfe.project.Project.property.idInput"></a>
+##### `ignoreAdditionalTagsInput`<sup>Optional</sup> <a name="ignoreAdditionalTagsInput" id="@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTagsInput"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly ignoreAdditionalTagsInput: boolean | IResolvable;
 ```
 
-- *Type:* string
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -730,6 +750,16 @@ public readonly organizationInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-tfe.project.Project.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `autoDestroyActivityDuration`<sup>Required</sup> <a name="autoDestroyActivityDuration" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration"></a>
 
 ```typescript
@@ -750,13 +780,13 @@ public readonly description: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.project.Project.property.id"></a>
+##### `ignoreAdditionalTags`<sup>Required</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTags"></a>
 
 ```typescript
-public readonly id: string;
+public readonly ignoreAdditionalTags: boolean | IResolvable;
 ```
 
-- *Type:* string
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -777,6 +807,16 @@ public readonly organization: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-tfe.project.Project.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -821,11 +861,12 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">name</a></code> | <code>string</code> | Name of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>string</code> | Duration after which the project will be auto-destroyed. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">description</a></code> | <code>string</code> | Description of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">organization</a></code> | <code>string</code> | Name of the organization to which the project belongs. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | A map of key-value tags to add to the project. |
 
 ---
 
@@ -907,7 +948,9 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}.
+Name of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -919,7 +962,9 @@ public readonly autoDestroyActivityDuration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}.
+Duration after which the project will be auto-destroyed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
 
 ---
 
@@ -931,22 +976,23 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}.
+Description of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#description Project#description}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.project.ProjectConfig.property.id"></a>
+##### `ignoreAdditionalTags`<sup>Optional</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.project.ProjectConfig.property.ignoreAdditionalTags"></a>
 
 ```typescript
-public readonly id: string;
+public readonly ignoreAdditionalTags: boolean | IResolvable;
 ```
 
-- *Type:* string
+- *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}.
+Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
 
 ---
 
@@ -958,7 +1004,23 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}.
+Name of the organization to which the project belongs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#organization Project#organization}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-tfe.project.ProjectConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+A map of key-value tags to add to the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#tags Project#tags}
 
 ---
 

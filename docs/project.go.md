@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-tfe.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
@@ -75,8 +75,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.project.Project.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetAutoDestroyActivityDuration">ResetAutoDestroyActivityDuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetIgnoreAdditionalTags">ResetIgnoreAdditionalTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.resetOrganization">ResetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
@@ -380,16 +381,22 @@ func ResetAutoDestroyActivityDuration()
 func ResetDescription()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-tfe.project.Project.resetId"></a>
+##### `ResetIgnoreAdditionalTags` <a name="ResetIgnoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.resetIgnoreAdditionalTags"></a>
 
 ```go
-func ResetId()
+func ResetIgnoreAdditionalTags()
 ```
 
 ##### `ResetOrganization` <a name="ResetOrganization" id="@cdktf/provider-tfe.project.Project.resetOrganization"></a>
 
 ```go
 func ResetOrganization()
+```
+
+##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-tfe.project.Project.resetTags"></a>
+
+```go
+func ResetTags()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -495,7 +502,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,16 +532,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput">AutoDestroyActivityDurationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTagsInput">IgnoreAdditionalTagsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.Project.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTags">IgnoreAdditionalTags</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.Project.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.project.Project.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
@@ -680,6 +690,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.project.Project.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AutoDestroyActivityDurationInput`<sup>Optional</sup> <a name="AutoDestroyActivityDurationInput" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDurationInput"></a>
 
 ```go
@@ -700,13 +720,13 @@ func DescriptionInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.project.Project.property.idInput"></a>
+##### `IgnoreAdditionalTagsInput`<sup>Optional</sup> <a name="IgnoreAdditionalTagsInput" id="@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTagsInput"></a>
 
 ```go
-func IdInput() *string
+func IgnoreAdditionalTagsInput() interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
 ---
 
@@ -730,6 +750,16 @@ func OrganizationInput() *string
 
 ---
 
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-tfe.project.Project.property.tagsInput"></a>
+
+```go
+func TagsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
 ##### `AutoDestroyActivityDuration`<sup>Required</sup> <a name="AutoDestroyActivityDuration" id="@cdktf/provider-tfe.project.Project.property.autoDestroyActivityDuration"></a>
 
 ```go
@@ -750,13 +780,13 @@ func Description() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.project.Project.property.id"></a>
+##### `IgnoreAdditionalTags`<sup>Required</sup> <a name="IgnoreAdditionalTags" id="@cdktf/provider-tfe.project.Project.property.ignoreAdditionalTags"></a>
 
 ```go
-func Id() *string
+func IgnoreAdditionalTags() interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
 ---
 
@@ -777,6 +807,16 @@ func Organization() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-tfe.project.Project.property.tags"></a>
+
+```go
+func Tags() *map[string]*string
+```
+
+- *Type:* *map[string]*string
 
 ---
 
@@ -818,8 +858,9 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
 	Name: *string,
 	AutoDestroyActivityDuration: *string,
 	Description: *string,
-	Id: *string,
+	IgnoreAdditionalTags: interface{},
 	Organization: *string,
+	Tags: *map[string]*string,
 }
 ```
 
@@ -834,11 +875,12 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/project"
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.name">Name</a></code> | <code>*string</code> | Name of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>*string</code> | Duration after which the project will be auto-destroyed. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.description">Description</a></code> | <code>*string</code> | Description of the project. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.ignoreAdditionalTags">IgnoreAdditionalTags</a></code> | <code>interface{}</code> | Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.organization">Organization</a></code> | <code>*string</code> | Name of the organization to which the project belongs. |
+| <code><a href="#@cdktf/provider-tfe.project.ProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | A map of key-value tags to add to the project. |
 
 ---
 
@@ -920,7 +962,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#name Project#name}.
+Name of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -932,7 +976,9 @@ AutoDestroyActivityDuration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}.
+Duration after which the project will be auto-destroyed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
 
 ---
 
@@ -944,22 +990,23 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#description Project#description}.
+Description of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#description Project#description}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-tfe.project.ProjectConfig.property.id"></a>
+##### `IgnoreAdditionalTags`<sup>Optional</sup> <a name="IgnoreAdditionalTags" id="@cdktf/provider-tfe.project.ProjectConfig.property.ignoreAdditionalTags"></a>
 
 ```go
-Id *string
+IgnoreAdditionalTags interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#id Project#id}.
+Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
 
 ---
 
@@ -971,7 +1018,23 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/project#organization Project#organization}.
+Name of the organization to which the project belongs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#organization Project#organization}
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-tfe.project.ProjectConfig.property.tags"></a>
+
+```go
+Tags *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+A map of key-value tags to add to the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/project#tags Project#tags}
 
 ---
 
