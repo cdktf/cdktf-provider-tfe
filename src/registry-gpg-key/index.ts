@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/registry_gpg_key
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/registry_gpg_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface RegistryGpgKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * ASCII-armored representation of the GPG key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
   */
   readonly asciiArmor: string;
   /**
   * Name of the organization. If omitted, organization must be defined in the provider config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/registry_gpg_key tfe_registry_gpg_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/registry_gpg_key tfe_registry_gpg_key}
 */
 export class RegistryGpgKey extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class RegistryGpgKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RegistryGpgKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegistryGpgKey to import
-  * @param importFromId The id of the existing RegistryGpgKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegistryGpgKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegistryGpgKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class RegistryGpgKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/registry_gpg_key tfe_registry_gpg_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/registry_gpg_key tfe_registry_gpg_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class RegistryGpgKey extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_gpg_key',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

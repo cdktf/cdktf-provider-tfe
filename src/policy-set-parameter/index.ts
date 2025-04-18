@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface PolicySetParameterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#id PolicySetParameter#id}
+  * Name of the parameter.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
+  * The ID of the policy set that owns the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
   */
   readonly policySetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
+  * Whether the value is sensitive. If true then the parameter is written once and not visible thereafter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
+  * Value of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
   */
   readonly value?: string;
+  /**
+  * Value of the parameter in write-only mode
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
+  */
+  readonly valueWo?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}
 */
 export class PolicySetParameter extends cdktf.TerraformResource {
 
@@ -54,7 +56,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicySetParameter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicySetParameter to import
-  * @param importFromId The id of the existing PolicySetParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicySetParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicySetParameter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +68,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +79,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_policy_set_parameter',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -88,31 +90,20 @@ export class PolicySetParameter extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._key = config.key;
     this._policySetId = config.policySetId;
     this._sensitive = config.sensitive;
     this._value = config.value;
+    this._valueWo = config.valueWo;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -141,7 +132,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
     return this._policySetId;
   }
 
-  // sensitive - computed: false, optional: true, required: false
+  // sensitive - computed: true, optional: true, required: false
   private _sensitive?: boolean | cdktf.IResolvable; 
   public get sensitive() {
     return this.getBooleanAttribute('sensitive');
@@ -157,7 +148,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
     return this._sensitive;
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -173,28 +164,38 @@ export class PolicySetParameter extends cdktf.TerraformResource {
     return this._value;
   }
 
+  // value_wo - computed: false, optional: true, required: false
+  private _valueWo?: string; 
+  public get valueWo() {
+    return this.getStringAttribute('value_wo');
+  }
+  public set valueWo(value: string) {
+    this._valueWo = value;
+  }
+  public resetValueWo() {
+    this._valueWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueWoInput() {
+    return this._valueWo;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       policy_set_id: cdktf.stringToTerraform(this._policySetId),
       sensitive: cdktf.booleanToTerraform(this._sensitive),
       value: cdktf.stringToTerraform(this._value),
+      value_wo: cdktf.stringToTerraform(this._valueWo),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       key: {
         value: cdktf.stringToHclTerraform(this._key),
         isBlock: false,
@@ -215,6 +216,12 @@ export class PolicySetParameter extends cdktf.TerraformResource {
       },
       value: {
         value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_wo: {
+        value: cdktf.stringToHclTerraform(this._valueWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

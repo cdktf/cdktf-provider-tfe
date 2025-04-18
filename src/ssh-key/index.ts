@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface SshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#id SshKey#id}
+  * The text of the SSH private key
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key SshKey#key}
   */
-  readonly id?: string;
+  readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#key SshKey#key}
+  * The text of the SSH private key, guaranteed not to be written to state.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
   */
-  readonly key: string;
+  readonly keyWo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#name SshKey#name}
+  * The name of the SSH key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#name SshKey#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#organization SshKey#organization}
+  * The name of the organization.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#organization SshKey#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key tfe_ssh_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key tfe_ssh_key}
 */
 export class SshKey extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class SshKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SshKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SshKey to import
-  * @param importFromId The id of the existing SshKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SshKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SshKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class SshKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.64.0/docs/resources/ssh_key tfe_ssh_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key tfe_ssh_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class SshKey extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.64.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -84,8 +84,8 @@ export class SshKey extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._key = config.key;
+    this._keyWo = config.keyWo;
     this._name = config.name;
     this._organization = config.organization;
   }
@@ -94,23 +94,12 @@ export class SshKey extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // key - computed: false, optional: false, required: true
+  // key - computed: false, optional: true, required: false
   private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
@@ -118,9 +107,28 @@ export class SshKey extends cdktf.TerraformResource {
   public set key(value: string) {
     this._key = value;
   }
+  public resetKey() {
+    this._key = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
     return this._key;
+  }
+
+  // key_wo - computed: false, optional: true, required: false
+  private _keyWo?: string; 
+  public get keyWo() {
+    return this.getStringAttribute('key_wo');
+  }
+  public set keyWo(value: string) {
+    this._keyWo = value;
+  }
+  public resetKeyWo() {
+    this._keyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyWoInput() {
+    return this._keyWo;
   }
 
   // name - computed: false, optional: false, required: true
@@ -158,8 +166,8 @@ export class SshKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
+      key_wo: cdktf.stringToTerraform(this._keyWo),
       name: cdktf.stringToTerraform(this._name),
       organization: cdktf.stringToTerraform(this._organization),
     };
@@ -167,14 +175,14 @@ export class SshKey extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      key: {
-        value: cdktf.stringToHclTerraform(this._key),
+      key_wo: {
+        value: cdktf.stringToHclTerraform(this._keyWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
