@@ -4,7 +4,7 @@
 
 ### DataTfeSamlSettings <a name="DataTfeSamlSettings" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/saml_settings tfe_saml_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/saml_settings tfe_saml_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings.Initializer"></a>
 
@@ -453,7 +453,7 @@ The construct id used in the generated config for the DataTfeSamlSettings to imp
 
 The id of the existing DataTfeSamlSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/saml_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/saml_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 

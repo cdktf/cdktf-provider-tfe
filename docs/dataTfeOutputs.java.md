@@ -4,7 +4,7 @@
 
 ### DataTfeOutputs <a name="DataTfeOutputs" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs tfe_outputs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs tfe_outputs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
@@ -25,6 +25,7 @@ DataTfeOutputs.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .workspace(java.lang.String)
 //  .organization(java.lang.String)
+//  .values(java.util.Map<java.lang.String, java.lang.Object>)
     .build();
 ```
 
@@ -39,8 +40,9 @@ DataTfeOutputs.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.workspace">workspace</a></code> | <code>java.lang.String</code> | Name of the workspace. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Name of the organization. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.workspace">workspace</a></code> | <code>java.lang.String</code> | The workspace to fetch the remote state from. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The organization to fetch the remote state from. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -108,9 +110,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Name of the workspace.
+The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -118,9 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Name of the organization.
+The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#organization DataTfeOutputs#organization}
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer.parameter.values"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.Object>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#values DataTfeOutputs#values}.
 
 ---
 
@@ -146,6 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetOrganization">resetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues">resetValues</a></code> | *No description.* |
 
 ---
 
@@ -347,6 +358,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetOrganization()
 ```
 
+##### `resetValues` <a name="resetValues" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues"></a>
+
+```java
+public void resetValues()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -450,7 +467,7 @@ The construct id used in the generated config for the DataTfeOutputs to import.
 
 The id of the existing DataTfeOutputs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -480,10 +497,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.nonsensitiveValues">nonsensitiveValues</a></code> | <code>com.hashicorp.cdktf.AnyMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">values</a></code> | <code>com.hashicorp.cdktf.AnyMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput">valuesInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspaceInput">workspaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspace">workspace</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -630,16 +648,6 @@ public AnyMap getNonsensitiveValues();
 
 ---
 
-##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
-
-```java
-public AnyMap getValues();
-```
-
-- *Type:* com.hashicorp.cdktf.AnyMap
-
----
-
 ##### `organizationInput`<sup>Optional</sup> <a name="organizationInput" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput"></a>
 
 ```java
@@ -647,6 +655,16 @@ public java.lang.String getOrganizationInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="valuesInput" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getValuesInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.Object>
 
 ---
 
@@ -667,6 +685,16 @@ public java.lang.String getOrganization();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getValues();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.Object>
 
 ---
 
@@ -721,6 +749,7 @@ DataTfeOutputsConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .workspace(java.lang.String)
 //  .organization(java.lang.String)
+//  .values(java.util.Map<java.lang.String, java.lang.Object>)
     .build();
 ```
 
@@ -735,8 +764,9 @@ DataTfeOutputsConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">workspace</a></code> | <code>java.lang.String</code> | Name of the workspace. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Name of the organization. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">workspace</a></code> | <code>java.lang.String</code> | The workspace to fetch the remote state from. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The organization to fetch the remote state from. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#values DataTfeOutputs#values}. |
 
 ---
 
@@ -818,9 +848,9 @@ public java.lang.String getWorkspace();
 
 - *Type:* java.lang.String
 
-Name of the workspace.
+The workspace to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -832,9 +862,21 @@ public java.lang.String getOrganization();
 
 - *Type:* java.lang.String
 
-Name of the organization.
+The organization to fetch the remote state from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#organization DataTfeOutputs#organization}
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getValues();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.Object>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/outputs#values DataTfeOutputs#values}.
 
 ---
 

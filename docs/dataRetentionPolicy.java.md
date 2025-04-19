@@ -4,7 +4,7 @@
 
 ### DataRetentionPolicy <a name="DataRetentionPolicy" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy tfe_data_retention_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy tfe_data_retention_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 delete_older_than block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dont_delete block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
 
 ---
 
@@ -146,7 +146,7 @@ ID of the workspace that the data retention policy should apply to.
 
 If omitted, the data retention policy will apply to the entire organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
 
 ---
 
@@ -620,7 +620,7 @@ The construct id used in the generated config for the DataRetentionPolicy to imp
 
 The id of the existing DataRetentionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1038,7 +1038,7 @@ public DataRetentionPolicyDeleteOlderThan getDeleteOlderThan();
 
 delete_older_than block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
 
 ---
 
@@ -1052,7 +1052,7 @@ public DataRetentionPolicyDontDelete getDontDelete();
 
 dont_delete block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getOrganization();
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
 
 ---
 
@@ -1082,7 +1082,7 @@ ID of the workspace that the data retention policy should apply to.
 
 If omitted, the data retention policy will apply to the entire organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.Number getDays();
 
 Number of days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#days DataRetentionPolicy#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#days DataRetentionPolicy#days}
 
 ---
 
