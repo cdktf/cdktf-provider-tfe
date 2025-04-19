@@ -4,7 +4,7 @@
 
 ### DataTfeProject <a name="DataTfeProject" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeProject.DataTfeProject.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataTfeProject to import.
 
 The id of the existing DataTfeProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ public string Name { get; set; }
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#name DataTfeProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/project#name DataTfeProject#name}
 
 ---
 
@@ -785,7 +785,7 @@ public string Organization { get; set; }
 
 The name of the organization that the project belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/project#organization DataTfeProject#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/project#organization DataTfeProject#organization}
 
 ---
 

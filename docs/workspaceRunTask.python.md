@@ -4,7 +4,7 @@
 
 ### WorkspaceRunTask <a name="WorkspaceRunTask" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task tfe_workspace_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The enforcement level of the task. Valid values are `advisory` and `mandatory`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the Run task to associate to the Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the workspace to associate the Run task to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The stages to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#stages WorkspaceRunTask#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#stages WorkspaceRunTask#stages}
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the WorkspaceRunTask to import
 
 The id of the existing WorkspaceRunTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1079,7 +1079,7 @@ enforcement_level: str
 
 The enforcement level of the task. Valid values are `advisory` and `mandatory`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#enforcement_level WorkspaceRunTask#enforcement_level}
 
 ---
 
@@ -1093,7 +1093,7 @@ task_id: str
 
 The id of the Run task to associate to the Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#task_id WorkspaceRunTask#task_id}
 
 ---
 
@@ -1107,7 +1107,7 @@ workspace_id: str
 
 The id of the workspace to associate the Run task to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#workspace_id WorkspaceRunTask#workspace_id}
 
 ---
 
@@ -1121,7 +1121,7 @@ stage: str
 
 The stage to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#stage WorkspaceRunTask#stage}
 
 ---
 
@@ -1135,7 +1135,7 @@ stages: typing.List[str]
 
 The stages to run the task in. Valid values are `pre_plan`, `post_plan`, `pre_apply` and `post_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/workspace_run_task#stages WorkspaceRunTask#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/workspace_run_task#stages WorkspaceRunTask#stages}
 
 ---
 

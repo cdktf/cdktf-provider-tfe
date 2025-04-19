@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface SshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The text of the SSH private key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key SshKey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key#key SshKey#key}
   */
   readonly key?: string;
   /**
   * The text of the SSH private key, guaranteed not to be written to state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key#key_wo SshKey#key_wo}
   */
   readonly keyWo?: string;
   /**
   * The name of the SSH key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#name SshKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key#name SshKey#name}
   */
   readonly name: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#organization SshKey#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key#organization SshKey#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key tfe_ssh_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key tfe_ssh_key}
 */
 export class SshKey extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class SshKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SshKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SshKey to import
-  * @param importFromId The id of the existing SshKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SshKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SshKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class SshKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/ssh_key tfe_ssh_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/ssh_key tfe_ssh_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class SshKey extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.0',
+        providerVersion: '0.65.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
