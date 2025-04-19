@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface DataRetentionPolicyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Name of the organization. If omitted, organization must be defined in the provider config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#organization DataRetentionPolicy#organization}
   */
   readonly organization?: string;
   /**
   * ID of the workspace that the data retention policy should apply to. If omitted, the data retention policy will apply to the entire organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#workspace_id DataRetentionPolicy#workspace_id}
   */
   readonly workspaceId?: string;
   /**
   * delete_older_than block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#delete_older_than DataRetentionPolicy#delete_older_than}
   */
   readonly deleteOlderThan?: DataRetentionPolicyDeleteOlderThan;
   /**
   * dont_delete block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#dont_delete DataRetentionPolicy#dont_delete}
   */
   readonly dontDelete?: DataRetentionPolicyDontDelete;
 }
@@ -41,7 +36,7 @@ export interface DataRetentionPolicyDeleteOlderThan {
   /**
   * Number of days
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#days DataRetentionPolicy#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#days DataRetentionPolicy#days}
   */
   readonly days?: number;
 }
@@ -194,7 +189,7 @@ export class DataRetentionPolicyDontDeleteOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy tfe_data_retention_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy tfe_data_retention_policy}
 */
 export class DataRetentionPolicy extends cdktf.TerraformResource {
 
@@ -210,7 +205,7 @@ export class DataRetentionPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataRetentionPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataRetentionPolicy to import
-  * @param importFromId The id of the existing DataRetentionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataRetentionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataRetentionPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -222,7 +217,7 @@ export class DataRetentionPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/data_retention_policy tfe_data_retention_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/data_retention_policy tfe_data_retention_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -233,7 +228,7 @@ export class DataRetentionPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_data_retention_policy',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.0',
+        providerVersion: '0.65.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

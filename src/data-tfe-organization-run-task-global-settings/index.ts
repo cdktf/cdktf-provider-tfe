@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface DataTfeOrganizationRunTaskGlobalSettingsConfig extends cdktf.Te
   /**
   * Whether the run task will be applied globally
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings#enabled DataTfeOrganizationRunTaskGlobalSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings#enabled DataTfeOrganizationRunTaskGlobalSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The enforcement level of the global task.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings#enforcement_level DataTfeOrganizationRunTaskGlobalSettings#enforcement_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings#enforcement_level DataTfeOrganizationRunTaskGlobalSettings#enforcement_level}
   */
   readonly enforcementLevel?: string;
   /**
   * Which stages the task will run in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings#stages DataTfeOrganizationRunTaskGlobalSettings#stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings#stages DataTfeOrganizationRunTaskGlobalSettings#stages}
   */
   readonly stages?: string[];
   /**
   * The id of the run task.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings#task_id DataTfeOrganizationRunTaskGlobalSettings#task_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings#task_id DataTfeOrganizationRunTaskGlobalSettings#task_id}
   */
   readonly taskId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings}
 */
 export class DataTfeOrganizationRunTaskGlobalSettings extends cdktf.TerraformDataSource {
 
@@ -55,7 +50,7 @@ export class DataTfeOrganizationRunTaskGlobalSettings extends cdktf.TerraformDat
   * Generates CDKTF code for importing a DataTfeOrganizationRunTaskGlobalSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeOrganizationRunTaskGlobalSettings to import
-  * @param importFromId The id of the existing DataTfeOrganizationRunTaskGlobalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeOrganizationRunTaskGlobalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeOrganizationRunTaskGlobalSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class DataTfeOrganizationRunTaskGlobalSettings extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class DataTfeOrganizationRunTaskGlobalSettings extends cdktf.TerraformDat
       terraformResourceType: 'tfe_organization_run_task_global_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.0',
+        providerVersion: '0.65.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

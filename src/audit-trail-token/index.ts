@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface AuditTrailTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The time when the audit trail token will expire. This must be a valid ISO8601 timestamp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
   */
   readonly expiredAt?: string;
   /**
   * When set to true will force the audit trail token to be recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
   */
   readonly forceRegenerate?: boolean | cdktf.IResolvable;
   /**
   * Name of the organization. If omitted, organization must be defined in the provider config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
   */
   readonly organization?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token tfe_audit_trail_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token tfe_audit_trail_token}
 */
 export class AuditTrailToken extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class AuditTrailToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AuditTrailToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuditTrailToken to import
-  * @param importFromId The id of the existing AuditTrailToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuditTrailToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuditTrailToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class AuditTrailToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.0/docs/resources/audit_trail_token tfe_audit_trail_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/audit_trail_token tfe_audit_trail_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class AuditTrailToken extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_audit_trail_token',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.0',
+        providerVersion: '0.65.1',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
