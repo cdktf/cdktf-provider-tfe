@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +10,55 @@ export interface DataTfeRegistryModuleConfig extends cdktf.TerraformMetaArgument
   /**
   * Name of the module provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
   */
   readonly moduleProvider: string;
   /**
   * Name of the module.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
   */
   readonly name: string;
   /**
   * The namespace of the no-code module. Uses organization name if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
   */
   readonly organization: string;
   /**
   * Name of the registry. Valid options: "public", "private". Defaults to "private".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
   */
   readonly registryName?: string;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
   */
   readonly permissions?: DataTfeRegistryModulePermissions[] | cdktf.IResolvable;
   /**
   * test_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
   */
   readonly testConfig?: DataTfeRegistryModuleTestConfig[] | cdktf.IResolvable;
   /**
   * vcs_repo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
   */
   readonly vcsRepo?: DataTfeRegistryModuleVcsRepo[] | cdktf.IResolvable;
   /**
   * version_statuses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
   */
   readonly versionStatuses?: DataTfeRegistryModuleVersionStatuses[] | cdktf.IResolvable;
 }
@@ -483,7 +478,7 @@ export class DataTfeRegistryModuleVersionStatusesList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module tfe_registry_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module tfe_registry_module}
 */
 export class DataTfeRegistryModule extends cdktf.TerraformDataSource {
 
@@ -499,7 +494,7 @@ export class DataTfeRegistryModule extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeRegistryModule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeRegistryModule to import
-  * @param importFromId The id of the existing DataTfeRegistryModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeRegistryModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeRegistryModule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -511,7 +506,7 @@ export class DataTfeRegistryModule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/data-sources/registry_module tfe_registry_module} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_module tfe_registry_module} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -522,7 +517,7 @@ export class DataTfeRegistryModule extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.1',
+        providerVersion: '0.65.2',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

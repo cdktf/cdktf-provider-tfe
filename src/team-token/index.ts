@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token
+// https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface TeamTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The token's expiration date.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token#expired_at TeamToken#expired_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#expired_at TeamToken#expired_at}
   */
   readonly expiredAt?: string;
   /**
   * When set to true will force the audit trail token to be recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
   */
   readonly forceRegenerate?: boolean | cdktf.IResolvable;
   /**
   * ID of the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token#team_id TeamToken#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#team_id TeamToken#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token tfe_team_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token tfe_team_token}
 */
 export class TeamToken extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class TeamToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamToken to import
-  * @param importFromId The id of the existing TeamToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class TeamToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.1/docs/resources/team_token tfe_team_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token tfe_team_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class TeamToken extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_team_token',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.1',
+        providerVersion: '0.65.2',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
