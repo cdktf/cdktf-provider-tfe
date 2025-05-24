@@ -4,7 +4,7 @@
 
 ### TeamToken <a name="TeamToken" id="@cdktf/provider-tfe.teamToken.TeamToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token tfe_team_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token tfe_team_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetExpiredAt">resetExpiredAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetForceRegenerate">resetForceRegenerate</a></code> | *No description.* |
 
@@ -366,6 +367,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-tfe.teamToken.TeamToken.resetDescription"></a>
+
+```typescript
+public resetDescription(): void
+```
+
 ##### `resetExpiredAt` <a name="resetExpiredAt" id="@cdktf/provider-tfe.teamToken.TeamToken.resetExpiredAt"></a>
 
 ```typescript
@@ -481,7 +488,7 @@ The construct id used in the generated config for the TeamToken to import.
 
 The id of the existing TeamToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,9 +520,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAtInput">expiredAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerateInput">forceRegenerateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamIdInput">teamIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAt">expiredAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerate">forceRegenerate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamId">teamId</a></code> | <code>string</code> | *No description.* |
@@ -684,6 +693,16 @@ public readonly token: string;
 
 ---
 
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-tfe.teamToken.TeamToken.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `expiredAtInput`<sup>Optional</sup> <a name="expiredAtInput" id="@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAtInput"></a>
 
 ```typescript
@@ -708,6 +727,16 @@ public readonly forceRegenerateInput: boolean | IResolvable;
 
 ```typescript
 public readonly teamIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-tfe.teamToken.TeamToken.property.description"></a>
+
+```typescript
+public readonly description: string;
 ```
 
 - *Type:* string
@@ -786,6 +815,7 @@ const teamTokenConfig: teamToken.TeamTokenConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">teamId</a></code> | <code>string</code> | ID of the team. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.description">description</a></code> | <code>string</code> | The description of the token, which must be unique per team. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">expiredAt</a></code> | <code>string</code> | The token's expiration date. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">forceRegenerate</a></code> | <code>boolean \| cdktf.IResolvable</code> | When set to true will force the audit trail token to be recreated. |
 
@@ -871,7 +901,21 @@ public readonly teamId: string;
 
 ID of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#team_id TeamToken#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#team_id TeamToken#team_id}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+The description of the token, which must be unique per team.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#description TeamToken#description}
 
 ---
 
@@ -885,7 +929,7 @@ public readonly expiredAt: string;
 
 The token's expiration date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#expired_at TeamToken#expired_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#expired_at TeamToken#expired_at}
 
 ---
 
@@ -899,7 +943,7 @@ public readonly forceRegenerate: boolean | IResolvable;
 
 When set to true will force the audit trail token to be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
 
 ---
 

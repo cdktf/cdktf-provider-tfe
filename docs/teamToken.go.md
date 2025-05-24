@@ -4,7 +4,7 @@
 
 ### TeamToken <a name="TeamToken" id="@cdktf/provider-tfe.teamToken.TeamToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token tfe_team_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token tfe_team_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamToken.TeamToken.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetExpiredAt">ResetExpiredAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.resetForceRegenerate">ResetForceRegenerate</a></code> | *No description.* |
 
@@ -366,6 +367,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-tfe.teamToken.TeamToken.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
 ##### `ResetExpiredAt` <a name="ResetExpiredAt" id="@cdktf/provider-tfe.teamToken.TeamToken.resetExpiredAt"></a>
 
 ```go
@@ -481,7 +488,7 @@ The construct id used in the generated config for the TeamToken to import.
 
 The id of the existing TeamToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,9 +520,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.token">Token</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAtInput">ExpiredAtInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerateInput">ForceRegenerateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamIdInput">TeamIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAt">ExpiredAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.forceRegenerate">ForceRegenerate</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamToken.property.teamId">TeamId</a></code> | <code>*string</code> | *No description.* |
@@ -684,6 +693,16 @@ func Token() *string
 
 ---
 
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-tfe.teamToken.TeamToken.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ExpiredAtInput`<sup>Optional</sup> <a name="ExpiredAtInput" id="@cdktf/provider-tfe.teamToken.TeamToken.property.expiredAtInput"></a>
 
 ```go
@@ -708,6 +727,16 @@ func ForceRegenerateInput() interface{}
 
 ```go
 func TeamIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-tfe.teamToken.TeamToken.property.description"></a>
+
+```go
+func Description() *string
 ```
 
 - *Type:* *string
@@ -780,6 +809,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	TeamId: *string,
+	Description: *string,
 	ExpiredAt: *string,
 	ForceRegenerate: interface{},
 }
@@ -797,6 +827,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamtoken"
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.teamId">TeamId</a></code> | <code>*string</code> | ID of the team. |
+| <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.description">Description</a></code> | <code>*string</code> | The description of the token, which must be unique per team. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.expiredAt">ExpiredAt</a></code> | <code>*string</code> | The token's expiration date. |
 | <code><a href="#@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.forceRegenerate">ForceRegenerate</a></code> | <code>interface{}</code> | When set to true will force the audit trail token to be recreated. |
 
@@ -882,7 +913,21 @@ TeamId *string
 
 ID of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#team_id TeamToken#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#team_id TeamToken#team_id}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-tfe.teamToken.TeamTokenConfig.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+The description of the token, which must be unique per team.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#description TeamToken#description}
 
 ---
 
@@ -896,7 +941,7 @@ ExpiredAt *string
 
 The token's expiration date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#expired_at TeamToken#expired_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#expired_at TeamToken#expired_at}
 
 ---
 
@@ -910,7 +955,7 @@ ForceRegenerate interface{}
 
 When set to true will force the audit trail token to be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token#force_regenerate TeamToken#force_regenerate}
 
 ---
 

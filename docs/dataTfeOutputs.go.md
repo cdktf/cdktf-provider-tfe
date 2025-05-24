@@ -4,7 +4,7 @@
 
 ### DataTfeOutputs <a name="DataTfeOutputs" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/outputs tfe_outputs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/outputs tfe_outputs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.Initializer"></a>
 
@@ -68,7 +68,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetOrganization">ResetOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues">ResetValues</a></code> | *No description.* |
 
 ---
 
@@ -270,12 +269,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetOrganization()
 ```
 
-##### `ResetValues` <a name="ResetValues" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.resetValues"></a>
-
-```go
-func ResetValues()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -379,7 +372,7 @@ The construct id used in the generated config for the DataTfeOutputs to import.
 
 The id of the existing DataTfeOutputs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/outputs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -409,11 +402,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.nonsensitiveValues">NonsensitiveValues</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.AnyMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">Values</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.AnyMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput">ValuesInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspaceInput">WorkspaceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values">Values</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.workspace">Workspace</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -560,6 +552,16 @@ func NonsensitiveValues() AnyMap
 
 ---
 
+##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
+
+```go
+func Values() AnyMap
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.AnyMap
+
+---
+
 ##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.organizationInput"></a>
 
 ```go
@@ -567,16 +569,6 @@ func OrganizationInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.valuesInput"></a>
-
-```go
-func ValuesInput() *map[string]interface{}
-```
-
-- *Type:* *map[string]interface{}
 
 ---
 
@@ -597,16 +589,6 @@ func Organization() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputs.property.values"></a>
-
-```go
-func Values() *map[string]interface{}
-```
-
-- *Type:* *map[string]interface{}
 
 ---
 
@@ -657,7 +639,6 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
 	Provisioners: *[]interface{},
 	Workspace: *string,
 	Organization: *string,
-	Values: *map[string]interface{},
 }
 ```
 
@@ -672,9 +653,8 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/datatfeoutputs"
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">Workspace</a></code> | <code>*string</code> | The workspace to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">Organization</a></code> | <code>*string</code> | The organization to fetch the remote state from. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values">Values</a></code> | <code>*map[string]interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/outputs#values DataTfeOutputs#values}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.workspace">Workspace</a></code> | <code>*string</code> | Name of the workspace. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.organization">Organization</a></code> | <code>*string</code> | Name of the organization. |
 
 ---
 
@@ -756,9 +736,9 @@ Workspace *string
 
 - *Type:* *string
 
-The workspace to fetch the remote state from.
+Name of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/outputs#workspace DataTfeOutputs#workspace}
 
 ---
 
@@ -770,21 +750,9 @@ Organization *string
 
 - *Type:* *string
 
-The organization to fetch the remote state from.
+Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/outputs#organization DataTfeOutputs#organization}
-
----
-
-##### `Values`<sup>Optional</sup> <a name="Values" id="@cdktf/provider-tfe.dataTfeOutputs.DataTfeOutputsConfig.property.values"></a>
-
-```go
-Values *map[string]interface{}
-```
-
-- *Type:* *map[string]interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/outputs#values DataTfeOutputs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/outputs#organization DataTfeOutputs#organization}
 
 ---
 
