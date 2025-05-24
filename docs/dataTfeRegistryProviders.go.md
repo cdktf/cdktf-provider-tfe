@@ -4,7 +4,7 @@
 
 ### DataTfeRegistryProviders <a name="DataTfeRegistryProviders" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_providers tfe_registry_providers}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_providers tfe_registry_providers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataTfeRegistryProviders t
 
 The id of the existing DataTfeRegistryProviders that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_providers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_providers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ Organization *string
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_providers#organization DataTfeRegistryProviders#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_providers#organization DataTfeRegistryProviders#organization}
 
 ---
 
@@ -779,7 +779,7 @@ RegistryName *string
 
 Whether to list only public or private providers. Must be either `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_providers#registry_name DataTfeRegistryProviders#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_providers#registry_name DataTfeRegistryProviders#registry_name}
 
 ---
 
@@ -793,7 +793,7 @@ Search *string
 
 A query string to do a fuzzy search on provider name and namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/data-sources/registry_providers#search DataTfeRegistryProviders#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_providers#search DataTfeRegistryProviders#search}
 
 ---
 

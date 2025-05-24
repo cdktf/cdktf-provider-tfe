@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable
+// https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,55 @@ export interface TestVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#category TestVariable#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#category TestVariable#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#description TestVariable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#description TestVariable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#hcl TestVariable#hcl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#hcl TestVariable#hcl}
   */
   readonly hcl?: boolean | cdktf.IResolvable;
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#key TestVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#key TestVariable#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#module_name TestVariable#module_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#module_name TestVariable#module_name}
   */
   readonly moduleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#module_provider TestVariable#module_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#module_provider TestVariable#module_provider}
   */
   readonly moduleProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#organization TestVariable#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#organization TestVariable#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#sensitive TestVariable#sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#sensitive TestVariable#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
   * Value of the variable
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#value TestVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#value TestVariable#value}
   */
   readonly value?: string;
   /**
   * Value of the variable in write-only mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#value_wo TestVariable#value_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#value_wo TestVariable#value_wo}
   */
   readonly valueWo?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable tfe_test_variable}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable tfe_test_variable}
 */
 export class TestVariable extends cdktf.TerraformResource {
 
@@ -79,7 +79,7 @@ export class TestVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TestVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TestVariable to import
-  * @param importFromId The id of the existing TestVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TestVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TestVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -91,7 +91,7 @@ export class TestVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/test_variable tfe_test_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable tfe_test_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class TestVariable extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_test_variable',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.2',
+        providerVersion: '0.66.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

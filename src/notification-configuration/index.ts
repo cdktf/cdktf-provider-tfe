@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration
+// https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +15,67 @@ export interface NotificationConfigurationConfig extends cdktf.TerraformMetaArgu
   /**
   * The type of notification configuration payload to send.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#destination_type NotificationConfiguration#destination_type}
   */
   readonly destinationType: string;
   /**
   * A list of email addresses. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#email_addresses NotificationConfiguration#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
   * A list of user IDs. This value must not be provided if `destination_type` is `generic`, `microsoft-teams`, or `slack`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#email_user_ids NotificationConfiguration#email_user_ids}
   */
   readonly emailUserIds?: string[];
   /**
   * Whether the notification configuration should be enabled or not. Disabled configurations will not send any notifications. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#enabled NotificationConfiguration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the notification configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#name NotificationConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#name NotificationConfiguration#name}
   */
   readonly name: string;
   /**
   * A write-only secure token for the notification configuration, which can be used by the receiving server to verify request authenticity when configured for notification configurations with a destination type of `generic`. Defaults to `null`. This value _must not_ be provided if `destination_type` is `email`, `microsoft-teams`, or `slack`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#token NotificationConfiguration#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#token NotificationConfiguration#token}
   */
   readonly token?: string;
   /**
   * Value of the token in write-only mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#token_wo NotificationConfiguration#token_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#token_wo NotificationConfiguration#token_wo}
   */
   readonly tokenWo?: string;
   /**
   * The array of triggers for which this notification configuration will send notifications. If omitted, no notification triggers are configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#triggers NotificationConfiguration#triggers}
   */
   readonly triggers?: string[];
   /**
   * The HTTP or HTTPS URL where notification requests will be made. This value must not be provided if `email_addresses` or `email_user_ids` is present, or if `destination_type` is `email`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#url NotificationConfiguration#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#url NotificationConfiguration#url}
   */
   readonly url?: string;
   /**
   * The ID of the workspace that owns the notification configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#workspace_id NotificationConfiguration#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration tfe_notification_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration tfe_notification_configuration}
 */
 export class NotificationConfiguration extends cdktf.TerraformResource {
 
@@ -91,7 +91,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationConfiguration to import
-  * @param importFromId The id of the existing NotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -103,7 +103,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.65.2/docs/resources/notification_configuration tfe_notification_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration tfe_notification_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class NotificationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_notification_configuration',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.65.2',
+        providerVersion: '0.66.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
