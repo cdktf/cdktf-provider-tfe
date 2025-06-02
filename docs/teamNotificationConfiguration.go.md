@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamnotificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/teamnotificationconfiguration"
 
 teamnotificationconfiguration.NewTeamNotificationConfiguration(scope Construct, id *string, config TeamNotificationConfigurationConfig) TeamNotificationConfiguration
 ```
@@ -427,7 +427,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamnotificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/teamnotificationconfiguration"
 
 teamnotificationconfiguration.TeamNotificationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamnotificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/teamnotificationconfiguration"
 
 teamnotificationconfiguration.TeamNotificationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ teamnotificationconfiguration.TeamNotificationConfiguration_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamnotificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/teamnotificationconfiguration"
 
 teamnotificationconfiguration.TeamNotificationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ teamnotificationconfiguration.TeamNotificationConfiguration_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamnotificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/teamnotificationconfiguration"
 
 teamnotificationconfiguration.TeamNotificationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -947,7 +947,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/teamnotificationconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/teamnotificationconfiguration"
 
 &teamnotificationconfiguration.TeamNotificationConfigurationConfig {
 	Connection: interface{},

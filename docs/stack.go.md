@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.stack.Stack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 stack.NewStack(scope Construct, id *string, config StackConfig) Stack
 ```
@@ -405,7 +405,7 @@ func ResetVcsRepo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.stack.Stack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 stack.Stack_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.stack.Stack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 stack.Stack_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ stack.Stack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.stack.Stack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 stack.Stack_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ stack.Stack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.stack.Stack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 stack.Stack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.stack.StackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 &stack.StackConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
 	Name: *string,
 	ProjectId: *string,
 	Description: *string,
-	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe/v11.stack.StackVcsRepo,
+	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe/v12.stack.StackVcsRepo,
 }
 ```
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.stack.StackVcsRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 &stack.StackVcsRepo {
 	Identifier: *string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v11/stack"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 
 stack.NewStackVcsRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackVcsRepoOutputReference
 ```
