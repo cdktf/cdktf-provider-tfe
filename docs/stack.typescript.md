@@ -4,7 +4,7 @@
 
 ### Stack <a name="Stack" id="@cdktf/provider-tfe.stack.Stack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack tfe_stack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack tfe_stack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.stack.Stack.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Stack to import.
 
 The id of the existing Stack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,7 +929,7 @@ public readonly name: string;
 
 Name of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#name Stack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#name Stack#name}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly projectId: string;
 
 ID of the project that the Stack belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#project_id Stack#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#project_id Stack#project_id}
 
 ---
 
@@ -957,7 +957,7 @@ public readonly description: string;
 
 Description of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#description Stack#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#description Stack#description}
 
 ---
 
@@ -971,7 +971,7 @@ public readonly vcsRepo: StackVcsRepo;
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 
 ---
 
@@ -989,24 +989,10 @@ const stackVcsRepo: stack.StackVcsRepo = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo.property.identifier">identifier</a></code> | <code>string</code> | Identifier of the VCS repository. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo.property.branch">branch</a></code> | <code>string</code> | The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main). |
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo.property.githubAppInstallationId">githubAppInstallationId</a></code> | <code>string</code> | The installation ID of the GitHub App. |
+| <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo.property.identifier">identifier</a></code> | <code>string</code> | Identifier of the VCS repository. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo.property.oauthTokenId">oauthTokenId</a></code> | <code>string</code> | The VCS Connection to use. |
-
----
-
-##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktf/provider-tfe.stack.StackVcsRepo.property.identifier"></a>
-
-```typescript
-public readonly identifier: string;
-```
-
-- *Type:* string
-
-Identifier of the VCS repository.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#identifier Stack#identifier}
 
 ---
 
@@ -1020,7 +1006,7 @@ public readonly branch: string;
 
 The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#branch Stack#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#branch Stack#branch}
 
 ---
 
@@ -1036,7 +1022,21 @@ The installation ID of the GitHub App.
 
 This conflicts with `oauth_token_id` and can only be used if `oauth_token_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+
+---
+
+##### `identifier`<sup>Optional</sup> <a name="identifier" id="@cdktf/provider-tfe.stack.StackVcsRepo.property.identifier"></a>
+
+```typescript
+public readonly identifier: string;
+```
+
+- *Type:* string
+
+Identifier of the VCS repository.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#identifier Stack#identifier}
 
 ---
 
@@ -1052,7 +1052,7 @@ The VCS Connection to use.
 
 This ID can be obtained from a `tfe_oauth_client` resource. This conflicts with `github_app_installation_id` and can only be used if `github_app_installation_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
 
 ---
 
@@ -1110,6 +1110,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.resetBranch">resetBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.resetGithubAppInstallationId">resetGithubAppInstallationId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.resetIdentifier">resetIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.resetOauthTokenId">resetOauthTokenId</a></code> | *No description.* |
 
 ---
@@ -1274,6 +1275,12 @@ public resetBranch(): void
 
 ```typescript
 public resetGithubAppInstallationId(): void
+```
+
+##### `resetIdentifier` <a name="resetIdentifier" id="@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.resetIdentifier"></a>
+
+```typescript
+public resetIdentifier(): void
 ```
 
 ##### `resetOauthTokenId` <a name="resetOauthTokenId" id="@cdktf/provider-tfe.stack.StackVcsRepoOutputReference.resetOauthTokenId"></a>
