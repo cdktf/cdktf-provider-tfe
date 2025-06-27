@@ -4,7 +4,7 @@
 
 ### SshKey <a name="SshKey" id="@cdktf/provider-tfe.sshKey.SshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/ssh_key tfe_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/ssh_key tfe_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sshKey.SshKey.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the SshKey to import.
 
 The id of the existing SshKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/ssh_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,7 +902,7 @@ Name *string
 
 The name of the SSH key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/ssh_key#name SshKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/ssh_key#name SshKey#name}
 
 ---
 
@@ -916,7 +916,7 @@ Key *string
 
 The text of the SSH private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/ssh_key#key SshKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/ssh_key#key SshKey#key}
 
 ---
 
@@ -930,7 +930,7 @@ KeyWo *string
 
 The text of the SSH private key, guaranteed not to be written to state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/ssh_key#key_wo SshKey#key_wo}
 
 ---
 
@@ -944,7 +944,7 @@ Organization *string
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.0/docs/resources/ssh_key#organization SshKey#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/ssh_key#organization SshKey#organization}
 
 ---
 
