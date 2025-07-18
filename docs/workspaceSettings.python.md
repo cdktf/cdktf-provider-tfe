@@ -4,7 +4,7 @@
 
 ### WorkspaceSettings <a name="WorkspaceSettings" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings tfe_workspace_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings tfe_workspace_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer"></a>
 
@@ -23,9 +23,14 @@ workspaceSettings.WorkspaceSettings(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   workspace_id: str,
   agent_pool_id: str = None,
+  assessments_enabled: typing.Union[bool, IResolvable] = None,
+  auto_apply: typing.Union[bool, IResolvable] = None,
+  description: str = None,
+  effective_tags: typing.Mapping[str] = None,
   execution_mode: str = None,
   global_remote_state: typing.Union[bool, IResolvable] = None,
-  remote_state_consumer_ids: typing.List[str] = None
+  remote_state_consumer_ids: typing.List[str] = None,
+  tags: typing.Mapping[str] = None
 )
 ```
 
@@ -40,11 +45,16 @@ workspaceSettings.WorkspaceSettings(
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the workspace. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.effectiveTags">effective_tags</a></code> | <code>typing.Mapping[str]</code> | A map of all key-value tags set on the workspace (includes inheritted tags). |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of key-value tags to add to the workspace. |
 
 ---
 
@@ -112,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 
 ---
 
@@ -120,7 +130,49 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+
+---
+
+##### `assessments_enabled`<sup>Optional</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.assessmentsEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#assessments_enabled WorkspaceSettings#assessments_enabled}
+
+---
+
+##### `auto_apply`<sup>Optional</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.autoApply"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply.
+
+If set to true, this resource will be automatically applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#auto_apply WorkspaceSettings#auto_apply}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.description"></a>
+
+- *Type:* str
+
+A description of the workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#description WorkspaceSettings#description}
+
+---
+
+##### `effective_tags`<sup>Optional</sup> <a name="effective_tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.effectiveTags"></a>
+
+- *Type:* typing.Mapping[str]
+
+A map of all key-value tags set on the workspace (includes inheritted tags).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#effective_tags WorkspaceSettings#effective_tags}
 
 ---
 
@@ -128,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
 
 ---
 
@@ -140,7 +192,7 @@ Whether the workspace allows all workspaces in the organization to access its st
 
 If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
 
 ---
 
@@ -150,7 +202,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The set of workspace IDs set as explicit remote state consumers for the given workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+A map of key-value tags to add to the workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#tags WorkspaceSettings#tags}
 
 ---
 
@@ -182,9 +244,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAgentPoolId">reset_agent_pool_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAssessmentsEnabled">reset_assessments_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAutoApply">reset_auto_apply</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetEffectiveTags">reset_effective_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetExecutionMode">reset_execution_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetGlobalRemoteState">reset_global_remote_state</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetRemoteStateConsumerIds">reset_remote_state_consumer_ids</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
 
@@ -519,6 +586,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_agent_pool_id() -> None
 ```
 
+##### `reset_assessments_enabled` <a name="reset_assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAssessmentsEnabled"></a>
+
+```python
+def reset_assessments_enabled() -> None
+```
+
+##### `reset_auto_apply` <a name="reset_auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetAutoApply"></a>
+
+```python
+def reset_auto_apply() -> None
+```
+
+##### `reset_description` <a name="reset_description" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetDescription"></a>
+
+```python
+def reset_description() -> None
+```
+
+##### `reset_effective_tags` <a name="reset_effective_tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetEffectiveTags"></a>
+
+```python
+def reset_effective_tags() -> None
+```
+
 ##### `reset_execution_mode` <a name="reset_execution_mode" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetExecutionMode"></a>
 
 ```python
@@ -535,6 +626,12 @@ def reset_global_remote_state() -> None
 
 ```python
 def reset_remote_state_consumer_ids() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.resetTags"></a>
+
+```python
+def reset_tags() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -651,7 +748,7 @@ The construct id used in the generated config for the WorkspaceSettings to impor
 
 The id of the existing WorkspaceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -684,14 +781,24 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.overwrites">overwrites</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList">WorkspaceSettingsOverwritesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolIdInput">agent_pool_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput">assessments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput">auto_apply_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTagsInput">effective_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionModeInput">execution_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">global_remote_state_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput">remote_state_consumer_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTags">effective_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionMode">execution_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -868,6 +975,46 @@ agent_pool_id_input: str
 
 ---
 
+##### `assessments_enabled_input`<sup>Optional</sup> <a name="assessments_enabled_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput"></a>
+
+```python
+assessments_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `auto_apply_input`<sup>Optional</sup> <a name="auto_apply_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput"></a>
+
+```python
+auto_apply_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.descriptionInput"></a>
+
+```python
+description_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `effective_tags_input`<sup>Optional</sup> <a name="effective_tags_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTagsInput"></a>
+
+```python
+effective_tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `execution_mode_input`<sup>Optional</sup> <a name="execution_mode_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionModeInput"></a>
 
 ```python
@@ -898,6 +1045,16 @@ remote_state_consumer_ids_input: typing.List[str]
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput"></a>
 
 ```python
@@ -915,6 +1072,46 @@ agent_pool_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `assessments_enabled`<sup>Required</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled"></a>
+
+```python
+assessments_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `auto_apply`<sup>Required</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply"></a>
+
+```python
+auto_apply: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `effective_tags`<sup>Required</sup> <a name="effective_tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTags"></a>
+
+```python
+effective_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -945,6 +1142,16 @@ remote_state_consumer_ids: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -995,9 +1202,14 @@ workspaceSettings.WorkspaceSettingsConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   workspace_id: str,
   agent_pool_id: str = None,
+  assessments_enabled: typing.Union[bool, IResolvable] = None,
+  auto_apply: typing.Union[bool, IResolvable] = None,
+  description: str = None,
+  effective_tags: typing.Mapping[str] = None,
   execution_mode: str = None,
   global_remote_state: typing.Union[bool, IResolvable] = None,
-  remote_state_consumer_ids: typing.List[str] = None
+  remote_state_consumer_ids: typing.List[str] = None,
+  tags: typing.Mapping[str] = None
 )
 ```
 
@@ -1012,11 +1224,16 @@ workspaceSettings.WorkspaceSettingsConfig(
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.description">description</a></code> | <code>str</code> | A description of the workspace. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.effectiveTags">effective_tags</a></code> | <code>typing.Mapping[str]</code> | A map of all key-value tags set on the workspace (includes inheritted tags). |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of key-value tags to add to the workspace. |
 
 ---
 
@@ -1098,7 +1315,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 
 ---
 
@@ -1110,7 +1327,65 @@ agent_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+
+---
+
+##### `assessments_enabled`<sup>Optional</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled"></a>
+
+```python
+assessments_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#assessments_enabled WorkspaceSettings#assessments_enabled}
+
+---
+
+##### `auto_apply`<sup>Optional</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply"></a>
+
+```python
+auto_apply: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply.
+
+If set to true, this resource will be automatically applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#auto_apply WorkspaceSettings#auto_apply}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+A description of the workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#description WorkspaceSettings#description}
+
+---
+
+##### `effective_tags`<sup>Optional</sup> <a name="effective_tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.effectiveTags"></a>
+
+```python
+effective_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+A map of all key-value tags set on the workspace (includes inheritted tags).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#effective_tags WorkspaceSettings#effective_tags}
 
 ---
 
@@ -1122,7 +1397,7 @@ execution_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
 
 ---
 
@@ -1138,7 +1413,7 @@ Whether the workspace allows all workspaces in the organization to access its st
 
 If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
 
 ---
 
@@ -1152,7 +1427,21 @@ remote_state_consumer_ids: typing.List[str]
 
 The set of workspace IDs set as explicit remote state consumers for the given workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+A map of key-value tags to add to the workspace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/workspace_settings#tags WorkspaceSettings#tags}
 
 ---
 
