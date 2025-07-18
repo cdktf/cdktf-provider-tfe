@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings
+// https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,109 +15,109 @@ export interface SamlSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Team Attribute Name specifies the name of the SAML attribute that determines team membership
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#attr_groups SamlSettings#attr_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#attr_groups SamlSettings#attr_groups}
   */
   readonly attrGroups?: string;
   /**
   * Specifies the role for site admin access. Overrides the "Site Admin Role" method
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#attr_site_admin SamlSettings#attr_site_admin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#attr_site_admin SamlSettings#attr_site_admin}
   */
   readonly attrSiteAdmin?: string;
   /**
   * Username Attribute Name specifies the name of the SAML attribute that determines the user's username
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#attr_username SamlSettings#attr_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#attr_username SamlSettings#attr_username}
   */
   readonly attrUsername?: string;
   /**
   * Ensure that <samlp:AuthnRequest> messages are signed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#authn_requests_signed SamlSettings#authn_requests_signed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#authn_requests_signed SamlSettings#authn_requests_signed}
   */
   readonly authnRequestsSigned?: boolean | cdktf.IResolvable;
   /**
   * The certificate used for request and assertion signing
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#certificate SamlSettings#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#certificate SamlSettings#certificate}
   */
   readonly certificate?: string;
   /**
   * When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#debug SamlSettings#debug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#debug SamlSettings#debug}
   */
   readonly debug?: boolean | cdktf.IResolvable;
   /**
   * Identity Provider Certificate specifies the PEM encoded X.509 Certificate as provided by the IdP configuration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#idp_cert SamlSettings#idp_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#idp_cert SamlSettings#idp_cert}
   */
   readonly idpCert: string;
   /**
   * The private key used for request and assertion signing
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#private_key SamlSettings#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#private_key SamlSettings#private_key}
   */
   readonly privateKey?: string;
   /**
   * The private key in write-only mode used for request and assertion signing
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#private_key_wo SamlSettings#private_key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#private_key_wo SamlSettings#private_key_wo}
   */
   readonly privateKeyWo?: string;
   /**
   * Signature Digest Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#signature_digest_method SamlSettings#signature_digest_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#signature_digest_method SamlSettings#signature_digest_method}
   */
   readonly signatureDigestMethod?: string;
   /**
   * Signature Signing Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#signature_signing_method SamlSettings#signature_signing_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#signature_signing_method SamlSettings#signature_signing_method}
   */
   readonly signatureSigningMethod?: string;
   /**
   * Specifies the role for site admin access, provided in the list of roles sent in the Team Attribute Name attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#site_admin_role SamlSettings#site_admin_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#site_admin_role SamlSettings#site_admin_role}
   */
   readonly siteAdminRole?: string;
   /**
   * Single Log Out URL specifies the HTTPS endpoint on your IdP for single logout requests. This value is provided by the IdP configuration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#slo_endpoint_url SamlSettings#slo_endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#slo_endpoint_url SamlSettings#slo_endpoint_url}
   */
   readonly sloEndpointUrl: string;
   /**
   * Specifies the Single Sign On session timeout in seconds. Defaults to 14 days
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#sso_api_token_session_timeout SamlSettings#sso_api_token_session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#sso_api_token_session_timeout SamlSettings#sso_api_token_session_timeout}
   */
   readonly ssoApiTokenSessionTimeout?: number;
   /**
   * Single Sign On URL specifies the HTTPS endpoint on your IdP for single sign-on requests. This value is provided by the IdP configuration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#sso_endpoint_url SamlSettings#sso_endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#sso_endpoint_url SamlSettings#sso_endpoint_url}
   */
   readonly ssoEndpointUrl: string;
   /**
   * Set it to false if you would rather use Terraform Enterprise to manage team membership
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#team_management_enabled SamlSettings#team_management_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#team_management_enabled SamlSettings#team_management_enabled}
   */
   readonly teamManagementEnabled?: boolean | cdktf.IResolvable;
   /**
   * Ensure that <saml:Assertion> elements are signed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#want_assertions_signed SamlSettings#want_assertions_signed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#want_assertions_signed SamlSettings#want_assertions_signed}
   */
   readonly wantAssertionsSigned?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings tfe_saml_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings tfe_saml_settings}
 */
 export class SamlSettings extends cdktf.TerraformResource {
 
@@ -133,7 +133,7 @@ export class SamlSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SamlSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SamlSettings to import
-  * @param importFromId The id of the existing SamlSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SamlSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SamlSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +145,7 @@ export class SamlSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/resources/saml_settings tfe_saml_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/saml_settings tfe_saml_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class SamlSettings extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_saml_settings',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.67.1',
+        providerVersion: '0.68.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
