@@ -4,7 +4,7 @@
 
 ### PolicySetParameter <a name="PolicySetParameter" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.policySetParameter.PolicySetParameter.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the PolicySetParameter to impo
 
 The id of the existing PolicySetParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,7 +926,7 @@ Key *string
 
 Name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter#key PolicySetParameter#key}
 
 ---
 
@@ -940,7 +940,7 @@ PolicySetId *string
 
 The ID of the policy set that owns the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
 
 ---
 
@@ -954,7 +954,7 @@ Sensitive interface{}
 
 Whether the value is sensitive. If true then the parameter is written once and not visible thereafter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
 
 ---
 
@@ -968,7 +968,7 @@ Value *string
 
 Value of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter#value PolicySetParameter#value}
 
 ---
 
@@ -982,7 +982,7 @@ ValueWo *string
 
 Value of the parameter in write-only mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.0/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
 
 ---
 
