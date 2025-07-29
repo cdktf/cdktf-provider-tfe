@@ -4,7 +4,7 @@
 
 ### WorkspaceSettings <a name="WorkspaceSettings" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings tfe_workspace_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings tfe_workspace_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the WorkspaceSettings to impor
 
 The id of the existing WorkspaceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,13 +1006,13 @@ new WorkspaceSettingsConfig {
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>object</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply">AutoApply</a></code> | <code>object</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.description">Description</a></code> | <code>string</code> | A description of the workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.effectiveTags">EffectiveTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of all key-value tags set on the workspace (includes inheritted tags). |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">ExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">ExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key-value tags to add to the workspace. |
@@ -1097,7 +1097,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public string AgentPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public object AssessmentsEnabled { get; set; }
 
 If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#assessments_enabled WorkspaceSettings#assessments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#assessments_enabled WorkspaceSettings#assessments_enabled}
 
 ---
 
@@ -1139,7 +1139,7 @@ If set to false a human will have to manually confirm a plan in HCP Terraform's 
 
 If set to true, this resource will be automatically applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#auto_apply WorkspaceSettings#auto_apply}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#auto_apply WorkspaceSettings#auto_apply}
 
 ---
 
@@ -1153,7 +1153,7 @@ public string Description { get; set; }
 
 A description of the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#description WorkspaceSettings#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#description WorkspaceSettings#description}
 
 ---
 
@@ -1167,7 +1167,7 @@ public System.Collections.Generic.IDictionary<string, string> EffectiveTags { ge
 
 A map of all key-value tags set on the workspace (includes inheritted tags).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#effective_tags WorkspaceSettings#effective_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#effective_tags WorkspaceSettings#effective_tags}
 
 ---
 
@@ -1179,7 +1179,7 @@ public string ExecutionMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}.
 
 ---
 
@@ -1195,7 +1195,7 @@ Whether the workspace allows all workspaces in the organization to access its st
 
 If false, then only workspaces defined in `remote_state_consumer_ids` can access its state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#global_remote_state WorkspaceSettings#global_remote_state}
 
 ---
 
@@ -1209,7 +1209,7 @@ public string[] RemoteStateConsumerIds { get; set; }
 
 The set of workspace IDs set as explicit remote state consumers for the given workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#remote_state_consumer_ids WorkspaceSettings#remote_state_consumer_ids}
 
 ---
 
@@ -1223,7 +1223,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 A map of key-value tags to add to the workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/workspace_settings#tags WorkspaceSettings#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/workspace_settings#tags WorkspaceSettings#tags}
 
 ---
 
