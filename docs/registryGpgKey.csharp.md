@@ -4,7 +4,7 @@
 
 ### RegistryGpgKey <a name="RegistryGpgKey" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/registry_gpg_key tfe_registry_gpg_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_gpg_key tfe_registry_gpg_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryGpgKey.RegistryGpgKey.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RegistryGpgKey to import.
 
 The id of the existing RegistryGpgKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_gpg_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ public string AsciiArmor { get; set; }
 
 ASCII-armored representation of the GPG key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
 
 ---
 
@@ -876,7 +876,7 @@ public string Organization { get; set; }
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.1/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
 
 ---
 
