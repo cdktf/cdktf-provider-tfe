@@ -4,7 +4,7 @@
 
 ### RegistryModule <a name="RegistryModule" id="@cdktf/provider-tfe.registryModule.RegistryModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module tfe_registry_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module tfe_registry_module}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryModule.RegistryModule.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the RegistryModule to import.
 
 The id of the existing RegistryModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1028,14 +1028,14 @@ new RegistryModuleConfig {
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#id RegistryModule#id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.initialVersion">InitialVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#initial_version RegistryModule#initial_version}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.moduleProvider">ModuleProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#module_provider RegistryModule#module_provider}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#name RegistryModule#name}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#namespace RegistryModule#namespace}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.noCode">NoCode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#no_code RegistryModule#no_code}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#organization RegistryModule#organization}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.registryName">RegistryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#registry_name RegistryModule#registry_name}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#id RegistryModule#id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.initialVersion">InitialVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.moduleProvider">ModuleProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#name RegistryModule#name}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#namespace RegistryModule#namespace}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.noCode">NoCode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#no_code RegistryModule#no_code}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#organization RegistryModule#organization}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.registryName">RegistryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.testConfig">TestConfig</a></code> | <code>object</code> | test_config block. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.vcsRepo">VcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo">RegistryModuleVcsRepo</a></code> | vcs_repo block. |
 
@@ -1119,7 +1119,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#id RegistryModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#id RegistryModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1134,7 +1134,7 @@ public string InitialVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#initial_version RegistryModule#initial_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public string ModuleProvider { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#module_provider RegistryModule#module_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#name RegistryModule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#name RegistryModule#name}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#namespace RegistryModule#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#namespace RegistryModule#namespace}.
 
 ---
 
@@ -1182,7 +1182,7 @@ public object NoCode { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#no_code RegistryModule#no_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#no_code RegistryModule#no_code}.
 
 ---
 
@@ -1194,7 +1194,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#organization RegistryModule#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#organization RegistryModule#organization}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public string RegistryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#registry_name RegistryModule#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}.
 
 ---
 
@@ -1220,7 +1220,7 @@ public object TestConfig { get; set; }
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#test_config RegistryModule#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#test_config RegistryModule#test_config}
 
 ---
 
@@ -1234,7 +1234,7 @@ public RegistryModuleVcsRepo VcsRepo { get; set; }
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
 
 ---
 
@@ -1254,7 +1254,7 @@ new RegistryModuleTestConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.testsEnabled">TestsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.testsEnabled">TestsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}. |
 
 ---
 
@@ -1266,7 +1266,7 @@ public object TestsEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}.
 
 ---
 
@@ -1283,6 +1283,8 @@ new RegistryModuleVcsRepo {
     string Branch = null,
     string GithubAppInstallationId = null,
     string OauthTokenId = null,
+    string SourceDirectory = null,
+    string TagPrefix = null,
     object Tags = null
 };
 ```
@@ -1291,12 +1293,14 @@ new RegistryModuleVcsRepo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.displayIdentifier">DisplayIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.identifier">Identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#identifier RegistryModule#identifier}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#branch RegistryModule#branch}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tags">Tags</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#tags RegistryModule#tags}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.displayIdentifier">DisplayIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.identifier">Identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#identifier RegistryModule#identifier}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#branch RegistryModule#branch}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.sourceDirectory">SourceDirectory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tagPrefix">TagPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tags">Tags</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#tags RegistryModule#tags}. |
 
 ---
 
@@ -1308,7 +1312,7 @@ public string DisplayIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
 
 ---
 
@@ -1320,7 +1324,7 @@ public string Identifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#identifier RegistryModule#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#identifier RegistryModule#identifier}.
 
 ---
 
@@ -1332,7 +1336,7 @@ public string Branch { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#branch RegistryModule#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#branch RegistryModule#branch}.
 
 ---
 
@@ -1344,7 +1348,7 @@ public string GithubAppInstallationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}.
 
 ---
 
@@ -1356,7 +1360,31 @@ public string OauthTokenId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
+
+---
+
+##### `SourceDirectory`<sup>Optional</sup> <a name="SourceDirectory" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.sourceDirectory"></a>
+
+```csharp
+public string SourceDirectory { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}.
+
+---
+
+##### `TagPrefix`<sup>Optional</sup> <a name="TagPrefix" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tagPrefix"></a>
+
+```csharp
+public string TagPrefix { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}.
 
 ---
 
@@ -1368,7 +1396,7 @@ public object Tags { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/registry_module#tags RegistryModule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/registry_module#tags RegistryModule#tags}.
 
 ---
 
@@ -1883,6 +1911,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetGithubAppInstallationId">ResetGithubAppInstallationId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetOauthTokenId">ResetOauthTokenId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetSourceDirectory">ResetSourceDirectory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetTagPrefix">ResetTagPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -2055,6 +2085,18 @@ private void ResetGithubAppInstallationId()
 private void ResetOauthTokenId()
 ```
 
+##### `ResetSourceDirectory` <a name="ResetSourceDirectory" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetSourceDirectory"></a>
+
+```csharp
+private void ResetSourceDirectory()
+```
+
+##### `ResetTagPrefix` <a name="ResetTagPrefix" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetTagPrefix"></a>
+
+```csharp
+private void ResetTagPrefix()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.resetTags"></a>
 
 ```csharp
@@ -2073,12 +2115,16 @@ private void ResetTags()
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.githubAppInstallationIdInput">GithubAppInstallationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.identifierInput">IdentifierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.oauthTokenIdInput">OauthTokenIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.sourceDirectoryInput">SourceDirectoryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tagPrefixInput">TagPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tagsInput">TagsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.displayIdentifier">DisplayIdentifier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.identifier">Identifier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.oauthTokenId">OauthTokenId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.sourceDirectory">SourceDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tagPrefix">TagPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tags">Tags</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo">RegistryModuleVcsRepo</a></code> | *No description.* |
 
@@ -2158,6 +2204,26 @@ public string OauthTokenIdInput { get; }
 
 ---
 
+##### `SourceDirectoryInput`<sup>Optional</sup> <a name="SourceDirectoryInput" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.sourceDirectoryInput"></a>
+
+```csharp
+public string SourceDirectoryInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TagPrefixInput`<sup>Optional</sup> <a name="TagPrefixInput" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tagPrefixInput"></a>
+
+```csharp
+public string TagPrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tagsInput"></a>
 
 ```csharp
@@ -2212,6 +2278,26 @@ public string Identifier { get; }
 
 ```csharp
 public string OauthTokenId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceDirectory`<sup>Required</sup> <a name="SourceDirectory" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.sourceDirectory"></a>
+
+```csharp
+public string SourceDirectory { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TagPrefix`<sup>Required</sup> <a name="TagPrefix" id="@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference.property.tagPrefix"></a>
+
+```csharp
+public string TagPrefix { get; }
 ```
 
 - *Type:* string

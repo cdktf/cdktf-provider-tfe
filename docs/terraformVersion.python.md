@@ -4,7 +4,7 @@
 
 ### TerraformVersion <a name="TerraformVersion" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version tfe_terraform_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version tfe_terraform_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer"></a>
 
@@ -21,15 +21,15 @@ terraformVersion.TerraformVersion(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  sha: str,
-  url: str,
   version: str,
+  archs: typing.Union[IResolvable, typing.List[TerraformVersionArchs]] = None,
   beta: typing.Union[bool, IResolvable] = None,
   deprecated: typing.Union[bool, IResolvable] = None,
   deprecated_reason: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
-  id: str = None,
-  official: typing.Union[bool, IResolvable] = None
+  official: typing.Union[bool, IResolvable] = None,
+  sha: str = None,
+  url: str = None
 )
 ```
 
@@ -44,15 +44,15 @@ terraformVersion.TerraformVersion(
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.sha">sha</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#sha TerraformVersion#sha}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#url TerraformVersion#url}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#version TerraformVersion#version}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.beta">beta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#beta TerraformVersion#beta}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.deprecated">deprecated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.deprecatedReason">deprecated_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#enabled TerraformVersion#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#id TerraformVersion#id}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.official">official</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#official TerraformVersion#official}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#version TerraformVersion#version}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.archs">archs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#archs TerraformVersion#archs}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.beta">beta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#beta TerraformVersion#beta}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.deprecated">deprecated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.deprecatedReason">deprecated_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.official">official</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#official TerraformVersion#official}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.sha">sha</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}. |
 
 ---
 
@@ -116,27 +116,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `sha`<sup>Required</sup> <a name="sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.sha"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#sha TerraformVersion#sha}.
-
----
-
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.url"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#url TerraformVersion#url}.
-
----
-
 ##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.version"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#version TerraformVersion#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#version TerraformVersion#version}.
+
+---
+
+##### `archs`<sup>Optional</sup> <a name="archs" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.archs"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#archs TerraformVersion#archs}.
 
 ---
 
@@ -144,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#beta TerraformVersion#beta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#beta TerraformVersion#beta}.
 
 ---
 
@@ -152,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}.
 
 ---
 
@@ -160,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}.
 
 ---
 
@@ -168,18 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#enabled TerraformVersion#enabled}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#id TerraformVersion#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}.
 
 ---
 
@@ -187,7 +168,23 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#official TerraformVersion#official}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#official TerraformVersion#official}.
+
+---
+
+##### `sha`<sup>Optional</sup> <a name="sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.sha"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer.parameter.url"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}.
 
 ---
 
@@ -218,12 +215,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.putArchs">put_archs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetArchs">reset_archs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetBeta">reset_beta</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetDeprecated">reset_deprecated</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetDeprecatedReason">reset_deprecated_reason</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetEnabled">reset_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetOfficial">reset_official</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetSha">reset_sha</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetUrl">reset_url</a></code> | *No description.* |
 
 ---
 
@@ -552,6 +552,26 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_archs` <a name="put_archs" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.putArchs"></a>
+
+```python
+def put_archs(
+  value: typing.Union[IResolvable, typing.List[TerraformVersionArchs]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.putArchs.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]
+
+---
+
+##### `reset_archs` <a name="reset_archs" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetArchs"></a>
+
+```python
+def reset_archs() -> None
+```
+
 ##### `reset_beta` <a name="reset_beta" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetBeta"></a>
 
 ```python
@@ -576,16 +596,22 @@ def reset_deprecated_reason() -> None
 def reset_enabled() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_official` <a name="reset_official" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetOfficial"></a>
 
 ```python
 def reset_official() -> None
+```
+
+##### `reset_sha` <a name="reset_sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetSha"></a>
+
+```python
+def reset_sha() -> None
+```
+
+##### `reset_url` <a name="reset_url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.resetUrl"></a>
+
+```python
+def reset_url() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -702,7 +728,7 @@ The construct id used in the generated config for the TerraformVersion to import
 
 The id of the existing TerraformVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -732,11 +758,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.archs">archs</a></code> | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList">TerraformVersionArchsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.archsInput">archs_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.betaInput">beta_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.deprecatedInput">deprecated_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.deprecatedReasonInput">deprecated_reason_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.officialInput">official_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.shaInput">sha_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
@@ -745,7 +773,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.deprecated">deprecated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.deprecatedReason">deprecated_reason</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.official">official</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.sha">sha</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.url">url</a></code> | <code>str</code> | *No description.* |
@@ -895,6 +922,36 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `archs`<sup>Required</sup> <a name="archs" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.archs"></a>
+
+```python
+archs: TerraformVersionArchsList
+```
+
+- *Type:* <a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList">TerraformVersionArchsList</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `archs_input`<sup>Optional</sup> <a name="archs_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.archsInput"></a>
+
+```python
+archs_input: typing.Union[IResolvable, typing.List[TerraformVersionArchs]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]
+
+---
+
 ##### `beta_input`<sup>Optional</sup> <a name="beta_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.betaInput"></a>
 
 ```python
@@ -932,16 +989,6 @@ enabled_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1025,16 +1072,6 @@ enabled: typing.Union[bool, IResolvable]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
 ##### `official`<sup>Required</sup> <a name="official" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.property.official"></a>
 
 ```python
@@ -1095,6 +1132,80 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### TerraformVersionArchs <a name="TerraformVersionArchs" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_tfe import terraform_version
+
+terraformVersion.TerraformVersionArchs(
+  arch: str,
+  os: str,
+  sha: str,
+  url: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.arch">arch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#arch TerraformVersion#arch}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.os">os</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#os TerraformVersion#os}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.sha">sha</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}. |
+
+---
+
+##### `arch`<sup>Required</sup> <a name="arch" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.arch"></a>
+
+```python
+arch: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#arch TerraformVersion#arch}.
+
+---
+
+##### `os`<sup>Required</sup> <a name="os" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.os"></a>
+
+```python
+os: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#os TerraformVersion#os}.
+
+---
+
+##### `sha`<sup>Required</sup> <a name="sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.sha"></a>
+
+```python
+sha: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}.
+
+---
+
 ### TerraformVersionConfig <a name="TerraformVersionConfig" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.Initializer"></a>
@@ -1110,15 +1221,15 @@ terraformVersion.TerraformVersionConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  sha: str,
-  url: str,
   version: str,
+  archs: typing.Union[IResolvable, typing.List[TerraformVersionArchs]] = None,
   beta: typing.Union[bool, IResolvable] = None,
   deprecated: typing.Union[bool, IResolvable] = None,
   deprecated_reason: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
-  id: str = None,
-  official: typing.Union[bool, IResolvable] = None
+  official: typing.Union[bool, IResolvable] = None,
+  sha: str = None,
+  url: str = None
 )
 ```
 
@@ -1133,15 +1244,15 @@ terraformVersion.TerraformVersionConfig(
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.sha">sha</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#sha TerraformVersion#sha}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#url TerraformVersion#url}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#version TerraformVersion#version}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.beta">beta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#beta TerraformVersion#beta}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecated">deprecated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecatedReason">deprecated_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#enabled TerraformVersion#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#id TerraformVersion#id}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.official">official</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#official TerraformVersion#official}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#version TerraformVersion#version}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.archs">archs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#archs TerraformVersion#archs}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.beta">beta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#beta TerraformVersion#beta}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecated">deprecated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecatedReason">deprecated_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.official">official</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#official TerraformVersion#official}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.sha">sha</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}. |
 
 ---
 
@@ -1215,30 +1326,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `sha`<sup>Required</sup> <a name="sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.sha"></a>
-
-```python
-sha: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#sha TerraformVersion#sha}.
-
----
-
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.url"></a>
-
-```python
-url: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#url TerraformVersion#url}.
-
----
-
 ##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.version"></a>
 
 ```python
@@ -1247,7 +1334,19 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#version TerraformVersion#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#version TerraformVersion#version}.
+
+---
+
+##### `archs`<sup>Optional</sup> <a name="archs" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.archs"></a>
+
+```python
+archs: typing.Union[IResolvable, typing.List[TerraformVersionArchs]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#archs TerraformVersion#archs}.
 
 ---
 
@@ -1259,7 +1358,7 @@ beta: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#beta TerraformVersion#beta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#beta TerraformVersion#beta}.
 
 ---
 
@@ -1271,7 +1370,7 @@ deprecated: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}.
 
 ---
 
@@ -1283,7 +1382,7 @@ deprecated_reason: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}.
 
 ---
 
@@ -1295,22 +1394,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#enabled TerraformVersion#enabled}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#id TerraformVersion#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}.
 
 ---
 
@@ -1322,7 +1406,584 @@ official: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/terraform_version#official TerraformVersion#official}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#official TerraformVersion#official}.
+
+---
+
+##### `sha`<sup>Optional</sup> <a name="sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.sha"></a>
+
+```python
+sha: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### TerraformVersionArchsList <a name="TerraformVersionArchsList" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_tfe import terraform_version
+
+terraformVersion.TerraformVersionArchsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> TerraformVersionArchsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[TerraformVersionArchs]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]]
+
+---
+
+
+### TerraformVersionArchsOutputReference <a name="TerraformVersionArchsOutputReference" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_tfe import terraform_version
+
+terraformVersion.TerraformVersionArchsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.archInput">arch_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.osInput">os_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.shaInput">sha_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.arch">arch</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.os">os</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.sha">sha</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `arch_input`<sup>Optional</sup> <a name="arch_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.archInput"></a>
+
+```python
+arch_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `os_input`<sup>Optional</sup> <a name="os_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.osInput"></a>
+
+```python
+os_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `sha_input`<sup>Optional</sup> <a name="sha_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.shaInput"></a>
+
+```python
+sha_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.urlInput"></a>
+
+```python
+url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `arch`<sup>Required</sup> <a name="arch" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.arch"></a>
+
+```python
+arch: str
+```
+
+- *Type:* str
+
+---
+
+##### `os`<sup>Required</sup> <a name="os" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.os"></a>
+
+```python
+os: str
+```
+
+- *Type:* str
+
+---
+
+##### `sha`<sup>Required</sup> <a name="sha" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.sha"></a>
+
+```python
+sha: str
+```
+
+- *Type:* str
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.terraformVersion.TerraformVersionArchsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, TerraformVersionArchs]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>]
 
 ---
 

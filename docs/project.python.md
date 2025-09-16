@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-tfe.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project tfe_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project tfe_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.project.Project.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Duration after which the project will be auto-destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#description Project#description}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization to which the project belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#organization Project#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#organization Project#organization}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of key-value tags to add to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -674,7 +674,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1136,7 +1136,7 @@ name: str
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -1150,7 +1150,7 @@ auto_destroy_activity_duration: str
 
 Duration after which the project will be auto-destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
 
 ---
 
@@ -1164,7 +1164,7 @@ description: str
 
 Description of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#description Project#description}
 
 ---
 
@@ -1178,7 +1178,7 @@ ignore_additional_tags: typing.Union[bool, IResolvable]
 
 Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
 
 ---
 
@@ -1192,7 +1192,7 @@ organization: str
 
 Name of the organization to which the project belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#organization Project#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#organization Project#organization}
 
 ---
 
@@ -1206,7 +1206,7 @@ tags: typing.Mapping[str]
 
 A map of key-value tags to add to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/project#tags Project#tags}
 
 ---
 

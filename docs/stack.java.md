@@ -4,7 +4,7 @@
 
 ### Stack <a name="Stack" id="@cdktf/provider-tfe.stack.Stack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack tfe_stack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack tfe_stack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.stack.Stack.Initializer"></a>
 
@@ -25,6 +25,7 @@ Stack.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
     .projectId(java.lang.String)
+//  .agentPoolId(java.lang.String)
 //  .description(java.lang.String)
 //  .vcsRepo(StackVcsRepo)
     .build();
@@ -43,6 +44,7 @@ Stack.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | ID of the project that the Stack belongs to. |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.Initializer.parameter.agentPoolId">agentPoolId</a></code> | <code>java.lang.String</code> | The ID of an agent pool to assign to the stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the Stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.Initializer.parameter.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo">StackVcsRepo</a></code> | vcs_repo block. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#name Stack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#name Stack#name}
 
 ---
 
@@ -124,7 +126,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the project that the Stack belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#project_id Stack#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#project_id Stack#project_id}
+
+---
+
+##### `agentPoolId`<sup>Optional</sup> <a name="agentPoolId" id="@cdktf/provider-tfe.stack.Stack.Initializer.parameter.agentPoolId"></a>
+
+- *Type:* java.lang.String
+
+The ID of an agent pool to assign to the stack.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
 
 ---
 
@@ -134,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#description Stack#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#description Stack#description}
 
 ---
 
@@ -144,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#vcs_repo Stack#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 
 ---
 
@@ -176,6 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.putVcsRepo">putVcsRepo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.resetAgentPoolId">resetAgentPoolId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.resetVcsRepo">resetVcsRepo</a></code> | *No description.* |
 
@@ -483,6 +496,12 @@ public void putVcsRepo(StackVcsRepo value)
 
 ---
 
+##### `resetAgentPoolId` <a name="resetAgentPoolId" id="@cdktf/provider-tfe.stack.Stack.resetAgentPoolId"></a>
+
+```java
+public void resetAgentPoolId()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-tfe.stack.Stack.resetDescription"></a>
 
 ```java
@@ -598,7 +617,7 @@ The construct id used in the generated config for the Stack to import.
 
 The id of the existing Stack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -633,10 +652,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference">StackVcsRepoOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.property.agentPoolIdInput">agentPoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.vcsRepoInput">vcsRepoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-tfe.stack.StackVcsRepo">StackVcsRepo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.property.agentPoolId">agentPoolId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -835,6 +856,16 @@ public StackVcsRepoOutputReference getVcsRepo();
 
 ---
 
+##### `agentPoolIdInput`<sup>Optional</sup> <a name="agentPoolIdInput" id="@cdktf/provider-tfe.stack.Stack.property.agentPoolIdInput"></a>
+
+```java
+public java.lang.String getAgentPoolIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-tfe.stack.Stack.property.descriptionInput"></a>
 
 ```java
@@ -872,6 +903,16 @@ public java.lang.Object getVcsRepoInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-tfe.stack.StackVcsRepo">StackVcsRepo</a>
+
+---
+
+##### `agentPoolId`<sup>Required</sup> <a name="agentPoolId" id="@cdktf/provider-tfe.stack.Stack.property.agentPoolId"></a>
+
+```java
+public java.lang.String getAgentPoolId();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -946,6 +987,7 @@ StackConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
     .projectId(java.lang.String)
+//  .agentPoolId(java.lang.String)
 //  .description(java.lang.String)
 //  .vcsRepo(StackVcsRepo)
     .build();
@@ -964,6 +1006,7 @@ StackConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | ID of the project that the Stack belongs to. |
+| <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.agentPoolId">agentPoolId</a></code> | <code>java.lang.String</code> | The ID of an agent pool to assign to the stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the Stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo">StackVcsRepo</a></code> | vcs_repo block. |
 
@@ -1049,7 +1092,7 @@ public java.lang.String getName();
 
 Name of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#name Stack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#name Stack#name}
 
 ---
 
@@ -1063,7 +1106,21 @@ public java.lang.String getProjectId();
 
 ID of the project that the Stack belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#project_id Stack#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#project_id Stack#project_id}
+
+---
+
+##### `agentPoolId`<sup>Optional</sup> <a name="agentPoolId" id="@cdktf/provider-tfe.stack.StackConfig.property.agentPoolId"></a>
+
+```java
+public java.lang.String getAgentPoolId();
+```
+
+- *Type:* java.lang.String
+
+The ID of an agent pool to assign to the stack.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
 
 ---
 
@@ -1077,7 +1134,7 @@ public java.lang.String getDescription();
 
 Description of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#description Stack#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#description Stack#description}
 
 ---
 
@@ -1091,7 +1148,7 @@ public StackVcsRepo getVcsRepo();
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#vcs_repo Stack#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 
 ---
 
@@ -1131,7 +1188,7 @@ public java.lang.String getBranch();
 
 The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#branch Stack#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#branch Stack#branch}
 
 ---
 
@@ -1147,7 +1204,7 @@ The installation ID of the GitHub App.
 
 This conflicts with `oauth_token_id` and can only be used if `oauth_token_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
 
 ---
 
@@ -1161,7 +1218,7 @@ public java.lang.String getIdentifier();
 
 Identifier of the VCS repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#identifier Stack#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#identifier Stack#identifier}
 
 ---
 
@@ -1177,7 +1234,7 @@ The VCS Connection to use.
 
 This ID can be obtained from a `tfe_oauth_client` resource. This conflicts with `github_app_installation_id` and can only be used if `github_app_installation_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
 
 ---
 
