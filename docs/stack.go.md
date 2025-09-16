@@ -4,7 +4,7 @@
 
 ### Stack <a name="Stack" id="@cdktf/provider-tfe.stack.Stack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack tfe_stack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack tfe_stack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.stack.Stack.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.putVcsRepo">PutVcsRepo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.resetAgentPoolId">ResetAgentPoolId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.resetVcsRepo">ResetVcsRepo</a></code> | *No description.* |
 
@@ -379,6 +380,12 @@ func PutVcsRepo(value StackVcsRepo)
 
 ---
 
+##### `ResetAgentPoolId` <a name="ResetAgentPoolId" id="@cdktf/provider-tfe.stack.Stack.resetAgentPoolId"></a>
+
+```go
+func ResetAgentPoolId()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-tfe.stack.Stack.resetDescription"></a>
 
 ```go
@@ -494,7 +501,7 @@ The construct id used in the generated config for the Stack to import.
 
 The id of the existing Stack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -529,10 +536,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.vcsRepo">VcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepoOutputReference">StackVcsRepoOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.property.agentPoolIdInput">AgentPoolIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.vcsRepoInput">VcsRepoInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.stack.Stack.property.agentPoolId">AgentPoolId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.Stack.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
@@ -731,6 +740,16 @@ func VcsRepo() StackVcsRepoOutputReference
 
 ---
 
+##### `AgentPoolIdInput`<sup>Optional</sup> <a name="AgentPoolIdInput" id="@cdktf/provider-tfe.stack.Stack.property.agentPoolIdInput"></a>
+
+```go
+func AgentPoolIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-tfe.stack.Stack.property.descriptionInput"></a>
 
 ```go
@@ -768,6 +787,16 @@ func VcsRepoInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `AgentPoolId`<sup>Required</sup> <a name="AgentPoolId" id="@cdktf/provider-tfe.stack.Stack.property.agentPoolId"></a>
+
+```go
+func AgentPoolId() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -838,6 +867,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 	Provisioners: *[]interface{},
 	Name: *string,
 	ProjectId: *string,
+	AgentPoolId: *string,
 	Description: *string,
 	VcsRepo: github.com/cdktf/cdktf-provider-tfe-go/tfe/v12.stack.StackVcsRepo,
 }
@@ -856,6 +886,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/stack"
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | ID of the project that the Stack belongs to. |
+| <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.agentPoolId">AgentPoolId</a></code> | <code>*string</code> | The ID of an agent pool to assign to the stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.description">Description</a></code> | <code>*string</code> | Description of the Stack. |
 | <code><a href="#@cdktf/provider-tfe.stack.StackConfig.property.vcsRepo">VcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.stack.StackVcsRepo">StackVcsRepo</a></code> | vcs_repo block. |
 
@@ -941,7 +972,7 @@ Name *string
 
 Name of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#name Stack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#name Stack#name}
 
 ---
 
@@ -955,7 +986,21 @@ ProjectId *string
 
 ID of the project that the Stack belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#project_id Stack#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#project_id Stack#project_id}
+
+---
+
+##### `AgentPoolId`<sup>Optional</sup> <a name="AgentPoolId" id="@cdktf/provider-tfe.stack.StackConfig.property.agentPoolId"></a>
+
+```go
+AgentPoolId *string
+```
+
+- *Type:* *string
+
+The ID of an agent pool to assign to the stack.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
 
 ---
 
@@ -969,7 +1014,7 @@ Description *string
 
 Description of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#description Stack#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#description Stack#description}
 
 ---
 
@@ -983,7 +1028,7 @@ VcsRepo StackVcsRepo
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#vcs_repo Stack#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 
 ---
 
@@ -1023,7 +1068,7 @@ Branch *string
 
 The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#branch Stack#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#branch Stack#branch}
 
 ---
 
@@ -1039,7 +1084,7 @@ The installation ID of the GitHub App.
 
 This conflicts with `oauth_token_id` and can only be used if `oauth_token_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
 
 ---
 
@@ -1053,7 +1098,7 @@ Identifier *string
 
 Identifier of the VCS repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#identifier Stack#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#identifier Stack#identifier}
 
 ---
 
@@ -1069,7 +1114,7 @@ The VCS Connection to use.
 
 This ID can be obtained from a `tfe_oauth_client` resource. This conflicts with `github_app_installation_id` and can only be used if `github_app_installation_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
 
 ---
 

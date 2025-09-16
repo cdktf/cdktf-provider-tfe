@@ -4,7 +4,7 @@
 
 ### DataTfeRegistryModule <a name="DataTfeRegistryModule" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module tfe_registry_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module tfe_registry_module}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer"></a>
 
@@ -459,7 +459,7 @@ The construct id used in the generated config for the DataTfeRegistryModule to i
 
 The id of the existing DataTfeRegistryModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ public string ModuleProvider { get; set; }
 
 Name of the module provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Name { get; set; }
 
 Name of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Organization { get; set; }
 
 Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
 
 ---
 
@@ -1090,7 +1090,7 @@ public string Namespace { get; set; }
 
 The namespace of the no-code module. Uses organization name if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
 
 ---
 
@@ -1104,7 +1104,7 @@ public object Permissions { get; set; }
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
 
 ---
 
@@ -1118,7 +1118,7 @@ public string RegistryName { get; set; }
 
 Name of the registry. Valid options: "public", "private". Defaults to "private".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
 
 ---
 
@@ -1132,7 +1132,7 @@ public object TestConfig { get; set; }
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
 
 ---
 
@@ -1146,7 +1146,7 @@ public object VcsRepo { get; set; }
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
 
 ---
 
@@ -1160,7 +1160,7 @@ public object VersionStatuses { get; set; }
 
 version_statuses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.68.2/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
 
 ---
 
@@ -2512,6 +2512,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.oauthTokenId">OauthTokenId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.repositoryHttpUrl">RepositoryHttpUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.serviceProvider">ServiceProvider</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.sourceDirectory">SourceDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.tagPrefix">TagPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.tags">Tags</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.tagsRegex">TagsRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.webhookUrl">WebhookUrl</a></code> | <code>string</code> | *No description.* |
@@ -2617,6 +2619,26 @@ public string RepositoryHttpUrl { get; }
 
 ```csharp
 public string ServiceProvider { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceDirectory`<sup>Required</sup> <a name="SourceDirectory" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.sourceDirectory"></a>
+
+```csharp
+public string SourceDirectory { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TagPrefix`<sup>Required</sup> <a name="TagPrefix" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.tagPrefix"></a>
+
+```csharp
+public string TagPrefix { get; }
 ```
 
 - *Type:* string
