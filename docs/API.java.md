@@ -6,7 +6,9 @@ The following submodules are available:
 
 - [adminOrganizationSettings](./adminOrganizationSettings.java.md)
 - [agentPool](./agentPool.java.md)
+- [agentPoolAllowedProjects](./agentPoolAllowedProjects.java.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.java.md)
+- [agentPoolExcludedWorkspaces](./agentPoolExcludedWorkspaces.java.md)
 - [agentToken](./agentToken.java.md)
 - [auditTrailToken](./auditTrailToken.java.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.java.md)
@@ -60,6 +62,7 @@ The following submodules are available:
 - [project](./project.java.md)
 - [projectOauthClient](./projectOauthClient.java.md)
 - [projectPolicySet](./projectPolicySet.java.md)
+- [projectSettings](./projectSettings.java.md)
 - [projectVariableSet](./projectVariableSet.java.md)
 - [provider](./provider.java.md)
 - [registryGpgKey](./registryGpgKey.java.md)

@@ -6,7 +6,9 @@ The following submodules are available:
 
 - [adminOrganizationSettings](./adminOrganizationSettings.typescript.md)
 - [agentPool](./agentPool.typescript.md)
+- [agentPoolAllowedProjects](./agentPoolAllowedProjects.typescript.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.typescript.md)
+- [agentPoolExcludedWorkspaces](./agentPoolExcludedWorkspaces.typescript.md)
 - [agentToken](./agentToken.typescript.md)
 - [auditTrailToken](./auditTrailToken.typescript.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.typescript.md)
@@ -60,6 +62,7 @@ The following submodules are available:
 - [project](./project.typescript.md)
 - [projectOauthClient](./projectOauthClient.typescript.md)
 - [projectPolicySet](./projectPolicySet.typescript.md)
+- [projectSettings](./projectSettings.typescript.md)
 - [projectVariableSet](./projectVariableSet.typescript.md)
 - [provider](./provider.typescript.md)
 - [registryGpgKey](./registryGpgKey.typescript.md)

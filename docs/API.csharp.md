@@ -6,7 +6,9 @@ The following submodules are available:
 
 - [adminOrganizationSettings](./adminOrganizationSettings.csharp.md)
 - [agentPool](./agentPool.csharp.md)
+- [agentPoolAllowedProjects](./agentPoolAllowedProjects.csharp.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.csharp.md)
+- [agentPoolExcludedWorkspaces](./agentPoolExcludedWorkspaces.csharp.md)
 - [agentToken](./agentToken.csharp.md)
 - [auditTrailToken](./auditTrailToken.csharp.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.csharp.md)
@@ -60,6 +62,7 @@ The following submodules are available:
 - [project](./project.csharp.md)
 - [projectOauthClient](./projectOauthClient.csharp.md)
 - [projectPolicySet](./projectPolicySet.csharp.md)
+- [projectSettings](./projectSettings.csharp.md)
 - [projectVariableSet](./projectVariableSet.csharp.md)
 - [provider](./provider.csharp.md)
 - [registryGpgKey](./registryGpgKey.csharp.md)

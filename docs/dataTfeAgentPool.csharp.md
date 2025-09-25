@@ -4,7 +4,7 @@
 
 ### DataTfeAgentPool <a name="DataTfeAgentPool" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool tfe_agent_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool tfe_agent_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataTfeAgentPool to import
 
 The id of the existing DataTfeAgentPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -407,7 +407,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.allowedProjectIds">AllowedProjectIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.allowedWorkspaceIds">AllowedWorkspaceIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.excludedWorkspaceIds">ExcludedWorkspaceIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.organizationScoped">OrganizationScoped</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -540,10 +542,30 @@ public TerraformProvider Provider { get; }
 
 ---
 
+##### `AllowedProjectIds`<sup>Required</sup> <a name="AllowedProjectIds" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.allowedProjectIds"></a>
+
+```csharp
+public string[] AllowedProjectIds { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `AllowedWorkspaceIds`<sup>Required</sup> <a name="AllowedWorkspaceIds" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.allowedWorkspaceIds"></a>
 
 ```csharp
 public string[] AllowedWorkspaceIds { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ExcludedWorkspaceIds`<sup>Required</sup> <a name="ExcludedWorkspaceIds" id="@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool.property.excludedWorkspaceIds"></a>
+
+```csharp
+public string[] ExcludedWorkspaceIds { get; }
 ```
 
 - *Type:* string[]
@@ -672,9 +694,9 @@ new DataTfeAgentPoolConfig {
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#name DataTfeAgentPool#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#id DataTfeAgentPool#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#organization DataTfeAgentPool#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#name DataTfeAgentPool#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#id DataTfeAgentPool#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#organization DataTfeAgentPool#organization}. |
 
 ---
 
@@ -756,7 +778,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#name DataTfeAgentPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#name DataTfeAgentPool#name}.
 
 ---
 
@@ -768,7 +790,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#id DataTfeAgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#id DataTfeAgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +805,7 @@ public string Organization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/agent_pool#organization DataTfeAgentPool#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/agent_pool#organization DataTfeAgentPool#organization}.
 
 ---
 

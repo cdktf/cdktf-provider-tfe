@@ -4,7 +4,7 @@
 
 ### OpaVersion <a name="OpaVersion" id="@cdktf/provider-tfe.opaVersion.OpaVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version tfe_opa_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version tfe_opa_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.opaVersion.OpaVersion.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the OpaVersion to import.
 
 The id of the existing OpaVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,10 +959,10 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/opaversion"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.arch">Arch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#arch OpaVersion#arch}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.os">Os</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#os OpaVersion#os}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.sha">Sha</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#sha OpaVersion#sha}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#url OpaVersion#url}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.arch">Arch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#arch OpaVersion#arch}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.os">Os</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#os OpaVersion#os}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.sha">Sha</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#sha OpaVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionArchs.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#url OpaVersion#url}. |
 
 ---
 
@@ -974,7 +974,7 @@ Arch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#arch OpaVersion#arch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#arch OpaVersion#arch}.
 
 ---
 
@@ -986,7 +986,7 @@ Os *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#os OpaVersion#os}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#os OpaVersion#os}.
 
 ---
 
@@ -998,7 +998,7 @@ Sha *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#sha OpaVersion#sha}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#sha OpaVersion#sha}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#url OpaVersion#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#url OpaVersion#url}.
 
 ---
 
@@ -1052,15 +1052,15 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/opaversion"
 | <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#version OpaVersion#version}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.archs">Archs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#archs OpaVersion#archs}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.beta">Beta</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#beta OpaVersion#beta}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.deprecated">Deprecated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#deprecated OpaVersion#deprecated}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.deprecatedReason">DeprecatedReason</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#deprecated_reason OpaVersion#deprecated_reason}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#enabled OpaVersion#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.official">Official</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#official OpaVersion#official}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.sha">Sha</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#sha OpaVersion#sha}. |
-| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#url OpaVersion#url}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#version OpaVersion#version}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.archs">Archs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#archs OpaVersion#archs}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.beta">Beta</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#beta OpaVersion#beta}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.deprecated">Deprecated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#deprecated OpaVersion#deprecated}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.deprecatedReason">DeprecatedReason</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#deprecated_reason OpaVersion#deprecated_reason}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#enabled OpaVersion#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.official">Official</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#official OpaVersion#official}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.sha">Sha</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#sha OpaVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.opaVersion.OpaVersionConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#url OpaVersion#url}. |
 
 ---
 
@@ -1142,7 +1142,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#version OpaVersion#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#version OpaVersion#version}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Archs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#archs OpaVersion#archs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#archs OpaVersion#archs}.
 
 ---
 
@@ -1166,7 +1166,7 @@ Beta interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#beta OpaVersion#beta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#beta OpaVersion#beta}.
 
 ---
 
@@ -1178,7 +1178,7 @@ Deprecated interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#deprecated OpaVersion#deprecated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#deprecated OpaVersion#deprecated}.
 
 ---
 
@@ -1190,7 +1190,7 @@ DeprecatedReason *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#deprecated_reason OpaVersion#deprecated_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#deprecated_reason OpaVersion#deprecated_reason}.
 
 ---
 
@@ -1202,7 +1202,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#enabled OpaVersion#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#enabled OpaVersion#enabled}.
 
 ---
 
@@ -1214,7 +1214,7 @@ Official interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#official OpaVersion#official}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#official OpaVersion#official}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Sha *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#sha OpaVersion#sha}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#sha OpaVersion#sha}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/opa_version#url OpaVersion#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#url OpaVersion#url}.
 
 ---
 

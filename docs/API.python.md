@@ -6,7 +6,9 @@ The following submodules are available:
 
 - [adminOrganizationSettings](./adminOrganizationSettings.python.md)
 - [agentPool](./agentPool.python.md)
+- [agentPoolAllowedProjects](./agentPoolAllowedProjects.python.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.python.md)
+- [agentPoolExcludedWorkspaces](./agentPoolExcludedWorkspaces.python.md)
 - [agentToken](./agentToken.python.md)
 - [auditTrailToken](./auditTrailToken.python.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.python.md)
@@ -60,6 +62,7 @@ The following submodules are available:
 - [project](./project.python.md)
 - [projectOauthClient](./projectOauthClient.python.md)
 - [projectPolicySet](./projectPolicySet.python.md)
+- [projectSettings](./projectSettings.python.md)
 - [projectVariableSet](./projectVariableSet.python.md)
 - [provider](./provider.python.md)
 - [registryGpgKey](./registryGpgKey.python.md)
