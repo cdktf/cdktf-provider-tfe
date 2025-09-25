@@ -4,7 +4,7 @@
 
 ### TerraformVersion <a name="TerraformVersion" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version tfe_terraform_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version tfe_terraform_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.terraformVersion.TerraformVersion.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the TerraformVersion to import
 
 The id of the existing TerraformVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,10 +954,10 @@ const terraformVersionArchs: terraformVersion.TerraformVersionArchs = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.arch">arch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#arch TerraformVersion#arch}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.os">os</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#os TerraformVersion#os}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.sha">sha</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.arch">arch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#arch TerraformVersion#arch}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.os">os</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#os TerraformVersion#os}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.sha">sha</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#url TerraformVersion#url}. |
 
 ---
 
@@ -969,7 +969,7 @@ public readonly arch: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#arch TerraformVersion#arch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#arch TerraformVersion#arch}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly os: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#os TerraformVersion#os}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#os TerraformVersion#os}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly sha: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly url: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#url TerraformVersion#url}.
 
 ---
 
@@ -1030,15 +1030,15 @@ const terraformVersionConfig: terraformVersion.TerraformVersionConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#version TerraformVersion#version}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.archs">archs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#archs TerraformVersion#archs}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.beta">beta</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#beta TerraformVersion#beta}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecated">deprecated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecatedReason">deprecatedReason</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.official">official</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#official TerraformVersion#official}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.sha">sha</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
-| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#version TerraformVersion#version}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.archs">archs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#archs TerraformVersion#archs}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.beta">beta</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#beta TerraformVersion#beta}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecated">deprecated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.deprecatedReason">deprecatedReason</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.official">official</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#official TerraformVersion#official}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.sha">sha</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#sha TerraformVersion#sha}. |
+| <code><a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#url TerraformVersion#url}. |
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly version: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#version TerraformVersion#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#version TerraformVersion#version}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly archs: IResolvable | TerraformVersionArchs[];
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.terraformVersion.TerraformVersionArchs">TerraformVersionArchs</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#archs TerraformVersion#archs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#archs TerraformVersion#archs}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public readonly beta: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#beta TerraformVersion#beta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#beta TerraformVersion#beta}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly deprecated: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#deprecated TerraformVersion#deprecated}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly deprecatedReason: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#deprecated_reason TerraformVersion#deprecated_reason}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#enabled TerraformVersion#enabled}.
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly official: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#official TerraformVersion#official}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#official TerraformVersion#official}.
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly sha: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#sha TerraformVersion#sha}.
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly url: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/terraform_version#url TerraformVersion#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/terraform_version#url TerraformVersion#url}.
 
 ---
 

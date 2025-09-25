@@ -6,7 +6,9 @@ The following submodules are available:
 
 - [adminOrganizationSettings](./adminOrganizationSettings.go.md)
 - [agentPool](./agentPool.go.md)
+- [agentPoolAllowedProjects](./agentPoolAllowedProjects.go.md)
 - [agentPoolAllowedWorkspaces](./agentPoolAllowedWorkspaces.go.md)
+- [agentPoolExcludedWorkspaces](./agentPoolExcludedWorkspaces.go.md)
 - [agentToken](./agentToken.go.md)
 - [auditTrailToken](./auditTrailToken.go.md)
 - [dataRetentionPolicy](./dataRetentionPolicy.go.md)
@@ -60,6 +62,7 @@ The following submodules are available:
 - [project](./project.go.md)
 - [projectOauthClient](./projectOauthClient.go.md)
 - [projectPolicySet](./projectPolicySet.go.md)
+- [projectSettings](./projectSettings.go.md)
 - [projectVariableSet](./projectVariableSet.go.md)
 - [provider](./provider.go.md)
 - [registryGpgKey](./registryGpgKey.go.md)

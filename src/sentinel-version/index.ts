@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version
+// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +13,57 @@ import * as cdktf from 'cdktf';
 
 export interface SentinelVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#archs SentinelVersion#archs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#archs SentinelVersion#archs}
   */
   readonly archs?: SentinelVersionArchs[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#beta SentinelVersion#beta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#beta SentinelVersion#beta}
   */
   readonly beta?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#deprecated SentinelVersion#deprecated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#deprecated SentinelVersion#deprecated}
   */
   readonly deprecated?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#deprecated_reason SentinelVersion#deprecated_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#deprecated_reason SentinelVersion#deprecated_reason}
   */
   readonly deprecatedReason?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#enabled SentinelVersion#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#enabled SentinelVersion#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#official SentinelVersion#official}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#official SentinelVersion#official}
   */
   readonly official?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#sha SentinelVersion#sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#sha SentinelVersion#sha}
   */
   readonly sha?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#url SentinelVersion#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#url SentinelVersion#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#version SentinelVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#version SentinelVersion#version}
   */
   readonly version: string;
 }
 export interface SentinelVersionArchs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#arch SentinelVersion#arch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#arch SentinelVersion#arch}
   */
   readonly arch: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#os SentinelVersion#os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#os SentinelVersion#os}
   */
   readonly os: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#sha SentinelVersion#sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#sha SentinelVersion#sha}
   */
   readonly sha: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#url SentinelVersion#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#url SentinelVersion#url}
   */
   readonly url: string;
 }
@@ -254,7 +254,7 @@ export class SentinelVersionArchsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version tfe_sentinel_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version tfe_sentinel_version}
 */
 export class SentinelVersion extends cdktf.TerraformResource {
 
@@ -270,7 +270,7 @@ export class SentinelVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SentinelVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelVersion to import
-  * @param importFromId The id of the existing SentinelVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SentinelVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -282,7 +282,7 @@ export class SentinelVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/resources/sentinel_version tfe_sentinel_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/sentinel_version tfe_sentinel_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +293,7 @@ export class SentinelVersion extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_sentinel_version',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.69.0',
+        providerVersion: '0.70.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

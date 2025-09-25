@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids
+// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeWorkspaceIdsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#exclude_tags DataTfeWorkspaceIds#exclude_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#exclude_tags DataTfeWorkspaceIds#exclude_tags}
   */
   readonly excludeTags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#id DataTfeWorkspaceIds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#id DataTfeWorkspaceIds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#names DataTfeWorkspaceIds#names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#names DataTfeWorkspaceIds#names}
   */
   readonly names?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#organization DataTfeWorkspaceIds#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#organization DataTfeWorkspaceIds#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#tag_names DataTfeWorkspaceIds#tag_names}
   */
   readonly tagNames?: string[];
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#tag_filters DataTfeWorkspaceIds#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#tag_filters DataTfeWorkspaceIds#tag_filters}
   */
   readonly tagFilters?: DataTfeWorkspaceIdsTagFilters;
 }
 export interface DataTfeWorkspaceIdsTagFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#exclude DataTfeWorkspaceIds#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#exclude DataTfeWorkspaceIds#exclude}
   */
   readonly exclude?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#include DataTfeWorkspaceIds#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#include DataTfeWorkspaceIds#include}
   */
   readonly include?: { [key: string]: string };
 }
@@ -161,7 +161,7 @@ export class DataTfeWorkspaceIdsTagFiltersOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids tfe_workspace_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids tfe_workspace_ids}
 */
 export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
 
@@ -177,7 +177,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeWorkspaceIds resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeWorkspaceIds to import
-  * @param importFromId The id of the existing DataTfeWorkspaceIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeWorkspaceIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeWorkspaceIds to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -189,7 +189,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/workspace_ids tfe_workspace_ids} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace_ids tfe_workspace_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,7 +200,7 @@ export class DataTfeWorkspaceIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace_ids',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.69.0',
+        providerVersion: '0.70.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

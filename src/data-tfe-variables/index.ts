@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/variables
+// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/variables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeVariablesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/variables#variable_set_id DataTfeVariables#variable_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/variables#variable_set_id DataTfeVariables#variable_set_id}
   */
   readonly variableSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/variables#workspace_id DataTfeVariables#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/variables#workspace_id DataTfeVariables#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -323,7 +323,7 @@ export class DataTfeVariablesVariablesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/variables tfe_variables}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/variables tfe_variables}
 */
 export class DataTfeVariables extends cdktf.TerraformDataSource {
 
@@ -339,7 +339,7 @@ export class DataTfeVariables extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeVariables resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeVariables to import
-  * @param importFromId The id of the existing DataTfeVariables that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/variables#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeVariables that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/variables#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeVariables to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -351,7 +351,7 @@ export class DataTfeVariables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.69.0/docs/data-sources/variables tfe_variables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/variables tfe_variables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -362,7 +362,7 @@ export class DataTfeVariables extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_variables',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.69.0',
+        providerVersion: '0.70.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
