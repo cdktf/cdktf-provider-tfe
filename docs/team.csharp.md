@@ -280,7 +280,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-tfe.team.Team.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-tfe.team.Team.importFrom"></a>
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-tfe.team.Team.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-tfe.team.Team.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -545,22 +545,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationAccess">OrganizationAccess</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference">TeamOrganizationAccessOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput">AllowMemberTokenManagementInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput">AllowMemberTokenManagementInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationAccessInput">OrganizationAccessInput</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.ssoTeamIdInput">SsoTeamIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.visibilityInput">VisibilityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement">AllowMemberTokenManagement</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement">AllowMemberTokenManagement</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
@@ -644,20 +644,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.team.Team.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.team.Team.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -704,10 +704,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.team.Team.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -724,10 +724,10 @@ public TeamOrganizationAccessOutputReference OrganizationAccess { get; }
 ##### `AllowMemberTokenManagementInput`<sup>Optional</sup> <a name="AllowMemberTokenManagementInput" id="@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput"></a>
 
 ```csharp
-public object AllowMemberTokenManagementInput { get; }
+public bool|IResolvable AllowMemberTokenManagementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -794,10 +794,10 @@ public string VisibilityInput { get; }
 ##### `AllowMemberTokenManagement`<sup>Required</sup> <a name="AllowMemberTokenManagement" id="@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement"></a>
 
 ```csharp
-public object AllowMemberTokenManagement { get; }
+public bool|IResolvable AllowMemberTokenManagement { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -879,15 +879,15 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Tfe;
 
 new TeamConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
-    object AllowMemberTokenManagement = null,
+    bool|IResolvable AllowMemberTokenManagement = null,
     string Id = null,
     string Organization = null,
     TeamOrganizationAccess OrganizationAccess = null,
@@ -900,15 +900,15 @@ new TeamConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#name Team#name}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement">AllowMemberTokenManagement</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement">AllowMemberTokenManagement</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#organization Team#organization}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organizationAccess">OrganizationAccess</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | organization_access block. |
@@ -920,20 +920,20 @@ new TeamConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.team.TeamConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.team.TeamConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -980,10 +980,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.team.TeamConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1002,10 +1002,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowMemberTokenManagement`<sup>Optional</sup> <a name="AllowMemberTokenManagement" id="@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement"></a>
 
 ```csharp
-public object AllowMemberTokenManagement { get; set; }
+public bool|IResolvable AllowMemberTokenManagement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}.
 
@@ -1084,21 +1084,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Tfe;
 
 new TeamOrganizationAccess {
-    object AccessSecretTeams = null,
-    object ManageAgentPools = null,
-    object ManageMembership = null,
-    object ManageModules = null,
-    object ManageOrganizationAccess = null,
-    object ManagePolicies = null,
-    object ManagePolicyOverrides = null,
-    object ManageProjects = null,
-    object ManageProviders = null,
-    object ManageRunTasks = null,
-    object ManageTeams = null,
-    object ManageVcsSettings = null,
-    object ManageWorkspaces = null,
-    object ReadProjects = null,
-    object ReadWorkspaces = null
+    bool|IResolvable AccessSecretTeams = null,
+    bool|IResolvable ManageAgentPools = null,
+    bool|IResolvable ManageMembership = null,
+    bool|IResolvable ManageModules = null,
+    bool|IResolvable ManageOrganizationAccess = null,
+    bool|IResolvable ManagePolicies = null,
+    bool|IResolvable ManagePolicyOverrides = null,
+    bool|IResolvable ManageProjects = null,
+    bool|IResolvable ManageProviders = null,
+    bool|IResolvable ManageRunTasks = null,
+    bool|IResolvable ManageTeams = null,
+    bool|IResolvable ManageVcsSettings = null,
+    bool|IResolvable ManageWorkspaces = null,
+    bool|IResolvable ReadProjects = null,
+    bool|IResolvable ReadWorkspaces = null
 };
 ```
 
@@ -1106,31 +1106,31 @@ new TeamOrganizationAccess {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams">AccessSecretTeams</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools">ManageAgentPools</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership">ManageMembership</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules">ManageModules</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess">ManageOrganizationAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies">ManagePolicies</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects">ManageProjects</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders">ManageProviders</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">ManageRunTasks</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams">ManageTeams</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">ReadProjects</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">ReadWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams">AccessSecretTeams</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools">ManageAgentPools</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership">ManageMembership</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules">ManageModules</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess">ManageOrganizationAccess</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies">ManagePolicies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects">ManageProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders">ManageProviders</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">ManageRunTasks</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams">ManageTeams</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">ReadProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">ReadWorkspaces</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}. |
 
 ---
 
 ##### `AccessSecretTeams`<sup>Optional</sup> <a name="AccessSecretTeams" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams"></a>
 
 ```csharp
-public object AccessSecretTeams { get; set; }
+public bool|IResolvable AccessSecretTeams { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}.
 
@@ -1139,10 +1139,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageAgentPools`<sup>Optional</sup> <a name="ManageAgentPools" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools"></a>
 
 ```csharp
-public object ManageAgentPools { get; set; }
+public bool|IResolvable ManageAgentPools { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}.
 
@@ -1151,10 +1151,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageMembership`<sup>Optional</sup> <a name="ManageMembership" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership"></a>
 
 ```csharp
-public object ManageMembership { get; set; }
+public bool|IResolvable ManageMembership { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}.
 
@@ -1163,10 +1163,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageModules`<sup>Optional</sup> <a name="ManageModules" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules"></a>
 
 ```csharp
-public object ManageModules { get; set; }
+public bool|IResolvable ManageModules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}.
 
@@ -1175,10 +1175,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageOrganizationAccess`<sup>Optional</sup> <a name="ManageOrganizationAccess" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess"></a>
 
 ```csharp
-public object ManageOrganizationAccess { get; set; }
+public bool|IResolvable ManageOrganizationAccess { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}.
 
@@ -1187,10 +1187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManagePolicies`<sup>Optional</sup> <a name="ManagePolicies" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies"></a>
 
 ```csharp
-public object ManagePolicies { get; set; }
+public bool|IResolvable ManagePolicies { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}.
 
@@ -1199,10 +1199,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManagePolicyOverrides`<sup>Optional</sup> <a name="ManagePolicyOverrides" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides"></a>
 
 ```csharp
-public object ManagePolicyOverrides { get; set; }
+public bool|IResolvable ManagePolicyOverrides { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}.
 
@@ -1211,10 +1211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageProjects`<sup>Optional</sup> <a name="ManageProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects"></a>
 
 ```csharp
-public object ManageProjects { get; set; }
+public bool|IResolvable ManageProjects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}.
 
@@ -1223,10 +1223,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageProviders`<sup>Optional</sup> <a name="ManageProviders" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders"></a>
 
 ```csharp
-public object ManageProviders { get; set; }
+public bool|IResolvable ManageProviders { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}.
 
@@ -1235,10 +1235,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageRunTasks`<sup>Optional</sup> <a name="ManageRunTasks" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks"></a>
 
 ```csharp
-public object ManageRunTasks { get; set; }
+public bool|IResolvable ManageRunTasks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}.
 
@@ -1247,10 +1247,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageTeams`<sup>Optional</sup> <a name="ManageTeams" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams"></a>
 
 ```csharp
-public object ManageTeams { get; set; }
+public bool|IResolvable ManageTeams { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}.
 
@@ -1259,10 +1259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageVcsSettings`<sup>Optional</sup> <a name="ManageVcsSettings" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings"></a>
 
 ```csharp
-public object ManageVcsSettings { get; set; }
+public bool|IResolvable ManageVcsSettings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}.
 
@@ -1271,10 +1271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ManageWorkspaces`<sup>Optional</sup> <a name="ManageWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces"></a>
 
 ```csharp
-public object ManageWorkspaces { get; set; }
+public bool|IResolvable ManageWorkspaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}.
 
@@ -1283,10 +1283,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ReadProjects`<sup>Optional</sup> <a name="ReadProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects"></a>
 
 ```csharp
-public object ReadProjects { get; set; }
+public bool|IResolvable ReadProjects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}.
 
@@ -1295,10 +1295,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ReadWorkspaces`<sup>Optional</sup> <a name="ReadWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces"></a>
 
 ```csharp
-public object ReadWorkspaces { get; set; }
+public bool|IResolvable ReadWorkspaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}.
 
@@ -1621,36 +1621,36 @@ private void ResetReadWorkspaces()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeamsInput">AccessSecretTeamsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPoolsInput">ManageAgentPoolsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembershipInput">ManageMembershipInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModulesInput">ManageModulesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccessInput">ManageOrganizationAccessInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePoliciesInput">ManagePoliciesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverridesInput">ManagePolicyOverridesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjectsInput">ManageProjectsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProvidersInput">ManageProvidersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput">ManageRunTasksInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeamsInput">ManageTeamsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput">ManageVcsSettingsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput">ManageWorkspacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput">ReadProjectsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput">ReadWorkspacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeams">AccessSecretTeams</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPools">ManageAgentPools</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembership">ManageMembership</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules">ManageModules</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccess">ManageOrganizationAccess</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies">ManagePolicies</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjects">ManageProjects</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProviders">ManageProviders</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks">ManageRunTasks</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeams">ManageTeams</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects">ReadProjects</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces">ReadWorkspaces</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeamsInput">AccessSecretTeamsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPoolsInput">ManageAgentPoolsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembershipInput">ManageMembershipInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModulesInput">ManageModulesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccessInput">ManageOrganizationAccessInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePoliciesInput">ManagePoliciesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverridesInput">ManagePolicyOverridesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjectsInput">ManageProjectsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProvidersInput">ManageProvidersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput">ManageRunTasksInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeamsInput">ManageTeamsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput">ManageVcsSettingsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput">ManageWorkspacesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput">ReadProjectsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput">ReadWorkspacesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeams">AccessSecretTeams</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPools">ManageAgentPools</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembership">ManageMembership</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules">ManageModules</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccess">ManageOrganizationAccess</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies">ManagePolicies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides">ManagePolicyOverrides</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjects">ManageProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProviders">ManageProviders</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks">ManageRunTasks</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeams">ManageTeams</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings">ManageVcsSettings</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces">ManageWorkspaces</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects">ReadProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces">ReadWorkspaces</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 
 ---
@@ -1682,300 +1682,300 @@ public string Fqn { get; }
 ##### `AccessSecretTeamsInput`<sup>Optional</sup> <a name="AccessSecretTeamsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeamsInput"></a>
 
 ```csharp
-public object AccessSecretTeamsInput { get; }
+public bool|IResolvable AccessSecretTeamsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageAgentPoolsInput`<sup>Optional</sup> <a name="ManageAgentPoolsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPoolsInput"></a>
 
 ```csharp
-public object ManageAgentPoolsInput { get; }
+public bool|IResolvable ManageAgentPoolsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageMembershipInput`<sup>Optional</sup> <a name="ManageMembershipInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembershipInput"></a>
 
 ```csharp
-public object ManageMembershipInput { get; }
+public bool|IResolvable ManageMembershipInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageModulesInput`<sup>Optional</sup> <a name="ManageModulesInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModulesInput"></a>
 
 ```csharp
-public object ManageModulesInput { get; }
+public bool|IResolvable ManageModulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageOrganizationAccessInput`<sup>Optional</sup> <a name="ManageOrganizationAccessInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccessInput"></a>
 
 ```csharp
-public object ManageOrganizationAccessInput { get; }
+public bool|IResolvable ManageOrganizationAccessInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManagePoliciesInput`<sup>Optional</sup> <a name="ManagePoliciesInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePoliciesInput"></a>
 
 ```csharp
-public object ManagePoliciesInput { get; }
+public bool|IResolvable ManagePoliciesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManagePolicyOverridesInput`<sup>Optional</sup> <a name="ManagePolicyOverridesInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverridesInput"></a>
 
 ```csharp
-public object ManagePolicyOverridesInput { get; }
+public bool|IResolvable ManagePolicyOverridesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageProjectsInput`<sup>Optional</sup> <a name="ManageProjectsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjectsInput"></a>
 
 ```csharp
-public object ManageProjectsInput { get; }
+public bool|IResolvable ManageProjectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageProvidersInput`<sup>Optional</sup> <a name="ManageProvidersInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProvidersInput"></a>
 
 ```csharp
-public object ManageProvidersInput { get; }
+public bool|IResolvable ManageProvidersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageRunTasksInput`<sup>Optional</sup> <a name="ManageRunTasksInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput"></a>
 
 ```csharp
-public object ManageRunTasksInput { get; }
+public bool|IResolvable ManageRunTasksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageTeamsInput`<sup>Optional</sup> <a name="ManageTeamsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeamsInput"></a>
 
 ```csharp
-public object ManageTeamsInput { get; }
+public bool|IResolvable ManageTeamsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageVcsSettingsInput`<sup>Optional</sup> <a name="ManageVcsSettingsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput"></a>
 
 ```csharp
-public object ManageVcsSettingsInput { get; }
+public bool|IResolvable ManageVcsSettingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageWorkspacesInput`<sup>Optional</sup> <a name="ManageWorkspacesInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput"></a>
 
 ```csharp
-public object ManageWorkspacesInput { get; }
+public bool|IResolvable ManageWorkspacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ReadProjectsInput`<sup>Optional</sup> <a name="ReadProjectsInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput"></a>
 
 ```csharp
-public object ReadProjectsInput { get; }
+public bool|IResolvable ReadProjectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ReadWorkspacesInput`<sup>Optional</sup> <a name="ReadWorkspacesInput" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput"></a>
 
 ```csharp
-public object ReadWorkspacesInput { get; }
+public bool|IResolvable ReadWorkspacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AccessSecretTeams`<sup>Required</sup> <a name="AccessSecretTeams" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeams"></a>
 
 ```csharp
-public object AccessSecretTeams { get; }
+public bool|IResolvable AccessSecretTeams { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageAgentPools`<sup>Required</sup> <a name="ManageAgentPools" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPools"></a>
 
 ```csharp
-public object ManageAgentPools { get; }
+public bool|IResolvable ManageAgentPools { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageMembership`<sup>Required</sup> <a name="ManageMembership" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembership"></a>
 
 ```csharp
-public object ManageMembership { get; }
+public bool|IResolvable ManageMembership { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageModules`<sup>Required</sup> <a name="ManageModules" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules"></a>
 
 ```csharp
-public object ManageModules { get; }
+public bool|IResolvable ManageModules { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageOrganizationAccess`<sup>Required</sup> <a name="ManageOrganizationAccess" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccess"></a>
 
 ```csharp
-public object ManageOrganizationAccess { get; }
+public bool|IResolvable ManageOrganizationAccess { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManagePolicies`<sup>Required</sup> <a name="ManagePolicies" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies"></a>
 
 ```csharp
-public object ManagePolicies { get; }
+public bool|IResolvable ManagePolicies { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManagePolicyOverrides`<sup>Required</sup> <a name="ManagePolicyOverrides" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides"></a>
 
 ```csharp
-public object ManagePolicyOverrides { get; }
+public bool|IResolvable ManagePolicyOverrides { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageProjects`<sup>Required</sup> <a name="ManageProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjects"></a>
 
 ```csharp
-public object ManageProjects { get; }
+public bool|IResolvable ManageProjects { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageProviders`<sup>Required</sup> <a name="ManageProviders" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProviders"></a>
 
 ```csharp
-public object ManageProviders { get; }
+public bool|IResolvable ManageProviders { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageRunTasks`<sup>Required</sup> <a name="ManageRunTasks" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks"></a>
 
 ```csharp
-public object ManageRunTasks { get; }
+public bool|IResolvable ManageRunTasks { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageTeams`<sup>Required</sup> <a name="ManageTeams" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeams"></a>
 
 ```csharp
-public object ManageTeams { get; }
+public bool|IResolvable ManageTeams { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageVcsSettings`<sup>Required</sup> <a name="ManageVcsSettings" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings"></a>
 
 ```csharp
-public object ManageVcsSettings { get; }
+public bool|IResolvable ManageVcsSettings { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ManageWorkspaces`<sup>Required</sup> <a name="ManageWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces"></a>
 
 ```csharp
-public object ManageWorkspaces { get; }
+public bool|IResolvable ManageWorkspaces { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ReadProjects`<sup>Required</sup> <a name="ReadProjects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects"></a>
 
 ```csharp
-public object ReadProjects { get; }
+public bool|IResolvable ReadProjects { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ReadWorkspaces`<sup>Required</sup> <a name="ReadWorkspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces"></a>
 
 ```csharp
-public object ReadWorkspaces { get; }
+public bool|IResolvable ReadWorkspaces { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

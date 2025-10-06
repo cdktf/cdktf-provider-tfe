@@ -14,26 +14,26 @@ from cdktf_cdktf_provider_tfe import organization
 organization.Organization(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   email: str,
   name: str,
-  aggregated_commit_status_enabled: typing.Union[bool, IResolvable] = None,
-  allow_force_delete_workspaces: typing.Union[bool, IResolvable] = None,
-  assessments_enforced: typing.Union[bool, IResolvable] = None,
+  aggregated_commit_status_enabled: bool | IResolvable = None,
+  allow_force_delete_workspaces: bool | IResolvable = None,
+  assessments_enforced: bool | IResolvable = None,
   collaborator_auth_policy: str = None,
-  cost_estimation_enabled: typing.Union[bool, IResolvable] = None,
+  cost_estimation_enabled: bool | IResolvable = None,
   id: str = None,
   owners_team_saml_role_id: str = None,
-  send_passing_statuses_for_untriggered_speculative_plans: typing.Union[bool, IResolvable] = None,
+  send_passing_statuses_for_untriggered_speculative_plans: bool | IResolvable = None,
   session_remember_minutes: typing.Union[int, float] = None,
   session_timeout_minutes: typing.Union[int, float] = None,
-  speculative_plan_management_enabled: typing.Union[bool, IResolvable] = None
+  speculative_plan_management_enabled: bool | IResolvable = None
 )
 ```
 
@@ -41,26 +41,26 @@ organization.Organization(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#email Organization#email}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.aggregatedCommitStatusEnabled">aggregated_commit_status_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.allowForceDeleteWorkspaces">allow_force_delete_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.assessmentsEnforced">assessments_enforced</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.aggregatedCommitStatusEnabled">aggregated_commit_status_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.allowForceDeleteWorkspaces">allow_force_delete_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.assessmentsEnforced">assessments_enforced</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.collaboratorAuthPolicy">collaborator_auth_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.costEstimationEnabled">cost_estimation_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.costEstimationEnabled">cost_estimation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#id Organization#id}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.ownersTeamSamlRoleId">owners_team_saml_role_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sendPassingStatusesForUntriggeredSpeculativePlans">send_passing_statuses_for_untriggered_speculative_plans</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sendPassingStatusesForUntriggeredSpeculativePlans">send_passing_statuses_for_untriggered_speculative_plans</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sessionRememberMinutes">session_remember_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sessionTimeoutMinutes">session_timeout_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.speculativePlanManagementEnabled">speculative_plan_management_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.speculativePlanManagementEnabled">speculative_plan_management_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
 
 ---
 
@@ -84,13 +84,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `aggregated_commit_status_enabled`<sup>Optional</sup> <a name="aggregated_commit_status_enabled" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.aggregatedCommitStatusEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}.
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allow_force_delete_workspaces`<sup>Optional</sup> <a name="allow_force_delete_workspaces" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.allowForceDeleteWorkspaces"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assessments_enforced`<sup>Optional</sup> <a name="assessments_enforced" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.assessmentsEnforced"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}.
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `cost_estimation_enabled`<sup>Optional</sup> <a name="cost_estimation_enabled" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.costEstimationEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `send_passing_statuses_for_untriggered_speculative_plans`<sup>Optional</sup> <a name="send_passing_statuses_for_untriggered_speculative_plans" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `speculative_plan_management_enabled`<sup>Optional</sup> <a name="speculative_plan_management_enabled" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.speculativePlanManagementEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}.
 
@@ -494,7 +494,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.organization.Organization.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.organization.Organization.importFrom"></a>
@@ -557,7 +557,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -573,7 +573,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.organization.Organization.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -800,40 +800,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.defaultProjectId">default_project_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput">aggregated_commit_status_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput">allow_force_delete_workspaces_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput">assessments_enforced_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput">aggregated_commit_status_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput">allow_force_delete_workspaces_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput">assessments_enforced_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.collaboratorAuthPolicyInput">collaborator_auth_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput">cost_estimation_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput">cost_estimation_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.ownersTeamSamlRoleIdInput">owners_team_saml_role_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput">send_passing_statuses_for_untriggered_speculative_plans_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput">send_passing_statuses_for_untriggered_speculative_plans_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionRememberMinutesInput">session_remember_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionTimeoutMinutesInput">session_timeout_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput">speculative_plan_management_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled">aggregated_commit_status_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces">allow_force_delete_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced">assessments_enforced</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput">speculative_plan_management_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled">aggregated_commit_status_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces">allow_force_delete_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced">assessments_enforced</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.collaboratorAuthPolicy">collaborator_auth_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled">cost_estimation_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled">cost_estimation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.email">email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.ownersTeamSamlRoleId">owners_team_saml_role_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans">send_passing_statuses_for_untriggered_speculative_plans</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans">send_passing_statuses_for_untriggered_speculative_plans</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionRememberMinutes">session_remember_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionTimeoutMinutes">session_timeout_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled">speculative_plan_management_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled">speculative_plan_management_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -912,20 +912,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.organization.Organization.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organization.Organization.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -972,10 +972,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.organization.Organization.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -992,30 +992,30 @@ default_project_id: str
 ##### `aggregated_commit_status_enabled_input`<sup>Optional</sup> <a name="aggregated_commit_status_enabled_input" id="@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput"></a>
 
 ```python
-aggregated_commit_status_enabled_input: typing.Union[bool, IResolvable]
+aggregated_commit_status_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_force_delete_workspaces_input`<sup>Optional</sup> <a name="allow_force_delete_workspaces_input" id="@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput"></a>
 
 ```python
-allow_force_delete_workspaces_input: typing.Union[bool, IResolvable]
+allow_force_delete_workspaces_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `assessments_enforced_input`<sup>Optional</sup> <a name="assessments_enforced_input" id="@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput"></a>
 
 ```python
-assessments_enforced_input: typing.Union[bool, IResolvable]
+assessments_enforced_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1032,10 +1032,10 @@ collaborator_auth_policy_input: str
 ##### `cost_estimation_enabled_input`<sup>Optional</sup> <a name="cost_estimation_enabled_input" id="@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput"></a>
 
 ```python
-cost_estimation_enabled_input: typing.Union[bool, IResolvable]
+cost_estimation_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1082,10 +1082,10 @@ owners_team_saml_role_id_input: str
 ##### `send_passing_statuses_for_untriggered_speculative_plans_input`<sup>Optional</sup> <a name="send_passing_statuses_for_untriggered_speculative_plans_input" id="@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput"></a>
 
 ```python
-send_passing_statuses_for_untriggered_speculative_plans_input: typing.Union[bool, IResolvable]
+send_passing_statuses_for_untriggered_speculative_plans_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1112,40 +1112,40 @@ session_timeout_minutes_input: typing.Union[int, float]
 ##### `speculative_plan_management_enabled_input`<sup>Optional</sup> <a name="speculative_plan_management_enabled_input" id="@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput"></a>
 
 ```python
-speculative_plan_management_enabled_input: typing.Union[bool, IResolvable]
+speculative_plan_management_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `aggregated_commit_status_enabled`<sup>Required</sup> <a name="aggregated_commit_status_enabled" id="@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled"></a>
 
 ```python
-aggregated_commit_status_enabled: typing.Union[bool, IResolvable]
+aggregated_commit_status_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_force_delete_workspaces`<sup>Required</sup> <a name="allow_force_delete_workspaces" id="@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces"></a>
 
 ```python
-allow_force_delete_workspaces: typing.Union[bool, IResolvable]
+allow_force_delete_workspaces: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `assessments_enforced`<sup>Required</sup> <a name="assessments_enforced" id="@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced"></a>
 
 ```python
-assessments_enforced: typing.Union[bool, IResolvable]
+assessments_enforced: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1162,10 +1162,10 @@ collaborator_auth_policy: str
 ##### `cost_estimation_enabled`<sup>Required</sup> <a name="cost_estimation_enabled" id="@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled"></a>
 
 ```python
-cost_estimation_enabled: typing.Union[bool, IResolvable]
+cost_estimation_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1212,10 +1212,10 @@ owners_team_saml_role_id: str
 ##### `send_passing_statuses_for_untriggered_speculative_plans`<sup>Required</sup> <a name="send_passing_statuses_for_untriggered_speculative_plans" id="@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
 ```python
-send_passing_statuses_for_untriggered_speculative_plans: typing.Union[bool, IResolvable]
+send_passing_statuses_for_untriggered_speculative_plans: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1242,10 +1242,10 @@ session_timeout_minutes: typing.Union[int, float]
 ##### `speculative_plan_management_enabled`<sup>Required</sup> <a name="speculative_plan_management_enabled" id="@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled"></a>
 
 ```python
-speculative_plan_management_enabled: typing.Union[bool, IResolvable]
+speculative_plan_management_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1277,26 +1277,26 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import organization
 
 organization.OrganizationConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   email: str,
   name: str,
-  aggregated_commit_status_enabled: typing.Union[bool, IResolvable] = None,
-  allow_force_delete_workspaces: typing.Union[bool, IResolvable] = None,
-  assessments_enforced: typing.Union[bool, IResolvable] = None,
+  aggregated_commit_status_enabled: bool | IResolvable = None,
+  allow_force_delete_workspaces: bool | IResolvable = None,
+  assessments_enforced: bool | IResolvable = None,
   collaborator_auth_policy: str = None,
-  cost_estimation_enabled: typing.Union[bool, IResolvable] = None,
+  cost_estimation_enabled: bool | IResolvable = None,
   id: str = None,
   owners_team_saml_role_id: str = None,
-  send_passing_statuses_for_untriggered_speculative_plans: typing.Union[bool, IResolvable] = None,
+  send_passing_statuses_for_untriggered_speculative_plans: bool | IResolvable = None,
   session_remember_minutes: typing.Union[int, float] = None,
   session_timeout_minutes: typing.Union[int, float] = None,
-  speculative_plan_management_enabled: typing.Union[bool, IResolvable] = None
+  speculative_plan_management_enabled: bool | IResolvable = None
 )
 ```
 
@@ -1304,46 +1304,46 @@ organization.OrganizationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#email Organization#email}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled">aggregated_commit_status_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">allow_force_delete_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">assessments_enforced</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled">aggregated_commit_status_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">allow_force_delete_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">assessments_enforced</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.collaboratorAuthPolicy">collaborator_auth_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">cost_estimation_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">cost_estimation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#id Organization#id}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.ownersTeamSamlRoleId">owners_team_saml_role_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">send_passing_statuses_for_untriggered_speculative_plans</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">send_passing_statuses_for_untriggered_speculative_plans</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionRememberMinutes">session_remember_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionTimeoutMinutes">session_timeout_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled">speculative_plan_management_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled">speculative_plan_management_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1390,10 +1390,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1424,10 +1424,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `aggregated_commit_status_enabled`<sup>Optional</sup> <a name="aggregated_commit_status_enabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled"></a>
 
 ```python
-aggregated_commit_status_enabled: typing.Union[bool, IResolvable]
+aggregated_commit_status_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}.
 
@@ -1436,10 +1436,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_force_delete_workspaces`<sup>Optional</sup> <a name="allow_force_delete_workspaces" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces"></a>
 
 ```python
-allow_force_delete_workspaces: typing.Union[bool, IResolvable]
+allow_force_delete_workspaces: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
 
@@ -1448,10 +1448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assessments_enforced`<sup>Optional</sup> <a name="assessments_enforced" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced"></a>
 
 ```python
-assessments_enforced: typing.Union[bool, IResolvable]
+assessments_enforced: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}.
 
@@ -1472,10 +1472,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `cost_estimation_enabled`<sup>Optional</sup> <a name="cost_estimation_enabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled"></a>
 
 ```python
-cost_estimation_enabled: typing.Union[bool, IResolvable]
+cost_estimation_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
@@ -1511,10 +1511,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `send_passing_statuses_for_untriggered_speculative_plans`<sup>Optional</sup> <a name="send_passing_statuses_for_untriggered_speculative_plans" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
 ```python
-send_passing_statuses_for_untriggered_speculative_plans: typing.Union[bool, IResolvable]
+send_passing_statuses_for_untriggered_speculative_plans: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
 
@@ -1547,10 +1547,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `speculative_plan_management_enabled`<sup>Optional</sup> <a name="speculative_plan_management_enabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled"></a>
 
 ```python
-speculative_plan_management_enabled: typing.Union[bool, IResolvable]
+speculative_plan_management_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}.
 

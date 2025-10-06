@@ -284,7 +284,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-tfe.organization.Organization.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-tfe.organization.Organization.importFrom"></a>
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-tfe.organization.Organization.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-tfe.organization.Organization.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -567,40 +567,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.defaultProjectId">DefaultProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput">AggregatedCommitStatusEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput">AllowForceDeleteWorkspacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput">AssessmentsEnforcedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput">AggregatedCommitStatusEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput">AllowForceDeleteWorkspacesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput">AssessmentsEnforcedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.collaboratorAuthPolicyInput">CollaboratorAuthPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput">CostEstimationEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput">CostEstimationEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.emailInput">EmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.ownersTeamSamlRoleIdInput">OwnersTeamSamlRoleIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput">SendPassingStatusesForUntriggeredSpeculativePlansInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput">SendPassingStatusesForUntriggeredSpeculativePlansInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionRememberMinutesInput">SessionRememberMinutesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionTimeoutMinutesInput">SessionTimeoutMinutesInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput">SpeculativePlanManagementEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled">AggregatedCommitStatusEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces">AllowForceDeleteWorkspaces</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced">AssessmentsEnforced</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput">SpeculativePlanManagementEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled">AggregatedCommitStatusEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces">AllowForceDeleteWorkspaces</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced">AssessmentsEnforced</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.collaboratorAuthPolicy">CollaboratorAuthPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled">CostEstimationEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled">CostEstimationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.ownersTeamSamlRoleId">OwnersTeamSamlRoleId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans">SendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans">SendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionRememberMinutes">SessionRememberMinutes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionTimeoutMinutes">SessionTimeoutMinutes</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled">SpeculativePlanManagementEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled">SpeculativePlanManagementEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -679,20 +679,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.organization.Organization.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.organization.Organization.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -739,10 +739,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.organization.Organization.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -759,30 +759,30 @@ public string DefaultProjectId { get; }
 ##### `AggregatedCommitStatusEnabledInput`<sup>Optional</sup> <a name="AggregatedCommitStatusEnabledInput" id="@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput"></a>
 
 ```csharp
-public object AggregatedCommitStatusEnabledInput { get; }
+public bool|IResolvable AggregatedCommitStatusEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowForceDeleteWorkspacesInput`<sup>Optional</sup> <a name="AllowForceDeleteWorkspacesInput" id="@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput"></a>
 
 ```csharp
-public object AllowForceDeleteWorkspacesInput { get; }
+public bool|IResolvable AllowForceDeleteWorkspacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AssessmentsEnforcedInput`<sup>Optional</sup> <a name="AssessmentsEnforcedInput" id="@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput"></a>
 
 ```csharp
-public object AssessmentsEnforcedInput { get; }
+public bool|IResolvable AssessmentsEnforcedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -799,10 +799,10 @@ public string CollaboratorAuthPolicyInput { get; }
 ##### `CostEstimationEnabledInput`<sup>Optional</sup> <a name="CostEstimationEnabledInput" id="@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput"></a>
 
 ```csharp
-public object CostEstimationEnabledInput { get; }
+public bool|IResolvable CostEstimationEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -849,10 +849,10 @@ public string OwnersTeamSamlRoleIdInput { get; }
 ##### `SendPassingStatusesForUntriggeredSpeculativePlansInput`<sup>Optional</sup> <a name="SendPassingStatusesForUntriggeredSpeculativePlansInput" id="@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput"></a>
 
 ```csharp
-public object SendPassingStatusesForUntriggeredSpeculativePlansInput { get; }
+public bool|IResolvable SendPassingStatusesForUntriggeredSpeculativePlansInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -879,40 +879,40 @@ public double SessionTimeoutMinutesInput { get; }
 ##### `SpeculativePlanManagementEnabledInput`<sup>Optional</sup> <a name="SpeculativePlanManagementEnabledInput" id="@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput"></a>
 
 ```csharp
-public object SpeculativePlanManagementEnabledInput { get; }
+public bool|IResolvable SpeculativePlanManagementEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AggregatedCommitStatusEnabled`<sup>Required</sup> <a name="AggregatedCommitStatusEnabled" id="@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled"></a>
 
 ```csharp
-public object AggregatedCommitStatusEnabled { get; }
+public bool|IResolvable AggregatedCommitStatusEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowForceDeleteWorkspaces`<sup>Required</sup> <a name="AllowForceDeleteWorkspaces" id="@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces"></a>
 
 ```csharp
-public object AllowForceDeleteWorkspaces { get; }
+public bool|IResolvable AllowForceDeleteWorkspaces { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AssessmentsEnforced`<sup>Required</sup> <a name="AssessmentsEnforced" id="@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced"></a>
 
 ```csharp
-public object AssessmentsEnforced { get; }
+public bool|IResolvable AssessmentsEnforced { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -929,10 +929,10 @@ public string CollaboratorAuthPolicy { get; }
 ##### `CostEstimationEnabled`<sup>Required</sup> <a name="CostEstimationEnabled" id="@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled"></a>
 
 ```csharp
-public object CostEstimationEnabled { get; }
+public bool|IResolvable CostEstimationEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -979,10 +979,10 @@ public string OwnersTeamSamlRoleId { get; }
 ##### `SendPassingStatusesForUntriggeredSpeculativePlans`<sup>Required</sup> <a name="SendPassingStatusesForUntriggeredSpeculativePlans" id="@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
 ```csharp
-public object SendPassingStatusesForUntriggeredSpeculativePlans { get; }
+public bool|IResolvable SendPassingStatusesForUntriggeredSpeculativePlans { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1009,10 +1009,10 @@ public double SessionTimeoutMinutes { get; }
 ##### `SpeculativePlanManagementEnabled`<sup>Required</sup> <a name="SpeculativePlanManagementEnabled" id="@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled"></a>
 
 ```csharp
-public object SpeculativePlanManagementEnabled { get; }
+public bool|IResolvable SpeculativePlanManagementEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1044,26 +1044,26 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Tfe;
 
 new OrganizationConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Email,
     string Name,
-    object AggregatedCommitStatusEnabled = null,
-    object AllowForceDeleteWorkspaces = null,
-    object AssessmentsEnforced = null,
+    bool|IResolvable AggregatedCommitStatusEnabled = null,
+    bool|IResolvable AllowForceDeleteWorkspaces = null,
+    bool|IResolvable AssessmentsEnforced = null,
     string CollaboratorAuthPolicy = null,
-    object CostEstimationEnabled = null,
+    bool|IResolvable CostEstimationEnabled = null,
     string Id = null,
     string OwnersTeamSamlRoleId = null,
-    object SendPassingStatusesForUntriggeredSpeculativePlans = null,
+    bool|IResolvable SendPassingStatusesForUntriggeredSpeculativePlans = null,
     double SessionRememberMinutes = null,
     double SessionTimeoutMinutes = null,
-    object SpeculativePlanManagementEnabled = null
+    bool|IResolvable SpeculativePlanManagementEnabled = null
 };
 ```
 
@@ -1071,46 +1071,46 @@ new OrganizationConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#email Organization#email}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled">AggregatedCommitStatusEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">AllowForceDeleteWorkspaces</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">AssessmentsEnforced</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled">AggregatedCommitStatusEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">AllowForceDeleteWorkspaces</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">AssessmentsEnforced</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.collaboratorAuthPolicy">CollaboratorAuthPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">CostEstimationEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">CostEstimationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#id Organization#id}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.ownersTeamSamlRoleId">OwnersTeamSamlRoleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">SendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">SendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionRememberMinutes">SessionRememberMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionTimeoutMinutes">SessionTimeoutMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled">SpeculativePlanManagementEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled">SpeculativePlanManagementEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1157,10 +1157,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1191,10 +1191,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AggregatedCommitStatusEnabled`<sup>Optional</sup> <a name="AggregatedCommitStatusEnabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled"></a>
 
 ```csharp
-public object AggregatedCommitStatusEnabled { get; set; }
+public bool|IResolvable AggregatedCommitStatusEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}.
 
@@ -1203,10 +1203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowForceDeleteWorkspaces`<sup>Optional</sup> <a name="AllowForceDeleteWorkspaces" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces"></a>
 
 ```csharp
-public object AllowForceDeleteWorkspaces { get; set; }
+public bool|IResolvable AllowForceDeleteWorkspaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
 
@@ -1215,10 +1215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AssessmentsEnforced`<sup>Optional</sup> <a name="AssessmentsEnforced" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced"></a>
 
 ```csharp
-public object AssessmentsEnforced { get; set; }
+public bool|IResolvable AssessmentsEnforced { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}.
 
@@ -1239,10 +1239,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CostEstimationEnabled`<sup>Optional</sup> <a name="CostEstimationEnabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled"></a>
 
 ```csharp
-public object CostEstimationEnabled { get; set; }
+public bool|IResolvable CostEstimationEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
@@ -1278,10 +1278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SendPassingStatusesForUntriggeredSpeculativePlans`<sup>Optional</sup> <a name="SendPassingStatusesForUntriggeredSpeculativePlans" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
 ```csharp
-public object SendPassingStatusesForUntriggeredSpeculativePlans { get; set; }
+public bool|IResolvable SendPassingStatusesForUntriggeredSpeculativePlans { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
 
@@ -1314,10 +1314,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SpeculativePlanManagementEnabled`<sup>Optional</sup> <a name="SpeculativePlanManagementEnabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled"></a>
 
 ```csharp
-public object SpeculativePlanManagementEnabled { get; set; }
+public bool|IResolvable SpeculativePlanManagementEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}.
 

@@ -14,39 +14,39 @@ from cdktf_cdktf_provider_tfe import workspace
 workspace.Workspace(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   agent_pool_id: str = None,
-  allow_destroy_plan: typing.Union[bool, IResolvable] = None,
-  assessments_enabled: typing.Union[bool, IResolvable] = None,
-  auto_apply: typing.Union[bool, IResolvable] = None,
-  auto_apply_run_trigger: typing.Union[bool, IResolvable] = None,
+  allow_destroy_plan: bool | IResolvable = None,
+  assessments_enabled: bool | IResolvable = None,
+  auto_apply: bool | IResolvable = None,
+  auto_apply_run_trigger: bool | IResolvable = None,
   auto_destroy_activity_duration: str = None,
   auto_destroy_at: str = None,
   description: str = None,
   execution_mode: str = None,
-  file_triggers_enabled: typing.Union[bool, IResolvable] = None,
-  force_delete: typing.Union[bool, IResolvable] = None,
-  global_remote_state: typing.Union[bool, IResolvable] = None,
+  file_triggers_enabled: bool | IResolvable = None,
+  force_delete: bool | IResolvable = None,
+  global_remote_state: bool | IResolvable = None,
   id: str = None,
-  ignore_additional_tag_names: typing.Union[bool, IResolvable] = None,
-  ignore_additional_tags: typing.Union[bool, IResolvable] = None,
-  operations: typing.Union[bool, IResolvable] = None,
+  ignore_additional_tag_names: bool | IResolvable = None,
+  ignore_additional_tags: bool | IResolvable = None,
+  operations: bool | IResolvable = None,
   organization: str = None,
   project_id: str = None,
-  queue_all_runs: typing.Union[bool, IResolvable] = None,
+  queue_all_runs: bool | IResolvable = None,
   remote_state_consumer_ids: typing.List[str] = None,
   source_name: str = None,
   source_url: str = None,
-  speculative_enabled: typing.Union[bool, IResolvable] = None,
+  speculative_enabled: bool | IResolvable = None,
   ssh_key_id: str = None,
-  structured_run_output_enabled: typing.Union[bool, IResolvable] = None,
+  structured_run_output_enabled: bool | IResolvable = None,
   tag_names: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   terraform_version: str = None,
@@ -61,39 +61,39 @@ workspace.Workspace(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#name Workspace#name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.allowDestroyPlan">allow_destroy_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApplyRunTrigger">auto_apply_run_trigger</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.allowDestroyPlan">allow_destroy_plan</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.assessmentsEnabled">assessments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApply">auto_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApplyRunTrigger">auto_apply_run_trigger</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoDestroyActivityDuration">auto_destroy_activity_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoDestroyAt">auto_destroy_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#description Workspace#description}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.fileTriggersEnabled">file_triggers_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.fileTriggersEnabled">file_triggers_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.globalRemoteState">global_remote_state</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#id Workspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTagNames">ignore_additional_tag_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTags">ignore_additional_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.operations">operations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTagNames">ignore_additional_tag_names</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTags">ignore_additional_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.operations">operations</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#organization Workspace#organization}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#project_id Workspace#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.queueAllRuns">queue_all_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.queueAllRuns">queue_all_runs</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.sourceName">source_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_name Workspace#source_name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_url Workspace#source_url}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.speculativeEnabled">speculative_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.speculativeEnabled">speculative_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.sshKeyId">ssh_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.structuredRunOutputEnabled">structured_run_output_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.structuredRunOutputEnabled">structured_run_output_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.tagNames">tag_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tag_names Workspace#tag_names}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags Workspace#tags}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.terraformVersion">terraform_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
@@ -124,13 +124,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -160,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allow_destroy_plan`<sup>Optional</sup> <a name="allow_destroy_plan" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.allowDestroyPlan"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assessments_enabled`<sup>Optional</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.assessmentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auto_apply`<sup>Optional</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApply"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}.
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auto_apply_run_trigger`<sup>Optional</sup> <a name="auto_apply_run_trigger" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApplyRunTrigger"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `file_triggers_enabled`<sup>Optional</sup> <a name="file_triggers_enabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.fileTriggersEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forceDelete"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}.
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `global_remote_state`<sup>Optional</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.globalRemoteState"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
 
@@ -281,7 +281,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignore_additional_tag_names`<sup>Optional</sup> <a name="ignore_additional_tag_names" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTagNames"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignore_additional_tags`<sup>Optional</sup> <a name="ignore_additional_tags" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTags"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}.
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operations`<sup>Optional</sup> <a name="operations" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.operations"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}.
 
@@ -321,7 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `queue_all_runs`<sup>Optional</sup> <a name="queue_all_runs" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.queueAllRuns"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `speculative_enabled`<sup>Optional</sup> <a name="speculative_enabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.speculativeEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `structured_run_output_enabled`<sup>Optional</sup> <a name="structured_run_output_enabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.structuredRunOutputEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
@@ -718,7 +718,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.workspace.Workspace.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.workspace.Workspace.importFrom"></a>
@@ -781,7 +781,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -797,7 +797,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.workspace.Workspace.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -828,7 +828,7 @@ def put_vcs_repo(
   identifier: str,
   branch: str = None,
   github_app_installation_id: str = None,
-  ingress_submodules: typing.Union[bool, IResolvable] = None,
+  ingress_submodules: bool | IResolvable = None,
   oauth_token_id: str = None,
   tags_regex: str = None
 ) -> None
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `ingress_submodules`<sup>Optional</sup> <a name="ingress_submodules" id="@cdktf/provider-tfe.workspace.Workspace.putVcsRepo.parameter.ingressSubmodules"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}.
 
@@ -1211,44 +1211,44 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.effectiveTags">effective_tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.htmlUrl">html_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.inheritsProjectAutoDestroy">inherits_project_auto_destroy</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.resourceCount">resource_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepo">vcs_repo</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference">WorkspaceVcsRepoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolIdInput">agent_pool_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput">allow_destroy_plan_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput">assessments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput">auto_apply_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput">auto_apply_run_trigger_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput">allow_destroy_plan_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput">assessments_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput">auto_apply_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput">auto_apply_run_trigger_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyActivityDurationInput">auto_destroy_activity_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyAtInput">auto_destroy_at_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.executionModeInput">execution_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput">file_triggers_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput">force_delete_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput">global_remote_state_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput">file_triggers_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput">global_remote_state_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput">ignore_additional_tag_names_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput">ignore_additional_tags_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput">ignore_additional_tag_names_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput">ignore_additional_tags_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operationsInput">operations_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operationsInput">operations_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">queue_all_runs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">queue_all_runs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIdsInput">remote_state_consumer_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceNameInput">source_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrlInput">source_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">speculative_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">speculative_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyIdInput">ssh_key_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">structured_run_output_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">structured_run_output_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagNamesInput">tag_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformVersionInput">terraform_version_input</a></code> | <code>str</code> | *No description.* |
@@ -1257,31 +1257,31 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepoInput">vcs_repo_input</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.workingDirectoryInput">working_directory_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan">allow_destroy_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger">auto_apply_run_trigger</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan">allow_destroy_plan</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled">assessments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApply">auto_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger">auto_apply_run_trigger</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyActivityDuration">auto_destroy_activity_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyAt">auto_destroy_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.executionMode">execution_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled">file_triggers_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled">file_triggers_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState">global_remote_state</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames">ignore_additional_tag_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags">ignore_additional_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames">ignore_additional_tag_names</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags">ignore_additional_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operations">operations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operations">operations</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.organization">organization</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">queue_all_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">queue_all_runs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceName">source_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrl">source_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">speculative_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">speculative_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyId">ssh_key_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">structured_run_output_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">structured_run_output_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagNames">tag_names</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformVersion">terraform_version</a></code> | <code>str</code> | *No description.* |
@@ -1366,20 +1366,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspace.Workspace.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspace.Workspace.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1426,10 +1426,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspace.Workspace.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1496,40 +1496,40 @@ agent_pool_id_input: str
 ##### `allow_destroy_plan_input`<sup>Optional</sup> <a name="allow_destroy_plan_input" id="@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput"></a>
 
 ```python
-allow_destroy_plan_input: typing.Union[bool, IResolvable]
+allow_destroy_plan_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `assessments_enabled_input`<sup>Optional</sup> <a name="assessments_enabled_input" id="@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput"></a>
 
 ```python
-assessments_enabled_input: typing.Union[bool, IResolvable]
+assessments_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_apply_input`<sup>Optional</sup> <a name="auto_apply_input" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput"></a>
 
 ```python
-auto_apply_input: typing.Union[bool, IResolvable]
+auto_apply_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_apply_run_trigger_input`<sup>Optional</sup> <a name="auto_apply_run_trigger_input" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput"></a>
 
 ```python
-auto_apply_run_trigger_input: typing.Union[bool, IResolvable]
+auto_apply_run_trigger_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1576,30 +1576,30 @@ execution_mode_input: str
 ##### `file_triggers_enabled_input`<sup>Optional</sup> <a name="file_triggers_enabled_input" id="@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput"></a>
 
 ```python
-file_triggers_enabled_input: typing.Union[bool, IResolvable]
+file_triggers_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_delete_input`<sup>Optional</sup> <a name="force_delete_input" id="@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput"></a>
 
 ```python
-force_delete_input: typing.Union[bool, IResolvable]
+force_delete_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `global_remote_state_input`<sup>Optional</sup> <a name="global_remote_state_input" id="@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput"></a>
 
 ```python
-global_remote_state_input: typing.Union[bool, IResolvable]
+global_remote_state_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1616,20 +1616,20 @@ id_input: str
 ##### `ignore_additional_tag_names_input`<sup>Optional</sup> <a name="ignore_additional_tag_names_input" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput"></a>
 
 ```python
-ignore_additional_tag_names_input: typing.Union[bool, IResolvable]
+ignore_additional_tag_names_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `ignore_additional_tags_input`<sup>Optional</sup> <a name="ignore_additional_tags_input" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput"></a>
 
 ```python
-ignore_additional_tags_input: typing.Union[bool, IResolvable]
+ignore_additional_tags_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1646,10 +1646,10 @@ name_input: str
 ##### `operations_input`<sup>Optional</sup> <a name="operations_input" id="@cdktf/provider-tfe.workspace.Workspace.property.operationsInput"></a>
 
 ```python
-operations_input: typing.Union[bool, IResolvable]
+operations_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1676,10 +1676,10 @@ project_id_input: str
 ##### `queue_all_runs_input`<sup>Optional</sup> <a name="queue_all_runs_input" id="@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput"></a>
 
 ```python
-queue_all_runs_input: typing.Union[bool, IResolvable]
+queue_all_runs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1716,10 +1716,10 @@ source_url_input: str
 ##### `speculative_enabled_input`<sup>Optional</sup> <a name="speculative_enabled_input" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput"></a>
 
 ```python
-speculative_enabled_input: typing.Union[bool, IResolvable]
+speculative_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1736,10 +1736,10 @@ ssh_key_id_input: str
 ##### `structured_run_output_enabled_input`<sup>Optional</sup> <a name="structured_run_output_enabled_input" id="@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput"></a>
 
 ```python
-structured_run_output_enabled_input: typing.Union[bool, IResolvable]
+structured_run_output_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1826,40 +1826,40 @@ agent_pool_id: str
 ##### `allow_destroy_plan`<sup>Required</sup> <a name="allow_destroy_plan" id="@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan"></a>
 
 ```python
-allow_destroy_plan: typing.Union[bool, IResolvable]
+allow_destroy_plan: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `assessments_enabled`<sup>Required</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled"></a>
 
 ```python
-assessments_enabled: typing.Union[bool, IResolvable]
+assessments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_apply`<sup>Required</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApply"></a>
 
 ```python
-auto_apply: typing.Union[bool, IResolvable]
+auto_apply: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_apply_run_trigger`<sup>Required</sup> <a name="auto_apply_run_trigger" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger"></a>
 
 ```python
-auto_apply_run_trigger: typing.Union[bool, IResolvable]
+auto_apply_run_trigger: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1906,30 +1906,30 @@ execution_mode: str
 ##### `file_triggers_enabled`<sup>Required</sup> <a name="file_triggers_enabled" id="@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled"></a>
 
 ```python
-file_triggers_enabled: typing.Union[bool, IResolvable]
+file_triggers_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_delete`<sup>Required</sup> <a name="force_delete" id="@cdktf/provider-tfe.workspace.Workspace.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `global_remote_state`<sup>Required</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState"></a>
 
 ```python
-global_remote_state: typing.Union[bool, IResolvable]
+global_remote_state: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1946,20 +1946,20 @@ id: str
 ##### `ignore_additional_tag_names`<sup>Required</sup> <a name="ignore_additional_tag_names" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames"></a>
 
 ```python
-ignore_additional_tag_names: typing.Union[bool, IResolvable]
+ignore_additional_tag_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `ignore_additional_tags`<sup>Required</sup> <a name="ignore_additional_tags" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags"></a>
 
 ```python
-ignore_additional_tags: typing.Union[bool, IResolvable]
+ignore_additional_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1976,10 +1976,10 @@ name: str
 ##### `operations`<sup>Required</sup> <a name="operations" id="@cdktf/provider-tfe.workspace.Workspace.property.operations"></a>
 
 ```python
-operations: typing.Union[bool, IResolvable]
+operations: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2006,10 +2006,10 @@ project_id: str
 ##### `queue_all_runs`<sup>Required</sup> <a name="queue_all_runs" id="@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns"></a>
 
 ```python
-queue_all_runs: typing.Union[bool, IResolvable]
+queue_all_runs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2046,10 +2046,10 @@ source_url: str
 ##### `speculative_enabled`<sup>Required</sup> <a name="speculative_enabled" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled"></a>
 
 ```python
-speculative_enabled: typing.Union[bool, IResolvable]
+speculative_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2066,10 +2066,10 @@ ssh_key_id: str
 ##### `structured_run_output_enabled`<sup>Required</sup> <a name="structured_run_output_enabled" id="@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled"></a>
 
 ```python
-structured_run_output_enabled: typing.Union[bool, IResolvable]
+structured_run_output_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2161,39 +2161,39 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import workspace
 
 workspace.WorkspaceConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   agent_pool_id: str = None,
-  allow_destroy_plan: typing.Union[bool, IResolvable] = None,
-  assessments_enabled: typing.Union[bool, IResolvable] = None,
-  auto_apply: typing.Union[bool, IResolvable] = None,
-  auto_apply_run_trigger: typing.Union[bool, IResolvable] = None,
+  allow_destroy_plan: bool | IResolvable = None,
+  assessments_enabled: bool | IResolvable = None,
+  auto_apply: bool | IResolvable = None,
+  auto_apply_run_trigger: bool | IResolvable = None,
   auto_destroy_activity_duration: str = None,
   auto_destroy_at: str = None,
   description: str = None,
   execution_mode: str = None,
-  file_triggers_enabled: typing.Union[bool, IResolvable] = None,
-  force_delete: typing.Union[bool, IResolvable] = None,
-  global_remote_state: typing.Union[bool, IResolvable] = None,
+  file_triggers_enabled: bool | IResolvable = None,
+  force_delete: bool | IResolvable = None,
+  global_remote_state: bool | IResolvable = None,
   id: str = None,
-  ignore_additional_tag_names: typing.Union[bool, IResolvable] = None,
-  ignore_additional_tags: typing.Union[bool, IResolvable] = None,
-  operations: typing.Union[bool, IResolvable] = None,
+  ignore_additional_tag_names: bool | IResolvable = None,
+  ignore_additional_tags: bool | IResolvable = None,
+  operations: bool | IResolvable = None,
   organization: str = None,
   project_id: str = None,
-  queue_all_runs: typing.Union[bool, IResolvable] = None,
+  queue_all_runs: bool | IResolvable = None,
   remote_state_consumer_ids: typing.List[str] = None,
   source_name: str = None,
   source_url: str = None,
-  speculative_enabled: typing.Union[bool, IResolvable] = None,
+  speculative_enabled: bool | IResolvable = None,
   ssh_key_id: str = None,
-  structured_run_output_enabled: typing.Union[bool, IResolvable] = None,
+  structured_run_output_enabled: bool | IResolvable = None,
   tag_names: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   terraform_version: str = None,
@@ -2208,39 +2208,39 @@ workspace.WorkspaceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#name Workspace#name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">allow_destroy_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">auto_apply_run_trigger</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">allow_destroy_plan</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">assessments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">auto_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">auto_apply_run_trigger</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyActivityDuration">auto_destroy_activity_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyAt">auto_destroy_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#description Workspace#description}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">file_triggers_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">file_triggers_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">global_remote_state</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#id Workspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">ignore_additional_tag_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags">ignore_additional_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">operations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">ignore_additional_tag_names</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags">ignore_additional_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">operations</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#organization Workspace#organization}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#project_id Workspace#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">queue_all_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">queue_all_runs</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName">source_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_name Workspace#source_name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_url Workspace#source_url}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">speculative_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">speculative_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sshKeyId">ssh_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">structured_run_output_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">structured_run_output_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tagNames">tag_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tag_names Workspace#tag_names}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags Workspace#tags}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.terraformVersion">terraform_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
@@ -2254,20 +2254,20 @@ workspace.WorkspaceConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2314,10 +2314,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2348,10 +2348,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_destroy_plan`<sup>Optional</sup> <a name="allow_destroy_plan" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan"></a>
 
 ```python
-allow_destroy_plan: typing.Union[bool, IResolvable]
+allow_destroy_plan: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
@@ -2360,10 +2360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assessments_enabled`<sup>Optional</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled"></a>
 
 ```python
-assessments_enabled: typing.Union[bool, IResolvable]
+assessments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
 
@@ -2372,10 +2372,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auto_apply`<sup>Optional</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply"></a>
 
 ```python
-auto_apply: typing.Union[bool, IResolvable]
+auto_apply: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}.
 
@@ -2384,10 +2384,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auto_apply_run_trigger`<sup>Optional</sup> <a name="auto_apply_run_trigger" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger"></a>
 
 ```python
-auto_apply_run_trigger: typing.Union[bool, IResolvable]
+auto_apply_run_trigger: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
 
@@ -2444,10 +2444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `file_triggers_enabled`<sup>Optional</sup> <a name="file_triggers_enabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled"></a>
 
 ```python
-file_triggers_enabled: typing.Union[bool, IResolvable]
+file_triggers_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
@@ -2456,10 +2456,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}.
 
@@ -2468,10 +2468,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `global_remote_state`<sup>Optional</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState"></a>
 
 ```python
-global_remote_state: typing.Union[bool, IResolvable]
+global_remote_state: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
 
@@ -2495,10 +2495,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ignore_additional_tag_names`<sup>Optional</sup> <a name="ignore_additional_tag_names" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames"></a>
 
 ```python
-ignore_additional_tag_names: typing.Union[bool, IResolvable]
+ignore_additional_tag_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
 
@@ -2507,10 +2507,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ignore_additional_tags`<sup>Optional</sup> <a name="ignore_additional_tags" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags"></a>
 
 ```python
-ignore_additional_tags: typing.Union[bool, IResolvable]
+ignore_additional_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}.
 
@@ -2519,10 +2519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operations`<sup>Optional</sup> <a name="operations" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations"></a>
 
 ```python
-operations: typing.Union[bool, IResolvable]
+operations: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}.
 
@@ -2555,10 +2555,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `queue_all_runs`<sup>Optional</sup> <a name="queue_all_runs" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns"></a>
 
 ```python
-queue_all_runs: typing.Union[bool, IResolvable]
+queue_all_runs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
 
@@ -2603,10 +2603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `speculative_enabled`<sup>Optional</sup> <a name="speculative_enabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled"></a>
 
 ```python
-speculative_enabled: typing.Union[bool, IResolvable]
+speculative_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
 
@@ -2627,10 +2627,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `structured_run_output_enabled`<sup>Optional</sup> <a name="structured_run_output_enabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled"></a>
 
 ```python
-structured_run_output_enabled: typing.Union[bool, IResolvable]
+structured_run_output_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
@@ -2733,7 +2733,7 @@ workspace.WorkspaceVcsRepo(
   identifier: str,
   branch: str = None,
   github_app_installation_id: str = None,
-  ingress_submodules: typing.Union[bool, IResolvable] = None,
+  ingress_submodules: bool | IResolvable = None,
   oauth_token_id: str = None,
   tags_regex: str = None
 )
@@ -2746,7 +2746,7 @@ workspace.WorkspaceVcsRepo(
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#identifier Workspace#identifier}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch">branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#branch Workspace#branch}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId">github_app_installation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">ingress_submodules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">ingress_submodules</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">oauth_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.tagsRegex">tags_regex</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags_regex Workspace#tags_regex}. |
 
@@ -2791,10 +2791,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ingress_submodules`<sup>Optional</sup> <a name="ingress_submodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules"></a>
 
 ```python
-ingress_submodules: typing.Union[bool, IResolvable]
+ingress_submodules: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}.
 
@@ -3099,13 +3099,13 @@ def reset_tags_regex() -> None
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationIdInput">github_app_installation_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">ingress_submodules_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">ingress_submodules_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenIdInput">oauth_token_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegexInput">tags_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationId">github_app_installation_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">ingress_submodules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">ingress_submodules</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenId">oauth_token_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegex">tags_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | *No description.* |
@@ -3169,10 +3169,10 @@ identifier_input: str
 ##### `ingress_submodules_input`<sup>Optional</sup> <a name="ingress_submodules_input" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput"></a>
 
 ```python
-ingress_submodules_input: typing.Union[bool, IResolvable]
+ingress_submodules_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3229,10 +3229,10 @@ identifier: str
 ##### `ingress_submodules`<sup>Required</sup> <a name="ingress_submodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules"></a>
 
 ```python
-ingress_submodules: typing.Union[bool, IResolvable]
+ingress_submodules: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

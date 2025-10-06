@@ -14,15 +14,15 @@ from cdktf_cdktf_provider_tfe import team
 team.Team(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  allow_member_token_management: typing.Union[bool, IResolvable] = None,
+  allow_member_token_management: bool | IResolvable = None,
   id: str = None,
   organization: str = None,
   organization_access: TeamOrganizationAccess = None,
@@ -35,15 +35,15 @@ team.Team(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#name Team#name}. |
-| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.allowMemberTokenManagement">allow_member_token_management</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
+| <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.allowMemberTokenManagement">allow_member_token_management</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#organization Team#organization}. |
 | <code><a href="#@cdktf/provider-tfe.team.Team.Initializer.parameter.organizationAccess">organization_access</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | organization_access block. |
@@ -72,13 +72,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.team.Team.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.team.Team.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.team.Team.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allow_member_token_management`<sup>Optional</sup> <a name="allow_member_token_management" id="@cdktf/provider-tfe.team.Team.Initializer.parameter.allowMemberTokenManagement"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}.
 
@@ -432,7 +432,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.team.Team.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.team.Team.importFrom"></a>
@@ -495,7 +495,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -511,7 +511,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.team.Team.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -539,27 +539,27 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_organization_access(
-  access_secret_teams: typing.Union[bool, IResolvable] = None,
-  manage_agent_pools: typing.Union[bool, IResolvable] = None,
-  manage_membership: typing.Union[bool, IResolvable] = None,
-  manage_modules: typing.Union[bool, IResolvable] = None,
-  manage_organization_access: typing.Union[bool, IResolvable] = None,
-  manage_policies: typing.Union[bool, IResolvable] = None,
-  manage_policy_overrides: typing.Union[bool, IResolvable] = None,
-  manage_projects: typing.Union[bool, IResolvable] = None,
-  manage_providers: typing.Union[bool, IResolvable] = None,
-  manage_run_tasks: typing.Union[bool, IResolvable] = None,
-  manage_teams: typing.Union[bool, IResolvable] = None,
-  manage_vcs_settings: typing.Union[bool, IResolvable] = None,
-  manage_workspaces: typing.Union[bool, IResolvable] = None,
-  read_projects: typing.Union[bool, IResolvable] = None,
-  read_workspaces: typing.Union[bool, IResolvable] = None
+  access_secret_teams: bool | IResolvable = None,
+  manage_agent_pools: bool | IResolvable = None,
+  manage_membership: bool | IResolvable = None,
+  manage_modules: bool | IResolvable = None,
+  manage_organization_access: bool | IResolvable = None,
+  manage_policies: bool | IResolvable = None,
+  manage_policy_overrides: bool | IResolvable = None,
+  manage_projects: bool | IResolvable = None,
+  manage_providers: bool | IResolvable = None,
+  manage_run_tasks: bool | IResolvable = None,
+  manage_teams: bool | IResolvable = None,
+  manage_vcs_settings: bool | IResolvable = None,
+  manage_workspaces: bool | IResolvable = None,
+  read_projects: bool | IResolvable = None,
+  read_workspaces: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `access_secret_teams`<sup>Optional</sup> <a name="access_secret_teams" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.accessSecretTeams"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}.
 
@@ -567,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_agent_pools`<sup>Optional</sup> <a name="manage_agent_pools" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageAgentPools"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}.
 
@@ -575,7 +575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_membership`<sup>Optional</sup> <a name="manage_membership" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageMembership"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}.
 
@@ -583,7 +583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_modules`<sup>Optional</sup> <a name="manage_modules" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageModules"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}.
 
@@ -591,7 +591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_organization_access`<sup>Optional</sup> <a name="manage_organization_access" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageOrganizationAccess"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}.
 
@@ -599,7 +599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_policies`<sup>Optional</sup> <a name="manage_policies" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.managePolicies"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}.
 
@@ -607,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_policy_overrides`<sup>Optional</sup> <a name="manage_policy_overrides" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.managePolicyOverrides"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}.
 
@@ -615,7 +615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_projects`<sup>Optional</sup> <a name="manage_projects" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageProjects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}.
 
@@ -623,7 +623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_providers`<sup>Optional</sup> <a name="manage_providers" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageProviders"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}.
 
@@ -631,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_run_tasks`<sup>Optional</sup> <a name="manage_run_tasks" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageRunTasks"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}.
 
@@ -639,7 +639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_teams`<sup>Optional</sup> <a name="manage_teams" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageTeams"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}.
 
@@ -647,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_vcs_settings`<sup>Optional</sup> <a name="manage_vcs_settings" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageVcsSettings"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}.
 
@@ -655,7 +655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manage_workspaces`<sup>Optional</sup> <a name="manage_workspaces" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.manageWorkspaces"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}.
 
@@ -663,7 +663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `read_projects`<sup>Optional</sup> <a name="read_projects" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.readProjects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}.
 
@@ -671,7 +671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `read_workspaces`<sup>Optional</sup> <a name="read_workspaces" id="@cdktf/provider-tfe.team.Team.putOrganizationAccess.parameter.readWorkspaces"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}.
 
@@ -850,22 +850,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationAccess">organization_access</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference">TeamOrganizationAccessOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput">allow_member_token_management_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput">allow_member_token_management_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationAccessInput">organization_access_input</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.ssoTeamIdInput">sso_team_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement">allow_member_token_management</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement">allow_member_token_management</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.Team.property.organization">organization</a></code> | <code>str</code> | *No description.* |
@@ -949,20 +949,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.team.Team.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.team.Team.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1009,10 +1009,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.team.Team.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1029,10 +1029,10 @@ organization_access: TeamOrganizationAccessOutputReference
 ##### `allow_member_token_management_input`<sup>Optional</sup> <a name="allow_member_token_management_input" id="@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagementInput"></a>
 
 ```python
-allow_member_token_management_input: typing.Union[bool, IResolvable]
+allow_member_token_management_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1099,10 +1099,10 @@ visibility_input: str
 ##### `allow_member_token_management`<sup>Required</sup> <a name="allow_member_token_management" id="@cdktf/provider-tfe.team.Team.property.allowMemberTokenManagement"></a>
 
 ```python
-allow_member_token_management: typing.Union[bool, IResolvable]
+allow_member_token_management: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1184,15 +1184,15 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import team
 
 team.TeamConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  allow_member_token_management: typing.Union[bool, IResolvable] = None,
+  allow_member_token_management: bool | IResolvable = None,
   id: str = None,
   organization: str = None,
   organization_access: TeamOrganizationAccess = None,
@@ -1205,15 +1205,15 @@ team.TeamConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#name Team#name}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement">allow_member_token_management</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement">allow_member_token_management</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#organization Team#organization}. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamConfig.property.organizationAccess">organization_access</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | organization_access block. |
@@ -1225,20 +1225,20 @@ team.TeamConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.team.TeamConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.team.TeamConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1285,10 +1285,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.team.TeamConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1307,10 +1307,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_member_token_management`<sup>Optional</sup> <a name="allow_member_token_management" id="@cdktf/provider-tfe.team.TeamConfig.property.allowMemberTokenManagement"></a>
 
 ```python
-allow_member_token_management: typing.Union[bool, IResolvable]
+allow_member_token_management: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#allow_member_token_management Team#allow_member_token_management}.
 
@@ -1389,21 +1389,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_tfe import team
 
 team.TeamOrganizationAccess(
-  access_secret_teams: typing.Union[bool, IResolvable] = None,
-  manage_agent_pools: typing.Union[bool, IResolvable] = None,
-  manage_membership: typing.Union[bool, IResolvable] = None,
-  manage_modules: typing.Union[bool, IResolvable] = None,
-  manage_organization_access: typing.Union[bool, IResolvable] = None,
-  manage_policies: typing.Union[bool, IResolvable] = None,
-  manage_policy_overrides: typing.Union[bool, IResolvable] = None,
-  manage_projects: typing.Union[bool, IResolvable] = None,
-  manage_providers: typing.Union[bool, IResolvable] = None,
-  manage_run_tasks: typing.Union[bool, IResolvable] = None,
-  manage_teams: typing.Union[bool, IResolvable] = None,
-  manage_vcs_settings: typing.Union[bool, IResolvable] = None,
-  manage_workspaces: typing.Union[bool, IResolvable] = None,
-  read_projects: typing.Union[bool, IResolvable] = None,
-  read_workspaces: typing.Union[bool, IResolvable] = None
+  access_secret_teams: bool | IResolvable = None,
+  manage_agent_pools: bool | IResolvable = None,
+  manage_membership: bool | IResolvable = None,
+  manage_modules: bool | IResolvable = None,
+  manage_organization_access: bool | IResolvable = None,
+  manage_policies: bool | IResolvable = None,
+  manage_policy_overrides: bool | IResolvable = None,
+  manage_projects: bool | IResolvable = None,
+  manage_providers: bool | IResolvable = None,
+  manage_run_tasks: bool | IResolvable = None,
+  manage_teams: bool | IResolvable = None,
+  manage_vcs_settings: bool | IResolvable = None,
+  manage_workspaces: bool | IResolvable = None,
+  read_projects: bool | IResolvable = None,
+  read_workspaces: bool | IResolvable = None
 )
 ```
 
@@ -1411,31 +1411,31 @@ team.TeamOrganizationAccess(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams">access_secret_teams</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools">manage_agent_pools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership">manage_membership</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules">manage_modules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess">manage_organization_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies">manage_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides">manage_policy_overrides</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects">manage_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders">manage_providers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">manage_run_tasks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams">manage_teams</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">manage_vcs_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">manage_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">read_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}. |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">read_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams">access_secret_teams</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools">manage_agent_pools</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership">manage_membership</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules">manage_modules</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess">manage_organization_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies">manage_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides">manage_policy_overrides</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects">manage_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders">manage_providers</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks">manage_run_tasks</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams">manage_teams</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings">manage_vcs_settings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces">manage_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects">read_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}. |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces">read_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}. |
 
 ---
 
 ##### `access_secret_teams`<sup>Optional</sup> <a name="access_secret_teams" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.accessSecretTeams"></a>
 
 ```python
-access_secret_teams: typing.Union[bool, IResolvable]
+access_secret_teams: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#access_secret_teams Team#access_secret_teams}.
 
@@ -1444,10 +1444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_agent_pools`<sup>Optional</sup> <a name="manage_agent_pools" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageAgentPools"></a>
 
 ```python
-manage_agent_pools: typing.Union[bool, IResolvable]
+manage_agent_pools: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_agent_pools Team#manage_agent_pools}.
 
@@ -1456,10 +1456,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_membership`<sup>Optional</sup> <a name="manage_membership" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageMembership"></a>
 
 ```python
-manage_membership: typing.Union[bool, IResolvable]
+manage_membership: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_membership Team#manage_membership}.
 
@@ -1468,10 +1468,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_modules`<sup>Optional</sup> <a name="manage_modules" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageModules"></a>
 
 ```python
-manage_modules: typing.Union[bool, IResolvable]
+manage_modules: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_modules Team#manage_modules}.
 
@@ -1480,10 +1480,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_organization_access`<sup>Optional</sup> <a name="manage_organization_access" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageOrganizationAccess"></a>
 
 ```python
-manage_organization_access: typing.Union[bool, IResolvable]
+manage_organization_access: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_organization_access Team#manage_organization_access}.
 
@@ -1492,10 +1492,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_policies`<sup>Optional</sup> <a name="manage_policies" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicies"></a>
 
 ```python
-manage_policies: typing.Union[bool, IResolvable]
+manage_policies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policies Team#manage_policies}.
 
@@ -1504,10 +1504,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_policy_overrides`<sup>Optional</sup> <a name="manage_policy_overrides" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.managePolicyOverrides"></a>
 
 ```python
-manage_policy_overrides: typing.Union[bool, IResolvable]
+manage_policy_overrides: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_policy_overrides Team#manage_policy_overrides}.
 
@@ -1516,10 +1516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_projects`<sup>Optional</sup> <a name="manage_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProjects"></a>
 
 ```python
-manage_projects: typing.Union[bool, IResolvable]
+manage_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_projects Team#manage_projects}.
 
@@ -1528,10 +1528,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_providers`<sup>Optional</sup> <a name="manage_providers" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageProviders"></a>
 
 ```python
-manage_providers: typing.Union[bool, IResolvable]
+manage_providers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_providers Team#manage_providers}.
 
@@ -1540,10 +1540,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_run_tasks`<sup>Optional</sup> <a name="manage_run_tasks" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageRunTasks"></a>
 
 ```python
-manage_run_tasks: typing.Union[bool, IResolvable]
+manage_run_tasks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_run_tasks Team#manage_run_tasks}.
 
@@ -1552,10 +1552,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_teams`<sup>Optional</sup> <a name="manage_teams" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageTeams"></a>
 
 ```python
-manage_teams: typing.Union[bool, IResolvable]
+manage_teams: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_teams Team#manage_teams}.
 
@@ -1564,10 +1564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_vcs_settings`<sup>Optional</sup> <a name="manage_vcs_settings" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageVcsSettings"></a>
 
 ```python
-manage_vcs_settings: typing.Union[bool, IResolvable]
+manage_vcs_settings: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_vcs_settings Team#manage_vcs_settings}.
 
@@ -1576,10 +1576,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `manage_workspaces`<sup>Optional</sup> <a name="manage_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.manageWorkspaces"></a>
 
 ```python
-manage_workspaces: typing.Union[bool, IResolvable]
+manage_workspaces: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#manage_workspaces Team#manage_workspaces}.
 
@@ -1588,10 +1588,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `read_projects`<sup>Optional</sup> <a name="read_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readProjects"></a>
 
 ```python
-read_projects: typing.Union[bool, IResolvable]
+read_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_projects Team#read_projects}.
 
@@ -1600,10 +1600,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `read_workspaces`<sup>Optional</sup> <a name="read_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccess.property.readWorkspaces"></a>
 
 ```python
-read_workspaces: typing.Union[bool, IResolvable]
+read_workspaces: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/team#read_workspaces Team#read_workspaces}.
 
@@ -1951,36 +1951,36 @@ def reset_read_workspaces() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeamsInput">access_secret_teams_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPoolsInput">manage_agent_pools_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembershipInput">manage_membership_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModulesInput">manage_modules_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccessInput">manage_organization_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePoliciesInput">manage_policies_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverridesInput">manage_policy_overrides_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjectsInput">manage_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProvidersInput">manage_providers_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput">manage_run_tasks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeamsInput">manage_teams_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput">manage_vcs_settings_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput">manage_workspaces_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput">read_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput">read_workspaces_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeams">access_secret_teams</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPools">manage_agent_pools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembership">manage_membership</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules">manage_modules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccess">manage_organization_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies">manage_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides">manage_policy_overrides</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjects">manage_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProviders">manage_providers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks">manage_run_tasks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeams">manage_teams</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings">manage_vcs_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces">manage_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects">read_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces">read_workspaces</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeamsInput">access_secret_teams_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPoolsInput">manage_agent_pools_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembershipInput">manage_membership_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModulesInput">manage_modules_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccessInput">manage_organization_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePoliciesInput">manage_policies_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverridesInput">manage_policy_overrides_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjectsInput">manage_projects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProvidersInput">manage_providers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput">manage_run_tasks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeamsInput">manage_teams_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput">manage_vcs_settings_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput">manage_workspaces_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput">read_projects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput">read_workspaces_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeams">access_secret_teams</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPools">manage_agent_pools</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembership">manage_membership</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules">manage_modules</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccess">manage_organization_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies">manage_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides">manage_policy_overrides</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjects">manage_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProviders">manage_providers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks">manage_run_tasks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeams">manage_teams</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings">manage_vcs_settings</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces">manage_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects">read_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces">read_workspaces</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-tfe.team.TeamOrganizationAccess">TeamOrganizationAccess</a></code> | *No description.* |
 
 ---
@@ -2012,300 +2012,300 @@ fqn: str
 ##### `access_secret_teams_input`<sup>Optional</sup> <a name="access_secret_teams_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeamsInput"></a>
 
 ```python
-access_secret_teams_input: typing.Union[bool, IResolvable]
+access_secret_teams_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_agent_pools_input`<sup>Optional</sup> <a name="manage_agent_pools_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPoolsInput"></a>
 
 ```python
-manage_agent_pools_input: typing.Union[bool, IResolvable]
+manage_agent_pools_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_membership_input`<sup>Optional</sup> <a name="manage_membership_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembershipInput"></a>
 
 ```python
-manage_membership_input: typing.Union[bool, IResolvable]
+manage_membership_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_modules_input`<sup>Optional</sup> <a name="manage_modules_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModulesInput"></a>
 
 ```python
-manage_modules_input: typing.Union[bool, IResolvable]
+manage_modules_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_organization_access_input`<sup>Optional</sup> <a name="manage_organization_access_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccessInput"></a>
 
 ```python
-manage_organization_access_input: typing.Union[bool, IResolvable]
+manage_organization_access_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_policies_input`<sup>Optional</sup> <a name="manage_policies_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePoliciesInput"></a>
 
 ```python
-manage_policies_input: typing.Union[bool, IResolvable]
+manage_policies_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_policy_overrides_input`<sup>Optional</sup> <a name="manage_policy_overrides_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverridesInput"></a>
 
 ```python
-manage_policy_overrides_input: typing.Union[bool, IResolvable]
+manage_policy_overrides_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_projects_input`<sup>Optional</sup> <a name="manage_projects_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjectsInput"></a>
 
 ```python
-manage_projects_input: typing.Union[bool, IResolvable]
+manage_projects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_providers_input`<sup>Optional</sup> <a name="manage_providers_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProvidersInput"></a>
 
 ```python
-manage_providers_input: typing.Union[bool, IResolvable]
+manage_providers_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_run_tasks_input`<sup>Optional</sup> <a name="manage_run_tasks_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasksInput"></a>
 
 ```python
-manage_run_tasks_input: typing.Union[bool, IResolvable]
+manage_run_tasks_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_teams_input`<sup>Optional</sup> <a name="manage_teams_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeamsInput"></a>
 
 ```python
-manage_teams_input: typing.Union[bool, IResolvable]
+manage_teams_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_vcs_settings_input`<sup>Optional</sup> <a name="manage_vcs_settings_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettingsInput"></a>
 
 ```python
-manage_vcs_settings_input: typing.Union[bool, IResolvable]
+manage_vcs_settings_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_workspaces_input`<sup>Optional</sup> <a name="manage_workspaces_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspacesInput"></a>
 
 ```python
-manage_workspaces_input: typing.Union[bool, IResolvable]
+manage_workspaces_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `read_projects_input`<sup>Optional</sup> <a name="read_projects_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjectsInput"></a>
 
 ```python
-read_projects_input: typing.Union[bool, IResolvable]
+read_projects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `read_workspaces_input`<sup>Optional</sup> <a name="read_workspaces_input" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspacesInput"></a>
 
 ```python
-read_workspaces_input: typing.Union[bool, IResolvable]
+read_workspaces_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_secret_teams`<sup>Required</sup> <a name="access_secret_teams" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.accessSecretTeams"></a>
 
 ```python
-access_secret_teams: typing.Union[bool, IResolvable]
+access_secret_teams: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_agent_pools`<sup>Required</sup> <a name="manage_agent_pools" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageAgentPools"></a>
 
 ```python
-manage_agent_pools: typing.Union[bool, IResolvable]
+manage_agent_pools: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_membership`<sup>Required</sup> <a name="manage_membership" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageMembership"></a>
 
 ```python
-manage_membership: typing.Union[bool, IResolvable]
+manage_membership: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_modules`<sup>Required</sup> <a name="manage_modules" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageModules"></a>
 
 ```python
-manage_modules: typing.Union[bool, IResolvable]
+manage_modules: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_organization_access`<sup>Required</sup> <a name="manage_organization_access" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageOrganizationAccess"></a>
 
 ```python
-manage_organization_access: typing.Union[bool, IResolvable]
+manage_organization_access: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_policies`<sup>Required</sup> <a name="manage_policies" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicies"></a>
 
 ```python
-manage_policies: typing.Union[bool, IResolvable]
+manage_policies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_policy_overrides`<sup>Required</sup> <a name="manage_policy_overrides" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.managePolicyOverrides"></a>
 
 ```python
-manage_policy_overrides: typing.Union[bool, IResolvable]
+manage_policy_overrides: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_projects`<sup>Required</sup> <a name="manage_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProjects"></a>
 
 ```python
-manage_projects: typing.Union[bool, IResolvable]
+manage_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_providers`<sup>Required</sup> <a name="manage_providers" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageProviders"></a>
 
 ```python
-manage_providers: typing.Union[bool, IResolvable]
+manage_providers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_run_tasks`<sup>Required</sup> <a name="manage_run_tasks" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageRunTasks"></a>
 
 ```python
-manage_run_tasks: typing.Union[bool, IResolvable]
+manage_run_tasks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_teams`<sup>Required</sup> <a name="manage_teams" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageTeams"></a>
 
 ```python
-manage_teams: typing.Union[bool, IResolvable]
+manage_teams: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_vcs_settings`<sup>Required</sup> <a name="manage_vcs_settings" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageVcsSettings"></a>
 
 ```python
-manage_vcs_settings: typing.Union[bool, IResolvable]
+manage_vcs_settings: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_workspaces`<sup>Required</sup> <a name="manage_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.manageWorkspaces"></a>
 
 ```python
-manage_workspaces: typing.Union[bool, IResolvable]
+manage_workspaces: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `read_projects`<sup>Required</sup> <a name="read_projects" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readProjects"></a>
 
 ```python
-read_projects: typing.Union[bool, IResolvable]
+read_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `read_workspaces`<sup>Required</sup> <a name="read_workspaces" id="@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference.property.readWorkspaces"></a>
 
 ```python
-read_workspaces: typing.Union[bool, IResolvable]
+read_workspaces: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

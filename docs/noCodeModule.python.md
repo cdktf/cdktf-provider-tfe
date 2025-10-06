@@ -14,18 +14,18 @@ from cdktf_cdktf_provider_tfe import no_code_module
 noCodeModule.NoCodeModule(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   registry_module: str,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   id: str = None,
   organization: str = None,
-  variable_options: typing.Union[IResolvable, typing.List[NoCodeModuleVariableOptions]] = None,
+  variable_options: IResolvable | typing.List[NoCodeModuleVariableOptions] = None,
   version_pin: str = None
 )
 ```
@@ -34,18 +34,18 @@ noCodeModule.NoCodeModule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.registryModule">registry_module</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#id NoCodeModule#id}. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#organization NoCodeModule#organization}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.variableOptions">variable_options</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]</code> | variable_options block. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.variableOptions">variable_options</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]</code> | variable_options block. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.versionPin">version_pin</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}. |
 
 ---
@@ -70,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}.
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `variable_options`<sup>Optional</sup> <a name="variable_options" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.Initializer.parameter.variableOptions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
 
 variable_options block.
 
@@ -421,7 +421,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.importFrom"></a>
@@ -484,7 +484,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -500,7 +500,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -528,13 +528,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_variable_options(
-  value: typing.Union[IResolvable, typing.List[NoCodeModuleVariableOptions]]
+  value: IResolvable | typing.List[NoCodeModuleVariableOptions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.putVariableOptions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
 
 ---
 
@@ -705,21 +705,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.variableOptions">variable_options</a></code> | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList">NoCodeModuleVariableOptionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.registryModuleInput">registry_module_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.variableOptionsInput">variable_options_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.variableOptionsInput">variable_options_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.versionPinInput">version_pin_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.organization">organization</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.registryModule">registry_module</a></code> | <code>str</code> | *No description.* |
@@ -802,20 +802,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -862,10 +862,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -882,10 +882,10 @@ variable_options: NoCodeModuleVariableOptionsList
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -922,10 +922,10 @@ registry_module_input: str
 ##### `variable_options_input`<sup>Optional</sup> <a name="variable_options_input" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.variableOptionsInput"></a>
 
 ```python
-variable_options_input: typing.Union[IResolvable, typing.List[NoCodeModuleVariableOptions]]
+variable_options_input: IResolvable | typing.List[NoCodeModuleVariableOptions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
 
 ---
 
@@ -942,10 +942,10 @@ version_pin_input: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-tfe.noCodeModule.NoCodeModule.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1017,18 +1017,18 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import no_code_module
 
 noCodeModule.NoCodeModuleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   registry_module: str,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   id: str = None,
   organization: str = None,
-  variable_options: typing.Union[IResolvable, typing.List[NoCodeModuleVariableOptions]] = None,
+  variable_options: IResolvable | typing.List[NoCodeModuleVariableOptions] = None,
   version_pin: str = None
 )
 ```
@@ -1037,18 +1037,18 @@ noCodeModule.NoCodeModuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.registryModule">registry_module</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#registry_module NoCodeModule#registry_module}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#id NoCodeModule#id}. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#organization NoCodeModule#organization}. |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.variableOptions">variable_options</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]</code> | variable_options block. |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.variableOptions">variable_options</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]</code> | variable_options block. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.versionPin">version_pin</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#version_pin NoCodeModule#version_pin}. |
 
 ---
@@ -1056,20 +1056,20 @@ noCodeModule.NoCodeModuleConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1116,10 +1116,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1138,10 +1138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/no_code_module#enabled NoCodeModule#enabled}.
 
@@ -1177,10 +1177,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `variable_options`<sup>Optional</sup> <a name="variable_options" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig.property.variableOptions"></a>
 
 ```python
-variable_options: typing.Union[IResolvable, typing.List[NoCodeModuleVariableOptions]]
+variable_options: IResolvable | typing.List[NoCodeModuleVariableOptions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
 
 variable_options block.
 
@@ -1393,7 +1393,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]</code> | *No description.* |
 
 ---
 
@@ -1424,10 +1424,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[NoCodeModuleVariableOptions]]
+internal_value: IResolvable | typing.List[NoCodeModuleVariableOptions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
 
 ---
 
@@ -1693,7 +1693,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.options">options</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a></code> | *No description.* |
 
 ---
 
@@ -1784,10 +1784,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, NoCodeModuleVariableOptions]
+internal_value: IResolvable | NoCodeModuleVariableOptions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions">NoCodeModuleVariableOptions</a>
 
 ---
 
