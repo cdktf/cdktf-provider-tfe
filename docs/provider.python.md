@@ -17,7 +17,7 @@ provider.TfeProvider(
   alias: str = None,
   hostname: str = None,
   organization: str = None,
-  ssl_skip_verify: typing.Union[bool, IResolvable] = None,
+  ssl_skip_verify: bool | IResolvable = None,
   token: str = None
 )
 ```
@@ -29,7 +29,7 @@ provider.TfeProvider(
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.hostname">hostname</a></code> | <code>str</code> | The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The organization to apply to a resource if one is not defined on the resource itself. |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.sslSkipVerify">ssl_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to skip certificate verifications. |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.sslSkipVerify">ssl_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | The token used to authenticate with Terraform Enterprise. |
 
 ---
@@ -84,7 +84,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ssl_skip_verify`<sup>Optional</sup> <a name="ssl_skip_verify" id="@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.sslSkipVerify"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to skip certificate verifications.
 
@@ -371,11 +371,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.hostnameInput">hostname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput">ssl_skip_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput">ssl_skip_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.hostname">hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.organization">organization</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify">ssl_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify">ssl_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -505,10 +505,10 @@ organization_input: str
 ##### `ssl_skip_verify_input`<sup>Optional</sup> <a name="ssl_skip_verify_input" id="@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput"></a>
 
 ```python
-ssl_skip_verify_input: typing.Union[bool, IResolvable]
+ssl_skip_verify_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -545,10 +545,10 @@ organization: str
 ##### `ssl_skip_verify`<sup>Optional</sup> <a name="ssl_skip_verify" id="@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify"></a>
 
 ```python
-ssl_skip_verify: typing.Union[bool, IResolvable]
+ssl_skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -593,7 +593,7 @@ provider.TfeProviderConfig(
   alias: str = None,
   hostname: str = None,
   organization: str = None,
-  ssl_skip_verify: typing.Union[bool, IResolvable] = None,
+  ssl_skip_verify: bool | IResolvable = None,
   token: str = None
 )
 ```
@@ -605,7 +605,7 @@ provider.TfeProviderConfig(
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.hostname">hostname</a></code> | <code>str</code> | The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.organization">organization</a></code> | <code>str</code> | The organization to apply to a resource if one is not defined on the resource itself. |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify">ssl_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to skip certificate verifications. |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify">ssl_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.token">token</a></code> | <code>str</code> | The token used to authenticate with Terraform Enterprise. |
 
 ---
@@ -655,10 +655,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ssl_skip_verify`<sup>Optional</sup> <a name="ssl_skip_verify" id="@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify"></a>
 
 ```python
-ssl_skip_verify: typing.Union[bool, IResolvable]
+ssl_skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to skip certificate verifications.
 

@@ -287,7 +287,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-tfe.samlSettings.SamlSettings.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-tfe.samlSettings.SamlSettings.importFrom"></a>
@@ -341,7 +341,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-tfe.samlSettings.SamlSettings.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -356,7 +356,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-tfe.samlSettings.SamlSettings.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -588,13 +588,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.acsConsumerUrl">AcsConsumerUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.enabled">Enabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -603,9 +603,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrGroupsInput">AttrGroupsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrSiteAdminInput">AttrSiteAdminInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrUsernameInput">AttrUsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSignedInput">AuthnRequestsSignedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSignedInput">AuthnRequestsSignedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.certificateInput">CertificateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput">DebugInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput">DebugInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.idpCertInput">IdpCertInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyInput">PrivateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWoInput">PrivateKeyWoInput</a></code> | <code>string</code> | *No description.* |
@@ -615,14 +615,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.sloEndpointUrlInput">SloEndpointUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoApiTokenSessionTimeoutInput">SsoApiTokenSessionTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoEndpointUrlInput">SsoEndpointUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabledInput">TeamManagementEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSignedInput">WantAssertionsSignedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabledInput">TeamManagementEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSignedInput">WantAssertionsSignedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrGroups">AttrGroups</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrSiteAdmin">AttrSiteAdmin</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrUsername">AttrUsername</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSigned">AuthnRequestsSigned</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSigned">AuthnRequestsSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.certificate">Certificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug">Debug</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug">Debug</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.idpCert">IdpCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKey">PrivateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWo">PrivateKeyWo</a></code> | <code>string</code> | *No description.* |
@@ -632,8 +632,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.sloEndpointUrl">SloEndpointUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoApiTokenSessionTimeout">SsoApiTokenSessionTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoEndpointUrl">SsoEndpointUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabled">TeamManagementEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSigned">WantAssertionsSigned</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabled">TeamManagementEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSigned">WantAssertionsSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -712,20 +712,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -772,10 +772,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -862,10 +862,10 @@ public string AttrUsernameInput { get; }
 ##### `AuthnRequestsSignedInput`<sup>Optional</sup> <a name="AuthnRequestsSignedInput" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSignedInput"></a>
 
 ```csharp
-public object AuthnRequestsSignedInput { get; }
+public bool|IResolvable AuthnRequestsSignedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -882,10 +882,10 @@ public string CertificateInput { get; }
 ##### `DebugInput`<sup>Optional</sup> <a name="DebugInput" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput"></a>
 
 ```csharp
-public object DebugInput { get; }
+public bool|IResolvable DebugInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -982,20 +982,20 @@ public string SsoEndpointUrlInput { get; }
 ##### `TeamManagementEnabledInput`<sup>Optional</sup> <a name="TeamManagementEnabledInput" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabledInput"></a>
 
 ```csharp
-public object TeamManagementEnabledInput { get; }
+public bool|IResolvable TeamManagementEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WantAssertionsSignedInput`<sup>Optional</sup> <a name="WantAssertionsSignedInput" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSignedInput"></a>
 
 ```csharp
-public object WantAssertionsSignedInput { get; }
+public bool|IResolvable WantAssertionsSignedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1032,10 +1032,10 @@ public string AttrUsername { get; }
 ##### `AuthnRequestsSigned`<sup>Required</sup> <a name="AuthnRequestsSigned" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSigned"></a>
 
 ```csharp
-public object AuthnRequestsSigned { get; }
+public bool|IResolvable AuthnRequestsSigned { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1052,10 +1052,10 @@ public string Certificate { get; }
 ##### `Debug`<sup>Required</sup> <a name="Debug" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug"></a>
 
 ```csharp
-public object Debug { get; }
+public bool|IResolvable Debug { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1152,20 +1152,20 @@ public string SsoEndpointUrl { get; }
 ##### `TeamManagementEnabled`<sup>Required</sup> <a name="TeamManagementEnabled" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabled"></a>
 
 ```csharp
-public object TeamManagementEnabled { get; }
+public bool|IResolvable TeamManagementEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WantAssertionsSigned`<sup>Required</sup> <a name="WantAssertionsSigned" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSigned"></a>
 
 ```csharp
-public object WantAssertionsSigned { get; }
+public bool|IResolvable WantAssertionsSigned { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1197,30 +1197,30 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Tfe;
 
 new SamlSettingsConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string IdpCert,
     string SloEndpointUrl,
     string SsoEndpointUrl,
     string AttrGroups = null,
     string AttrSiteAdmin = null,
     string AttrUsername = null,
-    object AuthnRequestsSigned = null,
+    bool|IResolvable AuthnRequestsSigned = null,
     string Certificate = null,
-    object Debug = null,
+    bool|IResolvable Debug = null,
     string PrivateKey = null,
     string PrivateKeyWo = null,
     string SignatureDigestMethod = null,
     string SignatureSigningMethod = null,
     string SiteAdminRole = null,
     double SsoApiTokenSessionTimeout = null,
-    object TeamManagementEnabled = null,
-    object WantAssertionsSigned = null
+    bool|IResolvable TeamManagementEnabled = null,
+    bool|IResolvable WantAssertionsSigned = null
 };
 ```
 
@@ -1228,50 +1228,50 @@ new SamlSettingsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.idpCert">IdpCert</a></code> | <code>string</code> | Identity Provider Certificate specifies the PEM encoded X.509 Certificate as provided by the IdP configuration. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.sloEndpointUrl">SloEndpointUrl</a></code> | <code>string</code> | Single Log Out URL specifies the HTTPS endpoint on your IdP for single logout requests. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.ssoEndpointUrl">SsoEndpointUrl</a></code> | <code>string</code> | Single Sign On URL specifies the HTTPS endpoint on your IdP for single sign-on requests. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.attrGroups">AttrGroups</a></code> | <code>string</code> | Team Attribute Name specifies the name of the SAML attribute that determines team membership. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.attrSiteAdmin">AttrSiteAdmin</a></code> | <code>string</code> | Specifies the role for site admin access. Overrides the "Site Admin Role" method. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.attrUsername">AttrUsername</a></code> | <code>string</code> | Username Attribute Name specifies the name of the SAML attribute that determines the user's username. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.authnRequestsSigned">AuthnRequestsSigned</a></code> | <code>object</code> | Ensure that <samlp:AuthnRequest> messages are signed. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.authnRequestsSigned">AuthnRequestsSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Ensure that <samlp:AuthnRequest> messages are signed. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.certificate">Certificate</a></code> | <code>string</code> | The certificate used for request and assertion signing. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug">Debug</a></code> | <code>object</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug">Debug</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | The private key used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKeyWo">PrivateKeyWo</a></code> | <code>string</code> | The private key in write-only mode used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.signatureDigestMethod">SignatureDigestMethod</a></code> | <code>string</code> | Signature Digest Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.signatureSigningMethod">SignatureSigningMethod</a></code> | <code>string</code> | Signature Signing Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.siteAdminRole">SiteAdminRole</a></code> | <code>string</code> | Specifies the role for site admin access, provided in the list of roles sent in the Team Attribute Name attribute. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.ssoApiTokenSessionTimeout">SsoApiTokenSessionTimeout</a></code> | <code>double</code> | Specifies the Single Sign On session timeout in seconds. Defaults to 14 days. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.teamManagementEnabled">TeamManagementEnabled</a></code> | <code>object</code> | Set it to false if you would rather use Terraform Enterprise to manage team membership. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.wantAssertionsSigned">WantAssertionsSigned</a></code> | <code>object</code> | Ensure that <saml:Assertion> elements are signed. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.teamManagementEnabled">TeamManagementEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set it to false if you would rather use Terraform Enterprise to manage team membership. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.wantAssertionsSigned">WantAssertionsSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Ensure that <saml:Assertion> elements are signed. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1318,10 +1318,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1416,10 +1416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthnRequestsSigned`<sup>Optional</sup> <a name="AuthnRequestsSigned" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.authnRequestsSigned"></a>
 
 ```csharp
-public object AuthnRequestsSigned { get; set; }
+public bool|IResolvable AuthnRequestsSigned { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Ensure that <samlp:AuthnRequest> messages are signed.
 
@@ -1444,10 +1444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Debug`<sup>Optional</sup> <a name="Debug" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug"></a>
 
 ```csharp
-public object Debug { get; set; }
+public bool|IResolvable Debug { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page.
 
@@ -1542,10 +1542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `TeamManagementEnabled`<sup>Optional</sup> <a name="TeamManagementEnabled" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.teamManagementEnabled"></a>
 
 ```csharp
-public object TeamManagementEnabled { get; set; }
+public bool|IResolvable TeamManagementEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set it to false if you would rather use Terraform Enterprise to manage team membership.
 
@@ -1556,10 +1556,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WantAssertionsSigned`<sup>Optional</sup> <a name="WantAssertionsSigned" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.wantAssertionsSigned"></a>
 
 ```csharp
-public object WantAssertionsSigned { get; set; }
+public bool|IResolvable WantAssertionsSigned { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Ensure that <saml:Assertion> elements are signed.
 

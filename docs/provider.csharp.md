@@ -296,11 +296,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.hostnameInput">HostnameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput">SslSkipVerifyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput">SslSkipVerifyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.hostname">Hostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify">SslSkipVerify</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify">SslSkipVerify</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.token">Token</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -430,10 +430,10 @@ public string OrganizationInput { get; }
 ##### `SslSkipVerifyInput`<sup>Optional</sup> <a name="SslSkipVerifyInput" id="@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput"></a>
 
 ```csharp
-public object SslSkipVerifyInput { get; }
+public bool|IResolvable SslSkipVerifyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -470,10 +470,10 @@ public string Organization { get; }
 ##### `SslSkipVerify`<sup>Optional</sup> <a name="SslSkipVerify" id="@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify"></a>
 
 ```csharp
-public object SslSkipVerify { get; }
+public bool|IResolvable SslSkipVerify { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -518,7 +518,7 @@ new TfeProviderConfig {
     string Alias = null,
     string Hostname = null,
     string Organization = null,
-    object SslSkipVerify = null,
+    bool|IResolvable SslSkipVerify = null,
     string Token = null
 };
 ```
@@ -530,7 +530,7 @@ new TfeProviderConfig {
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.hostname">Hostname</a></code> | <code>string</code> | The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.organization">Organization</a></code> | <code>string</code> | The organization to apply to a resource if one is not defined on the resource itself. |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify">SslSkipVerify</a></code> | <code>object</code> | Whether or not to skip certificate verifications. |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify">SslSkipVerify</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.token">Token</a></code> | <code>string</code> | The token used to authenticate with Terraform Enterprise. |
 
 ---
@@ -580,10 +580,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SslSkipVerify`<sup>Optional</sup> <a name="SslSkipVerify" id="@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify"></a>
 
 ```csharp
-public object SslSkipVerify { get; set; }
+public bool|IResolvable SslSkipVerify { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not to skip certificate verifications.
 

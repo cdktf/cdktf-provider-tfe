@@ -12,36 +12,26 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 import com.hashicorp.cdktf.providers.tfe.organization.Organization;
 
 Organization.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .email(java.lang.String)
     .name(java.lang.String)
-//  .aggregatedCommitStatusEnabled(java.lang.Boolean)
-//  .aggregatedCommitStatusEnabled(IResolvable)
-//  .allowForceDeleteWorkspaces(java.lang.Boolean)
-//  .allowForceDeleteWorkspaces(IResolvable)
-//  .assessmentsEnforced(java.lang.Boolean)
-//  .assessmentsEnforced(IResolvable)
+//  .aggregatedCommitStatusEnabled(java.lang.Boolean|IResolvable)
+//  .allowForceDeleteWorkspaces(java.lang.Boolean|IResolvable)
+//  .assessmentsEnforced(java.lang.Boolean|IResolvable)
 //  .collaboratorAuthPolicy(java.lang.String)
-//  .costEstimationEnabled(java.lang.Boolean)
-//  .costEstimationEnabled(IResolvable)
+//  .costEstimationEnabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .ownersTeamSamlRoleId(java.lang.String)
-//  .sendPassingStatusesForUntriggeredSpeculativePlans(java.lang.Boolean)
-//  .sendPassingStatusesForUntriggeredSpeculativePlans(IResolvable)
+//  .sendPassingStatusesForUntriggeredSpeculativePlans(java.lang.Boolean|IResolvable)
 //  .sessionRememberMinutes(java.lang.Number)
 //  .sessionTimeoutMinutes(java.lang.Number)
-//  .speculativePlanManagementEnabled(java.lang.Boolean)
-//  .speculativePlanManagementEnabled(IResolvable)
+//  .speculativePlanManagementEnabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -49,26 +39,26 @@ Organization.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#email Organization#email}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.aggregatedCommitStatusEnabled">aggregatedCommitStatusEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.allowForceDeleteWorkspaces">allowForceDeleteWorkspaces</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.assessmentsEnforced">assessmentsEnforced</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.aggregatedCommitStatusEnabled">aggregatedCommitStatusEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.allowForceDeleteWorkspaces">allowForceDeleteWorkspaces</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.assessmentsEnforced">assessmentsEnforced</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.collaboratorAuthPolicy">collaboratorAuthPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.costEstimationEnabled">costEstimationEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.costEstimationEnabled">costEstimationEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#id Organization#id}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.ownersTeamSamlRoleId">ownersTeamSamlRoleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sendPassingStatusesForUntriggeredSpeculativePlans">sendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sendPassingStatusesForUntriggeredSpeculativePlans">sendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sessionRememberMinutes">sessionRememberMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}. |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sessionTimeoutMinutes">sessionTimeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.speculativePlanManagementEnabled">speculativePlanManagementEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.Initializer.parameter.speculativePlanManagementEnabled">speculativePlanManagementEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
 
 ---
 
@@ -92,13 +82,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -128,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -150,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `aggregatedCommitStatusEnabled`<sup>Optional</sup> <a name="aggregatedCommitStatusEnabled" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.aggregatedCommitStatusEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}.
 
@@ -158,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allowForceDeleteWorkspaces`<sup>Optional</sup> <a name="allowForceDeleteWorkspaces" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.allowForceDeleteWorkspaces"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
 
@@ -166,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assessmentsEnforced`<sup>Optional</sup> <a name="assessmentsEnforced" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.assessmentsEnforced"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}.
 
@@ -182,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `costEstimationEnabled`<sup>Optional</sup> <a name="costEstimationEnabled" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.costEstimationEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
@@ -209,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `sendPassingStatusesForUntriggeredSpeculativePlans`<sup>Optional</sup> <a name="sendPassingStatusesForUntriggeredSpeculativePlans" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
 
@@ -233,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `speculativePlanManagementEnabled`<sup>Optional</sup> <a name="speculativePlanManagementEnabled" id="@cdktf/provider-tfe.organization.Organization.Initializer.parameter.speculativePlanManagementEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}.
 
@@ -477,7 +467,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-tfe.organization.Organization.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-tfe.organization.Organization.importFrom"></a>
@@ -533,7 +523,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -548,7 +538,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.organization.Organization.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -762,40 +752,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.defaultProjectId">defaultProjectId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput">aggregatedCommitStatusEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput">allowForceDeleteWorkspacesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput">assessmentsEnforcedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput">aggregatedCommitStatusEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput">allowForceDeleteWorkspacesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput">assessmentsEnforcedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.collaboratorAuthPolicyInput">collaboratorAuthPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput">costEstimationEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput">costEstimationEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.ownersTeamSamlRoleIdInput">ownersTeamSamlRoleIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput">sendPassingStatusesForUntriggeredSpeculativePlansInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput">sendPassingStatusesForUntriggeredSpeculativePlansInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionRememberMinutesInput">sessionRememberMinutesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionTimeoutMinutesInput">sessionTimeoutMinutesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput">speculativePlanManagementEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled">aggregatedCommitStatusEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces">allowForceDeleteWorkspaces</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced">assessmentsEnforced</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput">speculativePlanManagementEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled">aggregatedCommitStatusEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces">allowForceDeleteWorkspaces</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced">assessmentsEnforced</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.collaboratorAuthPolicy">collaboratorAuthPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled">costEstimationEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled">costEstimationEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.ownersTeamSamlRoleId">ownersTeamSamlRoleId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans">sendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans">sendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionRememberMinutes">sessionRememberMinutes</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.Organization.property.sessionTimeoutMinutes">sessionTimeoutMinutes</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled">speculativePlanManagementEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled">speculativePlanManagementEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -874,20 +864,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.organization.Organization.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organization.Organization.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -934,10 +924,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.organization.Organization.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -954,30 +944,30 @@ public java.lang.String getDefaultProjectId();
 ##### `aggregatedCommitStatusEnabledInput`<sup>Optional</sup> <a name="aggregatedCommitStatusEnabledInput" id="@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabledInput"></a>
 
 ```java
-public java.lang.Object getAggregatedCommitStatusEnabledInput();
+public java.lang.Boolean|IResolvable getAggregatedCommitStatusEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowForceDeleteWorkspacesInput`<sup>Optional</sup> <a name="allowForceDeleteWorkspacesInput" id="@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspacesInput"></a>
 
 ```java
-public java.lang.Object getAllowForceDeleteWorkspacesInput();
+public java.lang.Boolean|IResolvable getAllowForceDeleteWorkspacesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `assessmentsEnforcedInput`<sup>Optional</sup> <a name="assessmentsEnforcedInput" id="@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforcedInput"></a>
 
 ```java
-public java.lang.Object getAssessmentsEnforcedInput();
+public java.lang.Boolean|IResolvable getAssessmentsEnforcedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -994,10 +984,10 @@ public java.lang.String getCollaboratorAuthPolicyInput();
 ##### `costEstimationEnabledInput`<sup>Optional</sup> <a name="costEstimationEnabledInput" id="@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabledInput"></a>
 
 ```java
-public java.lang.Object getCostEstimationEnabledInput();
+public java.lang.Boolean|IResolvable getCostEstimationEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1044,10 +1034,10 @@ public java.lang.String getOwnersTeamSamlRoleIdInput();
 ##### `sendPassingStatusesForUntriggeredSpeculativePlansInput`<sup>Optional</sup> <a name="sendPassingStatusesForUntriggeredSpeculativePlansInput" id="@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlansInput"></a>
 
 ```java
-public java.lang.Object getSendPassingStatusesForUntriggeredSpeculativePlansInput();
+public java.lang.Boolean|IResolvable getSendPassingStatusesForUntriggeredSpeculativePlansInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1074,40 +1064,40 @@ public java.lang.Number getSessionTimeoutMinutesInput();
 ##### `speculativePlanManagementEnabledInput`<sup>Optional</sup> <a name="speculativePlanManagementEnabledInput" id="@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabledInput"></a>
 
 ```java
-public java.lang.Object getSpeculativePlanManagementEnabledInput();
+public java.lang.Boolean|IResolvable getSpeculativePlanManagementEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `aggregatedCommitStatusEnabled`<sup>Required</sup> <a name="aggregatedCommitStatusEnabled" id="@cdktf/provider-tfe.organization.Organization.property.aggregatedCommitStatusEnabled"></a>
 
 ```java
-public java.lang.Object getAggregatedCommitStatusEnabled();
+public java.lang.Boolean|IResolvable getAggregatedCommitStatusEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowForceDeleteWorkspaces`<sup>Required</sup> <a name="allowForceDeleteWorkspaces" id="@cdktf/provider-tfe.organization.Organization.property.allowForceDeleteWorkspaces"></a>
 
 ```java
-public java.lang.Object getAllowForceDeleteWorkspaces();
+public java.lang.Boolean|IResolvable getAllowForceDeleteWorkspaces();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `assessmentsEnforced`<sup>Required</sup> <a name="assessmentsEnforced" id="@cdktf/provider-tfe.organization.Organization.property.assessmentsEnforced"></a>
 
 ```java
-public java.lang.Object getAssessmentsEnforced();
+public java.lang.Boolean|IResolvable getAssessmentsEnforced();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1124,10 +1114,10 @@ public java.lang.String getCollaboratorAuthPolicy();
 ##### `costEstimationEnabled`<sup>Required</sup> <a name="costEstimationEnabled" id="@cdktf/provider-tfe.organization.Organization.property.costEstimationEnabled"></a>
 
 ```java
-public java.lang.Object getCostEstimationEnabled();
+public java.lang.Boolean|IResolvable getCostEstimationEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1174,10 +1164,10 @@ public java.lang.String getOwnersTeamSamlRoleId();
 ##### `sendPassingStatusesForUntriggeredSpeculativePlans`<sup>Required</sup> <a name="sendPassingStatusesForUntriggeredSpeculativePlans" id="@cdktf/provider-tfe.organization.Organization.property.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
 ```java
-public java.lang.Object getSendPassingStatusesForUntriggeredSpeculativePlans();
+public java.lang.Boolean|IResolvable getSendPassingStatusesForUntriggeredSpeculativePlans();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1204,10 +1194,10 @@ public java.lang.Number getSessionTimeoutMinutes();
 ##### `speculativePlanManagementEnabled`<sup>Required</sup> <a name="speculativePlanManagementEnabled" id="@cdktf/provider-tfe.organization.Organization.property.speculativePlanManagementEnabled"></a>
 
 ```java
-public java.lang.Object getSpeculativePlanManagementEnabled();
+public java.lang.Boolean|IResolvable getSpeculativePlanManagementEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1239,36 +1229,26 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.tfe.organization.OrganizationConfig;
 
 OrganizationConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .email(java.lang.String)
     .name(java.lang.String)
-//  .aggregatedCommitStatusEnabled(java.lang.Boolean)
-//  .aggregatedCommitStatusEnabled(IResolvable)
-//  .allowForceDeleteWorkspaces(java.lang.Boolean)
-//  .allowForceDeleteWorkspaces(IResolvable)
-//  .assessmentsEnforced(java.lang.Boolean)
-//  .assessmentsEnforced(IResolvable)
+//  .aggregatedCommitStatusEnabled(java.lang.Boolean|IResolvable)
+//  .allowForceDeleteWorkspaces(java.lang.Boolean|IResolvable)
+//  .assessmentsEnforced(java.lang.Boolean|IResolvable)
 //  .collaboratorAuthPolicy(java.lang.String)
-//  .costEstimationEnabled(java.lang.Boolean)
-//  .costEstimationEnabled(IResolvable)
+//  .costEstimationEnabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .ownersTeamSamlRoleId(java.lang.String)
-//  .sendPassingStatusesForUntriggeredSpeculativePlans(java.lang.Boolean)
-//  .sendPassingStatusesForUntriggeredSpeculativePlans(IResolvable)
+//  .sendPassingStatusesForUntriggeredSpeculativePlans(java.lang.Boolean|IResolvable)
 //  .sessionRememberMinutes(java.lang.Number)
 //  .sessionTimeoutMinutes(java.lang.Number)
-//  .speculativePlanManagementEnabled(java.lang.Boolean)
-//  .speculativePlanManagementEnabled(IResolvable)
+//  .speculativePlanManagementEnabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1276,46 +1256,46 @@ OrganizationConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#email Organization#email}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled">aggregatedCommitStatusEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">allowForceDeleteWorkspaces</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">assessmentsEnforced</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled">aggregatedCommitStatusEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces">allowForceDeleteWorkspaces</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced">assessmentsEnforced</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.collaboratorAuthPolicy">collaboratorAuthPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#collaborator_auth_policy Organization#collaborator_auth_policy}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">costEstimationEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled">costEstimationEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#id Organization#id}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.ownersTeamSamlRoleId">ownersTeamSamlRoleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#owners_team_saml_role_id Organization#owners_team_saml_role_id}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">sendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans">sendPassingStatusesForUntriggeredSpeculativePlans</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionRememberMinutes">sessionRememberMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_remember_minutes Organization#session_remember_minutes}. |
 | <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.sessionTimeoutMinutes">sessionTimeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#session_timeout_minutes Organization#session_timeout_minutes}. |
-| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled">speculativePlanManagementEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled">speculativePlanManagementEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1362,10 +1342,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1396,10 +1376,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `aggregatedCommitStatusEnabled`<sup>Optional</sup> <a name="aggregatedCommitStatusEnabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.aggregatedCommitStatusEnabled"></a>
 
 ```java
-public java.lang.Object getAggregatedCommitStatusEnabled();
+public java.lang.Boolean|IResolvable getAggregatedCommitStatusEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#aggregated_commit_status_enabled Organization#aggregated_commit_status_enabled}.
 
@@ -1408,10 +1388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allowForceDeleteWorkspaces`<sup>Optional</sup> <a name="allowForceDeleteWorkspaces" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.allowForceDeleteWorkspaces"></a>
 
 ```java
-public java.lang.Object getAllowForceDeleteWorkspaces();
+public java.lang.Boolean|IResolvable getAllowForceDeleteWorkspaces();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
 
@@ -1420,10 +1400,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assessmentsEnforced`<sup>Optional</sup> <a name="assessmentsEnforced" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.assessmentsEnforced"></a>
 
 ```java
-public java.lang.Object getAssessmentsEnforced();
+public java.lang.Boolean|IResolvable getAssessmentsEnforced();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#assessments_enforced Organization#assessments_enforced}.
 
@@ -1444,10 +1424,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `costEstimationEnabled`<sup>Optional</sup> <a name="costEstimationEnabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.costEstimationEnabled"></a>
 
 ```java
-public java.lang.Object getCostEstimationEnabled();
+public java.lang.Boolean|IResolvable getCostEstimationEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#cost_estimation_enabled Organization#cost_estimation_enabled}.
 
@@ -1483,10 +1463,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sendPassingStatusesForUntriggeredSpeculativePlans`<sup>Optional</sup> <a name="sendPassingStatusesForUntriggeredSpeculativePlans" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.sendPassingStatusesForUntriggeredSpeculativePlans"></a>
 
 ```java
-public java.lang.Object getSendPassingStatusesForUntriggeredSpeculativePlans();
+public java.lang.Boolean|IResolvable getSendPassingStatusesForUntriggeredSpeculativePlans();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#send_passing_statuses_for_untriggered_speculative_plans Organization#send_passing_statuses_for_untriggered_speculative_plans}.
 
@@ -1519,10 +1499,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `speculativePlanManagementEnabled`<sup>Optional</sup> <a name="speculativePlanManagementEnabled" id="@cdktf/provider-tfe.organization.OrganizationConfig.property.speculativePlanManagementEnabled"></a>
 
 ```java
-public java.lang.Object getSpeculativePlanManagementEnabled();
+public java.lang.Boolean|IResolvable getSpeculativePlanManagementEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/organization#speculative_plan_management_enabled Organization#speculative_plan_management_enabled}.
 

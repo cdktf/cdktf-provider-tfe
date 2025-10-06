@@ -14,21 +14,21 @@ from cdktf_cdktf_provider_tfe import workspace_settings
 workspaceSettings.WorkspaceSettings(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   workspace_id: str,
   agent_pool_id: str = None,
-  assessments_enabled: typing.Union[bool, IResolvable] = None,
-  auto_apply: typing.Union[bool, IResolvable] = None,
+  assessments_enabled: bool | IResolvable = None,
+  auto_apply: bool | IResolvable = None,
   description: str = None,
   effective_tags: typing.Mapping[str] = None,
   execution_mode: str = None,
-  global_remote_state: typing.Union[bool, IResolvable] = None,
+  global_remote_state: bool | IResolvable = None,
   remote_state_consumer_ids: typing.List[str] = None,
   tags: typing.Mapping[str] = None
 )
@@ -38,21 +38,21 @@ workspaceSettings.WorkspaceSettings(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.assessmentsEnabled">assessments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.autoApply">auto_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.effectiveTags">effective_tags</a></code> | <code>typing.Mapping[str]</code> | A map of all key-value tags set on the workspace (includes inheritted tags). |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.globalRemoteState">global_remote_state</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of key-value tags to add to the workspace. |
 
@@ -78,13 +78,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assessments_enabled`<sup>Optional</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.assessmentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks.
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auto_apply`<sup>Optional</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.autoApply"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply.
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `global_remote_state`<sup>Optional</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.Initializer.parameter.globalRemoteState"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the workspace allows all workspaces in the organization to access its state data during runs.
 
@@ -477,7 +477,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.importFrom"></a>
@@ -540,7 +540,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -556,7 +556,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -771,32 +771,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.overwrites">overwrites</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList">WorkspaceSettingsOverwritesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolIdInput">agent_pool_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput">assessments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput">auto_apply_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput">assessments_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput">auto_apply_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTagsInput">effective_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionModeInput">execution_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">global_remote_state_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">global_remote_state_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput">remote_state_consumer_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled">assessments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply">auto_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTags">effective_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionMode">execution_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">global_remote_state</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
@@ -878,20 +878,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -938,10 +938,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -978,20 +978,20 @@ agent_pool_id_input: str
 ##### `assessments_enabled_input`<sup>Optional</sup> <a name="assessments_enabled_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput"></a>
 
 ```python
-assessments_enabled_input: typing.Union[bool, IResolvable]
+assessments_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_apply_input`<sup>Optional</sup> <a name="auto_apply_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput"></a>
 
 ```python
-auto_apply_input: typing.Union[bool, IResolvable]
+auto_apply_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1028,10 +1028,10 @@ execution_mode_input: str
 ##### `global_remote_state_input`<sup>Optional</sup> <a name="global_remote_state_input" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput"></a>
 
 ```python
-global_remote_state_input: typing.Union[bool, IResolvable]
+global_remote_state_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1078,20 +1078,20 @@ agent_pool_id: str
 ##### `assessments_enabled`<sup>Required</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled"></a>
 
 ```python
-assessments_enabled: typing.Union[bool, IResolvable]
+assessments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_apply`<sup>Required</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply"></a>
 
 ```python
-auto_apply: typing.Union[bool, IResolvable]
+auto_apply: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1128,10 +1128,10 @@ execution_mode: str
 ##### `global_remote_state`<sup>Required</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState"></a>
 
 ```python
-global_remote_state: typing.Union[bool, IResolvable]
+global_remote_state: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1193,21 +1193,21 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import workspace_settings
 
 workspaceSettings.WorkspaceSettingsConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   workspace_id: str,
   agent_pool_id: str = None,
-  assessments_enabled: typing.Union[bool, IResolvable] = None,
-  auto_apply: typing.Union[bool, IResolvable] = None,
+  assessments_enabled: bool | IResolvable = None,
+  auto_apply: bool | IResolvable = None,
   description: str = None,
   effective_tags: typing.Mapping[str] = None,
   execution_mode: str = None,
-  global_remote_state: typing.Union[bool, IResolvable] = None,
+  global_remote_state: bool | IResolvable = None,
   remote_state_consumer_ids: typing.List[str] = None,
   tags: typing.Mapping[str] = None
 )
@@ -1217,21 +1217,21 @@ workspaceSettings.WorkspaceSettingsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled">assessments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply">auto_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled">assessments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply">auto_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.description">description</a></code> | <code>str</code> | A description of the workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.effectiveTags">effective_tags</a></code> | <code>typing.Mapping[str]</code> | A map of all key-value tags set on the workspace (includes inheritted tags). |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">global_remote_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">global_remote_state</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds">remote_state_consumer_ids</a></code> | <code>typing.List[str]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of key-value tags to add to the workspace. |
 
@@ -1240,20 +1240,20 @@ workspaceSettings.WorkspaceSettingsConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1300,10 +1300,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1334,10 +1334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assessments_enabled`<sup>Optional</sup> <a name="assessments_enabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled"></a>
 
 ```python
-assessments_enabled: typing.Union[bool, IResolvable]
+assessments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks.
 
@@ -1348,10 +1348,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auto_apply`<sup>Optional</sup> <a name="auto_apply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply"></a>
 
 ```python
-auto_apply: typing.Union[bool, IResolvable]
+auto_apply: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply.
 
@@ -1404,10 +1404,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `global_remote_state`<sup>Optional</sup> <a name="global_remote_state" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState"></a>
 
 ```python
-global_remote_state: typing.Union[bool, IResolvable]
+global_remote_state: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the workspace allows all workspaces in the organization to access its state data during runs.
 

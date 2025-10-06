@@ -14,30 +14,30 @@ from cdktf_cdktf_provider_tfe import saml_settings
 samlSettings.SamlSettings(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   idp_cert: str,
   slo_endpoint_url: str,
   sso_endpoint_url: str,
   attr_groups: str = None,
   attr_site_admin: str = None,
   attr_username: str = None,
-  authn_requests_signed: typing.Union[bool, IResolvable] = None,
+  authn_requests_signed: bool | IResolvable = None,
   certificate: str = None,
-  debug: typing.Union[bool, IResolvable] = None,
+  debug: bool | IResolvable = None,
   private_key: str = None,
   private_key_wo: str = None,
   signature_digest_method: str = None,
   signature_signing_method: str = None,
   site_admin_role: str = None,
   sso_api_token_session_timeout: typing.Union[int, float] = None,
-  team_management_enabled: typing.Union[bool, IResolvable] = None,
-  want_assertions_signed: typing.Union[bool, IResolvable] = None
+  team_management_enabled: bool | IResolvable = None,
+  want_assertions_signed: bool | IResolvable = None
 )
 ```
 
@@ -45,30 +45,30 @@ samlSettings.SamlSettings(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.idpCert">idp_cert</a></code> | <code>str</code> | Identity Provider Certificate specifies the PEM encoded X.509 Certificate as provided by the IdP configuration. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.sloEndpointUrl">slo_endpoint_url</a></code> | <code>str</code> | Single Log Out URL specifies the HTTPS endpoint on your IdP for single logout requests. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.ssoEndpointUrl">sso_endpoint_url</a></code> | <code>str</code> | Single Sign On URL specifies the HTTPS endpoint on your IdP for single sign-on requests. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.attrGroups">attr_groups</a></code> | <code>str</code> | Team Attribute Name specifies the name of the SAML attribute that determines team membership. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.attrSiteAdmin">attr_site_admin</a></code> | <code>str</code> | Specifies the role for site admin access. Overrides the "Site Admin Role" method. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.attrUsername">attr_username</a></code> | <code>str</code> | Username Attribute Name specifies the name of the SAML attribute that determines the user's username. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.authnRequestsSigned">authn_requests_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ensure that <samlp:AuthnRequest> messages are signed. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.authnRequestsSigned">authn_requests_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensure that <samlp:AuthnRequest> messages are signed. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.certificate">certificate</a></code> | <code>str</code> | The certificate used for request and assertion signing. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.debug">debug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.debug">debug</a></code> | <code>bool \| cdktf.IResolvable</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | The private key used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.privateKeyWo">private_key_wo</a></code> | <code>str</code> | The private key in write-only mode used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.signatureDigestMethod">signature_digest_method</a></code> | <code>str</code> | Signature Digest Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.signatureSigningMethod">signature_signing_method</a></code> | <code>str</code> | Signature Signing Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.siteAdminRole">site_admin_role</a></code> | <code>str</code> | Specifies the role for site admin access, provided in the list of roles sent in the Team Attribute Name attribute. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.ssoApiTokenSessionTimeout">sso_api_token_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Specifies the Single Sign On session timeout in seconds. Defaults to 14 days. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.teamManagementEnabled">team_management_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set it to false if you would rather use Terraform Enterprise to manage team membership. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.wantAssertionsSigned">want_assertions_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ensure that <saml:Assertion> elements are signed. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.teamManagementEnabled">team_management_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Set it to false if you would rather use Terraform Enterprise to manage team membership. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.wantAssertionsSigned">want_assertions_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensure that <saml:Assertion> elements are signed. |
 
 ---
 
@@ -92,13 +92,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authn_requests_signed`<sup>Optional</sup> <a name="authn_requests_signed" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.authnRequestsSigned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ensure that <samlp:AuthnRequest> messages are signed.
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.debug"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page.
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `team_management_enabled`<sup>Optional</sup> <a name="team_management_enabled" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.teamManagementEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set it to false if you would rather use Terraform Enterprise to manage team membership.
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `want_assertions_signed`<sup>Optional</sup> <a name="want_assertions_signed" id="@cdktf/provider-tfe.samlSettings.SamlSettings.Initializer.parameter.wantAssertionsSigned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ensure that <saml:Assertion> elements are signed.
 
@@ -572,7 +572,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.samlSettings.SamlSettings.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.samlSettings.SamlSettings.importFrom"></a>
@@ -635,7 +635,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -651,7 +651,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.samlSettings.SamlSettings.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -896,13 +896,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.acsConsumerUrl">acs_consumer_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -911,9 +911,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrGroupsInput">attr_groups_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrSiteAdminInput">attr_site_admin_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrUsernameInput">attr_username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSignedInput">authn_requests_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSignedInput">authn_requests_signed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.certificateInput">certificate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput">debug_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput">debug_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.idpCertInput">idp_cert_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyInput">private_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWoInput">private_key_wo_input</a></code> | <code>str</code> | *No description.* |
@@ -923,14 +923,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.sloEndpointUrlInput">slo_endpoint_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoApiTokenSessionTimeoutInput">sso_api_token_session_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoEndpointUrlInput">sso_endpoint_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabledInput">team_management_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSignedInput">want_assertions_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabledInput">team_management_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSignedInput">want_assertions_signed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrGroups">attr_groups</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrSiteAdmin">attr_site_admin</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.attrUsername">attr_username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSigned">authn_requests_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSigned">authn_requests_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug">debug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug">debug</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.idpCert">idp_cert</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKey">private_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.privateKeyWo">private_key_wo</a></code> | <code>str</code> | *No description.* |
@@ -940,8 +940,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.sloEndpointUrl">slo_endpoint_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoApiTokenSessionTimeout">sso_api_token_session_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.ssoEndpointUrl">sso_endpoint_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabled">team_management_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSigned">want_assertions_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabled">team_management_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSigned">want_assertions_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1020,20 +1020,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1080,10 +1080,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1170,10 +1170,10 @@ attr_username_input: str
 ##### `authn_requests_signed_input`<sup>Optional</sup> <a name="authn_requests_signed_input" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSignedInput"></a>
 
 ```python
-authn_requests_signed_input: typing.Union[bool, IResolvable]
+authn_requests_signed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1190,10 +1190,10 @@ certificate_input: str
 ##### `debug_input`<sup>Optional</sup> <a name="debug_input" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.debugInput"></a>
 
 ```python
-debug_input: typing.Union[bool, IResolvable]
+debug_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1290,20 +1290,20 @@ sso_endpoint_url_input: str
 ##### `team_management_enabled_input`<sup>Optional</sup> <a name="team_management_enabled_input" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabledInput"></a>
 
 ```python
-team_management_enabled_input: typing.Union[bool, IResolvable]
+team_management_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `want_assertions_signed_input`<sup>Optional</sup> <a name="want_assertions_signed_input" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSignedInput"></a>
 
 ```python
-want_assertions_signed_input: typing.Union[bool, IResolvable]
+want_assertions_signed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1340,10 +1340,10 @@ attr_username: str
 ##### `authn_requests_signed`<sup>Required</sup> <a name="authn_requests_signed" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.authnRequestsSigned"></a>
 
 ```python
-authn_requests_signed: typing.Union[bool, IResolvable]
+authn_requests_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1360,10 +1360,10 @@ certificate: str
 ##### `debug`<sup>Required</sup> <a name="debug" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.debug"></a>
 
 ```python
-debug: typing.Union[bool, IResolvable]
+debug: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1460,20 +1460,20 @@ sso_endpoint_url: str
 ##### `team_management_enabled`<sup>Required</sup> <a name="team_management_enabled" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.teamManagementEnabled"></a>
 
 ```python
-team_management_enabled: typing.Union[bool, IResolvable]
+team_management_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `want_assertions_signed`<sup>Required</sup> <a name="want_assertions_signed" id="@cdktf/provider-tfe.samlSettings.SamlSettings.property.wantAssertionsSigned"></a>
 
 ```python
-want_assertions_signed: typing.Union[bool, IResolvable]
+want_assertions_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1505,30 +1505,30 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import saml_settings
 
 samlSettings.SamlSettingsConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   idp_cert: str,
   slo_endpoint_url: str,
   sso_endpoint_url: str,
   attr_groups: str = None,
   attr_site_admin: str = None,
   attr_username: str = None,
-  authn_requests_signed: typing.Union[bool, IResolvable] = None,
+  authn_requests_signed: bool | IResolvable = None,
   certificate: str = None,
-  debug: typing.Union[bool, IResolvable] = None,
+  debug: bool | IResolvable = None,
   private_key: str = None,
   private_key_wo: str = None,
   signature_digest_method: str = None,
   signature_signing_method: str = None,
   site_admin_role: str = None,
   sso_api_token_session_timeout: typing.Union[int, float] = None,
-  team_management_enabled: typing.Union[bool, IResolvable] = None,
-  want_assertions_signed: typing.Union[bool, IResolvable] = None
+  team_management_enabled: bool | IResolvable = None,
+  want_assertions_signed: bool | IResolvable = None
 )
 ```
 
@@ -1536,50 +1536,50 @@ samlSettings.SamlSettingsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.idpCert">idp_cert</a></code> | <code>str</code> | Identity Provider Certificate specifies the PEM encoded X.509 Certificate as provided by the IdP configuration. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.sloEndpointUrl">slo_endpoint_url</a></code> | <code>str</code> | Single Log Out URL specifies the HTTPS endpoint on your IdP for single logout requests. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.ssoEndpointUrl">sso_endpoint_url</a></code> | <code>str</code> | Single Sign On URL specifies the HTTPS endpoint on your IdP for single sign-on requests. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.attrGroups">attr_groups</a></code> | <code>str</code> | Team Attribute Name specifies the name of the SAML attribute that determines team membership. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.attrSiteAdmin">attr_site_admin</a></code> | <code>str</code> | Specifies the role for site admin access. Overrides the "Site Admin Role" method. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.attrUsername">attr_username</a></code> | <code>str</code> | Username Attribute Name specifies the name of the SAML attribute that determines the user's username. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.authnRequestsSigned">authn_requests_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ensure that <samlp:AuthnRequest> messages are signed. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.authnRequestsSigned">authn_requests_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensure that <samlp:AuthnRequest> messages are signed. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.certificate">certificate</a></code> | <code>str</code> | The certificate used for request and assertion signing. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug">debug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug">debug</a></code> | <code>bool \| cdktf.IResolvable</code> | When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKey">private_key</a></code> | <code>str</code> | The private key used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.privateKeyWo">private_key_wo</a></code> | <code>str</code> | The private key in write-only mode used for request and assertion signing. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.signatureDigestMethod">signature_digest_method</a></code> | <code>str</code> | Signature Digest Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.signatureSigningMethod">signature_signing_method</a></code> | <code>str</code> | Signature Signing Method. Must be either `SHA1` or `SHA256`. Defaults to `SHA256`. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.siteAdminRole">site_admin_role</a></code> | <code>str</code> | Specifies the role for site admin access, provided in the list of roles sent in the Team Attribute Name attribute. |
 | <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.ssoApiTokenSessionTimeout">sso_api_token_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Specifies the Single Sign On session timeout in seconds. Defaults to 14 days. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.teamManagementEnabled">team_management_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set it to false if you would rather use Terraform Enterprise to manage team membership. |
-| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.wantAssertionsSigned">want_assertions_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ensure that <saml:Assertion> elements are signed. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.teamManagementEnabled">team_management_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Set it to false if you would rather use Terraform Enterprise to manage team membership. |
+| <code><a href="#@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.wantAssertionsSigned">want_assertions_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensure that <saml:Assertion> elements are signed. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1626,10 +1626,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1724,10 +1724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authn_requests_signed`<sup>Optional</sup> <a name="authn_requests_signed" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.authnRequestsSigned"></a>
 
 ```python
-authn_requests_signed: typing.Union[bool, IResolvable]
+authn_requests_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ensure that <samlp:AuthnRequest> messages are signed.
 
@@ -1752,10 +1752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `debug`<sup>Optional</sup> <a name="debug" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.debug"></a>
 
 ```python
-debug: typing.Union[bool, IResolvable]
+debug: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page.
 
@@ -1850,10 +1850,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `team_management_enabled`<sup>Optional</sup> <a name="team_management_enabled" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.teamManagementEnabled"></a>
 
 ```python
-team_management_enabled: typing.Union[bool, IResolvable]
+team_management_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set it to false if you would rather use Terraform Enterprise to manage team membership.
 
@@ -1864,10 +1864,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `want_assertions_signed`<sup>Optional</sup> <a name="want_assertions_signed" id="@cdktf/provider-tfe.samlSettings.SamlSettingsConfig.property.wantAssertionsSigned"></a>
 
 ```python
-want_assertions_signed: typing.Union[bool, IResolvable]
+want_assertions_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ensure that <saml:Assertion> elements are signed.
 

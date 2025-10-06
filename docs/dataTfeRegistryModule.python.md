@@ -14,22 +14,22 @@ from cdktf_cdktf_provider_tfe import data_tfe_registry_module
 dataTfeRegistryModule.DataTfeRegistryModule(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   module_provider: str,
   name: str,
   organization: str,
   namespace: str = None,
-  permissions: typing.Union[IResolvable, typing.List[DataTfeRegistryModulePermissions]] = None,
+  permissions: IResolvable | typing.List[DataTfeRegistryModulePermissions] = None,
   registry_name: str = None,
-  test_config: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleTestConfig]] = None,
-  vcs_repo: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVcsRepo]] = None,
-  version_statuses: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVersionStatuses]] = None
+  test_config: IResolvable | typing.List[DataTfeRegistryModuleTestConfig] = None,
+  vcs_repo: IResolvable | typing.List[DataTfeRegistryModuleVcsRepo] = None,
+  version_statuses: IResolvable | typing.List[DataTfeRegistryModuleVersionStatuses] = None
 )
 ```
 
@@ -37,22 +37,22 @@ dataTfeRegistryModule.DataTfeRegistryModule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.moduleProvider">module_provider</a></code> | <code>str</code> | Name of the module provider. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the module. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Name of the organization. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace of the no-code module. Uses organization name if not provided. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.permissions">permissions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]</code> | permissions block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.permissions">permissions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]</code> | permissions block. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.registryName">registry_name</a></code> | <code>str</code> | Name of the registry. Valid options: "public", "private". Defaults to "private". |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.testConfig">test_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]</code> | test_config block. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.vcsRepo">vcs_repo</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]</code> | vcs_repo block. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.versionStatuses">version_statuses</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]</code> | version_statuses block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.testConfig">test_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]</code> | test_config block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.vcsRepo">vcs_repo</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]</code> | vcs_repo block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.versionStatuses">version_statuses</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]</code> | version_statuses block. |
 
 ---
 
@@ -76,13 +76,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `permissions`<sup>Optional</sup> <a name="permissions" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.permissions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]
 
 permissions block.
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `test_config`<sup>Optional</sup> <a name="test_config" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.testConfig"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]
 
 test_config block.
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `vcs_repo`<sup>Optional</sup> <a name="vcs_repo" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.vcsRepo"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]
 
 vcs_repo block.
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `version_statuses`<sup>Optional</sup> <a name="version_statuses" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer.parameter.versionStatuses"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]
 
 version_statuses block.
 
@@ -461,13 +461,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_permissions(
-  value: typing.Union[IResolvable, typing.List[DataTfeRegistryModulePermissions]]
+  value: IResolvable | typing.List[DataTfeRegistryModulePermissions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.putPermissions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]
 
 ---
 
@@ -475,13 +475,13 @@ def put_permissions(
 
 ```python
 def put_test_config(
-  value: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleTestConfig]]
+  value: IResolvable | typing.List[DataTfeRegistryModuleTestConfig]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.putTestConfig.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]
 
 ---
 
@@ -489,13 +489,13 @@ def put_test_config(
 
 ```python
 def put_vcs_repo(
-  value: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVcsRepo]]
+  value: IResolvable | typing.List[DataTfeRegistryModuleVcsRepo]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.putVcsRepo.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]
 
 ---
 
@@ -503,13 +503,13 @@ def put_vcs_repo(
 
 ```python
 def put_version_statuses(
-  value: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVersionStatuses]]
+  value: IResolvable | typing.List[DataTfeRegistryModuleVersionStatuses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.putVersionStatuses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]
 
 ---
 
@@ -686,7 +686,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -707,11 +707,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.permissionsInput">permissions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.permissionsInput">permissions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.registryNameInput">registry_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.testConfigInput">test_config_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.vcsRepoInput">vcs_repo_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.versionStatusesInput">version_statuses_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.testConfigInput">test_config_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.vcsRepoInput">vcs_repo_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.versionStatusesInput">version_statuses_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.moduleProvider">module_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
@@ -795,10 +795,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1005,10 +1005,10 @@ organization_input: str
 ##### `permissions_input`<sup>Optional</sup> <a name="permissions_input" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.permissionsInput"></a>
 
 ```python
-permissions_input: typing.Union[IResolvable, typing.List[DataTfeRegistryModulePermissions]]
+permissions_input: IResolvable | typing.List[DataTfeRegistryModulePermissions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]
 
 ---
 
@@ -1025,30 +1025,30 @@ registry_name_input: str
 ##### `test_config_input`<sup>Optional</sup> <a name="test_config_input" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.testConfigInput"></a>
 
 ```python
-test_config_input: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleTestConfig]]
+test_config_input: IResolvable | typing.List[DataTfeRegistryModuleTestConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]
 
 ---
 
 ##### `vcs_repo_input`<sup>Optional</sup> <a name="vcs_repo_input" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.vcsRepoInput"></a>
 
 ```python
-vcs_repo_input: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVcsRepo]]
+vcs_repo_input: IResolvable | typing.List[DataTfeRegistryModuleVcsRepo]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]
 
 ---
 
 ##### `version_statuses_input`<sup>Optional</sup> <a name="version_statuses_input" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.property.versionStatusesInput"></a>
 
 ```python
-version_statuses_input: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVersionStatuses]]
+version_statuses_input: IResolvable | typing.List[DataTfeRegistryModuleVersionStatuses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]
 
 ---
 
@@ -1130,22 +1130,22 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import data_tfe_registry_module
 
 dataTfeRegistryModule.DataTfeRegistryModuleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   module_provider: str,
   name: str,
   organization: str,
   namespace: str = None,
-  permissions: typing.Union[IResolvable, typing.List[DataTfeRegistryModulePermissions]] = None,
+  permissions: IResolvable | typing.List[DataTfeRegistryModulePermissions] = None,
   registry_name: str = None,
-  test_config: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleTestConfig]] = None,
-  vcs_repo: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVcsRepo]] = None,
-  version_statuses: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVersionStatuses]] = None
+  test_config: IResolvable | typing.List[DataTfeRegistryModuleTestConfig] = None,
+  vcs_repo: IResolvable | typing.List[DataTfeRegistryModuleVcsRepo] = None,
+  version_statuses: IResolvable | typing.List[DataTfeRegistryModuleVersionStatuses] = None
 )
 ```
 
@@ -1153,42 +1153,42 @@ dataTfeRegistryModule.DataTfeRegistryModuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.moduleProvider">module_provider</a></code> | <code>str</code> | Name of the module provider. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.name">name</a></code> | <code>str</code> | Name of the module. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.organization">organization</a></code> | <code>str</code> | Name of the organization. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace of the no-code module. Uses organization name if not provided. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.permissions">permissions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]</code> | permissions block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.permissions">permissions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]</code> | permissions block. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.registryName">registry_name</a></code> | <code>str</code> | Name of the registry. Valid options: "public", "private". Defaults to "private". |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.testConfig">test_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]</code> | test_config block. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.vcsRepo">vcs_repo</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]</code> | vcs_repo block. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.versionStatuses">version_statuses</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]</code> | version_statuses block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.testConfig">test_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]</code> | test_config block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.vcsRepo">vcs_repo</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]</code> | vcs_repo block. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.versionStatuses">version_statuses</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]</code> | version_statuses block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1235,10 +1235,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1301,10 +1301,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `permissions`<sup>Optional</sup> <a name="permissions" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.permissions"></a>
 
 ```python
-permissions: typing.Union[IResolvable, typing.List[DataTfeRegistryModulePermissions]]
+permissions: IResolvable | typing.List[DataTfeRegistryModulePermissions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]
 
 permissions block.
 
@@ -1329,10 +1329,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `test_config`<sup>Optional</sup> <a name="test_config" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.testConfig"></a>
 
 ```python
-test_config: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleTestConfig]]
+test_config: IResolvable | typing.List[DataTfeRegistryModuleTestConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]
 
 test_config block.
 
@@ -1343,10 +1343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vcs_repo`<sup>Optional</sup> <a name="vcs_repo" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.vcsRepo"></a>
 
 ```python
-vcs_repo: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVcsRepo]]
+vcs_repo: IResolvable | typing.List[DataTfeRegistryModuleVcsRepo]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]
 
 vcs_repo block.
 
@@ -1357,10 +1357,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `version_statuses`<sup>Optional</sup> <a name="version_statuses" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig.property.versionStatuses"></a>
 
 ```python
-version_statuses: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVersionStatuses]]
+version_statuses: IResolvable | typing.List[DataTfeRegistryModuleVersionStatuses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]
 
 version_statuses block.
 
@@ -1545,7 +1545,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]</code> | *No description.* |
 
 ---
 
@@ -1576,10 +1576,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataTfeRegistryModulePermissions]]
+internal_value: IResolvable | typing.List[DataTfeRegistryModulePermissions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]
 
 ---
 
@@ -1842,7 +1842,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference.property.canDelete">can_delete</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference.property.canResync">can_resync</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference.property.canRetry">can_retry</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a></code> | *No description.* |
 
 ---
 
@@ -1903,10 +1903,10 @@ can_retry: IResolvable
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataTfeRegistryModulePermissions]
+internal_value: IResolvable | DataTfeRegistryModulePermissions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions">DataTfeRegistryModulePermissions</a>
 
 ---
 
@@ -2042,7 +2042,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -2073,10 +2073,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleTestConfig]]
+internal_value: IResolvable | typing.List[DataTfeRegistryModuleTestConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]
 
 ---
 
@@ -2337,7 +2337,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference.property.testsEnabled">tests_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a></code> | *No description.* |
 
 ---
 
@@ -2378,10 +2378,10 @@ tests_enabled: IResolvable
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataTfeRegistryModuleTestConfig]
+internal_value: IResolvable | DataTfeRegistryModuleTestConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig">DataTfeRegistryModuleTestConfig</a>
 
 ---
 
@@ -2517,7 +2517,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]</code> | *No description.* |
 
 ---
 
@@ -2548,10 +2548,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVcsRepo]]
+internal_value: IResolvable | typing.List[DataTfeRegistryModuleVcsRepo]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]
 
 ---
 
@@ -2824,7 +2824,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.tags">tags</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.tagsRegex">tags_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.webhookUrl">webhook_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a></code> | *No description.* |
 
 ---
 
@@ -2985,10 +2985,10 @@ webhook_url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataTfeRegistryModuleVcsRepo]
+internal_value: IResolvable | DataTfeRegistryModuleVcsRepo
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo">DataTfeRegistryModuleVcsRepo</a>
 
 ---
 
@@ -3124,7 +3124,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]</code> | *No description.* |
 
 ---
 
@@ -3155,10 +3155,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataTfeRegistryModuleVersionStatuses]]
+internal_value: IResolvable | typing.List[DataTfeRegistryModuleVersionStatuses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]
 
 ---
 
@@ -3421,7 +3421,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference.property.error">error</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a></code> | *No description.* |
 
 ---
 
@@ -3482,10 +3482,10 @@ version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataTfeRegistryModuleVersionStatuses]
+internal_value: IResolvable | DataTfeRegistryModuleVersionStatuses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses">DataTfeRegistryModuleVersionStatuses</a>
 
 ---
 

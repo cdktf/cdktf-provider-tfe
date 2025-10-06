@@ -15,8 +15,7 @@ TfeProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
 //  .hostname(java.lang.String)
 //  .organization(java.lang.String)
-//  .sslSkipVerify(java.lang.Boolean)
-//  .sslSkipVerify(IResolvable)
+//  .sslSkipVerify(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
     .build();
 ```
@@ -28,7 +27,7 @@ TfeProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.hostname">hostname</a></code> | <code>java.lang.String</code> | The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The organization to apply to a resource if one is not defined on the resource itself. |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.sslSkipVerify">sslSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.sslSkipVerify">sslSkipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The token used to authenticate with Terraform Enterprise. |
 
 ---
@@ -83,7 +82,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `sslSkipVerify`<sup>Optional</sup> <a name="sslSkipVerify" id="@cdktf/provider-tfe.provider.TfeProvider.Initializer.parameter.sslSkipVerify"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not to skip certificate verifications.
 
@@ -354,11 +353,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.hostnameInput">hostnameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput">sslSkipVerifyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput">sslSkipVerifyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.hostname">hostname</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify">sslSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify">sslSkipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -488,10 +487,10 @@ public java.lang.String getOrganizationInput();
 ##### `sslSkipVerifyInput`<sup>Optional</sup> <a name="sslSkipVerifyInput" id="@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerifyInput"></a>
 
 ```java
-public java.lang.Object getSslSkipVerifyInput();
+public java.lang.Boolean|IResolvable getSslSkipVerifyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -528,10 +527,10 @@ public java.lang.String getOrganization();
 ##### `sslSkipVerify`<sup>Optional</sup> <a name="sslSkipVerify" id="@cdktf/provider-tfe.provider.TfeProvider.property.sslSkipVerify"></a>
 
 ```java
-public java.lang.Object getSslSkipVerify();
+public java.lang.Boolean|IResolvable getSslSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -576,8 +575,7 @@ TfeProviderConfig.builder()
 //  .alias(java.lang.String)
 //  .hostname(java.lang.String)
 //  .organization(java.lang.String)
-//  .sslSkipVerify(java.lang.Boolean)
-//  .sslSkipVerify(IResolvable)
+//  .sslSkipVerify(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
     .build();
 ```
@@ -589,7 +587,7 @@ TfeProviderConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.hostname">hostname</a></code> | <code>java.lang.String</code> | The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The organization to apply to a resource if one is not defined on the resource itself. |
-| <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify">sslSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
+| <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify">sslSkipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not to skip certificate verifications. |
 | <code><a href="#@cdktf/provider-tfe.provider.TfeProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The token used to authenticate with Terraform Enterprise. |
 
 ---
@@ -639,10 +637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sslSkipVerify`<sup>Optional</sup> <a name="sslSkipVerify" id="@cdktf/provider-tfe.provider.TfeProviderConfig.property.sslSkipVerify"></a>
 
 ```java
-public java.lang.Object getSslSkipVerify();
+public java.lang.Boolean|IResolvable getSslSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not to skip certificate verifications.
 

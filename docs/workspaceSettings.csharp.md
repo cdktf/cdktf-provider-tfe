@@ -282,7 +282,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.importFrom"></a>
@@ -336,7 +336,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -351,7 +351,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -553,32 +553,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.overwrites">Overwrites</a></code> | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList">WorkspaceSettingsOverwritesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolIdInput">AgentPoolIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput">AssessmentsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput">AutoApplyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput">AssessmentsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput">AutoApplyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTagsInput">EffectiveTagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionModeInput">ExecutionModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">GlobalRemoteStateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput">GlobalRemoteStateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIdsInput">RemoteStateConsumerIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply">AutoApply</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply">AutoApply</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.effectiveTags">EffectiveTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.executionMode">ExecutionMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState">GlobalRemoteState</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | *No description.* |
@@ -660,20 +660,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -720,10 +720,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -760,20 +760,20 @@ public string AgentPoolIdInput { get; }
 ##### `AssessmentsEnabledInput`<sup>Optional</sup> <a name="AssessmentsEnabledInput" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabledInput"></a>
 
 ```csharp
-public object AssessmentsEnabledInput { get; }
+public bool|IResolvable AssessmentsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoApplyInput`<sup>Optional</sup> <a name="AutoApplyInput" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApplyInput"></a>
 
 ```csharp
-public object AutoApplyInput { get; }
+public bool|IResolvable AutoApplyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -810,10 +810,10 @@ public string ExecutionModeInput { get; }
 ##### `GlobalRemoteStateInput`<sup>Optional</sup> <a name="GlobalRemoteStateInput" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteStateInput"></a>
 
 ```csharp
-public object GlobalRemoteStateInput { get; }
+public bool|IResolvable GlobalRemoteStateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -860,20 +860,20 @@ public string AgentPoolId { get; }
 ##### `AssessmentsEnabled`<sup>Required</sup> <a name="AssessmentsEnabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.assessmentsEnabled"></a>
 
 ```csharp
-public object AssessmentsEnabled { get; }
+public bool|IResolvable AssessmentsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoApply`<sup>Required</sup> <a name="AutoApply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.autoApply"></a>
 
 ```csharp
-public object AutoApply { get; }
+public bool|IResolvable AutoApply { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -910,10 +910,10 @@ public string ExecutionMode { get; }
 ##### `GlobalRemoteState`<sup>Required</sup> <a name="GlobalRemoteState" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings.property.globalRemoteState"></a>
 
 ```csharp
-public object GlobalRemoteState { get; }
+public bool|IResolvable GlobalRemoteState { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -975,21 +975,21 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Tfe;
 
 new WorkspaceSettingsConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string WorkspaceId,
     string AgentPoolId = null,
-    object AssessmentsEnabled = null,
-    object AutoApply = null,
+    bool|IResolvable AssessmentsEnabled = null,
+    bool|IResolvable AutoApply = null,
     string Description = null,
     System.Collections.Generic.IDictionary<string, string> EffectiveTags = null,
     string ExecutionMode = null,
-    object GlobalRemoteState = null,
+    bool|IResolvable GlobalRemoteState = null,
     string[] RemoteStateConsumerIds = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null
 };
@@ -999,21 +999,21 @@ new WorkspaceSettingsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#workspace_id WorkspaceSettings#workspace_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#agent_pool_id WorkspaceSettings#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>object</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply">AutoApply</a></code> | <code>object</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply">AutoApply</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.description">Description</a></code> | <code>string</code> | A description of the workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.effectiveTags">EffectiveTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of all key-value tags set on the workspace (includes inheritted tags). |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.executionMode">ExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace_settings#execution_mode WorkspaceSettings#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
+| <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the workspace allows all workspaces in the organization to access its state data during runs. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | The set of workspace IDs set as explicit remote state consumers for the given workspace. |
 | <code><a href="#@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key-value tags to add to the workspace. |
 
@@ -1022,20 +1022,20 @@ new WorkspaceSettingsConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1082,10 +1082,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1116,10 +1116,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AssessmentsEnabled`<sup>Optional</sup> <a name="AssessmentsEnabled" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.assessmentsEnabled"></a>
 
 ```csharp
-public object AssessmentsEnabled { get; set; }
+public bool|IResolvable AssessmentsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, assessments will be enabled for the workspace. This includes drift and continuous validation checks.
 
@@ -1130,10 +1130,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AutoApply`<sup>Optional</sup> <a name="AutoApply" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.autoApply"></a>
 
 ```csharp
-public object AutoApply { get; set; }
+public bool|IResolvable AutoApply { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to false a human will have to manually confirm a plan in HCP Terraform's UI to start an apply.
 
@@ -1186,10 +1186,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GlobalRemoteState`<sup>Optional</sup> <a name="GlobalRemoteState" id="@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig.property.globalRemoteState"></a>
 
 ```csharp
-public object GlobalRemoteState { get; set; }
+public bool|IResolvable GlobalRemoteState { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the workspace allows all workspaces in the organization to access its state data during runs.
 

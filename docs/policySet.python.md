@@ -14,21 +14,21 @@ from cdktf_cdktf_provider_tfe import policy_set
 policySet.PolicySet(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  agent_enabled: typing.Union[bool, IResolvable] = None,
+  agent_enabled: bool | IResolvable = None,
   description: str = None,
-  global: typing.Union[bool, IResolvable] = None,
+  global: bool | IResolvable = None,
   id: str = None,
   kind: str = None,
   organization: str = None,
-  overridable: typing.Union[bool, IResolvable] = None,
+  overridable: bool | IResolvable = None,
   policies_path: str = None,
   policy_ids: typing.List[str] = None,
   policy_tool_version: str = None,
@@ -42,21 +42,21 @@ policySet.PolicySet(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#name PolicySet#name}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.agentEnabled">agent_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.agentEnabled">agent_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#description PolicySet#description}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.global">global</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#global PolicySet#global}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.global">global</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#global PolicySet#global}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#id PolicySet#id}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#kind PolicySet#kind}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#organization PolicySet#organization}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.overridable">overridable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#overridable PolicySet#overridable}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.overridable">overridable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#overridable PolicySet#overridable}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policiesPath">policies_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#policies_path PolicySet#policies_path}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policyIds">policy_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.policyToolVersion">policy_tool_version</a></code> | <code>str</code> | The policy tool version to run the policy evaluation against. |
@@ -86,13 +86,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `agent_enabled`<sup>Optional</sup> <a name="agent_enabled" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.agentEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies.
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `global`<sup>Optional</sup> <a name="global" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.global"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#global PolicySet#global}.
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `overridable`<sup>Optional</sup> <a name="overridable" id="@cdktf/provider-tfe.policySet.PolicySet.Initializer.parameter.overridable"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#overridable PolicySet#overridable}.
 
@@ -513,7 +513,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tfe.policySet.PolicySet.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-tfe.policySet.PolicySet.importFrom"></a>
@@ -576,7 +576,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -592,7 +592,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.policySet.PolicySet.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -623,7 +623,7 @@ def put_vcs_repo(
   identifier: str,
   branch: str = None,
   github_app_installation_id: str = None,
-  ingress_submodules: typing.Union[bool, IResolvable] = None,
+  ingress_submodules: bool | IResolvable = None,
   oauth_token_id: str = None
 ) -> None
 ```
@@ -654,7 +654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `ingress_submodules`<sup>Optional</sup> <a name="ingress_submodules" id="@cdktf/provider-tfe.policySet.PolicySet.putVcsRepo.parameter.ingressSubmodules"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}.
 
@@ -883,36 +883,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.vcsRepo">vcs_repo</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference">PolicySetVcsRepoOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabledInput">agent_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabledInput">agent_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.globalInput">global_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.globalInput">global_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.overridableInput">overridable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.overridableInput">overridable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policiesPathInput">policies_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyIdsInput">policy_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyToolVersionInput">policy_tool_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.slugInput">slug_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.vcsRepoInput">vcs_repo_input</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo">PolicySetVcsRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.workspaceIdsInput">workspace_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabled">agent_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabled">agent_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.global">global</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.global">global</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.organization">organization</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.overridable">overridable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.overridable">overridable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policiesPath">policies_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyIds">policy_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySet.property.policyToolVersion">policy_tool_version</a></code> | <code>str</code> | *No description.* |
@@ -996,20 +996,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.policySet.PolicySet.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.policySet.PolicySet.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1056,10 +1056,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.policySet.PolicySet.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1076,10 +1076,10 @@ vcs_repo: PolicySetVcsRepoOutputReference
 ##### `agent_enabled_input`<sup>Optional</sup> <a name="agent_enabled_input" id="@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabledInput"></a>
 
 ```python
-agent_enabled_input: typing.Union[bool, IResolvable]
+agent_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1096,10 +1096,10 @@ description_input: str
 ##### `global_input`<sup>Optional</sup> <a name="global_input" id="@cdktf/provider-tfe.policySet.PolicySet.property.globalInput"></a>
 
 ```python
-global_input: typing.Union[bool, IResolvable]
+global_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1146,10 +1146,10 @@ organization_input: str
 ##### `overridable_input`<sup>Optional</sup> <a name="overridable_input" id="@cdktf/provider-tfe.policySet.PolicySet.property.overridableInput"></a>
 
 ```python
-overridable_input: typing.Union[bool, IResolvable]
+overridable_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1216,10 +1216,10 @@ workspace_ids_input: typing.List[str]
 ##### `agent_enabled`<sup>Required</sup> <a name="agent_enabled" id="@cdktf/provider-tfe.policySet.PolicySet.property.agentEnabled"></a>
 
 ```python
-agent_enabled: typing.Union[bool, IResolvable]
+agent_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1236,10 +1236,10 @@ description: str
 ##### `global`<sup>Required</sup> <a name="global" id="@cdktf/provider-tfe.policySet.PolicySet.property.global"></a>
 
 ```python
-global: typing.Union[bool, IResolvable]
+global: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1286,10 +1286,10 @@ organization: str
 ##### `overridable`<sup>Required</sup> <a name="overridable" id="@cdktf/provider-tfe.policySet.PolicySet.property.overridable"></a>
 
 ```python
-overridable: typing.Union[bool, IResolvable]
+overridable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1371,21 +1371,21 @@ tfResourceType: str
 from cdktf_cdktf_provider_tfe import policy_set
 
 policySet.PolicySetConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  agent_enabled: typing.Union[bool, IResolvable] = None,
+  agent_enabled: bool | IResolvable = None,
   description: str = None,
-  global: typing.Union[bool, IResolvable] = None,
+  global: bool | IResolvable = None,
   id: str = None,
   kind: str = None,
   organization: str = None,
-  overridable: typing.Union[bool, IResolvable] = None,
+  overridable: bool | IResolvable = None,
   policies_path: str = None,
   policy_ids: typing.List[str] = None,
   policy_tool_version: str = None,
@@ -1399,21 +1399,21 @@ policySet.PolicySetConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#name PolicySet#name}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.agentEnabled">agent_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.agentEnabled">agent_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#description PolicySet#description}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.global">global</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#global PolicySet#global}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.global">global</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#global PolicySet#global}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#id PolicySet#id}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#kind PolicySet#kind}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#organization PolicySet#organization}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.overridable">overridable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#overridable PolicySet#overridable}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.overridable">overridable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#overridable PolicySet#overridable}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policiesPath">policies_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#policies_path PolicySet#policies_path}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policyIds">policy_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetConfig.property.policyToolVersion">policy_tool_version</a></code> | <code>str</code> | The policy tool version to run the policy evaluation against. |
@@ -1426,20 +1426,20 @@ policySet.PolicySetConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1486,10 +1486,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1508,10 +1508,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `agent_enabled`<sup>Optional</sup> <a name="agent_enabled" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.agentEnabled"></a>
 
 ```python
-agent_enabled: typing.Union[bool, IResolvable]
+agent_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies.
 
@@ -1534,10 +1534,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `global`<sup>Optional</sup> <a name="global" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.global"></a>
 
 ```python
-global: typing.Union[bool, IResolvable]
+global: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#global PolicySet#global}.
 
@@ -1585,10 +1585,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `overridable`<sup>Optional</sup> <a name="overridable" id="@cdktf/provider-tfe.policySet.PolicySetConfig.property.overridable"></a>
 
 ```python
-overridable: typing.Union[bool, IResolvable]
+overridable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#overridable PolicySet#overridable}.
 
@@ -1681,7 +1681,7 @@ policySet.PolicySetVcsRepo(
   identifier: str,
   branch: str = None,
   github_app_installation_id: str = None,
-  ingress_submodules: typing.Union[bool, IResolvable] = None,
+  ingress_submodules: bool | IResolvable = None,
   oauth_token_id: str = None
 )
 ```
@@ -1693,7 +1693,7 @@ policySet.PolicySetVcsRepo(
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#identifier PolicySet#identifier}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.branch">branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#branch PolicySet#branch}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.githubAppInstallationId">github_app_installation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#github_app_installation_id PolicySet#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.ingressSubmodules">ingress_submodules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.ingressSubmodules">ingress_submodules</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}. |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.oauthTokenId">oauth_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#oauth_token_id PolicySet#oauth_token_id}. |
 
 ---
@@ -1737,10 +1737,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ingress_submodules`<sup>Optional</sup> <a name="ingress_submodules" id="@cdktf/provider-tfe.policySet.PolicySetVcsRepo.property.ingressSubmodules"></a>
 
 ```python
-ingress_submodules: typing.Union[bool, IResolvable]
+ingress_submodules: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set#ingress_submodules PolicySet#ingress_submodules}.
 
@@ -2026,12 +2026,12 @@ def reset_oauth_token_id() -> None
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.githubAppInstallationIdInput">github_app_installation_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.ingressSubmodulesInput">ingress_submodules_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.ingressSubmodulesInput">ingress_submodules_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.oauthTokenIdInput">oauth_token_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.githubAppInstallationId">github_app_installation_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.ingressSubmodules">ingress_submodules</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.ingressSubmodules">ingress_submodules</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.oauthTokenId">oauth_token_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-tfe.policySet.PolicySetVcsRepo">PolicySetVcsRepo</a></code> | *No description.* |
 
@@ -2094,10 +2094,10 @@ identifier_input: str
 ##### `ingress_submodules_input`<sup>Optional</sup> <a name="ingress_submodules_input" id="@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.ingressSubmodulesInput"></a>
 
 ```python
-ingress_submodules_input: typing.Union[bool, IResolvable]
+ingress_submodules_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2144,10 +2144,10 @@ identifier: str
 ##### `ingress_submodules`<sup>Required</sup> <a name="ingress_submodules" id="@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference.property.ingressSubmodules"></a>
 
 ```python
-ingress_submodules: typing.Union[bool, IResolvable]
+ingress_submodules: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

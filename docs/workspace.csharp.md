@@ -306,7 +306,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-tfe.workspace.Workspace.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-tfe.workspace.Workspace.importFrom"></a>
@@ -360,7 +360,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-tfe.workspace.Workspace.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -375,7 +375,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-tfe.workspace.Workspace.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -727,44 +727,44 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.effectiveTags">EffectiveTags</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.htmlUrl">HtmlUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.inheritsProjectAutoDestroy">InheritsProjectAutoDestroy</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.resourceCount">ResourceCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepo">VcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference">WorkspaceVcsRepoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolIdInput">AgentPoolIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput">AllowDestroyPlanInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput">AssessmentsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput">AutoApplyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput">AutoApplyRunTriggerInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput">AllowDestroyPlanInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput">AssessmentsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput">AutoApplyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput">AutoApplyRunTriggerInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyActivityDurationInput">AutoDestroyActivityDurationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyAtInput">AutoDestroyAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.executionModeInput">ExecutionModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput">FileTriggersEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput">ForceDeleteInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput">GlobalRemoteStateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput">FileTriggersEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput">ForceDeleteInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput">GlobalRemoteStateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput">IgnoreAdditionalTagNamesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput">IgnoreAdditionalTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput">IgnoreAdditionalTagNamesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput">IgnoreAdditionalTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operationsInput">OperationsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operationsInput">OperationsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">QueueAllRunsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">QueueAllRunsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIdsInput">RemoteStateConsumerIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceNameInput">SourceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrlInput">SourceUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">SpeculativeEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">SpeculativeEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyIdInput">SshKeyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">StructuredRunOutputEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">StructuredRunOutputEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagNamesInput">TagNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformVersionInput">TerraformVersionInput</a></code> | <code>string</code> | *No description.* |
@@ -773,31 +773,31 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepoInput">VcsRepoInput</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.workingDirectoryInput">WorkingDirectoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan">AllowDestroyPlan</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApply">AutoApply</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger">AutoApplyRunTrigger</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan">AllowDestroyPlan</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApply">AutoApply</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger">AutoApplyRunTrigger</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyAt">AutoDestroyAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.executionMode">ExecutionMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled">FileTriggersEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDelete">ForceDelete</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled">FileTriggersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDelete">ForceDelete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState">GlobalRemoteState</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames">IgnoreAdditionalTagNames</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags">IgnoreAdditionalTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames">IgnoreAdditionalTagNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags">IgnoreAdditionalTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operations">Operations</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operations">Operations</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">QueueAllRuns</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">QueueAllRuns</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceName">SourceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrl">SourceUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyId">SshKeyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagNames">TagNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformVersion">TerraformVersion</a></code> | <code>string</code> | *No description.* |
@@ -882,20 +882,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.workspace.Workspace.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.workspace.Workspace.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -942,10 +942,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.workspace.Workspace.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1012,40 +1012,40 @@ public string AgentPoolIdInput { get; }
 ##### `AllowDestroyPlanInput`<sup>Optional</sup> <a name="AllowDestroyPlanInput" id="@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput"></a>
 
 ```csharp
-public object AllowDestroyPlanInput { get; }
+public bool|IResolvable AllowDestroyPlanInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AssessmentsEnabledInput`<sup>Optional</sup> <a name="AssessmentsEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput"></a>
 
 ```csharp
-public object AssessmentsEnabledInput { get; }
+public bool|IResolvable AssessmentsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoApplyInput`<sup>Optional</sup> <a name="AutoApplyInput" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput"></a>
 
 ```csharp
-public object AutoApplyInput { get; }
+public bool|IResolvable AutoApplyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoApplyRunTriggerInput`<sup>Optional</sup> <a name="AutoApplyRunTriggerInput" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput"></a>
 
 ```csharp
-public object AutoApplyRunTriggerInput { get; }
+public bool|IResolvable AutoApplyRunTriggerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1092,30 +1092,30 @@ public string ExecutionModeInput { get; }
 ##### `FileTriggersEnabledInput`<sup>Optional</sup> <a name="FileTriggersEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput"></a>
 
 ```csharp
-public object FileTriggersEnabledInput { get; }
+public bool|IResolvable FileTriggersEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ForceDeleteInput`<sup>Optional</sup> <a name="ForceDeleteInput" id="@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput"></a>
 
 ```csharp
-public object ForceDeleteInput { get; }
+public bool|IResolvable ForceDeleteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GlobalRemoteStateInput`<sup>Optional</sup> <a name="GlobalRemoteStateInput" id="@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput"></a>
 
 ```csharp
-public object GlobalRemoteStateInput { get; }
+public bool|IResolvable GlobalRemoteStateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1132,20 +1132,20 @@ public string IdInput { get; }
 ##### `IgnoreAdditionalTagNamesInput`<sup>Optional</sup> <a name="IgnoreAdditionalTagNamesInput" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput"></a>
 
 ```csharp
-public object IgnoreAdditionalTagNamesInput { get; }
+public bool|IResolvable IgnoreAdditionalTagNamesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IgnoreAdditionalTagsInput`<sup>Optional</sup> <a name="IgnoreAdditionalTagsInput" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput"></a>
 
 ```csharp
-public object IgnoreAdditionalTagsInput { get; }
+public bool|IResolvable IgnoreAdditionalTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1162,10 +1162,10 @@ public string NameInput { get; }
 ##### `OperationsInput`<sup>Optional</sup> <a name="OperationsInput" id="@cdktf/provider-tfe.workspace.Workspace.property.operationsInput"></a>
 
 ```csharp
-public object OperationsInput { get; }
+public bool|IResolvable OperationsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1192,10 +1192,10 @@ public string ProjectIdInput { get; }
 ##### `QueueAllRunsInput`<sup>Optional</sup> <a name="QueueAllRunsInput" id="@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput"></a>
 
 ```csharp
-public object QueueAllRunsInput { get; }
+public bool|IResolvable QueueAllRunsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1232,10 +1232,10 @@ public string SourceUrlInput { get; }
 ##### `SpeculativeEnabledInput`<sup>Optional</sup> <a name="SpeculativeEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput"></a>
 
 ```csharp
-public object SpeculativeEnabledInput { get; }
+public bool|IResolvable SpeculativeEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1252,10 +1252,10 @@ public string SshKeyIdInput { get; }
 ##### `StructuredRunOutputEnabledInput`<sup>Optional</sup> <a name="StructuredRunOutputEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput"></a>
 
 ```csharp
-public object StructuredRunOutputEnabledInput { get; }
+public bool|IResolvable StructuredRunOutputEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1342,40 +1342,40 @@ public string AgentPoolId { get; }
 ##### `AllowDestroyPlan`<sup>Required</sup> <a name="AllowDestroyPlan" id="@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan"></a>
 
 ```csharp
-public object AllowDestroyPlan { get; }
+public bool|IResolvable AllowDestroyPlan { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AssessmentsEnabled`<sup>Required</sup> <a name="AssessmentsEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled"></a>
 
 ```csharp
-public object AssessmentsEnabled { get; }
+public bool|IResolvable AssessmentsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoApply`<sup>Required</sup> <a name="AutoApply" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApply"></a>
 
 ```csharp
-public object AutoApply { get; }
+public bool|IResolvable AutoApply { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoApplyRunTrigger`<sup>Required</sup> <a name="AutoApplyRunTrigger" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger"></a>
 
 ```csharp
-public object AutoApplyRunTrigger { get; }
+public bool|IResolvable AutoApplyRunTrigger { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1422,30 +1422,30 @@ public string ExecutionMode { get; }
 ##### `FileTriggersEnabled`<sup>Required</sup> <a name="FileTriggersEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled"></a>
 
 ```csharp
-public object FileTriggersEnabled { get; }
+public bool|IResolvable FileTriggersEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ForceDelete`<sup>Required</sup> <a name="ForceDelete" id="@cdktf/provider-tfe.workspace.Workspace.property.forceDelete"></a>
 
 ```csharp
-public object ForceDelete { get; }
+public bool|IResolvable ForceDelete { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GlobalRemoteState`<sup>Required</sup> <a name="GlobalRemoteState" id="@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState"></a>
 
 ```csharp
-public object GlobalRemoteState { get; }
+public bool|IResolvable GlobalRemoteState { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1462,20 +1462,20 @@ public string Id { get; }
 ##### `IgnoreAdditionalTagNames`<sup>Required</sup> <a name="IgnoreAdditionalTagNames" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames"></a>
 
 ```csharp
-public object IgnoreAdditionalTagNames { get; }
+public bool|IResolvable IgnoreAdditionalTagNames { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IgnoreAdditionalTags`<sup>Required</sup> <a name="IgnoreAdditionalTags" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags"></a>
 
 ```csharp
-public object IgnoreAdditionalTags { get; }
+public bool|IResolvable IgnoreAdditionalTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1492,10 +1492,10 @@ public string Name { get; }
 ##### `Operations`<sup>Required</sup> <a name="Operations" id="@cdktf/provider-tfe.workspace.Workspace.property.operations"></a>
 
 ```csharp
-public object Operations { get; }
+public bool|IResolvable Operations { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1522,10 +1522,10 @@ public string ProjectId { get; }
 ##### `QueueAllRuns`<sup>Required</sup> <a name="QueueAllRuns" id="@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns"></a>
 
 ```csharp
-public object QueueAllRuns { get; }
+public bool|IResolvable QueueAllRuns { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1562,10 +1562,10 @@ public string SourceUrl { get; }
 ##### `SpeculativeEnabled`<sup>Required</sup> <a name="SpeculativeEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled"></a>
 
 ```csharp
-public object SpeculativeEnabled { get; }
+public bool|IResolvable SpeculativeEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1582,10 +1582,10 @@ public string SshKeyId { get; }
 ##### `StructuredRunOutputEnabled`<sup>Required</sup> <a name="StructuredRunOutputEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled"></a>
 
 ```csharp
-public object StructuredRunOutputEnabled { get; }
+public bool|IResolvable StructuredRunOutputEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1677,39 +1677,39 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Tfe;
 
 new WorkspaceConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string AgentPoolId = null,
-    object AllowDestroyPlan = null,
-    object AssessmentsEnabled = null,
-    object AutoApply = null,
-    object AutoApplyRunTrigger = null,
+    bool|IResolvable AllowDestroyPlan = null,
+    bool|IResolvable AssessmentsEnabled = null,
+    bool|IResolvable AutoApply = null,
+    bool|IResolvable AutoApplyRunTrigger = null,
     string AutoDestroyActivityDuration = null,
     string AutoDestroyAt = null,
     string Description = null,
     string ExecutionMode = null,
-    object FileTriggersEnabled = null,
-    object ForceDelete = null,
-    object GlobalRemoteState = null,
+    bool|IResolvable FileTriggersEnabled = null,
+    bool|IResolvable ForceDelete = null,
+    bool|IResolvable GlobalRemoteState = null,
     string Id = null,
-    object IgnoreAdditionalTagNames = null,
-    object IgnoreAdditionalTags = null,
-    object Operations = null,
+    bool|IResolvable IgnoreAdditionalTagNames = null,
+    bool|IResolvable IgnoreAdditionalTags = null,
+    bool|IResolvable Operations = null,
     string Organization = null,
     string ProjectId = null,
-    object QueueAllRuns = null,
+    bool|IResolvable QueueAllRuns = null,
     string[] RemoteStateConsumerIds = null,
     string SourceName = null,
     string SourceUrl = null,
-    object SpeculativeEnabled = null,
+    bool|IResolvable SpeculativeEnabled = null,
     string SshKeyId = null,
-    object StructuredRunOutputEnabled = null,
+    bool|IResolvable StructuredRunOutputEnabled = null,
     string[] TagNames = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     string TerraformVersion = null,
@@ -1724,39 +1724,39 @@ new WorkspaceConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#name Workspace#name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">AllowDestroyPlan</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">AutoApply</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">AutoApplyRunTrigger</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">AllowDestroyPlan</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">AssessmentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">AutoApply</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">AutoApplyRunTrigger</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyActivityDuration">AutoDestroyActivityDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyAt">AutoDestroyAt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#description Workspace#description}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.executionMode">ExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">FileTriggersEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">ForceDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">FileTriggersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">ForceDelete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">GlobalRemoteState</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#id Workspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">IgnoreAdditionalTagNames</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags">IgnoreAdditionalTags</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">Operations</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">IgnoreAdditionalTagNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags">IgnoreAdditionalTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">Operations</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.organization">Organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#organization Workspace#organization}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#project_id Workspace#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">QueueAllRuns</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">QueueAllRuns</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.remoteStateConsumerIds">RemoteStateConsumerIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName">SourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_name Workspace#source_name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl">SourceUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_url Workspace#source_url}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">SpeculativeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sshKeyId">SshKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">StructuredRunOutputEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tagNames">TagNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tag_names Workspace#tag_names}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags Workspace#tags}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.terraformVersion">TerraformVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
@@ -1770,20 +1770,20 @@ new WorkspaceConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1830,10 +1830,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1864,10 +1864,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowDestroyPlan`<sup>Optional</sup> <a name="AllowDestroyPlan" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan"></a>
 
 ```csharp
-public object AllowDestroyPlan { get; set; }
+public bool|IResolvable AllowDestroyPlan { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
@@ -1876,10 +1876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AssessmentsEnabled`<sup>Optional</sup> <a name="AssessmentsEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled"></a>
 
 ```csharp
-public object AssessmentsEnabled { get; set; }
+public bool|IResolvable AssessmentsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
 
@@ -1888,10 +1888,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AutoApply`<sup>Optional</sup> <a name="AutoApply" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply"></a>
 
 ```csharp
-public object AutoApply { get; set; }
+public bool|IResolvable AutoApply { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}.
 
@@ -1900,10 +1900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AutoApplyRunTrigger`<sup>Optional</sup> <a name="AutoApplyRunTrigger" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger"></a>
 
 ```csharp
-public object AutoApplyRunTrigger { get; set; }
+public bool|IResolvable AutoApplyRunTrigger { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
 
@@ -1960,10 +1960,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FileTriggersEnabled`<sup>Optional</sup> <a name="FileTriggersEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled"></a>
 
 ```csharp
-public object FileTriggersEnabled { get; set; }
+public bool|IResolvable FileTriggersEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
@@ -1972,10 +1972,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ForceDelete`<sup>Optional</sup> <a name="ForceDelete" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete"></a>
 
 ```csharp
-public object ForceDelete { get; set; }
+public bool|IResolvable ForceDelete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}.
 
@@ -1984,10 +1984,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GlobalRemoteState`<sup>Optional</sup> <a name="GlobalRemoteState" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState"></a>
 
 ```csharp
-public object GlobalRemoteState { get; set; }
+public bool|IResolvable GlobalRemoteState { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
 
@@ -2011,10 +2011,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IgnoreAdditionalTagNames`<sup>Optional</sup> <a name="IgnoreAdditionalTagNames" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames"></a>
 
 ```csharp
-public object IgnoreAdditionalTagNames { get; set; }
+public bool|IResolvable IgnoreAdditionalTagNames { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
 
@@ -2023,10 +2023,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IgnoreAdditionalTags`<sup>Optional</sup> <a name="IgnoreAdditionalTags" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags"></a>
 
 ```csharp
-public object IgnoreAdditionalTags { get; set; }
+public bool|IResolvable IgnoreAdditionalTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}.
 
@@ -2035,10 +2035,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Operations`<sup>Optional</sup> <a name="Operations" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations"></a>
 
 ```csharp
-public object Operations { get; set; }
+public bool|IResolvable Operations { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}.
 
@@ -2071,10 +2071,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `QueueAllRuns`<sup>Optional</sup> <a name="QueueAllRuns" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns"></a>
 
 ```csharp
-public object QueueAllRuns { get; set; }
+public bool|IResolvable QueueAllRuns { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
 
@@ -2119,10 +2119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SpeculativeEnabled`<sup>Optional</sup> <a name="SpeculativeEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled"></a>
 
 ```csharp
-public object SpeculativeEnabled { get; set; }
+public bool|IResolvable SpeculativeEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
 
@@ -2143,10 +2143,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `StructuredRunOutputEnabled`<sup>Optional</sup> <a name="StructuredRunOutputEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled"></a>
 
 ```csharp
-public object StructuredRunOutputEnabled { get; set; }
+public bool|IResolvable StructuredRunOutputEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
@@ -2249,7 +2249,7 @@ new WorkspaceVcsRepo {
     string Identifier,
     string Branch = null,
     string GithubAppInstallationId = null,
-    object IngressSubmodules = null,
+    bool|IResolvable IngressSubmodules = null,
     string OauthTokenId = null,
     string TagsRegex = null
 };
@@ -2262,7 +2262,7 @@ new WorkspaceVcsRepo {
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.identifier">Identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#identifier Workspace#identifier}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#branch Workspace#branch}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">IngressSubmodules</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">IngressSubmodules</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">OauthTokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.tagsRegex">TagsRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags_regex Workspace#tags_regex}. |
 
@@ -2307,10 +2307,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IngressSubmodules`<sup>Optional</sup> <a name="IngressSubmodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules"></a>
 
 ```csharp
-public object IngressSubmodules { get; set; }
+public bool|IResolvable IngressSubmodules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}.
 
@@ -2590,13 +2590,13 @@ private void ResetTagsRegex()
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationIdInput">GithubAppInstallationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifierInput">IdentifierInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">IngressSubmodulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">IngressSubmodulesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenIdInput">OauthTokenIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegexInput">TagsRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationId">GithubAppInstallationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifier">Identifier</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">IngressSubmodules</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">IngressSubmodules</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenId">OauthTokenId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegex">TagsRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | *No description.* |
@@ -2660,10 +2660,10 @@ public string IdentifierInput { get; }
 ##### `IngressSubmodulesInput`<sup>Optional</sup> <a name="IngressSubmodulesInput" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput"></a>
 
 ```csharp
-public object IngressSubmodulesInput { get; }
+public bool|IResolvable IngressSubmodulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2720,10 +2720,10 @@ public string Identifier { get; }
 ##### `IngressSubmodules`<sup>Required</sup> <a name="IngressSubmodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules"></a>
 
 ```csharp
-public object IngressSubmodules { get; }
+public bool|IResolvable IngressSubmodules { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

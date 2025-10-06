@@ -12,56 +12,39 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 import com.hashicorp.cdktf.providers.tfe.workspace.Workspace;
 
 Workspace.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .agentPoolId(java.lang.String)
-//  .allowDestroyPlan(java.lang.Boolean)
-//  .allowDestroyPlan(IResolvable)
-//  .assessmentsEnabled(java.lang.Boolean)
-//  .assessmentsEnabled(IResolvable)
-//  .autoApply(java.lang.Boolean)
-//  .autoApply(IResolvable)
-//  .autoApplyRunTrigger(java.lang.Boolean)
-//  .autoApplyRunTrigger(IResolvable)
+//  .allowDestroyPlan(java.lang.Boolean|IResolvable)
+//  .assessmentsEnabled(java.lang.Boolean|IResolvable)
+//  .autoApply(java.lang.Boolean|IResolvable)
+//  .autoApplyRunTrigger(java.lang.Boolean|IResolvable)
 //  .autoDestroyActivityDuration(java.lang.String)
 //  .autoDestroyAt(java.lang.String)
 //  .description(java.lang.String)
 //  .executionMode(java.lang.String)
-//  .fileTriggersEnabled(java.lang.Boolean)
-//  .fileTriggersEnabled(IResolvable)
-//  .forceDelete(java.lang.Boolean)
-//  .forceDelete(IResolvable)
-//  .globalRemoteState(java.lang.Boolean)
-//  .globalRemoteState(IResolvable)
+//  .fileTriggersEnabled(java.lang.Boolean|IResolvable)
+//  .forceDelete(java.lang.Boolean|IResolvable)
+//  .globalRemoteState(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
-//  .ignoreAdditionalTagNames(java.lang.Boolean)
-//  .ignoreAdditionalTagNames(IResolvable)
-//  .ignoreAdditionalTags(java.lang.Boolean)
-//  .ignoreAdditionalTags(IResolvable)
-//  .operations(java.lang.Boolean)
-//  .operations(IResolvable)
+//  .ignoreAdditionalTagNames(java.lang.Boolean|IResolvable)
+//  .ignoreAdditionalTags(java.lang.Boolean|IResolvable)
+//  .operations(java.lang.Boolean|IResolvable)
 //  .organization(java.lang.String)
 //  .projectId(java.lang.String)
-//  .queueAllRuns(java.lang.Boolean)
-//  .queueAllRuns(IResolvable)
+//  .queueAllRuns(java.lang.Boolean|IResolvable)
 //  .remoteStateConsumerIds(java.util.List<java.lang.String>)
 //  .sourceName(java.lang.String)
 //  .sourceUrl(java.lang.String)
-//  .speculativeEnabled(java.lang.Boolean)
-//  .speculativeEnabled(IResolvable)
+//  .speculativeEnabled(java.lang.Boolean|IResolvable)
 //  .sshKeyId(java.lang.String)
-//  .structuredRunOutputEnabled(java.lang.Boolean)
-//  .structuredRunOutputEnabled(IResolvable)
+//  .structuredRunOutputEnabled(java.lang.Boolean|IResolvable)
 //  .tagNames(java.util.List<java.lang.String>)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .terraformVersion(java.lang.String)
@@ -76,39 +59,39 @@ Workspace.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#name Workspace#name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.agentPoolId">agentPoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.allowDestroyPlan">allowDestroyPlan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.assessmentsEnabled">assessmentsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApply">autoApply</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.allowDestroyPlan">allowDestroyPlan</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.assessmentsEnabled">assessmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApply">autoApply</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoDestroyAt">autoDestroyAt</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#description Workspace#description}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.executionMode">executionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.globalRemoteState">globalRemoteState</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.globalRemoteState">globalRemoteState</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#id Workspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTagNames">ignoreAdditionalTagNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.operations">operations</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTagNames">ignoreAdditionalTagNames</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.operations">operations</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#organization Workspace#organization}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#project_id Workspace#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.queueAllRuns">queueAllRuns</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.queueAllRuns">queueAllRuns</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.remoteStateConsumerIds">remoteStateConsumerIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.sourceName">sourceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_name Workspace#source_name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.sourceUrl">sourceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_url Workspace#source_url}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.speculativeEnabled">speculativeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.speculativeEnabled">speculativeEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.sshKeyId">sshKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.structuredRunOutputEnabled">structuredRunOutputEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.structuredRunOutputEnabled">structuredRunOutputEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.tagNames">tagNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tag_names Workspace#tag_names}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags Workspace#tags}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.terraformVersion">terraformVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
@@ -139,13 +122,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -175,7 +158,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -197,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allowDestroyPlan`<sup>Optional</sup> <a name="allowDestroyPlan" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.allowDestroyPlan"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
@@ -205,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assessmentsEnabled`<sup>Optional</sup> <a name="assessmentsEnabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.assessmentsEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
 
@@ -213,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `autoApply`<sup>Optional</sup> <a name="autoApply" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApply"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}.
 
@@ -221,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `autoApplyRunTrigger`<sup>Optional</sup> <a name="autoApplyRunTrigger" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.autoApplyRunTrigger"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
 
@@ -261,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `fileTriggersEnabled`<sup>Optional</sup> <a name="fileTriggersEnabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.fileTriggersEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
@@ -269,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.forceDelete"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}.
 
@@ -277,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `globalRemoteState`<sup>Optional</sup> <a name="globalRemoteState" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.globalRemoteState"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
 
@@ -296,7 +279,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignoreAdditionalTagNames`<sup>Optional</sup> <a name="ignoreAdditionalTagNames" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTagNames"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
 
@@ -304,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignoreAdditionalTags`<sup>Optional</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.ignoreAdditionalTags"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}.
 
@@ -312,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operations`<sup>Optional</sup> <a name="operations" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.operations"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}.
 
@@ -336,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `queueAllRuns`<sup>Optional</sup> <a name="queueAllRuns" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.queueAllRuns"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
 
@@ -368,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `speculativeEnabled`<sup>Optional</sup> <a name="speculativeEnabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.speculativeEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
 
@@ -384,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `structuredRunOutputEnabled`<sup>Optional</sup> <a name="structuredRunOutputEnabled" id="@cdktf/provider-tfe.workspace.Workspace.Initializer.parameter.structuredRunOutputEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
@@ -708,7 +691,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-tfe.workspace.Workspace.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-tfe.workspace.Workspace.importFrom"></a>
@@ -764,7 +747,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -779,7 +762,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tfe.workspace.Workspace.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1131,44 +1114,44 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.effectiveTags">effectiveTags</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.htmlUrl">htmlUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.inheritsProjectAutoDestroy">inheritsProjectAutoDestroy</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.resourceCount">resourceCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference">WorkspaceVcsRepoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolIdInput">agentPoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput">allowDestroyPlanInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput">assessmentsEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput">autoApplyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput">autoApplyRunTriggerInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput">allowDestroyPlanInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput">assessmentsEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput">autoApplyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput">autoApplyRunTriggerInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyActivityDurationInput">autoDestroyActivityDurationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyAtInput">autoDestroyAtInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.executionModeInput">executionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput">fileTriggersEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput">forceDeleteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput">globalRemoteStateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput">fileTriggersEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput">forceDeleteInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput">globalRemoteStateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput">ignoreAdditionalTagNamesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput">ignoreAdditionalTagsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput">ignoreAdditionalTagNamesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput">ignoreAdditionalTagsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operationsInput">operationsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operationsInput">operationsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">queueAllRunsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput">queueAllRunsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIdsInput">remoteStateConsumerIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceNameInput">sourceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrlInput">sourceUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">speculativeEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput">speculativeEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyIdInput">sshKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">structuredRunOutputEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput">structuredRunOutputEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagNamesInput">tagNamesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformVersionInput">terraformVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1177,31 +1160,31 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.vcsRepoInput">vcsRepoInput</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.workingDirectoryInput">workingDirectoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.agentPoolId">agentPoolId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan">allowDestroyPlan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled">assessmentsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApply">autoApply</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan">allowDestroyPlan</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled">assessmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApply">autoApply</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.autoDestroyAt">autoDestroyAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.executionMode">executionMode</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState">globalRemoteState</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState">globalRemoteState</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames">ignoreAdditionalTagNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames">ignoreAdditionalTagNames</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operations">operations</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.operations">operations</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">queueAllRuns</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns">queueAllRuns</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.remoteStateConsumerIds">remoteStateConsumerIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceName">sourceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sourceUrl">sourceUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">speculativeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled">speculativeEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.sshKeyId">sshKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">structuredRunOutputEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled">structuredRunOutputEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tagNames">tagNames</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.Workspace.property.terraformVersion">terraformVersion</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1286,20 +1269,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspace.Workspace.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspace.Workspace.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1346,10 +1329,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspace.Workspace.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1416,40 +1399,40 @@ public java.lang.String getAgentPoolIdInput();
 ##### `allowDestroyPlanInput`<sup>Optional</sup> <a name="allowDestroyPlanInput" id="@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlanInput"></a>
 
 ```java
-public java.lang.Object getAllowDestroyPlanInput();
+public java.lang.Boolean|IResolvable getAllowDestroyPlanInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `assessmentsEnabledInput`<sup>Optional</sup> <a name="assessmentsEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabledInput"></a>
 
 ```java
-public java.lang.Object getAssessmentsEnabledInput();
+public java.lang.Boolean|IResolvable getAssessmentsEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoApplyInput`<sup>Optional</sup> <a name="autoApplyInput" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyInput"></a>
 
 ```java
-public java.lang.Object getAutoApplyInput();
+public java.lang.Boolean|IResolvable getAutoApplyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoApplyRunTriggerInput`<sup>Optional</sup> <a name="autoApplyRunTriggerInput" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTriggerInput"></a>
 
 ```java
-public java.lang.Object getAutoApplyRunTriggerInput();
+public java.lang.Boolean|IResolvable getAutoApplyRunTriggerInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1496,30 +1479,30 @@ public java.lang.String getExecutionModeInput();
 ##### `fileTriggersEnabledInput`<sup>Optional</sup> <a name="fileTriggersEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabledInput"></a>
 
 ```java
-public java.lang.Object getFileTriggersEnabledInput();
+public java.lang.Boolean|IResolvable getFileTriggersEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `forceDeleteInput`<sup>Optional</sup> <a name="forceDeleteInput" id="@cdktf/provider-tfe.workspace.Workspace.property.forceDeleteInput"></a>
 
 ```java
-public java.lang.Object getForceDeleteInput();
+public java.lang.Boolean|IResolvable getForceDeleteInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `globalRemoteStateInput`<sup>Optional</sup> <a name="globalRemoteStateInput" id="@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteStateInput"></a>
 
 ```java
-public java.lang.Object getGlobalRemoteStateInput();
+public java.lang.Boolean|IResolvable getGlobalRemoteStateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1536,20 +1519,20 @@ public java.lang.String getIdInput();
 ##### `ignoreAdditionalTagNamesInput`<sup>Optional</sup> <a name="ignoreAdditionalTagNamesInput" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNamesInput"></a>
 
 ```java
-public java.lang.Object getIgnoreAdditionalTagNamesInput();
+public java.lang.Boolean|IResolvable getIgnoreAdditionalTagNamesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `ignoreAdditionalTagsInput`<sup>Optional</sup> <a name="ignoreAdditionalTagsInput" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagsInput"></a>
 
 ```java
-public java.lang.Object getIgnoreAdditionalTagsInput();
+public java.lang.Boolean|IResolvable getIgnoreAdditionalTagsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1566,10 +1549,10 @@ public java.lang.String getNameInput();
 ##### `operationsInput`<sup>Optional</sup> <a name="operationsInput" id="@cdktf/provider-tfe.workspace.Workspace.property.operationsInput"></a>
 
 ```java
-public java.lang.Object getOperationsInput();
+public java.lang.Boolean|IResolvable getOperationsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1596,10 +1579,10 @@ public java.lang.String getProjectIdInput();
 ##### `queueAllRunsInput`<sup>Optional</sup> <a name="queueAllRunsInput" id="@cdktf/provider-tfe.workspace.Workspace.property.queueAllRunsInput"></a>
 
 ```java
-public java.lang.Object getQueueAllRunsInput();
+public java.lang.Boolean|IResolvable getQueueAllRunsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1636,10 +1619,10 @@ public java.lang.String getSourceUrlInput();
 ##### `speculativeEnabledInput`<sup>Optional</sup> <a name="speculativeEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabledInput"></a>
 
 ```java
-public java.lang.Object getSpeculativeEnabledInput();
+public java.lang.Boolean|IResolvable getSpeculativeEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1656,10 +1639,10 @@ public java.lang.String getSshKeyIdInput();
 ##### `structuredRunOutputEnabledInput`<sup>Optional</sup> <a name="structuredRunOutputEnabledInput" id="@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabledInput"></a>
 
 ```java
-public java.lang.Object getStructuredRunOutputEnabledInput();
+public java.lang.Boolean|IResolvable getStructuredRunOutputEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1746,40 +1729,40 @@ public java.lang.String getAgentPoolId();
 ##### `allowDestroyPlan`<sup>Required</sup> <a name="allowDestroyPlan" id="@cdktf/provider-tfe.workspace.Workspace.property.allowDestroyPlan"></a>
 
 ```java
-public java.lang.Object getAllowDestroyPlan();
+public java.lang.Boolean|IResolvable getAllowDestroyPlan();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `assessmentsEnabled`<sup>Required</sup> <a name="assessmentsEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.assessmentsEnabled"></a>
 
 ```java
-public java.lang.Object getAssessmentsEnabled();
+public java.lang.Boolean|IResolvable getAssessmentsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoApply`<sup>Required</sup> <a name="autoApply" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApply"></a>
 
 ```java
-public java.lang.Object getAutoApply();
+public java.lang.Boolean|IResolvable getAutoApply();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoApplyRunTrigger`<sup>Required</sup> <a name="autoApplyRunTrigger" id="@cdktf/provider-tfe.workspace.Workspace.property.autoApplyRunTrigger"></a>
 
 ```java
-public java.lang.Object getAutoApplyRunTrigger();
+public java.lang.Boolean|IResolvable getAutoApplyRunTrigger();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1826,30 +1809,30 @@ public java.lang.String getExecutionMode();
 ##### `fileTriggersEnabled`<sup>Required</sup> <a name="fileTriggersEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.fileTriggersEnabled"></a>
 
 ```java
-public java.lang.Object getFileTriggersEnabled();
+public java.lang.Boolean|IResolvable getFileTriggersEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `forceDelete`<sup>Required</sup> <a name="forceDelete" id="@cdktf/provider-tfe.workspace.Workspace.property.forceDelete"></a>
 
 ```java
-public java.lang.Object getForceDelete();
+public java.lang.Boolean|IResolvable getForceDelete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `globalRemoteState`<sup>Required</sup> <a name="globalRemoteState" id="@cdktf/provider-tfe.workspace.Workspace.property.globalRemoteState"></a>
 
 ```java
-public java.lang.Object getGlobalRemoteState();
+public java.lang.Boolean|IResolvable getGlobalRemoteState();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1866,20 +1849,20 @@ public java.lang.String getId();
 ##### `ignoreAdditionalTagNames`<sup>Required</sup> <a name="ignoreAdditionalTagNames" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTagNames"></a>
 
 ```java
-public java.lang.Object getIgnoreAdditionalTagNames();
+public java.lang.Boolean|IResolvable getIgnoreAdditionalTagNames();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `ignoreAdditionalTags`<sup>Required</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.workspace.Workspace.property.ignoreAdditionalTags"></a>
 
 ```java
-public java.lang.Object getIgnoreAdditionalTags();
+public java.lang.Boolean|IResolvable getIgnoreAdditionalTags();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1896,10 +1879,10 @@ public java.lang.String getName();
 ##### `operations`<sup>Required</sup> <a name="operations" id="@cdktf/provider-tfe.workspace.Workspace.property.operations"></a>
 
 ```java
-public java.lang.Object getOperations();
+public java.lang.Boolean|IResolvable getOperations();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1926,10 +1909,10 @@ public java.lang.String getProjectId();
 ##### `queueAllRuns`<sup>Required</sup> <a name="queueAllRuns" id="@cdktf/provider-tfe.workspace.Workspace.property.queueAllRuns"></a>
 
 ```java
-public java.lang.Object getQueueAllRuns();
+public java.lang.Boolean|IResolvable getQueueAllRuns();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1966,10 +1949,10 @@ public java.lang.String getSourceUrl();
 ##### `speculativeEnabled`<sup>Required</sup> <a name="speculativeEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.speculativeEnabled"></a>
 
 ```java
-public java.lang.Object getSpeculativeEnabled();
+public java.lang.Boolean|IResolvable getSpeculativeEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1986,10 +1969,10 @@ public java.lang.String getSshKeyId();
 ##### `structuredRunOutputEnabled`<sup>Required</sup> <a name="structuredRunOutputEnabled" id="@cdktf/provider-tfe.workspace.Workspace.property.structuredRunOutputEnabled"></a>
 
 ```java
-public java.lang.Object getStructuredRunOutputEnabled();
+public java.lang.Boolean|IResolvable getStructuredRunOutputEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2081,56 +2064,39 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.tfe.workspace.WorkspaceConfig;
 
 WorkspaceConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .agentPoolId(java.lang.String)
-//  .allowDestroyPlan(java.lang.Boolean)
-//  .allowDestroyPlan(IResolvable)
-//  .assessmentsEnabled(java.lang.Boolean)
-//  .assessmentsEnabled(IResolvable)
-//  .autoApply(java.lang.Boolean)
-//  .autoApply(IResolvable)
-//  .autoApplyRunTrigger(java.lang.Boolean)
-//  .autoApplyRunTrigger(IResolvable)
+//  .allowDestroyPlan(java.lang.Boolean|IResolvable)
+//  .assessmentsEnabled(java.lang.Boolean|IResolvable)
+//  .autoApply(java.lang.Boolean|IResolvable)
+//  .autoApplyRunTrigger(java.lang.Boolean|IResolvable)
 //  .autoDestroyActivityDuration(java.lang.String)
 //  .autoDestroyAt(java.lang.String)
 //  .description(java.lang.String)
 //  .executionMode(java.lang.String)
-//  .fileTriggersEnabled(java.lang.Boolean)
-//  .fileTriggersEnabled(IResolvable)
-//  .forceDelete(java.lang.Boolean)
-//  .forceDelete(IResolvable)
-//  .globalRemoteState(java.lang.Boolean)
-//  .globalRemoteState(IResolvable)
+//  .fileTriggersEnabled(java.lang.Boolean|IResolvable)
+//  .forceDelete(java.lang.Boolean|IResolvable)
+//  .globalRemoteState(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
-//  .ignoreAdditionalTagNames(java.lang.Boolean)
-//  .ignoreAdditionalTagNames(IResolvable)
-//  .ignoreAdditionalTags(java.lang.Boolean)
-//  .ignoreAdditionalTags(IResolvable)
-//  .operations(java.lang.Boolean)
-//  .operations(IResolvable)
+//  .ignoreAdditionalTagNames(java.lang.Boolean|IResolvable)
+//  .ignoreAdditionalTags(java.lang.Boolean|IResolvable)
+//  .operations(java.lang.Boolean|IResolvable)
 //  .organization(java.lang.String)
 //  .projectId(java.lang.String)
-//  .queueAllRuns(java.lang.Boolean)
-//  .queueAllRuns(IResolvable)
+//  .queueAllRuns(java.lang.Boolean|IResolvable)
 //  .remoteStateConsumerIds(java.util.List<java.lang.String>)
 //  .sourceName(java.lang.String)
 //  .sourceUrl(java.lang.String)
-//  .speculativeEnabled(java.lang.Boolean)
-//  .speculativeEnabled(IResolvable)
+//  .speculativeEnabled(java.lang.Boolean|IResolvable)
 //  .sshKeyId(java.lang.String)
-//  .structuredRunOutputEnabled(java.lang.Boolean)
-//  .structuredRunOutputEnabled(IResolvable)
+//  .structuredRunOutputEnabled(java.lang.Boolean|IResolvable)
 //  .tagNames(java.util.List<java.lang.String>)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .terraformVersion(java.lang.String)
@@ -2145,39 +2111,39 @@ WorkspaceConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#name Workspace#name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.agentPoolId">agentPoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#agent_pool_id Workspace#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">allowDestroyPlan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">assessmentsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">autoApply</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan">allowDestroyPlan</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled">assessmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply">autoApply</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_activity_duration Workspace#auto_destroy_activity_duration}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoDestroyAt">autoDestroyAt</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_destroy_at Workspace#auto_destroy_at}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#description Workspace#description}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.executionMode">executionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#execution_mode Workspace#execution_mode}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">globalRemoteState</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState">globalRemoteState</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#id Workspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">ignoreAdditionalTagNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">operations</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames">ignoreAdditionalTagNames</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags">ignoreAdditionalTags</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations">operations</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#organization Workspace#organization}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#project_id Workspace#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">queueAllRuns</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns">queueAllRuns</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.remoteStateConsumerIds">remoteStateConsumerIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceName">sourceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_name Workspace#source_name}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sourceUrl">sourceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#source_url Workspace#source_url}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">speculativeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled">speculativeEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.sshKeyId">sshKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ssh_key_id Workspace#ssh_key_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">structuredRunOutputEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled">structuredRunOutputEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tagNames">tagNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tag_names Workspace#tag_names}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags Workspace#tags}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceConfig.property.terraformVersion">terraformVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#terraform_version Workspace#terraform_version}. |
@@ -2191,20 +2157,20 @@ WorkspaceConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2251,10 +2217,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2285,10 +2251,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allowDestroyPlan`<sup>Optional</sup> <a name="allowDestroyPlan" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.allowDestroyPlan"></a>
 
 ```java
-public java.lang.Object getAllowDestroyPlan();
+public java.lang.Boolean|IResolvable getAllowDestroyPlan();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
 
@@ -2297,10 +2263,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assessmentsEnabled`<sup>Optional</sup> <a name="assessmentsEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.assessmentsEnabled"></a>
 
 ```java
-public java.lang.Object getAssessmentsEnabled();
+public java.lang.Boolean|IResolvable getAssessmentsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#assessments_enabled Workspace#assessments_enabled}.
 
@@ -2309,10 +2275,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `autoApply`<sup>Optional</sup> <a name="autoApply" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApply"></a>
 
 ```java
-public java.lang.Object getAutoApply();
+public java.lang.Boolean|IResolvable getAutoApply();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply Workspace#auto_apply}.
 
@@ -2321,10 +2287,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `autoApplyRunTrigger`<sup>Optional</sup> <a name="autoApplyRunTrigger" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.autoApplyRunTrigger"></a>
 
 ```java
-public java.lang.Object getAutoApplyRunTrigger();
+public java.lang.Boolean|IResolvable getAutoApplyRunTrigger();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#auto_apply_run_trigger Workspace#auto_apply_run_trigger}.
 
@@ -2381,10 +2347,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fileTriggersEnabled`<sup>Optional</sup> <a name="fileTriggersEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.fileTriggersEnabled"></a>
 
 ```java
-public java.lang.Object getFileTriggersEnabled();
+public java.lang.Boolean|IResolvable getFileTriggersEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 
@@ -2393,10 +2359,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.forceDelete"></a>
 
 ```java
-public java.lang.Object getForceDelete();
+public java.lang.Boolean|IResolvable getForceDelete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#force_delete Workspace#force_delete}.
 
@@ -2405,10 +2371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `globalRemoteState`<sup>Optional</sup> <a name="globalRemoteState" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.globalRemoteState"></a>
 
 ```java
-public java.lang.Object getGlobalRemoteState();
+public java.lang.Boolean|IResolvable getGlobalRemoteState();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#global_remote_state Workspace#global_remote_state}.
 
@@ -2432,10 +2398,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ignoreAdditionalTagNames`<sup>Optional</sup> <a name="ignoreAdditionalTagNames" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTagNames"></a>
 
 ```java
-public java.lang.Object getIgnoreAdditionalTagNames();
+public java.lang.Boolean|IResolvable getIgnoreAdditionalTagNames();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tag_names Workspace#ignore_additional_tag_names}.
 
@@ -2444,10 +2410,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ignoreAdditionalTags`<sup>Optional</sup> <a name="ignoreAdditionalTags" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.ignoreAdditionalTags"></a>
 
 ```java
-public java.lang.Object getIgnoreAdditionalTags();
+public java.lang.Boolean|IResolvable getIgnoreAdditionalTags();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ignore_additional_tags Workspace#ignore_additional_tags}.
 
@@ -2456,10 +2422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operations`<sup>Optional</sup> <a name="operations" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.operations"></a>
 
 ```java
-public java.lang.Object getOperations();
+public java.lang.Boolean|IResolvable getOperations();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#operations Workspace#operations}.
 
@@ -2492,10 +2458,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `queueAllRuns`<sup>Optional</sup> <a name="queueAllRuns" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.queueAllRuns"></a>
 
 ```java
-public java.lang.Object getQueueAllRuns();
+public java.lang.Boolean|IResolvable getQueueAllRuns();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#queue_all_runs Workspace#queue_all_runs}.
 
@@ -2540,10 +2506,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `speculativeEnabled`<sup>Optional</sup> <a name="speculativeEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.speculativeEnabled"></a>
 
 ```java
-public java.lang.Object getSpeculativeEnabled();
+public java.lang.Boolean|IResolvable getSpeculativeEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#speculative_enabled Workspace#speculative_enabled}.
 
@@ -2564,10 +2530,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `structuredRunOutputEnabled`<sup>Optional</sup> <a name="structuredRunOutputEnabled" id="@cdktf/provider-tfe.workspace.WorkspaceConfig.property.structuredRunOutputEnabled"></a>
 
 ```java
-public java.lang.Object getStructuredRunOutputEnabled();
+public java.lang.Boolean|IResolvable getStructuredRunOutputEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#structured_run_output_enabled Workspace#structured_run_output_enabled}.
 
@@ -2670,8 +2636,7 @@ WorkspaceVcsRepo.builder()
     .identifier(java.lang.String)
 //  .branch(java.lang.String)
 //  .githubAppInstallationId(java.lang.String)
-//  .ingressSubmodules(java.lang.Boolean)
-//  .ingressSubmodules(IResolvable)
+//  .ingressSubmodules(java.lang.Boolean|IResolvable)
 //  .oauthTokenId(java.lang.String)
 //  .tagsRegex(java.lang.String)
     .build();
@@ -2684,7 +2649,7 @@ WorkspaceVcsRepo.builder()
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#identifier Workspace#identifier}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.branch">branch</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#branch Workspace#branch}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.githubAppInstallationId">githubAppInstallationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#github_app_installation_id Workspace#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">ingressSubmodules</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules">ingressSubmodules</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.oauthTokenId">oauthTokenId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#oauth_token_id Workspace#oauth_token_id}. |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.tagsRegex">tagsRegex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#tags_regex Workspace#tags_regex}. |
 
@@ -2729,10 +2694,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ingressSubmodules`<sup>Optional</sup> <a name="ingressSubmodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepo.property.ingressSubmodules"></a>
 
 ```java
-public java.lang.Object getIngressSubmodules();
+public java.lang.Boolean|IResolvable getIngressSubmodules();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/workspace#ingress_submodules Workspace#ingress_submodules}.
 
@@ -3012,13 +2977,13 @@ public void resetTagsRegex()
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationIdInput">githubAppInstallationIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifierInput">identifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">ingressSubmodulesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput">ingressSubmodulesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenIdInput">oauthTokenIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegexInput">tagsRegexInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.githubAppInstallationId">githubAppInstallationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.identifier">identifier</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">ingressSubmodules</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules">ingressSubmodules</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.oauthTokenId">oauthTokenId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.tagsRegex">tagsRegex</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-tfe.workspace.WorkspaceVcsRepo">WorkspaceVcsRepo</a></code> | *No description.* |
@@ -3082,10 +3047,10 @@ public java.lang.String getIdentifierInput();
 ##### `ingressSubmodulesInput`<sup>Optional</sup> <a name="ingressSubmodulesInput" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodulesInput"></a>
 
 ```java
-public java.lang.Object getIngressSubmodulesInput();
+public java.lang.Boolean|IResolvable getIngressSubmodulesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3142,10 +3107,10 @@ public java.lang.String getIdentifier();
 ##### `ingressSubmodules`<sup>Required</sup> <a name="ingressSubmodules" id="@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference.property.ingressSubmodules"></a>
 
 ```java
-public java.lang.Object getIngressSubmodules();
+public java.lang.Boolean|IResolvable getIngressSubmodules();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
