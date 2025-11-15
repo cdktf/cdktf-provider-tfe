@@ -1,0 +1,152 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/aws_oidc_configuration
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface AwsOidcConfigurationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Name of the organization to which the TFE AWS OIDC configuration belongs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/aws_oidc_configuration#organization AwsOidcConfiguration#organization}
+  */
+  readonly organization?: string;
+  /**
+  * The AWS ARN of your role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/aws_oidc_configuration#role_arn AwsOidcConfiguration#role_arn}
+  */
+  readonly roleArn: string;
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/aws_oidc_configuration tfe_aws_oidc_configuration}
+*/
+export class AwsOidcConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "tfe_aws_oidc_configuration";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AwsOidcConfiguration resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AwsOidcConfiguration to import
+  * @param importFromId The id of the existing AwsOidcConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/aws_oidc_configuration#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AwsOidcConfiguration to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tfe_aws_oidc_configuration", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/aws_oidc_configuration tfe_aws_oidc_configuration} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AwsOidcConfigurationConfig
+  */
+  public constructor(scope: Construct, id: string, config: AwsOidcConfigurationConfig) {
+    super(scope, id, {
+      terraformResourceType: 'tfe_aws_oidc_configuration',
+      terraformGeneratorMetadata: {
+        providerName: 'tfe',
+        providerVersion: '0.71.0',
+        providerVersionConstraint: '~> 0.33'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._organization = config.organization;
+    this._roleArn = config.roleArn;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // organization - computed: true, optional: true, required: false
+  private _organization?: string; 
+  public get organization() {
+    return this.getStringAttribute('organization');
+  }
+  public set organization(value: string) {
+    this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationInput() {
+    return this._organization;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      organization: cdktf.stringToTerraform(this._organization),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

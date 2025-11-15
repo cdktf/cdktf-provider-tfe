@@ -11,7 +11,11 @@ Object.defineProperty(exports, 'agentPoolAllowedWorkspaces', { get: function () 
 Object.defineProperty(exports, 'agentPoolExcludedWorkspaces', { get: function () { return require('./agent-pool-excluded-workspaces'); } });
 Object.defineProperty(exports, 'agentToken', { get: function () { return require('./agent-token'); } });
 Object.defineProperty(exports, 'auditTrailToken', { get: function () { return require('./audit-trail-token'); } });
+Object.defineProperty(exports, 'awsOidcConfiguration', { get: function () { return require('./aws-oidc-configuration'); } });
+Object.defineProperty(exports, 'azureOidcConfiguration', { get: function () { return require('./azure-oidc-configuration'); } });
 Object.defineProperty(exports, 'dataRetentionPolicy', { get: function () { return require('./data-retention-policy'); } });
+Object.defineProperty(exports, 'gcpOidcConfiguration', { get: function () { return require('./gcp-oidc-configuration'); } });
+Object.defineProperty(exports, 'hyokConfiguration', { get: function () { return require('./hyok-configuration'); } });
 Object.defineProperty(exports, 'noCodeModule', { get: function () { return require('./no-code-module'); } });
 Object.defineProperty(exports, 'notificationConfiguration', { get: function () { return require('./notification-configuration'); } });
 Object.defineProperty(exports, 'oauthClient', { get: function () { return require('./oauth-client'); } });
@@ -53,6 +57,7 @@ Object.defineProperty(exports, 'terraformVersion', { get: function () { return r
 Object.defineProperty(exports, 'testVariable', { get: function () { return require('./test-variable'); } });
 Object.defineProperty(exports, 'variable', { get: function () { return require('./variable'); } });
 Object.defineProperty(exports, 'variableSet', { get: function () { return require('./variable-set'); } });
+Object.defineProperty(exports, 'vaultOidcConfiguration', { get: function () { return require('./vault-oidc-configuration'); } });
 Object.defineProperty(exports, 'workspace', { get: function () { return require('./workspace'); } });
 Object.defineProperty(exports, 'workspacePolicySet', { get: function () { return require('./workspace-policy-set'); } });
 Object.defineProperty(exports, 'workspacePolicySetExclusion', { get: function () { return require('./workspace-policy-set-exclusion'); } });
@@ -62,6 +67,8 @@ Object.defineProperty(exports, 'workspaceSettings', { get: function () { return 
 Object.defineProperty(exports, 'workspaceVariableSet', { get: function () { return require('./workspace-variable-set'); } });
 Object.defineProperty(exports, 'dataTfeAgentPool', { get: function () { return require('./data-tfe-agent-pool'); } });
 Object.defineProperty(exports, 'dataTfeGithubAppInstallation', { get: function () { return require('./data-tfe-github-app-installation'); } });
+Object.defineProperty(exports, 'dataTfeHyokCustomerKeyVersion', { get: function () { return require('./data-tfe-hyok-customer-key-version'); } });
+Object.defineProperty(exports, 'dataTfeHyokEncryptedDataKey', { get: function () { return require('./data-tfe-hyok-encrypted-data-key'); } });
 Object.defineProperty(exports, 'dataTfeIpRanges', { get: function () { return require('./data-tfe-ip-ranges'); } });
 Object.defineProperty(exports, 'dataTfeNoCodeModule', { get: function () { return require('./data-tfe-no-code-module'); } });
 Object.defineProperty(exports, 'dataTfeOauthClient', { get: function () { return require('./data-tfe-oauth-client'); } });

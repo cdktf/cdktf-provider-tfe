@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version
+// https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +13,57 @@ import * as cdktf from 'cdktf';
 
 export interface OpaVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#archs OpaVersion#archs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#archs OpaVersion#archs}
   */
   readonly archs?: OpaVersionArchs[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#beta OpaVersion#beta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#beta OpaVersion#beta}
   */
   readonly beta?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#deprecated OpaVersion#deprecated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#deprecated OpaVersion#deprecated}
   */
   readonly deprecated?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#deprecated_reason OpaVersion#deprecated_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#deprecated_reason OpaVersion#deprecated_reason}
   */
   readonly deprecatedReason?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#enabled OpaVersion#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#enabled OpaVersion#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#official OpaVersion#official}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#official OpaVersion#official}
   */
   readonly official?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#sha OpaVersion#sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#sha OpaVersion#sha}
   */
   readonly sha?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#url OpaVersion#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#url OpaVersion#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#version OpaVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#version OpaVersion#version}
   */
   readonly version: string;
 }
 export interface OpaVersionArchs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#arch OpaVersion#arch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#arch OpaVersion#arch}
   */
   readonly arch: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#os OpaVersion#os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#os OpaVersion#os}
   */
   readonly os: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#sha OpaVersion#sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#sha OpaVersion#sha}
   */
   readonly sha: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#url OpaVersion#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#url OpaVersion#url}
   */
   readonly url: string;
 }
@@ -254,7 +254,7 @@ export class OpaVersionArchsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version tfe_opa_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version tfe_opa_version}
 */
 export class OpaVersion extends cdktf.TerraformResource {
 
@@ -270,7 +270,7 @@ export class OpaVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpaVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpaVersion to import
-  * @param importFromId The id of the existing OpaVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpaVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpaVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -282,7 +282,7 @@ export class OpaVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/opa_version tfe_opa_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/opa_version tfe_opa_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +293,7 @@ export class OpaVersion extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_opa_version',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.70.0',
+        providerVersion: '0.71.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

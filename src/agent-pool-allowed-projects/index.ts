@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects
+// https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface AgentPoolAllowedProjectsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects#agent_pool_id AgentPoolAllowedProjects#agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects#agent_pool_id AgentPoolAllowedProjects#agent_pool_id}
   */
   readonly agentPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects#allowed_project_ids AgentPoolAllowedProjects#allowed_project_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects#allowed_project_ids AgentPoolAllowedProjects#allowed_project_ids}
   */
   readonly allowedProjectIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects#id AgentPoolAllowedProjects#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects#id AgentPoolAllowedProjects#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface AgentPoolAllowedProjectsConfig extends cdktf.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects tfe_agent_pool_allowed_projects}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects tfe_agent_pool_allowed_projects}
 */
 export class AgentPoolAllowedProjects extends cdktf.TerraformResource {
 
@@ -46,7 +46,7 @@ export class AgentPoolAllowedProjects extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AgentPoolAllowedProjects resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentPoolAllowedProjects to import
-  * @param importFromId The id of the existing AgentPoolAllowedProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentPoolAllowedProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentPoolAllowedProjects to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class AgentPoolAllowedProjects extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_allowed_projects tfe_agent_pool_allowed_projects} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_allowed_projects tfe_agent_pool_allowed_projects} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class AgentPoolAllowedProjects extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_agent_pool_allowed_projects',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.70.0',
+        providerVersion: '0.71.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
