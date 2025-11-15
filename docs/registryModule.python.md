@@ -4,7 +4,7 @@
 
 ### RegistryModule <a name="RegistryModule" id="@cdktf/provider-tfe.registryModule.RegistryModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module tfe_registry_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module tfe_registry_module}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.registryModule.RegistryModule.Initializer"></a>
 
@@ -45,14 +45,14 @@ registryModule.RegistryModule(
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#id RegistryModule#id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.initialVersion">initial_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.moduleProvider">module_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#name RegistryModule#name}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#namespace RegistryModule#namespace}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.noCode">no_code</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#no_code RegistryModule#no_code}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#organization RegistryModule#organization}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.registryName">registry_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#id RegistryModule#id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.initialVersion">initial_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.moduleProvider">module_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#name RegistryModule#name}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#namespace RegistryModule#namespace}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.noCode">no_code</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#no_code RegistryModule#no_code}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#organization RegistryModule#organization}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.registryName">registry_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.testConfig">test_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig">RegistryModuleTestConfig</a>]</code> | test_config block. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModule.Initializer.parameter.vcsRepo">vcs_repo</a></code> | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo">RegistryModuleVcsRepo</a></code> | vcs_repo block. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#id RegistryModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#id RegistryModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#name RegistryModule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#name RegistryModule#name}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#namespace RegistryModule#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#namespace RegistryModule#namespace}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#no_code RegistryModule#no_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#no_code RegistryModule#no_code}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#organization RegistryModule#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#organization RegistryModule#organization}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#test_config RegistryModule#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#test_config RegistryModule#test_config}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
 
 ---
 
@@ -605,7 +605,7 @@ def put_vcs_repo(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
 
 ---
 
@@ -613,7 +613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#identifier RegistryModule#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#identifier RegistryModule#identifier}.
 
 ---
 
@@ -621,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#branch RegistryModule#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#branch RegistryModule#branch}.
 
 ---
 
@@ -629,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}.
 
 ---
 
@@ -637,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
 
 ---
 
@@ -645,7 +645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}.
 
 ---
 
@@ -653,7 +653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}.
 
 ---
 
@@ -661,7 +661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tags RegistryModule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tags RegistryModule#tags}.
 
 ---
 
@@ -839,7 +839,7 @@ The construct id used in the generated config for the RegistryModule to import.
 
 The id of the existing RegistryModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1304,14 +1304,14 @@ registryModule.RegistryModuleConfig(
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#id RegistryModule#id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.initialVersion">initial_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.moduleProvider">module_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#name RegistryModule#name}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#namespace RegistryModule#namespace}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.noCode">no_code</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#no_code RegistryModule#no_code}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#organization RegistryModule#organization}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.registryName">registry_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#id RegistryModule#id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.initialVersion">initial_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.moduleProvider">module_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#name RegistryModule#name}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#namespace RegistryModule#namespace}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.noCode">no_code</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#no_code RegistryModule#no_code}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#organization RegistryModule#organization}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.registryName">registry_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.testConfig">test_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig">RegistryModuleTestConfig</a>]</code> | test_config block. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleConfig.property.vcsRepo">vcs_repo</a></code> | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo">RegistryModuleVcsRepo</a></code> | vcs_repo block. |
 
@@ -1395,7 +1395,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#id RegistryModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#id RegistryModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1410,7 +1410,7 @@ initial_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}.
 
 ---
 
@@ -1422,7 +1422,7 @@ module_provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}.
 
 ---
 
@@ -1434,7 +1434,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#name RegistryModule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#name RegistryModule#name}.
 
 ---
 
@@ -1446,7 +1446,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#namespace RegistryModule#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#namespace RegistryModule#namespace}.
 
 ---
 
@@ -1458,7 +1458,7 @@ no_code: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#no_code RegistryModule#no_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#no_code RegistryModule#no_code}.
 
 ---
 
@@ -1470,7 +1470,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#organization RegistryModule#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#organization RegistryModule#organization}.
 
 ---
 
@@ -1482,7 +1482,7 @@ registry_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}.
 
 ---
 
@@ -1496,7 +1496,7 @@ test_config: IResolvable | typing.List[RegistryModuleTestConfig]
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#test_config RegistryModule#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#test_config RegistryModule#test_config}
 
 ---
 
@@ -1510,7 +1510,7 @@ vcs_repo: RegistryModuleVcsRepo
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
 
 ---
 
@@ -1522,6 +1522,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_tfe import registry_module
 
 registryModule.RegistryModuleTestConfig(
+  agent_execution_mode: str = None,
+  agent_pool_id: str = None,
   tests_enabled: bool | IResolvable = None
 )
 ```
@@ -1530,7 +1532,33 @@ registryModule.RegistryModuleTestConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.testsEnabled">tests_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.agentExecutionMode">agent_execution_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#agent_execution_mode RegistryModule#agent_execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#agent_pool_id RegistryModule#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.testsEnabled">tests_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}. |
+
+---
+
+##### `agent_execution_mode`<sup>Optional</sup> <a name="agent_execution_mode" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.agentExecutionMode"></a>
+
+```python
+agent_execution_mode: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#agent_execution_mode RegistryModule#agent_execution_mode}.
+
+---
+
+##### `agent_pool_id`<sup>Optional</sup> <a name="agent_pool_id" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig.property.agentPoolId"></a>
+
+```python
+agent_pool_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#agent_pool_id RegistryModule#agent_pool_id}.
 
 ---
 
@@ -1542,7 +1570,7 @@ tests_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}.
 
 ---
 
@@ -1569,14 +1597,14 @@ registryModule.RegistryModuleVcsRepo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.displayIdentifier">display_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#identifier RegistryModule#identifier}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.branch">branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#branch RegistryModule#branch}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.githubAppInstallationId">github_app_installation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.oauthTokenId">oauth_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.sourceDirectory">source_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tagPrefix">tag_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}. |
-| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tags">tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tags RegistryModule#tags}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.displayIdentifier">display_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#identifier RegistryModule#identifier}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.branch">branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#branch RegistryModule#branch}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.githubAppInstallationId">github_app_installation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.oauthTokenId">oauth_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.sourceDirectory">source_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tagPrefix">tag_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo.property.tags">tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tags RegistryModule#tags}. |
 
 ---
 
@@ -1588,7 +1616,7 @@ display_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
 
 ---
 
@@ -1600,7 +1628,7 @@ identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#identifier RegistryModule#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#identifier RegistryModule#identifier}.
 
 ---
 
@@ -1612,7 +1640,7 @@ branch: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#branch RegistryModule#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#branch RegistryModule#branch}.
 
 ---
 
@@ -1624,7 +1652,7 @@ github_app_installation_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}.
 
 ---
 
@@ -1636,7 +1664,7 @@ oauth_token_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
 
 ---
 
@@ -1648,7 +1676,7 @@ source_directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}.
 
 ---
 
@@ -1660,7 +1688,7 @@ tag_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}.
 
 ---
 
@@ -1672,7 +1700,7 @@ tags: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tags RegistryModule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tags RegistryModule#tags}.
 
 ---
 
@@ -1921,6 +1949,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resetAgentExecutionMode">reset_agent_execution_mode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resetAgentPoolId">reset_agent_pool_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resetTestsEnabled">reset_tests_enabled</a></code> | *No description.* |
 
 ---
@@ -2097,6 +2127,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_agent_execution_mode` <a name="reset_agent_execution_mode" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resetAgentExecutionMode"></a>
+
+```python
+def reset_agent_execution_mode() -> None
+```
+
+##### `reset_agent_pool_id` <a name="reset_agent_pool_id" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resetAgentPoolId"></a>
+
+```python
+def reset_agent_pool_id() -> None
+```
+
 ##### `reset_tests_enabled` <a name="reset_tests_enabled" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.resetTestsEnabled"></a>
 
 ```python
@@ -2110,7 +2152,11 @@ def reset_tests_enabled() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentExecutionModeInput">agent_execution_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentPoolIdInput">agent_pool_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.testsEnabledInput">tests_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentExecutionMode">agent_execution_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentPoolId">agent_pool_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.testsEnabled">tests_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-tfe.registryModule.RegistryModuleTestConfig">RegistryModuleTestConfig</a></code> | *No description.* |
 
@@ -2140,6 +2186,26 @@ fqn: str
 
 ---
 
+##### `agent_execution_mode_input`<sup>Optional</sup> <a name="agent_execution_mode_input" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentExecutionModeInput"></a>
+
+```python
+agent_execution_mode_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `agent_pool_id_input`<sup>Optional</sup> <a name="agent_pool_id_input" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentPoolIdInput"></a>
+
+```python
+agent_pool_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tests_enabled_input`<sup>Optional</sup> <a name="tests_enabled_input" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.testsEnabledInput"></a>
 
 ```python
@@ -2147,6 +2213,26 @@ tests_enabled_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktf.IResolvable
+
+---
+
+##### `agent_execution_mode`<sup>Required</sup> <a name="agent_execution_mode" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentExecutionMode"></a>
+
+```python
+agent_execution_mode: str
+```
+
+- *Type:* str
+
+---
+
+##### `agent_pool_id`<sup>Required</sup> <a name="agent_pool_id" id="@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference.property.agentPoolId"></a>
+
+```python
+agent_pool_id: str
+```
+
+- *Type:* str
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataTfeRegistryModule <a name="DataTfeRegistryModule" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module tfe_registry_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module tfe_registry_module}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule.Initializer"></a>
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the module provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The namespace of the no-code module. Uses organization name if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the registry. Valid options: "public", "private". Defaults to "private".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 version_statuses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the DataTfeRegistryModule to i
 
 The id of the existing DataTfeRegistryModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1206,7 +1206,7 @@ public java.lang.String getModuleProvider();
 
 Name of the module provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#module_provider DataTfeRegistryModule#module_provider}
 
 ---
 
@@ -1220,7 +1220,7 @@ public java.lang.String getName();
 
 Name of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#name DataTfeRegistryModule#name}
 
 ---
 
@@ -1234,7 +1234,7 @@ public java.lang.String getOrganization();
 
 Name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#organization DataTfeRegistryModule#organization}
 
 ---
 
@@ -1248,7 +1248,7 @@ public java.lang.String getNamespace();
 
 The namespace of the no-code module. Uses organization name if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#namespace DataTfeRegistryModule#namespace}
 
 ---
 
@@ -1262,7 +1262,7 @@ public IResolvable|java.util.List<DataTfeRegistryModulePermissions> getPermissio
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#permissions DataTfeRegistryModule#permissions}
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.lang.String getRegistryName();
 
 Name of the registry. Valid options: "public", "private". Defaults to "private".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#registry_name DataTfeRegistryModule#registry_name}
 
 ---
 
@@ -1290,7 +1290,7 @@ public IResolvable|java.util.List<DataTfeRegistryModuleTestConfig> getTestConfig
 
 test_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#test_config DataTfeRegistryModule#test_config}
 
 ---
 
@@ -1304,7 +1304,7 @@ public IResolvable|java.util.List<DataTfeRegistryModuleVcsRepo> getVcsRepo();
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#vcs_repo DataTfeRegistryModule#vcs_repo}
 
 ---
 
@@ -1318,7 +1318,7 @@ public IResolvable|java.util.List<DataTfeRegistryModuleVersionStatuses> getVersi
 
 version_statuses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/registry_module#version_statuses DataTfeRegistryModule#version_statuses}
 
 ---
 

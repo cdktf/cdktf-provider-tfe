@@ -4,7 +4,7 @@
 
 ### AgentPoolExcludedWorkspaces <a name="AgentPoolExcludedWorkspaces" id="@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces tfe_agent_pool_excluded_workspaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces tfe_agent_pool_excluded_workspaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspaces.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AgentPoolExcludedWorkspace
 
 The id of the existing AgentPoolExcludedWorkspaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,9 +767,9 @@ new AgentPoolExcludedWorkspacesConfig {
 | <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#agent_pool_id AgentPoolExcludedWorkspaces#agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.excludedWorkspaceIds">ExcludedWorkspaceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#excluded_workspace_ids AgentPoolExcludedWorkspaces#excluded_workspace_ids}. |
-| <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#id AgentPoolExcludedWorkspaces#id}. |
+| <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.agentPoolId">AgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#agent_pool_id AgentPoolExcludedWorkspaces#agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.excludedWorkspaceIds">ExcludedWorkspaceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#excluded_workspace_ids AgentPoolExcludedWorkspaces#excluded_workspace_ids}. |
+| <code><a href="#@cdktf/provider-tfe.agentPoolExcludedWorkspaces.AgentPoolExcludedWorkspacesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#id AgentPoolExcludedWorkspaces#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ public string AgentPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#agent_pool_id AgentPoolExcludedWorkspaces#agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#agent_pool_id AgentPoolExcludedWorkspaces#agent_pool_id}.
 
 ---
 
@@ -863,7 +863,7 @@ public string[] ExcludedWorkspaceIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#excluded_workspace_ids AgentPoolExcludedWorkspaces#excluded_workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#excluded_workspace_ids AgentPoolExcludedWorkspaces#excluded_workspace_ids}.
 
 ---
 
@@ -875,7 +875,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/agent_pool_excluded_workspaces#id AgentPoolExcludedWorkspaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/agent_pool_excluded_workspaces#id AgentPoolExcludedWorkspaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

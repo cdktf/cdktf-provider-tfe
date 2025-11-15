@@ -4,7 +4,7 @@
 
 ### ProjectVariableSet <a name="ProjectVariableSet" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set tfe_project_variable_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set tfe_project_variable_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer"></a>
 
@@ -36,9 +36,9 @@ ProjectVariableSet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.variableSetId">variableSetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#id ProjectVariableSet#id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.variableSetId">variableSetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#id ProjectVariableSet#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#id ProjectVariableSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#id ProjectVariableSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -559,7 +559,7 @@ The construct id used in the generated config for the ProjectVariableSet to impo
 
 The id of the existing ProjectVariableSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,9 +852,9 @@ ProjectVariableSetConfig.builder()
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.variableSetId">variableSetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#id ProjectVariableSet#id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.variableSetId">variableSetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectVariableSet.ProjectVariableSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#id ProjectVariableSet#id}. |
 
 ---
 
@@ -936,7 +936,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#project_id ProjectVariableSet#project_id}.
 
 ---
 
@@ -948,7 +948,7 @@ public java.lang.String getVariableSetId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#variable_set_id ProjectVariableSet#variable_set_id}.
 
 ---
 
@@ -960,7 +960,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_variable_set#id ProjectVariableSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_variable_set#id ProjectVariableSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
