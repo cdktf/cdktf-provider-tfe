@@ -1,0 +1,740 @@
+# `dataTfeHyokCustomerKeyVersion` Submodule <a name="`dataTfeHyokCustomerKeyVersion` Submodule" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### DataTfeHyokCustomerKeyVersion <a name="DataTfeHyokCustomerKeyVersion" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/hyok_customer_key_version tfe_hyok_customer_key_version}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Tfe;
+
+new DataTfeHyokCustomerKeyVersion(Construct Scope, string Id, DataTfeHyokCustomerKeyVersionConfig Config);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig">DataTfeHyokCustomerKeyVersionConfig</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig">DataTfeHyokCustomerKeyVersionConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataTfeHyokCustomerKeyVersion resource upon running "cdktf plan <stack-name>". |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isConstruct"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Tfe;
+
+DataTfeHyokCustomerKeyVersion.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isTerraformElement"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Tfe;
+
+DataTfeHyokCustomerKeyVersion.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isTerraformDataSource"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Tfe;
+
+DataTfeHyokCustomerKeyVersion.IsTerraformDataSource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Tfe;
+
+DataTfeHyokCustomerKeyVersion.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataTfeHyokCustomerKeyVersion resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataTfeHyokCustomerKeyVersion to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataTfeHyokCustomerKeyVersion that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/hyok_customer_key_version#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTfeHyokCustomerKeyVersion to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.cdktfStack">CdktfStack</a></code> | <code>HashiCorp.Cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.error">Error</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.keyVersion">KeyVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.status">Status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.workspacesSecured">WorkspacesSecured</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.id">Id</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; }
+```
+
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.createdAt"></a>
+
+```csharp
+public string CreatedAt { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Error`<sup>Required</sup> <a name="Error" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.error"></a>
+
+```csharp
+public string Error { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyVersion`<sup>Required</sup> <a name="KeyVersion" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.keyVersion"></a>
+
+```csharp
+public string KeyVersion { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.status"></a>
+
+```csharp
+public string Status { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `WorkspacesSecured`<sup>Required</sup> <a name="WorkspacesSecured" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.workspacesSecured"></a>
+
+```csharp
+public double WorkspacesSecured { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersion.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### DataTfeHyokCustomerKeyVersionConfig <a name="DataTfeHyokCustomerKeyVersionConfig" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Tfe;
+
+new DataTfeHyokCustomerKeyVersionConfig {
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string Id
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.id">Id</a></code> | <code>string</code> | The ID of the HYOK customer key version. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.connection"></a>
+
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; set; }
+```
+
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.provisioners"></a>
+
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tfe.dataTfeHyokCustomerKeyVersion.DataTfeHyokCustomerKeyVersionConfig.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+The ID of the HYOK customer key version.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/hyok_customer_key_version#id DataTfeHyokCustomerKeyVersion#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+
+

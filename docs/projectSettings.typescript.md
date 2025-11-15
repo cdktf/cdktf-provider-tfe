@@ -4,7 +4,7 @@
 
 ### ProjectSettings <a name="ProjectSettings" id="@cdktf/provider-tfe.projectSettings.ProjectSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings tfe_project_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings tfe_project_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectSettings.ProjectSettings.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ProjectSettings to import.
 
 The id of the existing ProjectSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,9 +785,9 @@ const projectSettingsConfig: projectSettings.ProjectSettingsConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#project_id ProjectSettings#project_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.defaultAgentPoolId">defaultAgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#default_agent_pool_id ProjectSettings#default_agent_pool_id}. |
-| <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.defaultExecutionMode">defaultExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#default_execution_mode ProjectSettings#default_execution_mode}. |
+| <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#project_id ProjectSettings#project_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.defaultAgentPoolId">defaultAgentPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#default_agent_pool_id ProjectSettings#default_agent_pool_id}. |
+| <code><a href="#@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.property.defaultExecutionMode">defaultExecutionMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#default_execution_mode ProjectSettings#default_execution_mode}. |
 
 ---
 
@@ -869,7 +869,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#project_id ProjectSettings#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#project_id ProjectSettings#project_id}.
 
 ---
 
@@ -881,7 +881,7 @@ public readonly defaultAgentPoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#default_agent_pool_id ProjectSettings#default_agent_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#default_agent_pool_id ProjectSettings#default_agent_pool_id}.
 
 ---
 
@@ -893,7 +893,7 @@ public readonly defaultExecutionMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/project_settings#default_execution_mode ProjectSettings#default_execution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/project_settings#default_execution_mode ProjectSettings#default_execution_mode}.
 
 ---
 

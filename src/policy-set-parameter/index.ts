@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter
+// https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface PolicySetParameterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
   */
   readonly key: string;
   /**
   * The ID of the policy set that owns the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter#policy_set_id PolicySetParameter#policy_set_id}
   */
   readonly policySetId: string;
   /**
   * Whether the value is sensitive. If true then the parameter is written once and not visible thereafter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
   */
   readonly sensitive?: boolean | cdktf.IResolvable;
   /**
   * Value of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
   */
   readonly value?: string;
   /**
   * Value of the parameter in write-only mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
   */
   readonly valueWo?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}
 */
 export class PolicySetParameter extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicySetParameter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicySetParameter to import
-  * @param importFromId The id of the existing PolicySetParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicySetParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicySetParameter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class PolicySetParameter extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_policy_set_parameter',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.70.0',
+        providerVersion: '0.71.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace
+// https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataTfeWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#id DataTfeWorkspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#id DataTfeWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#name DataTfeWorkspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#name DataTfeWorkspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}
   */
   readonly tagNames?: string[];
 }
@@ -134,7 +134,7 @@ export class DataTfeWorkspaceVcsRepoList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace tfe_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace tfe_workspace}
 */
 export class DataTfeWorkspace extends cdktf.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataTfeWorkspace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTfeWorkspace to import
-  * @param importFromId The id of the existing DataTfeWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataTfeWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTfeWorkspace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace tfe_workspace} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace tfe_workspace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'tfe_workspace',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.70.0',
+        providerVersion: '0.71.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,
@@ -194,9 +194,20 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // actions - computed: true, optional: false, required: false
+  private _actions = new cdktf.BooleanMap(this, "actions");
+  public get actions() {
+    return this._actions;
+  }
+
   // allow_destroy_plan - computed: true, optional: false, required: false
   public get allowDestroyPlan() {
     return this.getBooleanAttribute('allow_destroy_plan');
+  }
+
+  // apply_duration_average - computed: true, optional: false, required: false
+  public get applyDurationAverage() {
+    return this.getNumberAttribute('apply_duration_average');
   }
 
   // assessments_enabled - computed: true, optional: false, required: false
@@ -224,6 +235,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
     return this.getStringAttribute('auto_destroy_at');
   }
 
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
@@ -233,6 +249,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   private _effectiveTags = new cdktf.StringMap(this, "effective_tags");
   public get effectiveTags() {
     return this._effectiveTags;
+  }
+
+  // environment - computed: true, optional: false, required: false
+  public get environment() {
+    return this.getStringAttribute('environment');
   }
 
   // execution_mode - computed: true, optional: false, required: false
@@ -255,6 +276,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
     return this.getStringAttribute('html_url');
   }
 
+  // hyok_enabled - computed: true, optional: false, required: false
+  public get hyokEnabled() {
+    return this.getBooleanAttribute('hyok_enabled');
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -274,6 +300,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // inherits_project_auto_destroy - computed: true, optional: false, required: false
   public get inheritsProjectAutoDestroy() {
     return this.getBooleanAttribute('inherits_project_auto_destroy');
+  }
+
+  // locked - computed: true, optional: false, required: false
+  public get locked() {
+    return this.getBooleanAttribute('locked');
   }
 
   // name - computed: false, optional: false, required: true
@@ -310,6 +341,17 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
     return this._organization;
   }
 
+  // permissions - computed: true, optional: false, required: false
+  private _permissions = new cdktf.BooleanMap(this, "permissions");
+  public get permissions() {
+    return this._permissions;
+  }
+
+  // plan_duration_average - computed: true, optional: false, required: false
+  public get planDurationAverage() {
+    return this.getNumberAttribute('plan_duration_average');
+  }
+
   // policy_check_failures - computed: true, optional: false, required: false
   public get policyCheckFailures() {
     return this.getNumberAttribute('policy_check_failures');
@@ -343,6 +385,17 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // runs_count - computed: true, optional: false, required: false
   public get runsCount() {
     return this.getNumberAttribute('runs_count');
+  }
+
+  // setting_overwrites - computed: true, optional: false, required: false
+  private _settingOverwrites = new cdktf.BooleanMap(this, "setting_overwrites");
+  public get settingOverwrites() {
+    return this._settingOverwrites;
+  }
+
+  // source - computed: true, optional: false, required: false
+  public get source() {
+    return this.getStringAttribute('source');
   }
 
   // source_name - computed: true, optional: false, required: false
@@ -399,6 +452,11 @@ export class DataTfeWorkspace extends cdktf.TerraformDataSource {
   // trigger_prefixes - computed: true, optional: false, required: false
   public get triggerPrefixes() {
     return this.getListAttribute('trigger_prefixes');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
   }
 
   // vcs_repo - computed: true, optional: false, required: false

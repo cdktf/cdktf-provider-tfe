@@ -4,7 +4,7 @@
 
 ### DataTfeWorkspace <a name="DataTfeWorkspace" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace tfe_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace tfe_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataTfeWorkspace to import
 
 The id of the existing DataTfeWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -414,20 +414,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.actions">actions</a></code> | <code>cdktf.BooleanMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.allowDestroyPlan">allowDestroyPlan</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.applyDurationAverage">applyDurationAverage</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.assessmentsEnabled">assessmentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.autoApply">autoApply</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.autoApplyRunTrigger">autoApplyRunTrigger</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.autoDestroyActivityDuration">autoDestroyActivityDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.autoDestroyAt">autoDestroyAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.effectiveTags">effectiveTags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.executionMode">executionMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.fileTriggersEnabled">fileTriggersEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.globalRemoteState">globalRemoteState</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.htmlUrl">htmlUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.hyokEnabled">hyokEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.inheritsProjectAutoDestroy">inheritsProjectAutoDestroy</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.locked">locked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.operations">operations</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.permissions">permissions</a></code> | <code>cdktf.BooleanMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.planDurationAverage">planDurationAverage</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.policyCheckFailures">policyCheckFailures</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.queueAllRuns">queueAllRuns</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -435,6 +443,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.resourceCount">resourceCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.runFailures">runFailures</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.runsCount">runsCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.settingOverwrites">settingOverwrites</a></code> | <code>cdktf.BooleanMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.sourceName">sourceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.sourceUrl">sourceUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.speculativeEnabled">speculativeEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -443,6 +453,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.terraformVersion">terraformVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.triggerPatterns">triggerPatterns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.triggerPrefixes">triggerPrefixes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.vcsRepo">vcsRepo</a></code> | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList">DataTfeWorkspaceVcsRepoList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.workingDirectory">workingDirectory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -578,6 +589,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `actions`<sup>Required</sup> <a name="actions" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.actions"></a>
+
+```typescript
+public readonly actions: BooleanMap;
+```
+
+- *Type:* cdktf.BooleanMap
+
+---
+
 ##### `allowDestroyPlan`<sup>Required</sup> <a name="allowDestroyPlan" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.allowDestroyPlan"></a>
 
 ```typescript
@@ -585,6 +606,16 @@ public readonly allowDestroyPlan: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `applyDurationAverage`<sup>Required</sup> <a name="applyDurationAverage" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.applyDurationAverage"></a>
+
+```typescript
+public readonly applyDurationAverage: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -638,6 +669,16 @@ public readonly autoDestroyAt: string;
 
 ---
 
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.description"></a>
 
 ```typescript
@@ -655,6 +696,16 @@ public readonly effectiveTags: StringMap;
 ```
 
 - *Type:* cdktf.StringMap
+
+---
+
+##### `environment`<sup>Required</sup> <a name="environment" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.environment"></a>
+
+```typescript
+public readonly environment: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -698,10 +749,30 @@ public readonly htmlUrl: string;
 
 ---
 
+##### `hyokEnabled`<sup>Required</sup> <a name="hyokEnabled" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.hyokEnabled"></a>
+
+```typescript
+public readonly hyokEnabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `inheritsProjectAutoDestroy`<sup>Required</sup> <a name="inheritsProjectAutoDestroy" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.inheritsProjectAutoDestroy"></a>
 
 ```typescript
 public readonly inheritsProjectAutoDestroy: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `locked`<sup>Required</sup> <a name="locked" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.locked"></a>
+
+```typescript
+public readonly locked: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
@@ -715,6 +786,26 @@ public readonly operations: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `permissions`<sup>Required</sup> <a name="permissions" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.permissions"></a>
+
+```typescript
+public readonly permissions: BooleanMap;
+```
+
+- *Type:* cdktf.BooleanMap
+
+---
+
+##### `planDurationAverage`<sup>Required</sup> <a name="planDurationAverage" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.planDurationAverage"></a>
+
+```typescript
+public readonly planDurationAverage: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -785,6 +876,26 @@ public readonly runsCount: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `settingOverwrites`<sup>Required</sup> <a name="settingOverwrites" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.settingOverwrites"></a>
+
+```typescript
+public readonly settingOverwrites: BooleanMap;
+```
+
+- *Type:* cdktf.BooleanMap
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -865,6 +976,16 @@ public readonly triggerPrefixes: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1009,10 +1130,10 @@ const dataTfeWorkspaceConfig: dataTfeWorkspace.DataTfeWorkspaceConfig = { ... }
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#name DataTfeWorkspace#name}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#id DataTfeWorkspace#id}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}. |
-| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.tagNames">tagNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#name DataTfeWorkspace#name}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#id DataTfeWorkspace#id}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}. |
+| <code><a href="#@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig.property.tagNames">tagNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}. |
 
 ---
 
@@ -1094,7 +1215,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#name DataTfeWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#name DataTfeWorkspace#name}.
 
 ---
 
@@ -1106,7 +1227,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#id DataTfeWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#id DataTfeWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1121,7 +1242,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#organization DataTfeWorkspace#organization}.
 
 ---
 
@@ -1133,7 +1254,7 @@ public readonly tagNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/data-sources/workspace#tag_names DataTfeWorkspace#tag_names}.
 
 ---
 

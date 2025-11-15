@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module
+// https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface RegistryModuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#id RegistryModule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#id RegistryModule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#initial_version RegistryModule#initial_version}
   */
   readonly initialVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#module_provider RegistryModule#module_provider}
   */
   readonly moduleProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#name RegistryModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#name RegistryModule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#namespace RegistryModule#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#namespace RegistryModule#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#no_code RegistryModule#no_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#no_code RegistryModule#no_code}
   */
   readonly noCode?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#organization RegistryModule#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#organization RegistryModule#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#registry_name RegistryModule#registry_name}
   */
   readonly registryName?: string;
   /**
   * test_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#test_config RegistryModule#test_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#test_config RegistryModule#test_config}
   */
   readonly testConfig?: RegistryModuleTestConfig[] | cdktf.IResolvable;
   /**
   * vcs_repo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#vcs_repo RegistryModule#vcs_repo}
   */
   readonly vcsRepo?: RegistryModuleVcsRepo;
 }
 export interface RegistryModuleTestConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#agent_execution_mode RegistryModule#agent_execution_mode}
+  */
+  readonly agentExecutionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#agent_pool_id RegistryModule#agent_pool_id}
+  */
+  readonly agentPoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tests_enabled RegistryModule#tests_enabled}
   */
   readonly testsEnabled?: boolean | cdktf.IResolvable;
 }
@@ -73,6 +81,8 @@ export function registryModuleTestConfigToTerraform(struct?: RegistryModuleTestC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    agent_execution_mode: cdktf.stringToTerraform(struct!.agentExecutionMode),
+    agent_pool_id: cdktf.stringToTerraform(struct!.agentPoolId),
     tests_enabled: cdktf.booleanToTerraform(struct!.testsEnabled),
   }
 }
@@ -84,6 +94,18 @@ export function registryModuleTestConfigToHclTerraform(struct?: RegistryModuleTe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    agent_execution_mode: {
+      value: cdktf.stringToHclTerraform(struct!.agentExecutionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    agent_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.agentPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     tests_enabled: {
       value: cdktf.booleanToHclTerraform(struct!.testsEnabled),
       isBlock: false,
@@ -116,6 +138,14 @@ export class RegistryModuleTestConfigOutputReference extends cdktf.ComplexObject
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._agentExecutionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.agentExecutionMode = this._agentExecutionMode;
+    }
+    if (this._agentPoolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.agentPoolId = this._agentPoolId;
+    }
     if (this._testsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.testsEnabled = this._testsEnabled;
@@ -127,6 +157,8 @@ export class RegistryModuleTestConfigOutputReference extends cdktf.ComplexObject
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._agentExecutionMode = undefined;
+      this._agentPoolId = undefined;
       this._testsEnabled = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -136,8 +168,42 @@ export class RegistryModuleTestConfigOutputReference extends cdktf.ComplexObject
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._agentExecutionMode = value.agentExecutionMode;
+      this._agentPoolId = value.agentPoolId;
       this._testsEnabled = value.testsEnabled;
     }
+  }
+
+  // agent_execution_mode - computed: true, optional: true, required: false
+  private _agentExecutionMode?: string; 
+  public get agentExecutionMode() {
+    return this.getStringAttribute('agent_execution_mode');
+  }
+  public set agentExecutionMode(value: string) {
+    this._agentExecutionMode = value;
+  }
+  public resetAgentExecutionMode() {
+    this._agentExecutionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get agentExecutionModeInput() {
+    return this._agentExecutionMode;
+  }
+
+  // agent_pool_id - computed: false, optional: true, required: false
+  private _agentPoolId?: string; 
+  public get agentPoolId() {
+    return this.getStringAttribute('agent_pool_id');
+  }
+  public set agentPoolId(value: string) {
+    this._agentPoolId = value;
+  }
+  public resetAgentPoolId() {
+    this._agentPoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get agentPoolIdInput() {
+    return this._agentPoolId;
   }
 
   // tests_enabled - computed: false, optional: true, required: false
@@ -178,35 +244,35 @@ export class RegistryModuleTestConfigList extends cdktf.ComplexList {
 }
 export interface RegistryModuleVcsRepo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#branch RegistryModule#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#branch RegistryModule#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}
   */
   readonly displayIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#github_app_installation_id RegistryModule#github_app_installation_id}
   */
   readonly githubAppInstallationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#identifier RegistryModule#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#identifier RegistryModule#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}
   */
   readonly oauthTokenId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#source_directory RegistryModule#source_directory}
   */
   readonly sourceDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tag_prefix RegistryModule#tag_prefix}
   */
   readonly tagPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#tags RegistryModule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#tags RegistryModule#tags}
   */
   readonly tags?: boolean | cdktf.IResolvable;
 }
@@ -487,7 +553,7 @@ export class RegistryModuleVcsRepoOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module tfe_registry_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module tfe_registry_module}
 */
 export class RegistryModule extends cdktf.TerraformResource {
 
@@ -503,7 +569,7 @@ export class RegistryModule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RegistryModule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegistryModule to import
-  * @param importFromId The id of the existing RegistryModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegistryModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegistryModule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -515,7 +581,7 @@ export class RegistryModule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/registry_module tfe_registry_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/registry_module tfe_registry_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -526,7 +592,7 @@ export class RegistryModule extends cdktf.TerraformResource {
       terraformResourceType: 'tfe_registry_module',
       terraformGeneratorMetadata: {
         providerName: 'tfe',
-        providerVersion: '0.70.0',
+        providerVersion: '0.71.0',
         providerVersionConstraint: '~> 0.33'
       },
       provider: config.provider,

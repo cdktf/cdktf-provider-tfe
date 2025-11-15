@@ -4,7 +4,7 @@
 
 ### Stack <a name="Stack" id="@cdktf/provider-tfe.stack.Stack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack tfe_stack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack tfe_stack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.stack.Stack.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#name Stack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#name Stack#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the project that the Stack belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#project_id Stack#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#project_id Stack#project_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of an agent pool to assign to the stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#description Stack#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#description Stack#description}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 
 ---
 
@@ -534,7 +534,7 @@ def put_vcs_repo(
 
 The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#branch Stack#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#branch Stack#branch}
 
 ---
 
@@ -546,7 +546,7 @@ The installation ID of the GitHub App.
 
 This conflicts with `oauth_token_id` and can only be used if `oauth_token_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Identifier of the VCS repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#identifier Stack#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#identifier Stack#identifier}
 
 ---
 
@@ -568,7 +568,7 @@ The VCS Connection to use.
 
 This ID can be obtained from a `tfe_oauth_client` resource. This conflicts with `github_app_installation_id` and can only be used if `github_app_installation_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
 
 ---
 
@@ -704,7 +704,7 @@ The construct id used in the generated config for the Stack to import.
 
 The id of the existing Stack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1164,7 +1164,7 @@ name: str
 
 Name of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#name Stack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#name Stack#name}
 
 ---
 
@@ -1178,7 +1178,7 @@ project_id: str
 
 ID of the project that the Stack belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#project_id Stack#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#project_id Stack#project_id}
 
 ---
 
@@ -1192,7 +1192,7 @@ agent_pool_id: str
 
 The ID of an agent pool to assign to the stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#agent_pool_id Stack#agent_pool_id}
 
 ---
 
@@ -1206,7 +1206,7 @@ description: str
 
 Description of the Stack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#description Stack#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#description Stack#description}
 
 ---
 
@@ -1220,7 +1220,7 @@ vcs_repo: StackVcsRepo
 
 vcs_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 
 ---
 
@@ -1260,7 +1260,7 @@ branch: str
 
 The repository branch that Terraform should use. This defaults to the respository's default branch (e.g. main).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#branch Stack#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#branch Stack#branch}
 
 ---
 
@@ -1276,7 +1276,7 @@ The installation ID of the GitHub App.
 
 This conflicts with `oauth_token_id` and can only be used if `oauth_token_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#github_app_installation_id Stack#github_app_installation_id}
 
 ---
 
@@ -1290,7 +1290,7 @@ identifier: str
 
 Identifier of the VCS repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#identifier Stack#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#identifier Stack#identifier}
 
 ---
 
@@ -1306,7 +1306,7 @@ The VCS Connection to use.
 
 This ID can be obtained from a `tfe_oauth_client` resource. This conflicts with `github_app_installation_id` and can only be used if `github_app_installation_id` is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/stack#oauth_token_id Stack#oauth_token_id}
 
 ---
 

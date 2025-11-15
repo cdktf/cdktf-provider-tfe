@@ -4,7 +4,7 @@
 
 ### AuditTrailToken <a name="AuditTrailToken" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token tfe_audit_trail_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token tfe_audit_trail_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.auditTrailToken.AuditTrailToken.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The time when the audit trail token will expire. This must be a valid ISO8601 timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When set to true will force the audit trail token to be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
 
 ---
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the AuditTrailToken to import.
 
 The id of the existing AuditTrailToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -977,7 +977,7 @@ public java.lang.String getExpiredAt();
 
 The time when the audit trail token will expire. This must be a valid ISO8601 timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
 
 ---
 
@@ -991,7 +991,7 @@ public java.lang.Boolean|IResolvable getForceRegenerate();
 
 When set to true will force the audit trail token to be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
 
 ---
 
@@ -1005,7 +1005,7 @@ public java.lang.String getOrganization();
 
 Name of the organization. If omitted, organization must be defined in the provider config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.70.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
 
 ---
 
