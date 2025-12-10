@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.NewSentinelVersion(scope Construct, id *string, config SentinelVersionConfig) SentinelVersion
 ```
@@ -447,7 +447,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.SentinelVersion_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.SentinelVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ sentinelversion.SentinelVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.SentinelVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ sentinelversion.SentinelVersion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.SentinelVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersionArchs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 &sentinelversion.SentinelVersionArchs {
 	Arch: *string,
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 &sentinelversion.SentinelVersionConfig {
 	Connection: interface{},
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersionArchsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.NewSentinelVersionArchsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SentinelVersionArchsList
 ```
@@ -1409,7 +1409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.sentinelVersion.SentinelVersionArchsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/sentinelversion"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/sentinelversion"
 
 sentinelversion.NewSentinelVersionArchsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SentinelVersionArchsOutputReference
 ```

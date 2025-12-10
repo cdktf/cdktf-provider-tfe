@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 hyokconfiguration.NewHyokConfiguration(scope Construct, id *string, config HyokConfigurationConfig) HyokConfiguration
 ```
@@ -405,7 +405,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 hyokconfiguration.HyokConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 hyokconfiguration.HyokConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ hyokconfiguration.HyokConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 hyokconfiguration.HyokConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ hyokconfiguration.HyokConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 hyokconfiguration.HyokConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 &hyokconfiguration.HyokConfigurationConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
 	Name: *string,
 	OidcConfigurationId: *string,
 	OidcConfigurationType: *string,
-	KmsOptions: github.com/cdktf/cdktf-provider-tfe-go/tfe/v12.hyokConfiguration.HyokConfigurationKmsOptions,
+	KmsOptions: github.com/cdktf/cdktf-provider-tfe-go/tfe.hyokConfiguration.HyokConfigurationKmsOptions,
 	Organization: *string,
 }
 ```
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfigurationKmsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 &hyokconfiguration.HyokConfigurationKmsOptions {
 	KeyLocation: *string,
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.hyokConfiguration.HyokConfigurationKmsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/hyokconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/hyokconfiguration"
 
 hyokconfiguration.NewHyokConfigurationKmsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HyokConfigurationKmsOptionsOutputReference
 ```

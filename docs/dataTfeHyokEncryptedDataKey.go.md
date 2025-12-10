@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.dataTfeHyokEncryptedDataKey.DataTfeHyokEncryptedDataKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/datatfehyokencrypteddatakey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfehyokencrypteddatakey"
 
 datatfehyokencrypteddatakey.NewDataTfeHyokEncryptedDataKey(scope Construct, id *string, config DataTfeHyokEncryptedDataKeyConfig) DataTfeHyokEncryptedDataKey
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.dataTfeHyokEncryptedDataKey.DataTfeHyokEncryptedDataKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/datatfehyokencrypteddatakey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfehyokencrypteddatakey"
 
 datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKey_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.dataTfeHyokEncryptedDataKey.DataTfeHyokEncryptedDataKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/datatfehyokencrypteddatakey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfehyokencrypteddatakey"
 
 datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKey_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-tfe.dataTfeHyokEncryptedDataKey.DataTfeHyokEncryptedDataKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/datatfehyokencrypteddatakey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfehyokencrypteddatakey"
 
 datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKey_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.dataTfeHyokEncryptedDataKey.DataTfeHyokEncryptedDataKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/datatfehyokencrypteddatakey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfehyokencrypteddatakey"
 
 datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.dataTfeHyokEncryptedDataKey.DataTfeHyokEncryptedDataKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/datatfehyokencrypteddatakey"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/datatfehyokencrypteddatakey"
 
 &datatfehyokencrypteddatakey.DataTfeHyokEncryptedDataKeyConfig {
 	Connection: interface{},
