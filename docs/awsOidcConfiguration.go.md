@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.awsOidcConfiguration.AwsOidcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/awsoidcconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/awsoidcconfiguration"
 
 awsoidcconfiguration.NewAwsOidcConfiguration(scope Construct, id *string, config AwsOidcConfigurationConfig) AwsOidcConfiguration
 ```
@@ -385,7 +385,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.awsOidcConfiguration.AwsOidcConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/awsoidcconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/awsoidcconfiguration"
 
 awsoidcconfiguration.AwsOidcConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.awsOidcConfiguration.AwsOidcConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/awsoidcconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/awsoidcconfiguration"
 
 awsoidcconfiguration.AwsOidcConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ awsoidcconfiguration.AwsOidcConfiguration_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.awsOidcConfiguration.AwsOidcConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/awsoidcconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/awsoidcconfiguration"
 
 awsoidcconfiguration.AwsOidcConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ awsoidcconfiguration.AwsOidcConfiguration_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.awsOidcConfiguration.AwsOidcConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/awsoidcconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/awsoidcconfiguration"
 
 awsoidcconfiguration.AwsOidcConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.awsOidcConfiguration.AwsOidcConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/awsoidcconfiguration"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/awsoidcconfiguration"
 
 &awsoidcconfiguration.AwsOidcConfigurationConfig {
 	Connection: interface{},

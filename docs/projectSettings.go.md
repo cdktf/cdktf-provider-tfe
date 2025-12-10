@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.71.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectSettings.ProjectSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 projectsettings.NewProjectSettings(scope Construct, id *string, config ProjectSettingsConfig) ProjectSettings
 ```
@@ -392,7 +392,7 @@ func ResetDefaultExecutionMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tfe.projectSettings.ProjectSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 projectsettings.ProjectSettings_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tfe.projectSettings.ProjectSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 projectsettings.ProjectSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projectsettings.ProjectSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tfe.projectSettings.ProjectSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 projectsettings.ProjectSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ projectsettings.ProjectSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tfe.projectSettings.ProjectSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 projectsettings.ProjectSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.projectSettings.ProjectSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 &projectsettings.ProjectSettingsConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-tfe.projectSettings.ProjectSettingsOverwrites.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 &projectsettings.ProjectSettingsOverwrites {
 
@@ -928,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
 #### Initializers <a name="Initializers" id="@cdktf/provider-tfe.projectSettings.ProjectSettingsOverwritesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tfe-go/tfe/projectsettings"
+import "github.com/cdktf/cdktf-provider-tfe-go/tfe/v12/projectsettings"
 
 projectsettings.NewProjectSettingsOverwritesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectSettingsOverwritesOutputReference
 ```
